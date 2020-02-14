@@ -1,0 +1,1077 @@
+"thm_2Emachine__ieee_2Efp16__to__float__def"
+axiom
+
+"thm_2Emachine__ieee_2Efloat__to__fp16__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__real__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__value__def"
+axiom
+
+"thm_2Emachine__ieee_2Ereal__to__fp16__def"
+axiom
+
+"thm_2Emachine__ieee_2Ereal__to__fp16__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Eint__to__fp16__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__roundToIntegral__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__int__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__sqrt__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__sqrt__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__negate__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__abs__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isNan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isSignallingNan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isIntegral__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isNormal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isSubnormal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isFinite__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__isInfinite__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__posInf__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__negInf__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__posZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__negZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__posMin__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__negMin__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__top__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__bottom__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__add__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__sub__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__mul__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__div__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__add__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__sub__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__mul__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__div__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__compare__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__equal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__lessThan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__lessEqual__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__greaterThan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__greaterEqual__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__mul__add__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__mul__sub__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__mul__add__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__mul__sub__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__float__11"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ENOT__LEQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUC__ELIM__NUMERALS" "thm_2Earithmetic_2EMIN__LE" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EDISJ__IMP__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2EK__THM" "thm_2Efcp_2ECART__EQ" "thm_2Efcp_2EFCP__BETA" "thm_2Emachine__ieee_2Efp16__to__float__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Eprim__rec_2ELESS__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__bits__def" "thm_2Ewords_2Eword__extract__def" "thm_2Ewords_2Ew2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__5" "thm_2Ewords_2Edimindex__10" "thm_2Ewords_2Edimindex__16"
+
+"thm_2Emachine__ieee_2Efloat__to__fp16__11"
+conjecture
+intact
+"thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS" "thm_2Earithmetic_2ESUC__ELIM__NUMERALS" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EDISJ__IMP__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2ECART__EQ" "thm_2Efcp_2EFCP__BETA" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efloat__to__fp16__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ELESS__REFL" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Eprim__rec_2ELESS__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__or__def" "thm_2Ewords_2Eword__lsl__def" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EDIMINDEX__GT__0" "thm_2Ewords_2Ew2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__5" "thm_2Ewords_2Edimindex__10" "thm_2Ewords_2Edimindex__16"
+
+"thm_2Emachine__ieee_2Efloat__to__fp16__fp16__to__float"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ENOT__LEQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS__EQ" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ecombin_2EK__THM" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp16__to__float__def" "thm_2Emachine__ieee_2Efloat__to__fp16__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EWORD__OR__COMM" "thm_2Ewords_2EWORD__w2w__EXTRACT" "thm_2Ewords_2EWORD__BITS__EXTRACT" "thm_2Ewords_2EWORD__EXTRACT__COMP__THM" "thm_2Ewords_2EWORD__ALL__BITS" "thm_2Ewords_2EEXTRACT__JOIN" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__5" "thm_2Ewords_2Edimindex__10" "thm_2Ewords_2Edimindex__16"
+
+"thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__CLAUSES" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__MONO__ADD__EQ" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS__EQ" "thm_2Earithmetic_2ESUB__RIGHT__LESS" "thm_2Earithmetic_2EMIN__LT" "thm_2Earithmetic_2EMIN__0" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EEQ__EXPAND" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Ecombin_2EK__THM" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp16__to__float__def" "thm_2Emachine__ieee_2Efloat__to__fp16__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ELESS__REFL" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EWORD__NEG__1" "thm_2Ewords_2EWORD__OR__CLAUSES" "thm_2Ewords_2EWORD__OR__ASSOC" "thm_2Ewords_2EWORD__OR__COMM" "thm_2Ewords_2EWORD__w2w__EXTRACT" "thm_2Ewords_2EWORD__BITS__EXTRACT" "thm_2Ewords_2EWORD__EXTRACT__ZERO" "thm_2Ewords_2EWORD__EXTRACT__COMP__THM" "thm_2Ewords_2EWORD__ALL__BITS" "thm_2Ewords_2EWORD__EXTRACT__OVER__BITWISE" "thm_2Ewords_2EZERO__SHIFT" "thm_2Ewords_2ESHIFT__ZERO" "thm_2Ewords_2EWORD__EXTRACT__LSL" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__5" "thm_2Ewords_2Edimindex__10" "thm_2Ewords_2Edimindex__16"
+
+"thm_2Emachine__ieee_2Efp16__nchotomy"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emachine__ieee_2Efloat__to__fp16__fp16__to__float"
+
+"thm_2Emachine__ieee_2Efloat__fp16__nchotomy"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__to__float__n2w"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2EDIV__1" "thm_2Earithmetic_2EDIV__DIV__DIV__MULT" "thm_2Earithmetic_2EEXP__1" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__literal__11" "thm_2Ebit_2EDIVMOD__2EXP__def" "thm_2Ebit_2EZERO__LT__TWOEXP" "thm_2Ebit_2EBITS__THM" "thm_2Ebool_2ELET__DEF" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Ecombin_2EI__THM" "thm_2Emachine__ieee_2Efp16__to__float__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__eq" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2Enumeral__pre" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__evenodd" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral_2Enumeral__texp__help" "thm_2Enumeral_2ETWO__EXP__THM" "thm_2Enumeral_2Eonecount__def" "thm_2Enumeral_2Eexactlog__def" "thm_2Enumeral_2EDIV2__BIT1" "thm_2Enumeral_2Eenumeral__mult" "thm_2Epair_2EUNCURRY__DEF" "thm_2Ewords_2En2w__11" "thm_2Ewords_2Eword__extract__n2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__5" "thm_2Ewords_2Edimindex__10" "thm_2Ewords_2Edimindex__16"
+
+"thm_2Emachine__ieee_2Efp16__sqrt"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__sqrt__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__add"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__add__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__sub"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__sub__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__mul"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__mul__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__div"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__div__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__compare"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__compare__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__equal"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__equal__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__lessThan"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__lessThan__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__lessEqual"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__lessEqual__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__greaterThan"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__greaterThan__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__greaterEqual"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__greaterEqual__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__to__real"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__to__real__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__to__value"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__to__value__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__to__int"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__to__int__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__abs"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__abs__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__negate"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__negate__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isNan"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isNan__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isSignallingNan"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isSignallingNan__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isIntegral"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isIntegral__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isZero"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isZero__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isNormal"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isNormal__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isSubnormal"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isSubnormal__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isFinite"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isFinite__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__isInfinite"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__isInfinite__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__roundToIntegral"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__roundToIntegral__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__sqrt__with__flags"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp16__sqrt__with__flags__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__add__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__add__with__flags__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__sub__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__sub__with__flags__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__mul__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__mul__with__flags__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__div__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__div__with__flags__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__mul__add"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__mul__add__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__mul__sub"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__mul__sub__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__mul__add__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__mul__add__with__flags__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp16__mul__sub__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp16__mul__sub__with__flags__def" "thm_2Emachine__ieee_2Efp16__to__float__float__to__fp16"
+
+"thm_2Emachine__ieee_2Efp32__to__float__def"
+axiom
+
+"thm_2Emachine__ieee_2Efloat__to__fp32__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__real__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__value__def"
+axiom
+
+"thm_2Emachine__ieee_2Ereal__to__fp32__def"
+axiom
+
+"thm_2Emachine__ieee_2Ereal__to__fp32__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Eint__to__fp32__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__roundToIntegral__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__int__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__sqrt__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__sqrt__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__negate__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__abs__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isNan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isSignallingNan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isIntegral__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isNormal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isSubnormal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isFinite__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__isInfinite__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__posInf__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__negInf__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__posZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__negZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__posMin__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__negMin__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__top__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__bottom__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__add__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__sub__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__mul__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__div__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__add__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__sub__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__mul__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__div__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__compare__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__equal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__lessThan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__lessEqual__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__greaterThan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__greaterEqual__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__mul__add__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__mul__sub__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__mul__add__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__mul__sub__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__float__11"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ENOT__LEQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUC__ELIM__NUMERALS" "thm_2Earithmetic_2EMIN__LE" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EDISJ__IMP__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2EK__THM" "thm_2Efcp_2ECART__EQ" "thm_2Efcp_2EFCP__BETA" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp32__to__float__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Eprim__rec_2ELESS__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__bits__def" "thm_2Ewords_2Eword__extract__def" "thm_2Ewords_2Ew2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__8" "thm_2Ewords_2Edimindex__32"
+
+"thm_2Emachine__ieee_2Efloat__to__fp32__11"
+conjecture
+intact
+"thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS" "thm_2Earithmetic_2ESUC__ELIM__NUMERALS" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EDISJ__IMP__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2ECART__EQ" "thm_2Efcp_2EFCP__BETA" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efloat__to__fp32__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ELESS__REFL" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Eprim__rec_2ELESS__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__or__def" "thm_2Ewords_2Eword__lsl__def" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EDIMINDEX__GT__0" "thm_2Ewords_2Ew2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__8" "thm_2Ewords_2Edimindex__32"
+
+"thm_2Emachine__ieee_2Efloat__to__fp32__fp32__to__float"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ENOT__LEQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS__EQ" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ecombin_2EK__THM" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp32__to__float__def" "thm_2Emachine__ieee_2Efloat__to__fp32__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EWORD__OR__COMM" "thm_2Ewords_2EWORD__w2w__EXTRACT" "thm_2Ewords_2EWORD__BITS__EXTRACT" "thm_2Ewords_2EWORD__EXTRACT__COMP__THM" "thm_2Ewords_2EWORD__ALL__BITS" "thm_2Ewords_2EEXTRACT__JOIN" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__8" "thm_2Ewords_2Edimindex__32"
+
+"thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__CLAUSES" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__MONO__ADD__EQ" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS__EQ" "thm_2Earithmetic_2ESUB__RIGHT__LESS" "thm_2Earithmetic_2EMIN__LT" "thm_2Earithmetic_2EMIN__0" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EEQ__EXPAND" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Ecombin_2EK__THM" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp32__to__float__def" "thm_2Emachine__ieee_2Efloat__to__fp32__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ELESS__REFL" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EWORD__NEG__1" "thm_2Ewords_2EWORD__OR__CLAUSES" "thm_2Ewords_2EWORD__OR__ASSOC" "thm_2Ewords_2EWORD__OR__COMM" "thm_2Ewords_2EWORD__w2w__EXTRACT" "thm_2Ewords_2EWORD__BITS__EXTRACT" "thm_2Ewords_2EWORD__EXTRACT__ZERO" "thm_2Ewords_2EWORD__EXTRACT__COMP__THM" "thm_2Ewords_2EWORD__ALL__BITS" "thm_2Ewords_2EWORD__EXTRACT__OVER__BITWISE" "thm_2Ewords_2EZERO__SHIFT" "thm_2Ewords_2ESHIFT__ZERO" "thm_2Ewords_2EWORD__EXTRACT__LSL" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__8" "thm_2Ewords_2Edimindex__32"
+
+"thm_2Emachine__ieee_2Efp32__nchotomy"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emachine__ieee_2Efloat__to__fp32__fp32__to__float"
+
+"thm_2Emachine__ieee_2Efloat__fp32__nchotomy"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__to__float__n2w"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2EDIV__1" "thm_2Earithmetic_2EDIV__DIV__DIV__MULT" "thm_2Earithmetic_2EEXP__1" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__literal__11" "thm_2Ebit_2EDIVMOD__2EXP__def" "thm_2Ebit_2EZERO__LT__TWOEXP" "thm_2Ebit_2EBITS__THM" "thm_2Ebool_2ELET__DEF" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp32__to__float__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__eq" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2Enumeral__pre" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__evenodd" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral_2Enumeral__texp__help" "thm_2Enumeral_2ETWO__EXP__THM" "thm_2Enumeral_2Eonecount__def" "thm_2Enumeral_2Eexactlog__def" "thm_2Enumeral_2EDIV2__BIT1" "thm_2Enumeral_2Eenumeral__mult" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Epair_2EUNCURRY__DEF" "thm_2Ewords_2En2w__11" "thm_2Ewords_2Eword__extract__n2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__8" "thm_2Ewords_2Edimindex__32"
+
+"thm_2Emachine__ieee_2Efp32__sqrt"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__sqrt__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__add"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__add__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__sub"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__sub__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__mul"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__mul__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__div"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__div__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__compare"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__compare__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__equal"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__equal__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__lessThan"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__lessThan__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__lessEqual"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__lessEqual__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__greaterThan"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__greaterThan__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__greaterEqual"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__greaterEqual__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__to__real"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__to__real__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__to__value"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__to__value__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__to__int"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__to__int__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__abs"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__abs__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__negate"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__negate__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isNan"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isNan__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isSignallingNan"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isSignallingNan__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isIntegral"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isIntegral__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isZero"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isZero__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isNormal"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isNormal__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isSubnormal"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isSubnormal__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isFinite"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isFinite__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__isInfinite"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__isInfinite__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__roundToIntegral"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__roundToIntegral__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__sqrt__with__flags"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp32__sqrt__with__flags__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__add__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__add__with__flags__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__sub__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__sub__with__flags__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__mul__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__mul__with__flags__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__div__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__div__with__flags__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__mul__add"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__mul__add__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__mul__sub"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__mul__sub__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__mul__add__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__mul__add__with__flags__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp32__mul__sub__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp32__mul__sub__with__flags__def" "thm_2Emachine__ieee_2Efp32__to__float__float__to__fp32"
+
+"thm_2Emachine__ieee_2Efp64__to__float__def"
+axiom
+
+"thm_2Emachine__ieee_2Efloat__to__fp64__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__real__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__value__def"
+axiom
+
+"thm_2Emachine__ieee_2Ereal__to__fp64__def"
+axiom
+
+"thm_2Emachine__ieee_2Ereal__to__fp64__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Eint__to__fp64__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__roundToIntegral__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__int__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__sqrt__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__sqrt__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__negate__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__abs__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isNan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isSignallingNan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isIntegral__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isNormal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isSubnormal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isFinite__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__isInfinite__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__posInf__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__negInf__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__posZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__negZero__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__posMin__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__negMin__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__top__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__bottom__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__add__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__sub__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__mul__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__div__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__add__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__sub__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__mul__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__div__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__compare__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__equal__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__lessThan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__lessEqual__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__greaterThan__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__greaterEqual__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__mul__add__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__mul__sub__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__mul__add__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__mul__sub__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__float__11"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ENOT__LEQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUC__ELIM__NUMERALS" "thm_2Earithmetic_2EMIN__LE" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EDISJ__IMP__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2EK__THM" "thm_2Efcp_2ECART__EQ" "thm_2Efcp_2EFCP__BETA" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp64__to__float__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Eprim__rec_2ELESS__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__bits__def" "thm_2Ewords_2Eword__extract__def" "thm_2Ewords_2Ew2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__11" "thm_2Ewords_2Edimindex__64"
+
+"thm_2Emachine__ieee_2Efloat__to__fp64__11"
+conjecture
+intact
+"thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS" "thm_2Earithmetic_2ESUC__ELIM__NUMERALS" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EDISJ__IMP__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2ECART__EQ" "thm_2Efcp_2EFCP__BETA" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efloat__to__fp64__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ELESS__REFL" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Eprim__rec_2ELESS__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__or__def" "thm_2Ewords_2Eword__lsl__def" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EDIMINDEX__GT__0" "thm_2Ewords_2Ew2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__11" "thm_2Ewords_2Edimindex__64"
+
+"thm_2Emachine__ieee_2Efloat__to__fp64__fp64__to__float"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ENOT__LEQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS__EQ" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ecombin_2EK__THM" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp64__to__float__def" "thm_2Emachine__ieee_2Efloat__to__fp64__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EWORD__OR__COMM" "thm_2Ewords_2EWORD__w2w__EXTRACT" "thm_2Ewords_2EWORD__BITS__EXTRACT" "thm_2Ewords_2EWORD__EXTRACT__COMP__THM" "thm_2Ewords_2EWORD__ALL__BITS" "thm_2Ewords_2EEXTRACT__JOIN" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__11" "thm_2Ewords_2Edimindex__64"
+
+"thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2EADD__CLAUSES" "thm_2Earithmetic_2EADD__SYM" "thm_2Earithmetic_2ELESS__EQ" "thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2ENOT__LESS" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__MONO__ADD__EQ" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2ELESS__EQ__REFL" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2ESUB__EQUAL__0" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Earithmetic_2ESUB__RIGHT__LESS__EQ" "thm_2Earithmetic_2ESUB__RIGHT__LESS" "thm_2Earithmetic_2EMIN__LT" "thm_2Earithmetic_2EMIN__0" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__accfupds" "thm_2Ebinary__ieee_2Efloat__component__equality" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EEQ__EXPAND" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Ecombin_2EK__THM" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__sum" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp64__to__float__def" "thm_2Emachine__ieee_2Efloat__to__fp64__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__iisuc" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Eprim__rec_2ELESS__REFL" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg" "thm_2Ewords_2Eword__join__def" "thm_2Ewords_2Eword__concat__def" "thm_2Ewords_2EWORD__NEG__1" "thm_2Ewords_2EWORD__OR__CLAUSES" "thm_2Ewords_2EWORD__OR__ASSOC" "thm_2Ewords_2EWORD__OR__COMM" "thm_2Ewords_2EWORD__w2w__EXTRACT" "thm_2Ewords_2EWORD__BITS__EXTRACT" "thm_2Ewords_2EWORD__EXTRACT__ZERO" "thm_2Ewords_2EWORD__EXTRACT__COMP__THM" "thm_2Ewords_2EWORD__ALL__BITS" "thm_2Ewords_2EWORD__EXTRACT__OVER__BITWISE" "thm_2Ewords_2EZERO__SHIFT" "thm_2Ewords_2ESHIFT__ZERO" "thm_2Ewords_2EWORD__EXTRACT__LSL" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__11" "thm_2Ewords_2Edimindex__64"
+
+"thm_2Emachine__ieee_2Efp64__nchotomy"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emachine__ieee_2Efloat__to__fp64__fp64__to__float"
+
+"thm_2Emachine__ieee_2Efloat__fp64__nchotomy"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__to__float__n2w"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__0" "thm_2Earithmetic_2ESUB__0" "thm_2Earithmetic_2ETIMES2" "thm_2Earithmetic_2EDIV__1" "thm_2Earithmetic_2EDIV__DIV__DIV__MULT" "thm_2Earithmetic_2EEXP__1" "thm_2Earithmetic_2EMIN__IDEM" "thm_2Ebinary__ieee_2Efloat__literal__11" "thm_2Ebit_2EDIVMOD__2EXP__def" "thm_2Ebit_2EZERO__LT__TWOEXP" "thm_2Ebit_2EBITS__THM" "thm_2Ebool_2ELET__DEF" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2ELET__THM" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Ecombin_2EI__THM" "thm_2Efcp_2Eindex__bit0" "thm_2Efcp_2Efinite__bit0" "thm_2Efcp_2Eindex__bit1" "thm_2Efcp_2Efinite__bit1" "thm_2Efcp_2Eindex__one" "thm_2Efcp_2Efinite__one" "thm_2Emachine__ieee_2Efp64__to__float__def" "thm_2Enumeral_2Enumeral__suc" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__add" "thm_2Enumeral_2Enumeral__eq" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2Enumeral__pre" "thm_2Enumeral_2EiDUB" "thm_2Enumeral_2EiSUB__THM" "thm_2Enumeral_2Enumeral__sub" "thm_2Enumeral_2EiDUB__removal" "thm_2Enumeral_2Enumeral__evenodd" "thm_2Enumeral_2Enumeral__MIN" "thm_2Enumeral_2Enumeral__texp__help" "thm_2Enumeral_2ETWO__EXP__THM" "thm_2Enumeral_2Eonecount__def" "thm_2Enumeral_2Eexactlog__def" "thm_2Enumeral_2EDIV2__BIT1" "thm_2Enumeral_2Eenumeral__mult" "thm_2Enumeral__bit_2EiDUB__NUMERAL" "thm_2Epair_2EUNCURRY__DEF" "thm_2Ewords_2En2w__11" "thm_2Ewords_2Eword__extract__n2w" "thm_2Ewords_2Edimindex__1" "thm_2Ewords_2Edimindex__11" "thm_2Ewords_2Edimindex__64"
+
+"thm_2Emachine__ieee_2Efp64__sqrt"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__sqrt__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__add"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__add__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__sub"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__sub__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__mul"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__mul__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__div"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__div__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__compare"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__compare__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__equal"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__equal__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__lessThan"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__lessThan__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__lessEqual"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__lessEqual__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__greaterThan"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__greaterThan__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__greaterEqual"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__greaterEqual__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__to__real"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__to__real__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__to__value"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__to__value__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__to__int"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__to__int__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__abs"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__abs__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__negate"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__negate__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isNan"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isNan__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isSignallingNan"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isSignallingNan__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isIntegral"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isIntegral__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isZero"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isZero__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isNormal"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isNormal__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isSubnormal"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isSubnormal__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isFinite"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isFinite__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__isInfinite"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__isInfinite__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__roundToIntegral"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__roundToIntegral__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__sqrt__with__flags"
+conjecture
+intact
+"thm_2Ecombin_2Eo__THM" "thm_2Emachine__ieee_2Efp64__sqrt__with__flags__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__add__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__add__with__flags__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__sub__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__sub__with__flags__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__mul__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__mul__with__flags__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__div__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__div__with__flags__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__mul__add"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__mul__add__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__mul__sub"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__mul__sub__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__mul__add__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__mul__add__with__flags__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Efp64__mul__sub__with__flags"
+conjecture
+intact
+"thm_2Emachine__ieee_2Efp64__mul__sub__with__flags__def" "thm_2Emachine__ieee_2Efp64__to__float__float__to__fp64"
+
+"thm_2Emachine__ieee_2Econvert__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__fp32__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__fp64__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__fp64__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__fp32__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__fp16__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__fp16__with__flags__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__fp32__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp16__to__fp64__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__fp64__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__fp32__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp64__to__fp16__def"
+axiom
+
+"thm_2Emachine__ieee_2Efp32__to__fp16__def"
+axiom
+

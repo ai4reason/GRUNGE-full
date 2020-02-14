@@ -1,0 +1,84 @@
+; c.intExtension.SGN
+; :int -> int
+(constant_definition "c_2EintExtension_2ESGN" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint"))
+; intExtension.SGN_def
+; ∀x. SGN x = if x = 0 then 0 else if x < 0 then -1 else 1
+(axiom "thm_2EintExtension_2ESGN__def" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") (("c_2Ebool_2ECOND" "ty_2Einteger_2Eint") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") (("c_2Ebool_2ECOND" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__lt" "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
+; intExtension.ABS_EQ_MUL_SGN
+; ABS x = x * SGN x
+(conjecture "thm_2EintExtension_2EABS__EQ__MUL__SGN" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2EABS" "V0x") ("c_2Einteger_2Eint__mul" "V0x" ("c_2EintExtension_2ESGN" "V0x"))))))
+; intExtension.MUL_ABS_SGN
+; ABS x * SGN x = x
+(conjecture "thm_2EintExtension_2EMUL__ABS__SGN" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Einteger_2EABS" "V0x") ("c_2EintExtension_2ESGN" "V0x")) "V0x"))))
+; intExtension.INT_MUL_POS_SIGN
+; ∀a b. 0 < a ⇒ 0 < b ⇒ 0 < a * b
+(conjecture "thm_2EintExtension_2EINT__MUL__POS__SIGN" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0a") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Einteger_2Eint__mul" "V0a" "V1b")))))))))
+; intExtension.INT_NE_IMP_LTGT
+; ∀x. x ≠ 0 ⇔ 0 < x ∨ x < 0
+(conjecture "thm_2EintExtension_2EINT__NE__IMP__LTGT" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_5C_2F" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0x") ("c_2Einteger_2Eint__lt" "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))
+; intExtension.INT_NOTGT_IMP_EQLT
+; ∀n. ¬(n < 0) ⇔ (0 = n) ∨ 0 < n
+(conjecture "thm_2EintExtension_2EINT__NOTGT__IMP__EQLT" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0n" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" ("c_2Einteger_2Eint__lt" "V0n" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0n") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0n"))))))
+; intExtension.INT_NO_ZERODIV
+; ∀x y. (x = 0) ∨ (y = 0) ⇔ (x * y = 0)
+(conjecture "thm_2EintExtension_2EINT__NO__ZERODIV" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1y" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V1y" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" "V0x" "V1y") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))))
+; intExtension.INT_NOTPOS0_NEG
+; ∀a. ¬(0 < a) ⇒ a ≠ 0 ⇒ 0 < -a
+(conjecture "thm_2EintExtension_2EINT__NOTPOS0__NEG" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0a")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Einteger_2Eint__neg" "V0a")))))))
+; intExtension.INT_NOT0_MUL
+; ∀a b. a ≠ 0 ⇒ b ≠ 0 ⇒ a * b ≠ 0
+(conjecture "thm_2EintExtension_2EINT__NOT0__MUL" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V1b" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" "V0a" "V1b") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))))))
+; intExtension.INT_GT0_IMP_NOT0
+; ∀a. 0 < a ⇒ a ≠ 0
+(conjecture "thm_2EintExtension_2EINT__GT0__IMP__NOT0" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0a") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))
+; intExtension.INT_NOTLTEQ_GT
+; ∀a. ¬(a < 0) ⇒ a ≠ 0 ⇒ 0 < a
+(conjecture "thm_2EintExtension_2EINT__NOTLTEQ__GT" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Einteger_2Eint__lt" "V0a" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0a"))))))
+; intExtension.INT_ABS_NOT0POS
+; ∀x. x ≠ 0 ⇒ 0 < ABS x
+(conjecture "thm_2EintExtension_2EINT__ABS__NOT0POS" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Einteger_2EABS" "V0x"))))))
+; intExtension.INT_SGN_NOTPOSNEG
+; ∀x. SGN x ≠ -1 ⇒ SGN x ≠ 1 ⇒ (SGN x = 0)
+(conjecture "thm_2EintExtension_2EINT__SGN__NOTPOSNEG" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))
+; intExtension.LESS_IMP_NOT_0
+; ∀n. 0 < n ⇒ n ≠ 0
+(conjecture "thm_2EintExtension_2ELESS__IMP__NOT__0" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0n" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0n") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0n" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))
+; intExtension.INT_EQ_RMUL_EXP
+; ∀a b n. 0 < n ⇒ ((a = b) ⇔ (a * n = b * n))
+(conjecture "thm_2EintExtension_2EINT__EQ__RMUL__EXP" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2n" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V2n") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a" "V1b") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" "V0a" "V2n") ("c_2Einteger_2Eint__mul" "V1b" "V2n")))))))))))
+; intExtension.INT_LT_RMUL_EXP
+; ∀a b n. 0 < n ⇒ (a < b ⇔ a * n < b * n)
+(conjecture "thm_2EintExtension_2EINT__LT__RMUL__EXP" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2n" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V2n") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__lt" "V0a" "V1b") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__mul" "V0a" "V2n") ("c_2Einteger_2Eint__mul" "V1b" "V2n")))))))))))
+; intExtension.INT_GT_RMUL_EXP
+; ∀a b n. 0 < n ⇒ (a > b ⇔ a * n > b * n)
+(conjecture "thm_2EintExtension_2EINT__GT__RMUL__EXP" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2n" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V2n") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__gt" "V0a" "V1b") ("c_2Einteger_2Eint__gt" ("c_2Einteger_2Eint__mul" "V0a" "V2n") ("c_2Einteger_2Eint__mul" "V1b" "V2n")))))))))))
+; intExtension.INT_ABS_CALCULATE_NEG
+; ∀a. a < 0 ⇒ (ABS a = -a)
+(conjecture "thm_2EintExtension_2EINT__ABS__CALCULATE__NEG" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" "V0a" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2EABS" "V0a") ("c_2Einteger_2Eint__neg" "V0a"))))))
+; intExtension.INT_ABS_CALCULATE_0
+; ABS 0 = 0
+(conjecture "thm_2EintExtension_2EINT__ABS__CALCULATE__0" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2EABS" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))
+; intExtension.INT_ABS_CALCULATE_POS
+; ∀a. 0 < a ⇒ (ABS a = a)
+(conjecture "thm_2EintExtension_2EINT__ABS__CALCULATE__POS" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V0a") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2EABS" "V0a") "V0a")))))
+; intExtension.INT_NOT0_SGNNOT0
+; ∀x. x ≠ 0 ⇒ SGN x ≠ 0
+(conjecture "thm_2EintExtension_2EINT__NOT0__SGNNOT0" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))
+; intExtension.INT_SGN_CLAUSES
+; ∀x. ((SGN x = -1) ⇔ x < 0) ∧ ((SGN x = 0) ⇔ (x = 0)) ∧ ((SGN x = 1) ⇔ x > 0)
+(conjecture "thm_2EintExtension_2EINT__SGN__CLAUSES" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Einteger_2Eint__lt" "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Einteger_2Eint__gt" "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))))
+; intExtension.INT_SGN_MUL
+; ∀x1 x2 y1 y2. (SGN x1 = y1) ⇒ (SGN x2 = y2) ⇒ (SGN (x1 * x2) = y1 * y2)
+(conjecture "thm_2EintExtension_2EINT__SGN__MUL" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1x2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2y1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3y2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0x1") "V2y1") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V1x2") "V3y2") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" ("c_2Einteger_2Eint__mul" "V0x1" "V1x2")) ("c_2Einteger_2Eint__mul" "V2y1" "V3y2")))))))))))))
+; intExtension.INT_SGN_MUL2
+; ∀x y. SGN (x * y) = SGN x * SGN y
+(conjecture "thm_2EintExtension_2EINT__SGN__MUL2" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1y" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" ("c_2Einteger_2Eint__mul" "V0x" "V1y")) ("c_2Einteger_2Eint__mul" ("c_2EintExtension_2ESGN" "V0x") ("c_2EintExtension_2ESGN" "V1y"))))))))
+; intExtension.INT_SGN_TOTAL
+; ∀a. (SGN a = -1) ∨ (SGN a = 0) ∨ (SGN a = 1)
+(conjecture "thm_2EintExtension_2EINT__SGN__TOTAL" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0a") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0a") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0a") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
+; intExtension.INT_SGN_CASES
+; ∀a P. ((SGN a = -1) ⇒ P) ∧ ((SGN a = 0) ⇒ P) ∧ ((SGN a = 1) ⇒ P) ⇒ P
+(conjecture "thm_2EintExtension_2EINT__SGN__CASES" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1P" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0a") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V1P") ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0a") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) "V1P") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2EintExtension_2ESGN" "V0a") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V1P"))) "V1P"))))))
+; intExtension.INT_LT_ADD_NEG
+; ∀x y. x < 0 ∧ y < 0 ⇒ x + y < 0
+(conjecture "thm_2EintExtension_2EINT__LT__ADD__NEG" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1y" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Einteger_2Eint__lt" "V0x" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__lt" "V1y" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__add" "V0x" "V1y") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))))

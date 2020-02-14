@@ -1,0 +1,196 @@
+"thm_2EringNorm_2Er__interp__sp__def"
+axiom
+
+"thm_2EringNorm_2Er__spolynom__simplify__def"
+axiom
+
+"thm_2EringNorm_2Er__spolynom__normalize__def"
+axiom
+
+"thm_2EringNorm_2Er__interp__cs__def"
+axiom
+
+"thm_2EringNorm_2Er__ics__aux__def"
+axiom
+
+"thm_2EringNorm_2Er__interp__m__def"
+axiom
+
+"thm_2EringNorm_2Er__interp__vl__def"
+axiom
+
+"thm_2EringNorm_2Er__ivl__aux__def"
+axiom
+
+"thm_2EringNorm_2Er__canonical__sum__simplify__def"
+axiom
+
+"thm_2EringNorm_2Er__canonical__sum__prod__def"
+axiom
+
+"thm_2EringNorm_2Er__canonical__sum__scalar3__def"
+axiom
+
+"thm_2EringNorm_2Er__canonical__sum__scalar2__def"
+axiom
+
+"thm_2EringNorm_2Er__canonical__sum__scalar__def"
+axiom
+
+"thm_2EringNorm_2Er__varlist__insert__def"
+axiom
+
+"thm_2EringNorm_2Er__monom__insert__def"
+axiom
+
+"thm_2EringNorm_2Er__canonical__sum__merge__def"
+axiom
+
+"thm_2EringNorm_2Einterp__sp__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Einterp__sp__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__interp__sp__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Ecanonical__sum__merge__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Ecanonical__sum__merge__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__canonical__sum__merge__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Emonom__insert__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Emonom__insert__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__monom__insert__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Evarlist__insert__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Evarlist__insert__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__varlist__insert__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Ecanonical__sum__scalar__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Ecanonical__sum__scalar__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__canonical__sum__scalar__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Ecanonical__sum__scalar2__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Ecanonical__sum__scalar2__def" "thm_2EringNorm_2Er__canonical__sum__scalar2__def" "thm_2EringNorm_2Er__varlist__insert__def" "thm_2EringNorm_2Er__monom__insert__def"
+
+"thm_2EringNorm_2Ecanonical__sum__scalar3__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Ecanonical__sum__scalar3__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__canonical__sum__scalar3__def" "thm_2EringNorm_2Er__monom__insert__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Ecanonical__sum__prod__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Ecanonical__sum__prod__def" "thm_2EringNorm_2Er__canonical__sum__prod__def" "thm_2EringNorm_2Er__canonical__sum__scalar3__def" "thm_2EringNorm_2Er__canonical__sum__scalar2__def" "thm_2EringNorm_2Er__canonical__sum__merge__def"
+
+"thm_2EringNorm_2Ecanonical__sum__simplify__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Ecanonical__sum__simplify__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__canonical__sum__simplify__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Eivl__aux__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Eivl__aux__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__ivl__aux__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Einterp__vl__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Einterp__vl__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__interp__vl__def" "thm_2EringNorm_2Er__ivl__aux__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Einterp__m__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Einterp__m__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__interp__m__def" "thm_2EringNorm_2Er__ivl__aux__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Eics__aux__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Eics__aux__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__ics__aux__def" "thm_2EringNorm_2Er__interp__m__def" "thm_2EringNorm_2Er__interp__vl__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Einterp__cs__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Einterp__cs__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2EringNorm_2Er__interp__cs__def" "thm_2EringNorm_2Er__ics__aux__def" "thm_2EringNorm_2Er__interp__m__def" "thm_2EringNorm_2Er__interp__vl__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Espolynom__normalize__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Espolynom__normalize__def" "thm_2EringNorm_2Er__spolynom__normalize__def" "thm_2EringNorm_2Er__canonical__sum__prod__def" "thm_2EringNorm_2Er__canonical__sum__merge__def"
+
+"thm_2EringNorm_2Espolynom__simplify__def"
+conjecture
+intact
+"thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ecanonical_2Espolynom__simplify__def" "thm_2EringNorm_2Er__spolynom__simplify__def" "thm_2EringNorm_2Er__spolynom__normalize__def" "thm_2EringNorm_2Er__canonical__sum__simplify__def"
+
+"thm_2EringNorm_2Epolynom__TY__DEF"
+axiom
+
+"thm_2EringNorm_2Epolynom__case__def"
+axiom
+
+"thm_2EringNorm_2Epolynom__size__def"
+axiom
+
+"thm_2EringNorm_2Edatatype__polynom"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EDATATYPE__TAG__THM"
+
+"thm_2EringNorm_2Epolynom__11"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EBETA__THM" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2EringNorm_2Epolynom__distinct"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EBETA__THM" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2EringNorm_2Epolynom__nchotomy"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ebool_2EJRH__INDUCT__UTIL"
+
+"thm_2EringNorm_2Epolynom__Axiom"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EBETA__THM" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2EringNorm_2Epolynom__induction"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS"
+
+"thm_2EringNorm_2Epolynom__case__cong"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2EringNorm_2Epolynom__case__def"
+
+"thm_2EringNorm_2Epolynom__case__eq"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__REFL" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2EringNorm_2Epolynom__case__def"
+
+"thm_2EringNorm_2Epolynom__normalize__def"
+axiom
+
+"thm_2EringNorm_2Epolynom__simplify__def"
+axiom
+
+"thm_2EringNorm_2Einterp__p__def"
+axiom
+
+"thm_2EringNorm_2Epolynom__normalize__ok"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ecanonical_2Eivl__aux__def" "thm_2Ecanonical_2Einterp__vl__def" "thm_2Ecanonical_2Einterp__m__def" "thm_2Ecanonical_2Eics__aux__def" "thm_2Ecanonical_2Einterp__cs__def" "thm_2Ecanonical_2Ecanonical__sum__merge__ok" "thm_2Ecanonical_2Ecanonical__sum__scalar3__ok" "thm_2Ecanonical_2Ecanonical__sum__prod__ok" "thm_2Ering_2Emult__one__left" "thm_2Ering_2Esemi__ring__of__def" "thm_2Ering_2Ering__is__semi__ring" "thm_2Ering_2Eneg__mult" "thm_2EringNorm_2Er__interp__cs__def" "thm_2EringNorm_2Er__ics__aux__def" "thm_2EringNorm_2Er__interp__m__def" "thm_2EringNorm_2Er__interp__vl__def" "thm_2EringNorm_2Er__ivl__aux__def" "thm_2EringNorm_2Er__canonical__sum__prod__def" "thm_2EringNorm_2Er__canonical__sum__scalar3__def" "thm_2EringNorm_2Er__canonical__sum__merge__def" "thm_2EringNorm_2Epolynom__normalize__def" "thm_2EringNorm_2Einterp__p__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2EringNorm_2Epolynom__simplify__ok"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EMONO__AND" "thm_2Ebool_2EMONO__OR" "thm_2Ebool_2EMONO__EXISTS" "thm_2Ecanonical_2Eivl__aux__def" "thm_2Ecanonical_2Einterp__vl__def" "thm_2Ecanonical_2Einterp__m__def" "thm_2Ecanonical_2Eics__aux__def" "thm_2Ecanonical_2Einterp__cs__def" "thm_2Ecanonical_2Ecanonical__sum__merge__ok" "thm_2Ecanonical_2Ecanonical__sum__scalar3__ok" "thm_2Ecanonical_2Ecanonical__sum__prod__ok" "thm_2Ecanonical_2Ecanonical__sum__simplify__ok" "thm_2Ering_2Emult__one__left" "thm_2Ering_2Esemi__ring__of__def" "thm_2Ering_2Ering__is__semi__ring" "thm_2Ering_2Eneg__mult" "thm_2EringNorm_2Er__interp__cs__def" "thm_2EringNorm_2Er__ics__aux__def" "thm_2EringNorm_2Er__interp__m__def" "thm_2EringNorm_2Er__interp__vl__def" "thm_2EringNorm_2Er__ivl__aux__def" "thm_2EringNorm_2Er__canonical__sum__simplify__def" "thm_2EringNorm_2Er__canonical__sum__prod__def" "thm_2EringNorm_2Er__canonical__sum__scalar3__def" "thm_2EringNorm_2Er__canonical__sum__merge__def" "thm_2EringNorm_2Epolynom__normalize__def" "thm_2EringNorm_2Epolynom__simplify__def" "thm_2EringNorm_2Einterp__p__def" "thm_2Esemi__ring_2Esemi__ring__accessors"
+

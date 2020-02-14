@@ -1,0 +1,39 @@
+"thm_2Etransfer_2Eright__unique__def"
+axiom
+
+"thm_2Etransfer_2Eleft__unique__def"
+axiom
+
+"thm_2Etransfer_2Ebi__unique__def"
+axiom
+
+"thm_2Etransfer_2Etotal__def"
+axiom
+
+"thm_2Etransfer_2Esurj__def"
+axiom
+
+"thm_2Etransfer_2Ebitotal__def"
+axiom
+
+"thm_2Etransfer_2EFUN__REL__def"
+axiom
+
+"thm_2Etransfer_2EFUN__REL__COMB"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Etransfer_2EFUN__REL__def"
+
+"thm_2Etransfer_2EFUN__REL__ABS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Etransfer_2EFUN__REL__def"
+
+"thm_2Etransfer_2EFUN__REL__EQ2"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Etransfer_2EFUN__REL__def"
+
+"thm_2Etransfer_2EPAIR__REL__def"
+axiom
+

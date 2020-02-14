@@ -1,0 +1,72 @@
+thf(del_tp,type,(
+    del: $tType )).
+
+thf(bool,type,(
+    bool: del )).
+
+thf(ind,type,(
+    ind: del )).
+
+thf(arr,type,(
+    arr: del > del > del )).
+
+thf(mem,type,(
+    mem: $i > del > $o )).
+
+thf(ap,type,(
+    ap: $i > $i > $i )).
+
+thf(lam,type,(
+    lam: del > ( $i > $i ) > $i )).
+
+thf(p,type,(
+    p: $i > $o )).
+
+thf(stp_inj_o,type,(
+    inj__o: $o > $i )).
+
+thf(stp_inj_surj_o,axiom,(
+    ! [X: $o] :
+      ( ( p @ ( inj__o @ X ) )
+      = X ) )).
+
+thf(stp_inj_mem_o,axiom,(
+    ! [X: $o] :
+      ( mem @ ( inj__o @ X ) @ bool ) )).
+
+thf(stp_iso_mem_o,axiom,(
+    ! [X: $i] :
+      ( ( mem @ X @ bool )
+     => ( X
+        = ( inj__o @ ( p @ X ) ) ) ) )).
+
+thf(ap_tp,axiom,(
+    ! [A: del,B: del,F: $i] :
+      ( ( mem @ F @ ( arr @ A @ B ) )
+     => ! [X: $i] :
+          ( ( mem @ X @ A )
+         => ( mem @ ( ap @ F @ X ) @ B ) ) ) )).
+
+thf(lam_tp,axiom,(
+    ! [A: del,B: del,F: $i > $i] :
+      ( ! [X: $i] :
+          ( ( mem @ X @ A )
+         => ( mem @ ( F @ X ) @ B ) )
+     => ( mem @ ( lam @ A @ F ) @ ( arr @ A @ B ) ) ) )).
+
+thf(funcext,axiom,(
+    ! [A: del,B: del,F: $i] :
+      ( ( mem @ F @ ( arr @ A @ B ) )
+     => ! [G: $i] :
+          ( ( mem @ G @ ( arr @ A @ B ) )
+         => ( ! [X: $i] :
+                ( ( mem @ X @ A )
+               => ( ( ap @ F @ X )
+                  = ( ap @ G @ X ) ) )
+           => ( F = G ) ) ) ) )).
+
+thf(beta,axiom,(
+    ! [A: del,F: $i > $i,X: $i] :
+      ( ( mem @ X @ A )
+     => ( ( ap @ ( lam @ A @ F ) @ X )
+        = ( F @ X ) ) ) )).

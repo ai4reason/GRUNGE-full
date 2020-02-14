@@ -1,0 +1,52 @@
+(type_definition "ty_2Enum_2Enum" 0)
+; c.num.0
+; :num
+(constant_definition "c_2Enum_2E0" "ty_2Enum_2Enum")
+; c.num.ABS_num
+; :ind -> num
+(constant_definition "c_2Enum_2EABS__num" ("ty_2Emin_2Efun" "ty_2Emin_2Eind" "ty_2Enum_2Enum"))
+; c.num.IS_NUM_REP
+; :ind -> bool
+(constant_definition "c_2Enum_2EIS__NUM__REP" ("ty_2Emin_2Efun" "ty_2Emin_2Eind" "ty_2Emin_2Ebool"))
+; c.num.REP_num
+; :num -> ind
+(constant_definition "c_2Enum_2EREP__num" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Eind"))
+; c.num.SUC
+; :num -> num
+(constant_definition "c_2Enum_2ESUC" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))
+; c.num.SUC_REP
+; :ind -> ind
+(constant_definition "c_2Enum_2ESUC__REP" ("ty_2Emin_2Efun" "ty_2Emin_2Eind" "ty_2Emin_2Eind"))
+; c.num.ZERO_REP
+; :ind
+(constant_definition "c_2Enum_2EZERO__REP" "ty_2Emin_2Eind")
+; num.SUC_REP_DEF
+; ONE_ONE SUC_REP ∧ ¬ONTO SUC_REP
+(axiom "thm_2Enum_2ESUC__REP__DEF" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EONE__ONE" "ty_2Emin_2Eind" "ty_2Emin_2Eind") "c_2Enum_2ESUC__REP") ("c_2Ebool_2E_7E" (("c_2Ebool_2EONTO" "ty_2Emin_2Eind" "ty_2Emin_2Eind") "c_2Enum_2ESUC__REP"))))
+; num.ZERO_REP_DEF
+; ∀y. ZERO_REP ≠ SUC_REP y
+(axiom "thm_2Enum_2EZERO__REP__DEF" (("c_2Ebool_2E_21" "ty_2Emin_2Eind") (lambda "V0y" "ty_2Emin_2Eind" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Emin_2Eind") "c_2Enum_2EZERO__REP" ("c_2Enum_2ESUC__REP" "V0y"))))))
+; num.IS_NUM_REP
+; ∀m. IS_NUM_REP m ⇔ ∀P. P ZERO_REP ∧ (∀n. P n ⇒ P (SUC_REP n)) ⇒ P m
+(axiom "thm_2Enum_2EIS__NUM__REP" (("c_2Ebool_2E_21" "ty_2Emin_2Eind") (lambda "V0m" "ty_2Emin_2Eind" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Enum_2EIS__NUM__REP" "V0m") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Eind" "ty_2Emin_2Ebool")) (lambda "V1P" ("ty_2Emin_2Efun" "ty_2Emin_2Eind" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V1P" "c_2Enum_2EZERO__REP") (("c_2Ebool_2E_21" "ty_2Emin_2Eind") (lambda "V2n" "ty_2Emin_2Eind" ("c_2Emin_2E_3D_3D_3E" ("V1P" "V2n") ("V1P" ("c_2Enum_2ESUC__REP" "V2n")))))) ("V1P" "V0m"))))))))
+; num.num_TY_DEF
+; ∃rep. TYPE_DEFINITION IS_NUM_REP rep
+(axiom "thm_2Enum_2Enum__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Eind")) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Eind") (("c_2Ebool_2ETYPE__DEFINITION" "ty_2Emin_2Eind" "ty_2Enum_2Enum") "c_2Enum_2EIS__NUM__REP" "V0rep"))))
+; num.num_ISO_DEF
+; (∀a. ABS_num (REP_num a) = a) ∧ ∀r. IS_NUM_REP r ⇔ (REP_num (ABS_num r) = r)
+(axiom "thm_2Enum_2Enum__ISO__DEF" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enum_2EABS__num" ("c_2Enum_2EREP__num" "V0a")) "V0a"))) (("c_2Ebool_2E_21" "ty_2Emin_2Eind") (lambda "V1r" "ty_2Emin_2Eind" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Enum_2EIS__NUM__REP" "V1r") (("c_2Emin_2E_3D" "ty_2Emin_2Eind") ("c_2Enum_2EREP__num" ("c_2Enum_2EABS__num" "V1r")) "V1r"))))))
+; num.ZERO_DEF
+; 0 = ABS_num ZERO_REP
+(axiom "thm_2Enum_2EZERO__DEF" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "c_2Enum_2E0" ("c_2Enum_2EABS__num" "c_2Enum_2EZERO__REP")))
+; num.SUC_DEF
+; ∀m. SUC m = ABS_num (SUC_REP (REP_num m))
+(axiom "thm_2Enum_2ESUC__DEF" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enum_2ESUC" "V0m") ("c_2Enum_2EABS__num" ("c_2Enum_2ESUC__REP" ("c_2Enum_2EREP__num" "V0m")))))))
+; num.NOT_SUC
+; ∀n. SUC n ≠ 0
+(conjecture "thm_2Enum_2ENOT__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enum_2ESUC" "V0n") "c_2Enum_2E0")))))
+; num.INV_SUC
+; ∀m n. (SUC m = SUC n) ⇒ (m = n)
+(conjecture "thm_2Enum_2EINV__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enum_2ESUC" "V0m") ("c_2Enum_2ESUC" "V1n")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n")))))))
+; num.INDUCTION
+; ∀P. P 0 ∧ (∀n. P n ⇒ P (SUC n)) ⇒ ∀n. P n
+(conjecture "thm_2Enum_2EINDUCTION" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Enum_2E0") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V1n") ("V0P" ("c_2Enum_2ESUC" "V1n")))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("V0P" "V2n")))))))

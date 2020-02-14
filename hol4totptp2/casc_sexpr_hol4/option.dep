@@ -1,0 +1,345 @@
+"thm_2Eoption_2Eoption__TY__DEF"
+axiom
+
+"thm_2Eoption_2Eoption__REP__ABS__DEF"
+axiom
+
+"thm_2Eoption_2ESOME__DEF"
+axiom
+
+"thm_2Eoption_2ENONE__DEF"
+axiom
+
+"thm_2Eoption_2Eoption__Axiom"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__REP__ABS__DEF" "thm_2Eoption_2ESOME__DEF" "thm_2Eoption_2ENONE__DEF" "thm_2Esum_2Esum__Axiom"
+
+"thm_2Eoption_2Eoption__induction"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eone_2Eone" "thm_2Eoption_2Eoption__REP__ABS__DEF" "thm_2Eoption_2ESOME__DEF" "thm_2Eoption_2ENONE__DEF" "thm_2Esum_2Esum__INDUCT"
+
+"thm_2Eoption_2Eoption__nchotomy"
+conjecture
+intact
+"thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eoption_2Eoption__induction"
+
+"thm_2Eoption_2Eoption__case__def"
+axiom
+
+"thm_2Eoption_2EFORALL__OPTION"
+conjecture
+intact
+"thm_2Ebool_2EEXISTS__DEF" "thm_2Ebool_2ESELECT__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ELEFT__FORALL__OR__THM" "thm_2Eoption_2Eoption__induction" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Esat_2Epth__ni1" "thm_2Esat_2Epth__ni2"
+
+"thm_2Eoption_2EEXISTS__OPTION"
+conjecture
+intact
+"thm_2Ebool_2EEXISTS__DEF" "thm_2Ebool_2ESELECT__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ERIGHT__AND__FORALL__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Esat_2Epth__ni1" "thm_2Esat_2Epth__ni2" "thm_2Esat_2Epth__no1" "thm_2Esat_2Epth__no2" "thm_2Esat_2Epth__nn"
+
+"thm_2Eoption_2ESOME__11"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__REP__ABS__DEF" "thm_2Eoption_2ESOME__DEF" "thm_2Esum_2EINR__INL__11"
+
+"thm_2Eoption_2ENOT__NONE__SOME"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Eoption_2Eoption__REP__ABS__DEF" "thm_2Eoption_2ESOME__DEF" "thm_2Eoption_2ENONE__DEF" "thm_2Esum_2EINR__neq__INL"
+
+"thm_2Eoption_2ENOT__SOME__NONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Eoption_2Eoption__REP__ABS__DEF" "thm_2Eoption_2ESOME__DEF" "thm_2Eoption_2ENONE__DEF" "thm_2Esum_2EINR__neq__INL"
+
+"thm_2Eoption_2EOPTION__MAP__DEF"
+axiom
+
+"thm_2Eoption_2EIS__SOME__DEF"
+axiom
+
+"thm_2Eoption_2EIS__NONE__DEF"
+axiom
+
+"thm_2Eoption_2ETHE__DEF"
+axiom
+
+"thm_2Eoption_2EOPTION__MAP2__DEF"
+axiom
+
+"thm_2Eoption_2EOPTION__JOIN__DEF"
+axiom
+
+"thm_2Eoption_2EOPTION__MAP2__THM"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EIS__SOME__DEF" "thm_2Eoption_2ETHE__DEF" "thm_2Eoption_2EOPTION__MAP2__DEF"
+
+"thm_2Eoption_2EIS__SOME__EXISTS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EEXISTS__REFL" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EIS__SOME__DEF"
+
+"thm_2Eoption_2EIS__NONE__EQ__NONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ENOT__SOME__NONE" "thm_2Eoption_2EIS__NONE__DEF"
+
+"thm_2Eoption_2ENOT__IS__SOME__EQ__NONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ENOT__SOME__NONE" "thm_2Eoption_2EIS__SOME__DEF"
+
+"thm_2Eoption_2Eoption__case__ID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__case__def" "thm_2Eoption_2ESOME__11"
+
+"thm_2Eoption_2Eoption__case__SOME__ID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__case__def" "thm_2Eoption_2ESOME__11"
+
+"thm_2Eoption_2Eoption__CLAUSES"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__case__def" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2ENOT__SOME__NONE" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EIS__SOME__DEF" "thm_2Eoption_2EIS__NONE__DEF" "thm_2Eoption_2ETHE__DEF" "thm_2Eoption_2EOPTION__JOIN__DEF" "thm_2Eoption_2EIS__NONE__EQ__NONE" "thm_2Eoption_2ENOT__IS__SOME__EQ__NONE" "thm_2Eoption_2Eoption__case__ID" "thm_2Eoption_2Eoption__case__SOME__ID"
+
+"thm_2Eoption_2Eoption__case__compute"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__case__def" "thm_2Eoption_2EIS__SOME__DEF" "thm_2Eoption_2ETHE__DEF"
+
+"thm_2Eoption_2EIF__EQUALS__OPTION"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME"
+
+"thm_2Eoption_2EIF__NONE__EQUALS__OPTION"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__ID" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EIS__SOME__DEF" "thm_2Eoption_2EIS__NONE__DEF" "thm_2Eoption_2EIF__EQUALS__OPTION" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__neg"
+
+"thm_2Eoption_2EOPTION__MAP__EQ__SOME"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EUNWIND__THM2" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Eoption_2EOPTION__MAP__EQ__NONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__CLAUSES"
+
+"thm_2Eoption_2EOPTION__MAP__EQ__NONE__both__ways"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Eoption_2EOPTION__MAP__EQ__NONE"
+
+"thm_2Eoption_2EOPTION__MAP__COMPOSE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ecombin_2Eo__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP__DEF"
+
+"thm_2Eoption_2EOPTION__MAP__CONG"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP__DEF"
+
+"thm_2Eoption_2EIS__SOME__MAP"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EIS__SOME__DEF"
+
+"thm_2Eoption_2EOPTION__JOIN__EQ__SOME"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__JOIN__DEF"
+
+"thm_2Eoption_2EOPTION__MAP2__SOME"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EEQ__IMP__THM" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__THM2" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__MAP2__THM"
+
+"thm_2Eoption_2EOPTION__MAP2__NONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__MAP2__THM"
+
+"thm_2Eoption_2EOPTION__MAP2__cong"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP2__THM"
+
+"thm_2Eoption_2EOPTION__MAP__CASE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ecombin_2Eo__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__CLAUSES"
+
+"thm_2Eoption_2EOPTION__BIND__def"
+axiom
+
+"thm_2Eoption_2EOPTION__BIND__cong"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Eoption_2EFORALL__OPTION" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__BIND__def"
+
+"thm_2Eoption_2EOPTION__BIND__EQUALS__OPTION"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__BIND__def"
+
+"thm_2Eoption_2EIS__SOME__BIND"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EIS__SOME__DEF" "thm_2Eoption_2EOPTION__BIND__def"
+
+"thm_2Eoption_2EOPTION__IGNORE__BIND__def"
+axiom
+
+"thm_2Eoption_2EOPTION__IGNORE__BIND__thm"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ecombin_2EK__THM" "thm_2Eoption_2EOPTION__BIND__def" "thm_2Eoption_2EOPTION__IGNORE__BIND__def"
+
+"thm_2Eoption_2EOPTION__IGNORE__BIND__EQUALS__OPTION"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__IGNORE__BIND__thm"
+
+"thm_2Eoption_2EOPTION__GUARD__def"
+axiom
+
+"thm_2Eoption_2EOPTION__GUARD__COND"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Eoption_2EOPTION__GUARD__def"
+
+"thm_2Eoption_2EOPTION__GUARD__EQ__THM"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__GUARD__def"
+
+"thm_2Eoption_2EOPTION__CHOICE__def"
+axiom
+
+"thm_2Eoption_2EOPTION__CHOICE__EQ__NONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__CHOICE__def"
+
+"thm_2Eoption_2EOPTION__CHOICE__NONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__CHOICE__def"
+
+"thm_2Eoption_2EOPTION__MCOMP__def"
+axiom
+
+"thm_2Eoption_2EOPTION__MCOMP__ASSOC"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__BIND__def" "thm_2Eoption_2EOPTION__MCOMP__def"
+
+"thm_2Eoption_2EOPTION__MCOMP__ID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__BIND__def" "thm_2Eoption_2EOPTION__MCOMP__def"
+
+"thm_2Eoption_2EOPTION__APPLY__def"
+axiom
+
+"thm_2Eoption_2EOPTION__APPLY__MAP2"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EOPTION__MAP2__THM" "thm_2Eoption_2EOPTION__MAP2__NONE" "thm_2Eoption_2EOPTION__APPLY__def"
+
+"thm_2Eoption_2ESOME__SOME__APPLY"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EOPTION__APPLY__def"
+
+"thm_2Eoption_2ESOME__APPLY__PERMUTE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EOPTION__APPLY__def"
+
+"thm_2Eoption_2EOPTION__APPLY__o"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ecombin_2Eo__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EOPTION__APPLY__def"
+
+"thm_2Eoption_2EOPTREL__def"
+axiom
+
+"thm_2Eoption_2EOPTREL__MONO"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__THM2" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTREL__def"
+
+"thm_2Eoption_2EOPTREL__refl"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2ERIGHT__EXISTS__AND__THM" "thm_2Ebool_2ERIGHT__FORALL__OR__THM" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2ENOT__SOME__NONE" "thm_2Eoption_2EOPTREL__def" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Eoption_2Esome__def"
+axiom
+
+"thm_2Eoption_2Esome__intro"
+conjecture
+intact
+"thm_2Ebool_2EEXISTS__DEF" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2ERIGHT__FORALL__OR__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Eoption_2Esome__def" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Esat_2Epth__ni1" "thm_2Esat_2Epth__ni2"
+
+"thm_2Eoption_2Esome__elim"
+conjecture
+intact
+"thm_2Ebool_2EEXISTS__DEF" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2ELEFT__AND__FORALL__THM" "thm_2Ebool_2ERIGHT__FORALL__OR__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Eoption_2Esome__def" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Esat_2Epth__ni1" "thm_2Esat_2Epth__ni2"
+
+"thm_2Eoption_2Esome__F"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Eoption_2Esome__intro"
+
+"thm_2Eoption_2Esome__EQ"
+conjecture
+intact
+"thm_2Ebool_2ENOT__DEF" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2Esome__intro"
+
+"thm_2Eoption_2Eoption__case__cong"
+conjecture
+intact
+"thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__case__def"
+
+"thm_2Eoption_2EOPTION__ALL__def"
+axiom
+
+"thm_2Eoption_2EOPTION__ALL__MONO"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__ALL__def"
+
+"thm_2Eoption_2EOPTION__ALL__CONG"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2EUNWIND__FORALL__THM2" "thm_2Eoption_2EFORALL__OPTION" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME" "thm_2Eoption_2EOPTION__ALL__def"
+
+"thm_2Eoption_2Eoption__case__eq"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EUNWIND__THM2" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__case__def" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2ENOT__NONE__SOME"
+
+"thm_2Eoption_2Eoption__Induct"
+conjecture
+intact
+"thm_2Ebool_2ECONJ__SYM" "thm_2Eoption_2Eoption__induction"
+
+"thm_2Eoption_2Eoption__CASES"
+conjecture
+intact
+"thm_2Ebool_2EDISJ__SYM" "thm_2Eoption_2Eoption__nchotomy"
+
+"thm_2Eoption_2Edatatype__option"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EDATATYPE__TAG__THM"
+

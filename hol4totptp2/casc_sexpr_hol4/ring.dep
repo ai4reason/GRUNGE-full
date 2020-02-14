@@ -1,0 +1,215 @@
+"thm_2Ering_2Ering__TY__DEF"
+axiom
+
+"thm_2Ering_2Ering__case__def"
+axiom
+
+"thm_2Ering_2Ering__size__def"
+axiom
+
+"thm_2Ering_2Ering__R0"
+axiom
+
+"thm_2Ering_2Ering__R1"
+axiom
+
+"thm_2Ering_2Ering__RP"
+axiom
+
+"thm_2Ering_2Ering__RM"
+axiom
+
+"thm_2Ering_2Ering__RN"
+axiom
+
+"thm_2Ering_2Ering__accessors"
+conjecture
+intact
+"thm_2Ering_2Ering__R0" "thm_2Ering_2Ering__R1" "thm_2Ering_2Ering__RP" "thm_2Ering_2Ering__RM" "thm_2Ering_2Ering__RN"
+
+"thm_2Ering_2Ering__R0__fupd"
+axiom
+
+"thm_2Ering_2Ering__R1__fupd"
+axiom
+
+"thm_2Ering_2Ering__RP__fupd"
+axiom
+
+"thm_2Ering_2Ering__RM__fupd"
+axiom
+
+"thm_2Ering_2Ering__RN__fupd"
+axiom
+
+"thm_2Ering_2Ering__fn__updates"
+conjecture
+intact
+"thm_2Ering_2Ering__R0__fupd" "thm_2Ering_2Ering__R1__fupd" "thm_2Ering_2Ering__RP__fupd" "thm_2Ering_2Ering__RM__fupd" "thm_2Ering_2Ering__RN__fupd"
+
+"thm_2Ering_2Ering__accfupds"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ering_2Ering__accessors" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2Ering__fupdfupds"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2Eo__THM" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2Ering__fupdfupds__comp"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2Eo__ASSOC" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2Ering__fupdcanon"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2Ering__fupdcanon__comp"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2Eo__ASSOC" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2Ering__component__equality"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Ering_2Ering__accessors"
+
+"thm_2Ering_2Ering__updates__eq__literal"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2Ering__literal__nchotomy"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2EFORALL__ring"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2EEXISTS__ring"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Ering_2Ering__fn__updates"
+
+"thm_2Ering_2Ering__literal__11"
+conjecture
+intact
+"thm_2Ecombin_2EK__THM" "thm_2Ering_2Ering__accfupds" "thm_2Ering_2Ering__component__equality"
+
+"thm_2Ering_2Edatatype__ring"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EDATATYPE__TAG__THM"
+
+"thm_2Ering_2Ering__11"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2Ering_2Ering__nchotomy"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EJRH__INDUCT__UTIL"
+
+"thm_2Ering_2Ering__Axiom"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2Ering_2Ering__induction"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX"
+
+"thm_2Ering_2Ering__case__cong"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ering_2Ering__case__def"
+
+"thm_2Ering_2Ering__case__eq"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EEQ__REFL" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ering_2Ering__case__def"
+
+"thm_2Ering_2Eis__ring__def"
+axiom
+
+"thm_2Ering_2Eplus__sym"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Eplus__assoc"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Emult__sym"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Emult__assoc"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Eplus__zero__left"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Emult__one__left"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Eopp__def"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Edistr__left"
+conjecture
+intact
+"thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Eplus__zero__right"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Emult__zero__left"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__TRANS" "thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Emult__zero__right"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__TRANS" "thm_2Ering_2Eis__ring__def"
+
+"thm_2Ering_2Esemi__ring__of__def"
+axiom
+
+"thm_2Ering_2Ering__is__semi__ring"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__TRANS" "thm_2Ering_2Eis__ring__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2Esemi__ring_2Esemi__ring__accessors" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Ering_2Emult__one__right"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__TRANS" "thm_2Ering_2Eis__ring__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2Esemi__ring_2Esemi__ring__accessors" "thm_2Esemi__ring_2Eis__semi__ring__def" "thm_2Esemi__ring_2Emult__one__right"
+
+"thm_2Ering_2Eneg__mult"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__TRANS" "thm_2Ering_2Eis__ring__def" "thm_2Ering_2Esemi__ring__of__def" "thm_2Esemi__ring_2Esemi__ring__accessors" "thm_2Esemi__ring_2Eis__semi__ring__def" "thm_2Esemi__ring_2Eplus__permute"
+

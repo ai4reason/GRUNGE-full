@@ -1,0 +1,203 @@
+"thm_2EConseqConv_2Eforall__eq__thm"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE"
+
+"thm_2EConseqConv_2Eexists__eq__thm"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE"
+
+"thm_2EConseqConv_2Etrue__imp"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES"
+
+"thm_2EConseqConv_2Efalse__imp"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES"
+
+"thm_2EConseqConv_2ENOT__CLAUSES__X"
+conjecture
+intact
+"thm_2Ebool_2ENOT__CLAUSES"
+
+"thm_2EConseqConv_2ENOT__CLAUSES__T"
+conjecture
+intact
+"thm_2Ebool_2ENOT__CLAUSES"
+
+"thm_2EConseqConv_2ENOT__CLAUSES__F"
+conjecture
+intact
+"thm_2Ebool_2ENOT__CLAUSES"
+
+"thm_2EConseqConv_2EIMP__CONG__conj__strengthen"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EIMP__CONG__conj__weaken"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EAND__CLAUSES__TX"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EAND__CLAUSES__XT"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EAND__CLAUSES__FX"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EAND__CLAUSES__XF"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EAND__CLAUSES__XX"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EIMP__CONG__disj__strengthen"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EIMP__CONG__disj__weaken"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EOR__CLAUSES__TX"
+conjecture
+intact
+"thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EOR__CLAUSES__XT"
+conjecture
+intact
+"thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EOR__CLAUSES__FX"
+conjecture
+intact
+"thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EOR__CLAUSES__XF"
+conjecture
+intact
+"thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EOR__CLAUSES__XX"
+conjecture
+intact
+"thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EIMP__CONG__imp__strengthen"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EIMP__CONG__imp__weaken"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EIMP__CONG__simple__imp__strengthen"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EIMP__CONG__simple__imp__weaken"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EIMP__CLAUSES__TX"
+conjecture
+intact
+"thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EIMP__CLAUSES__XT"
+conjecture
+intact
+"thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EIMP__CLAUSES__FX"
+conjecture
+intact
+"thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EIMP__CLAUSES__XX"
+conjecture
+intact
+"thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EIMP__CLAUSES__XF"
+conjecture
+intact
+"thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2EIMP__CONG__cond__simple"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EIMP__CONG__cond"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2ECOND__CLAUSES__CT"
+conjecture
+intact
+"thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2ECOND__CLAUSES__CF"
+conjecture
+intact
+"thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM"
+
+"thm_2EConseqConv_2ECOND__CLAUSES__ID"
+conjecture
+intact
+"thm_2Ebool_2ECOND__ID"
+
+"thm_2EConseqConv_2ECOND__CLAUSES__TT"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2ECOND__CLAUSES__FT"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2ECOND__CLAUSES__TF"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2ECOND__CLAUSES__FF"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__BOOL"
+
+"thm_2EConseqConv_2EASM__MARKER__DEF"
+axiom
+
+"thm_2EConseqConv_2EASM__MARKER__THM"
+conjecture
+intact
+"thm_2EConseqConv_2EASM__MARKER__DEF" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EABS__SIMP" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE"
+

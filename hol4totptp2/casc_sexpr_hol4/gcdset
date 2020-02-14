@@ -1,0 +1,18 @@
+; c.gcdset.gcdset
+; :(num -> bool) -> num
+(constant_definition "c_2Egcdset_2Egcdset" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") "ty_2Enum_2Enum"))
+; gcdset.gcdset_def
+; ∀s.     gcdset s =     if (s = ∅) ∨ (s = {0}) then 0     else       MAX_SET         ({n | n ≤ MIN_SET (s DELETE 0)} ∩ {d | ∀e. e ∈ s ⇒ divides d e})
+(axiom "thm_2Egcdset_2Egcdset__def" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Egcdset_2Egcdset" "V0s") (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) "V0s" ("c_2Epred__set_2EEMPTY" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) "V0s" (("c_2Epred__set_2EINSERT" "ty_2Enum_2Enum") "c_2Enum_2E0" ("c_2Epred__set_2EEMPTY" "ty_2Enum_2Enum")))) "c_2Enum_2E0" ("c_2Epred__set_2EMAX__SET" (("c_2Epred__set_2EINTER" "ty_2Enum_2Enum") (("c_2Epred__set_2EGSPEC" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") "V1n" ("c_2Earithmetic_2E_3C_3D" "V1n" ("c_2Epred__set_2EMIN__SET" (("c_2Epred__set_2EDELETE" "ty_2Enum_2Enum") "V0s" "c_2Enum_2E0")))))) (("c_2Epred__set_2EGSPEC" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (lambda "V2d" "ty_2Enum_2Enum" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") "V2d" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3e" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "ty_2Enum_2Enum") "V3e" "V0s") ("c_2Edivides_2Edivides" "V2d" "V3e"))))))))))))))
+; gcdset.gcdset_divides
+; ∀e. e ∈ s ⇒ divides (gcdset s) e
+(conjecture "thm_2Egcdset_2Egcdset__divides" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1e" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "ty_2Enum_2Enum") "V1e" "V0s") ("c_2Edivides_2Edivides" ("c_2Egcdset_2Egcdset" "V0s") "V1e")))))))
+; gcdset.gcdset_greatest
+; (∀e. e ∈ s ⇒ divides g e) ⇒ divides g (gcdset s)
+(conjecture "thm_2Egcdset_2Egcdset__greatest" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1g" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2e" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "ty_2Enum_2Enum") "V2e" "V0s") ("c_2Edivides_2Edivides" "V1g" "V2e")))) ("c_2Edivides_2Edivides" "V1g" ("c_2Egcdset_2Egcdset" "V0s"))))))))
+; gcdset.gcdset_EMPTY
+; gcdset ∅ = 0
+(conjecture "thm_2Egcdset_2Egcdset__EMPTY" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Egcdset_2Egcdset" ("c_2Epred__set_2EEMPTY" "ty_2Enum_2Enum")) "c_2Enum_2E0"))
+; gcdset.gcdset_INSERT
+; gcdset (x INSERT s) = gcd x (gcdset s)
+(conjecture "thm_2Egcdset_2Egcdset__INSERT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Egcdset_2Egcdset" (("c_2Epred__set_2EINSERT" "ty_2Enum_2Enum") "V0x" "V1s")) ("c_2Egcd_2Egcd" "V0x" ("c_2Egcdset_2Egcdset" "V1s"))))))))

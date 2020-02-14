@@ -1,0 +1,18 @@
+; c.normalForms.EXT_POINT
+; :(α -> β) -> (α -> β) -> α
+(constant_definition "c_2EnormalForms_2EEXT__POINT" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27b") "A_27a"))))
+; c.normalForms.UNIV_POINT
+; :(α -> bool) -> α
+(constant_definition "c_2EnormalForms_2EUNIV__POINT" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "A_27a")))
+; normalForms.EXT_POINT_DEF
+; ∀f g. (f (EXT_POINT f g) = g (EXT_POINT f g)) ⇒ (f = g)
+(axiom "thm_2EnormalForms_2EEXT__POINT__DEF" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "A_27b") ("V0f" (("c_2EnormalForms_2EEXT__POINT" "A_27a" "A_27b") "V0f" "V1g")) ("V1g" (("c_2EnormalForms_2EEXT__POINT" "A_27a" "A_27b") "V0f" "V1g"))) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) "V0f" "V1g"))))))))
+; normalForms.EXT_POINT
+; ∀f g. (f (EXT_POINT f g) = g (EXT_POINT f g)) ⇔ (f = g)
+(conjecture "thm_2EnormalForms_2EEXT__POINT" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27b") ("V0f" (("c_2EnormalForms_2EEXT__POINT" "A_27a" "A_27b") "V0f" "V1g")) ("V1g" (("c_2EnormalForms_2EEXT__POINT" "A_27a" "A_27b") "V0f" "V1g"))) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) "V0f" "V1g"))))))))
+; normalForms.UNIV_POINT_DEF
+; ∀p. p (UNIV_POINT p) ⇒ ∀x. p x
+(axiom "thm_2EnormalForms_2EUNIV__POINT__DEF" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("V0p" (("c_2EnormalForms_2EUNIV__POINT" "A_27a") "V0p")) (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" ("V0p" "V1x"))))))))
+; normalForms.UNIV_POINT
+; ∀p. p (UNIV_POINT p) ⇔ ∀x. p x
+(conjecture "thm_2EnormalForms_2EUNIV__POINT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("V0p" (("c_2EnormalForms_2EUNIV__POINT" "A_27a") "V0p")) (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" ("V0p" "V1x"))))))))

@@ -1,0 +1,57 @@
+; c.transfer.FUN_REL
+; :(α -> β -> bool) -> (γ -> δ -> bool) -> (α -> γ) -> (β -> δ) -> bool
+(constant_definition "c_2Etransfer_2EFUN__REL" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c" "A_27d") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27c") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "A_27d") "ty_2Emin_2Ebool"))))))
+; c.transfer.PAIR_REL
+; :(α -> β -> bool) -> (γ -> δ -> bool) -> α # γ -> β # δ -> bool
+(constant_definition "c_2Etransfer_2EPAIR__REL" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c" "A_27d") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27c") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27b" "A_27d") "ty_2Emin_2Ebool"))))))
+; c.transfer.bi_unique
+; :(α -> β -> bool) -> bool
+(constant_definition "c_2Etransfer_2Ebi__unique" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
+; c.transfer.bitotal
+; :(α -> β -> bool) -> bool
+(constant_definition "c_2Etransfer_2Ebitotal" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
+; c.transfer.left_unique
+; :(α -> β -> bool) -> bool
+(constant_definition "c_2Etransfer_2Eleft__unique" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
+; c.transfer.right_unique
+; :(α -> β -> bool) -> bool
+(constant_definition "c_2Etransfer_2Eright__unique" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
+; c.transfer.surj
+; :(α -> β -> bool) -> bool
+(constant_definition "c_2Etransfer_2Esurj" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
+; c.transfer.total
+; :(α -> β -> bool) -> bool
+(constant_definition "c_2Etransfer_2Etotal" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
+; transfer.right_unique_def
+; ∀R. right_unique R ⇔ ∀a b1 b2. R a b1 ∧ R a b2 ⇒ (b1 = b2)
+(axiom "thm_2Etransfer_2Eright__unique__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2Eright__unique" "A_27a" "A_27b") "V0R") (("c_2Ebool_2E_21" "A_27a") (lambda "V1a" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V2b1" "A_27b" (("c_2Ebool_2E_21" "A_27b") (lambda "V3b2" "A_27b" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V0R" "V1a" "V2b1") ("V0R" "V1a" "V3b2")) (("c_2Emin_2E_3D" "A_27b") "V2b1" "V3b2")))))))))))))
+; transfer.left_unique_def
+; ∀R. left_unique R ⇔ ∀a1 a2 b. R a1 b ∧ R a2 b ⇒ (a1 = a2)
+(axiom "thm_2Etransfer_2Eleft__unique__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2Eleft__unique" "A_27a" "A_27b") "V0R") (("c_2Ebool_2E_21" "A_27a") (lambda "V1a1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2a2" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V3b" "A_27b" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V0R" "V1a1" "V3b") ("V0R" "V2a2" "V3b")) (("c_2Emin_2E_3D" "A_27a") "V1a1" "V2a2")))))))))))))
+; transfer.bi_unique_def
+; ∀R. bi_unique R ⇔ left_unique R ∧ right_unique R
+(axiom "thm_2Etransfer_2Ebi__unique__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2Ebi__unique" "A_27a" "A_27b") "V0R") ("c_2Ebool_2E_2F_5C" (("c_2Etransfer_2Eleft__unique" "A_27a" "A_27b") "V0R") (("c_2Etransfer_2Eright__unique" "A_27a" "A_27b") "V0R")))))))
+; transfer.total_def
+; ∀R. total R ⇔ ∀x. ∃y. R x y
+(axiom "thm_2Etransfer_2Etotal__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2Etotal" "A_27a" "A_27b") "V0R") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_3F" "A_27b") (lambda "V2y" "A_27b" ("V0R" "V1x" "V2y"))))))))))
+; transfer.surj_def
+; ∀R. surj R ⇔ ∀y. ∃x. R x y
+(axiom "thm_2Etransfer_2Esurj__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2Esurj" "A_27a" "A_27b") "V0R") (("c_2Ebool_2E_21" "A_27b") (lambda "V1y" "A_27b" (("c_2Ebool_2E_3F" "A_27a") (lambda "V2x" "A_27a" ("V0R" "V2x" "V1y"))))))))))
+; transfer.bitotal_def
+; ∀R. bitotal R ⇔ total R ∧ surj R
+(axiom "thm_2Etransfer_2Ebitotal__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2Ebitotal" "A_27a" "A_27b") "V0R") ("c_2Ebool_2E_2F_5C" (("c_2Etransfer_2Etotal" "A_27a" "A_27b") "V0R") (("c_2Etransfer_2Esurj" "A_27a" "A_27b") "V0R")))))))
+; transfer.FUN_REL_def
+; ∀AB CD f g. (AB ===> CD) f g ⇔ ∀a b. AB a b ⇒ CD (f a) (g b)
+(axiom "thm_2Etransfer_2EFUN__REL__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0AB" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool"))) (lambda "V1CD" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V2f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V3g" ("ty_2Emin_2Efun" "A_27b" "A_27d") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2EFUN__REL" "A_27a" "A_27b" "A_27c" "A_27d") "V0AB" "V1CD" "V2f" "V3g") (("c_2Ebool_2E_21" "A_27a") (lambda "V4a" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V5b" "A_27b" ("c_2Emin_2E_3D_3D_3E" ("V0AB" "V4a" "V5b") ("V1CD" ("V2f" "V4a") ("V3g" "V5b"))))))))))))))))))
+; transfer.FUN_REL_COMB
+; (AB ===> CD) f g ∧ AB a b ⇒ CD (f a) (g b)
+(conjecture "thm_2Etransfer_2EFUN__REL__COMB" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0AB" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool"))) (lambda "V1CD" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V2f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V3g" ("ty_2Emin_2Efun" "A_27b" "A_27d") (("c_2Ebool_2E_21" "A_27a") (lambda "V4a" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V5b" "A_27b" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Etransfer_2EFUN__REL" "A_27a" "A_27b" "A_27c" "A_27d") "V0AB" "V1CD" "V2f" "V3g") ("V0AB" "V4a" "V5b")) ("V1CD" ("V2f" "V4a") ("V3g" "V5b")))))))))))))))))
+; transfer.FUN_REL_ABS
+; (∀a b. AB a b ⇒ CD (f a) (g b)) ⇒ (AB ===> CD) (λa. f a) (λb. g b)
+(conjecture "thm_2Etransfer_2EFUN__REL__ABS" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0AB" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool"))) (lambda "V1CD" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V2f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V3g" ("ty_2Emin_2Efun" "A_27b" "A_27d") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "A_27a") (lambda "V4a" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V5b" "A_27b" ("c_2Emin_2E_3D_3D_3E" ("V0AB" "V4a" "V5b") ("V1CD" ("V2f" "V4a") ("V3g" "V5b"))))))) (("c_2Etransfer_2EFUN__REL" "A_27a" "A_27b" "A_27c" "A_27d") "V0AB" "V1CD" (lambda "V6a" "A_27a" ("V2f" "V6a")) (lambda "V7b" "A_27b" ("V3g" "V7b"))))))))))))))
+; transfer.FUN_REL_EQ2
+; $= ===> $= = $=
+(conjecture "thm_2Etransfer_2EFUN__REL__EQ2" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27b") "ty_2Emin_2Ebool"))) (("c_2Etransfer_2EFUN__REL" "A_27a" "A_27a" "A_27b" "A_27b") ("c_2Emin_2E_3D" "A_27a") ("c_2Emin_2E_3D" "A_27b")) ("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")))))
+; transfer.PAIR_REL_def
+; ∀AB CD a c b d. (AB ### CD) (a,c) (b,d) ⇔ AB a b ∧ CD c d
+(axiom "thm_2Etransfer_2EPAIR__REL__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0AB" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool"))) (lambda "V1CD" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27d" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "A_27a") (lambda "V2a" "A_27a" (("c_2Ebool_2E_21" "A_27c") (lambda "V3c" "A_27c" (("c_2Ebool_2E_21" "A_27b") (lambda "V4b" "A_27b" (("c_2Ebool_2E_21" "A_27d") (lambda "V5d" "A_27d" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etransfer_2EPAIR__REL" "A_27a" "A_27b" "A_27c" "A_27d") "V0AB" "V1CD" (("c_2Epair_2E_2C" "A_27a" "A_27c") "V2a" "V3c") (("c_2Epair_2E_2C" "A_27b" "A_27d") "V4b" "V5d")) ("c_2Ebool_2E_2F_5C" ("V0AB" "V2a" "V4b") ("V1CD" "V3c" "V5d")))))))))))))))))

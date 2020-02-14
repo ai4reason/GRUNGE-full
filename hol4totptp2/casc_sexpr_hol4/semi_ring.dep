@@ -1,0 +1,216 @@
+"thm_2Esemi__ring_2Esemi__ring__TY__DEF"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__case__def"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__size__def"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__SR0"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__SR1"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__SRP"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__SRM"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__accessors"
+conjecture
+intact
+"thm_2Esemi__ring_2Esemi__ring__SR0" "thm_2Esemi__ring_2Esemi__ring__SR1" "thm_2Esemi__ring_2Esemi__ring__SRP" "thm_2Esemi__ring_2Esemi__ring__SRM"
+
+"thm_2Esemi__ring_2Esemi__ring__SR0__fupd"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__SR1__fupd"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__SRP__fupd"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__SRM__fupd"
+axiom
+
+"thm_2Esemi__ring_2Esemi__ring__fn__updates"
+conjecture
+intact
+"thm_2Esemi__ring_2Esemi__ring__SR0__fupd" "thm_2Esemi__ring_2Esemi__ring__SR1__fupd" "thm_2Esemi__ring_2Esemi__ring__SRP__fupd" "thm_2Esemi__ring_2Esemi__ring__SRM__fupd"
+
+"thm_2Esemi__ring_2Esemi__ring__accfupds"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Esemi__ring_2Esemi__ring__accessors" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2Esemi__ring__fupdfupds"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2Eo__THM" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2Esemi__ring__fupdfupds__comp"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2Eo__ASSOC" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2Esemi__ring__fupdcanon"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2Esemi__ring__fupdcanon__comp"
+conjecture
+broken
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2Eo__ASSOC" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2Esemi__ring__component__equality"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Esemi__ring_2Esemi__ring__accessors"
+
+"thm_2Esemi__ring_2Esemi__ring__updates__eq__literal"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2Esemi__ring__literal__nchotomy"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2EFORALL__semi__ring"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2EEXISTS__semi__ring"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EUNWIND__THM2" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Ecombin_2EK__THM" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND" "thm_2Esemi__ring_2Esemi__ring__fn__updates"
+
+"thm_2Esemi__ring_2Esemi__ring__literal__11"
+conjecture
+intact
+"thm_2Ecombin_2EK__THM" "thm_2Esemi__ring_2Esemi__ring__accfupds" "thm_2Esemi__ring_2Esemi__ring__component__equality"
+
+"thm_2Esemi__ring_2Edatatype__semi__ring"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EDATATYPE__TAG__THM"
+
+"thm_2Esemi__ring_2Esemi__ring__11"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2Esemi__ring_2Esemi__ring__nchotomy"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EJRH__INDUCT__UTIL"
+
+"thm_2Esemi__ring_2Esemi__ring__Axiom"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Eind__type_2ECONSTR__REC" "thm_2Eind__type_2EFCONS" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2Esemi__ring_2Esemi__ring__induction"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX"
+
+"thm_2Esemi__ring_2Esemi__ring__case__cong"
+conjecture
+broken
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Esemi__ring_2Esemi__ring__case__def"
+
+"thm_2Esemi__ring_2Esemi__ring__case__eq"
+conjecture
+broken
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EEQ__REFL" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EJRH__INDUCT__UTIL" "thm_2Esemi__ring_2Esemi__ring__case__def"
+
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+axiom
+
+"thm_2Esemi__ring_2Eplus__sym"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Eplus__assoc"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__sym"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__assoc"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Eplus__zero__left"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__one__left"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__zero__left"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Edistr__left"
+conjecture
+intact
+"thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Eplus__zero__right"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__one__right"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__zero__right"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Edistr__right"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Eplus__rotate"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Eplus__permute"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__FORALL__THM" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__rotate"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Esemi__ring_2Eis__semi__ring__def"
+
+"thm_2Esemi__ring_2Emult__permute"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__FORALL__THM" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Esemi__ring_2Eis__semi__ring__def"
+

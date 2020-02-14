@@ -1,0 +1,41 @@
+"thm_2Emarker_2Estmarker__def"
+axiom
+
+"thm_2Emarker_2Emove__left__conj"
+conjecture
+intact
+"thm_2Ebool_2ECONJ__COMM" "thm_2Ebool_2ECONJ__ASSOC" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emarker_2Estmarker__def"
+
+"thm_2Emarker_2Emove__right__conj"
+conjecture
+intact
+"thm_2Ebool_2ECONJ__COMM" "thm_2Ebool_2ECONJ__ASSOC" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Emarker_2Estmarker__def"
+
+"thm_2Emarker_2Emove__left__disj"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__COMM" "thm_2Emarker_2Estmarker__def"
+
+"thm_2Emarker_2Emove__right__disj"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__COMM" "thm_2Emarker_2Estmarker__def"
+
+"thm_2Emarker_2Eunint__def"
+axiom
+
+"thm_2Emarker_2EAbbrev__def"
+axiom
+
+"thm_2Emarker_2EIfCases__def"
+axiom
+
+"thm_2Emarker_2EAC__DEF"
+axiom
+
+"thm_2Emarker_2ECong__def"
+axiom
+
+"thm_2Emarker_2Elabel__def"
+axiom
+

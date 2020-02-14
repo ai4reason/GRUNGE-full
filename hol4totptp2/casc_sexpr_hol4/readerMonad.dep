@@ -1,0 +1,65 @@
+"thm_2EreaderMonad_2EBIND__def"
+axiom
+
+"thm_2EreaderMonad_2EUNIT__def"
+axiom
+
+"thm_2EreaderMonad_2EMCOMPOSE__def"
+axiom
+
+"thm_2EreaderMonad_2EBIND__UNITR"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EUNIT__def"
+
+"thm_2EreaderMonad_2EBIND__UNITL"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EUNIT__def"
+
+"thm_2EreaderMonad_2EMCOMPOSE__LEFT__ID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EUNIT__def" "thm_2EreaderMonad_2EMCOMPOSE__def"
+
+"thm_2EreaderMonad_2EMCOMPOSE__RIGHT__ID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EUNIT__def" "thm_2EreaderMonad_2EMCOMPOSE__def"
+
+"thm_2EreaderMonad_2EMCOMPOSE__ASSOC"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EMCOMPOSE__def"
+
+"thm_2EreaderMonad_2EFMAP__def"
+axiom
+
+"thm_2EreaderMonad_2EFMAP__ID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2EI__o__ID" "thm_2EreaderMonad_2EFMAP__def"
+
+"thm_2EreaderMonad_2EFMAP__o"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2Eo__ASSOC" "thm_2EreaderMonad_2EFMAP__def"
+
+"thm_2EreaderMonad_2EFMAP__BIND"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Ecombin_2Eo__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EUNIT__def" "thm_2EreaderMonad_2EFMAP__def"
+
+"thm_2EreaderMonad_2EJOIN__def"
+axiom
+
+"thm_2EreaderMonad_2EBIND__JOIN"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Ecombin_2Eo__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EFMAP__def" "thm_2EreaderMonad_2EJOIN__def"
+
+"thm_2EreaderMonad_2EJOIN__BIND"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EFUN__EQ__THM" "thm_2Ecombin_2EI__THM" "thm_2EreaderMonad_2EBIND__def" "thm_2EreaderMonad_2EJOIN__def"
+

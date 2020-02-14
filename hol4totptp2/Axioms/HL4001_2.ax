@@ -1,0 +1,62 @@
+tff(del,type,(
+    del: $tType )).
+
+tff(bool,type,(
+    bool: del )).
+
+tff(ind,type,(
+    ind: del )).
+
+tff(arr,type,(
+    arr: ( del * del ) > del )).
+
+tff(mem,type,(
+    mem: ( $i * del ) > $o )).
+
+tff(ap,type,(
+    ap: ( $i * $i ) > $i )).
+
+tff(k,type,(
+    k: ( del * $i ) > $i )).
+
+tff(i,type,(
+    i: del > $i )).
+
+tff(p,type,(
+    p: $i > $o )).
+
+tff(ap_tp,axiom,(
+    ! [A: del,B: del,F: $i] :
+      ( mem(F,arr(A,B))
+     => ! [X: $i] :
+          ( mem(X,A)
+         => mem(ap(F,X),B) ) ) )).
+
+tff(boolext,axiom,(
+    ! [Q: $i] :
+      ( mem(Q,bool)
+     => ! [R: $i] :
+          ( mem(R,bool)
+         => ( ( p(Q)
+            <=> p(R) )
+           => Q = R ) ) ) )).
+
+tff(funcext,axiom,(
+    ! [A: del,B: del,F: $i] :
+      ( mem(F,arr(A,B))
+     => ! [G: $i] :
+          ( mem(G,arr(A,B))
+         => ( ! [X: $i] :
+                ( mem(X,A)
+               => ap(F,X) = ap(G,X) )
+           => F = G ) ) ) )).
+
+tff(kbeta,axiom,(
+    ! [A: del,Y: $i,X: $i] :
+      ( mem(X,A)
+     => ap(k(A,Y),X) = Y ) )).
+
+tff(ibeta,axiom,(
+    ! [A: del,X: $i] :
+      ( mem(X,A)
+     => ap(i(A),X) = X ) )).

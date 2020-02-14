@@ -1,0 +1,75 @@
+"thm_2Equotient__option_2EOPTION__MAP__I"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ecombin_2EI__THM" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__MAP__DEF"
+
+"thm_2Equotient__option_2EOPTION__REL__def"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__CLAUSES" "thm_2Eoption_2EOPTREL__def"
+
+"thm_2Equotient__option_2EOPTION__REL__EQ"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2Eoption__CLAUSES" "thm_2Equotient__option_2EOPTION__REL__def"
+
+"thm_2Equotient__option_2EOPTION__EQUIV"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Equotient_2EEQUIV__def" "thm_2Equotient__option_2EOPTION__REL__def"
+
+"thm_2Equotient__option_2EOPTION__QUOTIENT"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2Eoption__CLAUSES" "thm_2Equotient_2EQUOTIENT__def" "thm_2Equotient_2EQUOTIENT__ABS__REP" "thm_2Equotient_2EQUOTIENT__REP__REFL" "thm_2Equotient_2EQUOTIENT__REL" "thm_2Equotient__option_2EOPTION__REL__def"
+
+"thm_2Equotient__option_2ENONE__PRS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2EOPTION__MAP__DEF"
+
+"thm_2Equotient__option_2ENONE__RSP"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Equotient__option_2EOPTION__REL__def"
+
+"thm_2Equotient__option_2ESOME__PRS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Equotient_2EQUOTIENT__ABS__REP"
+
+"thm_2Equotient__option_2ESOME__RSP"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Equotient__option_2EOPTION__REL__def"
+
+"thm_2Equotient__option_2EIS__SOME__PRS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EIS__SOME__DEF"
+
+"thm_2Equotient__option_2EIS__SOME__RSP"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EIS__SOME__DEF" "thm_2Equotient__option_2EOPTION__REL__def"
+
+"thm_2Equotient__option_2EIS__NONE__PRS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Eoption_2EIS__NONE__DEF"
+
+"thm_2Equotient__option_2EIS__NONE__RSP"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EIS__NONE__DEF" "thm_2Equotient__option_2EOPTION__REL__def"
+
+"thm_2Equotient__option_2EOPTION__MAP__PRS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2ESOME__11" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Equotient_2EQUOTIENT__ABS__REP" "thm_2Equotient_2EFUN__MAP__THM"
+
+"thm_2Equotient__option_2EOPTION__MAP__RSP"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Eoption_2Eoption__nchotomy" "thm_2Eoption_2EOPTION__MAP__DEF" "thm_2Equotient_2EFUN__REL__MP" "thm_2Equotient__option_2EOPTION__REL__def"
+

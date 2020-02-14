@@ -1,0 +1,45 @@
+; c.listRange.listRangeINC
+; :num -> num -> num list
+(constant_definition "c_2ElistRange_2ElistRangeINC" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum"))))
+; c.listRange.listRangeLHI
+; :num -> num -> num list
+(constant_definition "c_2ElistRange_2ElistRangeLHI" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum"))))
+; listRange.listRangeINC_def
+; ∀m n. [m .. n] = GENLIST (λi. m + i) (n + 1 − m)
+(axiom "thm_2ElistRange_2ElistRangeINC__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeINC" "V0m" "V1n") (("c_2Elist_2EGENLIST" "ty_2Enum_2Enum") (lambda "V2i" "ty_2Enum_2Enum" ("c_2Earithmetic_2E_2B" "V0m" "V2i")) ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2E_2B" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0m"))))))))
+; listRange.listRangeINC_SING
+; [m .. m] = [m]
+(conjecture "thm_2ElistRange_2ElistRangeINC__SING" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeINC" "V0m" "V0m") (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "V0m" ("c_2Elist_2ENIL" "ty_2Enum_2Enum"))))))
+; listRange.MEM_listRangeINC
+; MEM x [m .. n] ⇔ m ≤ x ∧ x ≤ n
+(conjecture "thm_2ElistRange_2EMEM__listRangeINC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "ty_2Enum_2Enum") "V0x" (("c_2Elist_2ELIST__TO__SET" "ty_2Enum_2Enum") ("c_2ElistRange_2ElistRangeINC" "V1m" "V2n"))) ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V1m" "V0x") ("c_2Earithmetic_2E_3C_3D" "V0x" "V2n"))))))))))
+; listRange.listRangeINC_CONS
+; m ≤ n ⇒ ([m .. n] = m::[m + 1 .. n])
+(conjecture "thm_2ElistRange_2ElistRangeINC__CONS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V0m" "V1n") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeINC" "V0m" "V1n") (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "V0m" ("c_2ElistRange_2ElistRangeINC" ("c_2Earithmetic_2E_2B" "V0m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V1n")))))))))
+; listRange.listRangeINC_EMPTY
+; n < m ⇒ ([m .. n] = [])
+(conjecture "thm_2ElistRange_2ElistRangeINC__EMPTY" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0n" "V1m") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeINC" "V1m" "V0n") ("c_2Elist_2ENIL" "ty_2Enum_2Enum"))))))))
+; listRange.listRangeLHI_def
+; ∀m n. [m ..< n] = GENLIST (λi. m + i) (n − m)
+(axiom "thm_2ElistRange_2ElistRangeLHI__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeLHI" "V0m" "V1n") (("c_2Elist_2EGENLIST" "ty_2Enum_2Enum") (lambda "V2i" "ty_2Enum_2Enum" ("c_2Earithmetic_2E_2B" "V0m" "V2i")) ("c_2Earithmetic_2E_2D" "V1n" "V0m"))))))))
+; listRange.listRangeLHI_EQ
+; [m ..< m] = []
+(conjecture "thm_2ElistRange_2ElistRangeLHI__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeLHI" "V0m" "V0m") ("c_2Elist_2ENIL" "ty_2Enum_2Enum")))))
+; listRange.MEM_listRangeLHI
+; MEM x [m ..< n] ⇔ m ≤ x ∧ x < n
+(conjecture "thm_2ElistRange_2EMEM__listRangeLHI" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "ty_2Enum_2Enum") "V0x" (("c_2Elist_2ELIST__TO__SET" "ty_2Enum_2Enum") ("c_2ElistRange_2ElistRangeLHI" "V1m" "V2n"))) ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V1m" "V0x") ("c_2Eprim__rec_2E_3C" "V0x" "V2n"))))))))))
+; listRange.listRangeLHI_EMPTY
+; hi ≤ lo ⇒ ([lo ..< hi] = [])
+(conjecture "thm_2ElistRange_2ElistRangeLHI__EMPTY" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0hi" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1lo" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V0hi" "V1lo") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeLHI" "V1lo" "V0hi") ("c_2Elist_2ENIL" "ty_2Enum_2Enum"))))))))
+; listRange.listRangeLHI_CONS
+; lo < hi ⇒ ([lo ..< hi] = lo::[lo + 1 ..< hi])
+(conjecture "thm_2ElistRange_2ElistRangeLHI__CONS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0lo" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1hi" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0lo" "V1hi") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2ElistRange_2ElistRangeLHI" "V0lo" "V1hi") (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "V0lo" ("c_2ElistRange_2ElistRangeLHI" ("c_2Earithmetic_2E_2B" "V0lo" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V1hi")))))))))
+; listRange.listRangeLHI_ALL_DISTINCT
+; ALL_DISTINCT [lo ..< hi]
+(conjecture "thm_2ElistRange_2ElistRangeLHI__ALL__DISTINCT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0lo" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1hi" "ty_2Enum_2Enum" (("c_2Elist_2EALL__DISTINCT" "ty_2Enum_2Enum") ("c_2ElistRange_2ElistRangeLHI" "V0lo" "V1hi")))))))
+; listRange.LENGTH_listRangeLHI
+; LENGTH [lo ..< hi] = hi − lo
+(conjecture "thm_2ElistRange_2ELENGTH__listRangeLHI" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0lo" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1hi" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") ("c_2ElistRange_2ElistRangeLHI" "V0lo" "V1hi")) ("c_2Earithmetic_2E_2D" "V1hi" "V0lo")))))))
+; listRange.EL_listRangeLHI
+; lo + i < hi ⇒ (EL i [lo ..< hi] = lo + i)
+(conjecture "thm_2ElistRange_2EEL__listRangeLHI" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0lo" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2hi" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2E_2B" "V0lo" "V1i") "V2hi") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2EEL" "ty_2Enum_2Enum") "V1i" ("c_2ElistRange_2ElistRangeLHI" "V0lo" "V2hi")) ("c_2Earithmetic_2E_2B" "V0lo" "V1i"))))))))))

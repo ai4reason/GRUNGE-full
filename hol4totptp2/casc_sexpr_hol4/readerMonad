@@ -1,0 +1,60 @@
+; c.readerMonad.BIND
+; :(σ -> α) -> (α -> σ -> β) -> σ -> β
+(constant_definition "c_2EreaderMonad_2EBIND" (forall_tyvarl_type ("A_27a" "A_27b" "A_27s") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27s" "A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27s" "A_27b")) ("ty_2Emin_2Efun" "A_27s" "A_27b")))))
+; c.readerMonad.FMAP
+; :(α -> β) -> (σ -> α) -> σ -> β
+(constant_definition "c_2EreaderMonad_2EFMAP" (forall_tyvarl_type ("A_27a" "A_27b" "A_27s") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27s" "A_27a") ("ty_2Emin_2Efun" "A_27s" "A_27b")))))
+; c.readerMonad.JOIN
+; :(σ -> σ -> α) -> σ -> α
+(constant_definition "c_2EreaderMonad_2EJOIN" (forall_tyvarl_type ("A_27a" "A_27s") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27s" ("ty_2Emin_2Efun" "A_27s" "A_27a")) ("ty_2Emin_2Efun" "A_27s" "A_27a"))))
+; c.readerMonad.MCOMPOSE
+; :(α -> σ -> β) -> (β -> σ -> γ) -> α -> σ -> γ
+(constant_definition "c_2EreaderMonad_2EMCOMPOSE" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c" "A_27s") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27s" "A_27b")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27s" "A_27c")) ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27s" "A_27c"))))))
+; c.readerMonad.UNIT
+; :α -> β -> α
+(constant_definition "c_2EreaderMonad_2EUNIT" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27a"))))
+; readerMonad.BIND_def
+; ∀M f s. BIND M f s = f (M s) s
+(axiom "thm_2EreaderMonad_2EBIND__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27s") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27s" "A_27a")) (lambda "V0M" ("ty_2Emin_2Efun" "A_27s" "A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27s" "A_27b"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27s" "A_27b")) (("c_2Ebool_2E_21" "A_27s") (lambda "V2s" "A_27s" (("c_2Emin_2E_3D" "A_27b") (("c_2EreaderMonad_2EBIND" "A_27a" "A_27b" "A_27s") "V0M" "V1f" "V2s") ("V1f" ("V0M" "V2s") "V2s"))))))))))
+; readerMonad.UNIT_def
+; ∀x s. UNIT x s = x
+(axiom "thm_2EreaderMonad_2EUNIT__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V1s" "A_27b" (("c_2Emin_2E_3D" "A_27a") (("c_2EreaderMonad_2EUNIT" "A_27a" "A_27b") "V0x" "V1s") "V0x")))))))
+; readerMonad.MCOMPOSE_def
+; ∀f1 f2 a. MCOMPOSE f1 f2 a = BIND (f1 a) f2
+(axiom "thm_2EreaderMonad_2EMCOMPOSE__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27s") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27s" "A_27b"))) (lambda "V0f1" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27s" "A_27b")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27s" "A_27c"))) (lambda "V1f2" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27s" "A_27c")) (("c_2Ebool_2E_21" "A_27a") (lambda "V2a" "A_27a" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27s" "A_27c")) (("c_2EreaderMonad_2EMCOMPOSE" "A_27a" "A_27b" "A_27c" "A_27s") "V0f1" "V1f2" "V2a") (("c_2EreaderMonad_2EBIND" "A_27b" "A_27c" "A_27s") ("V0f1" "V2a") "V1f2"))))))))))
+; readerMonad.BIND_UNITR
+; BIND m UNIT = m
+(conjecture "thm_2EreaderMonad_2EBIND__UNITR" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0m" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2EreaderMonad_2EBIND" "A_27b" "A_27b" "A_27a") "V0m" ("c_2EreaderMonad_2EUNIT" "A_27b" "A_27a")) "V0m")))))
+; readerMonad.BIND_UNITL
+; BIND (UNIT x) f = f x
+(conjecture "thm_2EreaderMonad_2EBIND__UNITL" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27c") (lambda "V0x" "A_27c" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27a" "A_27b"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2EreaderMonad_2EBIND" "A_27c" "A_27b" "A_27a") (("c_2EreaderMonad_2EUNIT" "A_27c" "A_27a") "V0x") "V1f") ("V1f" "V0x"))))))))
+; readerMonad.MCOMPOSE_LEFT_ID
+; MCOMPOSE UNIT g = g
+(conjecture "thm_2EreaderMonad_2EMCOMPOSE__LEFT__ID" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (lambda "V0g" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (("c_2EreaderMonad_2EMCOMPOSE" "A_27a" "A_27a" "A_27c" "A_27b") ("c_2EreaderMonad_2EUNIT" "A_27a" "A_27b") "V0g") "V0g")))))
+; readerMonad.MCOMPOSE_RIGHT_ID
+; MCOMPOSE f UNIT = f
+(conjecture "thm_2EreaderMonad_2EMCOMPOSE__RIGHT__ID" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (("c_2EreaderMonad_2EMCOMPOSE" "A_27a" "A_27c" "A_27c" "A_27b") "V0f" ("c_2EreaderMonad_2EUNIT" "A_27c" "A_27b")) "V0f")))))
+; readerMonad.MCOMPOSE_ASSOC
+; MCOMPOSE f (MCOMPOSE g h) = MCOMPOSE (MCOMPOSE f g) h
+(conjecture "thm_2EreaderMonad_2EMCOMPOSE__ASSOC" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d" "A_27e") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27d"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27d" ("ty_2Emin_2Efun" "A_27b" "A_27e"))) (lambda "V1g" ("ty_2Emin_2Efun" "A_27d" ("ty_2Emin_2Efun" "A_27b" "A_27e")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27e" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (lambda "V2h" ("ty_2Emin_2Efun" "A_27e" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (("c_2EreaderMonad_2EMCOMPOSE" "A_27a" "A_27d" "A_27c" "A_27b") "V0f" (("c_2EreaderMonad_2EMCOMPOSE" "A_27d" "A_27e" "A_27c" "A_27b") "V1g" "V2h")) (("c_2EreaderMonad_2EMCOMPOSE" "A_27a" "A_27e" "A_27c" "A_27b") (("c_2EreaderMonad_2EMCOMPOSE" "A_27a" "A_27d" "A_27e" "A_27b") "V0f" "V1g") "V2h"))))))))))
+; readerMonad.FMAP_def
+; ∀f M1. FMAP f M1 = f ∘ M1
+(axiom "thm_2EreaderMonad_2EFMAP__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27s") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27s" "A_27a")) (lambda "V1M1" ("ty_2Emin_2Efun" "A_27s" "A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27s" "A_27b")) (("c_2EreaderMonad_2EFMAP" "A_27a" "A_27b" "A_27s") "V0f" "V1M1") (("c_2Ecombin_2Eo" "A_27s" "A_27b" "A_27a") "V0f" "V1M1"))))))))
+; readerMonad.FMAP_ID
+; (FMAP (λx. x) M = M) ∧ (FMAP I M = M)
+(conjecture "thm_2EreaderMonad_2EFMAP__ID" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0M" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2EreaderMonad_2EFMAP" "A_27b" "A_27b" "A_27a") (lambda "V1x" "A_27b" "V1x") "V0M") "V0M") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2EreaderMonad_2EFMAP" "A_27b" "A_27b" "A_27a") ("c_2Ecombin_2EI" "A_27b") "V0M") "V0M"))))))
+; readerMonad.FMAP_o
+; FMAP (f ∘ g) = FMAP f ∘ FMAP g
+(conjecture "thm_2EreaderMonad_2EFMAP__o" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27d" "A_27c")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27d" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "A_27d") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("ty_2Emin_2Efun" "A_27a" "A_27c"))) (("c_2EreaderMonad_2EFMAP" "A_27b" "A_27c" "A_27a") (("c_2Ecombin_2Eo" "A_27b" "A_27c" "A_27d") "V0f" "V1g")) (("c_2Ecombin_2Eo" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("ty_2Emin_2Efun" "A_27a" "A_27c") ("ty_2Emin_2Efun" "A_27a" "A_27d")) (("c_2EreaderMonad_2EFMAP" "A_27d" "A_27c" "A_27a") "V0f") (("c_2EreaderMonad_2EFMAP" "A_27b" "A_27d" "A_27a") "V1g")))))))))
+; readerMonad.FMAP_BIND
+; FMAP f M = BIND M (UNIT ∘ f)
+(conjecture "thm_2EreaderMonad_2EFMAP__BIND" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" "A_27b")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27c" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V1M" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2EreaderMonad_2EFMAP" "A_27c" "A_27b" "A_27a") "V0f" "V1M") (("c_2EreaderMonad_2EBIND" "A_27c" "A_27b" "A_27a") "V1M" (("c_2Ecombin_2Eo" "A_27c" ("ty_2Emin_2Efun" "A_27a" "A_27b") "A_27b") ("c_2EreaderMonad_2EUNIT" "A_27b" "A_27a") "V0f")))))))))
+; readerMonad.JOIN_def
+; ∀MM s. JOIN MM s = MM s s
+(axiom "thm_2EreaderMonad_2EJOIN__def" (forall_tyvarl_term ("A_27a" "A_27s") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27s" ("ty_2Emin_2Efun" "A_27s" "A_27a"))) (lambda "V0MM" ("ty_2Emin_2Efun" "A_27s" ("ty_2Emin_2Efun" "A_27s" "A_27a")) (("c_2Ebool_2E_21" "A_27s") (lambda "V1s" "A_27s" (("c_2Emin_2E_3D" "A_27a") (("c_2EreaderMonad_2EJOIN" "A_27a" "A_27s") "V0MM" "V1s") ("V0MM" "V1s" "V1s"))))))))
+; readerMonad.BIND_JOIN
+; BIND M f = JOIN (FMAP f M)
+(conjecture "thm_2EreaderMonad_2EBIND__JOIN" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V0M" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27a" "A_27b"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27c" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2EreaderMonad_2EBIND" "A_27c" "A_27b" "A_27a") "V0M" "V1f") (("c_2EreaderMonad_2EJOIN" "A_27b" "A_27a") (("c_2EreaderMonad_2EFMAP" "A_27c" ("ty_2Emin_2Efun" "A_27a" "A_27b") "A_27a") "V1f" "V0M")))))))))
+; readerMonad.JOIN_BIND
+; JOIN M = BIND M I
+(conjecture "thm_2EreaderMonad_2EJOIN__BIND" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "A_27b"))) (lambda "V0M" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2EreaderMonad_2EJOIN" "A_27b" "A_27a") "V0M") (("c_2EreaderMonad_2EBIND" ("ty_2Emin_2Efun" "A_27a" "A_27b") "A_27b" "A_27a") "V0M" ("c_2Ecombin_2EI" ("ty_2Emin_2Efun" "A_27a" "A_27b"))))))))

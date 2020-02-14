@@ -1,0 +1,144 @@
+; c.numposrep.BOOLIFY
+; :num -> num -> bool list -> bool list
+(constant_definition "c_2Enumposrep_2EBOOLIFY" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Emin_2Ebool") ("ty_2Elist_2Elist" "ty_2Emin_2Ebool")))))
+; c.numposrep.l2n
+; :num -> num list -> num
+(constant_definition "c_2Enumposrep_2El2n" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum")))
+; c.numposrep.l2n2
+; :num list -> num
+(constant_definition "c_2Enumposrep_2El2n2" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
+; c.numposrep.n2l
+; :num -> num -> num list
+(constant_definition "c_2Enumposrep_2En2l" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum"))))
+; c.numposrep.num_from_bin_list
+; :num list -> num
+(constant_definition "c_2Enumposrep_2Enum__from__bin__list" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
+; c.numposrep.num_from_dec_list
+; :num list -> num
+(constant_definition "c_2Enumposrep_2Enum__from__dec__list" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
+; c.numposrep.num_from_hex_list
+; :num list -> num
+(constant_definition "c_2Enumposrep_2Enum__from__hex__list" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
+; c.numposrep.num_from_oct_list
+; :num list -> num
+(constant_definition "c_2Enumposrep_2Enum__from__oct__list" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
+; c.numposrep.num_to_bin_list
+; :num -> num list
+(constant_definition "c_2Enumposrep_2Enum__to__bin__list" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")))
+; c.numposrep.num_to_dec_list
+; :num -> num list
+(constant_definition "c_2Enumposrep_2Enum__to__dec__list" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")))
+; c.numposrep.num_to_hex_list
+; :num -> num list
+(constant_definition "c_2Enumposrep_2Enum__to__hex__list" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")))
+; c.numposrep.num_to_oct_list
+; :num -> num list
+(constant_definition "c_2Enumposrep_2Enum__to__oct__list" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")))
+; numposrep.l2n_def
+; (∀b. l2n b [] = 0) ∧ ∀b h t. l2n b (h::t) = h MOD b + b * l2n b t
+(axiom "thm_2Enumposrep_2El2n__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" ("c_2Elist_2ENIL" "ty_2Enum_2Enum")) "c_2Enum_2E0"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V3t" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V1b" (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "V2h" "V3t")) ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2EMOD" "V2h" "V1b") ("c_2Earithmetic_2E_2A" "V1b" ("c_2Enumposrep_2El2n" "V1b" "V3t"))))))))))))
+; numposrep.n2l_ind
+; ∀P. (∀b n. (¬(n < b ∨ b < 2) ⇒ P b (n DIV b)) ⇒ P b n) ⇒ ∀v v1. P v v1
+(conjecture "thm_2Enumposrep_2En2l__ind" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Ebool_2E_5C_2F" ("c_2Eprim__rec_2E_3C" "V2n" "V1b") ("c_2Eprim__rec_2E_3C" "V1b" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))) ("V0P" "V1b" ("c_2Earithmetic_2EDIV" "V2n" "V1b"))) ("V0P" "V1b" "V2n")))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3v" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4v1" "ty_2Enum_2Enum" ("V0P" "V3v" "V4v1")))))))))
+; numposrep.n2l_def
+; ∀n b. n2l b n = if n < b ∨ b < 2 then [n MOD b] else n MOD b::n2l b (n DIV b)
+(conjecture "thm_2Enumposrep_2En2l__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2Enumposrep_2En2l" "V1b" "V0n") (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2Ebool_2E_5C_2F" ("c_2Eprim__rec_2E_3C" "V0n" "V1b") ("c_2Eprim__rec_2E_3C" "V1b" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))) (("c_2Elist_2ECONS" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0n" "V1b") ("c_2Elist_2ENIL" "ty_2Enum_2Enum")) (("c_2Elist_2ECONS" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0n" "V1b") ("c_2Enumposrep_2En2l" "V1b" ("c_2Earithmetic_2EDIV" "V0n" "V1b"))))))))))
+; numposrep.num_from_bin_list_def
+; num_from_bin_list = l2n 2
+(axiom "thm_2Enumposrep_2Enum__from__bin__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__bin__list" ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))
+; numposrep.num_from_oct_list_def
+; num_from_oct_list = l2n 8
+(axiom "thm_2Enumposrep_2Enum__from__oct__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__oct__list" ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
+; numposrep.num_from_dec_list_def
+; num_from_dec_list = l2n 10
+(axiom "thm_2Enumposrep_2Enum__from__dec__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__dec__list" ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
+; numposrep.num_from_hex_list_def
+; num_from_hex_list = l2n 16
+(axiom "thm_2Enumposrep_2Enum__from__hex__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__hex__list" ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
+; numposrep.num_to_bin_list_def
+; num_to_bin_list = n2l 2
+(axiom "thm_2Enumposrep_2Enum__to__bin__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum"))) "c_2Enumposrep_2Enum__to__bin__list" ("c_2Enumposrep_2En2l" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))
+; numposrep.num_to_oct_list_def
+; num_to_oct_list = n2l 8
+(axiom "thm_2Enumposrep_2Enum__to__oct__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum"))) "c_2Enumposrep_2Enum__to__oct__list" ("c_2Enumposrep_2En2l" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
+; numposrep.num_to_dec_list_def
+; num_to_dec_list = n2l 10
+(axiom "thm_2Enumposrep_2Enum__to__dec__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum"))) "c_2Enumposrep_2Enum__to__dec__list" ("c_2Enumposrep_2En2l" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
+; numposrep.num_to_hex_list_def
+; num_to_hex_list = n2l 16
+(axiom "thm_2Enumposrep_2Enum__to__hex__list__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum"))) "c_2Enumposrep_2Enum__to__hex__list" ("c_2Enumposrep_2En2l" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
+; numposrep.BOOLIFY_def
+; (∀m a. BOOLIFY 0 m a = a) ∧ ∀n m a. BOOLIFY (SUC n) m a = BOOLIFY n (DIV2 m) (ODD m::a)
+(axiom "thm_2Enumposrep_2EBOOLIFY__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Emin_2Ebool")) (lambda "V1a" ("ty_2Elist_2Elist" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Emin_2Ebool")) ("c_2Enumposrep_2EBOOLIFY" "c_2Enum_2E0" "V0m" "V1a") "V1a"))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Emin_2Ebool")) (lambda "V4a" ("ty_2Elist_2Elist" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Emin_2Ebool")) ("c_2Enumposrep_2EBOOLIFY" ("c_2Enum_2ESUC" "V2n") "V3m" "V4a") ("c_2Enumposrep_2EBOOLIFY" "V2n" ("c_2Earithmetic_2EDIV2" "V3m") (("c_2Elist_2ECONS" "ty_2Emin_2Ebool") ("c_2Earithmetic_2EODD" "V3m") "V4a")))))))))))
+; numposrep.LENGTH_n2l
+; ∀b n. 1 < b ⇒ (LENGTH (n2l b n) = if n = 0 then 1 else SUC (LOG b n))
+(conjecture "thm_2Enumposrep_2ELENGTH__n2l" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") ("c_2Enumposrep_2En2l" "V0b" "V1n")) (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1n" "c_2Enum_2E0") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" ("c_2Elogroot_2ELOG" "V0b" "V1n"))))))))))
+; numposrep.l2n_n2l
+; ∀b n. 1 < b ⇒ (l2n b (n2l b n) = n)
+(conjecture "thm_2Enumposrep_2El2n__n2l" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" ("c_2Enumposrep_2En2l" "V0b" "V1n")) "V1n")))))))
+; numposrep.l2n_lt
+; ∀l b. 0 < b ⇒ l2n b l < b ** LENGTH l
+(conjecture "thm_2Enumposrep_2El2n__lt" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V0l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V1b") ("c_2Eprim__rec_2E_3C" ("c_2Enumposrep_2El2n" "V1b" "V0l") ("c_2Earithmetic_2EEXP" "V1b" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") "V0l")))))))))
+; numposrep.LENGTH_l2n
+; ∀b l. 1 < b ∧ EVERY ($> b) l ∧ l2n b l ≠ 0 ⇒ SUC (LOG b (l2n b l)) ≤ LENGTH l
+(conjecture "thm_2Enumposrep_2ELENGTH__l2n" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") ("c_2Ebool_2E_2F_5C" (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") "V1l") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" "V1l") "c_2Enum_2E0")))) ("c_2Earithmetic_2E_3C_3D" ("c_2Enum_2ESUC" ("c_2Elogroot_2ELOG" "V0b" ("c_2Enumposrep_2El2n" "V0b" "V1l"))) (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") "V1l"))))))))
+; numposrep.l2n_DIGIT
+; ∀b l x.     1 < b ∧ EVERY ($> b) l ∧ x < LENGTH l ⇒     ((l2n b l DIV b ** x) MOD b = EL x l)
+(conjecture "thm_2Enumposrep_2El2n__DIGIT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") ("c_2Ebool_2E_2F_5C" (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") "V1l") ("c_2Eprim__rec_2E_3C" "V2x" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") "V1l")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2EDIV" ("c_2Enumposrep_2El2n" "V0b" "V1l") ("c_2Earithmetic_2EEXP" "V0b" "V2x")) "V0b") (("c_2Elist_2EEL" "ty_2Enum_2Enum") "V2x" "V1l"))))))))))
+; numposrep.DIV_0_IMP_LT
+; ∀b n. 1 < b ∧ (n DIV b = 0) ⇒ n < b
+(conjecture "thm_2Enumposrep_2EDIV__0__IMP__LT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EDIV" "V1n" "V0b") "c_2Enum_2E0")) ("c_2Eprim__rec_2E_3C" "V1n" "V0b")))))))
+; numposrep.EL_n2l
+; ∀b x n.     1 < b ∧ x < LENGTH (n2l b n) ⇒ (EL x (n2l b n) = (n DIV b ** x) MOD b)
+(conjecture "thm_2Enumposrep_2EEL__n2l" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") ("c_2Eprim__rec_2E_3C" "V1x" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") ("c_2Enumposrep_2En2l" "V0b" "V2n")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2EEL" "ty_2Enum_2Enum") "V1x" ("c_2Enumposrep_2En2l" "V0b" "V2n")) ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2EDIV" "V2n" ("c_2Earithmetic_2EEXP" "V0b" "V1x")) "V0b"))))))))))
+; numposrep.n2l_l2n
+; ∀b l.     1 < b ∧ EVERY ($> b) l ⇒     (n2l b (l2n b l) =      if l2n b l = 0 then [0] else TAKE (SUC (LOG b (l2n b l))) l)
+(conjecture "thm_2Enumposrep_2En2l__l2n" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") "V1l")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2Enumposrep_2En2l" "V0b" ("c_2Enumposrep_2El2n" "V0b" "V1l")) (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" "V1l") "c_2Enum_2E0") (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "c_2Enum_2E0" ("c_2Elist_2ENIL" "ty_2Enum_2Enum")) (("c_2Elist_2ETAKE" "ty_2Enum_2Enum") ("c_2Enum_2ESUC" ("c_2Elogroot_2ELOG" "V0b" ("c_2Enumposrep_2El2n" "V0b" "V1l"))) "V1l")))))))))
+; numposrep.l2n_eq_0
+; ∀b. 0 < b ⇒ ∀l. (l2n b l = 0) ⇔ EVERY ($= 0 ∘ combin$C $MOD b) l
+(conjecture "thm_2Enumposrep_2El2n__eq__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0b") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" "V1l") "c_2Enum_2E0") (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") (("c_2Ecombin_2Eo" "ty_2Enum_2Enum" "ty_2Emin_2Ebool" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "c_2Enum_2E0") (("c_2Ecombin_2EC" "ty_2Enum_2Enum" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "c_2Earithmetic_2EMOD" "V0b")) "V1l"))))))))
+; numposrep.l2n_SNOC_0
+; ∀b ls. 0 < b ⇒ (l2n b (SNOC 0 ls) = l2n b ls)
+(conjecture "thm_2Enumposrep_2El2n__SNOC__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1ls" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" (("c_2Elist_2ESNOC" "ty_2Enum_2Enum") "c_2Enum_2E0" "V1ls")) ("c_2Enumposrep_2El2n" "V0b" "V1ls"))))))))
+; numposrep.LOG_l2n
+; ∀b.     1 < b ⇒     ∀l.         l ≠ [] ∧ 0 < LAST l ∧ EVERY ($> b) l ⇒         (LOG b (l2n b l) = PRE (LENGTH l))
+(conjecture "thm_2Enumposrep_2ELOG__l2n" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) "V1l" ("c_2Elist_2ENIL" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" (("c_2Elist_2ELAST" "ty_2Enum_2Enum") "V1l")) (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") "V1l"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Elogroot_2ELOG" "V0b" ("c_2Enumposrep_2El2n" "V0b" "V1l")) ("c_2Eprim__rec_2EPRE" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") "V1l"))))))))))
+; numposrep.l2n_dropWhile_0
+; ∀b ls. 0 < b ⇒ (l2n b (REVERSE (dropWhile ($= 0) (REVERSE ls))) = l2n b ls)
+(conjecture "thm_2Enumposrep_2El2n__dropWhile__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1ls" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" (("c_2Elist_2EREVERSE" "ty_2Enum_2Enum") (("c_2Elist_2EdropWhile" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "c_2Enum_2E0") (("c_2Elist_2EREVERSE" "ty_2Enum_2Enum") "V1ls")))) ("c_2Enumposrep_2El2n" "V0b" "V1ls"))))))))
+; numposrep.LOG_l2n_dropWhile
+; ∀b l.     1 < b ∧ EXISTS (λy. 0 ≠ y) l ∧ EVERY ($> b) l ⇒     (LOG b (l2n b l) = PRE (LENGTH (dropWhile ($= 0) (REVERSE l))))
+(conjecture "thm_2Enumposrep_2ELOG__l2n__dropWhile" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") ("c_2Ebool_2E_2F_5C" (("c_2Elist_2EEXISTS" "ty_2Enum_2Enum") (lambda "V2y" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "c_2Enum_2E0" "V2y"))) "V1l") (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") "V1l"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Elogroot_2ELOG" "V0b" ("c_2Enumposrep_2El2n" "V0b" "V1l")) ("c_2Eprim__rec_2EPRE" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") (("c_2Elist_2EdropWhile" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "c_2Enum_2E0") (("c_2Elist_2EREVERSE" "ty_2Enum_2Enum") "V1l")))))))))))
+; numposrep.n2l_BOUND
+; ∀b n. 0 < b ⇒ EVERY ($> b) (n2l b n)
+(conjecture "thm_2Enumposrep_2En2l__BOUND" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0b") (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") ("c_2Enumposrep_2En2l" "V0b" "V1n"))))))))
+; numposrep.l2n_pow2_compute
+; (∀p. l2n (2 ** p) [] = 0) ∧ ∀p h t. l2n (2 ** p) (h::t) = MOD_2EXP p h + TIMES_2EXP p (l2n (2 ** p) t)
+(conjecture "thm_2Enumposrep_2El2n__pow2__compute" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0p" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0p") ("c_2Elist_2ENIL" "ty_2Enum_2Enum")) "c_2Enum_2E0"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1p" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V3t" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1p") (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "V2h" "V3t")) ("c_2Earithmetic_2E_2B" ("c_2Ebit_2EMOD__2EXP" "V1p" "V2h") ("c_2Ebit_2ETIMES__2EXP" "V1p" ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1p") "V3t"))))))))))))
+; numposrep.n2l_pow2_compute
+; ∀p n.     0 < p ⇒     (n2l (2 ** p) n =      (let         (q,r) = DIVMOD_2EXP p n       in         if q = 0 then [r] else r::n2l (2 ** p) q))
+(conjecture "thm_2Enumposrep_2En2l__pow2__compute" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0p" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0p") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) ("c_2Enumposrep_2En2l" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0p") "V1n") (("c_2Ebool_2ELET" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (("c_2Epair_2EUNCURRY" "ty_2Enum_2Enum" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V2q" "ty_2Enum_2Enum" (lambda "V3r" "ty_2Enum_2Enum" (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V2q" "c_2Enum_2E0") (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "V3r" ("c_2Elist_2ENIL" "ty_2Enum_2Enum")) (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "V3r" ("c_2Enumposrep_2En2l" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0p") "V2q")))))) ("c_2Ebit_2EDIVMOD__2EXP" "V0p" "V1n")))))))))
+; numposrep.l2n2
+; numposrep$l2n2 = l2n 2
+(axiom "thm_2Enumposrep_2El2n2" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") "ty_2Enum_2Enum")) "c_2Enumposrep_2El2n2" ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))
+; numposrep.l2n_2_thms
+; (∀t. l2n 2 (0::t) = NUMERAL (numposrep$l2n2 (0::t))) ∧ (∀t. l2n 2 (1::t) = NUMERAL (numposrep$l2n2 (1::t))) ∧ (numposrep$l2n2 [] = ZERO) ∧ (∀t. numposrep$l2n2 (0::t) = numeral$iDUB (numposrep$l2n2 t)) ∧ ∀t. numposrep$l2n2 (1::t) = BIT1 (numposrep$l2n2 t)
+(conjecture "thm_2Enumposrep_2El2n__2__thms" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V0t" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "c_2Enum_2E0" "V0t")) ("c_2Earithmetic_2ENUMERAL" ("c_2Enumposrep_2El2n2" (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "c_2Enum_2E0" "V0t")))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) (("c_2Elist_2ECONS" "ty_2Enum_2Enum") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V1t")) ("c_2Earithmetic_2ENUMERAL" ("c_2Enumposrep_2El2n2" (("c_2Elist_2ECONS" "ty_2Enum_2Enum") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V1t")))))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n2" ("c_2Elist_2ENIL" "ty_2Enum_2Enum")) "c_2Earithmetic_2EZERO") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V2t" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n2" (("c_2Elist_2ECONS" "ty_2Enum_2Enum") "c_2Enum_2E0" "V2t")) ("c_2Enumeral_2EiDUB" ("c_2Enumposrep_2El2n2" "V2t"))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V3t" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n2" (("c_2Elist_2ECONS" "ty_2Enum_2Enum") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V3t")) ("c_2Earithmetic_2EBIT1" ("c_2Enumposrep_2El2n2" "V3t"))))))))))
+; numposrep.BIT_num_from_bin_list
+; ∀x l.     EVERY ($> 2) l ∧ x < LENGTH l ⇒     (BIT x (num_from_bin_list l) ⇔ (EL x l = 1))
+(conjecture "thm_2Enumposrep_2EBIT__num__from__bin__list" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "V1l") ("c_2Eprim__rec_2E_3C" "V0x" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") "V1l"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0x" ("c_2Enumposrep_2Enum__from__bin__list" "V1l")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2EEL" "ty_2Enum_2Enum") "V0x" "V1l") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
+; numposrep.EL_num_to_bin_list
+; ∀x n. x < LENGTH (num_to_bin_list n) ⇒ (EL x (num_to_bin_list n) = BITV n x)
+(conjecture "thm_2Enumposrep_2EEL__num__to__bin__list" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0x" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") ("c_2Enumposrep_2Enum__to__bin__list" "V1n"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2EEL" "ty_2Enum_2Enum") "V0x" ("c_2Enumposrep_2Enum__to__bin__list" "V1n")) ("c_2Ebit_2EBITV" "V1n" "V0x"))))))))
+; numposrep.num_bin_list
+; num_from_bin_list ∘ num_to_bin_list = I
+(conjecture "thm_2Enumposrep_2Enum__bin__list" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ecombin_2Eo" "ty_2Enum_2Enum" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__bin__list" "c_2Enumposrep_2Enum__to__bin__list") ("c_2Ecombin_2EI" "ty_2Enum_2Enum")))
+; numposrep.num_oct_list
+; num_from_oct_list ∘ num_to_oct_list = I
+(conjecture "thm_2Enumposrep_2Enum__oct__list" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ecombin_2Eo" "ty_2Enum_2Enum" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__oct__list" "c_2Enumposrep_2Enum__to__oct__list") ("c_2Ecombin_2EI" "ty_2Enum_2Enum")))
+; numposrep.num_dec_list
+; num_from_dec_list ∘ num_to_dec_list = I
+(conjecture "thm_2Enumposrep_2Enum__dec__list" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ecombin_2Eo" "ty_2Enum_2Enum" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__dec__list" "c_2Enumposrep_2Enum__to__dec__list") ("c_2Ecombin_2EI" "ty_2Enum_2Enum")))
+; numposrep.num_hex_list
+; num_from_hex_list ∘ num_to_hex_list = I
+(conjecture "thm_2Enumposrep_2Enum__hex__list" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ecombin_2Eo" "ty_2Enum_2Enum" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) "c_2Enumposrep_2Enum__from__hex__list" "c_2Enumposrep_2Enum__to__hex__list") ("c_2Ecombin_2EI" "ty_2Enum_2Enum")))

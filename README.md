@@ -1,0 +1,36 @@
+# GRUNGE
+
+This is the full GRUNGE benchmark for evaluating large-theory ATPs working
+in different formalisms - FOF, TF0, TF1, TH0 and TH1.
+
+The benchmark is based on the HOL4 standard library -
+https://github.com/HOL-Theorem-Prover/HOL .
+
+For details see https://arxiv.org/abs/1903.02539 :
+
+Chad E. Brown, Thibault Gauthier, Cezary Kaliszyk, Geoff Sutcliffe,
+Josef Urban: GRUNGE: A Grand Unified ATP Challenge. CADE 2019: 123-141
+
+The HOL4 licence applies to all files.
+
+The repository contains also the code for generating the problems and
+both the bushy and chainy versions of the problems.
+
+The generated problems are compressed in the Generated directory. They
+unpack to over 30 GB.
+
+The hol4totptp1 directory contains the code for generating the
+syntactic translations via first-order encodings (Section 4 of the
+paper).
+
+The hol4totptp2 directory contains the code for generating the
+semantic translations via set theory encodings (Section 5 of the
+paper).
+
+
+
+
+
+
+
+

@@ -1,0 +1,305 @@
+"thm_2Efrac_2Efrac__TY__DEF"
+axiom
+
+"thm_2Efrac_2Efrac__tybij"
+axiom
+
+"thm_2Efrac_2Efrac__bij"
+conjecture
+intact
+"thm_2Efrac_2Efrac__tybij"
+
+"thm_2Efrac_2Efrac__nmr__def"
+axiom
+
+"thm_2Efrac_2Efrac__dnm__def"
+axiom
+
+"thm_2Efrac_2Efrac__sgn__def"
+axiom
+
+"thm_2Efrac_2Efrac__ainv__def"
+axiom
+
+"thm_2Efrac_2Efrac__minv__def"
+axiom
+
+"thm_2Efrac_2Efrac__0__def"
+axiom
+
+"thm_2Efrac_2Efrac__1__def"
+axiom
+
+"thm_2Efrac_2Eles__abs__def"
+axiom
+
+"thm_2Efrac_2Efrac__add__def"
+axiom
+
+"thm_2Efrac_2Efrac__sub__def"
+axiom
+
+"thm_2Efrac_2Efrac__mul__def"
+axiom
+
+"thm_2Efrac_2Efrac__div__def"
+axiom
+
+"thm_2Efrac_2Efrac__save__def"
+axiom
+
+"thm_2Efrac_2EFRAC"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__bij" "thm_2Efrac_2Efrac__nmr__def" "thm_2Efrac_2Efrac__dnm__def" "thm_2Epair_2EPAIR"
+
+"thm_2Efrac_2EFRAC__EQ"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Efrac_2Efrac__bij" "thm_2Epair_2ECLOSED__PAIR__EQ" "thm_2Epair_2ESND"
+
+"thm_2Efrac_2EFRAC__EQ__ALT"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Efrac_2EFRAC"
+
+"thm_2Efrac_2EFRAC__NOT__EQ"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Efrac_2EFRAC__EQ" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__NOT__EQ__IMP"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Efrac_2EFRAC__EQ" "thm_2Epair_2ECLOSED__PAIR__EQ"
+
+"thm_2Efrac_2EFRAC__DNMPOS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Efrac_2Efrac__bij" "thm_2Efrac_2Efrac__dnm__def"
+
+"thm_2Efrac_2ENMR"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Efrac_2Efrac__bij" "thm_2Efrac_2Efrac__nmr__def" "thm_2Epair_2EFST" "thm_2Epair_2ESND"
+
+"thm_2Efrac_2EDNM"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Efrac_2Efrac__bij" "thm_2Efrac_2Efrac__dnm__def" "thm_2Epair_2ESND"
+
+"thm_2Efrac_2EFRAC__AINV__CALCULATE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM"
+
+"thm_2Efrac_2EFRAC__MINV__CALCULATE"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EDISJ__SYM" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2Efrac__minv__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__SGN__CALCULATE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2ENMR"
+
+"thm_2Efrac_2EFRAC__ADD__CALCULATE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM"
+
+"thm_2Efrac_2EFRAC__SUB__CALCULATE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2Efrac__sub__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Einteger_2EINT__SUB__CALCULATE" "thm_2Einteger_2EINT__MUL__CALCULATE"
+
+"thm_2Efrac_2EFRAC__MULT__CALCULATE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM"
+
+"thm_2Efrac_2EFRAC__DIV__CALCULATE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2Efrac__minv__def" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2Efrac__div__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__ABS__NOT0POS" "thm_2Einteger_2EINT__MUL__COMM" "thm_2Einteger_2EINT__MUL__ASSOC"
+
+"thm_2Efrac_2EFRAC__ADD__ASSOC"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintegerRing_2Eint__ring__thms" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Eordering__case__def" "thm_2EternaryComparisons_2Eordering__eq__dec" "thm_2EternaryComparisons_2Elist__compare__def" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__MUL__ASSOC"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintegerRing_2Eint__ring__thms" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__ADD__COMM"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__add__def" "thm_2EintegerRing_2Eint__ring__thms" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Eordering__case__def" "thm_2EternaryComparisons_2Eordering__eq__dec" "thm_2EternaryComparisons_2Elist__compare__def" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__MUL__COMM"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__mul__def" "thm_2EintegerRing_2Eint__ring__thms" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Eordering__eq__dec" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__ADD__RID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__0__def" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2EFRAC" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__RID" "thm_2Einteger_2EINT__MUL__LZERO" "thm_2Einteger_2EINT__LT__CALCULATE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__lt"
+
+"thm_2Efrac_2EFRAC__MUL__RID"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__1__def" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2EFRAC" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Einteger_2EINT__MUL__RID" "thm_2Einteger_2EINT__LT__CALCULATE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__lt"
+
+"thm_2Efrac_2EFRAC__1__0"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Efrac_2Efrac__0__def" "thm_2Efrac_2Efrac__1__def" "thm_2Efrac_2EFRAC__NOT__EQ__IMP" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__eq" "thm_2Epair_2ECLOSED__PAIR__EQ"
+
+"thm_2Efrac_2EFRAC__AINV__0"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__0__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__LT__REDUCE"
+
+"thm_2Efrac_2EFRAC__AINV__AINV"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2EFRAC" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Einteger_2EINT__NEGNEG"
+
+"thm_2Efrac_2EFRAC__AINV__ADD"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2Einteger_2EINT__EQ__LMUL" "thm_2EintegerRing_2Eint__ring__thms" "thm_2EintegerRing_2Eint__rewrites" "thm_2EnumRing_2Enum__rewrites" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Eordering__case__def" "thm_2EternaryComparisons_2Eordering__eq__dec" "thm_2EternaryComparisons_2Elist__compare__def" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__AINV__SUB"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2Efrac__sub__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintegerRing_2Eint__ring__thms" "thm_2EintegerRing_2Eint__rewrites" "thm_2EnumRing_2Enum__rewrites" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Eordering__case__def" "thm_2EternaryComparisons_2Eordering__eq__dec" "thm_2EternaryComparisons_2Elist__compare__def" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__AINV__RMUL"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__SYM" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintegerRing_2Eint__ring__thms" "thm_2EintegerRing_2Eint__rewrites" "thm_2EnumRing_2Enum__rewrites" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__AINV__LMUL"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__FORALL__THM" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Efrac_2EFRAC__MUL__COMM" "thm_2Efrac_2EFRAC__AINV__RMUL" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__MINV__1"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2ECOND__CONG" "thm_2Efrac_2Efrac__1__def" "thm_2Efrac_2EFRAC__MINV__CALCULATE" "thm_2EintExtension_2ESGN__def" "thm_2Einteger_2EINT__MUL__RID" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__LT__CALCULATE" "thm_2Einteger_2EINT__ABS__NUM" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__eq" "thm_2Enumeral_2Enumeral__lt" "thm_2Eprim__rec_2ENOT__LESS__0"
+
+"thm_2Efrac_2EFRAC__SUB__ADD"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2Efrac__sub__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintegerRing_2Eint__ring__thms" "thm_2EintegerRing_2Eint__rewrites" "thm_2EnumRing_2Enum__rewrites" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Eordering__case__def" "thm_2EternaryComparisons_2Eordering__eq__dec" "thm_2EternaryComparisons_2Elist__compare__def" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__SUB__SUB"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2Efrac__sub__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintegerRing_2Eint__ring__thms" "thm_2EintegerRing_2Eint__rewrites" "thm_2EnumRing_2Enum__rewrites" "thm_2Equote_2Eindex__compare__def" "thm_2Equote_2Eindex__lt__def" "thm_2EternaryComparisons_2Eordering__case__def" "thm_2EternaryComparisons_2Eordering__eq__dec" "thm_2EternaryComparisons_2Elist__compare__def" "thm_2EternaryComparisons_2Elist__merge__def"
+
+"thm_2Efrac_2EFRAC__SGN__TOTAL"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2ECOND__RATOR" "thm_2Ebool_2ECOND__RAND" "thm_2Ebool_2ECOND__EXPAND" "thm_2Efrac_2Efrac__sgn__def" "thm_2EintExtension_2ESGN__def" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__SGN__POS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Efrac_2Efrac__sgn__def" "thm_2EintExtension_2ESGN__def" "thm_2Einteger_2EINT__LT__TOTAL" "thm_2Einteger_2EINT__LT__GT" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__LT__CALCULATE" "thm_2Einteger_2EINT__EQ__CALCULATE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__eq" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__SGN__NOT__NEG"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Efrac_2Efrac__sgn__def" "thm_2EintExtension_2ESGN__def" "thm_2Einteger_2EINT__LT__TOTAL" "thm_2Einteger_2EINT__LT__GT" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__LT__CALCULATE" "thm_2Einteger_2EINT__EQ__CALCULATE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__eq" "thm_2Eprim__rec_2ENOT__LESS__0" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__SGN__NEG"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2ECOND__RAND" "thm_2Ebool_2ECOND__EXPAND" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2EFRAC" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2ESGN__def" "thm_2EintExtension_2EINT__NOTGT__IMP__EQLT" "thm_2Einteger_2EINT__NEGNEG" "thm_2Einteger_2EINT__LT__GT" "thm_2Einteger_2EINT__NEG__LT0" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__NEG__EQ" "thm_2Einteger_2EINT__INJ" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__SGN__IMP__EQGT"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Efrac_2EFRAC__SGN__TOTAL" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__EQ__CALCULATE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__eq"
+
+"thm_2Efrac_2EFRAC__SGN__MUL"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2ECONJ__ASSOC" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EFORALL__AND__THM" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2EintExtension_2ESGN__def" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintExtension_2EINT__NO__ZERODIV" "thm_2Einteger_2EINT__LT__TOTAL" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__MUL__RID" "thm_2Einteger_2EINT__MUL__LZERO" "thm_2Einteger_2EINT__MUL__RZERO" "thm_2Einteger_2EINT__NEG__MUL2" "thm_2Einteger_2EINT__LT__GT" "thm_2Einteger_2EINT__ENTIRE" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__MUL__SIGN__CASES" "thm_2Einteger_2EINT__EQ__CALCULATE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__eq" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__ABS__SGN"
+conjecture
+intact
+"thm_2Earithmetic_2EZERO__LESS__EQ" "thm_2Earithmetic_2EMULT__CLAUSES" "thm_2Earithmetic_2ELESS__EQ__TRANS" "thm_2Earithmetic_2EADD__MONO__LESS__EQ" "thm_2Earithmetic_2ENOT__LEQ" "thm_2Earithmetic_2ESUC__ONE__ADD" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EIMP__F__EQ__F" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Efrac_2Efrac__sgn__def" "thm_2EintExtension_2ESGN__def" "thm_2Einteger_2EINT__LE" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__ABS__NUM" "thm_2Einteger_2EINT__ABS__NEG" "thm_2Einteger_2EINT__ABS__EQ__ID" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__lte"
+
+"thm_2Efrac_2EFRAC__SGN__MUL2"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2EintExtension_2EINT__MUL__POS__SIGN" "thm_2EintExtension_2EINT__SGN__MUL2" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__SGN__CASES"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Efrac_2EFRAC__SGN__TOTAL" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__SGN__AINV"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2Ebool__case__thm" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2EintExtension_2ESGN__def" "thm_2Einteger_2EINT__LT__TOTAL" "thm_2Einteger_2EINT__NEGNEG" "thm_2Einteger_2EINT__LT__ANTISYM" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__NEG__EQ" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__LT__NEG" "thm_2Einteger_2EINT__EQ__CALCULATE" "thm_2Enumeral_2Enumeral__distrib" "thm_2Enumeral_2Enumeral__eq" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Esat_2Epth__ni1" "thm_2Esat_2Epth__ni2" "thm_2Esat_2Epth__no1" "thm_2Esat_2Epth__no2" "thm_2Esat_2Epth__nn"
+
+"thm_2Efrac_2EFRAC__AINV__ONEONE"
+conjecture
+intact
+"thm_2Ebool_2EONE__ONE__DEF" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2EFRAC" "thm_2Efrac_2EFRAC__EQ" "thm_2Efrac_2EFRAC__DNMPOS" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Einteger_2EINT__EQ__NEG"
+
+"thm_2Efrac_2EFRAC__AINV__ONTO"
+conjecture
+intact
+"thm_2Ebool_2EONTO__DEF" "thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EDISJ__ASSOC" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Efrac_2EFRAC__AINV__AINV" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__NMR__SAVE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Efrac_2Efrac__save__def" "thm_2Efrac_2ENMR" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__DNM__SAVE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Efrac_2Efrac__save__def" "thm_2Efrac_2EDNM" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__0__SAVE"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Efrac_2Efrac__0__def" "thm_2Efrac_2Efrac__save__def" "thm_2Eint__arith_2Eless__to__leq__samer" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt1" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NOT__LE" "thm_2Einteger_2EINT__LE__ANTISYM" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Einteger_2EINT__LE__REDUCE" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2Enumeral__sub" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__1__SAVE"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Efrac_2Efrac__1__def" "thm_2Efrac_2Efrac__save__def" "thm_2Eint__arith_2Eless__to__leq__samer" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt1" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NOT__LE" "thm_2Einteger_2EINT__LE__ANTISYM" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Einteger_2EINT__LE__REDUCE" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2Enumeral__sub" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__AINV__SAVE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Efrac_2Efrac__ainv__def" "thm_2Efrac_2Efrac__save__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__MINV__SAVE"
+conjecture
+intact
+"thm_2Ebool_2EBOOL__CASES__AX" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2ECONJ__COMM" "thm_2Ebool_2ECONJ__ASSOC" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EOR__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2ECOND__CONG" "thm_2Ebool_2Ebool__case__thm" "thm_2Ecombin_2Eo__THM" "thm_2Ecombin_2EI__THM" "thm_2Efrac_2Efrac__sgn__def" "thm_2Efrac_2Efrac__minv__def" "thm_2Efrac_2Efrac__save__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2EintExtension_2ESGN__def" "thm_2Eint__arith_2Eless__to__leq__samer" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt1" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Eint__arith_2Ele__context__rwt3" "thm_2Eint__arith_2Ele__context__rwt5" "thm_2Eint__arith_2Eeq__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2Eint__sub" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__EQ__RADD" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NEGNEG" "thm_2Einteger_2EINT__NOT__LE" "thm_2Einteger_2EINT__LE__ANTISYM" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__EQ__LMUL" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__EQ__SUB__RADD" "thm_2Einteger_2EINT__EQ__NEG" "thm_2Einteger_2EINT__OF__NUM" "thm_2Einteger_2EINT__ABS" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Einteger_2EINT__LE__REDUCE" "thm_2Enumeral_2Enumeral__lt" "thm_2Enumeral_2Enumeral__lte" "thm_2Enumeral_2Enumeral__sub" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__ADD__SAVE"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__COMM" "thm_2Earithmetic_2EADD__ASSOC" "thm_2Earithmetic_2EMULT__RIGHT__1" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Ebool_2ELCOMM__THM" "thm_2Efrac_2Efrac__add__def" "thm_2Efrac_2Efrac__save__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2EINT__LDISTRIB" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__MUL__RID" "thm_2Einteger_2EINT__RDISTRIB" "thm_2Einteger_2EINT__EQ__RADD" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__INJ" "thm_2Einteger_2EINT__ADD" "thm_2Einteger_2EINT__MUL" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Emarker_2EAC__DEF" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg"
+
+"thm_2Efrac_2EFRAC__MUL__SAVE"
+conjecture
+intact
+"thm_2Earithmetic_2EADD__COMM" "thm_2Earithmetic_2EADD__ASSOC" "thm_2Earithmetic_2EMULT__LEFT__1" "thm_2Earithmetic_2EMULT__RIGHT__1" "thm_2Earithmetic_2ERIGHT__ADD__DISTRIB" "thm_2Earithmetic_2ELEFT__ADD__DISTRIB" "thm_2Earithmetic_2EEQ__MONO__ADD__EQ" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EEXISTS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__EXISTS__THM" "thm_2Ebool_2EIMP__DISJ__THM" "thm_2Efrac_2Efrac__mul__def" "thm_2Efrac_2Efrac__save__def" "thm_2Efrac_2ENMR" "thm_2Efrac_2EDNM" "thm_2Eint__arith_2Ele__move__all__right" "thm_2Eint__arith_2EINT__NUM__FORALL" "thm_2Eint__arith_2Ele__context__rwt2" "thm_2Einteger_2EINT__ADD__COMM" "thm_2Einteger_2EINT__ADD__ASSOC" "thm_2Einteger_2Eint__le" "thm_2Einteger_2EINT__ADD__RID" "thm_2Einteger_2EINT__MUL__LID" "thm_2Einteger_2EINT__NEG__ADD" "thm_2Einteger_2EINT__NEG__LMUL" "thm_2Einteger_2EINT__NEG__RMUL" "thm_2Einteger_2EINT__NEG__0" "thm_2Einteger_2EINT__ADD__CALCULATE" "thm_2Einteger_2EINT__ADD__REDUCE" "thm_2Einteger_2EINT__MUL__CALCULATE" "thm_2Einteger_2EINT__LT__REDUCE" "thm_2Einteger_2EINT__EQ__CALCULATE" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__neg"
+

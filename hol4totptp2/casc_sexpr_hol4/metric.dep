@@ -1,0 +1,128 @@
+"thm_2Emetric_2Eismet"
+axiom
+
+"thm_2Emetric_2Emetric__TY__DEF"
+axiom
+
+"thm_2Emetric_2Emetric__tybij"
+axiom
+
+"thm_2Emetric_2EMETRIC__ISMET"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emetric_2Emetric__tybij"
+
+"thm_2Emetric_2EMETRIC__ZERO"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emetric_2Eismet" "thm_2Emetric_2EMETRIC__ISMET"
+
+"thm_2Emetric_2EMETRIC__SAME"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emetric_2EMETRIC__ZERO"
+
+"thm_2Emetric_2EMETRIC__POS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2Eismet" "thm_2Emetric_2EMETRIC__ISMET" "thm_2Emetric_2EMETRIC__ZERO" "thm_2Ereal_2EREAL__ADD__LID" "thm_2Ereal_2EREAL__NOT__LE" "thm_2Ereal_2EREAL__LT__ADD2"
+
+"thm_2Emetric_2EMETRIC__SYM"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2Eismet" "thm_2Emetric_2EMETRIC__ISMET" "thm_2Emetric_2EMETRIC__SAME" "thm_2Ereal_2EREAL__ADD__RID" "thm_2Ereal_2EREAL__LE__ANTISYM"
+
+"thm_2Emetric_2EMETRIC__TRIANGLE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2Eismet" "thm_2Emetric_2EMETRIC__ISMET" "thm_2Emetric_2EMETRIC__SYM"
+
+"thm_2Emetric_2EMETRIC__NZ"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2EMETRIC__ZERO" "thm_2Emetric_2EMETRIC__POS" "thm_2Ereal_2EREAL__LE__LT" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg"
+
+"thm_2Emetric_2Emtop"
+axiom
+
+"thm_2Emetric_2Emtop__istopology"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2EIN__DEF" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EIMP__F" "thm_2Ebool_2EF__IMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ENOT__FORALL__THM" "thm_2Ebool_2ERIGHT__AND__FORALL__THM" "thm_2Ebool_2ERIGHT__OR__EXISTS__THM" "thm_2Ebool_2ERIGHT__FORALL__OR__THM" "thm_2Ebool_2EDISJ__SYM" "thm_2Ebool_2EDE__MORGAN__THM" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EIMP__CONG" "thm_2Ebool_2ESKOLEM__THM" "thm_2Ecombin_2EI__THM" "thm_2Epred__set_2EEMPTY__DEF" "thm_2Epred__set_2ESUBSET__applied" "thm_2Epred__set_2EINTER__applied" "thm_2Epred__set_2EBIGUNION__applied" "thm_2Ereal_2EREAL__LT__TOTAL" "thm_2Ereal_2EREAL__LT__TRANS" "thm_2Esat_2ENOT__NOT" "thm_2Esat_2EAND__INV__IMP" "thm_2Esat_2EOR__DUAL2" "thm_2Esat_2EOR__DUAL3" "thm_2Esat_2EAND__INV2" "thm_2Esat_2Edc__eq" "thm_2Esat_2Edc__conj" "thm_2Esat_2Edc__disj" "thm_2Esat_2Edc__imp" "thm_2Esat_2Edc__neg" "thm_2Etopology_2Eistopology"
+
+"thm_2Emetric_2EMTOP__OPEN"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emetric_2Emtop" "thm_2Emetric_2Emtop__istopology" "thm_2Etopology_2Etopology__tybij"
+
+"thm_2Emetric_2Eball"
+axiom
+
+"thm_2Emetric_2EBALL__OPEN"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2EMETRIC__TRIANGLE" "thm_2Emetric_2EMTOP__OPEN" "thm_2Emetric_2Eball" "thm_2Ereal_2EREAL__ADD__SYM" "thm_2Ereal_2EREAL__LET__TRANS" "thm_2Ereal_2EREAL__SUB__LT" "thm_2Ereal_2EREAL__LT__SUB__LADD"
+
+"thm_2Emetric_2EBALL__NEIGH"
+conjecture
+intact
+"thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2EMETRIC__SAME" "thm_2Emetric_2Eball" "thm_2Emetric_2EBALL__OPEN" "thm_2Epred__set_2ESUBSET__REFL" "thm_2Etopology_2Eneigh"
+
+"thm_2Emetric_2EMTOP__LIMPT"
+conjecture
+intact
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2ENOT__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2EMTOP__OPEN" "thm_2Emetric_2Eball" "thm_2Emetric_2EBALL__NEIGH" "thm_2Epred__set_2ESUBSET__applied" "thm_2Etopology_2Eneigh" "thm_2Etopology_2Elimpt"
+
+"thm_2Emetric_2EISMET__R1"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2Eismet" "thm_2Epair_2EUNCURRY__DEF" "thm_2Ereal_2EREAL__ADD__SYM" "thm_2Ereal_2EREAL__ADD__ASSOC" "thm_2Ereal_2EREAL__ADD__LID" "thm_2Ereal_2EREAL__ADD__LINV" "thm_2Ereal_2Ereal__sub" "thm_2Ereal_2EREAL__SUB__0" "thm_2Ereal_2EREAL__NEG__SUB" "thm_2Ereal_2EABS__ZERO" "thm_2Ereal_2EABS__NEG" "thm_2Ereal_2EABS__TRIANGLE"
+
+"thm_2Emetric_2Emr1"
+axiom
+
+"thm_2Emetric_2EMR1__DEF"
+conjecture
+intact
+"thm_2Emetric_2Emetric__tybij" "thm_2Emetric_2EISMET__R1" "thm_2Emetric_2Emr1" "thm_2Epair_2EUNCURRY__DEF"
+
+"thm_2Emetric_2EMR1__ADD"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emetric_2EMR1__DEF" "thm_2Ereal_2EREAL__ADD__SUB"
+
+"thm_2Emetric_2EMR1__SUB"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Emetric_2EMR1__DEF" "thm_2Ereal_2EREAL__SUB__SUB" "thm_2Ereal_2EABS__NEG"
+
+"thm_2Emetric_2EMR1__ADD__POS"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Emetric_2EMR1__ADD" "thm_2Ereal_2Eabs"
+
+"thm_2Emetric_2EMR1__SUB__LE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Emetric_2EMR1__SUB" "thm_2Ereal_2Eabs"
+
+"thm_2Emetric_2EMR1__ADD__LT"
+conjecture
+intact
+"thm_2Emetric_2EMR1__ADD__POS" "thm_2Ereal_2EREAL__LT__IMP__LE"
+
+"thm_2Emetric_2EMR1__SUB__LT"
+conjecture
+intact
+"thm_2Emetric_2EMR1__SUB__LE" "thm_2Ereal_2EREAL__LT__IMP__LE"
+
+"thm_2Emetric_2EMR1__BETWEEN1"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Emetric_2EMR1__DEF" "thm_2Ereal_2EABS__BETWEEN1"
+
+"thm_2Emetric_2EMR1__LIMPT"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EABS__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2ECOND__CLAUSES" "thm_2Emetric_2EMTOP__LIMPT" "thm_2Emetric_2EMR1__ADD" "thm_2Epred__set_2EUNIV__DEF" "thm_2Ereal_2EREAL__ADD__RID__UNIQ" "thm_2Ereal_2EREAL__LT__IMP__LE" "thm_2Ereal_2EREAL__LT__IMP__NE" "thm_2Ereal_2EREAL__LT__HALF1" "thm_2Ereal_2EREAL__LT__HALF2" "thm_2Ereal_2Eabs"
+

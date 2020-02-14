@@ -1,0 +1,16 @@
+"thm_2EnormalForms_2EEXT__POINT__DEF"
+axiom
+
+"thm_2EnormalForms_2EEXT__POINT"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EREFL__CLAUSE" "thm_2EnormalForms_2EEXT__POINT__DEF"
+
+"thm_2EnormalForms_2EUNIV__POINT__DEF"
+axiom
+
+"thm_2EnormalForms_2EUNIV__POINT"
+conjecture
+intact
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2EnormalForms_2EUNIV__POINT__DEF"
+

@@ -1,0 +1,54 @@
+; c.marker.:-
+; :ind -> bool -> bool
+(constant_definition "c_2Emarker_2E_3A_2D" ("ty_2Emin_2Efun" "ty_2Emin_2Eind" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")))
+; c.marker.AC
+; :bool -> bool -> bool
+(constant_definition "c_2Emarker_2EAC" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")))
+; c.marker.Abbrev
+; :bool -> bool
+(constant_definition "c_2Emarker_2EAbbrev" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))
+; c.marker.Cong
+; :bool -> bool
+(constant_definition "c_2Emarker_2ECong" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))
+; c.marker.IfCases
+; :bool
+(constant_definition "c_2Emarker_2EIfCases" "ty_2Emin_2Ebool")
+; c.marker.stmarker
+; :α -> α
+(constant_definition "c_2Emarker_2Estmarker" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "A_27a" "A_27a")))
+; c.marker.unint
+; :α -> α
+(constant_definition "c_2Emarker_2Eunint" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "A_27a" "A_27a")))
+; marker.stmarker_def
+; ∀x. stmarker x = x
+(axiom "thm_2Emarker_2Estmarker__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Emarker_2Estmarker" "A_27a") "V0x") "V0x")))))
+; marker.move_left_conj
+; ∀p q m.     (p ∧ stmarker m ⇔ stmarker m ∧ p) ∧     ((stmarker m ∧ p) ∧ q ⇔ stmarker m ∧ p ∧ q) ∧     (p ∧ stmarker m ∧ q ⇔ stmarker m ∧ p ∧ q)
+(conjecture "thm_2Emarker_2Emove__left__conj" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2m" "ty_2Emin_2Ebool" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "V0p" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m")) ("c_2Ebool_2E_2F_5C" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V0p")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_2F_5C" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V0p") "V1q") ("c_2Ebool_2E_2F_5C" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") ("c_2Ebool_2E_2F_5C" "V0p" "V1q"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "V0p" ("c_2Ebool_2E_2F_5C" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V1q")) ("c_2Ebool_2E_2F_5C" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") ("c_2Ebool_2E_2F_5C" "V0p" "V1q"))))))))))))
+; marker.move_right_conj
+; ∀p q m.     (stmarker m ∧ p ⇔ p ∧ stmarker m) ∧     (p ∧ q ∧ stmarker m ⇔ (p ∧ q) ∧ stmarker m) ∧     ((p ∧ stmarker m) ∧ q ⇔ (p ∧ q) ∧ stmarker m)
+(conjecture "thm_2Emarker_2Emove__right__conj" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2m" "ty_2Emin_2Ebool" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V0p") ("c_2Ebool_2E_2F_5C" "V0p" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "V0p" ("c_2Ebool_2E_2F_5C" "V1q" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_2F_5C" "V0p" "V1q") (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_2F_5C" "V0p" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m")) "V1q") ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_2F_5C" "V0p" "V1q") (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))))))))))))
+; marker.move_left_disj
+; ∀p q m.     (p ∨ stmarker m ⇔ stmarker m ∨ p) ∧     ((stmarker m ∨ p) ∨ q ⇔ stmarker m ∨ p ∨ q) ∧     (p ∨ stmarker m ∨ q ⇔ stmarker m ∨ p ∨ q)
+(conjecture "thm_2Emarker_2Emove__left__disj" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2m" "ty_2Emin_2Ebool" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "V0p" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m")) ("c_2Ebool_2E_5C_2F" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V0p")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_5C_2F" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V0p") "V1q") ("c_2Ebool_2E_5C_2F" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") ("c_2Ebool_2E_5C_2F" "V0p" "V1q"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V1q")) ("c_2Ebool_2E_5C_2F" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") ("c_2Ebool_2E_5C_2F" "V0p" "V1q"))))))))))))
+; marker.move_right_disj
+; ∀p q m.     (stmarker m ∨ p ⇔ p ∨ stmarker m) ∧     (p ∨ q ∨ stmarker m ⇔ (p ∨ q) ∨ stmarker m) ∧     ((p ∨ stmarker m) ∨ q ⇔ (p ∨ q) ∨ stmarker m)
+(conjecture "thm_2Emarker_2Emove__right__disj" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2m" "ty_2Emin_2Ebool" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m") "V0p") ("c_2Ebool_2E_5C_2F" "V0p" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" "V1q" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_5C_2F" "V0p" "V1q") (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_5C_2F" "V0p" (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m")) "V1q") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_5C_2F" "V0p" "V1q") (("c_2Emarker_2Estmarker" "ty_2Emin_2Ebool") "V2m"))))))))))))
+; marker.unint_def
+; ∀x. unint x = x
+(axiom "thm_2Emarker_2Eunint__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Emarker_2Eunint" "A_27a") "V0x") "V0x")))))
+; marker.Abbrev_def
+; ∀x. Abbrev x ⇔ x
+(axiom "thm_2Emarker_2EAbbrev__def" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emarker_2EAbbrev" "V0x") "V0x"))))
+; marker.IfCases_def
+; IfCases ⇔ T
+(axiom "thm_2Emarker_2EIfCases__def" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "c_2Emarker_2EIfCases" "c_2Ebool_2ET"))
+; marker.AC_DEF
+; ∀b1 b2. AC b1 b2 ⇔ b1 ∧ b2
+(axiom "thm_2Emarker_2EAC__DEF" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b1" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1b2" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emarker_2EAC" "V0b1" "V1b2") ("c_2Ebool_2E_2F_5C" "V0b1" "V1b2")))))))
+; marker.Cong_def
+; ∀x. Cong x ⇔ x
+(axiom "thm_2Emarker_2ECong__def" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emarker_2ECong" "V0x") "V0x"))))
+; marker.label_def
+; ∀lab argument. (lab :- argument) ⇔ argument
+(axiom "thm_2Emarker_2Elabel__def" (("c_2Ebool_2E_21" "ty_2Emin_2Eind") (lambda "V0lab" "ty_2Emin_2Eind" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1argument" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emarker_2E_3A_2D" "V0lab" "V1argument") "V1argument"))))))

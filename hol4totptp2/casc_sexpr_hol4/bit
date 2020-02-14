@@ -1,0 +1,453 @@
+; c.bit.BIT
+; :num -> num -> bool
+(constant_definition "c_2Ebit_2EBIT" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))
+; c.bit.BITS
+; :num -> num -> num -> num
+(constant_definition "c_2Ebit_2EBITS" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
+; c.bit.BITV
+; :num -> num -> num
+(constant_definition "c_2Ebit_2EBITV" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
+; c.bit.BITWISE
+; :num -> (bool -> bool -> bool) -> num -> num -> num
+(constant_definition "c_2Ebit_2EBITWISE" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))))
+; c.bit.BIT_MODIFY
+; :num -> (num -> bool -> bool) -> num -> num
+(constant_definition "c_2Ebit_2EBIT__MODIFY" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
+; c.bit.BIT_REVERSE
+; :num -> num -> num
+(constant_definition "c_2Ebit_2EBIT__REVERSE" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
+; c.bit.DIVMOD_2EXP
+; :num -> num -> num # num
+(constant_definition "c_2Ebit_2EDIVMOD__2EXP" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
+; c.bit.DIV_2EXP
+; :num -> num -> num
+(constant_definition "c_2Ebit_2EDIV__2EXP" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
+; c.bit.LOG2
+; :num -> num
+(constant_definition "c_2Ebit_2ELOG2" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))
+; c.bit.LOWEST_SET_BIT
+; :num -> num
+(constant_definition "c_2Ebit_2ELOWEST__SET__BIT" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))
+; c.bit.MOD_2EXP
+; :num -> num -> num
+(constant_definition "c_2Ebit_2EMOD__2EXP" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
+; c.bit.MOD_2EXP_EQ
+; :num -> num -> num -> bool
+(constant_definition "c_2Ebit_2EMOD__2EXP__EQ" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))))
+; c.bit.MOD_2EXP_MAX
+; :num -> num -> bool
+(constant_definition "c_2Ebit_2EMOD__2EXP__MAX" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))
+; c.bit.SBIT
+; :bool -> num -> num
+(constant_definition "c_2Ebit_2ESBIT" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
+; c.bit.SIGN_EXTEND
+; :num -> num -> num -> num
+(constant_definition "c_2Ebit_2ESIGN__EXTEND" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
+; c.bit.SLICE
+; :num -> num -> num -> num
+(constant_definition "c_2Ebit_2ESLICE" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
+; c.bit.TIMES_2EXP
+; :num -> num -> num
+(constant_definition "c_2Ebit_2ETIMES__2EXP" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
+; bit.MOD_2EXP_def
+; ∀x n. MOD_2EXP x n = n MOD 2 ** x
+(axiom "thm_2Ebit_2EMOD__2EXP__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EMOD__2EXP" "V0x" "V1n") ("c_2Earithmetic_2EMOD" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x"))))))))
+; bit.DIV_2EXP_def
+; ∀x n. DIV_2EXP x n = n DIV 2 ** x
+(axiom "thm_2Ebit_2EDIV__2EXP__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EDIV__2EXP" "V0x" "V1n") ("c_2Earithmetic_2EDIV" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x"))))))))
+; bit.TIMES_2EXP_def
+; ∀x n. TIMES_2EXP x n = n * 2 ** x
+(axiom "thm_2Ebit_2ETIMES__2EXP__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ETIMES__2EXP" "V0x" "V1n") ("c_2Earithmetic_2E_2A" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x"))))))))
+; bit.DIVMOD_2EXP_def
+; ∀x n. DIVMOD_2EXP x n = (n DIV 2 ** x,n MOD 2 ** x)
+(axiom "thm_2Ebit_2EDIVMOD__2EXP__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ebit_2EDIVMOD__2EXP" "V0x" "V1n") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Earithmetic_2EDIV" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x")) ("c_2Earithmetic_2EMOD" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x")))))))))
+; bit.SBIT_def
+; ∀b n. SBIT b n = if b then 2 ** n else 0
+(axiom "thm_2Ebit_2ESBIT__def" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESBIT" "V0b" "V1n") (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") "V0b" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1n") "c_2Enum_2E0")))))))
+; bit.BITS_def
+; ∀h l n. BITS h l n = MOD_2EXP (SUC h − l) (DIV_2EXP l n)
+(axiom "thm_2Ebit_2EBITS__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") ("c_2Ebit_2EMOD__2EXP" ("c_2Earithmetic_2E_2D" ("c_2Enum_2ESUC" "V0h") "V1l") ("c_2Ebit_2EDIV__2EXP" "V1l" "V2n"))))))))))
+; bit.BITV_def
+; ∀n b. BITV n b = BITS b b n
+(axiom "thm_2Ebit_2EBITV__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITV" "V0n" "V1b") ("c_2Ebit_2EBITS" "V1b" "V1b" "V0n")))))))
+; bit.BIT_def
+; ∀b n. BIT b n ⇔ (BITS b b n = 1)
+(axiom "thm_2Ebit_2EBIT__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0b" "V1n") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0b" "V0b" "V1n") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
+; bit.SLICE_def
+; ∀h l n. SLICE h l n = MOD_2EXP (SUC h) n − MOD_2EXP l n
+(axiom "thm_2Ebit_2ESLICE__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V0h" "V1l" "V2n") ("c_2Earithmetic_2E_2D" ("c_2Ebit_2EMOD__2EXP" ("c_2Enum_2ESUC" "V0h") "V2n") ("c_2Ebit_2EMOD__2EXP" "V1l" "V2n"))))))))))
+; bit.LOG2_def
+; LOG2 = LOG 2
+(axiom "thm_2Ebit_2ELOG2__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ebit_2ELOG2" ("c_2Elogroot_2ELOG" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))
+; bit.LOWEST_SET_BIT_def
+; ∀n. LOWEST_SET_BIT n = LEAST i. BIT i n
+(axiom "thm_2Ebit_2ELOWEST__SET__BIT__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ELOWEST__SET__BIT" "V0n") ("c_2Ewhile_2ELEAST" (lambda "V1i" "ty_2Enum_2Enum" ("c_2Ebit_2EBIT" "V1i" "V0n")))))))
+; bit.BIT_REVERSE_def
+; (∀x. BIT_REVERSE 0 x = 0) ∧ ∀n x. BIT_REVERSE (SUC n) x = BIT_REVERSE n x * 2 + SBIT (BIT n x) 0
+(axiom "thm_2Ebit_2EBIT__REVERSE__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBIT__REVERSE" "c_2Enum_2E0" "V0x") "c_2Enum_2E0"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBIT__REVERSE" ("c_2Enum_2ESUC" "V1n") "V2x") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" ("c_2Ebit_2EBIT__REVERSE" "V1n" "V2x") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ebit_2ESBIT" ("c_2Ebit_2EBIT" "V1n" "V2x") "c_2Enum_2E0")))))))))
+; bit.BITWISE_def
+; (∀op x y. BITWISE 0 op x y = 0) ∧ ∀n op x y.     BITWISE (SUC n) op x y =     BITWISE n op x y + SBIT (op (BIT n x) (BIT n y)) n
+(axiom "thm_2Ebit_2EBITWISE__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V0op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2y" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITWISE" "c_2Enum_2E0" "V0op" "V1x" "V2y") "c_2Enum_2E0"))))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V4op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V5x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V6y" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITWISE" ("c_2Enum_2ESUC" "V3n") "V4op" "V5x" "V6y") ("c_2Earithmetic_2E_2B" ("c_2Ebit_2EBITWISE" "V3n" "V4op" "V5x" "V6y") ("c_2Ebit_2ESBIT" ("V4op" ("c_2Ebit_2EBIT" "V3n" "V5x") ("c_2Ebit_2EBIT" "V3n" "V6y")) "V3n")))))))))))))
+; bit.BIT_MODIFY_def
+; (∀f x. BIT_MODIFY 0 f x = 0) ∧ ∀n f x. BIT_MODIFY (SUC n) f x = BIT_MODIFY n f x + SBIT (f n (BIT n x)) n
+(axiom "thm_2Ebit_2EBIT__MODIFY__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1x" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBIT__MODIFY" "c_2Enum_2E0" "V0f" "V1x") "c_2Enum_2E0"))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V3f" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4x" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBIT__MODIFY" ("c_2Enum_2ESUC" "V2n") "V3f" "V4x") ("c_2Earithmetic_2E_2B" ("c_2Ebit_2EBIT__MODIFY" "V2n" "V3f" "V4x") ("c_2Ebit_2ESBIT" ("V3f" "V2n" ("c_2Ebit_2EBIT" "V2n" "V4x")) "V2n")))))))))))
+; bit.SIGN_EXTEND_def
+; ∀l h n.     SIGN_EXTEND l h n =     (let        m = n MOD 2 ** l      in        if BIT (l − 1) n then 2 ** h − 2 ** l + m else m)
+(axiom "thm_2Ebit_2ESIGN__EXTEND__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESIGN__EXTEND" "V0l" "V1h" "V2n") (("c_2Ebool_2ELET" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (lambda "V3m" "ty_2Enum_2Enum" (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2D" "V0l" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V2n") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1h") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0l")) "V3m") "V3m")) ("c_2Earithmetic_2EMOD" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0l")))))))))))
+; bit.MOD_2EXP_EQ_def
+; ∀n a b. MOD_2EXP_EQ n a b ⇔ (MOD_2EXP n a = MOD_2EXP n b)
+(axiom "thm_2Ebit_2EMOD__2EXP__EQ__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EMOD__2EXP__EQ" "V0n" "V1a" "V2b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EMOD__2EXP" "V0n" "V1a") ("c_2Ebit_2EMOD__2EXP" "V0n" "V2b"))))))))))
+; bit.MOD_2EXP_MAX_def
+; ∀n a. MOD_2EXP_MAX n a ⇔ (MOD_2EXP n a = 2 ** n − 1)
+(axiom "thm_2Ebit_2EMOD__2EXP__MAX__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EMOD__2EXP__MAX" "V0n" "V1a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EMOD__2EXP" "V0n" "V1a") ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
+; bit.LESS_MULT_MONO2
+; ∀a b x y. a < x ∧ b < y ⇒ a * b < x * y
+(conjecture "thm_2Ebit_2ELESS__MULT__MONO2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3y" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V0a" "V2x") ("c_2Eprim__rec_2E_3C" "V1b" "V3y")) ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2E_2A" "V0a" "V1b") ("c_2Earithmetic_2E_2A" "V2x" "V3y"))))))))))))
+; bit.LOG2_UNIQUE
+; ∀n p. 2 ** p ≤ n ∧ n < 2 ** SUC p ⇒ (LOG2 n = p)
+(conjecture "thm_2Ebit_2ELOG2__UNIQUE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1p" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1p") "V0n") ("c_2Eprim__rec_2E_3C" "V0n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V1p")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ELOG2" "V0n") "V1p")))))))
+; bit.LOG2_TWOEXP
+; ∀n. LOG2 (2 ** n) = n
+(conjecture "thm_2Ebit_2ELOG2__TWOEXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ELOG2" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) "V0n"))))
+; bit.DIVMOD_2EXP
+; ∀x n. DIVMOD_2EXP x n = (DIV_2EXP x n,MOD_2EXP x n)
+(conjecture "thm_2Ebit_2EDIVMOD__2EXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ebit_2EDIVMOD__2EXP" "V0x" "V1n") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ebit_2EDIV__2EXP" "V0x" "V1n") ("c_2Ebit_2EMOD__2EXP" "V0x" "V1n"))))))))
+; bit.SUC_SUB
+; ∀a. SUC a − a = 1
+(conjecture "thm_2Ebit_2ESUC__SUB" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2D" ("c_2Enum_2ESUC" "V0a") "V0a") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))
+; bit.DIV_MULT_1
+; ∀r n. r < n ⇒ ((n + r) DIV n = 1)
+(conjecture "thm_2Ebit_2EDIV__MULT__1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0r" "V1n") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EDIV" ("c_2Earithmetic_2E_2B" "V1n" "V0r") "V1n") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
+; bit.NOT_ZERO_ADD1
+; ∀m. m ≠ 0 ⇒ ∃p. m = SUC p
+(conjecture "thm_2Ebit_2ENOT__ZERO__ADD1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "c_2Enum_2E0")) (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1p" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" ("c_2Enum_2ESUC" "V1p"))))))))
+; bit.ZERO_LT_TWOEXP
+; ∀n. 0 < 2 ** n
+(conjecture "thm_2Ebit_2EZERO__LT__TWOEXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")))))
+; bit.ONE_LE_TWOEXP
+; ∀n. 1 ≤ 2 ** n
+(conjecture "thm_2Ebit_2EONE__LE__TWOEXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")))))
+; bit.TWOEXP_NOT_ZERO
+; ∀n. 2 ** n ≠ 0
+(conjecture "thm_2Ebit_2ETWOEXP__NOT__ZERO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n") "c_2Enum_2E0")))))
+; bit.MOD_2EXP_LT
+; ∀n k. k MOD 2 ** n < 2 ** n
+(conjecture "thm_2Ebit_2EMOD__2EXP__LT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1k" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2EMOD" "V1k" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")))))))
+; bit.TWOEXP_DIVISION
+; ∀n k. k = k DIV 2 ** n * 2 ** n + k MOD 2 ** n
+(conjecture "thm_2Ebit_2ETWOEXP__DIVISION" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1k" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1k" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" ("c_2Earithmetic_2EDIV" "V1k" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) ("c_2Earithmetic_2EMOD" "V1k" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")))))))))
+; bit.TWOEXP_MONO
+; ∀a b. a < b ⇒ 2 ** a < 2 ** b
+(conjecture "thm_2Ebit_2ETWOEXP__MONO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0a" "V1b") ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0a") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b"))))))))
+; bit.TWOEXP_MONO2
+; ∀a b. a ≤ b ⇒ 2 ** a ≤ 2 ** b
+(conjecture "thm_2Ebit_2ETWOEXP__MONO2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V0a" "V1b") ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0a") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b"))))))))
+; bit.EXP_SUB_LESS_EQ
+; ∀a b. 2 ** (a − b) ≤ 2 ** a
+(conjecture "thm_2Ebit_2EEXP__SUB__LESS__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2E_2D" "V0a" "V1b")) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0a")))))))
+; bit.MOD_LEQ
+; ∀a b. 0 < b ⇒ a MOD b ≤ a
+(conjecture "thm_2Ebit_2EMOD__LEQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V1b") ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EMOD" "V0a" "V1b") "V0a")))))))
+; bit.BITS_THM
+; ∀h l n. BITS h l n = (n DIV 2 ** l) MOD 2 ** (SUC h − l)
+(conjecture "thm_2Ebit_2EBITS__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2EDIV" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l")) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2E_2D" ("c_2Enum_2ESUC" "V0h") "V1l")))))))))))
+; bit.BITSLT_THM
+; ∀h l n. BITS h l n < 2 ** (SUC h − l)
+(conjecture "thm_2Ebit_2EBITSLT__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2E_2D" ("c_2Enum_2ESUC" "V0h") "V1l"))))))))))
+; bit.BITSLT_THM2
+; ∀h l n. BITS h l n < 2 ** SUC h
+(conjecture "thm_2Ebit_2EBITSLT__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0h"))))))))))
+; bit.BITS_THM2
+; ∀h l n. BITS h l n = n MOD 2 ** SUC h DIV 2 ** l
+(conjecture "thm_2Ebit_2EBITS__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") ("c_2Earithmetic_2EDIV" ("c_2Earithmetic_2EMOD" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0h"))) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l"))))))))))
+; bit.BITS_LEQ
+; ∀h l n. BITS h l n ≤ n
+(conjecture "thm_2Ebit_2EBITS__LEQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Earithmetic_2E_3C_3D" ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") "V2n"))))))))
+; bit.BITS_COMP_THM
+; ∀h1 l1 h2 l2 n.     h2 + l1 ≤ h1 ⇒ (BITS h2 l2 (BITS h1 l1 n) = BITS (h2 + l1) (l2 + l1) n)
+(conjecture "thm_2Ebit_2EBITS__COMP__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2h2" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3l2" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2E_2B" "V2h2" "V1l1") "V0h1") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V2h2" "V3l2" ("c_2Ebit_2EBITS" "V0h1" "V1l1" "V4n")) ("c_2Ebit_2EBITS" ("c_2Earithmetic_2E_2B" "V2h2" "V1l1") ("c_2Earithmetic_2E_2B" "V3l2" "V1l1") "V4n"))))))))))))))
+; bit.BITS_DIV_THM
+; ∀h l x n. BITS h l x DIV 2 ** n = BITS h (l + n) x
+(conjecture "thm_2Ebit_2EBITS__DIV__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EDIV" ("c_2Ebit_2EBITS" "V0h" "V1l" "V2x") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V3n")) ("c_2Ebit_2EBITS" "V0h" ("c_2Earithmetic_2E_2B" "V1l" "V3n") "V2x")))))))))))
+; bit.BITS_LT_HIGH
+; ∀h l n. n < 2 ** SUC h ⇒ (BITS h l n = n DIV 2 ** l)
+(conjecture "thm_2Ebit_2EBITS__LT__HIGH" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0h"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") ("c_2Earithmetic_2EDIV" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l")))))))))))
+; bit.BITS_ZERO
+; ∀h l n. h < l ⇒ (BITS h l n = 0)
+(conjecture "thm_2Ebit_2EBITS__ZERO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0h" "V1l") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") "c_2Enum_2E0")))))))))
+; bit.BITS_ZERO2
+; ∀h l. BITS h l 0 = 0
+(conjecture "thm_2Ebit_2EBITS__ZERO2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "c_2Enum_2E0") "c_2Enum_2E0"))))))
+; bit.BITS_ZERO3
+; ∀h n. BITS h 0 n = n MOD 2 ** SUC h
+(conjecture "thm_2Ebit_2EBITS__ZERO3" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" "V1n") ("c_2Earithmetic_2EMOD" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0h")))))))))
+; bit.BITS_ZERO4
+; ∀h l a. l ≤ h ⇒ (BITS h l (a * 2 ** l) = BITS (h − l) 0 a)
+(conjecture "thm_2Ebit_2EBITS__ZERO4" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V1l" "V0h") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" ("c_2Earithmetic_2E_2A" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l"))) ("c_2Ebit_2EBITS" ("c_2Earithmetic_2E_2D" "V0h" "V1l") "c_2Enum_2E0" "V2a"))))))))))
+; bit.BITS_ZEROL
+; ∀h a. a < 2 ** SUC h ⇒ (BITS h 0 a = a)
+(conjecture "thm_2Ebit_2EBITS__ZEROL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V1a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0h"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" "V1a") "V1a")))))))
+; bit.BITS_LOG2_ZERO_ID
+; ∀n. 0 < n ⇒ (BITS (LOG2 n) 0 n = n)
+(conjecture "thm_2Ebit_2EBITS__LOG2__ZERO__ID" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0n") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" ("c_2Ebit_2ELOG2" "V0n") "c_2Enum_2E0" "V0n") "V0n")))))
+; bit.BITS_LT_LOW
+; ∀h l n. n < 2 ** l ⇒ (BITS h l n = 0)
+(conjecture "thm_2Ebit_2EBITS__LT__LOW" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n") "c_2Enum_2E0")))))))))
+; bit.BIT_ZERO
+; ∀b. ¬BIT b 0
+(conjecture "thm_2Ebit_2EBIT__ZERO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0b" "c_2Enum_2E0")))))
+; bit.BIT_B
+; ∀b. BIT b (2 ** b)
+(conjecture "thm_2Ebit_2EBIT__B" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" ("c_2Ebit_2EBIT" "V0b" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0b")))))
+; bit.BIT_TWO_POW
+; ∀n m. BIT n (2 ** m) ⇔ (m = n)
+(conjecture "thm_2Ebit_2EBIT__TWO__POW" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1m" "V0n")))))))
+; bit.BIT_B_NEQ
+; ∀a b. a ≠ b ⇒ ¬BIT a (2 ** b)
+(conjecture "thm_2Ebit_2EBIT__B__NEQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0a" "V1b")) ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b")))))))))
+; bit.BITS_COMP_THM2
+; ∀h1 l1 h2 l2 n.     BITS h2 l2 (BITS h1 l1 n) = BITS (MIN h1 (h2 + l1)) (l2 + l1) n
+(conjecture "thm_2Ebit_2EBITS__COMP__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2h2" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3l2" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V2h2" "V3l2" ("c_2Ebit_2EBITS" "V0h1" "V1l1" "V4n")) ("c_2Ebit_2EBITS" ("c_2Earithmetic_2EMIN" "V0h1" ("c_2Earithmetic_2E_2B" "V2h2" "V1l1")) ("c_2Earithmetic_2E_2B" "V3l2" "V1l1") "V4n")))))))))))))
+; bit.NOT_MOD2_LEM
+; ∀n. n MOD 2 ≠ 0 ⇔ (n MOD 2 = 1)
+(conjecture "thm_2Ebit_2ENOT__MOD2__LEM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
+; bit.NOT_MOD2_LEM2
+; ∀n. n MOD 2 ≠ 1 ⇔ (n MOD 2 = 0)
+(conjecture "thm_2Ebit_2ENOT__MOD2__LEM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "c_2Enum_2E0")))))
+; bit.ODD_MOD2_LEM
+; ∀n. ODD n ⇔ (n MOD 2 = 1)
+(conjecture "thm_2Ebit_2EODD__MOD2__LEM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Earithmetic_2EODD" "V0n") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
+; bit.DIV_MULT_THM
+; ∀x n. n DIV 2 ** x * 2 ** x = n − n MOD 2 ** x
+(conjecture "thm_2Ebit_2EDIV__MULT__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2A" ("c_2Earithmetic_2EDIV" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x")) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x")) ("c_2Earithmetic_2E_2D" "V1n" ("c_2Earithmetic_2EMOD" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x")))))))))
+; bit.DIV_MULT_THM2
+; ∀n. 2 * (n DIV 2) = n − n MOD 2
+(conjecture "thm_2Ebit_2EDIV__MULT__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2A" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2EDIV" "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))) ("c_2Earithmetic_2E_2D" "V0n" ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))
+; bit.LESS_EQ_EXP_MULT
+; ∀a b. a ≤ b ⇒ ∃p. 2 ** b = p * 2 ** a
+(conjecture "thm_2Ebit_2ELESS__EQ__EXP__MULT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V0a" "V1b") (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V2p" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b") ("c_2Earithmetic_2E_2A" "V2p" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0a")))))))))))
+; bit.SLICE_THM
+; ∀n h l. SLICE h l n = BITS h l n * 2 ** l
+(conjecture "thm_2Ebit_2ESLICE__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2l" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V1h" "V2l" "V0n") ("c_2Earithmetic_2E_2A" ("c_2Ebit_2EBITS" "V1h" "V2l" "V0n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V2l"))))))))))
+; bit.SLICELT_THM
+; ∀h l n. SLICE h l n < 2 ** SUC h
+(conjecture "thm_2Ebit_2ESLICELT__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" ("c_2Ebit_2ESLICE" "V0h" "V1l" "V2n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0h"))))))))))
+; bit.BITS_SLICE_THM
+; ∀h l n. BITS h l (SLICE h l n) = BITS h l n
+(conjecture "thm_2Ebit_2EBITS__SLICE__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" ("c_2Ebit_2ESLICE" "V0h" "V1l" "V2n")) ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n")))))))))
+; bit.BITS_SLICE_THM2
+; ∀h h2 l n. h ≤ h2 ⇒ (BITS h2 l (SLICE h l n) = BITS h l n)
+(conjecture "thm_2Ebit_2EBITS__SLICE__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h2" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V0h" "V1h2") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V1h2" "V2l" ("c_2Ebit_2ESLICE" "V0h" "V2l" "V3n")) ("c_2Ebit_2EBITS" "V0h" "V2l" "V3n"))))))))))))
+; bit.SLICE_ZERO_THM
+; ∀n h. SLICE h 0 n = BITS h 0 n
+(conjecture "thm_2Ebit_2ESLICE__ZERO__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V1h" "c_2Enum_2E0" "V0n") ("c_2Ebit_2EBITS" "V1h" "c_2Enum_2E0" "V0n")))))))
+; bit.MOD_2EXP_MONO
+; ∀n h l. l ≤ h ⇒ n MOD 2 ** l ≤ n MOD 2 ** SUC h
+(conjecture "thm_2Ebit_2EMOD__2EXP__MONO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2l" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V2l" "V1h") ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V2l")) ("c_2Earithmetic_2EMOD" "V0n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V1h"))))))))))))
+; bit.SLICE_COMP_THM
+; ∀h m l n. SUC m ≤ h ∧ l ≤ m ⇒ (SLICE h (SUC m) n + SLICE m l n = SLICE h l n)
+(conjecture "thm_2Ebit_2ESLICE__COMP__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Enum_2ESUC" "V1m") "V0h") ("c_2Earithmetic_2E_3C_3D" "V2l" "V1m")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2B" ("c_2Ebit_2ESLICE" "V0h" ("c_2Enum_2ESUC" "V1m") "V3n") ("c_2Ebit_2ESLICE" "V1m" "V2l" "V3n")) ("c_2Ebit_2ESLICE" "V0h" "V2l" "V3n"))))))))))))
+; bit.SLICE_COMP_RWT
+; ∀h m' m l n.     l ≤ m ∧ (m' = m + 1) ∧ m < h ⇒ (SLICE h m' n + SLICE m l n = SLICE h l n)
+(conjecture "thm_2Ebit_2ESLICE__COMP__RWT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m_27" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V3l" "V2m") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1m_27" ("c_2Earithmetic_2E_2B" "V2m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Eprim__rec_2E_3C" "V2m" "V0h"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2B" ("c_2Ebit_2ESLICE" "V0h" "V1m_27" "V4n") ("c_2Ebit_2ESLICE" "V2m" "V3l" "V4n")) ("c_2Ebit_2ESLICE" "V0h" "V3l" "V4n"))))))))))))))
+; bit.SLICE_ZERO
+; ∀h l n. h < l ⇒ (SLICE h l n = 0)
+(conjecture "thm_2Ebit_2ESLICE__ZERO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0h" "V1l") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V0h" "V1l" "V2n") "c_2Enum_2E0")))))))))
+; bit.SLICE_ZERO2
+; ∀l h. SLICE h l 0 = 0
+(conjecture "thm_2Ebit_2ESLICE__ZERO2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V1h" "V0l" "c_2Enum_2E0") "c_2Enum_2E0"))))))
+; bit.BITS_SUM
+; ∀h l a b. b < 2 ** l ⇒ (BITS h l (a * 2 ** l + b) = BITS h l (a * 2 ** l))
+(conjecture "thm_2Ebit_2EBITS__SUM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V3b" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l")) "V3b")) ("c_2Ebit_2EBITS" "V0h" "V1l" ("c_2Earithmetic_2E_2A" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1l"))))))))))))))
+; bit.BITS_SUM2
+; ∀h l a b. BITS h l (a * 2 ** SUC h + b) = BITS h l b
+(conjecture "thm_2Ebit_2EBITS__SUM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0h"))) "V3b")) ("c_2Ebit_2EBITS" "V0h" "V1l" "V3b")))))))))))
+; bit.SLICE_COMP_THM2
+; ∀h l x y n. h ≤ x ∧ y ≤ l ⇒ (SLICE h l (SLICE x y n) = SLICE h l n)
+(conjecture "thm_2Ebit_2ESLICE__COMP__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3y" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V0h" "V2x") ("c_2Earithmetic_2E_3C_3D" "V3y" "V1l")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V0h" "V1l" ("c_2Ebit_2ESLICE" "V2x" "V3y" "V4n")) ("c_2Ebit_2ESLICE" "V0h" "V1l" "V4n"))))))))))))))
+; bit.BITS_SUM3
+; ∀h a b. BITS h 0 (BITS h 0 a + BITS h 0 b) = BITS h 0 (a + b)
+(conjecture "thm_2Ebit_2EBITS__SUM3" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" ("c_2Earithmetic_2E_2B" ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" "V1a") ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" "V2b"))) ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" ("c_2Earithmetic_2E_2B" "V1a" "V2b"))))))))))
+; bit.BITS_MUL
+; ∀h a b. BITS h 0 (BITS h 0 a * BITS h 0 b) = BITS h 0 (a * b)
+(conjecture "thm_2Ebit_2EBITS__MUL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" ("c_2Earithmetic_2E_2A" ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" "V1a") ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" "V2b"))) ("c_2Ebit_2EBITS" "V0h" "c_2Enum_2E0" ("c_2Earithmetic_2E_2A" "V1a" "V2b"))))))))))
+; bit.BIT_COMP_THM3
+; ∀h m l n.     SUC m ≤ h ∧ l ≤ m ⇒     (BITS h (SUC m) n * 2 ** (SUC m − l) + BITS m l n = BITS h l n)
+(conjecture "thm_2Ebit_2EBIT__COMP__THM3" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Enum_2ESUC" "V1m") "V0h") ("c_2Earithmetic_2E_3C_3D" "V2l" "V1m")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" ("c_2Ebit_2EBITS" "V0h" ("c_2Enum_2ESUC" "V1m") "V3n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2E_2D" ("c_2Enum_2ESUC" "V1m") "V2l"))) ("c_2Ebit_2EBITS" "V1m" "V2l" "V3n")) ("c_2Ebit_2EBITS" "V0h" "V2l" "V3n"))))))))))))
+; bit.NOT_BIT
+; ∀n a. ¬BIT n a ⇔ (BITS n n a = 0)
+(conjecture "thm_2Ebit_2ENOT__BIT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0n" "V1a")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0n" "V0n" "V1a") "c_2Enum_2E0")))))))
+; bit.NOT_BITS
+; ∀n a. BITS n n a ≠ 0 ⇔ (BITS n n a = 1)
+(conjecture "thm_2Ebit_2ENOT__BITS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0n" "V0n" "V1a") "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0n" "V0n" "V1a") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
+; bit.NOT_BITS2
+; ∀n a. BITS n n a ≠ 1 ⇔ (BITS n n a = 0)
+(conjecture "thm_2Ebit_2ENOT__BITS2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0n" "V0n" "V1a") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0n" "V0n" "V1a") "c_2Enum_2E0")))))))
+; bit.BIT_SLICE
+; ∀n a b. (BIT n a ⇔ BIT n b) ⇔ (SLICE n n a = SLICE n n b)
+(conjecture "thm_2Ebit_2EBIT__SLICE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0n" "V1a") ("c_2Ebit_2EBIT" "V0n" "V2b")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V0n" "V0n" "V1a") ("c_2Ebit_2ESLICE" "V0n" "V0n" "V2b"))))))))))
+; bit.BIT_SLICE_LEM
+; ∀y x n. SBIT (BIT x n) (x + y) = SLICE x x n * 2 ** y
+(conjecture "thm_2Ebit_2EBIT__SLICE__LEM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0y" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESBIT" ("c_2Ebit_2EBIT" "V1x" "V2n") ("c_2Earithmetic_2E_2B" "V1x" "V0y")) ("c_2Earithmetic_2E_2A" ("c_2Ebit_2ESLICE" "V1x" "V1x" "V2n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0y"))))))))))
+; bit.BIT_SLICE_THM
+; ∀x n. SBIT (BIT x n) x = SLICE x x n
+(conjecture "thm_2Ebit_2EBIT__SLICE__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESBIT" ("c_2Ebit_2EBIT" "V0x" "V1n") "V0x") ("c_2Ebit_2ESLICE" "V0x" "V0x" "V1n")))))))
+; bit.BIT_SLICE_THM2
+; ∀b n. BIT b n ⇔ (SLICE b b n = 2 ** b)
+(conjecture "thm_2Ebit_2EBIT__SLICE__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0b" "V1n") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V0b" "V0b" "V1n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0b"))))))))
+; bit.BIT_SLICE_THM3
+; ∀b n. ¬BIT b n ⇔ (SLICE b b n = 0)
+(conjecture "thm_2Ebit_2EBIT__SLICE__THM3" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0b" "V1n")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESLICE" "V0b" "V0b" "V1n") "c_2Enum_2E0")))))))
+; bit.BIT_SLICE_THM4
+; ∀b h l n. BIT b (SLICE h l n) ⇔ l ≤ b ∧ b ≤ h ∧ BIT b n
+(conjecture "thm_2Ebit_2EBIT__SLICE__THM4" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0b" ("c_2Ebit_2ESLICE" "V1h" "V2l" "V3n")) ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V2l" "V0b") ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V0b" "V1h") ("c_2Ebit_2EBIT" "V0b" "V3n")))))))))))))
+; bit.SBIT_DIV
+; ∀b m n. n < m ⇒ (SBIT b (m − n) = SBIT b m DIV 2 ** n)
+(conjecture "thm_2Ebit_2ESBIT__DIV" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V2n" "V1m") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2ESBIT" "V0b" ("c_2Earithmetic_2E_2D" "V1m" "V2n")) ("c_2Earithmetic_2EDIV" ("c_2Ebit_2ESBIT" "V0b" "V1m") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V2n")))))))))))
+; bit.BITS_SUC
+; ∀h l n.     l ≤ SUC h ⇒     (SBIT (BIT (SUC h) n) (SUC h − l) + BITS h l n = BITS (SUC h) l n)
+(conjecture "thm_2Ebit_2EBITS__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V1l" ("c_2Enum_2ESUC" "V0h")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2B" ("c_2Ebit_2ESBIT" ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0h") "V2n") ("c_2Earithmetic_2E_2D" ("c_2Enum_2ESUC" "V0h") "V1l")) ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n")) ("c_2Ebit_2EBITS" ("c_2Enum_2ESUC" "V0h") "V1l" "V2n"))))))))))
+; bit.BITS_SUC_THM
+; ∀h l n.     BITS (SUC h) l n =     if SUC h < l then 0 else SBIT (BIT (SUC h) n) (SUC h − l) + BITS h l n
+(conjecture "thm_2Ebit_2EBITS__SUC__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" ("c_2Enum_2ESUC" "V0h") "V1l" "V2n") (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") ("c_2Eprim__rec_2E_3C" ("c_2Enum_2ESUC" "V0h") "V1l") "c_2Enum_2E0" ("c_2Earithmetic_2E_2B" ("c_2Ebit_2ESBIT" ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0h") "V2n") ("c_2Earithmetic_2E_2D" ("c_2Enum_2ESUC" "V0h") "V1l")) ("c_2Ebit_2EBITS" "V0h" "V1l" "V2n")))))))))))
+; bit.BIT_BITS_THM
+; ∀h l a b.     (∀x. l ≤ x ∧ x ≤ h ⇒ (BIT x a ⇔ BIT x b)) ⇔ (BITS h l a = BITS h l b)
+(conjecture "thm_2Ebit_2EBIT__BITS__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4x" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V1l" "V4x") ("c_2Earithmetic_2E_3C_3D" "V4x" "V0h")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V4x" "V2a") ("c_2Ebit_2EBIT" "V4x" "V3b"))))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0h" "V1l" "V2a") ("c_2Ebit_2EBITS" "V0h" "V1l" "V3b"))))))))))))
+; bit.BITS_ZERO5
+; ∀n m. (∀i. i ≤ n ⇒ ¬BIT i m) ⇒ (BITS n 0 m = 0)
+(conjecture "thm_2Ebit_2EBITS__ZERO5" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2i" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V2i" "V0n") ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V2i" "V1m"))))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" "V0n" "c_2Enum_2E0" "V1m") "c_2Enum_2E0")))))))
+; bit.BIT0_ODD
+; BIT 0 = ODD
+(conjecture "thm_2Ebit_2EBIT0__ODD" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) ("c_2Ebit_2EBIT" "c_2Enum_2E0") "c_2Earithmetic_2EODD"))
+; bit.BITV_THM
+; ∀b n. BITV n b = SBIT (BIT b n) 0
+(conjecture "thm_2Ebit_2EBITV__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITV" "V1n" "V0b") ("c_2Ebit_2ESBIT" ("c_2Ebit_2EBIT" "V0b" "V1n") "c_2Enum_2E0")))))))
+; bit.ADD_BIT0
+; ∀m n. BIT 0 (m + n) ⇔ (BIT 0 m ⇎ BIT 0 n)
+(conjecture "thm_2Ebit_2EADD__BIT0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "c_2Enum_2E0" ("c_2Earithmetic_2E_2B" "V0m" "V1n")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "c_2Enum_2E0" "V0m") ("c_2Ebit_2EBIT" "c_2Enum_2E0" "V1n")))))))))
+; bit.ADD_BITS_SUC
+; ∀n a b.     BITS (SUC n) (SUC n) (a + b) =     (BITS (SUC n) (SUC n) a + BITS (SUC n) (SUC n) b +      BITS (SUC n) (SUC n) (BITS n 0 a + BITS n 0 b)) MOD 2
+(conjecture "thm_2Ebit_2EADD__BITS__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITS" ("c_2Enum_2ESUC" "V0n") ("c_2Enum_2ESUC" "V0n") ("c_2Earithmetic_2E_2B" "V1a" "V2b")) ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2B" ("c_2Ebit_2EBITS" ("c_2Enum_2ESUC" "V0n") ("c_2Enum_2ESUC" "V0n") "V1a") ("c_2Ebit_2EBITS" ("c_2Enum_2ESUC" "V0n") ("c_2Enum_2ESUC" "V0n") "V2b")) ("c_2Ebit_2EBITS" ("c_2Enum_2ESUC" "V0n") ("c_2Enum_2ESUC" "V0n") ("c_2Earithmetic_2E_2B" ("c_2Ebit_2EBITS" "V0n" "c_2Enum_2E0" "V1a") ("c_2Ebit_2EBITS" "V0n" "c_2Enum_2E0" "V2b")))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))))
+; bit.ADD_BIT_SUC
+; ∀n a b.     BIT (SUC n) (a + b) ⇔     if BIT (SUC n) (BITS n 0 a + BITS n 0 b) then       BIT (SUC n) a ⇔ BIT (SUC n) b     else BIT (SUC n) a ⇎ BIT (SUC n) b
+(conjecture "thm_2Ebit_2EADD__BIT__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0n") ("c_2Earithmetic_2E_2B" "V1a" "V2b")) (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0n") ("c_2Earithmetic_2E_2B" ("c_2Ebit_2EBITS" "V0n" "c_2Enum_2E0" "V1a") ("c_2Ebit_2EBITS" "V0n" "c_2Enum_2E0" "V2b"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0n") "V1a") ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0n") "V2b")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0n") "V1a") ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0n") "V2b"))))))))))))
+; bit.BITWISE_LT_2EXP
+; ∀n op a b. BITWISE n op a b < 2 ** n
+(conjecture "thm_2Ebit_2EBITWISE__LT__2EXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V1op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" ("c_2Ebit_2EBITWISE" "V0n" "V1op" "V2a" "V3b") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")))))))))))
+; bit.BITWISE_THM
+; ∀x n op a b. x < n ⇒ (BIT x (BITWISE n op a b) ⇔ op (BIT x a) (BIT x b))
+(conjecture "thm_2Ebit_2EBITWISE__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V2op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0x" "V1n") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0x" ("c_2Ebit_2EBITWISE" "V1n" "V2op" "V3a" "V4b")) ("V2op" ("c_2Ebit_2EBIT" "V0x" "V3a") ("c_2Ebit_2EBIT" "V0x" "V4b")))))))))))))))
+; bit.BITWISE_COR
+; ∀x n op a b.     x < n ⇒     op (BIT x a) (BIT x b) ⇒     ((BITWISE n op a b DIV 2 ** x) MOD 2 = 1)
+(conjecture "thm_2Ebit_2EBITWISE__COR" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V2op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0x" "V1n") ("c_2Emin_2E_3D_3D_3E" ("V2op" ("c_2Ebit_2EBIT" "V0x" "V3a") ("c_2Ebit_2EBIT" "V0x" "V4b")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2EDIV" ("c_2Ebit_2EBITWISE" "V1n" "V2op" "V3a" "V4b") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))))))
+; bit.BITWISE_NOT_COR
+; ∀x n op a b.     x < n ⇒     ¬op (BIT x a) (BIT x b) ⇒     ((BITWISE n op a b DIV 2 ** x) MOD 2 = 0)
+(conjecture "thm_2Ebit_2EBITWISE__NOT__COR" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V2op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0x" "V1n") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("V2op" ("c_2Ebit_2EBIT" "V0x" "V3a") ("c_2Ebit_2EBIT" "V0x" "V4b"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2EDIV" ("c_2Ebit_2EBITWISE" "V1n" "V2op" "V3a" "V4b") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "c_2Enum_2E0"))))))))))))))
+; bit.BITWISE_BITS
+; ∀wl op a b.     BITWISE (SUC wl) op (BITS wl 0 a) (BITS wl 0 b) = BITWISE (SUC wl) op a b
+(conjecture "thm_2Ebit_2EBITWISE__BITS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0wl" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V1op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITWISE" ("c_2Enum_2ESUC" "V0wl") "V1op" ("c_2Ebit_2EBITS" "V0wl" "c_2Enum_2E0" "V2a") ("c_2Ebit_2EBITS" "V0wl" "c_2Enum_2E0" "V3b")) ("c_2Ebit_2EBITWISE" ("c_2Enum_2ESUC" "V0wl") "V1op" "V2a" "V3b")))))))))))
+; bit.NOT_BIT_GT_TWOEXP
+; ∀i n. n < 2 ** i ⇒ ¬BIT i n
+(conjecture "thm_2Ebit_2ENOT__BIT__GT__TWOEXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0i")) ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0i" "V1n"))))))))
+; bit.BIT_IMP_GE_TWOEXP
+; ∀i n. BIT i n ⇒ 2 ** i ≤ n
+(conjecture "thm_2Ebit_2EBIT__IMP__GE__TWOEXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebit_2EBIT" "V0i" "V1n") ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0i") "V1n")))))))
+; bit.BITWISE_ONE_COMP_LEM
+; ∀n a b. BITWISE (SUC n) (λx y. ¬x) a b = 2 ** SUC n − 1 − BITS n 0 a
+(conjecture "thm_2Ebit_2EBITWISE__ONE__COMP__LEM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITWISE" ("c_2Enum_2ESUC" "V0n") (lambda "V3x" "ty_2Emin_2Ebool" (lambda "V4y" "ty_2Emin_2Ebool" ("c_2Ebool_2E_7E" "V3x"))) "V1a" "V2b") ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Enum_2ESUC" "V0n")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Ebit_2EBITS" "V0n" "c_2Enum_2E0" "V1a"))))))))))
+; bit.BIT_COMPLEMENT
+; ∀n i a.     BIT i (2 ** n − a MOD 2 ** n) ⇔     (a MOD 2 ** n = 0) ∧ (i = n) ∨     a MOD 2 ** n ≠ 0 ∧ i < n ∧ ¬BIT i (a MOD 2 ** n − 1)
+(conjecture "thm_2Ebit_2EBIT__COMPLEMENT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V1i" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n") ("c_2Earithmetic_2EMOD" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")))) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1i" "V0n")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) "c_2Enum_2E0")) ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V1i" "V0n") ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V1i" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EMOD" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))))))
+; bit.BIT_OF_BITS_THM
+; ∀n h l a. l + n ≤ h ⇒ (BIT n (BITS h l a) ⇔ BIT (l + n) a)
+(conjecture "thm_2Ebit_2EBIT__OF__BITS__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2E_2B" "V2l" "V0n") "V1h") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0n" ("c_2Ebit_2EBITS" "V1h" "V2l" "V3a")) ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2B" "V2l" "V0n") "V3a"))))))))))))
+; bit.BIT_SHIFT_THM
+; ∀n a s. BIT (n + s) (a * 2 ** s) ⇔ BIT n a
+(conjecture "thm_2Ebit_2EBIT__SHIFT__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2s" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2B" "V0n" "V2s") ("c_2Earithmetic_2E_2A" "V1a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V2s"))) ("c_2Ebit_2EBIT" "V0n" "V1a")))))))))
+; bit.BIT_SHIFT_THM2
+; ∀n a s. s ≤ n ⇒ (BIT n (a * 2 ** s) ⇔ BIT (n − s) a)
+(conjecture "thm_2Ebit_2EBIT__SHIFT__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2s" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V2s" "V0n") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0n" ("c_2Earithmetic_2E_2A" "V1a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V2s"))) ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2D" "V0n" "V2s") "V1a"))))))))))
+; bit.BIT_SHIFT_THM3
+; ∀n a s. n < s ⇒ ¬BIT n (a * 2 ** s)
+(conjecture "thm_2Ebit_2EBIT__SHIFT__THM3" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2s" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0n" "V2s") ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0n" ("c_2Earithmetic_2E_2A" "V1a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V2s"))))))))))))
+; bit.BIT_OF_BITS_THM2
+; ∀h l x n. h < l + x ⇒ ¬BIT x (BITS h l n)
+(conjecture "thm_2Ebit_2EBIT__OF__BITS__THM2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0h" ("c_2Earithmetic_2E_2B" "V1l" "V2x")) ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V2x" ("c_2Ebit_2EBITS" "V0h" "V1l" "V3n")))))))))))))
+; bit.BIT_DIV2
+; ∀n i. BIT n (i DIV 2) ⇔ BIT (SUC n) i
+(conjecture "thm_2Ebit_2EBIT__DIV2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0n" ("c_2Earithmetic_2EDIV" "V1i" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))) ("c_2Ebit_2EBIT" ("c_2Enum_2ESUC" "V0n") "V1i")))))))
+; bit.BIT_SHIFT_THM4
+; ∀n i a. BIT i (a DIV 2 ** n) ⇔ BIT (i + n) a
+(conjecture "thm_2Ebit_2EBIT__SHIFT__THM4" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V1i" ("c_2Earithmetic_2EDIV" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n"))) ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2B" "V1i" "V0n") "V2a")))))))))
+; bit.DIV_LT
+; ∀n m a. n < m ∧ a < 2 ** m ⇒ a DIV 2 ** n < 2 ** m
+(conjecture "thm_2Ebit_2EDIV__LT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V0n" "V1m") ("c_2Eprim__rec_2E_3C" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m"))) ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2EDIV" "V2a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m"))))))))))
+; bit.MOD_ZERO_GT
+; ∀n a. a ≠ 0 ∧ (a MOD 2 ** n = 0) ⇒ 2 ** n ≤ a
+(conjecture "thm_2Ebit_2EMOD__ZERO__GT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1a" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V1a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) "c_2Enum_2E0")) ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n") "V1a")))))))
+; bit.DIV_GT0
+; ∀a b. b ≤ a ∧ 0 < b ⇒ 0 < a DIV b
+(conjecture "thm_2Ebit_2EDIV__GT0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V1b" "V0a") ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V1b")) ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Earithmetic_2EDIV" "V0a" "V1b"))))))))
+; bit.DIV_SUB1
+; ∀a b.     2 ** b ≤ a ∧ (a MOD 2 ** b = 0) ⇒ (a DIV 2 ** b − 1 = (a − 1) DIV 2 ** b)
+(conjecture "thm_2Ebit_2EDIV__SUB1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b") "V0a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V0a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b")) "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EDIV" "V0a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2EDIV" ("c_2Earithmetic_2E_2D" "V0a" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b")))))))))
+; bit.BIT_EXP_SUB1
+; ∀b n. BIT b (2 ** n − 1) ⇔ b < n
+(conjecture "thm_2Ebit_2EBIT__EXP__SUB1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0b" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1n") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Eprim__rec_2E_3C" "V0b" "V1n")))))))
+; bit.BIT_SHIFT_THM5
+; ∀n m i a.     i + n < m ∧ a < 2 ** m ⇒     (BIT i        (2 ** m −         (a DIV 2 ** n + if a MOD 2 ** n = 0 then 0 else 1) MOD 2 ** m) ⇔      BIT (i + n) (2 ** m − a MOD 2 ** m))
+(conjecture "thm_2Ebit_2EBIT__SHIFT__THM5" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2E_2B" "V2i" "V0n") "V1m") ("c_2Eprim__rec_2E_3C" "V3a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V2i" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2EDIV" "V3a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V3a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0n")) "c_2Enum_2E0") "c_2Enum_2E0" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m")))) ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2B" "V2i" "V0n") ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m") ("c_2Earithmetic_2EMOD" "V3a" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m")))))))))))))))
+; bit.SBIT_MULT
+; ∀b m n. SBIT b n * 2 ** m = SBIT b (n + m)
+(conjecture "thm_2Ebit_2ESBIT__MULT" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2A" ("c_2Ebit_2ESBIT" "V0b" "V2n") ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1m")) ("c_2Ebit_2ESBIT" "V0b" ("c_2Earithmetic_2E_2B" "V2n" "V1m"))))))))))
+; bit.BITWISE_EVAL
+; ∀n op a b.     BITWISE (SUC n) op a b =     2 * BITWISE n op (a DIV 2) (b DIV 2) + SBIT (op (ODD a) (ODD b)) 0
+(conjecture "thm_2Ebit_2EBITWISE__EVAL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V1op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ebit_2EBITWISE" ("c_2Enum_2ESUC" "V0n") "V1op" "V2a" "V3b") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Ebit_2EBITWISE" "V0n" "V1op" ("c_2Earithmetic_2EDIV" "V2a" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2EDIV" "V3b" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))) ("c_2Ebit_2ESBIT" ("V1op" ("c_2Earithmetic_2EODD" "V2a") ("c_2Earithmetic_2EODD" "V3b")) "c_2Enum_2E0"))))))))))))
+; bit.MOD_PLUS_RIGHT
+; ∀n. 0 < n ⇒ ∀j k. (j + k MOD n) MOD n = (j + k) MOD n
+(conjecture "thm_2Ebit_2EMOD__PLUS__RIGHT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0n") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1j" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2k" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" "V1j" ("c_2Earithmetic_2EMOD" "V2k" "V0n")) "V0n") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" "V1j" "V2k") "V0n"))))))))))
+; bit.MOD_PLUS_LEFT
+; ∀n. 0 < n ⇒ ∀j k. (k MOD n + j) MOD n = (k + j) MOD n
+(conjecture "thm_2Ebit_2EMOD__PLUS__LEFT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0n") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1j" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2k" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2EMOD" "V2k" "V0n") "V1j") "V0n") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" "V2k" "V1j") "V0n"))))))))))
+; bit.MOD_PLUS_1
+; ∀n. 0 < n ⇒ ∀x. ((x + 1) MOD n = 0) ⇔ (x MOD n + 1 = n)
+(conjecture "thm_2Ebit_2EMOD__PLUS__1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0n") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1x" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" "V1x" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0n") "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2EMOD" "V1x" "V0n") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0n"))))))))
+; bit.MOD_ADD_1
+; ∀n. 0 < n ⇒ ∀x. (x + 1) MOD n ≠ 0 ⇒ ((x + 1) MOD n = x MOD n + 1)
+(conjecture "thm_2Ebit_2EMOD__ADD__1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0n") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1x" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" "V1x" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0n") "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" ("c_2Earithmetic_2E_2B" "V1x" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0n") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2EMOD" "V1x" "V0n") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))
+; bit.BIT_REVERSE_THM
+; ∀x n a. x < n ⇒ (BIT x (BIT_REVERSE n a) ⇔ BIT (n − 1 − x) a)
+(conjecture "thm_2Ebit_2EBIT__REVERSE__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0x" "V1n") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0x" ("c_2Ebit_2EBIT__REVERSE" "V1n" "V2a")) ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2E_2D" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0x") "V2a"))))))))))
+; bit.LOG2_LE_MONO
+; ∀x y. 0 < x ⇒ x ≤ y ⇒ LOG2 x ≤ LOG2 y
+(conjecture "thm_2Ebit_2ELOG2__LE__MONO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1y" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0x") ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V0x" "V1y") ("c_2Earithmetic_2E_3C_3D" ("c_2Ebit_2ELOG2" "V0x") ("c_2Ebit_2ELOG2" "V1y")))))))))
+; bit.TWOEXP_LE_IMP_LE_LOG2
+; (∀x y. 2 ** x ≤ y ⇒ x ≤ LOG2 y) ∧ ∀y x. 0 < x ⇒ x ≤ 2 ** y ⇒ LOG2 x ≤ y
+(conjecture "thm_2Ebit_2ETWOEXP__LE__IMP__LE__LOG2" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1y" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0x") "V1y") ("c_2Earithmetic_2E_3C_3D" "V0x" ("c_2Ebit_2ELOG2" "V1y"))))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2y" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3x" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V3x") ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V3x" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V2y")) ("c_2Earithmetic_2E_3C_3D" ("c_2Ebit_2ELOG2" "V3x") "V2y")))))))))
+; bit.NOT_BIT_GT_LOG2
+; ∀i n. LOG2 n < i ⇒ ¬BIT i n
+(conjecture "thm_2Ebit_2ENOT__BIT__GT__LOG2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Ebit_2ELOG2" "V1n") "V0i") ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0i" "V1n"))))))))
+; bit.NOT_BIT_GT_BITWISE
+; ∀i n op a b. n ≤ i ⇒ ¬BIT i (BITWISE n op a b)
+(conjecture "thm_2Ebit_2ENOT__BIT__GT__BITWISE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V2op" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V1n" "V0i") ("c_2Ebool_2E_7E" ("c_2Ebit_2EBIT" "V0i" ("c_2Ebit_2EBITWISE" "V1n" "V2op" "V3a" "V4b")))))))))))))))
+; bit.LT_TWOEXP
+; ∀x n. x < 2 ** n ⇔ (x = 0) ∨ LOG2 x < n
+(conjecture "thm_2Ebit_2ELT__TWOEXP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0x" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1n")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0x" "c_2Enum_2E0") ("c_2Eprim__rec_2E_3C" ("c_2Ebit_2ELOG2" "V0x") "V1n"))))))))
+; bit.BIT_MODIFY_THM
+; ∀x n f a. x < n ⇒ (BIT x (BIT_MODIFY n f a) ⇔ f x (BIT x a))
+(conjecture "thm_2Ebit_2EBIT__MODIFY__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) (lambda "V2f" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3a" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0x" "V1n") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V0x" ("c_2Ebit_2EBIT__MODIFY" "V1n" "V2f" "V3a")) ("V2f" "V0x" ("c_2Ebit_2EBIT" "V0x" "V3a")))))))))))))
+; bit.BIT_SIGN_EXTEND
+; ∀l h n i.     l ≠ 0 ⇒     (BIT i (SIGN_EXTEND l h n) ⇔      if l ≤ h ⇒ i < l then BIT i (n MOD 2 ** l) else i < h ∧ BIT (l − 1) n)
+(conjecture "thm_2Ebit_2EBIT__SIGN__EXTEND" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0l" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1h" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3i" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0l" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebit_2EBIT" "V3i" ("c_2Ebit_2ESIGN__EXTEND" "V0l" "V1h" "V2n")) (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Earithmetic_2E_3C_3D" "V0l" "V1h") ("c_2Eprim__rec_2E_3C" "V3i" "V0l")) ("c_2Ebit_2EBIT" "V3i" ("c_2Earithmetic_2EMOD" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0l"))) ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V3i" "V1h") ("c_2Ebit_2EBIT" ("c_2Earithmetic_2E_2D" "V0l" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V2n"))))))))))))))
+; bit.BIT_LOG2
+; ∀n. n ≠ 0 ⇒ BIT (LOG2 n) n
+(conjecture "thm_2Ebit_2EBIT__LOG2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0n" "c_2Enum_2E0")) ("c_2Ebit_2EBIT" ("c_2Ebit_2ELOG2" "V0n") "V0n")))))
+; bit.EXISTS_BIT_IN_RANGE
+; ∀a b n. n ≠ 0 ∧ 2 ** a ≤ n ∧ n < 2 ** b ⇒ ∃i. a ≤ i ∧ i < b ∧ BIT i n
+(conjecture "thm_2Ebit_2EEXISTS__BIT__IN__RANGE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V2n" "c_2Enum_2E0")) ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0a") "V2n") ("c_2Eprim__rec_2E_3C" "V2n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V1b")))) (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V3i" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" "V0a" "V3i") ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V3i" "V1b") ("c_2Ebit_2EBIT" "V3i" "V2n")))))))))))))
+; bit.EXISTS_BIT_LT
+; ∀b n. n ≠ 0 ∧ n < 2 ** b ⇒ ∃i. i < b ∧ BIT i n
+(conjecture "thm_2Ebit_2EEXISTS__BIT__LT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1n" "c_2Enum_2E0")) ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) "V0b"))) (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V2i" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V2i" "V0b") ("c_2Ebit_2EBIT" "V2i" "V1n"))))))))))
+; bit.LEAST_THM
+; ∀n P. (∀m. m < n ⇒ ¬P m) ∧ P n ⇒ ($LEAST P = n)
+(conjecture "thm_2Ebit_2ELEAST__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V1P" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2m" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V2m" "V0n") ("c_2Ebool_2E_7E" ("V1P" "V2m"))))) ("V1P" "V0n")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Ewhile_2ELEAST" "V1P") "V0n")))))))

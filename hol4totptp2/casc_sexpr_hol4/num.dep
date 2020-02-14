@@ -1,0 +1,36 @@
+"thm_2Enum_2ESUC__REP__DEF"
+axiom
+
+"thm_2Enum_2EZERO__REP__DEF"
+axiom
+
+"thm_2Enum_2EIS__NUM__REP"
+axiom
+
+"thm_2Enum_2Enum__TY__DEF"
+axiom
+
+"thm_2Enum_2Enum__ISO__DEF"
+axiom
+
+"thm_2Enum_2EZERO__DEF"
+axiom
+
+"thm_2Enum_2ESUC__DEF"
+axiom
+
+"thm_2Enum_2ENOT__SUC"
+conjecture
+intact
+"thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Enum_2EZERO__REP__DEF" "thm_2Enum_2EIS__NUM__REP" "thm_2Enum_2Enum__ISO__DEF" "thm_2Enum_2EZERO__DEF" "thm_2Enum_2ESUC__DEF"
+
+"thm_2Enum_2EINV__SUC"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EONE__ONE__THM" "thm_2Enum_2ESUC__REP__DEF" "thm_2Enum_2EIS__NUM__REP" "thm_2Enum_2Enum__ISO__DEF" "thm_2Enum_2ESUC__DEF"
+
+"thm_2Enum_2EINDUCTION"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFALSITY" "thm_2Ebool_2EEXCLUDED__MIDDLE" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Enum_2EIS__NUM__REP" "thm_2Enum_2Enum__ISO__DEF" "thm_2Enum_2EZERO__DEF" "thm_2Enum_2ESUC__DEF"
+

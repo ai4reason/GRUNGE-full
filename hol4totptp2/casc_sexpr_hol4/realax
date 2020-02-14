@@ -1,0 +1,346 @@
+(type_definition "ty_2Erealax_2Ereal" 0)
+; c.realax.hreal_of_real
+; :real -> hreal
+(constant_definition "c_2Erealax_2Ehreal__of__real" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Ehreal_2Ehreal"))
+; c.realax.hreal_of_treal
+; :hreal # hreal -> hreal
+(constant_definition "c_2Erealax_2Ehreal__of__treal" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Ehreal_2Ehreal"))
+; c.realax.inv
+; :real -> real
+(constant_definition "c_2Erealax_2Einv" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))
+; c.realax.real_0
+; :real
+(constant_definition "c_2Erealax_2Ereal__0" "ty_2Erealax_2Ereal")
+; c.realax.real_1
+; :real
+(constant_definition "c_2Erealax_2Ereal__1" "ty_2Erealax_2Ereal")
+; c.realax.real_ABS
+; :hreal # hreal -> real
+(constant_definition "c_2Erealax_2Ereal__ABS" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Erealax_2Ereal"))
+; c.realax.real_ABS_CLASS
+; :(hreal # hreal -> bool) -> real
+(constant_definition "c_2Erealax_2Ereal__ABS__CLASS" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool") "ty_2Erealax_2Ereal"))
+; c.realax.real_REP
+; :real -> hreal # hreal
+(constant_definition "c_2Erealax_2Ereal__REP" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")))
+; c.realax.real_REP_CLASS
+; :real -> hreal # hreal -> bool
+(constant_definition "c_2Erealax_2Ereal__REP__CLASS" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")))
+; c.realax.real_add
+; :real -> real -> real
+(constant_definition "c_2Erealax_2Ereal__add" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
+; c.realax.real_lt
+; :real -> real -> bool
+(constant_definition "c_2Erealax_2Ereal__lt" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool")))
+; c.realax.real_mul
+; :real -> real -> real
+(constant_definition "c_2Erealax_2Ereal__mul" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
+; c.realax.real_neg
+; :real -> real
+(constant_definition "c_2Erealax_2Ereal__neg" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))
+; c.realax.real_of_hreal
+; :hreal -> real
+(constant_definition "c_2Erealax_2Ereal__of__hreal" ("ty_2Emin_2Efun" "ty_2Ehreal_2Ehreal" "ty_2Erealax_2Ereal"))
+; c.realax.treal_0
+; :hreal # hreal
+(constant_definition "c_2Erealax_2Etreal__0" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal"))
+; c.realax.treal_1
+; :hreal # hreal
+(constant_definition "c_2Erealax_2Etreal__1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal"))
+; c.realax.treal_add
+; :hreal # hreal -> hreal # hreal -> hreal # hreal
+(constant_definition "c_2Erealax_2Etreal__add" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal"))))
+; c.realax.treal_eq
+; :hreal # hreal -> hreal # hreal -> bool
+(constant_definition "c_2Erealax_2Etreal__eq" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")))
+; c.realax.treal_inv
+; :hreal # hreal -> hreal # hreal
+(constant_definition "c_2Erealax_2Etreal__inv" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")))
+; c.realax.treal_lt
+; :hreal # hreal -> hreal # hreal -> bool
+(constant_definition "c_2Erealax_2Etreal__lt" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")))
+; c.realax.treal_mul
+; :hreal # hreal -> hreal # hreal -> hreal # hreal
+(constant_definition "c_2Erealax_2Etreal__mul" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal"))))
+; c.realax.treal_neg
+; :hreal # hreal -> hreal # hreal
+(constant_definition "c_2Erealax_2Etreal__neg" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")))
+; c.realax.treal_of_hreal
+; :hreal -> hreal # hreal
+(constant_definition "c_2Erealax_2Etreal__of__hreal" ("ty_2Emin_2Efun" "ty_2Ehreal_2Ehreal" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")))
+; realax.HREAL_RDISTRIB
+; ∀x y z. (x hreal_add y) hreal_mul z = x hreal_mul z hreal_add y hreal_mul z
+(conjecture "thm_2Erealax_2EHREAL__RDISTRIB" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2z" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__mul" ("c_2Ehreal_2Ehreal__add" "V0x" "V1y") "V2z") ("c_2Ehreal_2Ehreal__add" ("c_2Ehreal_2Ehreal__mul" "V0x" "V2z") ("c_2Ehreal_2Ehreal__mul" "V1y" "V2z"))))))))))
+; realax.HREAL_EQ_ADDR
+; ∀x y. x hreal_add y ≠ x
+(conjecture "thm_2Erealax_2EHREAL__EQ__ADDR" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" "V0x" "V1y") "V0x")))))))
+; realax.HREAL_EQ_ADDL
+; ∀x y. x ≠ x hreal_add y
+(conjecture "thm_2Erealax_2EHREAL__EQ__ADDL" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") "V0x" ("c_2Ehreal_2Ehreal__add" "V0x" "V1y"))))))))
+; realax.HREAL_EQ_LADD
+; ∀x y z. (x hreal_add y = x hreal_add z) ⇔ (y = z)
+(conjecture "thm_2Erealax_2EHREAL__EQ__LADD" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2z" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" "V0x" "V1y") ("c_2Ehreal_2Ehreal__add" "V0x" "V2z")) (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") "V1y" "V2z")))))))))
+; realax.HREAL_LT_REFL
+; ∀x. ¬(x hreal_lt x)
+(conjecture "thm_2Erealax_2EHREAL__LT__REFL" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" ("c_2Ebool_2E_7E" ("c_2Ehreal_2Ehreal__lt" "V0x" "V0x")))))
+; realax.HREAL_LT_ADDL
+; ∀x y. x hreal_lt x hreal_add y
+(conjecture "thm_2Erealax_2EHREAL__LT__ADDL" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" ("c_2Ehreal_2Ehreal__lt" "V0x" ("c_2Ehreal_2Ehreal__add" "V0x" "V1y")))))))
+; realax.HREAL_LT_NE
+; ∀x y. x hreal_lt y ⇒ x ≠ y
+(conjecture "thm_2Erealax_2EHREAL__LT__NE" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ehreal_2Ehreal__lt" "V0x" "V1y") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") "V0x" "V1y"))))))))
+; realax.HREAL_LT_ADDR
+; ∀x y. ¬(x hreal_add y hreal_lt x)
+(conjecture "thm_2Erealax_2EHREAL__LT__ADDR" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" ("c_2Ebool_2E_7E" ("c_2Ehreal_2Ehreal__lt" ("c_2Ehreal_2Ehreal__add" "V0x" "V1y") "V0x")))))))
+; realax.HREAL_LT_GT
+; ∀x y. x hreal_lt y ⇒ ¬(y hreal_lt x)
+(conjecture "thm_2Erealax_2EHREAL__LT__GT" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ehreal_2Ehreal__lt" "V0x" "V1y") ("c_2Ebool_2E_7E" ("c_2Ehreal_2Ehreal__lt" "V1y" "V0x"))))))))
+; realax.HREAL_LT_ADD2
+; ∀x1 x2 y1 y2.     x1 hreal_lt y1 ∧ x2 hreal_lt y2 ⇒     x1 hreal_add x2 hreal_lt y1 hreal_add y2
+(conjecture "thm_2Erealax_2EHREAL__LT__ADD2" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1x2" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2y1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V3y2" "ty_2Ehreal_2Ehreal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ehreal_2Ehreal__lt" "V0x1" "V2y1") ("c_2Ehreal_2Ehreal__lt" "V1x2" "V3y2")) ("c_2Ehreal_2Ehreal__lt" ("c_2Ehreal_2Ehreal__add" "V0x1" "V1x2") ("c_2Ehreal_2Ehreal__add" "V2y1" "V3y2"))))))))))))
+; realax.HREAL_LT_LADD
+; ∀x y z. x hreal_add y hreal_lt x hreal_add z ⇔ y hreal_lt z
+(conjecture "thm_2Erealax_2EHREAL__LT__LADD" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2z" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ehreal_2Ehreal__lt" ("c_2Ehreal_2Ehreal__add" "V0x" "V1y") ("c_2Ehreal_2Ehreal__add" "V0x" "V2z")) ("c_2Ehreal_2Ehreal__lt" "V1y" "V2z")))))))))
+; realax.treal_0
+; treal_0 = (hreal_1,hreal_1)
+(axiom "thm_2Erealax_2Etreal__0" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) "c_2Erealax_2Etreal__0" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "c_2Ehreal_2Ehreal__1" "c_2Ehreal_2Ehreal__1")))
+; realax.treal_1
+; treal_1 = (hreal_1 hreal_add hreal_1,hreal_1)
+(axiom "thm_2Erealax_2Etreal__1" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) "c_2Erealax_2Etreal__1" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" "c_2Ehreal_2Ehreal__1" "c_2Ehreal_2Ehreal__1") "c_2Ehreal_2Ehreal__1")))
+; realax.treal_neg
+; ∀x y. treal_neg (x,y) = (y,x)
+(axiom "thm_2Erealax_2Etreal__neg" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__neg" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V0x" "V1y")) (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V1y" "V0x")))))))
+; realax.treal_add
+; ∀x1 y1 x2 y2. (x1,y1) treal_add (x2,y2) = (x1 hreal_add x2,y1 hreal_add y2)
+(axiom "thm_2Erealax_2Etreal__add" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2x2" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V3y2" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__add" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V0x1" "V1y1") (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V2x2" "V3y2")) (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" "V0x1" "V2x2") ("c_2Ehreal_2Ehreal__add" "V1y1" "V3y2"))))))))))))
+; realax.treal_mul
+; ∀x1 y1 x2 y2.     (x1,y1) treal_mul (x2,y2) =     (x1 hreal_mul x2 hreal_add y1 hreal_mul y2,      x1 hreal_mul y2 hreal_add y1 hreal_mul x2)
+(axiom "thm_2Erealax_2Etreal__mul" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2x2" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V3y2" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__mul" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V0x1" "V1y1") (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V2x2" "V3y2")) (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" ("c_2Ehreal_2Ehreal__mul" "V0x1" "V2x2") ("c_2Ehreal_2Ehreal__mul" "V1y1" "V3y2")) ("c_2Ehreal_2Ehreal__add" ("c_2Ehreal_2Ehreal__mul" "V0x1" "V3y2") ("c_2Ehreal_2Ehreal__mul" "V1y1" "V2x2")))))))))))))
+; realax.treal_lt
+; ∀x1 y1 x2 y2.     treal_lt (x1,y1) (x2,y2) ⇔ x1 hreal_add y2 hreal_lt x2 hreal_add y1
+(axiom "thm_2Erealax_2Etreal__lt" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2x2" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V3y2" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__lt" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V0x1" "V1y1") (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V2x2" "V3y2")) ("c_2Ehreal_2Ehreal__lt" ("c_2Ehreal_2Ehreal__add" "V0x1" "V3y2") ("c_2Ehreal_2Ehreal__add" "V2x2" "V1y1"))))))))))))
+; realax.treal_inv
+; ∀x y.     treal_inv (x,y) =     if x = y then treal_0     else if y hreal_lt x then       (hreal_inv (x hreal_sub y) hreal_add hreal_1,hreal_1)     else (hreal_1,hreal_inv (y hreal_sub x) hreal_add hreal_1)
+(axiom "thm_2Erealax_2Etreal__inv" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__inv" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V0x" "V1y")) (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") "V0x" "V1y") "c_2Erealax_2Etreal__0" (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Ehreal_2Ehreal__lt" "V1y" "V0x") (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" ("c_2Ehreal_2Ehreal__inv" ("c_2Ehreal_2Ehreal__sub" "V0x" "V1y")) "c_2Ehreal_2Ehreal__1") "c_2Ehreal_2Ehreal__1") (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "c_2Ehreal_2Ehreal__1" ("c_2Ehreal_2Ehreal__add" ("c_2Ehreal_2Ehreal__inv" ("c_2Ehreal_2Ehreal__sub" "V1y" "V0x")) "c_2Ehreal_2Ehreal__1"))))))))))
+; realax.treal_eq
+; ∀x1 y1 x2 y2. treal_eq (x1,y1) (x2,y2) ⇔ (x1 hreal_add y2 = x2 hreal_add y1)
+(axiom "thm_2Erealax_2Etreal__eq" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y1" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V2x2" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V3y2" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__eq" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V0x1" "V1y1") (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V2x2" "V3y2")) (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" "V0x1" "V3y2") ("c_2Ehreal_2Ehreal__add" "V2x2" "V1y1"))))))))))))
+; realax.TREAL_EQ_REFL
+; ∀x. treal_eq x x
+(conjecture "thm_2Erealax_2ETREAL__EQ__REFL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Etreal__eq" "V0x" "V0x"))))
+; realax.TREAL_EQ_SYM
+; ∀x y. treal_eq x y ⇔ treal_eq y x
+(conjecture "thm_2Erealax_2ETREAL__EQ__SYM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__eq" "V0x" "V1y") ("c_2Erealax_2Etreal__eq" "V1y" "V0x")))))))
+; realax.TREAL_EQ_TRANS
+; ∀x y z. treal_eq x y ∧ treal_eq y z ⇒ treal_eq x z
+(conjecture "thm_2Erealax_2ETREAL__EQ__TRANS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__eq" "V0x" "V1y") ("c_2Erealax_2Etreal__eq" "V1y" "V2z")) ("c_2Erealax_2Etreal__eq" "V0x" "V2z")))))))))
+; realax.TREAL_EQ_EQUIV
+; ∀p q. treal_eq p q ⇔ (treal_eq p = treal_eq q)
+(conjecture "thm_2Erealax_2ETREAL__EQ__EQUIV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__eq" "V0p" "V1q") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) ("c_2Erealax_2Etreal__eq" "V0p") ("c_2Erealax_2Etreal__eq" "V1q"))))))))
+; realax.TREAL_EQ_AP
+; ∀p q. (p = q) ⇒ treal_eq p q
+(conjecture "thm_2Erealax_2ETREAL__EQ__AP" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) "V0p" "V1q") ("c_2Erealax_2Etreal__eq" "V0p" "V1q")))))))
+; realax.TREAL_10
+; ¬treal_eq treal_1 treal_0
+(conjecture "thm_2Erealax_2ETREAL__10" ("c_2Ebool_2E_7E" ("c_2Erealax_2Etreal__eq" "c_2Erealax_2Etreal__1" "c_2Erealax_2Etreal__0")))
+; realax.TREAL_ADD_SYM
+; ∀x y. x treal_add y = y treal_add x
+(conjecture "thm_2Erealax_2ETREAL__ADD__SYM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__add" "V0x" "V1y") ("c_2Erealax_2Etreal__add" "V1y" "V0x")))))))
+; realax.TREAL_MUL_SYM
+; ∀x y. x treal_mul y = y treal_mul x
+(conjecture "thm_2Erealax_2ETREAL__MUL__SYM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__mul" "V0x" "V1y") ("c_2Erealax_2Etreal__mul" "V1y" "V0x")))))))
+; realax.TREAL_ADD_ASSOC
+; ∀x y z. x treal_add (y treal_add z) = x treal_add y treal_add z
+(conjecture "thm_2Erealax_2ETREAL__ADD__ASSOC" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__add" "V0x" ("c_2Erealax_2Etreal__add" "V1y" "V2z")) ("c_2Erealax_2Etreal__add" ("c_2Erealax_2Etreal__add" "V0x" "V1y") "V2z")))))))))
+; realax.TREAL_MUL_ASSOC
+; ∀x y z. x treal_mul (y treal_mul z) = x treal_mul y treal_mul z
+(conjecture "thm_2Erealax_2ETREAL__MUL__ASSOC" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__mul" "V0x" ("c_2Erealax_2Etreal__mul" "V1y" "V2z")) ("c_2Erealax_2Etreal__mul" ("c_2Erealax_2Etreal__mul" "V0x" "V1y") "V2z")))))))))
+; realax.TREAL_LDISTRIB
+; ∀x y z. x treal_mul (y treal_add z) = x treal_mul y treal_add x treal_mul z
+(conjecture "thm_2Erealax_2ETREAL__LDISTRIB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__mul" "V0x" ("c_2Erealax_2Etreal__add" "V1y" "V2z")) ("c_2Erealax_2Etreal__add" ("c_2Erealax_2Etreal__mul" "V0x" "V1y") ("c_2Erealax_2Etreal__mul" "V0x" "V2z"))))))))))
+; realax.TREAL_ADD_LID
+; ∀x. treal_eq (treal_0 treal_add x) x
+(conjecture "thm_2Erealax_2ETREAL__ADD__LID" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__add" "c_2Erealax_2Etreal__0" "V0x") "V0x"))))
+; realax.TREAL_MUL_LID
+; ∀x. treal_eq (treal_1 treal_mul x) x
+(conjecture "thm_2Erealax_2ETREAL__MUL__LID" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__mul" "c_2Erealax_2Etreal__1" "V0x") "V0x"))))
+; realax.TREAL_ADD_LINV
+; ∀x. treal_eq (treal_neg x treal_add x) treal_0
+(conjecture "thm_2Erealax_2ETREAL__ADD__LINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__add" ("c_2Erealax_2Etreal__neg" "V0x") "V0x") "c_2Erealax_2Etreal__0"))))
+; realax.TREAL_INV_0
+; treal_eq (treal_inv treal_0) treal_0
+(conjecture "thm_2Erealax_2ETREAL__INV__0" ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__inv" "c_2Erealax_2Etreal__0") "c_2Erealax_2Etreal__0"))
+; realax.TREAL_MUL_LINV
+; ∀x. ¬treal_eq x treal_0 ⇒ treal_eq (treal_inv x treal_mul x) treal_1
+(conjecture "thm_2Erealax_2ETREAL__MUL__LINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Erealax_2Etreal__eq" "V0x" "c_2Erealax_2Etreal__0")) ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__mul" ("c_2Erealax_2Etreal__inv" "V0x") "V0x") "c_2Erealax_2Etreal__1")))))
+; realax.TREAL_LT_TOTAL
+; ∀x y. treal_eq x y ∨ treal_lt x y ∨ treal_lt y x
+(conjecture "thm_2Erealax_2ETREAL__LT__TOTAL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ebool_2E_5C_2F" ("c_2Erealax_2Etreal__eq" "V0x" "V1y") ("c_2Ebool_2E_5C_2F" ("c_2Erealax_2Etreal__lt" "V0x" "V1y") ("c_2Erealax_2Etreal__lt" "V1y" "V0x"))))))))
+; realax.TREAL_LT_REFL
+; ∀x. ¬treal_lt x x
+(conjecture "thm_2Erealax_2ETREAL__LT__REFL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ebool_2E_7E" ("c_2Erealax_2Etreal__lt" "V0x" "V0x")))))
+; realax.TREAL_LT_TRANS
+; ∀x y z. treal_lt x y ∧ treal_lt y z ⇒ treal_lt x z
+(conjecture "thm_2Erealax_2ETREAL__LT__TRANS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__lt" "V0x" "V1y") ("c_2Erealax_2Etreal__lt" "V1y" "V2z")) ("c_2Erealax_2Etreal__lt" "V0x" "V2z")))))))))
+; realax.TREAL_LT_ADD
+; ∀x y z. treal_lt y z ⇒ treal_lt (x treal_add y) (x treal_add z)
+(conjecture "thm_2Erealax_2ETREAL__LT__ADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__lt" "V1y" "V2z") ("c_2Erealax_2Etreal__lt" ("c_2Erealax_2Etreal__add" "V0x" "V1y") ("c_2Erealax_2Etreal__add" "V0x" "V2z"))))))))))
+; realax.TREAL_LT_MUL
+; ∀x y.     treal_lt treal_0 x ∧ treal_lt treal_0 y ⇒     treal_lt treal_0 (x treal_mul y)
+(conjecture "thm_2Erealax_2ETREAL__LT__MUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__lt" "c_2Erealax_2Etreal__0" "V0x") ("c_2Erealax_2Etreal__lt" "c_2Erealax_2Etreal__0" "V1y")) ("c_2Erealax_2Etreal__lt" "c_2Erealax_2Etreal__0" ("c_2Erealax_2Etreal__mul" "V0x" "V1y"))))))))
+; realax.treal_of_hreal
+; ∀x. treal_of_hreal x = (x hreal_add hreal_1,hreal_1)
+(axiom "thm_2Erealax_2Etreal__of__hreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Etreal__of__hreal" "V0x") (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ehreal_2Ehreal__add" "V0x" "c_2Ehreal_2Ehreal__1") "c_2Ehreal_2Ehreal__1")))))
+; realax.hreal_of_treal
+; ∀x y. hreal_of_treal (x,y) = @d. x = y hreal_add d
+(axiom "thm_2Erealax_2Ehreal__of__treal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0x" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1y" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Ehreal__of__treal" (("c_2Epair_2E_2C" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "V0x" "V1y")) (("c_2Emin_2E_40" "ty_2Ehreal_2Ehreal") (lambda "V2d" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") "V0x" ("c_2Ehreal_2Ehreal__add" "V1y" "V2d"))))))))))
+; realax.TREAL_BIJ
+; (∀h. hreal_of_treal (treal_of_hreal h) = h) ∧ ∀r. treal_lt treal_0 r ⇔ treal_eq (treal_of_hreal (hreal_of_treal r)) r
+(conjecture "thm_2Erealax_2ETREAL__BIJ" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0h" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Ehreal__of__treal" ("c_2Erealax_2Etreal__of__hreal" "V0h")) "V0h"))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1r" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__lt" "c_2Erealax_2Etreal__0" "V1r") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__of__hreal" ("c_2Erealax_2Ehreal__of__treal" "V1r")) "V1r"))))))
+; realax.TREAL_ISO
+; ∀h i. h hreal_lt i ⇒ treal_lt (treal_of_hreal h) (treal_of_hreal i)
+(conjecture "thm_2Erealax_2ETREAL__ISO" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0h" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1i" "ty_2Ehreal_2Ehreal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ehreal_2Ehreal__lt" "V0h" "V1i") ("c_2Erealax_2Etreal__lt" ("c_2Erealax_2Etreal__of__hreal" "V0h") ("c_2Erealax_2Etreal__of__hreal" "V1i"))))))))
+; realax.TREAL_BIJ_WELLDEF
+; ∀h i. treal_eq h i ⇒ (hreal_of_treal h = hreal_of_treal i)
+(conjecture "thm_2Erealax_2ETREAL__BIJ__WELLDEF" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__eq" "V0h" "V1i") (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Ehreal__of__treal" "V0h") ("c_2Erealax_2Ehreal__of__treal" "V1i"))))))))
+; realax.TREAL_NEG_WELLDEF
+; ∀x1 x2. treal_eq x1 x2 ⇒ treal_eq (treal_neg x1) (treal_neg x2)
+(conjecture "thm_2Erealax_2ETREAL__NEG__WELLDEF" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__neg" "V0x1") ("c_2Erealax_2Etreal__neg" "V1x2"))))))))
+; realax.TREAL_ADD_WELLDEFR
+; ∀x1 x2 y. treal_eq x1 x2 ⇒ treal_eq (x1 treal_add y) (x2 treal_add y)
+(conjecture "thm_2Erealax_2ETREAL__ADD__WELLDEFR" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__add" "V0x1" "V2y") ("c_2Erealax_2Etreal__add" "V1x2" "V2y"))))))))))
+; realax.TREAL_ADD_WELLDEF
+; ∀x1 x2 y1 y2.     treal_eq x1 x2 ∧ treal_eq y1 y2 ⇒     treal_eq (x1 treal_add y1) (x2 treal_add y2)
+(conjecture "thm_2Erealax_2ETREAL__ADD__WELLDEF" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2y1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V3y2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") ("c_2Erealax_2Etreal__eq" "V2y1" "V3y2")) ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__add" "V0x1" "V2y1") ("c_2Erealax_2Etreal__add" "V1x2" "V3y2"))))))))))))
+; realax.TREAL_MUL_WELLDEFR
+; ∀x1 x2 y. treal_eq x1 x2 ⇒ treal_eq (x1 treal_mul y) (x2 treal_mul y)
+(conjecture "thm_2Erealax_2ETREAL__MUL__WELLDEFR" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__mul" "V0x1" "V2y") ("c_2Erealax_2Etreal__mul" "V1x2" "V2y"))))))))))
+; realax.TREAL_MUL_WELLDEF
+; ∀x1 x2 y1 y2.     treal_eq x1 x2 ∧ treal_eq y1 y2 ⇒     treal_eq (x1 treal_mul y1) (x2 treal_mul y2)
+(conjecture "thm_2Erealax_2ETREAL__MUL__WELLDEF" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2y1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V3y2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") ("c_2Erealax_2Etreal__eq" "V2y1" "V3y2")) ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__mul" "V0x1" "V2y1") ("c_2Erealax_2Etreal__mul" "V1x2" "V3y2"))))))))))))
+; realax.TREAL_LT_WELLDEFR
+; ∀x1 x2 y. treal_eq x1 x2 ⇒ (treal_lt x1 y ⇔ treal_lt x2 y)
+(conjecture "thm_2Erealax_2ETREAL__LT__WELLDEFR" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2y" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__lt" "V0x1" "V2y") ("c_2Erealax_2Etreal__lt" "V1x2" "V2y"))))))))))
+; realax.TREAL_LT_WELLDEFL
+; ∀x y1 y2. treal_eq y1 y2 ⇒ (treal_lt x y1 ⇔ treal_lt x y2)
+(conjecture "thm_2Erealax_2ETREAL__LT__WELLDEFL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1y1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2y2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__eq" "V1y1" "V2y2") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__lt" "V0x" "V1y1") ("c_2Erealax_2Etreal__lt" "V0x" "V2y2"))))))))))
+; realax.TREAL_LT_WELLDEF
+; ∀x1 x2 y1 y2.     treal_eq x1 x2 ∧ treal_eq y1 y2 ⇒ (treal_lt x1 y1 ⇔ treal_lt x2 y2)
+(conjecture "thm_2Erealax_2ETREAL__LT__WELLDEF" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2y1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V3y2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") ("c_2Erealax_2Etreal__eq" "V2y1" "V3y2")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Etreal__lt" "V0x1" "V2y1") ("c_2Erealax_2Etreal__lt" "V1x2" "V3y2"))))))))))))
+; realax.TREAL_INV_WELLDEF
+; ∀x1 x2. treal_eq x1 x2 ⇒ treal_eq (treal_inv x1) (treal_inv x2)
+(conjecture "thm_2Erealax_2ETREAL__INV__WELLDEF" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0x1" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V1x2" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Etreal__eq" "V0x1" "V1x2") ("c_2Erealax_2Etreal__eq" ("c_2Erealax_2Etreal__inv" "V0x1") ("c_2Erealax_2Etreal__inv" "V1x2"))))))))
+; realax.real_TY_DEF
+; ∃rep. TYPE_DEFINITION (λc. ∃r. treal_eq r r ∧ (c = treal_eq r)) rep
+(axiom "thm_2Erealax_2Ereal__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool"))) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool") "ty_2Erealax_2Ereal") (lambda "V1c" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2r" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__eq" "V2r" "V2r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) "V1c" ("c_2Erealax_2Etreal__eq" "V2r")))))) "V0rep"))))
+; realax.real_bijections
+; (∀a. real_ABS_CLASS (real_REP_CLASS a) = a) ∧ ∀r.     (λc. ∃r. treal_eq r r ∧ (c = treal_eq r)) r ⇔     (real_REP_CLASS (real_ABS_CLASS r) = r)
+(axiom "thm_2Erealax_2Ereal__bijections" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0a" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__ABS__CLASS" ("c_2Erealax_2Ereal__REP__CLASS" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) (lambda "V1r" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2c" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V3r" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__eq" "V3r" "V3r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) "V2c" ("c_2Erealax_2Etreal__eq" "V3r")))))) "V1r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) ("c_2Erealax_2Ereal__REP__CLASS" ("c_2Erealax_2Ereal__ABS__CLASS" "V1r")) "V1r"))))))
+; realax.real_ABS_REP_CLASS
+; (∀a. real_ABS_CLASS (real_REP_CLASS a) = a) ∧ ∀c.     (∃r. treal_eq r r ∧ (c = treal_eq r)) ⇔     (real_REP_CLASS (real_ABS_CLASS c) = c)
+(conjecture "thm_2Erealax_2Ereal__ABS__REP__CLASS" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0a" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__ABS__CLASS" ("c_2Erealax_2Ereal__REP__CLASS" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) (lambda "V1c" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V2r" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Etreal__eq" "V2r" "V2r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) "V1c" ("c_2Erealax_2Etreal__eq" "V2r"))))) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Emin_2Ebool")) ("c_2Erealax_2Ereal__REP__CLASS" ("c_2Erealax_2Ereal__ABS__CLASS" "V1c")) "V1c"))))))
+; realax.real_REP_def
+; ∀a. real_REP a = $@ (real_REP_CLASS a)
+(axiom "thm_2Erealax_2Ereal__REP__def" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0a" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Ereal__REP" "V0a") (("c_2Emin_2E_40" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) ("c_2Erealax_2Ereal__REP__CLASS" "V0a"))))))
+; realax.real_ABS_def
+; ∀r. real_ABS r = real_ABS_CLASS (treal_eq r)
+(axiom "thm_2Erealax_2Ereal__ABS__def" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal")) (lambda "V0r" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__ABS" "V0r") ("c_2Erealax_2Ereal__ABS__CLASS" ("c_2Erealax_2Etreal__eq" "V0r"))))))
+; realax.real_QUOTIENT
+; QUOTIENT treal_eq real_ABS real_REP
+(conjecture "thm_2Erealax_2Ereal__QUOTIENT" (("c_2Equotient_2EQUOTIENT" ("ty_2Epair_2Eprod" "ty_2Ehreal_2Ehreal" "ty_2Ehreal_2Ehreal") "ty_2Erealax_2Ereal") "c_2Erealax_2Etreal__eq" "c_2Erealax_2Ereal__ABS" "c_2Erealax_2Ereal__REP"))
+; realax.real_0
+; real_0 = real_ABS treal_0
+(axiom "thm_2Erealax_2Ereal__0" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "c_2Erealax_2Ereal__0" ("c_2Erealax_2Ereal__ABS" "c_2Erealax_2Etreal__0")))
+; realax.real_1
+; real_1 = real_ABS treal_1
+(axiom "thm_2Erealax_2Ereal__1" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "c_2Erealax_2Ereal__1" ("c_2Erealax_2Ereal__ABS" "c_2Erealax_2Etreal__1")))
+; realax.real_neg
+; ∀T1. -T1 = real_ABS (treal_neg (real_REP T1))
+(axiom "thm_2Erealax_2Ereal__neg" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0T1" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__neg" "V0T1") ("c_2Erealax_2Ereal__ABS" ("c_2Erealax_2Etreal__neg" ("c_2Erealax_2Ereal__REP" "V0T1")))))))
+; realax.real_inv
+; ∀T1. T1⁻¹ = real_ABS (treal_inv (real_REP T1))
+(axiom "thm_2Erealax_2Ereal__inv" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0T1" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Einv" "V0T1") ("c_2Erealax_2Ereal__ABS" ("c_2Erealax_2Etreal__inv" ("c_2Erealax_2Ereal__REP" "V0T1")))))))
+; realax.real_add
+; ∀T1 T2. T1 + T2 = real_ABS (real_REP T1 treal_add real_REP T2)
+(axiom "thm_2Erealax_2Ereal__add" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0T1" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1T2" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" "V0T1" "V1T2") ("c_2Erealax_2Ereal__ABS" ("c_2Erealax_2Etreal__add" ("c_2Erealax_2Ereal__REP" "V0T1") ("c_2Erealax_2Ereal__REP" "V1T2")))))))))
+; realax.real_mul
+; ∀T1 T2. T1 * T2 = real_ABS (real_REP T1 treal_mul real_REP T2)
+(axiom "thm_2Erealax_2Ereal__mul" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0T1" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1T2" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" "V0T1" "V1T2") ("c_2Erealax_2Ereal__ABS" ("c_2Erealax_2Etreal__mul" ("c_2Erealax_2Ereal__REP" "V0T1") ("c_2Erealax_2Ereal__REP" "V1T2")))))))))
+; realax.real_lt
+; ∀T1 T2. T1 < T2 ⇔ treal_lt (real_REP T1) (real_REP T2)
+(axiom "thm_2Erealax_2Ereal__lt" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0T1" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1T2" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Ereal__lt" "V0T1" "V1T2") ("c_2Erealax_2Etreal__lt" ("c_2Erealax_2Ereal__REP" "V0T1") ("c_2Erealax_2Ereal__REP" "V1T2"))))))))
+; realax.real_of_hreal
+; ∀T1. real_of_hreal T1 = real_ABS (treal_of_hreal T1)
+(axiom "thm_2Erealax_2Ereal__of__hreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0T1" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__of__hreal" "V0T1") ("c_2Erealax_2Ereal__ABS" ("c_2Erealax_2Etreal__of__hreal" "V0T1"))))))
+; realax.hreal_of_real
+; ∀T1. hreal_of_real T1 = hreal_of_treal (real_REP T1)
+(axiom "thm_2Erealax_2Ehreal__of__real" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0T1" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Ehreal_2Ehreal") ("c_2Erealax_2Ehreal__of__real" "V0T1") ("c_2Erealax_2Ehreal__of__treal" ("c_2Erealax_2Ereal__REP" "V0T1"))))))
+; realax.REAL_ISO_EQ
+; ∀h i. h hreal_lt i ⇔ real_of_hreal h < real_of_hreal i
+(conjecture "thm_2Erealax_2EREAL__ISO__EQ" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0h" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1i" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ehreal_2Ehreal__lt" "V0h" "V1i") ("c_2Erealax_2Ereal__lt" ("c_2Erealax_2Ereal__of__hreal" "V0h") ("c_2Erealax_2Ereal__of__hreal" "V1i"))))))))
+; realax.REAL_POS
+; ∀X. real_0 < real_of_hreal X
+(conjecture "thm_2Erealax_2EREAL__POS" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V0X" "ty_2Ehreal_2Ehreal" ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" ("c_2Erealax_2Ereal__of__hreal" "V0X")))))
+; realax.SUP_ALLPOS_LEMMA1
+; ∀P y.     (∀x. P x ⇒ real_0 < x) ⇒     ((∃x. P x ∧ y < x) ⇔ ∃X. P (real_of_hreal X) ∧ y < real_of_hreal X)
+(conjecture "thm_2Erealax_2ESUP__ALLPOS__LEMMA1" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2x" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V2x") ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" "V2x")))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V3x" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_2F_5C" ("V0P" "V3x") ("c_2Erealax_2Ereal__lt" "V1y" "V3x")))) (("c_2Ebool_2E_3F" "ty_2Ehreal_2Ehreal") (lambda "V4X" "ty_2Ehreal_2Ehreal" ("c_2Ebool_2E_2F_5C" ("V0P" ("c_2Erealax_2Ereal__of__hreal" "V4X")) ("c_2Erealax_2Ereal__lt" "V1y" ("c_2Erealax_2Ereal__of__hreal" "V4X"))))))))))))
+; realax.SUP_ALLPOS_LEMMA2
+; ∀P X. P (real_of_hreal X) ⇔ (λh. P (real_of_hreal h)) X
+(conjecture "thm_2Erealax_2ESUP__ALLPOS__LEMMA2" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1X" "ty_2Ehreal_2Ehreal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("V0P" ("c_2Erealax_2Ereal__of__hreal" "V1X")) ((lambda "V2h" "ty_2Ehreal_2Ehreal" ("V0P" ("c_2Erealax_2Ereal__of__hreal" "V2h"))) "V1X")))))))
+; realax.SUP_ALLPOS_LEMMA3
+; ∀P.     (∀x. P x ⇒ real_0 < x) ∧ (∃x. P x) ∧ (∃z. ∀x. P x ⇒ x < z) ⇒     (∃X. (λh. P (real_of_hreal h)) X) ∧     ∃Y. ∀X. (λh. P (real_of_hreal h)) X ⇒ X hreal_lt Y
+(conjecture "thm_2Erealax_2ESUP__ALLPOS__LEMMA3" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1x" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V1x") ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" "V1x")))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V2x" "ty_2Erealax_2Ereal" ("V0P" "V2x"))) (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V3z" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V4x" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V4x") ("c_2Erealax_2Ereal__lt" "V4x" "V3z")))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_3F" "ty_2Ehreal_2Ehreal") (lambda "V5X" "ty_2Ehreal_2Ehreal" ((lambda "V6h" "ty_2Ehreal_2Ehreal" ("V0P" ("c_2Erealax_2Ereal__of__hreal" "V6h"))) "V5X"))) (("c_2Ebool_2E_3F" "ty_2Ehreal_2Ehreal") (lambda "V7Y" "ty_2Ehreal_2Ehreal" (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V8X" "ty_2Ehreal_2Ehreal" ("c_2Emin_2E_3D_3D_3E" ((lambda "V9h" "ty_2Ehreal_2Ehreal" ("V0P" ("c_2Erealax_2Ereal__of__hreal" "V9h"))) "V8X") ("c_2Ehreal_2Ehreal__lt" "V8X" "V7Y")))))))))))
+; realax.SUP_ALLPOS_LEMMA4
+; ∀y. ¬(real_0 < y) ⇒ ∀x. y < real_of_hreal x
+(conjecture "thm_2Erealax_2ESUP__ALLPOS__LEMMA4" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0y" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" "V0y")) (("c_2Ebool_2E_21" "ty_2Ehreal_2Ehreal") (lambda "V1x" "ty_2Ehreal_2Ehreal" ("c_2Erealax_2Ereal__lt" "V0y" ("c_2Erealax_2Ereal__of__hreal" "V1x"))))))))
+; realax.REAL_SUP_ALLPOS
+; ∀P.     (∀x. P x ⇒ real_0 < x) ∧ (∃x. P x) ∧ (∃z. ∀x. P x ⇒ x < z) ⇒     ∃s. ∀y. (∃x. P x ∧ y < x) ⇔ y < s
+(conjecture "thm_2Erealax_2EREAL__SUP__ALLPOS" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1x" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V1x") ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" "V1x")))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V2x" "ty_2Erealax_2Ereal" ("V0P" "V2x"))) (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V3z" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V4x" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V4x") ("c_2Erealax_2Ereal__lt" "V4x" "V3z")))))))) (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V5s" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V6y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V7x" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_2F_5C" ("V0P" "V7x") ("c_2Erealax_2Ereal__lt" "V6y" "V7x")))) ("c_2Erealax_2Ereal__lt" "V6y" "V5s"))))))))))
+; realax.REAL_10
+; real_1 ≠ real_0
+(conjecture "thm_2Erealax_2EREAL__10" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "c_2Erealax_2Ereal__1" "c_2Erealax_2Ereal__0")))
+; realax.REAL_ADD_SYM
+; ∀x y. x + y = y + x
+(conjecture "thm_2Erealax_2EREAL__ADD__SYM" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" "V0x" "V1y") ("c_2Erealax_2Ereal__add" "V1y" "V0x")))))))
+; realax.REAL_MUL_SYM
+; ∀x y. x * y = y * x
+(conjecture "thm_2Erealax_2EREAL__MUL__SYM" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" "V0x" "V1y") ("c_2Erealax_2Ereal__mul" "V1y" "V0x")))))))
+; realax.REAL_ADD_ASSOC
+; ∀x y z. x + (y + z) = x + y + z
+(conjecture "thm_2Erealax_2EREAL__ADD__ASSOC" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2z" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" "V0x" ("c_2Erealax_2Ereal__add" "V1y" "V2z")) ("c_2Erealax_2Ereal__add" ("c_2Erealax_2Ereal__add" "V0x" "V1y") "V2z")))))))))
+; realax.REAL_MUL_ASSOC
+; ∀x y z. x * (y * z) = x * y * z
+(conjecture "thm_2Erealax_2EREAL__MUL__ASSOC" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2z" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" "V0x" ("c_2Erealax_2Ereal__mul" "V1y" "V2z")) ("c_2Erealax_2Ereal__mul" ("c_2Erealax_2Ereal__mul" "V0x" "V1y") "V2z")))))))))
+; realax.REAL_LDISTRIB
+; ∀x y z. x * (y + z) = x * y + x * z
+(conjecture "thm_2Erealax_2EREAL__LDISTRIB" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2z" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" "V0x" ("c_2Erealax_2Ereal__add" "V1y" "V2z")) ("c_2Erealax_2Ereal__add" ("c_2Erealax_2Ereal__mul" "V0x" "V1y") ("c_2Erealax_2Ereal__mul" "V0x" "V2z"))))))))))
+; realax.REAL_ADD_LID
+; ∀x. real_0 + x = x
+(conjecture "thm_2Erealax_2EREAL__ADD__LID" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" "c_2Erealax_2Ereal__0" "V0x") "V0x"))))
+; realax.REAL_MUL_LID
+; ∀x. real_1 * x = x
+(conjecture "thm_2Erealax_2EREAL__MUL__LID" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" "c_2Erealax_2Ereal__1" "V0x") "V0x"))))
+; realax.REAL_ADD_LINV
+; ∀x. -x + x = real_0
+(conjecture "thm_2Erealax_2EREAL__ADD__LINV" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" ("c_2Erealax_2Ereal__neg" "V0x") "V0x") "c_2Erealax_2Ereal__0"))))
+; realax.REAL_MUL_LINV
+; ∀x. x ≠ real_0 ⇒ (x⁻¹ * x = real_1)
+(conjecture "thm_2Erealax_2EREAL__MUL__LINV" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0x" "c_2Erealax_2Ereal__0")) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" ("c_2Erealax_2Einv" "V0x") "V0x") "c_2Erealax_2Ereal__1")))))
+; realax.REAL_LT_TOTAL
+; ∀x y. (x = y) ∨ x < y ∨ y < x
+(conjecture "thm_2Erealax_2EREAL__LT__TOTAL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0x" "V1y") ("c_2Ebool_2E_5C_2F" ("c_2Erealax_2Ereal__lt" "V0x" "V1y") ("c_2Erealax_2Ereal__lt" "V1y" "V0x"))))))))
+; realax.REAL_LT_REFL
+; ∀x. ¬(x < x)
+(conjecture "thm_2Erealax_2EREAL__LT__REFL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_7E" ("c_2Erealax_2Ereal__lt" "V0x" "V0x")))))
+; realax.REAL_LT_TRANS
+; ∀x y z. x < y ∧ y < z ⇒ x < z
+(conjecture "thm_2Erealax_2EREAL__LT__TRANS" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2z" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" "V0x" "V1y") ("c_2Erealax_2Ereal__lt" "V1y" "V2z")) ("c_2Erealax_2Ereal__lt" "V0x" "V2z")))))))))
+; realax.REAL_LT_IADD
+; ∀x y z. y < z ⇒ x + y < x + z
+(conjecture "thm_2Erealax_2EREAL__LT__IADD" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2z" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" "V1y" "V2z") ("c_2Erealax_2Ereal__lt" ("c_2Erealax_2Ereal__add" "V0x" "V1y") ("c_2Erealax_2Ereal__add" "V0x" "V2z"))))))))))
+; realax.REAL_LT_MUL
+; ∀x y. real_0 < x ∧ real_0 < y ⇒ real_0 < x * y
+(conjecture "thm_2Erealax_2EREAL__LT__MUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" "V0x") ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" "V1y")) ("c_2Erealax_2Ereal__lt" "c_2Erealax_2Ereal__0" ("c_2Erealax_2Ereal__mul" "V0x" "V1y"))))))))
+; realax.REAL_INV_0
+; real_0⁻¹ = real_0
+(conjecture "thm_2Erealax_2EREAL__INV__0" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Einv" "c_2Erealax_2Ereal__0") "c_2Erealax_2Ereal__0"))

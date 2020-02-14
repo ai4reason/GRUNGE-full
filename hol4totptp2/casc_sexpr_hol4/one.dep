@@ -1,0 +1,44 @@
+"thm_2Eone_2Eone__TY__DEF"
+axiom
+
+"thm_2Eone_2Eone__axiom"
+conjecture
+intact
+"thm_2Ebool_2EETA__AX" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2ETYPE__DEFINITION__THM" "thm_2Eone_2Eone__TY__DEF"
+
+"thm_2Eone_2Eone__DEF"
+axiom
+
+"thm_2Eone_2Eone"
+conjecture
+intact
+"thm_2Eone_2Eone__axiom"
+
+"thm_2Eone_2Eone__Axiom"
+conjecture
+intact
+"thm_2Ebool_2EEXISTS__UNIQUE__DEF" "thm_2Ebool_2EETA__AX" "thm_2Ebool_2ETRUTH" "thm_2Ebool_2EIMP__ANTISYM__AX" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Eone_2Eone"
+
+"thm_2Eone_2Eone__prim__rec"
+conjecture
+intact
+"thm_2Ebool_2EEXISTS__UNIQUE__DEF" "thm_2Eone_2Eone__Axiom"
+
+"thm_2Eone_2Eone__induction"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Eone_2Eone"
+
+"thm_2Eone_2EFORALL__ONE"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EAND__CLAUSES" "thm_2Ebool_2EIMP__CLAUSES" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Ebool_2EEQ__CLAUSES" "thm_2Ebool_2EAND__IMP__INTRO" "thm_2Ebool_2EEQ__IMP__THM" "thm_2Ebool_2EIMP__CONG" "thm_2Eone_2Eone__induction"
+
+"thm_2Eone_2Eone__case__def"
+axiom
+
+"thm_2Eone_2Eone__case__thm"
+conjecture
+intact
+"thm_2Ebool_2ETRUTH" "thm_2Ebool_2EFORALL__SIMP" "thm_2Ebool_2EREFL__CLAUSE" "thm_2Ebool_2EEQ__SYM__EQ" "thm_2Eone_2Eone" "thm_2Eone_2Eone__case__def"
+
