@@ -27,6 +27,10 @@ The hol4totptp2 directory contains the code for generating the
 semantic translations via set theory encodings (Section 5 of the
 paper).
 
+The work was supported by the ERC grants no. 649043 AI4REASON and
+no. 714034 SMART and by the Czech project AI&Reasoning
+CZ.02.1.01/0.0/0.0/15 003/0000466 and the European Regional
+Development Fund.
 
 
 
