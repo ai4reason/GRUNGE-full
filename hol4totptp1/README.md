@@ -15,7 +15,7 @@ To produce the S-expressions using in the second translation run:
     load "tttUnfold"; open tttUnfold; 
     load_sigobj ();
     val thyl = ancestry "scratch";
-    hhExportSexpr.sexport_export thyl;
+    hhExportSexpr.sexpr_export thyl;
 
 ## Bushy and Chainy problems
 
