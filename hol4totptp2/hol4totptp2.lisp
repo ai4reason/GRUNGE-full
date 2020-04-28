@@ -55,7 +55,7 @@
 (defun tm-tpvars (m ctx)
   (if (consp m)
       (cond ((eq (car m) 'AP) (union (tm-tpvars (cadr m) ctx) (tm-tpvars (caddr m) ctx) :test #'equal))
-	    ((eq (car m) 'LAMBDA) (tm-tpvars (cadddr m) (acons (cadr m) (caddr m) ctx)))
+	    ((eq (car m) 'LAMBDA) (union (tp-tpvars (caddr m)) (tm-tpvars (cadddr m) (acons (cadr m) (caddr m) ctx)) :test #'equal))
 	    ((eq (car m) 'TPSUBST)
 	     (let ((vl nil))
 	       (dolist (b (caddr m) vl)
@@ -560,7 +560,7 @@
 		(format *outputtff0* ").~%"))
 	    (progn
 	      (when *currname* (push f (gethash *currname* *sigdeps*)))
-	      (format *outputtff0* "tff(lamtp_~d,type,(~d : $i))." f f)
+	      (format *outputtff0* "tff(lamtp_~d,type,(~d : $i)).~%" f f)
 	      (setq m f)
 	      (setf (gethash (list tpvars tmvars x a body) *lamlift*) (list f m))
 	      (if (gethash a *specialtypes*)
