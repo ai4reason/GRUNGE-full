@@ -454,11 +454,11 @@
   (setq *p99* p)
   (cond ((neg-p p)
 	 (cond ((sortofis (caddr p) "c_2Ebool_2EF")
-		(format nil "(~~ ($false))"))
+		(format nil "(~~($false))"))
 	       ((sortofis (caddr p) "c_2Ebool_2ET")
-		(format nil "(~~ ($true))"))
+		(format nil "(~~($true))"))
 	       (t
-		(format nil "(~~ ~d)" (prop-thf0 (caddr p) ctx vctx)))))
+		(format nil "(~~~d)" (prop-thf0 (caddr p) ctx vctx)))))
 	((imp-p p)
 	 (format nil "(~d => ~d)"
 		 (prop-thf0 (caddr (cadr p)) ctx vctx)
@@ -635,11 +635,11 @@
   (setq *p99* p)
   (cond ((neg-p p)
 	 (cond ((sortofis (caddr p) "c_2Ebool_2EF")
-		(format nil "(~~ ($false))"))
+		(format nil "(~~($false))"))
 	       ((sortofis (caddr p) "c_2Ebool_2ET")
-		(format nil "(~~ ($true))"))
+		(format nil "(~~($true))"))
 	       (t
-		(format nil "(~~ ~d)" (prop-tff0 (caddr p) ctx vctx)))))
+		(format nil "(~~~d)" (prop-tff0 (caddr p) ctx vctx)))))
 	((imp-p p)
 	 (format nil "(~d => ~d)"
 		 (prop-tff0 (caddr (cadr p)) ctx vctx)
@@ -786,12 +786,12 @@
   (setq *p99* p)
   (cond ((neg-p p)
 	 (cond ((sortofis (caddr p) "c_2Ebool_2EF")
-		(format nil "(~~ ($false))"))
+		(format nil "(~~($false))"))
 	       ((sortofis (caddr p) "c_2Ebool_2ET")
-		(format nil "(~~ ($true))"))
+		(format nil "(~~($true))"))
 	       (t
 		(par pr 55
-		     (format nil "~~ ~d" (prop-fof (caddr p) ctx vctx 55 t))))))
+		     (format nil "~~~d" (prop-fof (caddr p) ctx vctx 55 t))))))
 	((imp-p p)
 	 (par pr 75
 	      (format nil "~d => ~d"
@@ -1002,10 +1002,10 @@
 	    (format *outputthf0* "thf(ax_imp_p,axiom,( ! [Q:$i] : ((mem@Q@bool) => ( ! [R:$i] : ((mem@R@bool) => ((p@(ap@(ap@c_2Emin_2E_3D_3D_3E@Q)@R)) <=> ((p@Q) => (p@R)))))))).~%")
 	    )
 	   ((equal name "c_2Ebool_2E_7E") ; neg
-	    (format *outputthf0* "thf(ax_neg_p,axiom,( ! [Q:$i] : ((mem@Q@bool) => ((p@(ap@c_2Ebool_2E_7E@Q)) <=> (~~ (p@Q)))))).~%")
+	    (format *outputthf0* "thf(ax_neg_p,axiom,( ! [Q:$i] : ((mem@Q@bool) => ((p@(ap@c_2Ebool_2E_7E@Q)) <=> (~~(p@Q)))))).~%")
 	    )
 	   ((equal name "c_2Ebool_2EF") ; false
-	    (format *outputthf0* "thf(ax_false_p,axiom,(~~ (p@c_2Ebool_2EF))).~%")
+	    (format *outputthf0* "thf(ax_false_p,axiom,(~~(p@c_2Ebool_2EF))).~%")
 	    )
 	   ((equal name "c_2Ebool_2ET") ; true
 	    (format *outputthf0* "thf(ax_true_p,axiom,(p@c_2Ebool_2ET)).~%")
@@ -1056,10 +1056,10 @@
 	    (format *outputtff0* "tff(ax_imp_p,axiom,( ! [Q:$i] : (mem(Q,bool) => ( ! [R:$i] : (mem(R,bool) => (p(ap(ap(c_2Emin_2E_3D_3D_3E,Q),R)) <=> (p(Q) => p(R)))))))).~%")
 	    )
 	   ((equal name "c_2Ebool_2E_7E") ; neg
-	    (format *outputtff0* "tff(ax_neg_p,axiom,( ! [Q:$i] : (mem(Q,bool) => (p(ap(c_2Ebool_2E_7E,Q)) <=> (~~ p(Q)))))).~%")
+	    (format *outputtff0* "tff(ax_neg_p,axiom,( ! [Q:$i] : (mem(Q,bool) => (p(ap(c_2Ebool_2E_7E,Q)) <=> (~~p(Q)))))).~%")
 	    )
 	   ((equal name "c_2Ebool_2EF") ; false
-	    (format *outputtff0* "tff(ax_false_p,axiom,(~~ p(c_2Ebool_2EF))).~%")
+	    (format *outputtff0* "tff(ax_false_p,axiom,(~~p(c_2Ebool_2EF))).~%")
 	    )
 	   ((equal name "c_2Ebool_2ET") ; true
 	    (format *outputtff0* "tff(ax_true_p,axiom,p(c_2Ebool_2ET)).~%")
@@ -1103,10 +1103,10 @@
 	    (format *outputfof* "fof(ax_imp_p,axiom,( ! [Q] : ( mem(Q,bool) => ! [R] : ( mem(R,bool) => ( p(ap(ap(c_2Emin_2E_3D_3D_3E,Q),R)) <=> ( p(Q) => p(R) ) ) ) ) )).~%")
 	    )
 	   ((equal name "c_2Ebool_2E_7E") ; neg
-	    (format *outputfof* "fof(ax_neg_p,axiom,( ! [Q] : ( mem(Q,bool) => ( p(ap(c_2Ebool_2E_7E,Q)) <=> ~~ p(Q) ) ) )).~%")
+	    (format *outputfof* "fof(ax_neg_p,axiom,( ! [Q] : ( mem(Q,bool) => ( p(ap(c_2Ebool_2E_7E,Q)) <=> ~~p(Q) ) ) )).~%")
 	    )
 	   ((equal name "c_2Ebool_2EF") ; false
-	    (format *outputfof* "fof(ax_false_p,axiom,( ~~ p(c_2Ebool_2EF) )).~%")
+	    (format *outputfof* "fof(ax_false_p,axiom,( ~~p(c_2Ebool_2EF) )).~%")
 	    )
 	   ((equal name "c_2Ebool_2ET") ; true
 	    (format *outputfof* "fof(ax_true_p,axiom,( p(c_2Ebool_2ET) )).~%")
