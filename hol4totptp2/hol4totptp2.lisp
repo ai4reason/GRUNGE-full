@@ -454,11 +454,11 @@
   (setq *p99* p)
   (cond ((neg-p p)
 	 (cond ((sortofis (caddr p) "c_2Ebool_2EF")
-		(format nil "(~~~~ ($false))"))
+		(format nil "(~~ ($false))"))
 	       ((sortofis (caddr p) "c_2Ebool_2ET")
-		(format nil "(~~~~ ($true))"))
+		(format nil "(~~ ($true))"))
 	       (t
-		(format nil "(~~~~ ~d)" (prop-thf0 (caddr p) ctx vctx)))))
+		(format nil "(~~ ~d)" (prop-thf0 (caddr p) ctx vctx)))))
 	((imp-p p)
 	 (format nil "(~d => ~d)"
 		 (prop-thf0 (caddr (cadr p)) ctx vctx)
@@ -635,11 +635,11 @@
   (setq *p99* p)
   (cond ((neg-p p)
 	 (cond ((sortofis (caddr p) "c_2Ebool_2EF")
-		(format nil "(~~~~ ($false))"))
+		(format nil "(~~ ($false))"))
 	       ((sortofis (caddr p) "c_2Ebool_2ET")
-		(format nil "(~~~~ ($true))"))
+		(format nil "(~~ ($true))"))
 	       (t
-		(format nil "(~~~~ ~d)" (prop-tff0 (caddr p) ctx vctx)))))
+		(format nil "(~~ ~d)" (prop-tff0 (caddr p) ctx vctx)))))
 	((imp-p p)
 	 (format nil "(~d => ~d)"
 		 (prop-tff0 (caddr (cadr p)) ctx vctx)
@@ -786,12 +786,12 @@
   (setq *p99* p)
   (cond ((neg-p p)
 	 (cond ((sortofis (caddr p) "c_2Ebool_2EF")
-		(format nil "(~~~~ ($false))"))
+		(format nil "(~~ ($false))"))
 	       ((sortofis (caddr p) "c_2Ebool_2ET")
-		(format nil "(~~~~ ($true))"))
+		(format nil "(~~ ($true))"))
 	       (t
 		(par pr 55
-		     (format nil "~~~~ ~d" (prop-fof (caddr p) ctx vctx 55 t))))))
+		     (format nil "~~ ~d" (prop-fof (caddr p) ctx vctx 55 t))))))
 	((imp-p p)
 	 (par pr 75
 	      (format nil "~d => ~d"
@@ -1601,3 +1601,4 @@
     (close *outputfof*)
     (setq *prevtheory* th))
   )
+
