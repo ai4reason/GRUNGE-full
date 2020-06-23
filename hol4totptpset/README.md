@@ -77,7 +77,7 @@ translation requires a lot of memory.
 
 Then load the main code:
 
-    (load "hol4totptp2.lisp")
+    (load "hol4totptpset.lisp")
 
 Then call the following functions (or only the ones corresponding to
 the problems you want to generate):

@@ -19,11 +19,11 @@ both the bushy and chainy versions of the problems.
 The generated problems are compressed in the Generated directory. They
 unpack to over 30 GB.
 
-The hol4totptp1 directory contains the code for generating the
+The hol4totptpfol directory contains the code for generating the
 syntactic translations via first-order encodings (Section 4 of the
 paper).
 
-The hol4totptp2 directory contains the code for generating the
+The hol4totptpset directory contains the code for generating the
 semantic translations via set theory encodings (Section 5 of the
 paper).
 
