@@ -1,5 +1,5 @@
 
-Here are the instructions for reproducing the GRUNGE dataset.
+Here are the instructions for reproducing the `tptpfol` GRUNGE datasets.
 
 ## Install HOL
 
@@ -33,5 +33,5 @@ Similar functions are available for the four other formats and the pseudo-code
 for the export is available at the end of the files 
 ``hhExportTh1.sml`` ``hhExportTh0.sml`` ``hhExportTf0.sml`` ``hhExportTf1.sml`` .
 
-To create datasets for a new version (available from March 2020) of HOL,
-download HOL from the main repository and repeat the previous steps.
+To create datasets for a new version of HOL, download HOL from the 
+main repository and repeat the previous steps.
