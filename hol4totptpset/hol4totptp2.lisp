@@ -735,7 +735,7 @@
 		(dolist (y tmvars) (if sp (setq sp (format nil "~d,~d" sp y)) (setq sp (format nil "~d" y))))
 		(setq m (format nil "~d(~d)" f sp))
 		(setf (gethash (list tpvars tmvars x a body) *lamlift*) (list f m))
-		(format *outputfof* "tff(lameq_~d,axiom," f)
+		(format *outputfof* "fof(lameq_~d,axiom," f)
 		(dolist (b tpvars) (format *outputfof* "( ! [~d] : " b) (incf pc))
 		(dolist (y tmvars)
 		  (let ((b (tm-tp y ctx)))
@@ -749,7 +749,7 @@
 	      (when *currname* (push f (gethash *currname* *sigdeps*)))
 	      (setq m f)
 	      (setf (gethash (list tpvars tmvars x a body) *lamlift*) (list f m))
-	      (format *outputfof* "tff(lameq_~d,axiom,( ! [~d] : (ap(~d,~d) = ~d))).~%" f x m x nbody)))
+	      (format *outputfof* "fof(lameq_~d,axiom,( ! [~d] : (ap(~d,~d) = ~d))).~%" f x m x nbody)))
 	  m)))))
 
 (defun tm-fof (m &optional ctx vctx)
