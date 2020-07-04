@@ -1,0 +1,38 @@
+## Unpacking tar
+for arc in *.tar.7z; do 7zr x "$arc"; done;
+for arc in *.tar; do tar xf "$arc"; done;
+
+## Removing axioms files
+
+rm $(find . -name "basis_emit.ax")
+rm $(find . -name "ordinalNotation.ax")
+rm $(find . -name "ordNotationSemantics.ax")
+
+## Removing includes
+
+find *_chainy -name "*.p" | xargs sed -i '/basis_emit[.]ax/d'
+find *_chainy -name "*.p" | xargs sed -i '/ordinalNotation[.]ax/d'
+find *_chainy -name "*.p" | xargs sed -i '/ordNotationSemantics[.]ax/d'
+
+## Removing problems
+
+rm $(find . -name "thm_2Ebasis__emit_2E*.p")
+rm $(find . -name "thm_2EordinalNotation_2E*.p")
+rm $(find . -name "thm_2EordNotationSemantics_2E*.p")
+
+## Packing tar
+
+time tar cf - fof_bushy | 7za -bd -si a -mx=9 -m0=lzma2  fof_bushy.tar.7z
+time tar cf - fof_chainy | 7za -bd -si a -mx=9 -m0=lzma2  fof_chainy.tar.7z
+
+time tar cf - tf0_bushy | 7za -bd -si a -mx=9 -m0=lzma2  tf0_bushy.tar.7z
+time tar cf - tf0_chainy | 7za -bd -si a -mx=9 -m0=lzma2  tf0_chainy.tar.7z
+
+time tar cf - tf1_bushy | 7za -bd -si a -mx=9 -m0=lzma2  tf1_bushy.tar.7z
+time tar cf - tf1_chainy | 7za -bd -si a -mx=9 -m0=lzma2  tf1_chainy.tar.7z
+
+time tar cf - th0_bushy | 7za -bd -si a -mx=9 -m0=lzma2  th0_bushy.tar.7z
+time tar cf - th0_chainy | 7za -bd -si a -mx=9 -m0=lzma2  th0_chainy.tar.7z
+
+time tar cf - th1_bushy | 7za -bd -si a -mx=9 -m0=lzma2  th1_bushy.tar.7z
+time tar cf - th1_chainy | 7za -bd -si a -mx=9 -m0=lzma2  th1_chainy.tar.7z
