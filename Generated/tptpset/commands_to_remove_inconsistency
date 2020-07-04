@@ -3,9 +3,8 @@
 for arc in *.tar.7z; do 7zr x "$arc"; done;
 for arc in *.tar; do tar xf "$arc"; done;
 
-## Removing axioms files and reparing the chain of theory dependencies
+## Removing axioms files and reparing the chain of theory dependencies in axiom files
 
-cd Axioms
 rm $(find . -name "basis_emit*.ax")
 grep -rl /basis_emit . | xargs sed -i 's;/basis_emit;/integerRing;g'
 rm $(find . -name "ordinalNotation*.ax")
@@ -13,12 +12,22 @@ grep -rl /ordinalNotation . | xargs sed -i 's;/ordinalNotation;/intExtension;g'
 rm $(find . -name "ordNotationSemantics*.ax")
 grep -rl /ordNotationSemantics . | xargs sed -i 's;/ordNotationSemantics;/frac;g'
 
-## Removing problems
+## Removing problems and reparing the chain of theory dependencies in chainy files
 
 cd ..
 rm $(find . -name "thm_2Ebasis__emit_2E*.p")
 rm $(find . -name "thm_2EordinalNotation_2E*.p")
 rm $(find . -name "thm_2EordNotationSemantics_2E*.p")
+
+grep -rl /basis_emit chainy_fof | xargs sed -i 's;/basis_emit;/integerRing;g'
+grep -rl /basis_emit chainy_tf0 | xargs sed -i 's;/basis_emit;/integerRing;g'
+grep -rl /basis_emit chainy_th0 | xargs sed -i 's;/basis_emit;/integerRing;g'
+grep -rl /ordinalNotation chainy_fof | xargs sed -i 's;/ordinalNotation;/intExtension;g'
+grep -rl /ordinalNotation chainy_tf0 | xargs sed -i 's;/ordinalNotation;/intExtension;g'
+grep -rl /ordinalNotation chainy_th0 | xargs sed -i 's;/ordinalNotation;/intExtension;g'
+
+grep -rl /ordNotationSemantics . | xargs sed -i 's;/ordNotationSemantics;/frac;g'
+
 
 ## Packing tar
 
