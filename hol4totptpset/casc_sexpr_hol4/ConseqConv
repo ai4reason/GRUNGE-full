@@ -1,126 +1,84 @@
-; c.ConseqConv.ASM_MARKER
-; :bool -> bool -> bool
+; c.ConseqConv.ASM_MARKER: :bool -> bool -> bool
 (constant_definition "c_2EConseqConv_2EASM__MARKER" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")))
-; ConseqConv.forall_eq_thm
-; (∀s. P s ⇔ Q s) ⇒ ((∀s. P s) ⇔ ∀s. Q s)
+; ConseqConv.forall_eq_thm: ∀V0P V1Q. (∀V2s. V0P V2s ⇔ V1Q V2s) ⇒ ((∀V3s. V0P V3s) ⇔ ∀V4s. V1Q V4s)
 (conjecture "thm_2EConseqConv_2Eforall__eq__thm" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "A_27a") (lambda "V2s" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("V0P" "V2s") ("V1Q" "V2s")))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27a") (lambda "V3s" "A_27a" ("V0P" "V3s"))) (("c_2Ebool_2E_21" "A_27a") (lambda "V4s" "A_27a" ("V1Q" "V4s")))))))))))
-; ConseqConv.exists_eq_thm
-; (∀s. P s ⇔ Q s) ⇒ ((∃s. P s) ⇔ ∃s. Q s)
+; ConseqConv.exists_eq_thm: ∀V0P V1Q. (∀V2s. V0P V2s ⇔ V1Q V2s) ⇒ ((∃V3s. V0P V3s) ⇔ ∃V4s. V1Q V4s)
 (conjecture "thm_2EConseqConv_2Eexists__eq__thm" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "A_27a") (lambda "V2s" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("V0P" "V2s") ("V1Q" "V2s")))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" "A_27a") (lambda "V3s" "A_27a" ("V0P" "V3s"))) (("c_2Ebool_2E_3F" "A_27a") (lambda "V4s" "A_27a" ("V1Q" "V4s")))))))))))
-; ConseqConv.true_imp
-; ∀t. t ⇒ T
+; ConseqConv.true_imp: ∀V0t. V0t ⇒ T
 (conjecture "thm_2EConseqConv_2Etrue__imp" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" "V0t" "c_2Ebool_2ET"))))
-; ConseqConv.false_imp
-; ∀t. F ⇒ t
+; ConseqConv.false_imp: ∀V0t. F ⇒ V0t
 (conjecture "thm_2EConseqConv_2Efalse__imp" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" "c_2Ebool_2EF" "V0t"))))
-; ConseqConv.NOT_CLAUSES_X
-; ∀t. ¬¬t ⇔ t
+; ConseqConv.NOT_CLAUSES_X: ∀V0t. ¬¬V0t ⇔ V0t
 (conjecture "thm_2EConseqConv_2ENOT__CLAUSES__X" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" ("c_2Ebool_2E_7E" "V0t")) "V0t"))))
-; ConseqConv.NOT_CLAUSES_T
-; ¬T ⇔ F
+; ConseqConv.NOT_CLAUSES_T: ¬T ⇔ F
 (conjecture "thm_2EConseqConv_2ENOT__CLAUSES__T" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" "c_2Ebool_2ET") "c_2Ebool_2EF"))
-; ConseqConv.NOT_CLAUSES_F
-; ¬F ⇔ T
+; ConseqConv.NOT_CLAUSES_F: ¬F ⇔ T
 (conjecture "thm_2EConseqConv_2ENOT__CLAUSES__F" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" "c_2Ebool_2EF") "c_2Ebool_2ET"))
-; ConseqConv.IMP_CONG_conj_strengthen
-; ∀x x' y y'. (y ⇒ x' ⇒ x) ∧ (x' ⇒ y' ⇒ y) ⇒ x' ∧ y' ⇒ x ∧ y
+; ConseqConv.IMP_CONG_conj_strengthen: ∀V0x V1x_27 V2y V3y_27.     (V2y ⇒ V1x_27 ⇒ V0x) ∧ (V1x_27 ⇒ V3y_27 ⇒ V2y) ⇒     V1x_27 ∧ V3y_27 ⇒     V0x ∧ V2y
 (conjecture "thm_2EConseqConv_2EIMP__CONG__conj__strengthen" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V2y" ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V0x")) ("c_2Emin_2E_3D_3D_3E" "V1x_27" ("c_2Emin_2E_3D_3D_3E" "V3y_27" "V2y"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" "V1x_27" "V3y_27") ("c_2Ebool_2E_2F_5C" "V0x" "V2y"))))))))))))
-; ConseqConv.IMP_CONG_conj_weaken
-; ∀x x' y y'. (y ⇒ x ⇒ x') ∧ (x' ⇒ y ⇒ y') ⇒ x ∧ y ⇒ x' ∧ y'
+; ConseqConv.IMP_CONG_conj_weaken: ∀V0x V1x_27 V2y V3y_27.     (V2y ⇒ V0x ⇒ V1x_27) ∧ (V1x_27 ⇒ V2y ⇒ V3y_27) ⇒     V0x ∧ V2y ⇒     V1x_27 ∧ V3y_27
 (conjecture "thm_2EConseqConv_2EIMP__CONG__conj__weaken" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V2y" ("c_2Emin_2E_3D_3D_3E" "V0x" "V1x_27")) ("c_2Emin_2E_3D_3D_3E" "V1x_27" ("c_2Emin_2E_3D_3D_3E" "V2y" "V3y_27"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" "V0x" "V2y") ("c_2Ebool_2E_2F_5C" "V1x_27" "V3y_27"))))))))))))
-; ConseqConv.AND_CLAUSES_TX
-; ∀t. T ∧ t ⇔ t
+; ConseqConv.AND_CLAUSES_TX: ∀V0t. T ∧ V0t ⇔ V0t
 (conjecture "thm_2EConseqConv_2EAND__CLAUSES__TX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "c_2Ebool_2ET" "V0t") "V0t"))))
-; ConseqConv.AND_CLAUSES_XT
-; ∀t. t ∧ T ⇔ t
+; ConseqConv.AND_CLAUSES_XT: ∀V0t. V0t ∧ T ⇔ V0t
 (conjecture "thm_2EConseqConv_2EAND__CLAUSES__XT" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "V0t" "c_2Ebool_2ET") "V0t"))))
-; ConseqConv.AND_CLAUSES_FX
-; ∀t. F ∧ t ⇔ F
+; ConseqConv.AND_CLAUSES_FX: ∀V0t. F ∧ V0t ⇔ F
 (conjecture "thm_2EConseqConv_2EAND__CLAUSES__FX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "c_2Ebool_2EF" "V0t") "c_2Ebool_2EF"))))
-; ConseqConv.AND_CLAUSES_XF
-; ∀t. t ∧ F ⇔ F
+; ConseqConv.AND_CLAUSES_XF: ∀V0t. V0t ∧ F ⇔ F
 (conjecture "thm_2EConseqConv_2EAND__CLAUSES__XF" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "V0t" "c_2Ebool_2EF") "c_2Ebool_2EF"))))
-; ConseqConv.AND_CLAUSES_XX
-; ∀t. t ∧ t ⇔ t
+; ConseqConv.AND_CLAUSES_XX: ∀V0t. V0t ∧ V0t ⇔ V0t
 (conjecture "thm_2EConseqConv_2EAND__CLAUSES__XX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" "V0t" "V0t") "V0t"))))
-; ConseqConv.IMP_CONG_disj_strengthen
-; ∀x x' y y'. (¬y ⇒ x' ⇒ x) ∧ (¬x' ⇒ y' ⇒ y) ⇒ x' ∨ y' ⇒ x ∨ y
+; ConseqConv.IMP_CONG_disj_strengthen: ∀V0x V1x_27 V2y V3y_27.     (¬V2y ⇒ V1x_27 ⇒ V0x) ∧ (¬V1x_27 ⇒ V3y_27 ⇒ V2y) ⇒     V1x_27 ∨ V3y_27 ⇒     V0x ∨ V2y
 (conjecture "thm_2EConseqConv_2EIMP__CONG__disj__strengthen" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V2y") ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V0x")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V1x_27") ("c_2Emin_2E_3D_3D_3E" "V3y_27" "V2y"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_5C_2F" "V1x_27" "V3y_27") ("c_2Ebool_2E_5C_2F" "V0x" "V2y"))))))))))))
-; ConseqConv.IMP_CONG_disj_weaken
-; ∀x x' y y'. (¬y ⇒ x ⇒ x') ∧ (¬x' ⇒ y ⇒ y') ⇒ x ∨ y ⇒ x' ∨ y'
+; ConseqConv.IMP_CONG_disj_weaken: ∀V0x V1x_27 V2y V3y_27.     (¬V2y ⇒ V0x ⇒ V1x_27) ∧ (¬V1x_27 ⇒ V2y ⇒ V3y_27) ⇒     V0x ∨ V2y ⇒     V1x_27 ∨ V3y_27
 (conjecture "thm_2EConseqConv_2EIMP__CONG__disj__weaken" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V2y") ("c_2Emin_2E_3D_3D_3E" "V0x" "V1x_27")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V1x_27") ("c_2Emin_2E_3D_3D_3E" "V2y" "V3y_27"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_5C_2F" "V0x" "V2y") ("c_2Ebool_2E_5C_2F" "V1x_27" "V3y_27"))))))))))))
-; ConseqConv.OR_CLAUSES_TX
-; ∀t. T ∨ t ⇔ T
+; ConseqConv.OR_CLAUSES_TX: ∀V0t. T ∨ V0t ⇔ T
 (conjecture "thm_2EConseqConv_2EOR__CLAUSES__TX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "c_2Ebool_2ET" "V0t") "c_2Ebool_2ET"))))
-; ConseqConv.OR_CLAUSES_XT
-; ∀t. t ∨ T ⇔ T
+; ConseqConv.OR_CLAUSES_XT: ∀V0t. V0t ∨ T ⇔ T
 (conjecture "thm_2EConseqConv_2EOR__CLAUSES__XT" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "V0t" "c_2Ebool_2ET") "c_2Ebool_2ET"))))
-; ConseqConv.OR_CLAUSES_FX
-; ∀t. F ∨ t ⇔ t
+; ConseqConv.OR_CLAUSES_FX: ∀V0t. F ∨ V0t ⇔ V0t
 (conjecture "thm_2EConseqConv_2EOR__CLAUSES__FX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "c_2Ebool_2EF" "V0t") "V0t"))))
-; ConseqConv.OR_CLAUSES_XF
-; ∀t. t ∨ F ⇔ t
+; ConseqConv.OR_CLAUSES_XF: ∀V0t. V0t ∨ F ⇔ V0t
 (conjecture "thm_2EConseqConv_2EOR__CLAUSES__XF" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "V0t" "c_2Ebool_2EF") "V0t"))))
-; ConseqConv.OR_CLAUSES_XX
-; ∀t. t ∨ t ⇔ t
+; ConseqConv.OR_CLAUSES_XX: ∀V0t. V0t ∨ V0t ⇔ V0t
 (conjecture "thm_2EConseqConv_2EOR__CLAUSES__XX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" "V0t" "V0t") "V0t"))))
-; ConseqConv.IMP_CONG_imp_strengthen
-; ∀x x' y y'. (x ⇒ y' ⇒ y) ∧ (¬y' ⇒ x ⇒ x') ⇒ (x' ⇒ y') ⇒ x ⇒ y
+; ConseqConv.IMP_CONG_imp_strengthen: ∀V0x V1x_27 V2y V3y_27.     (V0x ⇒ V3y_27 ⇒ V2y) ∧ (¬V3y_27 ⇒ V0x ⇒ V1x_27) ⇒     (V1x_27 ⇒ V3y_27) ⇒     V0x ⇒     V2y
 (conjecture "thm_2EConseqConv_2EIMP__CONG__imp__strengthen" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V0x" ("c_2Emin_2E_3D_3D_3E" "V3y_27" "V2y")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V3y_27") ("c_2Emin_2E_3D_3D_3E" "V0x" "V1x_27"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V3y_27") ("c_2Emin_2E_3D_3D_3E" "V0x" "V2y"))))))))))))
-; ConseqConv.IMP_CONG_imp_weaken
-; ∀x x' y y'. (x ⇒ y ⇒ y') ∧ (¬y' ⇒ x' ⇒ x) ⇒ (x ⇒ y) ⇒ x' ⇒ y'
+; ConseqConv.IMP_CONG_imp_weaken: ∀V0x V1x_27 V2y V3y_27.     (V0x ⇒ V2y ⇒ V3y_27) ∧ (¬V3y_27 ⇒ V1x_27 ⇒ V0x) ⇒     (V0x ⇒ V2y) ⇒     V1x_27 ⇒     V3y_27
 (conjecture "thm_2EConseqConv_2EIMP__CONG__imp__weaken" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V0x" ("c_2Emin_2E_3D_3D_3E" "V2y" "V3y_27")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V3y_27") ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V0x"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" "V0x" "V2y") ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V3y_27"))))))))))))
-; ConseqConv.IMP_CONG_simple_imp_strengthen
-; ∀x x' y y'. (x ⇒ x') ∧ (x' ⇒ y' ⇒ y) ⇒ (x' ⇒ y') ⇒ x ⇒ y
+; ConseqConv.IMP_CONG_simple_imp_strengthen: ∀V0x V1x_27 V2y V3y_27.     (V0x ⇒ V1x_27) ∧ (V1x_27 ⇒ V3y_27 ⇒ V2y) ⇒ (V1x_27 ⇒ V3y_27) ⇒ V0x ⇒ V2y
 (conjecture "thm_2EConseqConv_2EIMP__CONG__simple__imp__strengthen" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V0x" "V1x_27") ("c_2Emin_2E_3D_3D_3E" "V1x_27" ("c_2Emin_2E_3D_3D_3E" "V3y_27" "V2y"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V3y_27") ("c_2Emin_2E_3D_3D_3E" "V0x" "V2y"))))))))))))
-; ConseqConv.IMP_CONG_simple_imp_weaken
-; ∀x x' y y'. (x' ⇒ x) ∧ (x' ⇒ y ⇒ y') ⇒ (x ⇒ y) ⇒ x' ⇒ y'
+; ConseqConv.IMP_CONG_simple_imp_weaken: ∀V0x V1x_27 V2y V3y_27.     (V1x_27 ⇒ V0x) ∧ (V1x_27 ⇒ V2y ⇒ V3y_27) ⇒ (V0x ⇒ V2y) ⇒ V1x_27 ⇒ V3y_27
 (conjecture "thm_2EConseqConv_2EIMP__CONG__simple__imp__weaken" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V0x") ("c_2Emin_2E_3D_3D_3E" "V1x_27" ("c_2Emin_2E_3D_3D_3E" "V2y" "V3y_27"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" "V0x" "V2y") ("c_2Emin_2E_3D_3D_3E" "V1x_27" "V3y_27"))))))))))))
-; ConseqConv.IMP_CLAUSES_TX
-; ∀t. T ⇒ t ⇔ t
+; ConseqConv.IMP_CLAUSES_TX: ∀V0t. T ⇒ V0t ⇔ V0t
 (conjecture "thm_2EConseqConv_2EIMP__CLAUSES__TX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" "c_2Ebool_2ET" "V0t") "V0t"))))
-; ConseqConv.IMP_CLAUSES_XT
-; ∀t. t ⇒ T ⇔ T
+; ConseqConv.IMP_CLAUSES_XT: ∀V0t. V0t ⇒ T ⇔ T
 (conjecture "thm_2EConseqConv_2EIMP__CLAUSES__XT" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" "V0t" "c_2Ebool_2ET") "c_2Ebool_2ET"))))
-; ConseqConv.IMP_CLAUSES_FX
-; ∀t. F ⇒ t ⇔ T
+; ConseqConv.IMP_CLAUSES_FX: ∀V0t. F ⇒ V0t ⇔ T
 (conjecture "thm_2EConseqConv_2EIMP__CLAUSES__FX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" "c_2Ebool_2EF" "V0t") "c_2Ebool_2ET"))))
-; ConseqConv.IMP_CLAUSES_XX
-; ∀t. t ⇒ t ⇔ T
+; ConseqConv.IMP_CLAUSES_XX: ∀V0t. V0t ⇒ V0t ⇔ T
 (conjecture "thm_2EConseqConv_2EIMP__CLAUSES__XX" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" "V0t" "V0t") "c_2Ebool_2ET"))))
-; ConseqConv.IMP_CLAUSES_XF
-; ∀t. t ⇒ F ⇔ ¬t
+; ConseqConv.IMP_CLAUSES_XF: ∀V0t. V0t ⇒ F ⇔ ¬V0t
 (conjecture "thm_2EConseqConv_2EIMP__CLAUSES__XF" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" "V0t" "c_2Ebool_2EF") ("c_2Ebool_2E_7E" "V0t")))))
-; ConseqConv.IMP_CONG_cond_simple
-; ∀c x x' y y'.     (x' ⇒ x) ∧ (y' ⇒ y) ⇒ (if c then x' else y') ⇒ if c then x else y
+; ConseqConv.IMP_CONG_cond_simple: ∀V0c V1x V2x_27 V3y V4y_27.     (V2x_27 ⇒ V1x) ∧ (V4y_27 ⇒ V3y) ⇒     (if V0c then V2x_27 else V4y_27) ⇒     if V0c then V1x else V3y
 (conjecture "thm_2EConseqConv_2EIMP__CONG__cond__simple" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0c" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V4y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V2x_27" "V1x") ("c_2Emin_2E_3D_3D_3E" "V4y_27" "V3y")) ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "V2x_27" "V4y_27") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "V1x" "V3y"))))))))))))))
-; ConseqConv.IMP_CONG_cond
-; ∀c x x' y y'.     (c ⇒ x' ⇒ x) ∧ (¬c ⇒ y' ⇒ y) ⇒     (if c then x' else y') ⇒     if c then x else y
+; ConseqConv.IMP_CONG_cond: ∀V0c V1x V2x_27 V3y V4y_27.     (V0c ⇒ V2x_27 ⇒ V1x) ∧ (¬V0c ⇒ V4y_27 ⇒ V3y) ⇒     (if V0c then V2x_27 else V4y_27) ⇒     if V0c then V1x else V3y
 (conjecture "thm_2EConseqConv_2EIMP__CONG__cond" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0c" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2x_27" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V4y_27" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" "V0c" ("c_2Emin_2E_3D_3D_3E" "V2x_27" "V1x")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V0c") ("c_2Emin_2E_3D_3D_3E" "V4y_27" "V3y"))) ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "V2x_27" "V4y_27") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "V1x" "V3y"))))))))))))))
-; ConseqConv.COND_CLAUSES_CT
-; ∀t1 t2. (if T then t1 else t2) = t1
+; ConseqConv.COND_CLAUSES_CT: ∀V0t1 V1t2. (if T then V0t1 else V1t2) = V0t1
 (conjecture "thm_2EConseqConv_2ECOND__CLAUSES__CT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0t1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1t2" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Ebool_2ECOND" "A_27a") "c_2Ebool_2ET" "V0t1" "V1t2") "V0t1")))))))
-; ConseqConv.COND_CLAUSES_CF
-; ∀t1 t2. (if F then t1 else t2) = t2
+; ConseqConv.COND_CLAUSES_CF: ∀V0t1 V1t2. (if F then V0t1 else V1t2) = V1t2
 (conjecture "thm_2EConseqConv_2ECOND__CLAUSES__CF" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0t1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1t2" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Ebool_2ECOND" "A_27a") "c_2Ebool_2EF" "V0t1" "V1t2") "V1t2")))))))
-; ConseqConv.COND_CLAUSES_ID
-; ∀b t. (if b then t else t) = t
+; ConseqConv.COND_CLAUSES_ID: ∀V0b V1t. (if V0b then V1t else V1t) = V1t
 (conjecture "thm_2EConseqConv_2ECOND__CLAUSES__ID" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "A_27a") (lambda "V1t" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Ebool_2ECOND" "A_27a") "V0b" "V1t" "V1t") "V1t")))))))
-; ConseqConv.COND_CLAUSES_TT
-; ∀c x. (if c then T else x) ⇔ ¬c ⇒ x
+; ConseqConv.COND_CLAUSES_TT: ∀V0c V1x. (if V0c then T else V1x) ⇔ ¬V0c ⇒ V1x
 (conjecture "thm_2EConseqConv_2ECOND__CLAUSES__TT" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0c" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "c_2Ebool_2ET" "V1x") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V0c") "V1x")))))))
-; ConseqConv.COND_CLAUSES_FT
-; ∀c x. (if c then x else T) ⇔ c ⇒ x
+; ConseqConv.COND_CLAUSES_FT: ∀V0c V1x. (if V0c then V1x else T) ⇔ V0c ⇒ V1x
 (conjecture "thm_2EConseqConv_2ECOND__CLAUSES__FT" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0c" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "V1x" "c_2Ebool_2ET") ("c_2Emin_2E_3D_3D_3E" "V0c" "V1x")))))))
-; ConseqConv.COND_CLAUSES_TF
-; ∀c x. (if c then F else x) ⇔ ¬c ∧ x
+; ConseqConv.COND_CLAUSES_TF: ∀V0c V1x. (if V0c then F else V1x) ⇔ ¬V0c ∧ V1x
 (conjecture "thm_2EConseqConv_2ECOND__CLAUSES__TF" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0c" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "c_2Ebool_2EF" "V1x") ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" "V0c") "V1x")))))))
-; ConseqConv.COND_CLAUSES_FF
-; ∀c x. (if c then x else F) ⇔ c ∧ x
+; ConseqConv.COND_CLAUSES_FF: ∀V0c V1x. (if V0c then V1x else F) ⇔ V0c ∧ V1x
 (conjecture "thm_2EConseqConv_2ECOND__CLAUSES__FF" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0c" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V0c" "V1x" "c_2Ebool_2EF") ("c_2Ebool_2E_2F_5C" "V0c" "V1x")))))))
-; ConseqConv.ASM_MARKER_DEF
-; ASM_MARKER = (λy x. x)
+; ConseqConv.ASM_MARKER_DEF: ASM_MARKER = (λV0y V1x. V1x)
 (axiom "thm_2EConseqConv_2EASM__MARKER__DEF" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool"))) "c_2EConseqConv_2EASM__MARKER" (lambda "V0y" "ty_2Emin_2Ebool" (lambda "V1x" "ty_2Emin_2Ebool" "V1x"))))
-; ConseqConv.ASM_MARKER_THM
-; ∀y x. ASM_MARKER y x ⇔ x
+; ConseqConv.ASM_MARKER_THM: ∀V0y V1x. ASM_MARKER V0y V1x ⇔ V1x
 (conjecture "thm_2EConseqConv_2EASM__MARKER__THM" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0y" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1x" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2EConseqConv_2EASM__MARKER" "V0y" "V1x") "V1x"))))))

@@ -1,24 +1,16 @@
-; c.ucord.omega1
-; :(α + (num -> bool)) ordinal
+; c.ucord.omega1: :(α + (num -> bool)) ordinal
 (constant_definition "c_2Eucord_2Eomega1" (forall_tyvarl_type ("A_27a") ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))))
-; ucord.ucinf_uncountable
-; ¬COUNTABLE 𝕌(:num + α + (num -> bool))
+; ucord.ucinf_uncountable: ¬COUNTABLE 𝕌(:num + α + (num -> bool))
 (conjecture "thm_2Eucord_2Eucinf__uncountable" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_7E" (("c_2Epred__set_2Ecountable" ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) ("c_2Epred__set_2EUNIV" ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))))))))
-; ucord.Unum_cardlt_ucinf
-; 𝕌(:num) ≺ 𝕌(:num + α + (num -> bool))
+; ucord.Unum_cardlt_ucinf: 𝕌(:num) ≺ 𝕌(:num + α + (num -> bool))
 (conjecture "thm_2Eucord_2EUnum__cardlt__ucinf" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_7E" (("c_2Ecardinal_2Ecardleq" ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "ty_2Enum_2Enum") ("c_2Epred__set_2EUNIV" ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) ("c_2Epred__set_2EUNIV" "ty_2Enum_2Enum")))))
-; ucord.Unum_cardle_ucinf
-; 𝕌(:num) ≼ 𝕌(:num + α + (num -> bool))
+; ucord.Unum_cardle_ucinf: 𝕌(:num) ≼ 𝕌(:num + α + (num -> bool))
 (conjecture "thm_2Eucord_2EUnum__cardle__ucinf" (forall_tyvarl_term ("A_27a") (("c_2Ecardinal_2Ecardleq" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) ("c_2Epred__set_2EUNIV" "ty_2Enum_2Enum") ("c_2Epred__set_2EUNIV" ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))))))
-; ucord.ucord_sup_exists_lemma
-; {a | countableOrd a} ≼ 𝕌(:num + α + (num -> bool))
+; ucord.ucord_sup_exists_lemma: {V0a | countableOrd V0a} ≼ 𝕌(:num + α + (num -> bool))
 (conjecture "thm_2Eucord_2Eucord__sup__exists__lemma" (forall_tyvarl_term ("A_27a") (("c_2Ecardinal_2Ecardleq" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (("c_2Epred__set_2EGSPEC" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (lambda "V0a" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) (("c_2Epair_2E_2C" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "ty_2Emin_2Ebool") "V0a" (("c_2Epred__set_2Ecountable" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (("c_2Eordinal_2Epreds" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "V0a"))))) ("c_2Epred__set_2EUNIV" ("ty_2Esum_2Esum" "ty_2Enum_2Enum" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))))))
-; ucord.omega1_def
-; ω₁ = sup {a | countableOrd a}
+; ucord.omega1_def: ω₁ = sup {V0a | countableOrd V0a}
 (axiom "thm_2Eucord_2Eomega1__def" (forall_tyvarl_term ("A_27a") (("c_2Emin_2E_3D" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) ("c_2Eucord_2Eomega1" "A_27a") (("c_2Eordinal_2Esup" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) (("c_2Epred__set_2EGSPEC" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (lambda "V0a" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) (("c_2Epair_2E_2C" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "ty_2Emin_2Ebool") "V0a" (("c_2Epred__set_2Ecountable" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (("c_2Eordinal_2Epreds" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "V0a")))))))))
-; ucord.x_lt_omega1_countable
-; x < ω₁ ⇔ countableOrd x
+; ucord.x_lt_omega1_countable: ∀V0x. V0x < ω₁ ⇔ countableOrd V0x
 (conjecture "thm_2Eucord_2Ex__lt__omega1__countable" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (lambda "V0x" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Eordinal_2Eordlt" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "V0x" ("c_2Eucord_2Eomega1" "A_27a")) (("c_2Epred__set_2Ecountable" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (("c_2Eordinal_2Epreds" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "V0x")))))))
-; ucord.omega1_not_countable
-; ¬countableOrd ω₁
+; ucord.omega1_not_countable: ¬countableOrd ω₁
 (conjecture "thm_2Eucord_2Eomega1__not__countable" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_7E" (("c_2Epred__set_2Ecountable" ("ty_2Eordinal_2Eordinal" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))) (("c_2Eordinal_2Epreds" ("ty_2Esum_2Esum" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) ("c_2Eucord_2Eomega1" "A_27a"))))))

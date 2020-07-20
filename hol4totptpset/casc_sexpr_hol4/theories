@@ -113,14 +113,11 @@ patricia_casts
 realax
 numRing
 integerRing
-basis_emit
 real
 intreal
 intExtension
-ordinalNotation
 metric
 frac
-ordNotationSemantics
 nets
 rat
 seq

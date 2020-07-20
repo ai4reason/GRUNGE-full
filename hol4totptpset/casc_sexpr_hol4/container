@@ -1,129 +1,86 @@
-; c.container.BAG_OF_FMAP
-; :(β -> γ -> α) -> (β |-> γ) -> α -> num
+; c.container.BAG_OF_FMAP: :(β -> γ -> α) -> (β |-> γ) -> α -> num
 (constant_definition "c_2Econtainer_2EBAG__OF__FMAP" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27c" "A_27a")) ("ty_2Emin_2Efun" ("ty_2Efinite__map_2Efmap" "A_27b" "A_27c") ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")))))
-; c.container.BAG_TO_LIST
-; :(α -> num) -> α list
+; c.container.BAG_TO_LIST: :(α -> num) -> α list
 (constant_definition "c_2Econtainer_2EBAG__TO__LIST" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Elist_2Elist" "A_27a"))))
-; c.container.LIST_TO_BAG
-; :α list -> α -> num
+; c.container.LIST_TO_BAG: :α list -> α -> num
 (constant_definition "c_2Econtainer_2ELIST__TO__BAG" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "A_27a") ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum"))))
-; c.container.mlt_list
-; :(α -> α -> bool) -> α list -> α list -> bool
+; c.container.mlt_list: :(α -> α -> bool) -> α list -> α list -> bool
 (constant_definition "c_2Econtainer_2Emlt__list" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "A_27a") "ty_2Emin_2Ebool")))))
-; container.SET_TO_LIST_THM
-; FINITE s ⇒ (SET_TO_LIST s = if s = ∅ then [] else CHOICE s::SET_TO_LIST (REST s))
+; container.SET_TO_LIST_THM: ∀V0s.     FINITE V0s ⇒     (SET_TO_LIST V0s =      if V0s = ∅ then [] else CHOICE V0s::SET_TO_LIST (REST V0s))
 (conjecture "thm_2Econtainer_2ESET__TO__LIST__THM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2EFINITE" "A_27a") "V0s") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) (("c_2Elist_2ESET__TO__LIST" "A_27a") "V0s") (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V0s" ("c_2Epred__set_2EEMPTY" "A_27a")) ("c_2Elist_2ENIL" "A_27a") (("c_2Elist_2ECONS" "A_27a") (("c_2Epred__set_2ECHOICE" "A_27a") "V0s") (("c_2Elist_2ESET__TO__LIST" "A_27a") (("c_2Epred__set_2EREST" "A_27a") "V0s"))))))))))
-; container.SET_TO_LIST_IND
-; ∀P. (∀s. (FINITE s ∧ s ≠ ∅ ⇒ P (REST s)) ⇒ P s) ⇒ ∀v. P v
+; container.SET_TO_LIST_IND: ∀V0P.     (∀V1s. (FINITE V1s ∧ V1s ≠ ∅ ⇒ V0P (REST V1s)) ⇒ V0P V1s) ⇒ ∀V2v. V0P V2v
 (conjecture "thm_2Econtainer_2ESET__TO__LIST__IND" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Epred__set_2EFINITE" "A_27a") "V1s") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1s" ("c_2Epred__set_2EEMPTY" "A_27a")))) ("V0P" (("c_2Epred__set_2EREST" "A_27a") "V1s"))) ("V0P" "V1s")))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2v" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("V0P" "V2v"))))))))
-; container.LIST_TO_SET_THM
-; (LIST_TO_SET [] = ∅) ∧ (LIST_TO_SET (h::t) = h INSERT LIST_TO_SET t)
+; container.LIST_TO_SET_THM: ∀V0h V1t.     (LIST_TO_SET [] = ∅) ∧     (LIST_TO_SET (V0h::V1t) = V0h INSERT LIST_TO_SET V1t)
 (conjecture "thm_2Econtainer_2ELIST__TO__SET__THM" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27b") (lambda "V0h" "A_27b" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27b")) (lambda "V1t" ("ty_2Elist_2Elist" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Elist_2ELIST__TO__SET" "A_27a") ("c_2Elist_2ENIL" "A_27a")) ("c_2Epred__set_2EEMPTY" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Elist_2ELIST__TO__SET" "A_27b") (("c_2Elist_2ECONS" "A_27b") "V0h" "V1t")) (("c_2Epred__set_2EINSERT" "A_27b") "V0h" (("c_2Elist_2ELIST__TO__SET" "A_27b") "V1t"))))))))))
-; container.SET_TO_LIST_INV
-; ∀s. FINITE s ⇒ (LIST_TO_SET (SET_TO_LIST s) = s)
+; container.SET_TO_LIST_INV: ∀V0s. FINITE V0s ⇒ (LIST_TO_SET (SET_TO_LIST V0s) = V0s)
 (conjecture "thm_2Econtainer_2ESET__TO__LIST__INV" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2EFINITE" "A_27a") "V0s") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Elist_2ELIST__TO__SET" "A_27a") (("c_2Elist_2ESET__TO__LIST" "A_27a") "V0s")) "V0s"))))))
-; container.SET_TO_LIST_CARD
-; ∀s. FINITE s ⇒ (LENGTH (SET_TO_LIST s) = CARD s)
+; container.SET_TO_LIST_CARD: ∀V0s. FINITE V0s ⇒ (LENGTH (SET_TO_LIST V0s) = CARD V0s)
 (conjecture "thm_2Econtainer_2ESET__TO__LIST__CARD" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2EFINITE" "A_27a") "V0s") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "A_27a") (("c_2Elist_2ESET__TO__LIST" "A_27a") "V0s")) (("c_2Epred__set_2ECARD" "A_27a") "V0s")))))))
-; container.SET_TO_LIST_IN_MEM
-; ∀s. FINITE s ⇒ ∀x. x ∈ s ⇔ MEM x (SET_TO_LIST s)
+; container.SET_TO_LIST_IN_MEM: ∀V0s. FINITE V0s ⇒ ∀V1x. V1x ∈ V0s ⇔ MEM V1x (SET_TO_LIST V0s)
 (conjecture "thm_2Econtainer_2ESET__TO__LIST__IN__MEM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2EFINITE" "A_27a") "V0s") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V1x" "V0s") (("c_2Ebool_2EIN" "A_27a") "V1x" (("c_2Elist_2ELIST__TO__SET" "A_27a") (("c_2Elist_2ESET__TO__LIST" "A_27a") "V0s")))))))))))
-; container.MEM_SET_TO_LIST
-; ∀s. FINITE s ⇒ ∀x. MEM x (SET_TO_LIST s) ⇔ x ∈ s
+; container.MEM_SET_TO_LIST: ∀V0s. FINITE V0s ⇒ ∀V1x. MEM V1x (SET_TO_LIST V0s) ⇔ V1x ∈ V0s
 (conjecture "thm_2Econtainer_2EMEM__SET__TO__LIST" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2EFINITE" "A_27a") "V0s") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V1x" (("c_2Elist_2ELIST__TO__SET" "A_27a") (("c_2Elist_2ESET__TO__LIST" "A_27a") "V0s"))) (("c_2Ebool_2EIN" "A_27a") "V1x" "V0s")))))))))
-; container.SET_TO_LIST_SING
-; SET_TO_LIST {x} = [x]
+; container.SET_TO_LIST_SING: ∀V0x. SET_TO_LIST {V0x} = [V0x]
 (conjecture "thm_2Econtainer_2ESET__TO__LIST__SING" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) (("c_2Elist_2ESET__TO__LIST" "A_27a") (("c_2Epred__set_2EINSERT" "A_27a") "V0x" ("c_2Epred__set_2EEMPTY" "A_27a"))) (("c_2Elist_2ECONS" "A_27a") "V0x" ("c_2Elist_2ENIL" "A_27a")))))))
-; container.UNION_APPEND
-; ∀l1 l2. LIST_TO_SET l1 ∪ LIST_TO_SET l2 = LIST_TO_SET (l1 ++ l2)
+; container.UNION_APPEND: ∀V0l1 V1l2. LIST_TO_SET V0l1 ∪ LIST_TO_SET V1l2 = LIST_TO_SET (V0l1 ++ V1l2)
 (conjecture "thm_2Econtainer_2EUNION__APPEND" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l1" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1l2" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Epred__set_2EUNION" "A_27a") (("c_2Elist_2ELIST__TO__SET" "A_27a") "V0l1") (("c_2Elist_2ELIST__TO__SET" "A_27a") "V1l2")) (("c_2Elist_2ELIST__TO__SET" "A_27a") (("c_2Elist_2EAPPEND" "A_27a") "V0l1" "V1l2")))))))))
-; container.LIST_TO_SET_APPEND
-; ∀l1 l2. LIST_TO_SET (l1 ++ l2) = LIST_TO_SET l1 ∪ LIST_TO_SET l2
+; container.LIST_TO_SET_APPEND: ∀V0l1 V1l2. LIST_TO_SET (V0l1 ++ V1l2) = LIST_TO_SET V0l1 ∪ LIST_TO_SET V1l2
 (conjecture "thm_2Econtainer_2ELIST__TO__SET__APPEND" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l1" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1l2" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Elist_2ELIST__TO__SET" "A_27a") (("c_2Elist_2EAPPEND" "A_27a") "V0l1" "V1l2")) (("c_2Epred__set_2EUNION" "A_27a") (("c_2Elist_2ELIST__TO__SET" "A_27a") "V0l1") (("c_2Elist_2ELIST__TO__SET" "A_27a") "V1l2")))))))))
-; container.FINITE_LIST_TO_SET
-; ∀l. FINITE (LIST_TO_SET l)
+; container.FINITE_LIST_TO_SET: ∀V0l. FINITE (LIST_TO_SET V0l)
 (conjecture "thm_2Econtainer_2EFINITE__LIST__TO__SET" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l" ("ty_2Elist_2Elist" "A_27a") (("c_2Epred__set_2EFINITE" "A_27a") (("c_2Elist_2ELIST__TO__SET" "A_27a") "V0l"))))))
-; container.LIST_TO_BAG_def
-; (LIST_TO_BAG [] = {||}) ∧ ∀h t. LIST_TO_BAG (h::t) = BAG_INSERT h (LIST_TO_BAG t)
+; container.LIST_TO_BAG_def: (LIST_TO_BAG [] = {||}) ∧ ∀V0h V1t. LIST_TO_BAG (V0h::V1t) = BAG_INSERT V0h (LIST_TO_BAG V1t)
 (axiom "thm_2Econtainer_2ELIST__TO__BAG__def" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") ("c_2Elist_2ENIL" "A_27a")) ("c_2Ebag_2EEMPTY__BAG" "A_27a")) (("c_2Ebool_2E_21" "A_27a") (lambda "V0h" "A_27a" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1t" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") (("c_2Elist_2ECONS" "A_27a") "V0h" "V1t")) (("c_2Ebag_2EBAG__INSERT" "A_27a") "V0h" (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V1t"))))))))))
-; container.LIST_TO_BAG_alt
-; ∀l x. LIST_TO_BAG l x = LENGTH (FILTER ($= x) l)
+; container.LIST_TO_BAG_alt: ∀V0l V1x. LIST_TO_BAG V0l V1x = LENGTH (FILTER ($= V1x) V0l)
 (conjecture "thm_2Econtainer_2ELIST__TO__BAG__alt" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V0l" "V1x") (("c_2Elist_2ELENGTH" "A_27a") (("c_2Elist_2EFILTER" "A_27a") (("c_2Emin_2E_3D" "A_27a") "V1x") "V0l")))))))))
-; container.BAG_TO_LIST_primitive_def
-; BAG_TO_LIST = WFREC (@R. WF R ∧ ∀bag. FINITE_BAG bag ∧ bag ≠ {||} ⇒ R (BAG_REST bag) bag)   (λBAG_TO_LIST a.        I          (if FINITE_BAG a then             if a = {||} then [] else BAG_CHOICE a::BAG_TO_LIST (BAG_REST a)           else ARB))
+; container.BAG_TO_LIST_primitive_def: BAG_TO_LIST = WFREC   (@V0R.        WF V0R ∧        ∀V1bag. FINITE_BAG V1bag ∧ V1bag ≠ {||} ⇒ V0R (BAG_REST V1bag) V1bag)   (λV2BAG__TO__LIST V3a.        I          (if FINITE_BAG V3a then             if V3a = {||} then []             else BAG_CHOICE V3a::V2BAG__TO__LIST (BAG_REST V3a)           else ARB))
 (axiom "thm_2Econtainer_2EBAG__TO__LIST__primitive__def" (forall_tyvarl_term ("A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Elist_2Elist" "A_27a"))) ("c_2Econtainer_2EBAG__TO__LIST" "A_27a") (("c_2Erelation_2EWFREC" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Elist_2Elist" "A_27a")) (("c_2Emin_2E_40" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) ("c_2Ebool_2E_2F_5C" (("c_2Erelation_2EWF" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) "V0R") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V1bag" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V1bag") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) "V1bag" ("c_2Ebag_2EEMPTY__BAG" "A_27a")))) ("V0R" (("c_2Ebag_2EBAG__REST" "A_27a") "V1bag") "V1bag"))))))) (lambda "V2BAG__TO__LIST" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Elist_2Elist" "A_27a")) (lambda "V3a" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Ecombin_2EI" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebag_2EFINITE__BAG" "A_27a") "V3a") (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) "V3a" ("c_2Ebag_2EEMPTY__BAG" "A_27a")) ("c_2Elist_2ENIL" "A_27a") (("c_2Elist_2ECONS" "A_27a") (("c_2Ebag_2EBAG__CHOICE" "A_27a") "V3a") ("V2BAG__TO__LIST" (("c_2Ebag_2EBAG__REST" "A_27a") "V3a")))) ("c_2Ebool_2EARB" ("ty_2Elist_2Elist" "A_27a"))))))))))
-; container.BAG_TO_LIST_THM
-; FINITE_BAG bag ⇒ (BAG_TO_LIST bag =  if bag = {||} then [] else BAG_CHOICE bag::BAG_TO_LIST (BAG_REST bag))
+; container.BAG_TO_LIST_THM: ∀V0bag.     FINITE_BAG V0bag ⇒     (BAG_TO_LIST V0bag =      if V0bag = {||} then []      else BAG_CHOICE V0bag::BAG_TO_LIST (BAG_REST V0bag))
 (conjecture "thm_2Econtainer_2EBAG__TO__LIST__THM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0bag" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V0bag") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") "V0bag") (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) "V0bag" ("c_2Ebag_2EEMPTY__BAG" "A_27a")) ("c_2Elist_2ENIL" "A_27a") (("c_2Elist_2ECONS" "A_27a") (("c_2Ebag_2EBAG__CHOICE" "A_27a") "V0bag") (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") (("c_2Ebag_2EBAG__REST" "A_27a") "V0bag"))))))))))
-; container.BAG_TO_LIST_IND
-; ∀P.     (∀bag. (FINITE_BAG bag ∧ bag ≠ {||} ⇒ P (BAG_REST bag)) ⇒ P bag) ⇒     ∀v. P v
+; container.BAG_TO_LIST_IND: ∀V0P.     (∀V1bag.          (FINITE_BAG V1bag ∧ V1bag ≠ {||} ⇒ V0P (BAG_REST V1bag)) ⇒ V0P V1bag) ⇒     ∀V2v. V0P V2v
 (conjecture "thm_2Econtainer_2EBAG__TO__LIST__IND" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V1bag" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V1bag") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) "V1bag" ("c_2Ebag_2EEMPTY__BAG" "A_27a")))) ("V0P" (("c_2Ebag_2EBAG__REST" "A_27a") "V1bag"))) ("V0P" "V1bag")))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V2v" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("V0P" "V2v"))))))))
-; container.BAG_TO_LIST_INV
-; ∀b. FINITE_BAG b ⇒ (LIST_TO_BAG (BAG_TO_LIST b) = b)
+; container.BAG_TO_LIST_INV: ∀V0b. FINITE_BAG V0b ⇒ (LIST_TO_BAG (BAG_TO_LIST V0b) = V0b)
 (conjecture "thm_2Econtainer_2EBAG__TO__LIST__INV" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0b" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V0b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") "V0b")) "V0b"))))))
-; container.BAG_IN_MEM
-; ∀b. FINITE_BAG b ⇒ ∀x. x ⋲ b ⇔ MEM x (BAG_TO_LIST b)
+; container.BAG_IN_MEM: ∀V0b. FINITE_BAG V0b ⇒ ∀V1x. V1x ⋲ V0b ⇔ MEM V1x (BAG_TO_LIST V0b)
 (conjecture "thm_2Econtainer_2EBAG__IN__MEM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0b" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V0b") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebag_2EBAG__IN" "A_27a") "V1x" "V0b") (("c_2Ebool_2EIN" "A_27a") "V1x" (("c_2Elist_2ELIST__TO__SET" "A_27a") (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") "V0b")))))))))))
-; container.MEM_BAG_TO_LIST
-; ∀b. FINITE_BAG b ⇒ ∀x. MEM x (BAG_TO_LIST b) ⇔ x ⋲ b
+; container.MEM_BAG_TO_LIST: ∀V0b. FINITE_BAG V0b ⇒ ∀V1x. MEM V1x (BAG_TO_LIST V0b) ⇔ V1x ⋲ V0b
 (conjecture "thm_2Econtainer_2EMEM__BAG__TO__LIST" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0b" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V0b") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V1x" (("c_2Elist_2ELIST__TO__SET" "A_27a") (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") "V0b"))) (("c_2Ebag_2EBAG__IN" "A_27a") "V1x" "V0b")))))))))
-; container.FINITE_LIST_TO_BAG
-; FINITE_BAG (LIST_TO_BAG ls)
+; container.FINITE_LIST_TO_BAG: ∀V0ls. FINITE_BAG (LIST_TO_BAG V0ls)
 (conjecture "thm_2Econtainer_2EFINITE__LIST__TO__BAG" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0ls" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebag_2EFINITE__BAG" "A_27a") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V0ls"))))))
-; container.EVERY_LIST_TO_BAG
-; BAG_EVERY P (LIST_TO_BAG ls) ⇔ EVERY P ls
+; container.EVERY_LIST_TO_BAG: ∀V0P V1ls. BAG_EVERY V0P (LIST_TO_BAG V1ls) ⇔ EVERY V0P V1ls
 (conjecture "thm_2Econtainer_2EEVERY__LIST__TO__BAG" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1ls" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebag_2EBAG__EVERY" "A_27a") "V0P" (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V1ls")) (("c_2Elist_2EEVERY" "A_27a") "V0P" "V1ls"))))))))
-; container.LIST_TO_BAG_APPEND
-; ∀l1 l2. LIST_TO_BAG (l1 ++ l2) = LIST_TO_BAG l1 ⊎ LIST_TO_BAG l2
+; container.LIST_TO_BAG_APPEND: ∀V0l1 V1l2. LIST_TO_BAG (V0l1 ++ V1l2) = LIST_TO_BAG V0l1 ⊎ LIST_TO_BAG V1l2
 (conjecture "thm_2Econtainer_2ELIST__TO__BAG__APPEND" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l1" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1l2" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") (("c_2Elist_2EAPPEND" "A_27a") "V0l1" "V1l2")) (("c_2Ebag_2EBAG__UNION" "A_27a") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V0l1") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V1l2")))))))))
-; container.LIST_TO_BAG_MAP
-; LIST_TO_BAG (MAP f b) = BAG_IMAGE f (LIST_TO_BAG b)
+; container.LIST_TO_BAG_MAP: ∀V0f V1b. LIST_TO_BAG (MAP V0f V1b) = BAG_IMAGE V0f (LIST_TO_BAG V1b)
 (conjecture "thm_2Econtainer_2ELIST__TO__BAG__MAP" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27a")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27b" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27b")) (lambda "V1b" ("ty_2Elist_2Elist" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") (("c_2Elist_2EMAP" "A_27b" "A_27a") "V0f" "V1b")) (("c_2Ebag_2EBAG__IMAGE" "A_27a" "A_27b") "V0f" (("c_2Econtainer_2ELIST__TO__BAG" "A_27b") "V1b")))))))))
-; container.LIST_TO_BAG_FILTER
-; LIST_TO_BAG (FILTER f b) = BAG_FILTER f (LIST_TO_BAG b)
+; container.LIST_TO_BAG_FILTER: ∀V0f V1b. LIST_TO_BAG (FILTER V0f V1b) = BAG_FILTER V0f (LIST_TO_BAG V1b)
 (conjecture "thm_2Econtainer_2ELIST__TO__BAG__FILTER" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1b" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") (("c_2Elist_2EFILTER" "A_27a") "V0f" "V1b")) (("c_2Ebag_2EBAG__FILTER" "A_27a") "V0f" (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V1b")))))))))
-; container.INN_LIST_TO_BAG
-; ∀n h l. BAG_INN h n (LIST_TO_BAG l) ⇔ LENGTH (FILTER ($= h) l) ≥ n
+; container.INN_LIST_TO_BAG: ∀V0n V1h V2l.     BAG_INN V1h V0n (LIST_TO_BAG V2l) ⇔ LENGTH (FILTER ($= V1h) V2l) ≥ V0n
 (conjecture "thm_2Econtainer_2EINN__LIST__TO__BAG" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "A_27a") (lambda "V1h" "A_27a" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V2l" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebag_2EBAG__INN" "A_27a") "V1h" "V0n" (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V2l")) ("c_2Earithmetic_2E_3E_3D" (("c_2Elist_2ELENGTH" "A_27a") (("c_2Elist_2EFILTER" "A_27a") (("c_2Emin_2E_3D" "A_27a") "V1h") "V2l")) "V0n"))))))))))
-; container.IN_LIST_TO_BAG
-; ∀h l. h ⋲ LIST_TO_BAG l ⇔ MEM h l
+; container.IN_LIST_TO_BAG: ∀V0h V1l. V0h ⋲ LIST_TO_BAG V1l ⇔ MEM V0h V1l
 (conjecture "thm_2Econtainer_2EIN__LIST__TO__BAG" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0h" "A_27a" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1l" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebag_2EBAG__IN" "A_27a") "V0h" (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V1l")) (("c_2Ebool_2EIN" "A_27a") "V0h" (("c_2Elist_2ELIST__TO__SET" "A_27a") "V1l")))))))))
-; container.LIST_TO_BAG_DISTINCT
-; BAG_ALL_DISTINCT (LIST_TO_BAG b) ⇔ ALL_DISTINCT b
+; container.LIST_TO_BAG_DISTINCT: ∀V0b. BAG_ALL_DISTINCT (LIST_TO_BAG V0b) ⇔ ALL_DISTINCT V0b
 (conjecture "thm_2Econtainer_2ELIST__TO__BAG__DISTINCT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0b" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebag_2EBAG__ALL__DISTINCT" "A_27a") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V0b")) (("c_2Elist_2EALL__DISTINCT" "A_27a") "V0b"))))))
-; container.LIST_TO_BAG_EQ_EMPTY
-; ∀l. (LIST_TO_BAG l = {||}) ⇔ (l = [])
+; container.LIST_TO_BAG_EQ_EMPTY: ∀V0l. (LIST_TO_BAG V0l = {||}) ⇔ (V0l = [])
 (conjecture "thm_2Econtainer_2ELIST__TO__BAG__EQ__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V0l") ("c_2Ebag_2EEMPTY__BAG" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) "V0l" ("c_2Elist_2ENIL" "A_27a")))))))
-; container.PERM_LIST_TO_BAG
-; ∀l1 l2. (LIST_TO_BAG l1 = LIST_TO_BAG l2) ⇔ PERM l1 l2
+; container.PERM_LIST_TO_BAG: ∀V0l1 V1l2. (LIST_TO_BAG V0l1 = LIST_TO_BAG V1l2) ⇔ PERM V0l1 V1l2
 (conjecture "thm_2Econtainer_2EPERM__LIST__TO__BAG" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l1" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1l2" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V0l1") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V1l2")) (("c_2Esorting_2EPERM" "A_27a") "V0l1" "V1l2"))))))))
-; container.CARD_LIST_TO_BAG
-; BAG_CARD (LIST_TO_BAG ls) = LENGTH ls
+; container.CARD_LIST_TO_BAG: ∀V0ls. BAG_CARD (LIST_TO_BAG V0ls) = LENGTH V0ls
 (conjecture "thm_2Econtainer_2ECARD__LIST__TO__BAG" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0ls" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Ebag_2EBAG__CARD" "A_27a") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V0ls")) (("c_2Elist_2ELENGTH" "A_27a") "V0ls"))))))
-; container.BAG_TO_LIST_CARD
-; ∀b. FINITE_BAG b ⇒ (LENGTH (BAG_TO_LIST b) = BAG_CARD b)
+; container.BAG_TO_LIST_CARD: ∀V0b. FINITE_BAG V0b ⇒ (LENGTH (BAG_TO_LIST V0b) = BAG_CARD V0b)
 (conjecture "thm_2Econtainer_2EBAG__TO__LIST__CARD" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0b" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V0b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "A_27a") (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") "V0b")) (("c_2Ebag_2EBAG__CARD" "A_27a") "V0b")))))))
-; container.BAG_TO_LIST_EQ_NIL
-; FINITE_BAG b ⇒ (([] = BAG_TO_LIST b) ⇔ (b = {||})) ∧ ((BAG_TO_LIST b = []) ⇔ (b = {||}))
+; container.BAG_TO_LIST_EQ_NIL: ∀V0b.     FINITE_BAG V0b ⇒     (([] = BAG_TO_LIST V0b) ⇔ (V0b = {||})) ∧     ((BAG_TO_LIST V0b = []) ⇔ (V0b = {||}))
 (conjecture "thm_2Econtainer_2EBAG__TO__LIST__EQ__NIL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0b" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebag_2EFINITE__BAG" "A_27a") "V0b") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) ("c_2Elist_2ENIL" "A_27a") (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") "V0b")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) "V0b" ("c_2Ebag_2EEMPTY__BAG" "A_27a"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) (("c_2Econtainer_2EBAG__TO__LIST" "A_27a") "V0b") ("c_2Elist_2ENIL" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) "V0b" ("c_2Ebag_2EEMPTY__BAG" "A_27a")))))))))
-; container.LIST_ELEM_COUNT_LIST_TO_BAG
-; LIST_ELEM_COUNT e ls = LIST_TO_BAG ls e
+; container.LIST_ELEM_COUNT_LIST_TO_BAG: ∀V0e V1ls. LIST_ELEM_COUNT V0e V1ls = LIST_TO_BAG V1ls V0e
 (conjecture "thm_2Econtainer_2ELIST__ELEM__COUNT__LIST__TO__BAG" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0e" "A_27a" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1ls" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Erich__list_2ELIST__ELEM__COUNT" "A_27a") "V0e" "V1ls") (("c_2Econtainer_2ELIST__TO__BAG" "A_27a") "V1ls" "V0e"))))))))
-; container.mlt_list_def
-; ∀R.     mlt_list R =     (λl1 l2.          ∃h t list. (l1 = list ++ t) ∧ (l2 = h::t) ∧ ∀e. MEM e list ⇒ R e h)
+; container.mlt_list_def: ∀V0R.     mlt_list V0R =     (λV1l1 V2l2.          ∃V3h V4t V5list.              (V1l1 = V5list ++ V4t) ∧ (V2l2 = V3h::V4t) ∧              ∀V6e. MEM V6e V5list ⇒ V0R V6e V3h)
 (axiom "thm_2Econtainer_2Emlt__list__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "A_27a") "ty_2Emin_2Ebool"))) (("c_2Econtainer_2Emlt__list" "A_27a") "V0R") (lambda "V1l1" ("ty_2Elist_2Elist" "A_27a") (lambda "V2l2" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_3F" "A_27a") (lambda "V3h" "A_27a" (("c_2Ebool_2E_3F" ("ty_2Elist_2Elist" "A_27a")) (lambda "V4t" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_3F" ("ty_2Elist_2Elist" "A_27a")) (lambda "V5list" ("ty_2Elist_2Elist" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) "V1l1" (("c_2Elist_2EAPPEND" "A_27a") "V5list" "V4t")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) "V2l2" (("c_2Elist_2ECONS" "A_27a") "V3h" "V4t")) (("c_2Ebool_2E_21" "A_27a") (lambda "V6e" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "A_27a") "V6e" (("c_2Elist_2ELIST__TO__SET" "A_27a") "V5list")) ("V0R" "V6e" "V3h")))))))))))))))))))
-; container.WF_mlt_list
-; ∀R. WF R ⇒ WF (mlt_list R)
+; container.WF_mlt_list: ∀V0R. WF V0R ⇒ WF (mlt_list V0R)
 (conjecture "thm_2Econtainer_2EWF__mlt__list" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2Erelation_2EWF" "A_27a") "V0R") (("c_2Erelation_2EWF" ("ty_2Elist_2Elist" "A_27a")) (("c_2Econtainer_2Emlt__list" "A_27a") "V0R")))))))
-; container.BAG_OF_FMAP_def
-; ∀f b. BAG_OF_FMAP f b = (λx. CARD (λk. k ∈ FDOM b ∧ (x = f k (b ' k))))
+; container.BAG_OF_FMAP_def: ∀V0f V1b.     BAG_OF_FMAP V0f V1b =     (λV2x. CARD (λV3k. V3k ∈ FDOM V1b ∧ (V2x = V0f V3k (V1b ' V3k))))
 (axiom "thm_2Econtainer_2EBAG__OF__FMAP__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27c" "A_27a"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27c" "A_27a")) (("c_2Ebool_2E_21" ("ty_2Efinite__map_2Efmap" "A_27b" "A_27c")) (lambda "V1b" ("ty_2Efinite__map_2Efmap" "A_27b" "A_27c") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (("c_2Econtainer_2EBAG__OF__FMAP" "A_27a" "A_27b" "A_27c") "V0f" "V1b") (lambda "V2x" "A_27a" (("c_2Epred__set_2ECARD" "A_27b") (lambda "V3k" "A_27b" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27b") "V3k" (("c_2Efinite__map_2EFDOM" "A_27b" "A_27c") "V1b")) (("c_2Emin_2E_3D" "A_27a") "V2x" ("V0f" "V3k" (("c_2Efinite__map_2EFAPPLY" "A_27b" "A_27c") "V1b" "V3k"))))))))))))))
-; container.BAG_OF_FMAP_THM
-; (∀f. BAG_OF_FMAP f FEMPTY = {||}) ∧ ∀f b k v.     BAG_OF_FMAP f (b |+ (k,v)) = BAG_INSERT (f k v) (BAG_OF_FMAP f (b \\ k))
+; container.BAG_OF_FMAP_THM: (∀V0f. BAG_OF_FMAP V0f FEMPTY = {||}) ∧ ∀V1f V2b V3k V4v.     BAG_OF_FMAP V1f (V2b |+ (V3k,V4v)) =     BAG_INSERT (V1f V3k V4v) (BAG_OF_FMAP V1f (V2b \\ V3k))
 (conjecture "thm_2Econtainer_2EBAG__OF__FMAP__THM" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d" "A_27e" "A_27f") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27c" "ty_2Enum_2Enum")) (("c_2Econtainer_2EBAG__OF__FMAP" "A_27c" "A_27a" "A_27b") "V0f" ("c_2Efinite__map_2EFEMPTY" "A_27a" "A_27b")) ("c_2Ebag_2EEMPTY__BAG" "A_27c")))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27d" ("ty_2Emin_2Efun" "A_27e" "A_27f"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27d" ("ty_2Emin_2Efun" "A_27e" "A_27f")) (("c_2Ebool_2E_21" ("ty_2Efinite__map_2Efmap" "A_27d" "A_27e")) (lambda "V2b" ("ty_2Efinite__map_2Efmap" "A_27d" "A_27e") (("c_2Ebool_2E_21" "A_27d") (lambda "V3k" "A_27d" (("c_2Ebool_2E_21" "A_27e") (lambda "V4v" "A_27e" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27f" "ty_2Enum_2Enum")) (("c_2Econtainer_2EBAG__OF__FMAP" "A_27f" "A_27d" "A_27e") "V1f" (("c_2Efinite__map_2EFUPDATE" "A_27d" "A_27e") "V2b" (("c_2Epair_2E_2C" "A_27d" "A_27e") "V3k" "V4v"))) (("c_2Ebag_2EBAG__INSERT" "A_27f") ("V1f" "V3k" "V4v") (("c_2Econtainer_2EBAG__OF__FMAP" "A_27f" "A_27d" "A_27e") "V1f" (("c_2Efinite__map_2Efdomsub" "A_27d" "A_27e") "V2b" "V3k")))))))))))))))
-; container.BAG_IN_BAG_OF_FMAP
-; ∀x f b. x ⋲ BAG_OF_FMAP f b ⇔ ∃k. k ∈ FDOM b ∧ (x = f k (b ' k))
+; container.BAG_IN_BAG_OF_FMAP: ∀V0x V1f V2b.     V0x ⋲ BAG_OF_FMAP V1f V2b ⇔     ∃V3k. V3k ∈ FDOM V2b ∧ (V0x = V1f V3k (V2b ' V3k))
 (conjecture "thm_2Econtainer_2EBAG__IN__BAG__OF__FMAP" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27c" "A_27a"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27c" "A_27a")) (("c_2Ebool_2E_21" ("ty_2Efinite__map_2Efmap" "A_27b" "A_27c")) (lambda "V2b" ("ty_2Efinite__map_2Efmap" "A_27b" "A_27c") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebag_2EBAG__IN" "A_27a") "V0x" (("c_2Econtainer_2EBAG__OF__FMAP" "A_27a" "A_27b" "A_27c") "V1f" "V2b")) (("c_2Ebool_2E_3F" "A_27b") (lambda "V3k" "A_27b" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27b") "V3k" (("c_2Efinite__map_2EFDOM" "A_27b" "A_27c") "V2b")) (("c_2Emin_2E_3D" "A_27a") "V0x" ("V1f" "V3k" (("c_2Efinite__map_2EFAPPLY" "A_27b" "A_27c") "V2b" "V3k")))))))))))))))
-; container.FINITE_BAG_OF_FMAP
-; ∀f b. FINITE_BAG (BAG_OF_FMAP f b)
+; container.FINITE_BAG_OF_FMAP: ∀V0f V1b. FINITE_BAG (BAG_OF_FMAP V0f V1b)
 (conjecture "thm_2Econtainer_2EFINITE__BAG__OF__FMAP" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (("c_2Ebool_2E_21" ("ty_2Efinite__map_2Efmap" "A_27a" "A_27b")) (lambda "V1b" ("ty_2Efinite__map_2Efmap" "A_27a" "A_27b") (("c_2Ebag_2EFINITE__BAG" "A_27c") (("c_2Econtainer_2EBAG__OF__FMAP" "A_27c" "A_27a" "A_27b") "V0f" "V1b"))))))))

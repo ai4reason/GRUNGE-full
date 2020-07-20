@@ -1,93 +1,62 @@
-; c.fixedPoint.closed
-; :((α -> bool) -> α -> bool) -> (α -> bool) -> bool
+; c.fixedPoint.closed: :((α -> bool) -> α -> bool) -> (α -> bool) -> bool
 (constant_definition "c_2EfixedPoint_2Eclosed" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool"))))
-; c.fixedPoint.dense
-; :((α -> bool) -> α -> bool) -> (α -> bool) -> bool
+; c.fixedPoint.dense: :((α -> bool) -> α -> bool) -> (α -> bool) -> bool
 (constant_definition "c_2EfixedPoint_2Edense" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool"))))
-; c.fixedPoint.empty
-; :α -> β -> bool
+; c.fixedPoint.empty: :α -> β -> bool
 (constant_definition "c_2EfixedPoint_2Eempty" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))))
-; c.fixedPoint.fnsum
-; :(β -> α -> bool) -> (β -> α -> bool) -> β -> α -> bool
+; c.fixedPoint.fnsum: :(β -> α -> bool) -> (β -> α -> bool) -> β -> α -> bool
 (constant_definition "c_2EfixedPoint_2Efnsum" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))))))
-; c.fixedPoint.gfp
-; :((α -> bool) -> α -> bool) -> α -> bool
+; c.fixedPoint.gfp: :((α -> bool) -> α -> bool) -> α -> bool
 (constant_definition "c_2EfixedPoint_2Egfp" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))))
-; c.fixedPoint.lfp
-; :((α -> bool) -> α -> bool) -> α -> bool
+; c.fixedPoint.lfp: :((α -> bool) -> α -> bool) -> α -> bool
 (constant_definition "c_2EfixedPoint_2Elfp" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))))
-; c.fixedPoint.monotone
-; :((α -> bool) -> β -> bool) -> bool
+; c.fixedPoint.monotone: :((α -> bool) -> β -> bool) -> bool
 (constant_definition "c_2EfixedPoint_2Emonotone" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
-; fixedPoint.monotone_def
-; ∀f. monotone f ⇔ ∀X Y. X ⊆ Y ⇒ f X ⊆ f Y
+; fixedPoint.monotone_def: ∀V0f. monotone V0f ⇔ ∀V1X V2Y. V1X ⊆ V2Y ⇒ V0f V1X ⊆ V0f V2Y
 (axiom "thm_2EfixedPoint_2Emonotone__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27b") "V0f") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2Y" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" "V2Y") (("c_2Epred__set_2ESUBSET" "A_27b") ("V0f" "V1X") ("V0f" "V2Y"))))))))))))
-; fixedPoint.lfp_def
-; ∀f. lfp f = BIGINTER {X | f X ⊆ X}
+; fixedPoint.lfp_def: ∀V0f. lfp V0f = BIGINTER {V1X | V0f V1X ⊆ V1X}
 (axiom "thm_2EfixedPoint_2Elfp__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2EfixedPoint_2Elfp" "A_27a") "V0f") (("c_2Epred__set_2EBIGINTER" "A_27a") (("c_2Epred__set_2EGSPEC" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Epair_2E_2C" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") "V1X" (("c_2Epred__set_2ESUBSET" "A_27a") ("V0f" "V1X") "V1X"))))))))))
-; fixedPoint.gfp_def
-; ∀f. gfp f = BIGUNION {X | X ⊆ f X}
+; fixedPoint.gfp_def: ∀V0f. gfp V0f = BIGUNION {V1X | V1X ⊆ V0f V1X}
 (axiom "thm_2EfixedPoint_2Egfp__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2EfixedPoint_2Egfp" "A_27a") "V0f") (("c_2Epred__set_2EBIGUNION" "A_27a") (("c_2Epred__set_2EGSPEC" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Epair_2E_2C" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") "V1X" (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" ("V0f" "V1X")))))))))))
-; fixedPoint.closed_def
-; ∀f X. closed f X ⇔ f X ⊆ X
+; fixedPoint.closed_def: ∀V0f V1X. closed V0f V1X ⇔ V0f V1X ⊆ V1X
 (axiom "thm_2EfixedPoint_2Eclosed__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2EfixedPoint_2Eclosed" "A_27a") "V0f" "V1X") (("c_2Epred__set_2ESUBSET" "A_27a") ("V0f" "V1X") "V1X"))))))))
-; fixedPoint.dense_def
-; ∀f X. dense f X ⇔ X ⊆ f X
+; fixedPoint.dense_def: ∀V0f V1X. dense V0f V1X ⇔ V1X ⊆ V0f V1X
 (axiom "thm_2EfixedPoint_2Edense__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2EfixedPoint_2Edense" "A_27a") "V0f" "V1X") (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" ("V0f" "V1X")))))))))
-; fixedPoint.lfp_least_closed
-; ∀f. monotone f ⇒ closed f (lfp f) ∧ ∀X. closed f X ⇒ lfp f ⊆ X
+; fixedPoint.lfp_least_closed: ∀V0f.     monotone V0f ⇒     closed V0f (lfp V0f) ∧ ∀V1X. closed V0f V1X ⇒ lfp V0f ⊆ V1X
 (conjecture "thm_2EfixedPoint_2Elfp__least__closed" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") ("c_2Ebool_2E_2F_5C" (("c_2EfixedPoint_2Eclosed" "A_27a") "V0f" (("c_2EfixedPoint_2Elfp" "A_27a") "V0f")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Eclosed" "A_27a") "V0f" "V1X") (("c_2Epred__set_2ESUBSET" "A_27a") (("c_2EfixedPoint_2Elfp" "A_27a") "V0f") "V1X"))))))))))
-; fixedPoint.gfp_greatest_dense
-; ∀f. monotone f ⇒ dense f (gfp f) ∧ ∀X. dense f X ⇒ X ⊆ gfp f
+; fixedPoint.gfp_greatest_dense: ∀V0f.     monotone V0f ⇒ dense V0f (gfp V0f) ∧ ∀V1X. dense V0f V1X ⇒ V1X ⊆ gfp V0f
 (conjecture "thm_2EfixedPoint_2Egfp__greatest__dense" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") ("c_2Ebool_2E_2F_5C" (("c_2EfixedPoint_2Edense" "A_27a") "V0f" (("c_2EfixedPoint_2Egfp" "A_27a") "V0f")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Edense" "A_27a") "V0f" "V1X") (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" (("c_2EfixedPoint_2Egfp" "A_27a") "V0f")))))))))))
-; fixedPoint.lfp_fixedpoint
-; ∀f. monotone f ⇒ (lfp f = f (lfp f)) ∧ ∀X. (X = f X) ⇒ lfp f ⊆ X
+; fixedPoint.lfp_fixedpoint: ∀V0f.     monotone V0f ⇒     (lfp V0f = V0f (lfp V0f)) ∧ ∀V1X. (V1X = V0f V1X) ⇒ lfp V0f ⊆ V1X
 (conjecture "thm_2EfixedPoint_2Elfp__fixedpoint" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2EfixedPoint_2Elfp" "A_27a") "V0f") ("V0f" (("c_2EfixedPoint_2Elfp" "A_27a") "V0f"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1X" ("V0f" "V1X")) (("c_2Epred__set_2ESUBSET" "A_27a") (("c_2EfixedPoint_2Elfp" "A_27a") "V0f") "V1X"))))))))))
-; fixedPoint.gfp_greatest_fixedpoint
-; ∀f. monotone f ⇒ (gfp f = f (gfp f)) ∧ ∀X. (X = f X) ⇒ X ⊆ gfp f
+; fixedPoint.gfp_greatest_fixedpoint: ∀V0f.     monotone V0f ⇒     (gfp V0f = V0f (gfp V0f)) ∧ ∀V1X. (V1X = V0f V1X) ⇒ V1X ⊆ gfp V0f
 (conjecture "thm_2EfixedPoint_2Egfp__greatest__fixedpoint" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2EfixedPoint_2Egfp" "A_27a") "V0f") ("V0f" (("c_2EfixedPoint_2Egfp" "A_27a") "V0f"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1X" ("V0f" "V1X")) (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" (("c_2EfixedPoint_2Egfp" "A_27a") "V0f")))))))))))
-; fixedPoint.lfp_induction
-; ∀f. monotone f ⇒ ∀X. f X ⊆ X ⇒ lfp f ⊆ X
+; fixedPoint.lfp_induction: ∀V0f. monotone V0f ⇒ ∀V1X. V0f V1X ⊆ V1X ⇒ lfp V0f ⊆ V1X
 (conjecture "thm_2EfixedPoint_2Elfp__induction" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2ESUBSET" "A_27a") ("V0f" "V1X") "V1X") (("c_2Epred__set_2ESUBSET" "A_27a") (("c_2EfixedPoint_2Elfp" "A_27a") "V0f") "V1X")))))))))
-; fixedPoint.gfp_coinduction
-; ∀f. monotone f ⇒ ∀X. X ⊆ f X ⇒ X ⊆ gfp f
+; fixedPoint.gfp_coinduction: ∀V0f. monotone V0f ⇒ ∀V1X. V1X ⊆ V0f V1X ⇒ V1X ⊆ gfp V0f
 (conjecture "thm_2EfixedPoint_2Egfp__coinduction" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" ("V0f" "V1X")) (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" (("c_2EfixedPoint_2Egfp" "A_27a") "V0f"))))))))))
-; fixedPoint.lfp_strong_induction
-; ∀f. monotone f ⇒ ∀X. f (X ∩ lfp f) ⊆ X ⇒ lfp f ⊆ X
+; fixedPoint.lfp_strong_induction: ∀V0f. monotone V0f ⇒ ∀V1X. V0f (V1X ∩ lfp V0f) ⊆ V1X ⇒ lfp V0f ⊆ V1X
 (conjecture "thm_2EfixedPoint_2Elfp__strong__induction" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2ESUBSET" "A_27a") ("V0f" (("c_2Epred__set_2EINTER" "A_27a") "V1X" (("c_2EfixedPoint_2Elfp" "A_27a") "V0f"))) "V1X") (("c_2Epred__set_2ESUBSET" "A_27a") (("c_2EfixedPoint_2Elfp" "A_27a") "V0f") "V1X")))))))))
-; fixedPoint.gfp_strong_coinduction
-; ∀f. monotone f ⇒ ∀X. X ⊆ f (X ∪ gfp f) ⇒ X ⊆ gfp f
+; fixedPoint.gfp_strong_coinduction: ∀V0f. monotone V0f ⇒ ∀V1X. V1X ⊆ V0f (V1X ∪ gfp V0f) ⇒ V1X ⊆ gfp V0f
 (conjecture "thm_2EfixedPoint_2Egfp__strong__coinduction" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" ("V0f" (("c_2Epred__set_2EUNION" "A_27a") "V1X" (("c_2EfixedPoint_2Egfp" "A_27a") "V0f")))) (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" (("c_2EfixedPoint_2Egfp" "A_27a") "V0f"))))))))))
-; fixedPoint.fnsum_def
-; ∀f1 f2 X. fnsum f1 f2 X = f1 X ∪ f2 X
+; fixedPoint.fnsum_def: ∀V0f1 V1f2 V2X. fnsum V0f1 V1f2 V2X = V0f1 V2X ∪ V1f2 V2X
 (axiom "thm_2EfixedPoint_2Efnsum__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f1" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V1f2" ("ty_2Emin_2Efun" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "A_27b") (lambda "V2X" "A_27b" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2EfixedPoint_2Efnsum" "A_27a" "A_27b") "V0f1" "V1f2" "V2X") (("c_2Epred__set_2EUNION" "A_27a") ("V0f1" "V2X") ("V1f2" "V2X")))))))))))
-; fixedPoint.fnsum_monotone
-; ∀f1 f2. monotone f1 ∧ monotone f2 ⇒ monotone (fnsum f1 f2)
+; fixedPoint.fnsum_monotone: ∀V0f1 V1f2. monotone V0f1 ∧ monotone V1f2 ⇒ monotone (fnsum V0f1 V1f2)
 (conjecture "thm_2EfixedPoint_2Efnsum__monotone" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0f1" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V1f2" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27b") "V0f1") (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27b") "V1f2")) (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27b") (("c_2EfixedPoint_2Efnsum" "A_27b" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V0f1" "V1f2")))))))))
-; fixedPoint.empty_def
-; empty = (λX. ∅)
+; fixedPoint.empty_def: empty = (λV0X. ∅)
 (axiom "thm_2EfixedPoint_2Eempty__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) ("c_2EfixedPoint_2Eempty" "A_27a" "A_27b") (lambda "V0X" "A_27a" ("c_2Epred__set_2EEMPTY" "A_27b")))))
-; fixedPoint.empty_monotone
-; monotone empty
+; fixedPoint.empty_monotone: monotone empty
 (conjecture "thm_2EfixedPoint_2Eempty__monotone" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27b") ("c_2EfixedPoint_2Eempty" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "A_27b"))))
-; fixedPoint.fnsum_empty
-; ∀f. (fnsum f empty = f) ∧ (fnsum empty f = f)
+; fixedPoint.fnsum_empty: ∀V0f. (fnsum V0f empty = V0f) ∧ (fnsum empty V0f = V0f)
 (conjecture "thm_2EfixedPoint_2Efnsum__empty" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V0f" ("c_2EfixedPoint_2Eempty" "A_27a" "A_27b")) "V0f") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") ("c_2EfixedPoint_2Eempty" "A_27a" "A_27b") "V0f") "V0f"))))))
-; fixedPoint.fnsum_ASSOC
-; ∀f g h. fnsum f (fnsum g h) = fnsum (fnsum f g) h
+; fixedPoint.fnsum_ASSOC: ∀V0f V1g V2h. fnsum V0f (fnsum V1g V2h) = fnsum (fnsum V0f V1g) V2h
 (conjecture "thm_2EfixedPoint_2Efnsum__ASSOC" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V1g" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V2h" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V0f" (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V1g" "V2h")) (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V0f" "V1g") "V2h"))))))))))
-; fixedPoint.fnsum_COMM
-; ∀f g. fnsum f g = fnsum g f
+; fixedPoint.fnsum_COMM: ∀V0f V1g. fnsum V0f V1g = fnsum V1g V0f
 (conjecture "thm_2EfixedPoint_2Efnsum__COMM" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V1g" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V0f" "V1g") (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V1g" "V0f"))))))))
-; fixedPoint.fnsum_SUBSET
-; ∀f g X. f X ⊆ fnsum f g X ∧ g X ⊆ fnsum f g X
+; fixedPoint.fnsum_SUBSET: ∀V0f V1g V2X. V0f V2X ⊆ fnsum V0f V1g V2X ∧ V1g V2X ⊆ fnsum V0f V1g V2X
 (conjecture "thm_2EfixedPoint_2Efnsum__SUBSET" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V1g" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "A_27a") (lambda "V2X" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Epred__set_2ESUBSET" "A_27b") ("V0f" "V2X") (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V0f" "V1g" "V2X")) (("c_2Epred__set_2ESUBSET" "A_27b") ("V1g" "V2X") (("c_2EfixedPoint_2Efnsum" "A_27b" "A_27a") "V0f" "V1g" "V2X")))))))))))
-; fixedPoint.lfp_fnsum
-; ∀f1 f2.     monotone f1 ∧ monotone f2 ⇒     lfp f1 ⊆ lfp (fnsum f1 f2) ∧ lfp f2 ⊆ lfp (fnsum f1 f2)
+; fixedPoint.lfp_fnsum: ∀V0f1 V1f2.     monotone V0f1 ∧ monotone V1f2 ⇒     lfp V0f1 ⊆ lfp (fnsum V0f1 V1f2) ∧ lfp V1f2 ⊆ lfp (fnsum V0f1 V1f2)
 (conjecture "thm_2EfixedPoint_2Elfp__fnsum" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f1" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V1f2" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f1") (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V1f2")) ("c_2Ebool_2E_2F_5C" (("c_2Epred__set_2ESUBSET" "A_27a") (("c_2EfixedPoint_2Elfp" "A_27a") "V0f1") (("c_2EfixedPoint_2Elfp" "A_27a") (("c_2EfixedPoint_2Efnsum" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V0f1" "V1f2"))) (("c_2Epred__set_2ESUBSET" "A_27a") (("c_2EfixedPoint_2Elfp" "A_27a") "V1f2") (("c_2EfixedPoint_2Elfp" "A_27a") (("c_2EfixedPoint_2Efnsum" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V0f1" "V1f2")))))))))))
-; fixedPoint.lfp_rule_applied
-; ∀f X y. monotone f ∧ X ⊆ lfp f ∧ y ∈ f X ⇒ y ∈ lfp f
+; fixedPoint.lfp_rule_applied: ∀V0f V1X V2y. monotone V0f ∧ V1X ⊆ lfp V0f ∧ V2y ∈ V0f V1X ⇒ V2y ∈ lfp V0f
 (conjecture "thm_2EfixedPoint_2Elfp__rule__applied" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1X" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") ("c_2Ebool_2E_2F_5C" (("c_2Epred__set_2ESUBSET" "A_27a") "V1X" (("c_2EfixedPoint_2Elfp" "A_27a") "V0f")) (("c_2Ebool_2EIN" "A_27a") "V2y" ("V0f" "V1X")))) (("c_2Ebool_2EIN" "A_27a") "V2y" (("c_2EfixedPoint_2Elfp" "A_27a") "V0f")))))))))))
-; fixedPoint.lfp_empty
-; ∀f x. monotone f ∧ x ∈ f ∅ ⇒ x ∈ lfp f
+; fixedPoint.lfp_empty: ∀V0f V1x. monotone V0f ∧ V1x ∈ V0f ∅ ⇒ V1x ∈ lfp V0f
 (conjecture "thm_2EfixedPoint_2Elfp__empty" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2EfixedPoint_2Emonotone" "A_27a" "A_27a") "V0f") (("c_2Ebool_2EIN" "A_27a") "V1x" ("V0f" ("c_2Epred__set_2EEMPTY" "A_27a")))) (("c_2Ebool_2EIN" "A_27a") "V1x" (("c_2EfixedPoint_2Elfp" "A_27a") "V0f")))))))))

@@ -1,162 +1,108 @@
-; c.prim_rec.<
-; :num -> num -> bool
+; c.prim_rec.<: :num -> num -> bool
 (constant_definition "c_2Eprim__rec_2E_3C" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))
-; c.prim_rec.PRE
-; :num -> num
+; c.prim_rec.PRE: :num -> num
 (constant_definition "c_2Eprim__rec_2EPRE" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))
-; c.prim_rec.PRIM_REC
-; :α -> (α -> num -> α) -> num -> α
+; c.prim_rec.PRIM_REC: :α -> (α -> num -> α) -> num -> α
 (constant_definition "c_2Eprim__rec_2EPRIM__REC" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")))))
-; c.prim_rec.PRIM_REC_FUN
-; :α -> (α -> num -> α) -> num -> num -> α
+; c.prim_rec.PRIM_REC_FUN: :α -> (α -> num -> α) -> num -> num -> α
 (constant_definition "c_2Eprim__rec_2EPRIM__REC__FUN" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a"))))))
-; c.prim_rec.SIMP_REC
-; :α -> (α -> α) -> num -> α
+; c.prim_rec.SIMP_REC: :α -> (α -> α) -> num -> α
 (constant_definition "c_2Eprim__rec_2ESIMP__REC" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27a") ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")))))
-; c.prim_rec.SIMP_REC_REL
-; :(num -> α) -> α -> (α -> α) -> num -> bool
+; c.prim_rec.SIMP_REC_REL: :(num -> α) -> α -> (α -> α) -> num -> bool
 (constant_definition "c_2Eprim__rec_2ESIMP__REC__REL" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27a") ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))))))
-; c.prim_rec.measure
-; :(α -> num) -> α -> α -> bool
+; c.prim_rec.measure: :(α -> num) -> α -> α -> bool
 (constant_definition "c_2Eprim__rec_2Emeasure" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")))))
-; c.prim_rec.wellfounded
-; :(α -> α -> bool) -> bool
+; c.prim_rec.wellfounded: :(α -> α -> bool) -> bool
 (constant_definition "c_2Eprim__rec_2Ewellfounded" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
-; prim_rec.LESS_DEF
-; ∀m n. m < n ⇔ ∃P. (∀n. P (SUC n) ⇒ P n) ∧ P m ∧ ¬P n
+; prim_rec.LESS_DEF: ∀V0m V1n.     V0m < V1n ⇔ ∃V2P. (∀V3n. V2P (SUC V3n) ⇒ V2P V3n) ∧ V2P V0m ∧ ¬V2P V1n
 (axiom "thm_2Eprim__rec_2ELESS__DEF" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0m" "V1n") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V2P" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("V2P" ("c_2Enum_2ESUC" "V3n")) ("V2P" "V3n")))) ("c_2Ebool_2E_2F_5C" ("V2P" "V0m") ("c_2Ebool_2E_7E" ("V2P" "V1n"))))))))))))
-; prim_rec.INV_SUC_EQ
-; ∀m n. (SUC m = SUC n) ⇔ (m = n)
+; prim_rec.INV_SUC_EQ: ∀V0m V1n. (SUC V0m = SUC V1n) ⇔ (V0m = V1n)
 (conjecture "thm_2Eprim__rec_2EINV__SUC__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enum_2ESUC" "V0m") ("c_2Enum_2ESUC" "V1n")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n")))))))
-; prim_rec.PRE_DEF
-; ∀m. PRE m = if m = 0 then 0 else @n. m = SUC n
+; prim_rec.PRE_DEF: ∀V0m. PRE V0m = if V0m = 0 then 0 else @V1n. V0m = SUC V1n
 (axiom "thm_2Eprim__rec_2EPRE__DEF" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eprim__rec_2EPRE" "V0m") (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "c_2Enum_2E0") "c_2Enum_2E0" (("c_2Emin_2E_40" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" ("c_2Enum_2ESUC" "V1n")))))))))
-; prim_rec.PRE
-; (PRE 0 = 0) ∧ ∀m. PRE (SUC m) = m
+; prim_rec.PRE: (PRE 0 = 0) ∧ ∀V0m. PRE (SUC V0m) = V0m
 (conjecture "thm_2Eprim__rec_2EPRE" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eprim__rec_2EPRE" "c_2Enum_2E0") "c_2Enum_2E0") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eprim__rec_2EPRE" ("c_2Enum_2ESUC" "V0m")) "V0m")))))
-; prim_rec.LESS_REFL
-; ∀n. ¬(n < n)
+; prim_rec.LESS_REFL: ∀V0n. ¬(V0n < V0n)
 (conjecture "thm_2Eprim__rec_2ELESS__REFL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" ("c_2Eprim__rec_2E_3C" "V0n" "V0n")))))
-; prim_rec.SUC_LESS
-; ∀m n. SUC m < n ⇒ m < n
+; prim_rec.SUC_LESS: ∀V0m V1n. SUC V0m < V1n ⇒ V0m < V1n
 (conjecture "thm_2Eprim__rec_2ESUC__LESS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Enum_2ESUC" "V0m") "V1n") ("c_2Eprim__rec_2E_3C" "V0m" "V1n")))))))
-; prim_rec.NOT_LESS_0
-; ∀n. ¬(n < 0)
+; prim_rec.NOT_LESS_0: ∀V0n. ¬(V0n < 0)
 (conjecture "thm_2Eprim__rec_2ENOT__LESS__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" ("c_2Eprim__rec_2E_3C" "V0n" "c_2Enum_2E0")))))
-; prim_rec.LESS_0
-; ∀n. 0 < SUC n
+; prim_rec.LESS_0: ∀V0n. 0 < SUC V0n
 (conjecture "thm_2Eprim__rec_2ELESS__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Enum_2ESUC" "V0n")))))
-; prim_rec.LESS_0_0
-; 0 < SUC 0
+; prim_rec.LESS_0_0: 0 < SUC 0
 (conjecture "thm_2Eprim__rec_2ELESS__0__0" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Enum_2ESUC" "c_2Enum_2E0")))
-; prim_rec.LESS_MONO
-; ∀m n. m < n ⇒ SUC m < SUC n
+; prim_rec.LESS_MONO: ∀V0m V1n. V0m < V1n ⇒ SUC V0m < SUC V1n
 (conjecture "thm_2Eprim__rec_2ELESS__MONO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0m" "V1n") ("c_2Eprim__rec_2E_3C" ("c_2Enum_2ESUC" "V0m") ("c_2Enum_2ESUC" "V1n"))))))))
-; prim_rec.LESS_MONO_REV
-; ∀m n. SUC m < SUC n ⇒ m < n
+; prim_rec.LESS_MONO_REV: ∀V0m V1n. SUC V0m < SUC V1n ⇒ V0m < V1n
 (conjecture "thm_2Eprim__rec_2ELESS__MONO__REV" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Enum_2ESUC" "V0m") ("c_2Enum_2ESUC" "V1n")) ("c_2Eprim__rec_2E_3C" "V0m" "V1n")))))))
-; prim_rec.LESS_MONO_EQ
-; ∀m n. SUC m < SUC n ⇔ m < n
+; prim_rec.LESS_MONO_EQ: ∀V0m V1n. SUC V0m < SUC V1n ⇔ V0m < V1n
 (conjecture "thm_2Eprim__rec_2ELESS__MONO__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" ("c_2Enum_2ESUC" "V0m") ("c_2Enum_2ESUC" "V1n")) ("c_2Eprim__rec_2E_3C" "V0m" "V1n")))))))
-; prim_rec.TC_IM_RTC_SUC
-; ∀m n. (λx y. y = SUC x)⁺ m (SUC n) ⇔ (λx y. y = SUC x)^* m n
+; prim_rec.TC_IM_RTC_SUC: ∀V0m V1n.     (λV2x V3y. V3y = SUC V2x)⁺ V0m (SUC V1n) ⇔     (λV4x V5y. V5y = SUC V4x)^* V0m V1n
 (conjecture "thm_2Eprim__rec_2ETC__IM__RTC__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Erelation_2ETC" "ty_2Enum_2Enum") (lambda "V2x" "ty_2Enum_2Enum" (lambda "V3y" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V3y" ("c_2Enum_2ESUC" "V2x")))) "V0m" ("c_2Enum_2ESUC" "V1n")) (("c_2Erelation_2ERTC" "ty_2Enum_2Enum") (lambda "V4x" "ty_2Enum_2Enum" (lambda "V5y" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V5y" ("c_2Enum_2ESUC" "V4x")))) "V0m" "V1n")))))))
-; prim_rec.RTC_IM_TC
-; ∀m n. (λx y. y = f x)^* (f m) n ⇔ (λx y. y = f x)⁺ m n
+; prim_rec.RTC_IM_TC: ∀V0f V1m V2n.     (λV3x V4y. V4y = V0f V3x)^* (V0f V1m) V2n ⇔     (λV5x V6y. V6y = V0f V5x)⁺ V1m V2n
 (conjecture "thm_2Eprim__rec_2ERTC__IM__TC" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1m" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2n" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Erelation_2ERTC" "A_27a") (lambda "V3x" "A_27a" (lambda "V4y" "A_27a" (("c_2Emin_2E_3D" "A_27a") "V4y" ("V0f" "V3x")))) ("V0f" "V1m") "V2n") (("c_2Erelation_2ETC" "A_27a") (lambda "V5x" "A_27a" (lambda "V6y" "A_27a" (("c_2Emin_2E_3D" "A_27a") "V6y" ("V0f" "V5x")))) "V1m" "V2n"))))))))))
-; prim_rec.LESS_ALT
-; $< = (λx y. y = SUC x)⁺
+; prim_rec.LESS_ALT: $< = (λV0x V1y. V1y = SUC V0x)⁺
 (conjecture "thm_2Eprim__rec_2ELESS__ALT" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) "c_2Eprim__rec_2E_3C" (("c_2Erelation_2ETC" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (lambda "V1y" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1y" ("c_2Enum_2ESUC" "V0x")))))))
-; prim_rec.LESS_SUC_REFL
-; ∀n. n < SUC n
+; prim_rec.LESS_SUC_REFL: ∀V0n. V0n < SUC V0n
 (conjecture "thm_2Eprim__rec_2ELESS__SUC__REFL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V0n" ("c_2Enum_2ESUC" "V0n")))))
-; prim_rec.LESS_SUC
-; ∀m n. m < n ⇒ m < SUC n
+; prim_rec.LESS_SUC: ∀V0m V1n. V0m < V1n ⇒ V0m < SUC V1n
 (conjecture "thm_2Eprim__rec_2ELESS__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0m" "V1n") ("c_2Eprim__rec_2E_3C" "V0m" ("c_2Enum_2ESUC" "V1n"))))))))
-; prim_rec.LESS_LEMMA1
-; ∀m n. m < SUC n ⇒ (m = n) ∨ m < n
+; prim_rec.LESS_LEMMA1: ∀V0m V1n. V0m < SUC V1n ⇒ (V0m = V1n) ∨ V0m < V1n
 (conjecture "thm_2Eprim__rec_2ELESS__LEMMA1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0m" ("c_2Enum_2ESUC" "V1n")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n") ("c_2Eprim__rec_2E_3C" "V0m" "V1n"))))))))
-; prim_rec.LESS_LEMMA2
-; ∀m n. (m = n) ∨ m < n ⇒ m < SUC n
+; prim_rec.LESS_LEMMA2: ∀V0m V1n. (V0m = V1n) ∨ V0m < V1n ⇒ V0m < SUC V1n
 (conjecture "thm_2Eprim__rec_2ELESS__LEMMA2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n") ("c_2Eprim__rec_2E_3C" "V0m" "V1n")) ("c_2Eprim__rec_2E_3C" "V0m" ("c_2Enum_2ESUC" "V1n"))))))))
-; prim_rec.LESS_THM
-; ∀m n. m < SUC n ⇔ (m = n) ∨ m < n
+; prim_rec.LESS_THM: ∀V0m V1n. V0m < SUC V1n ⇔ (V0m = V1n) ∨ V0m < V1n
 (conjecture "thm_2Eprim__rec_2ELESS__THM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0m" ("c_2Enum_2ESUC" "V1n")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n") ("c_2Eprim__rec_2E_3C" "V0m" "V1n"))))))))
-; prim_rec.LESS_SUC_IMP
-; ∀m n. m < SUC n ⇒ m ≠ n ⇒ m < n
+; prim_rec.LESS_SUC_IMP: ∀V0m V1n. V0m < SUC V1n ⇒ V0m ≠ V1n ⇒ V0m < V1n
 (conjecture "thm_2Eprim__rec_2ELESS__SUC__IMP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0m" ("c_2Enum_2ESUC" "V1n")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n")) ("c_2Eprim__rec_2E_3C" "V0m" "V1n"))))))))
-; prim_rec.EQ_LESS
-; ∀n. (SUC m = n) ⇒ m < n
+; prim_rec.EQ_LESS: ∀V0m V1n. (SUC V0m = V1n) ⇒ V0m < V1n
 (conjecture "thm_2Eprim__rec_2EEQ__LESS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enum_2ESUC" "V0m") "V1n") ("c_2Eprim__rec_2E_3C" "V0m" "V1n")))))))
-; prim_rec.SUC_ID
-; ∀n. SUC n ≠ n
+; prim_rec.SUC_ID: ∀V0n. SUC V0n ≠ V0n
 (conjecture "thm_2Eprim__rec_2ESUC__ID" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enum_2ESUC" "V0n") "V0n")))))
-; prim_rec.NOT_LESS_EQ
-; ∀m n. (m = n) ⇒ ¬(m < n)
+; prim_rec.NOT_LESS_EQ: ∀V0m V1n. (V0m = V1n) ⇒ ¬(V0m < V1n)
 (conjecture "thm_2Eprim__rec_2ENOT__LESS__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n") ("c_2Ebool_2E_7E" ("c_2Eprim__rec_2E_3C" "V0m" "V1n"))))))))
-; prim_rec.LESS_NOT_EQ
-; ∀m n. m < n ⇒ m ≠ n
+; prim_rec.LESS_NOT_EQ: ∀V0m V1n. V0m < V1n ⇒ V0m ≠ V1n
 (conjecture "thm_2Eprim__rec_2ELESS__NOT__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0m" "V1n") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n"))))))))
-; prim_rec.SIMP_REC_REL
-; ∀fun x f n.     SIMP_REC_REL fun x f n ⇔     (fun 0 = x) ∧ ∀m. m < n ⇒ (fun (SUC m) = f (fun m))
+; prim_rec.SIMP_REC_REL: ∀V0fun V1x V2f V3n.     SIMP_REC_REL V0fun V1x V2f V3n ⇔     (V0fun 0 = V1x) ∧ ∀V4m. V4m < V3n ⇒ (V0fun (SUC V4m) = V2f (V0fun V4m))
 (axiom "thm_2Eprim__rec_2ESIMP__REC__REL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V0fun" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (lambda "V2f" ("ty_2Emin_2Efun" "A_27a" "A_27a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Eprim__rec_2ESIMP__REC__REL" "A_27a") "V0fun" "V1x" "V2f" "V3n") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V0fun" "c_2Enum_2E0") "V1x") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4m" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V4m" "V3n") (("c_2Emin_2E_3D" "A_27a") ("V0fun" ("c_2Enum_2ESUC" "V4m")) ("V2f" ("V0fun" "V4m"))))))))))))))))))
-; prim_rec.SIMP_REC_EXISTS
-; ∀x f n. ∃fun. SIMP_REC_REL fun x f n
+; prim_rec.SIMP_REC_EXISTS: ∀V0x V1f V2n. ∃V3fun. SIMP_REC_REL V3fun V0x V1f V2n
 (conjecture "thm_2Eprim__rec_2ESIMP__REC__EXISTS" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "A_27a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V3fun" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") (("c_2Eprim__rec_2ESIMP__REC__REL" "A_27a") "V3fun" "V0x" "V1f" "V2n")))))))))))
-; prim_rec.SIMP_REC_REL_UNIQUE
-; ∀x f g1 g2 m1 m2.     SIMP_REC_REL g1 x f m1 ∧ SIMP_REC_REL g2 x f m2 ⇒     ∀n. n < m1 ∧ n < m2 ⇒ (g1 n = g2 n)
+; prim_rec.SIMP_REC_REL_UNIQUE: ∀V0x V1f V2g1 V3g2 V4m1 V5m2.     SIMP_REC_REL V2g1 V0x V1f V4m1 ∧ SIMP_REC_REL V3g2 V0x V1f V5m2 ⇒     ∀V6n. V6n < V4m1 ∧ V6n < V5m2 ⇒ (V2g1 V6n = V3g2 V6n)
 (conjecture "thm_2Eprim__rec_2ESIMP__REC__REL__UNIQUE" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V2g1" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V3g2" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4m1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V5m2" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Eprim__rec_2ESIMP__REC__REL" "A_27a") "V2g1" "V0x" "V1f" "V4m1") (("c_2Eprim__rec_2ESIMP__REC__REL" "A_27a") "V3g2" "V0x" "V1f" "V5m2")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V6n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V6n" "V4m1") ("c_2Eprim__rec_2E_3C" "V6n" "V5m2")) (("c_2Emin_2E_3D" "A_27a") ("V2g1" "V6n") ("V3g2" "V6n"))))))))))))))))))))
-; prim_rec.SIMP_REC_REL_UNIQUE_RESULT
-; ∀x f n. ∃!y. ∃g. SIMP_REC_REL g x f (SUC n) ∧ (y = g n)
+; prim_rec.SIMP_REC_REL_UNIQUE_RESULT: ∀V0x V1f V2n.     ∃!V3y. ∃V4g. SIMP_REC_REL V4g V0x V1f (SUC V2n) ∧ (V3y = V4g V2n)
 (conjecture "thm_2Eprim__rec_2ESIMP__REC__REL__UNIQUE__RESULT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "A_27a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F_21" "A_27a") (lambda "V3y" "A_27a" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V4g" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Eprim__rec_2ESIMP__REC__REL" "A_27a") "V4g" "V0x" "V1f" ("c_2Enum_2ESUC" "V2n")) (("c_2Emin_2E_3D" "A_27a") "V3y" ("V4g" "V2n")))))))))))))))
-; prim_rec.SIMP_REC
-; ∀x f' n. ∃g. SIMP_REC_REL g x f' (SUC n) ∧ (SIMP_REC x f' n = g n)
+; prim_rec.SIMP_REC: ∀V0x V1f_27 V2n.     ∃V3g.         SIMP_REC_REL V3g V0x V1f_27 (SUC V2n) ∧         (SIMP_REC V0x V1f_27 V2n = V3g V2n)
 (axiom "thm_2Eprim__rec_2ESIMP__REC" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (lambda "V1f_27" ("ty_2Emin_2Efun" "A_27a" "A_27a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V3g" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Eprim__rec_2ESIMP__REC__REL" "A_27a") "V3g" "V0x" "V1f_27" ("c_2Enum_2ESUC" "V2n")) (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2ESIMP__REC" "A_27a") "V0x" "V1f_27" "V2n") ("V3g" "V2n")))))))))))))
-; prim_rec.LESS_SUC_SUC
-; ∀m. m < SUC m ∧ m < SUC (SUC m)
+; prim_rec.LESS_SUC_SUC: ∀V0m. V0m < SUC V0m ∧ V0m < SUC (SUC V0m)
 (conjecture "thm_2Eprim__rec_2ELESS__SUC__SUC" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V0m" ("c_2Enum_2ESUC" "V0m")) ("c_2Eprim__rec_2E_3C" "V0m" ("c_2Enum_2ESUC" ("c_2Enum_2ESUC" "V0m")))))))
-; prim_rec.SIMP_REC_THM
-; ∀x f. (SIMP_REC x f 0 = x) ∧ ∀m. SIMP_REC x f (SUC m) = f (SIMP_REC x f m)
+; prim_rec.SIMP_REC_THM: ∀V0x V1f.     (SIMP_REC V0x V1f 0 = V0x) ∧     ∀V2m. SIMP_REC V0x V1f (SUC V2m) = V1f (SIMP_REC V0x V1f V2m)
 (conjecture "thm_2Eprim__rec_2ESIMP__REC__THM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2ESIMP__REC" "A_27a") "V0x" "V1f" "c_2Enum_2E0") "V0x") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2ESIMP__REC" "A_27a") "V0x" "V1f" ("c_2Enum_2ESUC" "V2m")) ("V1f" (("c_2Eprim__rec_2ESIMP__REC" "A_27a") "V0x" "V1f" "V2m"))))))))))))
-; prim_rec.PRIM_REC_FUN
-; ∀x f. PRIM_REC_FUN x f = SIMP_REC (λn. x) (λfun n. f (fun (PRE n)) n)
+; prim_rec.PRIM_REC_FUN: ∀V0x V1f.     PRIM_REC_FUN V0x V1f =     SIMP_REC (λV2n. V0x) (λV3fun V4n. V1f (V3fun (PRE V4n)) V4n)
 (axiom "thm_2Eprim__rec_2EPRIM__REC__FUN" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a"))) (("c_2Eprim__rec_2EPRIM__REC__FUN" "A_27a") "V0x" "V1f") (("c_2Eprim__rec_2ESIMP__REC" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V2n" "ty_2Enum_2Enum" "V0x") (lambda "V3fun" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") (lambda "V4n" "ty_2Enum_2Enum" ("V1f" ("V3fun" ("c_2Eprim__rec_2EPRE" "V4n")) "V4n")))))))))))
-; prim_rec.PRIM_REC_EQN
-; ∀x f.     (∀n. PRIM_REC_FUN x f 0 n = x) ∧     ∀m n. PRIM_REC_FUN x f (SUC m) n = f (PRIM_REC_FUN x f m (PRE n)) n
+; prim_rec.PRIM_REC_EQN: ∀V0x V1f.     (∀V2n. PRIM_REC_FUN V0x V1f 0 V2n = V0x) ∧     ∀V3m V4n.         PRIM_REC_FUN V0x V1f (SUC V3m) V4n =         V1f (PRIM_REC_FUN V0x V1f V3m (PRE V4n)) V4n
 (conjecture "thm_2Eprim__rec_2EPRIM__REC__EQN" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2EPRIM__REC__FUN" "A_27a") "V0x" "V1f" "c_2Enum_2E0" "V2n") "V0x"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2EPRIM__REC__FUN" "A_27a") "V0x" "V1f" ("c_2Enum_2ESUC" "V3m") "V4n") ("V1f" (("c_2Eprim__rec_2EPRIM__REC__FUN" "A_27a") "V0x" "V1f" "V3m" ("c_2Eprim__rec_2EPRE" "V4n")) "V4n")))))))))))))
-; prim_rec.PRIM_REC
-; ∀x f m. PRIM_REC x f m = PRIM_REC_FUN x f m (PRE m)
+; prim_rec.PRIM_REC: ∀V0x V1f V2m. PRIM_REC V0x V1f V2m = PRIM_REC_FUN V0x V1f V2m (PRE V2m)
 (axiom "thm_2Eprim__rec_2EPRIM__REC" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2EPRIM__REC" "A_27a") "V0x" "V1f" "V2m") (("c_2Eprim__rec_2EPRIM__REC__FUN" "A_27a") "V0x" "V1f" "V2m" ("c_2Eprim__rec_2EPRE" "V2m")))))))))))
-; prim_rec.PRIM_REC_THM
-; ∀x f. (PRIM_REC x f 0 = x) ∧ ∀m. PRIM_REC x f (SUC m) = f (PRIM_REC x f m) m
+; prim_rec.PRIM_REC_THM: ∀V0x V1f.     (PRIM_REC V0x V1f 0 = V0x) ∧     ∀V2m. PRIM_REC V0x V1f (SUC V2m) = V1f (PRIM_REC V0x V1f V2m) V2m
 (conjecture "thm_2Eprim__rec_2EPRIM__REC__THM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2EPRIM__REC" "A_27a") "V0x" "V1f" "c_2Enum_2E0") "V0x") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "A_27a") (("c_2Eprim__rec_2EPRIM__REC" "A_27a") "V0x" "V1f" ("c_2Enum_2ESUC" "V2m")) ("V1f" (("c_2Eprim__rec_2EPRIM__REC" "A_27a") "V0x" "V1f" "V2m") "V2m")))))))))))
-; prim_rec.DC
-; ∀P R a.     P a ∧ (∀x. P x ⇒ ∃y. P y ∧ R x y) ⇒     ∃f. (f 0 = a) ∧ ∀n. P (f n) ∧ R (f n) (f (SUC n))
+; prim_rec.DC: ∀V0P V1R V2a.     V0P V2a ∧ (∀V3x. V0P V3x ⇒ ∃V4y. V0P V4y ∧ V1R V3x V4y) ⇒     ∃V5f. (V5f 0 = V2a) ∧ ∀V6n. V0P (V5f V6n) ∧ V1R (V5f V6n) (V5f (SUC V6n))
 (conjecture "thm_2Eprim__rec_2EDC" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V1R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "A_27a") (lambda "V2a" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V0P" "V2a") (("c_2Ebool_2E_21" "A_27a") (lambda "V3x" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V3x") (("c_2Ebool_2E_3F" "A_27a") (lambda "V4y" "A_27a" ("c_2Ebool_2E_2F_5C" ("V0P" "V4y") ("V1R" "V3x" "V4y")))))))) (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V5f" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V5f" "c_2Enum_2E0") "V2a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V6n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("V0P" ("V5f" "V6n")) ("V1R" ("V5f" "V6n") ("V5f" ("c_2Enum_2ESUC" "V6n"))))))))))))))))))
-; prim_rec.num_Axiom_old
-; ∀e f. ∃!fn1. (fn1 0 = e) ∧ ∀n. fn1 (SUC n) = f (fn1 n) n
+; prim_rec.num_Axiom_old: ∀V0e V1f.     ∃!V2fn1. (V2fn1 0 = V0e) ∧ ∀V3n. V2fn1 (SUC V3n) = V1f (V2fn1 V3n) V3n
 (conjecture "thm_2Eprim__rec_2Enum__Axiom__old" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0e" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a"))) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (("c_2Ebool_2E_3F_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V2fn1" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V2fn1" "c_2Enum_2E0") "V0e") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "A_27a") ("V2fn1" ("c_2Enum_2ESUC" "V3n")) ("V1f" ("V2fn1" "V3n") "V3n")))))))))))))
-; prim_rec.num_Axiom
-; ∀e f. ∃fn. (fn 0 = e) ∧ ∀n. fn (SUC n) = f n (fn n)
+; prim_rec.num_Axiom: ∀V0e V1f. ∃V2fn. (V2fn 0 = V0e) ∧ ∀V3n. V2fn (SUC V3n) = V1f V3n (V2fn V3n)
 (conjecture "thm_2Eprim__rec_2Enum__Axiom" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0e" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "A_27a" "A_27a"))) (lambda "V1f" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "A_27a" "A_27a")) (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V2fn" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V2fn" "c_2Enum_2E0") "V0e") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "A_27a") ("V2fn" ("c_2Enum_2ESUC" "V3n")) ("V1f" "V3n" ("V2fn" "V3n"))))))))))))))
-; prim_rec.wellfounded_def
-; ∀R. Wellfounded R ⇔ ¬∃f. ∀n. R (f (SUC n)) (f n)
+; prim_rec.wellfounded_def: ∀V0R. Wellfounded V0R ⇔ ¬∃V1f. ∀V2n. V0R (V1f (SUC V2n)) (V1f V2n)
 (axiom "thm_2Eprim__rec_2Ewellfounded__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Eprim__rec_2Ewellfounded" "A_27a") "V0R") ("c_2Ebool_2E_7E" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a")) (lambda "V1f" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "A_27a") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("V0R" ("V1f" ("c_2Enum_2ESUC" "V2n")) ("V1f" "V2n"))))))))))))
-; prim_rec.WF_IFF_WELLFOUNDED
-; ∀R. WF R ⇔ Wellfounded R
+; prim_rec.WF_IFF_WELLFOUNDED: ∀V0R. WF V0R ⇔ Wellfounded V0R
 (conjecture "thm_2Eprim__rec_2EWF__IFF__WELLFOUNDED" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Erelation_2EWF" "A_27a") "V0R") (("c_2Eprim__rec_2Ewellfounded" "A_27a") "V0R"))))))
-; prim_rec.WF_PRED
-; WF (λx y. y = SUC x)
+; prim_rec.WF_PRED: WF (λV0x V1y. V1y = SUC V0x)
 (conjecture "thm_2Eprim__rec_2EWF__PRED" (("c_2Erelation_2EWF" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (lambda "V1y" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1y" ("c_2Enum_2ESUC" "V0x"))))))
-; prim_rec.WF_LESS
-; WF $<
+; prim_rec.WF_LESS: WF $<
 (conjecture "thm_2Eprim__rec_2EWF__LESS" (("c_2Erelation_2EWF" "ty_2Enum_2Enum") "c_2Eprim__rec_2E_3C"))
-; prim_rec.measure_def
-; measure = inv_image $<
+; prim_rec.measure_def: measure = inv_image $<
 (axiom "thm_2Eprim__rec_2Emeasure__def" (forall_tyvarl_term ("A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")))) ("c_2Eprim__rec_2Emeasure" "A_27a") (("c_2Erelation_2Einv__image" "A_27a" "ty_2Enum_2Enum") "c_2Eprim__rec_2E_3C"))))
-; prim_rec.WF_measure
-; ∀m. WF (measure m)
+; prim_rec.WF_measure: ∀V0m. WF (measure V0m)
 (conjecture "thm_2Eprim__rec_2EWF__measure" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0m" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Erelation_2EWF" "A_27a") (("c_2Eprim__rec_2Emeasure" "A_27a") "V0m"))))))
-; prim_rec.measure_thm
-; ∀f x y. measure f x y ⇔ f x < f y
+; prim_rec.measure_thm: ∀V0f V1x V2y. measure V0f V1x V2y ⇔ V0f V1x < V0f V2y
 (conjecture "thm_2Eprim__rec_2Emeasure__thm" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Eprim__rec_2Emeasure" "A_27a") "V0f" "V1x" "V2y") ("c_2Eprim__rec_2E_3C" ("V0f" "V1x") ("V0f" "V2y")))))))))))

@@ -1,87 +1,58 @@
-; c.wot.StrongWellOrder
-; :(α -> α -> bool) -> bool
+; c.wot.StrongWellOrder: :(α -> α -> bool) -> bool
 (constant_definition "c_2Ewot_2EStrongWellOrder" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
-; c.wot.U
-; :(ψ -> bool) -> (ψ -> bool) -> bool
+; c.wot.U: :(ψ -> bool) -> (ψ -> bool) -> bool
 (constant_definition "c_2Ewot_2EU" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool"))))
-; c.wot.WeakWellOrder
-; :(α -> α -> bool) -> bool
+; c.wot.WeakWellOrder: :(α -> α -> bool) -> bool
 (constant_definition "c_2Ewot_2EWeakWellOrder" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "ty_2Emin_2Ebool")))
-; c.wot.chain
-; :((ψ -> bool) -> bool) -> bool
+; c.wot.chain: :((ψ -> bool) -> bool) -> bool
 (constant_definition "c_2Ewot_2Echain" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")))
-; c.wot.comparable
-; :(ψ -> bool) -> bool
+; c.wot.comparable: :(ψ -> bool) -> bool
 (constant_definition "c_2Ewot_2Ecomparable" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")))
-; c.wot.cpl
-; :(ψ -> bool) -> (ψ -> bool) -> bool
+; c.wot.cpl: :(ψ -> bool) -> (ψ -> bool) -> bool
 (constant_definition "c_2Ewot_2Ecpl" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool"))))
-; c.wot.lub_sub
-; :((ψ -> bool) -> bool) -> ψ -> bool
+; c.wot.lub_sub: :((ψ -> bool) -> bool) -> ψ -> bool
 (constant_definition "c_2Ewot_2Elub__sub" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool"))))
-; c.wot.mex
-; :(ψ -> bool) -> ψ
+; c.wot.mex: :(ψ -> bool) -> ψ
 (constant_definition "c_2Ewot_2Emex" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "A_27x")))
-; c.wot.mex_less
-; :ψ -> ψ -> bool
+; c.wot.mex_less: :ψ -> ψ -> bool
 (constant_definition "c_2Ewot_2Emex__less" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" "A_27x" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool"))))
-; c.wot.mex_less_eq
-; :ψ -> ψ -> bool
+; c.wot.mex_less_eq: :ψ -> ψ -> bool
 (constant_definition "c_2Ewot_2Emex__less__eq" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" "A_27x" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool"))))
-; c.wot.preds
-; :ψ -> ψ -> bool
+; c.wot.preds: :ψ -> ψ -> bool
 (constant_definition "c_2Ewot_2Epreds" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" "A_27x" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool"))))
-; c.wot.preds_image
-; :(ψ -> bool) -> (ψ -> bool) -> bool
+; c.wot.preds_image: :(ψ -> bool) -> (ψ -> bool) -> bool
 (constant_definition "c_2Ewot_2Epreds__image" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool"))))
-; c.wot.setsuc
-; :(ψ -> bool) -> ψ -> bool
+; c.wot.setsuc: :(ψ -> bool) -> ψ -> bool
 (constant_definition "c_2Ewot_2Esetsuc" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool"))))
-; c.wot.succl
-; :((ψ -> bool) -> bool) -> bool
+; c.wot.succl: :((ψ -> bool) -> bool) -> bool
 (constant_definition "c_2Ewot_2Esuccl" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")))
-; c.wot.tower
-; :((ψ -> bool) -> bool) -> bool
+; c.wot.tower: :((ψ -> bool) -> bool) -> bool
 (constant_definition "c_2Ewot_2Etower" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")))
-; c.wot.uncl
-; :((ψ -> bool) -> bool) -> bool
+; c.wot.uncl: :((ψ -> bool) -> bool) -> bool
 (constant_definition "c_2Ewot_2Euncl" (forall_tyvarl_type ("A_27x") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")))
-; wot.cpl_def
-; ∀A B. A cpl B ⇔ A ⊆ B ∨ B ⊆ A
+; wot.cpl_def: ∀V0A V1B. V0A cpl V1B ⇔ V0A ⊆ V1B ∨ V1B ⊆ V0A
 (axiom "thm_2Ewot_2Ecpl__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V0A" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V1B" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2Ecpl" "A_27x") "V0A" "V1B") ("c_2Ebool_2E_5C_2F" (("c_2Epred__set_2ESUBSET" "A_27x") "V0A" "V1B") (("c_2Epred__set_2ESUBSET" "A_27x") "V1B" "V0A")))))))))
-; wot.chain_def
-; ∀C. chain C ⇔ ∀a b. a ∈ C ∧ b ∈ C ⇒ a cpl b
+; wot.chain_def: ∀V0C. chain V0C ⇔ ∀V1a V2b. V1a ∈ V0C ∧ V2b ∈ V0C ⇒ V1a cpl V2b
 (axiom "thm_2Ewot_2Echain__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V0C" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2Echain" "A_27x") "V0C") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V1a" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V2b" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) "V1a" "V0C") (("c_2Ebool_2EIN" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) "V2b" "V0C")) (("c_2Ewot_2Ecpl" "A_27x") "V1a" "V2b")))))))))))
-; wot.mex_def
-; ∀s. mex s = CHOICE (COMPL s)
+; wot.mex_def: ∀V0s. mex V0s = CHOICE (COMPL V0s)
 (axiom "thm_2Ewot_2Emex__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27x") (("c_2Ewot_2Emex" "A_27x") "V0s") (("c_2Epred__set_2ECHOICE" "A_27x") (("c_2Epred__set_2ECOMPL" "A_27x") "V0s")))))))
-; wot.setsuc_def
-; ∀s. setsuc s = mex s INSERT s
+; wot.setsuc_def: ∀V0s. setsuc V0s = mex V0s INSERT V0s
 (axiom "thm_2Ewot_2Esetsuc__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V0s" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (("c_2Ewot_2Esetsuc" "A_27x") "V0s") (("c_2Epred__set_2EINSERT" "A_27x") (("c_2Ewot_2Emex" "A_27x") "V0s") "V0s"))))))
-; wot.succl_def
-; ∀c. succl c ⇔ ∀s. s ∈ c ⇒ setsuc s ∈ c
+; wot.succl_def: ∀V0c. succl V0c ⇔ ∀V1s. V1s ∈ V0c ⇒ setsuc V1s ∈ V0c
 (axiom "thm_2Ewot_2Esuccl__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V0c" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2Esuccl" "A_27x") "V0c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) "V1s" "V0c") (("c_2Ebool_2EIN" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (("c_2Ewot_2Esetsuc" "A_27x") "V1s") "V0c")))))))))
-; wot.uncl_def
-; ∀c. uncl c ⇔ ∀w. w ⊆ c ∧ chain w ⇒ BIGUNION w ∈ c
+; wot.uncl_def: ∀V0c. uncl V0c ⇔ ∀V1w. V1w ⊆ V0c ∧ chain V1w ⇒ BIGUNION V1w ∈ V0c
 (axiom "thm_2Ewot_2Euncl__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V0c" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2Euncl" "A_27x") "V0c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V1w" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Epred__set_2ESUBSET" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) "V1w" "V0c") (("c_2Ewot_2Echain" "A_27x") "V1w")) (("c_2Ebool_2EIN" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (("c_2Epred__set_2EBIGUNION" "A_27x") "V1w") "V0c")))))))))
-; wot.tower_def
-; ∀A. tower A ⇔ succl A ∧ uncl A
+; wot.tower_def: ∀V0A. tower V0A ⇔ succl V0A ∧ uncl V0A
 (axiom "thm_2Ewot_2Etower__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V0A" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2Etower" "A_27x") "V0A") ("c_2Ebool_2E_2F_5C" (("c_2Ewot_2Esuccl" "A_27x") "V0A") (("c_2Ewot_2Euncl" "A_27x") "V0A")))))))
-; wot.mex_less_eq_def
-; ∀a b. a mex_less_eq b ⇔ preds a ⊆ preds b
+; wot.mex_less_eq_def: ∀V0a V1b. V0a mex_less_eq V1b ⇔ preds V0a ⊆ preds V1b
 (axiom "thm_2Ewot_2Emex__less__eq__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" "A_27x") (lambda "V0a" "A_27x" (("c_2Ebool_2E_21" "A_27x") (lambda "V1b" "A_27x" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2Emex__less__eq" "A_27x") "V0a" "V1b") (("c_2Epred__set_2ESUBSET" "A_27x") (("c_2Ewot_2Epreds" "A_27x") "V0a") (("c_2Ewot_2Epreds" "A_27x") "V1b")))))))))
-; wot.mex_less_def
-; $mex_less = STRORD $mex_less_eq
+; wot.mex_less_def: $mex_less = STRORD $mex_less_eq
 (axiom "thm_2Ewot_2Emex__less__def" (forall_tyvarl_term ("A_27x") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27x" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool"))) ("c_2Ewot_2Emex__less" "A_27x") (("c_2Erelation_2ESTRORD" "A_27x") ("c_2Ewot_2Emex__less__eq" "A_27x")))))
-; wot.WeakWellOrder_def
-; ∀R. WeakWellOrder R ⇔ WeakOrder R ∧ ∀B. B ≠ ∅ ⇒ ∃m. m ∈ B ∧ ∀b. b ∈ B ⇒ R m b
+; wot.WeakWellOrder_def: ∀V0R.     WeakWellOrder V0R ⇔     WeakOrder V0R ∧     ∀V1B. V1B ≠ ∅ ⇒ ∃V2m. V2m ∈ V1B ∧ ∀V3b. V3b ∈ V1B ⇒ V0R V2m V3b
 (axiom "thm_2Ewot_2EWeakWellOrder__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2EWeakWellOrder" "A_27a") "V0R") ("c_2Ebool_2E_2F_5C" (("c_2Erelation_2EWeakOrder" "A_27a") "V0R") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1B" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1B" ("c_2Epred__set_2EEMPTY" "A_27a"))) (("c_2Ebool_2E_3F" "A_27a") (lambda "V2m" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27a") "V2m" "V1B") (("c_2Ebool_2E_21" "A_27a") (lambda "V3b" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "A_27a") "V3b" "V1B") ("V0R" "V2m" "V3b"))))))))))))))))
-; wot.preds_image_def
-; ∀X. preds_image X = {preds x | x ∈ X}
+; wot.preds_image_def: ∀V0X. preds_image V0X = {preds V1x | V1x ∈ V0X}
 (axiom "thm_2Ewot_2Epreds__image__def" (forall_tyvarl_term ("A_27x") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool")) (lambda "V0X" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (("c_2Ewot_2Epreds__image" "A_27x") "V0X") (("c_2Epred__set_2EGSPEC" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "A_27x") (lambda "V1x" "A_27x" (("c_2Epair_2E_2C" ("ty_2Emin_2Efun" "A_27x" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Ewot_2Epreds" "A_27x") "V1x") (("c_2Ebool_2EIN" "A_27x") "V1x" "V0X")))))))))
-; wot.StrongWellOrder_def
-; ∀R. StrongWellOrder R ⇔ StrongLinearOrder R ∧ WF R
+; wot.StrongWellOrder_def: ∀V0R. StrongWellOrder V0R ⇔ StrongLinearOrder V0R ∧ WF V0R
 (axiom "thm_2Ewot_2EStrongWellOrder__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ewot_2EStrongWellOrder" "A_27a") "V0R") ("c_2Ebool_2E_2F_5C" (("c_2Erelation_2EStrongLinearOrder" "A_27a") "V0R") (("c_2Erelation_2EWF" "A_27a") "V0R")))))))
-; wot.StrongWellOrderExists
-; ∃R. StrongLinearOrder R ∧ WF R
+; wot.StrongWellOrderExists: ∃V0R. StrongLinearOrder V0R ∧ WF V0R
 (conjecture "thm_2Ewot_2EStrongWellOrderExists" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) ("c_2Ebool_2E_2F_5C" (("c_2Erelation_2EStrongLinearOrder" "A_27a") "V0R") (("c_2Erelation_2EWF" "A_27a") "V0R"))))))

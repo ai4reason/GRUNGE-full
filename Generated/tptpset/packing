@@ -1,0 +1,15 @@
+## Unpacking tar
+
+for arc in *.tar.7z; do 7zr x "$arc"; done;
+for arc in *.tar; do tar xf "$arc"; done;
+
+## Packing tar
+
+rm *.tar.7z
+time tar cf - Axioms | 7za -bd -si a -mx=9 -m0=lzma2  Axioms.tar.7z
+time tar cf - bushy_fof | 7za -bd -si a -mx=9 -m0=lzma2  bushy_fof.tar.7z
+time tar cf - chainy_fof | 7za -bd -si a -mx=9 -m0=lzma2  chainy_fof.tar.7z
+time tar cf - bushy_tf0 | 7za -bd -si a -mx=9 -m0=lzma2  bushy_tf0.tar.7z
+time tar cf - chainy_tf0 | 7za -bd -si a -mx=9 -m0=lzma2  chainy_tf0.tar.7z
+time tar cf - bushy_th0 | 7za -bd -si a -mx=9 -m0=lzma2  bushy_th0.tar.7z
+time tar cf - chainy_th0 | 7za -bd -si a -mx=9 -m0=lzma2  chainy_th0.tar.7z

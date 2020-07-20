@@ -1,75 +1,50 @@
-; c.intreal.INT_CEILING
-; :real -> int
+; c.intreal.INT_CEILING: :real -> int
 (constant_definition "c_2Eintreal_2EINT__CEILING" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Einteger_2Eint"))
-; c.intreal.INT_FLOOR
-; :real -> int
+; c.intreal.INT_FLOOR: :real -> int
 (constant_definition "c_2Eintreal_2EINT__FLOOR" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Einteger_2Eint"))
-; c.intreal.is_int
-; :real -> bool
+; c.intreal.is_int: :real -> bool
 (constant_definition "c_2Eintreal_2Eis__int" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool"))
-; c.intreal.real_of_int
-; :int -> real
+; c.intreal.real_of_int: :int -> real
 (constant_definition "c_2Eintreal_2Ereal__of__int" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" "ty_2Erealax_2Ereal"))
-; intreal.real_of_int
-; ∀i. real_of_int i = if i < 0 then -&Num (-i) else &Num i
+; intreal.real_of_int: ∀V0i. real_of_int V0i = if V0i < 0 then -&Num (-V0i) else &Num V0i
 (axiom "thm_2Eintreal_2Ereal__of__int" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" "V0i") (("c_2Ebool_2ECOND" "ty_2Erealax_2Ereal") ("c_2Einteger_2Eint__lt" "V0i" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Einteger_2ENum" ("c_2Einteger_2Eint__neg" "V0i")))) ("c_2Ereal_2Ereal__of__num" ("c_2Einteger_2ENum" "V0i")))))))
-; intreal.real_of_int_def
-; ∀i. real_of_int i = if i < 0 then -&Num (-i) else &Num i
+; intreal.real_of_int_def: ∀V0i. real_of_int V0i = if V0i < 0 then -&Num (-V0i) else &Num V0i
 (conjecture "thm_2Eintreal_2Ereal__of__int__def" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" "V0i") (("c_2Ebool_2ECOND" "ty_2Erealax_2Ereal") ("c_2Einteger_2Eint__lt" "V0i" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Einteger_2ENum" ("c_2Einteger_2Eint__neg" "V0i")))) ("c_2Ereal_2Ereal__of__num" ("c_2Einteger_2ENum" "V0i")))))))
-; intreal.INT_FLOOR_def
-; ∀x. flr x = LEAST_INT i. x < real_of_int (i + 1)
+; intreal.INT_FLOOR_def: ∀V0x. flr V0x = LEAST_INT V1i. V0x < real_of_int (V1i + 1)
 (axiom "thm_2Eintreal_2EINT__FLOOR__def" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" "V0x") ("c_2Einteger_2ELEAST__INT" (lambda "V1i" "ty_2Einteger_2Eint" ("c_2Erealax_2Ereal__lt" "V0x" ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__add" "V1i" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))
-; intreal.INT_CEILING_def
-; ∀x. clg x = LEAST_INT i. x ≤ real_of_int i
+; intreal.INT_CEILING_def: ∀V0x. clg V0x = LEAST_INT V1i. V0x ≤ real_of_int V1i
 (axiom "thm_2Eintreal_2EINT__CEILING__def" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__CEILING" "V0x") ("c_2Einteger_2ELEAST__INT" (lambda "V1i" "ty_2Einteger_2Eint" ("c_2Ereal_2Ereal__lte" "V0x" ("c_2Eintreal_2Ereal__of__int" "V1i"))))))))
-; intreal.is_int_def
-; ∀x. is_int x ⇔ (x = real_of_int (flr x))
+; intreal.is_int_def: ∀V0x. is_int V0x ⇔ (V0x = real_of_int (flr V0x))
 (axiom "thm_2Eintreal_2Eis__int__def" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eintreal_2Eis__int" "V0x") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0x" ("c_2Eintreal_2Ereal__of__int" ("c_2Eintreal_2EINT__FLOOR" "V0x")))))))
-; intreal.real_of_int_monotonic
-; ∀i j. i < j ⇒ real_of_int i < real_of_int j
+; intreal.real_of_int_monotonic: ∀V0i V1j. V0i < V1j ⇒ real_of_int V0i < real_of_int V1j
 (conjecture "thm_2Eintreal_2Ereal__of__int__monotonic" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1j" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" "V0i" "V1j") ("c_2Erealax_2Ereal__lt" ("c_2Eintreal_2Ereal__of__int" "V0i") ("c_2Eintreal_2Ereal__of__int" "V1j"))))))))
-; intreal.INT_FLOOR_BOUNDS
-; ∀r. real_of_int (flr r) ≤ r ∧ r < real_of_int (flr r + 1)
+; intreal.INT_FLOOR_BOUNDS: ∀V0r. real_of_int (flr V0r) ≤ V0r ∧ V0r < real_of_int (flr V0r + 1)
 (conjecture "thm_2Eintreal_2EINT__FLOOR__BOUNDS" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0r" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_2F_5C" ("c_2Ereal_2Ereal__lte" ("c_2Eintreal_2Ereal__of__int" ("c_2Eintreal_2EINT__FLOOR" "V0r")) "V0r") ("c_2Erealax_2Ereal__lt" "V0r" ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__add" ("c_2Eintreal_2EINT__FLOOR" "V0r") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; intreal.INT_FLOOR
-; ∀r i. (flr r = i) ⇔ real_of_int i ≤ r ∧ r < real_of_int (i + 1)
+; intreal.INT_FLOOR: ∀V0r V1i.     (flr V0r = V1i) ⇔ real_of_int V1i ≤ V0r ∧ V0r < real_of_int (V1i + 1)
 (conjecture "thm_2Eintreal_2EINT__FLOOR" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0r" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1i" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" "V0r") "V1i") ("c_2Ebool_2E_2F_5C" ("c_2Ereal_2Ereal__lte" ("c_2Eintreal_2Ereal__of__int" "V1i") "V0r") ("c_2Erealax_2Ereal__lt" "V0r" ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__add" "V1i" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))
-; intreal.INT_CEILING_INT_FLOOR
-; ∀r. clg r = (let i = flr r in if real_of_int i = r then i else i + 1)
+; intreal.INT_CEILING_INT_FLOOR: ∀V0r.     clg V0r =     (let V1i = flr V0r in if real_of_int V1i = V0r then V1i else V1i + 1)
 (conjecture "thm_2Eintreal_2EINT__CEILING__INT__FLOOR" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0r" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__CEILING" "V0r") (("c_2Ebool_2ELET" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") (lambda "V1i" "ty_2Einteger_2Eint" (("c_2Ebool_2ECOND" "ty_2Einteger_2Eint") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" "V1i") "V0r") "V1i" ("c_2Einteger_2Eint__add" "V1i" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Eintreal_2EINT__FLOOR" "V0r"))))))
-; intreal.INT_CEILING_BOUNDS
-; ∀r. real_of_int (clg r − 1) < r ∧ r ≤ real_of_int (clg r)
+; intreal.INT_CEILING_BOUNDS: ∀V0r. real_of_int (clg V0r − 1) < V0r ∧ V0r ≤ real_of_int (clg V0r)
 (conjecture "thm_2Eintreal_2EINT__CEILING__BOUNDS" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0r" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__sub" ("c_2Eintreal_2EINT__CEILING" "V0r") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V0r") ("c_2Ereal_2Ereal__lte" "V0r" ("c_2Eintreal_2Ereal__of__int" ("c_2Eintreal_2EINT__CEILING" "V0r")))))))
-; intreal.INT_CEILING
-; ∀r i. (clg r = i) ⇔ real_of_int (i − 1) < r ∧ r ≤ real_of_int i
+; intreal.INT_CEILING: ∀V0r V1i.     (clg V0r = V1i) ⇔ real_of_int (V1i − 1) < V0r ∧ V0r ≤ real_of_int V1i
 (conjecture "thm_2Eintreal_2EINT__CEILING" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0r" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1i" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__CEILING" "V0r") "V1i") ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__sub" "V1i" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V0r") ("c_2Ereal_2Ereal__lte" "V0r" ("c_2Eintreal_2Ereal__of__int" "V1i")))))))))
-; intreal.INT_FLOOR_EQNS
-; (∀n. flr (&n) = &n) ∧ (∀n. flr (-&n) = -&n) ∧ (∀n m. 0 < m ⇒ (flr (&n / &m) = &n / &m)) ∧ ∀n m. 0 < m ⇒ (flr (-&n / &m) = -&n / &m)
+; intreal.INT_FLOOR_EQNS: (∀V0n. flr (&V0n) = &V0n) ∧ (∀V1n. flr (-&V1n) = -&V1n) ∧ (∀V2n V3m. 0 < V3m ⇒ (flr (&V2n / &V3m) = &V2n / &V3m)) ∧ ∀V4n V5m. 0 < V5m ⇒ (flr (-&V4n / &V5m) = -&V4n / &V5m)
 (conjecture "thm_2Eintreal_2EINT__FLOOR__EQNS" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2Ereal__of__num" "V0n")) ("c_2Einteger_2Eint__of__num" "V0n")))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" "V1n"))) ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V1n"))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3m" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V3m") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2E_2F" ("c_2Ereal_2Ereal__of__num" "V2n") ("c_2Ereal_2Ereal__of__num" "V3m"))) ("c_2Einteger_2Eint__div" ("c_2Einteger_2Eint__of__num" "V2n") ("c_2Einteger_2Eint__of__num" "V3m")))))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V5m" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V5m") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2E_2F" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" "V4n")) ("c_2Ereal_2Ereal__of__num" "V5m"))) ("c_2Einteger_2Eint__div" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V4n")) ("c_2Einteger_2Eint__of__num" "V5m"))))))))))))
-; intreal.INT_FLOOR_compute
-; (flr (&n) = &n) ∧ (flr (-&n) = -&n) ∧ (flr (&n / &NUMERAL (BIT1 m)) = &n / &NUMERAL (BIT1 m)) ∧ (flr (&n / &NUMERAL (BIT2 m)) = &n / &NUMERAL (BIT2 m)) ∧ (flr (-&n / &NUMERAL (BIT1 m)) = -&n / &NUMERAL (BIT1 m)) ∧ (flr (-&n / &NUMERAL (BIT2 m)) = -&n / &NUMERAL (BIT2 m))
+; intreal.INT_FLOOR_compute: ∀V0n V1m.     (flr (&V0n) = &V0n) ∧ (flr (-&V0n) = -&V0n) ∧     (flr (&V0n / &NUMERAL (BIT1 V1m)) = &V0n / &NUMERAL (BIT1 V1m)) ∧     (flr (&V0n / &NUMERAL (BIT2 V1m)) = &V0n / &NUMERAL (BIT2 V1m)) ∧     (flr (-&V0n / &NUMERAL (BIT1 V1m)) = -&V0n / &NUMERAL (BIT1 V1m)) ∧     (flr (-&V0n / &NUMERAL (BIT2 V1m)) = -&V0n / &NUMERAL (BIT2 V1m))
 (conjecture "thm_2Eintreal_2EINT__FLOOR__compute" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2Ereal__of__num" "V0n")) ("c_2Einteger_2Eint__of__num" "V0n")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" "V0n"))) ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V0n"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2E_2F" ("c_2Ereal_2Ereal__of__num" "V0n") ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V1m"))))) ("c_2Einteger_2Eint__div" ("c_2Einteger_2Eint__of__num" "V0n") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V1m"))))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2E_2F" ("c_2Ereal_2Ereal__of__num" "V0n") ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V1m"))))) ("c_2Einteger_2Eint__div" ("c_2Einteger_2Eint__of__num" "V0n") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V1m"))))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2E_2F" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" "V0n")) ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V1m"))))) ("c_2Einteger_2Eint__div" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V0n")) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V1m"))))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Eintreal_2EINT__FLOOR" ("c_2Ereal_2E_2F" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" "V0n")) ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V1m"))))) ("c_2Einteger_2Eint__div" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V0n")) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V1m")))))))))))))))
-; intreal.real_of_int_num
-; real_of_int (&n) = &n
+; intreal.real_of_int_num: ∀V0n. real_of_int (&V0n) = &V0n
 (conjecture "thm_2Eintreal_2Ereal__of__int__num" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__of__num" "V0n")) ("c_2Ereal_2Ereal__of__num" "V0n")))))
-; intreal.real_of_int_add
-; real_of_int (m + n) = real_of_int m + real_of_int n
+; intreal.real_of_int_add: ∀V0m V1n. real_of_int (V0m + V1n) = real_of_int V0m + real_of_int V1n
 (conjecture "thm_2Eintreal_2Ereal__of__int__add" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0m" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__add" "V0m" "V1n")) ("c_2Erealax_2Ereal__add" ("c_2Eintreal_2Ereal__of__int" "V0m") ("c_2Eintreal_2Ereal__of__int" "V1n"))))))))
-; intreal.real_of_int_neg
-; real_of_int (-m) = -real_of_int m
+; intreal.real_of_int_neg: ∀V0m. real_of_int (-V0m) = -real_of_int V0m
 (conjecture "thm_2Eintreal_2Ereal__of__int__neg" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0m" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__neg" "V0m")) ("c_2Erealax_2Ereal__neg" ("c_2Eintreal_2Ereal__of__int" "V0m"))))))
-; intreal.real_of_int_sub
-; real_of_int (m − n) = real_of_int m − real_of_int n
+; intreal.real_of_int_sub: ∀V0m V1n. real_of_int (V0m − V1n) = real_of_int V0m − real_of_int V1n
 (conjecture "thm_2Eintreal_2Ereal__of__int__sub" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0m" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__sub" "V0m" "V1n")) ("c_2Ereal_2Ereal__sub" ("c_2Eintreal_2Ereal__of__int" "V0m") ("c_2Eintreal_2Ereal__of__int" "V1n"))))))))
-; intreal.real_of_int_mul
-; real_of_int (m * n) = real_of_int m * real_of_int n
+; intreal.real_of_int_mul: ∀V0m V1n. real_of_int (V0m * V1n) = real_of_int V0m * real_of_int V1n
 (conjecture "thm_2Eintreal_2Ereal__of__int__mul" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0m" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" ("c_2Einteger_2Eint__mul" "V0m" "V1n")) ("c_2Erealax_2Ereal__mul" ("c_2Eintreal_2Ereal__of__int" "V0m") ("c_2Eintreal_2Ereal__of__int" "V1n"))))))))
-; intreal.real_of_int_lt
-; real_of_int m < real_of_int n ⇔ m < n
+; intreal.real_of_int_lt: ∀V0m V1n. real_of_int V0m < real_of_int V1n ⇔ V0m < V1n
 (conjecture "thm_2Eintreal_2Ereal__of__int__lt" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0m" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erealax_2Ereal__lt" ("c_2Eintreal_2Ereal__of__int" "V0m") ("c_2Eintreal_2Ereal__of__int" "V1n")) ("c_2Einteger_2Eint__lt" "V0m" "V1n")))))))
-; intreal.real_of_int_11
-; (real_of_int m = real_of_int n) ⇔ (m = n)
+; intreal.real_of_int_11: ∀V0m V1n. (real_of_int V0m = real_of_int V1n) ⇔ (V0m = V1n)
 (conjecture "thm_2Eintreal_2Ereal__of__int__11" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0m" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eintreal_2Ereal__of__int" "V0m") ("c_2Eintreal_2Ereal__of__int" "V1n")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0m" "V1n")))))))
-; intreal.real_of_int_le
-; real_of_int m ≤ real_of_int n ⇔ m ≤ n
+; intreal.real_of_int_le: ∀V0m V1n. real_of_int V0m ≤ real_of_int V1n ⇔ V0m ≤ V1n
 (conjecture "thm_2Eintreal_2Ereal__of__int__le" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0m" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ereal_2Ereal__lte" ("c_2Eintreal_2Ereal__of__int" "V0m") ("c_2Eintreal_2Ereal__of__int" "V1n")) ("c_2Einteger_2Eint__le" "V0m" "V1n")))))))

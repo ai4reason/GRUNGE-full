@@ -1,72 +1,48 @@
-; sat.AND_IMP
-; ∀A B C. A ∧ B ⇒ C ⇔ A ⇒ B ⇒ C
+; sat.AND_IMP: ∀V0A V1B V2C. V0A ∧ V1B ⇒ V2C ⇔ V0A ⇒ V1B ⇒ V2C
 (conjecture "thm_2Esat_2EAND__IMP" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1B" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2C" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" "V0A" "V1B") "V2C") ("c_2Emin_2E_3D_3D_3E" "V0A" ("c_2Emin_2E_3D_3D_3E" "V1B" "V2C"))))))))))
-; sat.NOT_NOT
-; ∀t. ¬¬t ⇔ t
+; sat.NOT_NOT: ∀V0t. ¬¬V0t ⇔ V0t
 (conjecture "thm_2Esat_2ENOT__NOT" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0t" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" ("c_2Ebool_2E_7E" "V0t")) "V0t"))))
-; sat.AND_INV
-; ∀A. ¬A ∧ A ⇔ F
+; sat.AND_INV: ∀V0A. ¬V0A ∧ V0A ⇔ F
 (conjecture "thm_2Esat_2EAND__INV" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" "V0A") "V0A") "c_2Ebool_2EF"))))
-; sat.AND_INV_IMP
-; ∀A. A ⇒ ¬A ⇒ F
+; sat.AND_INV_IMP: ∀V0A. V0A ⇒ ¬V0A ⇒ F
 (conjecture "thm_2Esat_2EAND__INV__IMP" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" "V0A" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V0A") "c_2Ebool_2EF")))))
-; sat.OR_DUAL
-; ¬(A ∨ B) ⇒ F ⇔ ¬A ⇒ ¬B ⇒ F
+; sat.OR_DUAL: ∀V0A V1B. ¬(V0A ∨ V1B) ⇒ F ⇔ ¬V0A ⇒ ¬V1B ⇒ F
 (conjecture "thm_2Esat_2EOR__DUAL" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1B" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Ebool_2E_5C_2F" "V0A" "V1B")) "c_2Ebool_2EF") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V0A") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V1B") "c_2Ebool_2EF"))))))))
-; sat.OR_DUAL2
-; ¬(A ∨ B) ⇒ F ⇔ (A ⇒ F) ⇒ ¬B ⇒ F
+; sat.OR_DUAL2: ∀V0A V1B. ¬(V0A ∨ V1B) ⇒ F ⇔ (V0A ⇒ F) ⇒ ¬V1B ⇒ F
 (conjecture "thm_2Esat_2EOR__DUAL2" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1B" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Ebool_2E_5C_2F" "V0A" "V1B")) "c_2Ebool_2EF") ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" "V0A" "c_2Ebool_2EF") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V1B") "c_2Ebool_2EF"))))))))
-; sat.OR_DUAL3
-; ¬(¬A ∨ B) ⇒ F ⇔ A ⇒ ¬B ⇒ F
+; sat.OR_DUAL3: ∀V0A V1B. ¬(¬V0A ∨ V1B) ⇒ F ⇔ V0A ⇒ ¬V1B ⇒ F
 (conjecture "thm_2Esat_2EOR__DUAL3" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1B" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V0A") "V1B")) "c_2Ebool_2EF") ("c_2Emin_2E_3D_3D_3E" "V0A" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V1B") "c_2Ebool_2EF"))))))))
-; sat.AND_INV2
-; (¬A ⇒ F) ⇒ (A ⇒ F) ⇒ F
+; sat.AND_INV2: ∀V0A. (¬V0A ⇒ F) ⇒ (V0A ⇒ F) ⇒ F
 (conjecture "thm_2Esat_2EAND__INV2" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V0A") "c_2Ebool_2EF") ("c_2Emin_2E_3D_3D_3E" ("c_2Emin_2E_3D_3D_3E" "V0A" "c_2Ebool_2EF") "c_2Ebool_2EF")))))
-; sat.NOT_ELIM2
-; ¬A ⇒ F ⇔ A
+; sat.NOT_ELIM2: ∀V0A. ¬V0A ⇒ F ⇔ V0A
 (conjecture "thm_2Esat_2ENOT__ELIM2" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0A" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V0A") "c_2Ebool_2EF") "V0A"))))
-; sat.EQT_Imp1
-; ∀b. b ⇒ (b ⇔ T)
+; sat.EQT_Imp1: ∀V0b. V0b ⇒ (V0b ⇔ T)
 (conjecture "thm_2Esat_2EEQT__Imp1" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" "V0b" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0b" "c_2Ebool_2ET")))))
-; sat.EQF_Imp1
-; ∀b. ¬b ⇒ (b ⇔ F)
+; sat.EQF_Imp1: ∀V0b. ¬V0b ⇒ (V0b ⇔ F)
 (conjecture "thm_2Esat_2EEQF__Imp1" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" "V0b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0b" "c_2Ebool_2EF")))))
-; sat.dc_eq
-; (p ⇔ (q ⇔ r)) ⇔ (p ∨ q ∨ r) ∧ (p ∨ ¬r ∨ ¬q) ∧ (q ∨ ¬r ∨ ¬p) ∧ (r ∨ ¬q ∨ ¬p)
+; sat.dc_eq: ∀V0p V1q V2r.     (V0p ⇔ (V1q ⇔ V2r)) ⇔     (V0p ∨ V1q ∨ V2r) ∧ (V0p ∨ ¬V2r ∨ ¬V1q) ∧ (V1q ∨ ¬V2r ∨ ¬V0p) ∧     (V2r ∨ ¬V1q ∨ ¬V0p)
 (conjecture "thm_2Esat_2Edc__eq" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2r" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0p" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V1q" "V2r")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" "V1q" "V2r")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V2r") ("c_2Ebool_2E_7E" "V1q"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V1q" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V2r") ("c_2Ebool_2E_7E" "V0p"))) ("c_2Ebool_2E_5C_2F" "V2r" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V1q") ("c_2Ebool_2E_7E" "V0p"))))))))))))))
-; sat.dc_conj
-; (p ⇔ q ∧ r) ⇔ (p ∨ ¬q ∨ ¬r) ∧ (q ∨ ¬p) ∧ (r ∨ ¬p)
+; sat.dc_conj: ∀V0p V1q V2r.     (V0p ⇔ V1q ∧ V2r) ⇔ (V0p ∨ ¬V1q ∨ ¬V2r) ∧ (V1q ∨ ¬V0p) ∧ (V2r ∨ ¬V0p)
 (conjecture "thm_2Esat_2Edc__conj" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2r" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0p" ("c_2Ebool_2E_2F_5C" "V1q" "V2r")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V1q") ("c_2Ebool_2E_7E" "V2r"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V1q" ("c_2Ebool_2E_7E" "V0p")) ("c_2Ebool_2E_5C_2F" "V2r" ("c_2Ebool_2E_7E" "V0p"))))))))))))
-; sat.dc_disj
-; (p ⇔ q ∨ r) ⇔ (p ∨ ¬q) ∧ (p ∨ ¬r) ∧ (q ∨ r ∨ ¬p)
+; sat.dc_disj: ∀V0p V1q V2r.     (V0p ⇔ V1q ∨ V2r) ⇔ (V0p ∨ ¬V1q) ∧ (V0p ∨ ¬V2r) ∧ (V1q ∨ V2r ∨ ¬V0p)
 (conjecture "thm_2Esat_2Edc__disj" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2r" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0p" ("c_2Ebool_2E_5C_2F" "V1q" "V2r")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_7E" "V1q")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_7E" "V2r")) ("c_2Ebool_2E_5C_2F" "V1q" ("c_2Ebool_2E_5C_2F" "V2r" ("c_2Ebool_2E_7E" "V0p")))))))))))))
-; sat.dc_imp
-; (p ⇔ q ⇒ r) ⇔ (p ∨ q) ∧ (p ∨ ¬r) ∧ (¬q ∨ r ∨ ¬p)
+; sat.dc_imp: ∀V0p V1q V2r.     (V0p ⇔ V1q ⇒ V2r) ⇔ (V0p ∨ V1q) ∧ (V0p ∨ ¬V2r) ∧ (¬V1q ∨ V2r ∨ ¬V0p)
 (conjecture "thm_2Esat_2Edc__imp" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2r" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0p" ("c_2Emin_2E_3D_3D_3E" "V1q" "V2r")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" "V1q") ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_7E" "V2r")) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V1q") ("c_2Ebool_2E_5C_2F" "V2r" ("c_2Ebool_2E_7E" "V0p")))))))))))))
-; sat.dc_neg
-; (p ⇔ ¬q) ⇔ (p ∨ q) ∧ (¬q ∨ ¬p)
+; sat.dc_neg: ∀V0p V1q. (V0p ⇔ ¬V1q) ⇔ (V0p ∨ V1q) ∧ (¬V1q ∨ ¬V0p)
 (conjecture "thm_2Esat_2Edc__neg" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0p" ("c_2Ebool_2E_7E" "V1q")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" "V1q") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V1q") ("c_2Ebool_2E_7E" "V0p")))))))))
-; sat.dc_cond
-; (p ⇔ if q then r else s) ⇔ (p ∨ q ∨ ¬s) ∧ (p ∨ ¬r ∨ ¬q) ∧ (p ∨ ¬r ∨ ¬s) ∧ (¬q ∨ r ∨ ¬p) ∧ (q ∨ s ∨ ¬p)
+; sat.dc_cond: ∀V0p V1q V2r V3s.     (V0p ⇔ if V1q then V2r else V3s) ⇔     (V0p ∨ V1q ∨ ¬V3s) ∧ (V0p ∨ ¬V2r ∨ ¬V1q) ∧ (V0p ∨ ¬V2r ∨ ¬V3s) ∧     (¬V1q ∨ V2r ∨ ¬V0p) ∧ (V1q ∨ V3s ∨ ¬V0p)
 (conjecture "thm_2Esat_2Edc__cond" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V2r" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V3s" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") "V0p" (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") "V1q" "V2r" "V3s")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" "V1q" ("c_2Ebool_2E_7E" "V3s"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V2r") ("c_2Ebool_2E_7E" "V1q"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" "V0p" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V2r") ("c_2Ebool_2E_7E" "V3s"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" "V1q") ("c_2Ebool_2E_5C_2F" "V2r" ("c_2Ebool_2E_7E" "V0p"))) ("c_2Ebool_2E_5C_2F" "V1q" ("c_2Ebool_2E_5C_2F" "V3s" ("c_2Ebool_2E_7E" "V0p")))))))))))))))))
-; sat.pth_ni1
-; ¬(p ⇒ q) ⇒ p
+; sat.pth_ni1: ∀V0p V1q. ¬(V0p ⇒ V1q) ⇒ V0p
 (conjecture "thm_2Esat_2Epth__ni1" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Emin_2E_3D_3D_3E" "V0p" "V1q")) "V0p"))))))
-; sat.pth_ni2
-; ¬(p ⇒ q) ⇒ ¬q
+; sat.pth_ni2: ∀V0p V1q. ¬(V0p ⇒ V1q) ⇒ ¬V1q
 (conjecture "thm_2Esat_2Epth__ni2" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Emin_2E_3D_3D_3E" "V0p" "V1q")) ("c_2Ebool_2E_7E" "V1q")))))))
-; sat.pth_no1
-; ¬(p ∨ q) ⇒ ¬p
+; sat.pth_no1: ∀V0p V1q. ¬(V0p ∨ V1q) ⇒ ¬V0p
 (conjecture "thm_2Esat_2Epth__no1" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Ebool_2E_5C_2F" "V0p" "V1q")) ("c_2Ebool_2E_7E" "V0p")))))))
-; sat.pth_no2
-; ¬(p ∨ q) ⇒ ¬q
+; sat.pth_no2: ∀V0p V1q. ¬(V0p ∨ V1q) ⇒ ¬V1q
 (conjecture "thm_2Esat_2Epth__no2" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Ebool_2E_5C_2F" "V0p" "V1q")) ("c_2Ebool_2E_7E" "V1q")))))))
-; sat.pth_an1
-; p ∧ q ⇒ p
+; sat.pth_an1: ∀V0p V1q. V0p ∧ V1q ⇒ V0p
 (conjecture "thm_2Esat_2Epth__an1" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" "V0p" "V1q") "V0p"))))))
-; sat.pth_an2
-; p ∧ q ⇒ q
+; sat.pth_an2: ∀V0p V1q. V0p ∧ V1q ⇒ V1q
 (conjecture "thm_2Esat_2Epth__an2" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1q" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" "V0p" "V1q") "V1q"))))))
-; sat.pth_nn
-; ¬¬p ⇒ p
+; sat.pth_nn: ∀V0p. ¬¬V0p ⇒ V0p
 (conjecture "thm_2Esat_2Epth__nn" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0p" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" ("c_2Ebool_2E_7E" "V0p")) "V0p"))))

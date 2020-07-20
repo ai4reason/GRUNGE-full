@@ -1,283 +1,189 @@
 (type_definition "ty_2Epatricia__casts_2Eword__ptree" 2)
-; c.patricia_casts.ADD_LISTs
-; :α ptree -> (string # α) list -> α ptree
+; c.patricia_casts.ADD_LISTs: :α ptree -> (string # α) list -> α ptree
 (constant_definition "c_2Epatricia__casts_2EADD__LISTs" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "A_27a")) ("ty_2Epatricia_2Eptree" "A_27a")))))
-; c.patricia_casts.ADD_LISTw
-; :(α, β) word_ptree -> (α word # β) list -> (α, β) word_ptree
+; c.patricia_casts.ADD_LISTw: :(α, β) word_ptree -> (α word # β) list -> (α, β) word_ptree
 (constant_definition "c_2Epatricia__casts_2EADD__LISTw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" ("ty_2Epair_2Eprod" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "A_27b")) ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")))))
-; c.patricia_casts.ADDs
-; :α ptree -> string # α -> α ptree
+; c.patricia_casts.ADDs: :α ptree -> string # α -> α ptree
 (constant_definition "c_2Epatricia__casts_2EADDs" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "A_27a") ("ty_2Epatricia_2Eptree" "A_27a")))))
-; c.patricia_casts.ADDw
-; :(α, β) word_ptree -> α word # β -> (α, β) word_ptree
+; c.patricia_casts.ADDw: :(α, β) word_ptree -> α word # β -> (α, β) word_ptree
 (constant_definition "c_2Epatricia__casts_2EADDw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "A_27b") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")))))
-; c.patricia_casts.DEPTHw
-; :(α, β) word_ptree -> num
+; c.patricia_casts.DEPTHw: :(α, β) word_ptree -> num
 (constant_definition "c_2Epatricia__casts_2EDEPTHw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "ty_2Enum_2Enum")))
-; c.patricia_casts.EVERY_LEAFw
-; :(α word -> β -> bool) -> (α, β) word_ptree -> bool
+; c.patricia_casts.EVERY_LEAFw: :(α word -> β -> bool) -> (α, β) word_ptree -> bool
 (constant_definition "c_2Epatricia__casts_2EEVERY__LEAFw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "ty_2Emin_2Ebool"))))
-; c.patricia_casts.EXISTS_LEAFw
-; :(α word -> β -> bool) -> (α, β) word_ptree -> bool
+; c.patricia_casts.EXISTS_LEAFw: :(α word -> β -> bool) -> (α, β) word_ptree -> bool
 (constant_definition "c_2Epatricia__casts_2EEXISTS__LEAFw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "ty_2Emin_2Ebool"))))
-; c.patricia_casts.FINDs
-; :α ptree -> string -> α
+; c.patricia_casts.FINDs: :α ptree -> string -> α
 (constant_definition "c_2Epatricia__casts_2EFINDs" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "A_27a"))))
-; c.patricia_casts.FINDw
-; :(β, α) word_ptree -> β word -> α
+; c.patricia_casts.FINDw: :(β, α) word_ptree -> β word -> α
 (constant_definition "c_2Epatricia__casts_2EFINDw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27b" "A_27a") ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27b") "A_27a"))))
-; c.patricia_casts.INSERT_PTREEs
-; :string -> unit ptree -> unit ptree
+; c.patricia_casts.INSERT_PTREEs: :string -> unit ptree -> unit ptree
 (constant_definition "c_2Epatricia__casts_2EINSERT__PTREEs" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone"))))
-; c.patricia_casts.INSERT_PTREEw
-; :α word -> (α, unit) word_ptree -> (α, unit) word_ptree
+; c.patricia_casts.INSERT_PTREEw: :α word -> (α, unit) word_ptree -> (α, unit) word_ptree
 (constant_definition "c_2Epatricia__casts_2EINSERT__PTREEw" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")))))
-; c.patricia_casts.IN_PTREEs
-; :string -> unit ptree -> bool
+; c.patricia_casts.IN_PTREEs: :string -> unit ptree -> bool
 (constant_definition "c_2Epatricia__casts_2EIN__PTREEs" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") "ty_2Emin_2Ebool")))
-; c.patricia_casts.IN_PTREEw
-; :α word -> (α, unit) word_ptree -> bool
+; c.patricia_casts.IN_PTREEw: :α word -> (α, unit) word_ptree -> bool
 (constant_definition "c_2Epatricia__casts_2EIN__PTREEw" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") "ty_2Emin_2Ebool"))))
-; c.patricia_casts.KEYSs
-; :α ptree -> string list
+; c.patricia_casts.KEYSs: :α ptree -> string list
 (constant_definition "c_2Epatricia__casts_2EKEYSs" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))))
-; c.patricia_casts.KEYSw
-; :(α, β) word_ptree -> α word list
+; c.patricia_casts.KEYSw: :(α, β) word_ptree -> α word list
 (constant_definition "c_2Epatricia__casts_2EKEYSw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Elist_2Elist" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")))))
-; c.patricia_casts.PEEKs
-; :α ptree -> string -> α option
+; c.patricia_casts.PEEKs: :α ptree -> string -> α option
 (constant_definition "c_2Epatricia__casts_2EPEEKs" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Eoption_2Eoption" "A_27a")))))
-; c.patricia_casts.PEEKw
-; :(α, β) word_ptree -> α word -> β option
+; c.patricia_casts.PEEKw: :(α, β) word_ptree -> α word -> β option
 (constant_definition "c_2Epatricia__casts_2EPEEKw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Eoption_2Eoption" "A_27b")))))
-; c.patricia_casts.PTREE_OF_STRINGSET
-; :unit ptree -> (string -> bool) -> unit ptree
+; c.patricia_casts.PTREE_OF_STRINGSET: :unit ptree -> (string -> bool) -> unit ptree
 (constant_definition "c_2Epatricia__casts_2EPTREE__OF__STRINGSET" ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool") ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone"))))
-; c.patricia_casts.PTREE_OF_WORDSET
-; :(α, unit) word_ptree -> (α word -> bool) -> (α, unit) word_ptree
+; c.patricia_casts.PTREE_OF_WORDSET: :(α, unit) word_ptree -> (α word -> bool) -> (α, unit) word_ptree
 (constant_definition "c_2Epatricia__casts_2EPTREE__OF__WORDSET" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Emin_2Ebool") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")))))
-; c.patricia_casts.REMOVEs
-; :α ptree -> string -> α ptree
+; c.patricia_casts.REMOVEs: :α ptree -> string -> α ptree
 (constant_definition "c_2Epatricia__casts_2EREMOVEs" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epatricia_2Eptree" "A_27a")))))
-; c.patricia_casts.REMOVEw
-; :(α, β) word_ptree -> α word -> (α, β) word_ptree
+; c.patricia_casts.REMOVEw: :(α, β) word_ptree -> α word -> (α, β) word_ptree
 (constant_definition "c_2Epatricia__casts_2EREMOVEw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")))))
-; c.patricia_casts.SIZEw
-; :(α, β) word_ptree -> num
+; c.patricia_casts.SIZEw: :(α, β) word_ptree -> num
 (constant_definition "c_2Epatricia__casts_2ESIZEw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "ty_2Enum_2Enum")))
-; c.patricia_casts.SKIP1
-; :string -> string
+; c.patricia_casts.SKIP1: :string -> string
 (constant_definition "c_2Epatricia__casts_2ESKIP1" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))
-; c.patricia_casts.SOME_PTREE
-; :β ptree -> (α, β) word_ptree
+; c.patricia_casts.SOME_PTREE: :β ptree -> (α, β) word_ptree
 (constant_definition "c_2Epatricia__casts_2ESOME__PTREE" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b"))))
-; c.patricia_casts.STRINGSET_OF_PTREE
-; :unit ptree -> string -> bool
+; c.patricia_casts.STRINGSET_OF_PTREE: :unit ptree -> string -> bool
 (constant_definition "c_2Epatricia__casts_2ESTRINGSET__OF__PTREE" ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")))
-; c.patricia_casts.THE_PTREE
-; :(β, α) word_ptree -> α ptree
+; c.patricia_casts.THE_PTREE: :(β, α) word_ptree -> α ptree
 (constant_definition "c_2Epatricia__casts_2ETHE__PTREE" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27b" "A_27a") ("ty_2Epatricia_2Eptree" "A_27a"))))
-; c.patricia_casts.TRANSFORMw
-; :(α -> β) -> (γ, α) word_ptree -> (γ, β) word_ptree
+; c.patricia_casts.TRANSFORMw: :(α -> β) -> (γ, α) word_ptree -> (γ, β) word_ptree
 (constant_definition "c_2Epatricia__casts_2ETRANSFORMw" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "A_27a") ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "A_27b")))))
-; c.patricia_casts.TRAVERSEs
-; :α ptree -> string list
+; c.patricia_casts.TRAVERSEs: :α ptree -> string list
 (constant_definition "c_2Epatricia__casts_2ETRAVERSEs" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))))
-; c.patricia_casts.TRAVERSEw
-; :(α, β) word_ptree -> α word list
+; c.patricia_casts.TRAVERSEw: :(α, β) word_ptree -> α word list
 (constant_definition "c_2Epatricia__casts_2ETRAVERSEw" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Elist_2Elist" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")))))
-; c.patricia_casts.UNION_PTREEw
-; :(β, unit) word_ptree -> (γ, unit) word_ptree -> (α, unit) word_ptree
+; c.patricia_casts.UNION_PTREEw: :(β, unit) word_ptree -> (γ, unit) word_ptree -> (α, unit) word_ptree
 (constant_definition "c_2Epatricia__casts_2EUNION__PTREEw" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27b" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "ty_2Eone_2Eone") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")))))
-; c.patricia_casts.WORDSET_OF_PTREE
-; :(α, unit) word_ptree -> α word -> bool
+; c.patricia_casts.WORDSET_OF_PTREE: :(α, unit) word_ptree -> α word -> bool
 (constant_definition "c_2Epatricia__casts_2EWORDSET__OF__PTREE" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Emin_2Ebool"))))
-; c.patricia_casts.WordEmpty
-; :(α, β) word_ptree
+; c.patricia_casts.WordEmpty: :(α, β) word_ptree
 (constant_definition "c_2Epatricia__casts_2EWordEmpty" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")))
-; c.patricia_casts.Word_ptree
-; :(α -> unit) -> β ptree -> (α, β) word_ptree
+; c.patricia_casts.Word_ptree: :(α -> unit) -> β ptree -> (α, β) word_ptree
 (constant_definition "c_2Epatricia__casts_2EWord__ptree" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")))))
-; c.patricia_casts.num_to_string
-; :num -> string
+; c.patricia_casts.num_to_string: :num -> string
 (constant_definition "c_2Epatricia__casts_2Enum__to__string" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))
-; c.patricia_casts.string_to_num
-; :string -> num
+; c.patricia_casts.string_to_num: :string -> num
 (constant_definition "c_2Epatricia__casts_2Estring__to__num" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Enum_2Enum"))
-; c.patricia_casts.word_ptree_CASE
-; :(α, β) word_ptree -> ((α -> unit) -> β ptree -> γ) -> γ
+; c.patricia_casts.word_ptree_CASE: :(α, β) word_ptree -> ((α -> unit) -> β ptree -> γ) -> γ
 (constant_definition "c_2Epatricia__casts_2Eword__ptree__CASE" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c")) "A_27c"))))
-; c.patricia_casts.word_ptree_size
-; :(α -> num) -> (β -> num) -> (α, β) word_ptree -> num
+; c.patricia_casts.word_ptree_size: :(α -> num) -> (β -> num) -> (α, β) word_ptree -> num
 (constant_definition "c_2Epatricia__casts_2Eword__ptree__size" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "ty_2Enum_2Enum")))))
-; patricia_casts.SKIP1_def
-; ∀c s. SKIP1 (STRING c s) = s
+; patricia_casts.SKIP1_def: ∀V0c V1s. SKIP1 (STRING V0c V1s) = V1s
 (axiom "thm_2Epatricia__casts_2ESKIP1__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Epatricia__casts_2ESKIP1" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1s")) "V1s"))))))
-; patricia_casts.string_to_num_def
-; ∀s. string_to_num s = s2n 256 ORD (STRING #"\^A" s)
+; patricia_casts.string_to_num_def: ∀V0s. string_to_num V0s = s2n 256 ORD (STRING #"\^A" V0s)
 (axiom "thm_2Epatricia__casts_2Estring__to__num__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Epatricia__casts_2Estring__to__num" "V0s") ("c_2EASCIInumbers_2Es2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))) "c_2Estring_2EORD" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") ("c_2Estring_2ECHR" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0s"))))))
-; patricia_casts.num_to_string_def
-; ∀n. num_to_string n = SKIP1 (n2s 256 CHR n)
+; patricia_casts.num_to_string_def: ∀V0n. num_to_string V0n = SKIP1 (n2s 256 CHR V0n)
 (axiom "thm_2Epatricia__casts_2Enum__to__string__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Epatricia__casts_2Enum__to__string" "V0n") ("c_2Epatricia__casts_2ESKIP1" ("c_2EASCIInumbers_2En2s" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))) "c_2Estring_2ECHR" "V0n"))))))
-; patricia_casts.PEEKs_def
-; ∀t w. t ' w = t ' (string_to_num w)
+; patricia_casts.PEEKs_def: ∀V0t V1w. V0t ' V1w = V0t ' (string_to_num V1w)
 (axiom "thm_2Epatricia__casts_2EPEEKs__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1w" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" "A_27a")) (("c_2Epatricia__casts_2EPEEKs" "A_27a") "V0t" "V1w") (("c_2Epatricia_2EPEEK" "A_27a") "V0t" ("c_2Epatricia__casts_2Estring__to__num" "V1w")))))))))
-; patricia_casts.FINDs_def
-; ∀t w. FINDs t w = THE (t ' w)
+; patricia_casts.FINDs_def: ∀V0t V1w. FINDs V0t V1w = THE (V0t ' V1w)
 (axiom "thm_2Epatricia__casts_2EFINDs__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1w" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "A_27a") (("c_2Epatricia__casts_2EFINDs" "A_27a") "V0t" "V1w") (("c_2Eoption_2ETHE" "A_27a") (("c_2Epatricia__casts_2EPEEKs" "A_27a") "V0t" "V1w")))))))))
-; patricia_casts.ADDs_def
-; ∀t w d. t |+ (w,d) = t |+ (string_to_num w,d)
+; patricia_casts.ADDs_def: ∀V0t V1w V2d. V0t |+ (V1w,V2d) = V0t |+ (string_to_num V1w,V2d)
 (axiom "thm_2Epatricia__casts_2EADDs__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1w" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "A_27a") (lambda "V2d" "A_27a" (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "A_27a")) (("c_2Epatricia__casts_2EADDs" "A_27a") "V0t" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "A_27a") "V1w" "V2d")) (("c_2Epatricia_2EADD" "A_27a") "V0t" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "A_27a") ("c_2Epatricia__casts_2Estring__to__num" "V1w") "V2d")))))))))))
-; patricia_casts.ADD_LISTs_def
-; $|++ = FOLDL $|+
+; patricia_casts.ADD_LISTs_def: $|++ = FOLDL $|+
 (axiom "thm_2Epatricia__casts_2EADD__LISTs__def" (forall_tyvarl_term ("A_27a") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27a") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "A_27a")) ("ty_2Epatricia_2Eptree" "A_27a")))) ("c_2Epatricia__casts_2EADD__LISTs" "A_27a") (("c_2Elist_2EFOLDL" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "A_27a") ("ty_2Epatricia_2Eptree" "A_27a")) ("c_2Epatricia__casts_2EADDs" "A_27a")))))
-; patricia_casts.REMOVEs_def
-; ∀t w. t \\ w = t \\ string_to_num w
+; patricia_casts.REMOVEs_def: ∀V0t V1w. V0t \\ V1w = V0t \\ string_to_num V1w
 (axiom "thm_2Epatricia__casts_2EREMOVEs__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1w" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "A_27a")) (("c_2Epatricia__casts_2EREMOVEs" "A_27a") "V0t" "V1w") (("c_2Epatricia_2EREMOVE" "A_27a") "V0t" ("c_2Epatricia__casts_2Estring__to__num" "V1w")))))))))
-; patricia_casts.TRAVERSEs_def
-; ∀t. TRAVERSEs t = MAP num_to_string (TRAVERSE t)
+; patricia_casts.TRAVERSEs_def: ∀V0t. TRAVERSEs V0t = MAP num_to_string (TRAVERSE V0t)
 (axiom "thm_2Epatricia__casts_2ETRAVERSEs__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epatricia__casts_2ETRAVERSEs" "A_27a") "V0t") (("c_2Elist_2EMAP" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "c_2Epatricia__casts_2Enum__to__string" (("c_2Epatricia_2ETRAVERSE" "A_27a") "V0t")))))))
-; patricia_casts.KEYSs_def
-; ∀t. KEYSs t = QSORT $< (TRAVERSEs t)
+; patricia_casts.KEYSs_def: ∀V0t. KEYSs V0t = QSORT $< (TRAVERSEs V0t)
 (axiom "thm_2Epatricia__casts_2EKEYSs__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epatricia__casts_2EKEYSs" "A_27a") "V0t") (("c_2Esorting_2EQSORT" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "c_2Estring_2Estring__lt" (("c_2Epatricia__casts_2ETRAVERSEs" "A_27a") "V0t")))))))
-; patricia_casts.IN_PTREEs_def
-; ∀w t. w IN_PTREEs t ⇔ string_to_num w IN_PTREE t
+; patricia_casts.IN_PTREEs_def: ∀V0w V1t. V0w IN_PTREEs V1t ⇔ string_to_num V0w IN_PTREE V1t
 (axiom "thm_2Epatricia__casts_2EIN__PTREEs__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0w" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) (lambda "V1t" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Epatricia__casts_2EIN__PTREEs" "V0w" "V1t") ("c_2Epatricia_2EIN__PTREE" ("c_2Epatricia__casts_2Estring__to__num" "V0w") "V1t")))))))
-; patricia_casts.INSERT_PTREEs_def
-; ∀w t. w INSERT_PTREEs t = string_to_num w INSERT_PTREE t
+; patricia_casts.INSERT_PTREEs_def: ∀V0w V1t. V0w INSERT_PTREEs V1t = string_to_num V0w INSERT_PTREE V1t
 (axiom "thm_2Epatricia__casts_2EINSERT__PTREEs__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0w" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) (lambda "V1t" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) ("c_2Epatricia__casts_2EINSERT__PTREEs" "V0w" "V1t") ("c_2Epatricia_2EINSERT__PTREE" ("c_2Epatricia__casts_2Estring__to__num" "V0w") "V1t")))))))
-; patricia_casts.STRINGSET_OF_PTREE_def
-; ∀t. STRINGSET_OF_PTREE t = LIST_TO_SET (TRAVERSEs t)
+; patricia_casts.STRINGSET_OF_PTREE_def: ∀V0t. STRINGSET_OF_PTREE V0t = LIST_TO_SET (TRAVERSEs V0t)
 (axiom "thm_2Epatricia__casts_2ESTRINGSET__OF__PTREE__def" (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) ("c_2Epatricia__casts_2ESTRINGSET__OF__PTREE" "V0t") (("c_2Elist_2ELIST__TO__SET" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Epatricia__casts_2ETRAVERSEs" "ty_2Eone_2Eone") "V0t"))))))
-; patricia_casts.PTREE_OF_STRINGSET_def
-; ∀t s. t |++ s = t |++ IMAGE string_to_num s
+; patricia_casts.PTREE_OF_STRINGSET_def: ∀V0t V1s. V0t |++ V1s = V0t |++ IMAGE string_to_num V1s
 (axiom "thm_2Epatricia__casts_2EPTREE__OF__STRINGSET__def" (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) ("c_2Epatricia__casts_2EPTREE__OF__STRINGSET" "V0t" "V1s") ("c_2Epatricia_2EPTREE__OF__NUMSET" "V0t" (("c_2Epred__set_2EIMAGE" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Enum_2Enum") "c_2Epatricia__casts_2Estring__to__num" "V1s"))))))))
-; patricia_casts.word_ptree_TY_DEF
-; ∃rep.     TYPE_DEFINITION       (λa0'.            ∀ $var$('word_ptree').                (∀a0'.                     (∃a0 a1.                          a0' =                          (λa0 a1.                               ind_type$CONSTR 0 (a0,a1) (λn. ind_type$BOTTOM))                            a0 a1) ⇒                     $var$('word_ptree') a0') ⇒                $var$('word_ptree') a0') rep
+; patricia_casts.word_ptree_TY_DEF: ∃V0rep.     TYPE_DEFINITION       (λV1a0_27.            ∀V2_27word__ptree_27.                (∀V3a0_27.                     (∃V4a0 V5a1.                          V3a0_27 =                          (λV6a0 V7a1.                               ind_type$CONSTR 0 (V6a0,V7a1)                                 (λV8n. ind_type$BOTTOM)) V4a0 V5a1) ⇒                     V2_27word__ptree_27 V3a0_27) ⇒                V2_27word__ptree_27 V1a0_27) V0rep
 (axiom "thm_2Epatricia__casts_2Eword__ptree__TY__DEF" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))))) (lambda "V0rep" ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b")))) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))) ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V1a0_27" ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))) "ty_2Emin_2Ebool")) (lambda "V2_27word__ptree_27" ("ty_2Emin_2Efun" ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))) "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b")))) (lambda "V3a0_27" ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))) ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V4a0" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_3F" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V5a1" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Emin_2E_3D" ("ty_2Eind__type_2Erecspace" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b")))) "V3a0_27" ((lambda "V6a0" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (lambda "V7a1" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Eind__type_2ECONSTR" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))) "c_2Enum_2E0" (("c_2Epair_2E_2C" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b")) "V6a0" "V7a1") (lambda "V8n" "ty_2Enum_2Enum" ("c_2Eind__type_2EBOTTOM" ("ty_2Epair_2Eprod" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Epatricia_2Eptree" "A_27b"))))))) "V4a0" "V5a1")))))) ("V2_27word__ptree_27" "V3a0_27")))) ("V2_27word__ptree_27" "V1a0_27"))))) "V0rep")))))
-; patricia_casts.word_ptree_case_def
-; ∀a0 a1 f. word_ptree_CASE (Word_ptree a0 a1) f = f a0 a1
+; patricia_casts.word_ptree_case_def: ∀V0a0 V1a1 V2f. word_ptree_CASE (Word_ptree V0a0 V1a1) V2f = V2f V0a0 V1a1
 (axiom "thm_2Epatricia__casts_2Eword__ptree__case__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V0a0" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V1a1" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c"))) (lambda "V2f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c")) (("c_2Emin_2E_3D" "A_27c") (("c_2Epatricia__casts_2Eword__ptree__CASE" "A_27a" "A_27b" "A_27c") (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V0a0" "V1a1") "V2f") ("V2f" "V0a0" "V1a1"))))))))))
-; patricia_casts.word_ptree_size_def
-; ∀f f1 a0 a1. word_ptree_size f f1 (Word_ptree a0 a1) = 1 + ptree_size f1 a1
+; patricia_casts.word_ptree_size_def: ∀V0f V1f1 V2a0 V3a1.     word_ptree_size V0f V1f1 (Word_ptree V2a0 V3a1) =     1 + ptree_size V1f1 V3a1
 (axiom "thm_2Epatricia__casts_2Eword__ptree__size__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum")) (lambda "V1f1" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V2a0" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V3a1" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Epatricia__casts_2Eword__ptree__size" "A_27a" "A_27b") "V0f" "V1f1" (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V2a0" "V3a1")) ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) (("c_2Epatricia_2Eptree__size" "A_27b") "V1f1" "V3a1")))))))))))))
-; patricia_casts.datatype_word_ptree
-; DATATYPE (word_ptree Word_ptree)
+; patricia_casts.datatype_word_ptree: ∀V0word__ptree. DATATYPE (V0word__ptree Word_ptree)
 (conjecture "thm_2Epatricia__casts_2Edatatype__word__ptree" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b"))) "ty_2Emin_2Ebool")) (lambda "V0word__ptree" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b"))) "ty_2Emin_2Ebool") (("c_2Ebool_2EDATATYPE" "ty_2Emin_2Ebool") ("V0word__ptree" ("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b")))))))
-; patricia_casts.word_ptree_11
-; ∀a0 a1 a0' a1'.     (Word_ptree a0 a1 = Word_ptree a0' a1') ⇔ (a0 = a0') ∧ (a1 = a1')
+; patricia_casts.word_ptree_11: ∀V0a0 V1a1 V2a0_27 V3a1_27.     (Word_ptree V0a0 V1a1 = Word_ptree V2a0_27 V3a1_27) ⇔     (V0a0 = V2a0_27) ∧ (V1a1 = V3a1_27)
 (conjecture "thm_2Epatricia__casts_2Eword__ptree__11" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V0a0" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V1a1" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V2a0_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V3a1_27" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V0a0" "V1a1") (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V2a0_27" "V3a1_27")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) "V0a0" "V2a0_27") (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "A_27b")) "V1a1" "V3a1_27")))))))))))))
-; patricia_casts.word_ptree_nchotomy
-; ∀ww. ∃f p. ww = Word_ptree f p
+; patricia_casts.word_ptree_nchotomy: ∀V0ww. ∃V1f V2p. V0ww = Word_ptree V1f V2p
 (conjecture "thm_2Epatricia__casts_2Eword__ptree__nchotomy" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0ww" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_3F" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V2p" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) "V0ww" (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V1f" "V2p"))))))))))
-; patricia_casts.word_ptree_Axiom
-; ∀f. ∃fn. ∀a0 a1. fn (Word_ptree a0 a1) = f a0 a1
+; patricia_casts.word_ptree_Axiom: ∀V0f. ∃V1fn. ∀V2a0 V3a1. V1fn (Word_ptree V2a0 V3a1) = V0f V2a0 V3a1
 (conjecture "thm_2Epatricia__casts_2Eword__ptree__Axiom" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c"))) (lambda "V0f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c")) (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "A_27c")) (lambda "V1fn" ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V2a0" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V3a1" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Emin_2E_3D" "A_27c") ("V1fn" (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V2a0" "V3a1")) ("V0f" "V2a0" "V3a1"))))))))))))
-; patricia_casts.word_ptree_induction
-; ∀P. (∀f p. P (Word_ptree f p)) ⇒ ∀w. P w
+; patricia_casts.word_ptree_induction: ∀V0P. (∀V1f V2p. V0P (Word_ptree V1f V2p)) ⇒ ∀V3w. V0P V3w
 (conjecture "thm_2Epatricia__casts_2Eword__ptree__induction" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V2p" ("ty_2Epatricia_2Eptree" "A_27b") ("V0P" (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V1f" "V2p")))))) (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V3w" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("V0P" "V3w"))))))))
-; patricia_casts.word_ptree_case_cong
-; ∀M M' f.     (M = M') ∧ (∀a0 a1. (M' = Word_ptree a0 a1) ⇒ (f a0 a1 = f' a0 a1)) ⇒     (word_ptree_CASE M f = word_ptree_CASE M' f')
+; patricia_casts.word_ptree_case_cong: ∀V0f_27 V1M V2M_27 V3f.     (V1M = V2M_27) ∧     (∀V4a0 V5a1.          (V2M_27 = Word_ptree V4a0 V5a1) ⇒ (V3f V4a0 V5a1 = V0f_27 V4a0 V5a1)) ⇒     (word_ptree_CASE V1M V3f = word_ptree_CASE V2M_27 V0f_27)
 (conjecture "thm_2Epatricia__casts_2Eword__ptree__case__cong" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c"))) (lambda "V0f_27" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c")) (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V1M" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V2M_27" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c"))) (lambda "V3f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) "V1M" "V2M_27") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V4a0" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V5a1" ("ty_2Epatricia_2Eptree" "A_27b") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) "V2M_27" (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V4a0" "V5a1")) (("c_2Emin_2E_3D" "A_27c") ("V3f" "V4a0" "V5a1") ("V0f_27" "V4a0" "V5a1")))))))) (("c_2Emin_2E_3D" "A_27c") (("c_2Epatricia__casts_2Eword__ptree__CASE" "A_27a" "A_27b" "A_27c") "V1M" "V3f") (("c_2Epatricia__casts_2Eword__ptree__CASE" "A_27a" "A_27b" "A_27c") "V2M_27" "V0f_27")))))))))))))
-; patricia_casts.word_ptree_case_eq
-; (word_ptree_CASE x f = v) ⇔ ∃f' p. (x = Word_ptree f' p) ∧ (f f' p = v)
+; patricia_casts.word_ptree_case_eq: ∀V0x V1f V2v.     (word_ptree_CASE V0x V1f = V2v) ⇔     ∃V3f_27 V4p. (V0x = Word_ptree V3f_27 V4p) ∧ (V1f V3f_27 V4p = V2v)
 (conjecture "thm_2Epatricia__casts_2Eword__ptree__case__eq" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0x" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c"))) (lambda "V1f" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") ("ty_2Emin_2Efun" ("ty_2Epatricia_2Eptree" "A_27b") "A_27c")) (("c_2Ebool_2E_21" "A_27c") (lambda "V2v" "A_27c" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27c") (("c_2Epatricia__casts_2Eword__ptree__CASE" "A_27a" "A_27b" "A_27c") "V0x" "V1f") "V2v") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone")) (lambda "V3f_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_3F" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V4p" ("ty_2Epatricia_2Eptree" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) "V0x" (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") "V3f_27" "V4p")) (("c_2Emin_2E_3D" "A_27c") ("V1f" "V3f_27" "V4p") "V2v")))))))))))))))
-; patricia_casts.THE_PTREE_def
-; ∀a t. THE_PTREE (Word_ptree a t) = t
+; patricia_casts.THE_PTREE_def: ∀V0a V1t. THE_PTREE (Word_ptree V0a V1t) = V1t
 (axiom "thm_2Epatricia__casts_2ETHE__PTREE__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Eone_2Eone")) (lambda "V0a" ("ty_2Emin_2Efun" "A_27b" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V1t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "A_27a")) (("c_2Epatricia__casts_2ETHE__PTREE" "A_27a" "A_27b") (("c_2Epatricia__casts_2EWord__ptree" "A_27b" "A_27a") "V0a" "V1t")) "V1t")))))))
-; patricia_casts.SOME_PTREE_def
-; ∀t. SOME_PTREE t = Word_ptree (K ()) t
+; patricia_casts.SOME_PTREE_def: ∀V0t. SOME_PTREE V0t = Word_ptree (K ()) V0t
 (axiom "thm_2Epatricia__casts_2ESOME__PTREE__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27b")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27b") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (("c_2Epatricia__casts_2ESOME__PTREE" "A_27a" "A_27b") "V0t") (("c_2Epatricia__casts_2EWord__ptree" "A_27a" "A_27b") (("c_2Ecombin_2EK" "ty_2Eone_2Eone" "A_27a") "c_2Eone_2Eone") "V0t"))))))
-; patricia_casts.WordEmpty_def
-; +{}+ = SOME_PTREE -{}-
+; patricia_casts.WordEmpty_def: +{}+ = SOME_PTREE -{}-
 (axiom "thm_2Epatricia__casts_2EWordEmpty__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) ("c_2Epatricia__casts_2EWordEmpty" "A_27a" "A_27b") (("c_2Epatricia__casts_2ESOME__PTREE" "A_27a" "A_27b") ("c_2Epatricia_2EEmpty" "A_27b")))))
-; patricia_casts.PEEKw_def
-; ∀t w. t ' w = THE_PTREE t ' (w2n w)
+; patricia_casts.PEEKw_def: ∀V0t V1w. V0t ' V1w = THE_PTREE V0t ' (w2n V1w)
 (axiom "thm_2Epatricia__casts_2EPEEKw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) (lambda "V1w" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" "A_27b")) (("c_2Epatricia__casts_2EPEEKw" "A_27a" "A_27b") "V0t" "V1w") (("c_2Epatricia_2EPEEK" "A_27b") (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V0t") (("c_2Ewords_2Ew2n" "A_27a") "V1w")))))))))
-; patricia_casts.FINDw_def
-; ∀t w. FINDw t w = THE (t ' w)
+; patricia_casts.FINDw_def: ∀V0t V1w. FINDw V0t V1w = THE (V0t ' V1w)
 (axiom "thm_2Epatricia__casts_2EFINDw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27b" "A_27a")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27b" "A_27a") (("c_2Ebool_2E_21" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27b")) (lambda "V1w" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27b") (("c_2Emin_2E_3D" "A_27a") (("c_2Epatricia__casts_2EFINDw" "A_27a" "A_27b") "V0t" "V1w") (("c_2Eoption_2ETHE" "A_27a") (("c_2Epatricia__casts_2EPEEKw" "A_27b" "A_27a") "V0t" "V1w")))))))))
-; patricia_casts.ADDw_def
-; ∀t w d. t |+ (w,d) = SOME_PTREE (THE_PTREE t |+ (w2n w,d))
+; patricia_casts.ADDw_def: ∀V0t V1w V2d. V0t |+ (V1w,V2d) = SOME_PTREE (THE_PTREE V0t |+ (w2n V1w,V2d))
 (axiom "thm_2Epatricia__casts_2EADDw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) (lambda "V1w" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") (("c_2Ebool_2E_21" "A_27b") (lambda "V2d" "A_27b" (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (("c_2Epatricia__casts_2EADDw" "A_27a" "A_27b") "V0t" (("c_2Epair_2E_2C" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "A_27b") "V1w" "V2d")) (("c_2Epatricia__casts_2ESOME__PTREE" "A_27a" "A_27b") (("c_2Epatricia_2EADD" "A_27b") (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V0t") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "A_27b") (("c_2Ewords_2Ew2n" "A_27a") "V1w") "V2d"))))))))))))
-; patricia_casts.ADD_LISTw_def
-; $|++ = FOLDL $|+
+; patricia_casts.ADD_LISTw_def: $|++ = FOLDL $|+
 (axiom "thm_2Epatricia__casts_2EADD__LISTw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" ("ty_2Epair_2Eprod" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "A_27b")) ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")))) ("c_2Epatricia__casts_2EADD__LISTw" "A_27a" "A_27b") (("c_2Elist_2EFOLDL" ("ty_2Epair_2Eprod" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "A_27b") ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) ("c_2Epatricia__casts_2EADDw" "A_27a" "A_27b")))))
-; patricia_casts.REMOVEw_def
-; ∀t w. t \\ w = SOME_PTREE (THE_PTREE t \\ w2n w)
+; patricia_casts.REMOVEw_def: ∀V0t V1w. V0t \\ V1w = SOME_PTREE (THE_PTREE V0t \\ w2n V1w)
 (axiom "thm_2Epatricia__casts_2EREMOVEw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) (lambda "V1w" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (("c_2Epatricia__casts_2EREMOVEw" "A_27a" "A_27b") "V0t" "V1w") (("c_2Epatricia__casts_2ESOME__PTREE" "A_27a" "A_27b") (("c_2Epatricia_2EREMOVE" "A_27b") (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V0t") (("c_2Ewords_2Ew2n" "A_27a") "V1w"))))))))))
-; patricia_casts.TRAVERSEw_def
-; ∀t. TRAVERSEw t = MAP n2w (TRAVERSE (THE_PTREE t))
+; patricia_casts.TRAVERSEw_def: ∀V0t. TRAVERSEw V0t = MAP n2w (TRAVERSE (THE_PTREE V0t))
 (axiom "thm_2Epatricia__casts_2ETRAVERSEw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a"))) (("c_2Epatricia__casts_2ETRAVERSEw" "A_27a" "A_27b") "V0t") (("c_2Elist_2EMAP" "ty_2Enum_2Enum" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) ("c_2Ewords_2En2w" "A_27a") (("c_2Epatricia_2ETRAVERSE" "A_27b") (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V0t"))))))))
-; patricia_casts.KEYSw_def
-; ∀t. KEYSw t = QSORT $<+ (TRAVERSEw t)
+; patricia_casts.KEYSw_def: ∀V0t. KEYSw V0t = QSORT $<+ (TRAVERSEw V0t)
 (axiom "thm_2Epatricia__casts_2EKEYSw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a"))) (("c_2Epatricia__casts_2EKEYSw" "A_27a" "A_27b") "V0t") (("c_2Esorting_2EQSORT" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) ("c_2Ewords_2Eword__lo" "A_27a") (("c_2Epatricia__casts_2ETRAVERSEw" "A_27a" "A_27b") "V0t")))))))
-; patricia_casts.TRANSFORMw_def
-; ∀f t. TRANSFORMw f t = SOME_PTREE (TRANSFORM f (THE_PTREE t))
+; patricia_casts.TRANSFORMw_def: ∀V0f V1t. TRANSFORMw V0f V1t = SOME_PTREE (TRANSFORM V0f (THE_PTREE V1t))
 (axiom "thm_2Epatricia__casts_2ETRANSFORMw__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "A_27a")) (lambda "V1t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "A_27a") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "A_27b")) (("c_2Epatricia__casts_2ETRANSFORMw" "A_27a" "A_27b" "A_27c") "V0f" "V1t") (("c_2Epatricia__casts_2ESOME__PTREE" "A_27c" "A_27b") (("c_2Epatricia_2ETRANSFORM" "A_27b" "A_27a") "V0f" (("c_2Epatricia__casts_2ETHE__PTREE" "A_27a" "A_27c") "V1t"))))))))))
-; patricia_casts.EVERY_LEAFw_def
-; ∀P t. EVERY_LEAFw P t ⇔ EVERY_LEAF (λk d. P (n2w k) d) (THE_PTREE t)
+; patricia_casts.EVERY_LEAFw_def: ∀V0P V1t.     EVERY_LEAFw V0P V1t ⇔     EVERY_LEAF (λV2k V3d. V0P (n2w V2k) V3d) (THE_PTREE V1t)
 (axiom "thm_2Epatricia__casts_2EEVERY__LEAFw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V1t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Epatricia__casts_2EEVERY__LEAFw" "A_27a" "A_27b") "V0P" "V1t") (("c_2Epatricia_2EEVERY__LEAF" "A_27b") (lambda "V2k" "ty_2Enum_2Enum" (lambda "V3d" "A_27b" ("V0P" (("c_2Ewords_2En2w" "A_27a") "V2k") "V3d"))) (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V1t")))))))))
-; patricia_casts.EXISTS_LEAFw_def
-; ∀P t. EXISTS_LEAFw P t ⇔ EXISTS_LEAF (λk d. P (n2w k) d) (THE_PTREE t)
+; patricia_casts.EXISTS_LEAFw_def: ∀V0P V1t.     EXISTS_LEAFw V0P V1t ⇔     EXISTS_LEAF (λV2k V3d. V0P (n2w V2k) V3d) (THE_PTREE V1t)
 (axiom "thm_2Epatricia__casts_2EEXISTS__LEAFw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V1t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Epatricia__casts_2EEXISTS__LEAFw" "A_27a" "A_27b") "V0P" "V1t") (("c_2Epatricia_2EEXISTS__LEAF" "A_27b") (lambda "V2k" "ty_2Enum_2Enum" (lambda "V3d" "A_27b" ("V0P" (("c_2Ewords_2En2w" "A_27a") "V2k") "V3d"))) (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V1t")))))))))
-; patricia_casts.SIZEw_def
-; ∀t. SIZEw t = SIZE (THE_PTREE t)
+; patricia_casts.SIZEw_def: ∀V0t. SIZEw V0t = SIZE (THE_PTREE V0t)
 (axiom "thm_2Epatricia__casts_2ESIZEw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Epatricia__casts_2ESIZEw" "A_27a" "A_27b") "V0t") (("c_2Epatricia_2ESIZE" "A_27b") (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V0t")))))))
-; patricia_casts.DEPTHw_def
-; ∀t. DEPTHw t = DEPTH (THE_PTREE t)
+; patricia_casts.DEPTHw_def: ∀V0t. DEPTHw V0t = DEPTH (THE_PTREE V0t)
 (axiom "thm_2Epatricia__casts_2EDEPTHw__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Epatricia__casts_2EDEPTHw" "A_27a" "A_27b") "V0t") (("c_2Epatricia_2EDEPTH" "A_27b") (("c_2Epatricia__casts_2ETHE__PTREE" "A_27b" "A_27a") "V0t")))))))
-; patricia_casts.IN_PTREEw_def
-; ∀w t. w IN_PTREEw t ⇔ w2n w IN_PTREE THE_PTREE t
+; patricia_casts.IN_PTREEw_def: ∀V0w V1t. V0w IN_PTREEw V1t ⇔ w2n V0w IN_PTREE THE_PTREE V1t
 (axiom "thm_2Epatricia__casts_2EIN__PTREEw__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) (lambda "V0w" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (lambda "V1t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Epatricia__casts_2EIN__PTREEw" "A_27a") "V0w" "V1t") ("c_2Epatricia_2EIN__PTREE" (("c_2Ewords_2Ew2n" "A_27a") "V0w") (("c_2Epatricia__casts_2ETHE__PTREE" "ty_2Eone_2Eone" "A_27a") "V1t")))))))))
-; patricia_casts.INSERT_PTREEw_def
-; ∀w t. w INSERT_PTREEw t = SOME_PTREE (w2n w INSERT_PTREE THE_PTREE t)
+; patricia_casts.INSERT_PTREEw_def: ∀V0w V1t.     V0w INSERT_PTREEw V1t = SOME_PTREE (w2n V0w INSERT_PTREE THE_PTREE V1t)
 (axiom "thm_2Epatricia__casts_2EINSERT__PTREEw__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) (lambda "V0w" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (lambda "V1t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (("c_2Epatricia__casts_2EINSERT__PTREEw" "A_27a") "V0w" "V1t") (("c_2Epatricia__casts_2ESOME__PTREE" "A_27a" "ty_2Eone_2Eone") ("c_2Epatricia_2EINSERT__PTREE" (("c_2Ewords_2Ew2n" "A_27a") "V0w") (("c_2Epatricia__casts_2ETHE__PTREE" "ty_2Eone_2Eone" "A_27a") "V1t"))))))))))
-; patricia_casts.WORDSET_OF_PTREE_def
-; ∀t. WORDSET_OF_PTREE t = LIST_TO_SET (TRAVERSEw t)
+; patricia_casts.WORDSET_OF_PTREE_def: ∀V0t. WORDSET_OF_PTREE V0t = LIST_TO_SET (TRAVERSEw V0t)
 (axiom "thm_2Epatricia__casts_2EWORDSET__OF__PTREE__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Emin_2Ebool")) (("c_2Epatricia__casts_2EWORDSET__OF__PTREE" "A_27a") "V0t") (("c_2Elist_2ELIST__TO__SET" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) (("c_2Epatricia__casts_2ETRAVERSEw" "A_27a" "ty_2Eone_2Eone") "V0t")))))))
-; patricia_casts.UNION_PTREEw_def
-; ∀t1 t2.     t1 UNION_PTREEw t2 = SOME_PTREE (THE_PTREE t1 UNION_PTREE THE_PTREE t2)
+; patricia_casts.UNION_PTREEw_def: ∀V0t1 V1t2.     V0t1 UNION_PTREEw V1t2 =     SOME_PTREE (THE_PTREE V0t1 UNION_PTREE THE_PTREE V1t2)
 (axiom "thm_2Epatricia__casts_2EUNION__PTREEw__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27b" "ty_2Eone_2Eone")) (lambda "V0t1" ("ty_2Epatricia__casts_2Eword__ptree" "A_27b" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "ty_2Eone_2Eone")) (lambda "V1t2" ("ty_2Epatricia__casts_2Eword__ptree" "A_27c" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (("c_2Epatricia__casts_2EUNION__PTREEw" "A_27a" "A_27b" "A_27c") "V0t1" "V1t2") (("c_2Epatricia__casts_2ESOME__PTREE" "A_27a" "ty_2Eone_2Eone") ("c_2Epatricia_2EUNION__PTREE" (("c_2Epatricia__casts_2ETHE__PTREE" "ty_2Eone_2Eone" "A_27b") "V0t1") (("c_2Epatricia__casts_2ETHE__PTREE" "ty_2Eone_2Eone" "A_27c") "V1t2"))))))))))
-; patricia_casts.PTREE_OF_WORDSET_def
-; ∀t s. t |++ s = SOME_PTREE (THE_PTREE t |++ IMAGE w2n s)
+; patricia_casts.PTREE_OF_WORDSET_def: ∀V0t V1s. V0t |++ V1s = SOME_PTREE (THE_PTREE V0t |++ IMAGE w2n V1s)
 (axiom "thm_2Epatricia__casts_2EPTREE__OF__WORDSET__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (lambda "V0t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (("c_2Epatricia__casts_2EPTREE__OF__WORDSET" "A_27a") "V0t" "V1s") (("c_2Epatricia__casts_2ESOME__PTREE" "A_27a" "ty_2Eone_2Eone") ("c_2Epatricia_2EPTREE__OF__NUMSET" (("c_2Epatricia__casts_2ETHE__PTREE" "ty_2Eone_2Eone" "A_27a") "V0t") (("c_2Epred__set_2EIMAGE" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Enum_2Enum") ("c_2Ewords_2Ew2n" "A_27a") "V1s"))))))))))
-; patricia_casts.ADD_INSERT_STRING
-; ∀w v t. t |+ (w,v) = t |+ (w,())
+; patricia_casts.ADD_INSERT_STRING: ∀V0w V1v V2t. V2t |+ (V0w,V1v) = V2t |+ (V0w,())
 (conjecture "thm_2Epatricia__casts_2EADD__INSERT__STRING" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0w" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Eone_2Eone") (lambda "V1v" "ty_2Eone_2Eone" (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) (lambda "V2t" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "ty_2Eone_2Eone")) (("c_2Epatricia__casts_2EADDs" "ty_2Eone_2Eone") "V2t" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Eone_2Eone") "V0w" "V1v")) (("c_2Epatricia__casts_2EADDs" "ty_2Eone_2Eone") "V2t" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Eone_2Eone") "V0w" "c_2Eone_2Eone"))))))))))
-; patricia_casts.l2n_APPEND
-; ∀b l1 l2. l2n b (l1 ++ l2) = l2n b l1 + b ** LENGTH l1 * l2n b l2
+; patricia_casts.l2n_APPEND: ∀V0b V1l1 V2l2.     l2n V0b (V1l1 ++ V2l2) = l2n V0b V1l1 + V0b ** LENGTH V1l1 * l2n V0b V2l2
 (conjecture "thm_2Epatricia__casts_2El2n__APPEND" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l1" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V2l2" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" (("c_2Elist_2EAPPEND" "ty_2Enum_2Enum") "V1l1" "V2l2")) ("c_2Earithmetic_2E_2B" ("c_2Enumposrep_2El2n" "V0b" "V1l1") ("c_2Earithmetic_2E_2A" ("c_2Earithmetic_2EEXP" "V0b" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") "V1l1")) ("c_2Enumposrep_2El2n" "V0b" "V2l2")))))))))))
-; patricia_casts.l2n_LENGTH
-; ∀b l. 1 < b ⇒ l2n b l < b ** LENGTH l
+; patricia_casts.l2n_LENGTH: ∀V0b V1l. 1 < V0b ⇒ l2n V0b V1l < V0b ** LENGTH V1l
 (conjecture "thm_2Epatricia__casts_2El2n__LENGTH" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") ("c_2Eprim__rec_2E_3C" ("c_2Enumposrep_2El2n" "V0b" "V1l") ("c_2Earithmetic_2EEXP" "V0b" (("c_2Elist_2ELENGTH" "ty_2Enum_2Enum") "V1l")))))))))
-; patricia_casts.l2n_11
-; ∀b l1 l2.     1 < b ∧ EVERY ($> b) l1 ∧ EVERY ($> b) l2 ⇒     ((l2n b (l1 ++ [1]) = l2n b (l2 ++ [1])) ⇔ (l1 = l2))
+; patricia_casts.l2n_11: ∀V0b V1l1 V2l2.     1 < V0b ∧ EVERY ($> V0b) V1l1 ∧ EVERY ($> V0b) V2l2 ⇒     ((l2n V0b (V1l1 ++ [1]) = l2n V0b (V2l2 ++ [1])) ⇔ (V1l1 = V2l2))
 (conjecture "thm_2Epatricia__casts_2El2n__11" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V1l1" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) (lambda "V2l2" ("ty_2Elist_2Elist" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0b") ("c_2Ebool_2E_2F_5C" (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") "V1l1") (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" "V0b") "V2l2"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Enumposrep_2El2n" "V0b" (("c_2Elist_2EAPPEND" "ty_2Enum_2Enum") "V1l1" (("c_2Elist_2ECONS" "ty_2Enum_2Enum") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) ("c_2Elist_2ENIL" "ty_2Enum_2Enum")))) ("c_2Enumposrep_2El2n" "V0b" (("c_2Elist_2EAPPEND" "ty_2Enum_2Enum") "V2l2" (("c_2Elist_2ECONS" "ty_2Enum_2Enum") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) ("c_2Elist_2ENIL" "ty_2Enum_2Enum"))))) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Enum_2Enum")) "V1l1" "V2l2"))))))))))
-; patricia_casts.EVERY_MAP_ORD
-; ∀l. EVERY ($> 256) (MAP ORD l)
+; patricia_casts.EVERY_MAP_ORD: ∀V0l. EVERY ($> 256) (MAP ORD V0l)
 (conjecture "thm_2Epatricia__casts_2EEVERY__MAP__ORD" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Elist_2EEVERY" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_3E" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) (("c_2Elist_2EMAP" "ty_2Estring_2Echar" "ty_2Enum_2Enum") "c_2Estring_2EORD" "V0l")))))
-; patricia_casts.MAP_11
-; ∀f l1 l2. (∀x y. (f x = f y) ⇔ (x = y)) ⇒ ((MAP f l1 = MAP f l2) ⇔ (l1 = l2))
+; patricia_casts.MAP_11: ∀V0f V1l1 V2l2.     (∀V3x V4y. (V0f V3x = V0f V4y) ⇔ (V3x = V4y)) ⇒     ((MAP V0f V1l1 = MAP V0f V2l2) ⇔ (V1l1 = V2l2))
 (conjecture "thm_2Epatricia__casts_2EMAP__11" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1l1" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V2l2" ("ty_2Elist_2Elist" "A_27a") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "A_27a") (lambda "V3x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V4y" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27b") ("V0f" "V3x") ("V0f" "V4y")) (("c_2Emin_2E_3D" "A_27a") "V3x" "V4y")))))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27b")) (("c_2Elist_2EMAP" "A_27a" "A_27b") "V0f" "V1l1") (("c_2Elist_2EMAP" "A_27a" "A_27b") "V0f" "V2l2")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) "V1l1" "V2l2")))))))))))
-; patricia_casts.REVERSE_11
-; ∀l1 l2. (REVERSE l1 = REVERSE l2) ⇔ (l1 = l2)
+; patricia_casts.REVERSE_11: ∀V0l1 V1l2. (REVERSE V0l1 = REVERSE V1l2) ⇔ (V0l1 = V1l2)
 (conjecture "thm_2Epatricia__casts_2EREVERSE__11" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V0l1" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1l2" ("ty_2Elist_2Elist" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) (("c_2Elist_2EREVERSE" "A_27a") "V0l1") (("c_2Elist_2EREVERSE" "A_27a") "V1l2")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) "V0l1" "V1l2"))))))))
-; patricia_casts.string_to_num_11
-; ∀s t. (string_to_num s = string_to_num t) ⇔ (s = t)
+; patricia_casts.string_to_num_11: ∀V0s V1t. (string_to_num V0s = string_to_num V1t) ⇔ (V0s = V1t)
 (conjecture "thm_2Epatricia__casts_2Estring__to__num__11" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Epatricia__casts_2Estring__to__num" "V0s") ("c_2Epatricia__casts_2Estring__to__num" "V1t")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" "V1t")))))))
-; patricia_casts.IMAGE_string_to_num
-; ∀n.     (n = 1) ∨ 256 ≤ n ∧ (n DIV 256 ** LOG 256 n = 1) ⇔     n ∈ IMAGE string_to_num 𝕌(:string)
+; patricia_casts.IMAGE_string_to_num: ∀V0n.     (V0n = 1) ∨ 256 ≤ V0n ∧ (V0n DIV 256 ** LOG 256 V0n = 1) ⇔     V0n ∈ IMAGE string_to_num 𝕌(:string)
 (conjecture "thm_2Epatricia__casts_2EIMAGE__string__to__num" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))) "V0n") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EDIV" "V0n" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))) ("c_2Elogroot_2ELOG" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))) "V0n"))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) (("c_2Ebool_2EIN" "ty_2Enum_2Enum") "V0n" (("c_2Epred__set_2EIMAGE" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Enum_2Enum") "c_2Epatricia__casts_2Estring__to__num" ("c_2Epred__set_2EUNIV" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))))))))
-; patricia_casts.string_to_num_num_to_string
-; ∀n.     n ∈ IMAGE string_to_num 𝕌(:string) ⇒     (string_to_num (num_to_string n) = n)
+; patricia_casts.string_to_num_num_to_string: ∀V0n.     V0n ∈ IMAGE string_to_num 𝕌(:string) ⇒     (string_to_num (num_to_string V0n) = V0n)
 (conjecture "thm_2Epatricia__casts_2Estring__to__num__num__to__string" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "ty_2Enum_2Enum") "V0n" (("c_2Epred__set_2EIMAGE" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Enum_2Enum") "c_2Epatricia__casts_2Estring__to__num" ("c_2Epred__set_2EUNIV" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Epatricia__casts_2Estring__to__num" ("c_2Epatricia__casts_2Enum__to__string" "V0n")) "V0n")))))
-; patricia_casts.num_to_string_string_to_num
-; ∀s. num_to_string (string_to_num s) = s
+; patricia_casts.num_to_string_string_to_num: ∀V0s. num_to_string (string_to_num V0s) = V0s
 (conjecture "thm_2Epatricia__casts_2Enum__to__string__string__to__num" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Epatricia__casts_2Enum__to__string" ("c_2Epatricia__casts_2Estring__to__num" "V0s")) "V0s"))))
-; patricia_casts.ADD_INSERT_WORD
-; ∀w v t. t |+ (w,v) = t |+ (w,())
+; patricia_casts.ADD_INSERT_WORD: ∀V0w V1v V2t. V2t |+ (V0w,V1v) = V2t |+ (V0w,())
 (conjecture "thm_2Epatricia__casts_2EADD__INSERT__WORD" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a")) (lambda "V0w" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") (("c_2Ebool_2E_21" "ty_2Eone_2Eone") (lambda "V1v" "ty_2Eone_2Eone" (("c_2Ebool_2E_21" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (lambda "V2t" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone") (("c_2Emin_2E_3D" ("ty_2Epatricia__casts_2Eword__ptree" "A_27a" "ty_2Eone_2Eone")) (("c_2Epatricia__casts_2EADDw" "A_27a" "ty_2Eone_2Eone") "V2t" (("c_2Epair_2E_2C" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Eone_2Eone") "V0w" "V1v")) (("c_2Epatricia__casts_2EADDw" "A_27a" "ty_2Eone_2Eone") "V2t" (("c_2Epair_2E_2C" ("ty_2Efcp_2Ecart" "ty_2Emin_2Ebool" "A_27a") "ty_2Eone_2Eone") "V0w" "c_2Eone_2Eone")))))))))))
-; patricia_casts.THE_PTREE_SOME_PTREE
-; ∀t. THE_PTREE (SOME_PTREE t) = t
+; patricia_casts.THE_PTREE_SOME_PTREE: ∀V0t. THE_PTREE (SOME_PTREE V0t) = V0t
 (conjecture "thm_2Epatricia__casts_2ETHE__PTREE__SOME__PTREE" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Epatricia_2Eptree" "A_27a")) (lambda "V0t" ("ty_2Epatricia_2Eptree" "A_27a") (("c_2Emin_2E_3D" ("ty_2Epatricia_2Eptree" "A_27a")) (("c_2Epatricia__casts_2ETHE__PTREE" "A_27a" "A_27b") (("c_2Epatricia__casts_2ESOME__PTREE" "A_27b" "A_27a") "V0t")) "V0t")))))

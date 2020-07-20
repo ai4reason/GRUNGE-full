@@ -1,783 +1,522 @@
-; c.complex.IM
-; :real # real -> real
+; c.complex.IM: :real # real -> real
 (constant_definition "c_2Ecomplex_2EIM" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "ty_2Erealax_2Ereal"))
-; c.complex.RE
-; :real # real -> real
+; c.complex.RE: :real # real -> real
 (constant_definition "c_2Ecomplex_2ERE" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "ty_2Erealax_2Ereal"))
-; c.complex.arg
-; :real # real -> real
+; c.complex.arg: :real # real -> real
 (constant_definition "c_2Ecomplex_2Earg" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "ty_2Erealax_2Ereal"))
-; c.complex.complex_add
-; :real # real -> real # real -> real # real
+; c.complex.complex_add: :real # real -> real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__add" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))))
-; c.complex.complex_div
-; :real # real -> real # real -> real # real
+; c.complex.complex_div: :real # real -> real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__div" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))))
-; c.complex.complex_exp
-; :real # real -> real # real
+; c.complex.complex_exp: :real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__exp" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
-; c.complex.complex_inv
-; :real # real -> real # real
+; c.complex.complex_inv: :real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__inv" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
-; c.complex.complex_mul
-; :real # real -> real # real -> real # real
+; c.complex.complex_mul: :real # real -> real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__mul" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))))
-; c.complex.complex_neg
-; :real # real -> real # real
+; c.complex.complex_neg: :real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__neg" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
-; c.complex.complex_of_num
-; :num -> real # real
+; c.complex.complex_of_num: :num -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__of__num" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
-; c.complex.complex_of_real
-; :real -> real # real
+; c.complex.complex_of_real: :real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__of__real" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
-; c.complex.complex_pow
-; :real # real -> num -> real # real
+; c.complex.complex_pow: :real # real -> num -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__pow" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))))
-; c.complex.complex_scalar_lmul
-; :real -> real # real -> real # real
+; c.complex.complex_scalar_lmul: :real -> real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__scalar__lmul" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))))
-; c.complex.complex_scalar_rmul
-; :real # real -> real -> real # real
+; c.complex.complex_scalar_rmul: :real # real -> real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__scalar__rmul" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))))
-; c.complex.complex_sub
-; :real # real -> real # real -> real # real
+; c.complex.complex_sub: :real # real -> real # real -> real # real
 (constant_definition "c_2Ecomplex_2Ecomplex__sub" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))))
-; c.complex.conj
-; :real # real -> real # real
+; c.complex.conj: :real # real -> real # real
 (constant_definition "c_2Ecomplex_2Econj" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
-; c.complex.i
-; :real # real
+; c.complex.i: :real # real
 (constant_definition "c_2Ecomplex_2Ei" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal"))
-; c.complex.modu
-; :real # real -> real
+; c.complex.modu: :real # real -> real
 (constant_definition "c_2Ecomplex_2Emodu" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "ty_2Erealax_2Ereal"))
-; complex.COMPLEX_LEMMA1
-; ∀a b c d.     (a * c − b * d) pow 2 + (a * d + b * c) pow 2 =     (a pow 2 + b pow 2) * (c pow 2 + d pow 2)
+; complex.COMPLEX_LEMMA1: ∀V0a V1b V2c V3d.     (V0a * V2c − V1b * V3d) pow 2 + (V0a * V3d + V1b * V2c) pow 2 =     (V0a pow 2 + V1b pow 2) * (V2c pow 2 + V3d pow 2)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__LEMMA1" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0a" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1b" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2c" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V3d" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__sub" ("c_2Erealax_2Ereal__mul" "V0a" "V2c") ("c_2Erealax_2Ereal__mul" "V1b" "V3d")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Erealax_2Ereal__add" ("c_2Erealax_2Ereal__mul" "V0a" "V3d") ("c_2Erealax_2Ereal__mul" "V1b" "V2c")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))) ("c_2Erealax_2Ereal__mul" ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" "V0a" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" "V1b" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))) ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" "V2c" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" "V3d" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))))))))
-; complex.COMPLEX_LEMMA2
-; ∀x y. abs x ≤ sqrt (x pow 2 + y pow 2)
+; complex.COMPLEX_LEMMA2: ∀V0x V1y. abs V0x ≤ sqrt (V0x pow 2 + V1y pow 2)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__LEMMA2" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Eabs" "V0x") ("c_2Etransc_2Esqrt" ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" "V0x" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" "V1y" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))))
-; complex.RE
-; ∀z. RE z = FST z
+; complex.RE: ∀V0z. RE V0z = FST V0z
 (axiom "thm_2Ecomplex_2ERE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2ERE" "V0z") (("c_2Epair_2EFST" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0z")))))
-; complex.IM
-; ∀z. IM z = SND z
+; complex.IM: ∀V0z. IM V0z = SND V0z
 (axiom "thm_2Ecomplex_2EIM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2EIM" "V0z") (("c_2Epair_2ESND" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0z")))))
-; complex.COMPLEX
-; ∀z. (RE z,IM z) = z
+; complex.COMPLEX: ∀V0z. (RE V0z,IM V0z) = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2EIM" "V0z")) "V0z"))))
-; complex.COMPLEX_RE_IM_EQ
-; ∀z w. (z = w) ⇔ (RE z = RE w) ∧ (IM z = IM w)
+; complex.COMPLEX_RE_IM_EQ: ∀V0z V1w. (V0z = V1w) ⇔ (RE V0z = RE V1w) ∧ (IM V0z = IM V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__RE__IM__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2ERE" "V1w")) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2EIM" "V1w")))))))))
-; complex.complex_of_real
-; ∀x. complex_of_real x = (x,0)
+; complex.complex_of_real: ∀V0x. complex_of_real V0x = (V0x,0)
 (axiom "thm_2Ecomplex_2Ecomplex__of__real" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__of__real" "V0x") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0"))))))
-; complex.RE_COMPLEX_OF_REAL
-; ∀x. RE (complex_of_real x) = x
+; complex.RE_COMPLEX_OF_REAL: ∀V0x. RE (complex_of_real V0x) = V0x
 (conjecture "thm_2Ecomplex_2ERE__COMPLEX__OF__REAL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2ERE" ("c_2Ecomplex_2Ecomplex__of__real" "V0x")) "V0x"))))
-; complex.IM_COMPLEX_OF_REAL
-; ∀x. IM (complex_of_real x) = 0
+; complex.IM_COMPLEX_OF_REAL: ∀V0x. IM (complex_of_real V0x) = 0
 (conjecture "thm_2Ecomplex_2EIM__COMPLEX__OF__REAL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2EIM" ("c_2Ecomplex_2Ecomplex__of__real" "V0x")) ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0")))))
-; complex.complex_of_num
-; ∀n. &n = complex_of_real (&n)
+; complex.complex_of_num: ∀V0n. &V0n = complex_of_real (&V0n)
 (axiom "thm_2Ecomplex_2Ecomplex__of__num" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__of__num" "V0n") ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Ereal_2Ereal__of__num" "V0n"))))))
-; complex.COMPLEX_0
-; 0 = complex_of_real 0
+; complex.COMPLEX_0: 0 = complex_of_real 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__0" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0") ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0"))))
-; complex.COMPLEX_1
-; 1 = complex_of_real 1
+; complex.COMPLEX_1: 1 = complex_of_real 1
 (conjecture "thm_2Ecomplex_2ECOMPLEX__1" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))
-; complex.COMPLEX_10
-; 1 ≠ 0
+; complex.COMPLEX_10: 1 ≠ 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__10" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))
-; complex.COMPLEX_0_THM
-; ∀z. (z = 0) ⇔ (RE z pow 2 + IM z pow 2 = 0)
+; complex.COMPLEX_0_THM: ∀V0z. (V0z = 0) ⇔ (RE V0z pow 2 + IM V0z pow 2 = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__0__THM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ecomplex_2ERE" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ecomplex_2EIM" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))) ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0"))))))
-; complex.i
-; i = (0,1)
+; complex.i: i = (0,1)
 (axiom "thm_2Ecomplex_2Ei" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "c_2Ecomplex_2Ei" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))
-; complex.complex_add
-; ∀z w. z + w = (RE z + RE w,IM z + IM w)
+; complex.complex_add: ∀V0z V1w. V0z + V1w = (RE V0z + RE V1w,IM V0z + IM V1w)
 (axiom "thm_2Ecomplex_2Ecomplex__add" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__add" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2ERE" "V1w")) ("c_2Erealax_2Ereal__add" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2EIM" "V1w")))))))))
-; complex.complex_neg
-; ∀z. -z = (-RE z,-IM z)
+; complex.complex_neg: ∀V0z. -V0z = (-RE V0z,-IM V0z)
 (axiom "thm_2Ecomplex_2Ecomplex__neg" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" "V0z") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__neg" ("c_2Ecomplex_2ERE" "V0z")) ("c_2Erealax_2Ereal__neg" ("c_2Ecomplex_2EIM" "V0z")))))))
-; complex.complex_mul
-; ∀z w. z * w = (RE z * RE w − IM z * IM w,RE z * IM w + IM z * RE w)
+; complex.complex_mul: ∀V0z V1w.     V0z * V1w =     (RE V0z * RE V1w − IM V0z * IM V1w,RE V0z * IM V1w + IM V0z * RE V1w)
 (axiom "thm_2Ecomplex_2Ecomplex__mul" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ereal_2Ereal__sub" ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2ERE" "V1w")) ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2EIM" "V1w"))) ("c_2Erealax_2Ereal__add" ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2EIM" "V1w")) ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2ERE" "V1w"))))))))))
-; complex.complex_inv
-; ∀z.     inv z =     (RE z / (RE z pow 2 + IM z pow 2),-IM z / (RE z pow 2 + IM z pow 2))
+; complex.complex_inv: ∀V0z.     inv V0z =     (RE V0z / (RE V0z pow 2 + IM V0z pow 2),      -IM V0z / (RE V0z pow 2 + IM V0z pow 2))
 (axiom "thm_2Ecomplex_2Ecomplex__inv" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" "V0z") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ecomplex_2ERE" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ecomplex_2EIM" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))) ("c_2Ereal_2E_2F" ("c_2Erealax_2Ereal__neg" ("c_2Ecomplex_2EIM" "V0z")) ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ecomplex_2ERE" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ecomplex_2EIM" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))))
-; complex.complex_sub
-; ∀z w. z − w = z + -w
+; complex.complex_sub: ∀V0z V1w. V0z − V1w = V0z + -V1w
 (axiom "thm_2Ecomplex_2Ecomplex__sub" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__add" "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V1w"))))))))
-; complex.complex_div
-; ∀z w. z / w = z * inv w
+; complex.complex_div: ∀V0z V1w. V0z / V1w = V0z * inv V1w
 (axiom "thm_2Ecomplex_2Ecomplex__div" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__inv" "V1w"))))))))
-; complex.COMPLEX_ADD_COMM
-; ∀z w. z + w = w + z
+; complex.COMPLEX_ADD_COMM: ∀V0z V1w. V0z + V1w = V1w + V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__COMM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__add" "V1w" "V0z")))))))
-; complex.COMPLEX_ADD_ASSOC
-; ∀z w v. z + (w + v) = z + w + v
+; complex.COMPLEX_ADD_ASSOC: ∀V0z V1w V2v. V0z + (V1w + V2v) = V0z + V1w + V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__ASSOC" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" ("c_2Ecomplex_2Ecomplex__add" "V1w" "V2v")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") "V2v")))))))))
-; complex.COMPLEX_ADD_RID
-; ∀z. z + 0 = z
+; complex.COMPLEX_ADD_RID: ∀V0z. V0z + 0 = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__RID" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) "V0z"))))
-; complex.COMPLEX_ADD_LID
-; ∀z. 0 + z = z
+; complex.COMPLEX_ADD_LID: ∀V0z. 0 + V0z = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__LID" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0") "V0z") "V0z"))))
-; complex.COMPLEX_ADD_RINV
-; ∀z. z + -z = 0
+; complex.COMPLEX_ADD_RINV: ∀V0z. V0z + -V0z = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__RINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_ADD_LINV
-; ∀z. -z + z = 0
+; complex.COMPLEX_ADD_LINV: ∀V0z. -V0z + V0z = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__LINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__neg" "V0z") "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_MUL_COMM
-; ∀z w. z * w = w * z
+; complex.COMPLEX_MUL_COMM: ∀V0z V1w. V0z * V1w = V1w * V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__COMM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V0z")))))))
-; complex.COMPLEX_MUL_ASSOC
-; ∀z w v. z * (w * v) = z * w * v
+; complex.COMPLEX_MUL_ASSOC: ∀V0z V1w V2v. V0z * (V1w * V2v) = V0z * V1w * V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__ASSOC" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V2v")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") "V2v")))))))))
-; complex.COMPLEX_MUL_RID
-; ∀z. z * 1 = z
+; complex.COMPLEX_MUL_RID: ∀V0z. V0z * 1 = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__RID" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V0z"))))
-; complex.COMPLEX_MUL_LID
-; ∀z. 1 * z = z
+; complex.COMPLEX_MUL_LID: ∀V0z. 1 * V0z = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__LID" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0z") "V0z"))))
-; complex.COMPLEX_MUL_RINV
-; ∀z. z ≠ 0 ⇒ (z * inv z = 1)
+; complex.COMPLEX_MUL_RINV: ∀V0z. V0z ≠ 0 ⇒ (V0z * inv V0z = 1)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__RINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__inv" "V0z")) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; complex.COMPLEX_MUL_LINV
-; ∀z. z ≠ 0 ⇒ (inv z * z = 1)
+; complex.COMPLEX_MUL_LINV: ∀V0z. V0z ≠ 0 ⇒ (inv V0z * V0z = 1)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__LINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__inv" "V0z") "V0z") ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; complex.COMPLEX_ADD_LDISTRIB
-; ∀z w v. z * (w + v) = z * w + z * v
+; complex.COMPLEX_ADD_LDISTRIB: ∀V0z V1w V2v. V0z * (V1w + V2v) = V0z * V1w + V0z * V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__LDISTRIB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__add" "V1w" "V2v")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v"))))))))))
-; complex.COMPLEX_ADD_RDISTRIB
-; ∀z w v. (z + w) * v = z * v + w * v
+; complex.COMPLEX_ADD_RDISTRIB: ∀V0z V1w V2v. (V0z + V1w) * V2v = V0z * V2v + V1w * V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__RDISTRIB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") "V2v") ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v") ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V2v"))))))))))
-; complex.COMPLEX_EQ_LADD
-; ∀z w v. (z + w = z + v) ⇔ (w = v)
+; complex.COMPLEX_EQ_LADD: ∀V0z V1w V2v. (V0z + V1w = V0z + V2v) ⇔ (V1w = V2v)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__LADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__add" "V0z" "V2v")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" "V2v")))))))))
-; complex.COMPLEX_EQ_RADD
-; ∀z w v. (z + v = w + v) ⇔ (z = w)
+; complex.COMPLEX_EQ_RADD: ∀V0z V1w V2v. (V0z + V2v = V1w + V2v) ⇔ (V0z = V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__RADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V2v") ("c_2Ecomplex_2Ecomplex__add" "V1w" "V2v")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w")))))))))
-; complex.COMPLEX_ADD_RID_UNIQ
-; ∀z w. (z + w = z) ⇔ (w = 0)
+; complex.COMPLEX_ADD_RID_UNIQ: ∀V0z V1w. (V0z + V1w = V0z) ⇔ (V1w = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__RID__UNIQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") "V0z") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))))))
-; complex.COMPLEX_ADD_LID_UNIQ
-; ∀z w. (z + w = w) ⇔ (z = 0)
+; complex.COMPLEX_ADD_LID_UNIQ: ∀V0z V1w. (V0z + V1w = V1w) ⇔ (V0z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__LID__UNIQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") "V1w") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))))))
-; complex.COMPLEX_NEGNEG
-; ∀z. - -z = z
+; complex.COMPLEX_NEGNEG: ∀V0z. - -V0z = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEGNEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) "V0z"))))
-; complex.COMPLEX_NEG_EQ
-; ∀z w. (-z = w) ⇔ (z = -w)
+; complex.COMPLEX_NEG_EQ: ∀V0z V1w. (-V0z = V1w) ⇔ (V0z = -V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" "V0z") "V1w") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V1w"))))))))
-; complex.COMPLEX_EQ_NEG
-; ∀z w. (-z = -w) ⇔ (z = w)
+; complex.COMPLEX_EQ_NEG: ∀V0z V1w. (-V0z = -V1w) ⇔ (V0z = V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__NEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V1w")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w")))))))
-; complex.COMPLEX_RNEG_UNIQ
-; ∀z w. (z + w = 0) ⇔ (w = -z)
+; complex.COMPLEX_RNEG_UNIQ: ∀V0z V1w. (V0z + V1w = 0) ⇔ (V1w = -V0z)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__RNEG__UNIQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__neg" "V0z"))))))))
-; complex.COMPLEX_LNEG_UNIQ
-; ∀z w. (z + w = 0) ⇔ (z = -w)
+; complex.COMPLEX_LNEG_UNIQ: ∀V0z V1w. (V0z + V1w = 0) ⇔ (V0z = -V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__LNEG__UNIQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V1w"))))))))
-; complex.COMPLEX_NEG_ADD
-; ∀z w. -(z + w) = -z + -w
+; complex.COMPLEX_NEG_ADD: ∀V0z V1w. -(V0z + V1w) = -V0z + -V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__ADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__neg" "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V1w"))))))))
-; complex.COMPLEX_MUL_RZERO
-; ∀z. z * 0 = 0
+; complex.COMPLEX_MUL_RZERO: ∀V0z. V0z * 0 = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__RZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_MUL_LZERO
-; ∀z. 0 * z = 0
+; complex.COMPLEX_MUL_LZERO: ∀V0z. 0 * V0z = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__LZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0") "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_NEG_LMUL
-; ∀z w. -(z * w) = -z * w
+; complex.COMPLEX_NEG_LMUL: ∀V0z V1w. -(V0z * V1w) = -V0z * V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__LMUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__neg" "V0z") "V1w")))))))
-; complex.COMPLEX_NEG_RMUL
-; ∀z w. -(z * w) = z * -w
+; complex.COMPLEX_NEG_RMUL: ∀V0z V1w. -(V0z * V1w) = V0z * -V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__RMUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V1w"))))))))
-; complex.COMPLEX_NEG_MUL2
-; ∀z w. -z * -w = z * w
+; complex.COMPLEX_NEG_MUL2: ∀V0z V1w. -V0z * -V1w = V0z * V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__MUL2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__neg" "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V1w")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")))))))
-; complex.COMPLEX_ENTIRE
-; ∀z w. (z * w = 0) ⇔ (z = 0) ∨ (w = 0)
+; complex.COMPLEX_ENTIRE: ∀V0z V1w. (V0z * V1w = 0) ⇔ (V0z = 0) ∨ (V1w = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ENTIRE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))))))
-; complex.COMPLEX_NEG_0
-; -0 = 0
+; complex.COMPLEX_NEG_0: -0 = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__0" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))
-; complex.COMPLEX_NEG_EQ0
-; ∀z. (-z = 0) ⇔ (z = 0)
+; complex.COMPLEX_NEG_EQ0: ∀V0z. (-V0z = 0) ⇔ (V0z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__EQ0" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))))
-; complex.COMPLEX_SUB_REFL
-; ∀z. z − z = 0
+; complex.COMPLEX_SUB_REFL: ∀V0z. V0z − V0z = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__REFL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_SUB_RZERO
-; ∀z. z − 0 = z
+; complex.COMPLEX_SUB_RZERO: ∀V0z. V0z − 0 = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__RZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) "V0z"))))
-; complex.COMPLEX_SUB_LZERO
-; ∀z. 0 − z = -z
+; complex.COMPLEX_SUB_LZERO: ∀V0z. 0 − V0z = -V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__LZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0") "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V0z")))))
-; complex.COMPLEX_SUB_LNEG
-; ∀z w. -z − w = -(z + w)
+; complex.COMPLEX_SUB_LNEG: ∀V0z V1w. -V0z − V1w = -(V0z + V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__LNEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__neg" "V0z") "V1w") ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w"))))))))
-; complex.COMPLEX_SUB_NEG2
-; ∀z w. -z − -w = w − z
+; complex.COMPLEX_SUB_NEG2: ∀V0z V1w. -V0z − -V1w = V1w − V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__NEG2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__neg" "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V1w")) ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V0z")))))))
-; complex.COMPLEX_NEG_SUB
-; ∀z w. -(z − w) = w − z
+; complex.COMPLEX_NEG_SUB: ∀V0z V1w. -(V0z − V1w) = V1w − V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__SUB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V0z")))))))
-; complex.COMPLEX_SUB_RNEG
-; ∀z w. z − -w = z + w
+; complex.COMPLEX_SUB_RNEG: ∀V0z V1w. V0z − -V1w = V0z + V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__RNEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V1w")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w")))))))
-; complex.COMPLEX_SUB_ADD
-; ∀z w. z − w + w = z
+; complex.COMPLEX_SUB_ADD: ∀V0z V1w. V0z − V1w + V1w = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__ADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") "V1w") "V0z"))))))
-; complex.COMPLEX_SUB_ADD2
-; ∀z w. w + (z − w) = z
+; complex.COMPLEX_SUB_ADD2: ∀V0z V1w. V1w + (V0z − V1w) = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__ADD2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V1w" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w")) "V0z"))))))
-; complex.COMPLEX_ADD_SUB
-; ∀z w. z + w − z = w
+; complex.COMPLEX_ADD_SUB: ∀V0z V1w. V0z + V1w − V0z = V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__SUB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") "V0z") "V1w"))))))
-; complex.COMPLEX_SUB_SUB
-; ∀z w. z − w − z = -w
+; complex.COMPLEX_SUB_SUB: ∀V0z V1w. V0z − V1w − V0z = -V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__SUB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V1w")))))))
-; complex.COMPLEX_SUB_SUB2
-; ∀z w. z − (z − w) = w
+; complex.COMPLEX_SUB_SUB2: ∀V0z V1w. V0z − (V0z − V1w) = V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__SUB2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w")) "V1w"))))))
-; complex.COMPLEX_ADD_SUB2
-; ∀z w. z − (z + w) = -w
+; complex.COMPLEX_ADD_SUB2: ∀V0z V1w. V0z − (V0z + V1w) = -V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__SUB2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__neg" "V1w")))))))
-; complex.COMPLEX_ADD2_SUB2
-; ∀z w u v. z + w − (u + v) = z − u + (w − v)
+; complex.COMPLEX_ADD2_SUB2: ∀V0z V1w V2u V3v. V0z + V1w − (V2u + V3v) = V0z − V2u + (V1w − V3v)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD2__SUB2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2u" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V3v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__add" "V2u" "V3v")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V2u") ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V3v"))))))))))))
-; complex.COMPLEX_SUB_TRIANGLE
-; ∀z w v. z − w + (w − v) = z − v
+; complex.COMPLEX_SUB_TRIANGLE: ∀V0z V1w V2v. V0z − V1w + (V1w − V2v) = V0z − V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__TRIANGLE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V2v")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V2v")))))))))
-; complex.COMPLEX_SUB_0
-; ∀z w. (z − w = 0) ⇔ (z = w)
+; complex.COMPLEX_SUB_0: ∀V0z V1w. (V0z − V1w = 0) ⇔ (V0z = V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__0" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w")))))))
-; complex.COMPLEX_EQ_SUB_LADD
-; ∀z w v. (z = w − v) ⇔ (z + v = w)
+; complex.COMPLEX_EQ_SUB_LADD: ∀V0z V1w V2v. (V0z = V1w − V2v) ⇔ (V0z + V2v = V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__SUB__LADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V2v")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V2v") "V1w")))))))))
-; complex.COMPLEX_EQ_SUB_RADD
-; ∀z w v. (z − w = v) ⇔ (z = v + w)
+; complex.COMPLEX_EQ_SUB_RADD: ∀V0z V1w V2v. (V0z − V1w = V2v) ⇔ (V0z = V2v + V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__SUB__RADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") "V2v") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__add" "V2v" "V1w"))))))))))
-; complex.COMPLEX_MUL_RNEG
-; ∀z w. z * -w = -(z * w)
+; complex.COMPLEX_MUL_RNEG: ∀V0z V1w. V0z * -V1w = -(V0z * V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__RNEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V1w")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w"))))))))
-; complex.COMPLEX_MUL_LNEG
-; ∀z w. -z * w = -(z * w)
+; complex.COMPLEX_MUL_LNEG: ∀V0z V1w. -V0z * V1w = -(V0z * V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__LNEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__neg" "V0z") "V1w") ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w"))))))))
-; complex.COMPLEX_SUB_LDISTRIB
-; ∀z w v. z * (w − v) = z * w − z * v
+; complex.COMPLEX_SUB_LDISTRIB: ∀V0z V1w V2v. V0z * (V1w − V2v) = V0z * V1w − V0z * V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__LDISTRIB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V2v")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v"))))))))))
-; complex.COMPLEX_SUB_RDISTRIB
-; ∀z w v. (z − w) * v = z * v − w * v
+; complex.COMPLEX_SUB_RDISTRIB: ∀V0z V1w V2v. (V0z − V1w) * V2v = V0z * V2v − V1w * V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__RDISTRIB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") "V2v") ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v") ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V2v"))))))))))
-; complex.COMPLEX_DIFFSQ
-; ∀z w. (z + w) * (z − w) = z * z − w * w
+; complex.COMPLEX_DIFFSQ: ∀V0z V1w. (V0z + V1w) * (V0z − V1w) = V0z * V0z − V1w * V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIFFSQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V0z") ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V1w"))))))))
-; complex.COMPLEX_EQ_LMUL
-; ∀z w v. (z * w = z * v) ⇔ (z = 0) ∨ (w = v)
+; complex.COMPLEX_EQ_LMUL: ∀V0z V1w V2v. (V0z * V1w = V0z * V2v) ⇔ (V0z = 0) ∨ (V1w = V2v)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__LMUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" "V2v"))))))))))
-; complex.COMPLEX_EQ_RMUL
-; ∀z w v. (z * v = w * v) ⇔ (v = 0) ∨ (z = w)
+; complex.COMPLEX_EQ_RMUL: ∀V0z V1w V2v. (V0z * V2v = V1w * V2v) ⇔ (V2v = 0) ∨ (V0z = V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__RMUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v") ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V2v")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V2v" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w"))))))))))
-; complex.COMPLEX_EQ_LMUL2
-; ∀z w v. z ≠ 0 ⇒ ((w = v) ⇔ (z * w = z * v))
+; complex.COMPLEX_EQ_LMUL2: ∀V0z V1w V2v. V0z ≠ 0 ⇒ ((V1w = V2v) ⇔ (V0z * V1w = V0z * V2v))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__LMUL2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" "V2v") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v")))))))))))
-; complex.COMPLEX_EQ_RMUL_IMP
-; ∀z w v. z ≠ 0 ∧ (w * z = v * z) ⇒ (w = v)
+; complex.COMPLEX_EQ_RMUL_IMP: ∀V0z V1w V2v. V0z ≠ 0 ∧ (V1w * V0z = V2v * V0z) ⇒ (V1w = V2v)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__RMUL__IMP" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V0z") ("c_2Ecomplex_2Ecomplex__mul" "V2v" "V0z"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" "V2v")))))))))
-; complex.COMPLEX_EQ_LMUL_IMP
-; ∀z w v. z ≠ 0 ∧ (z * w = z * v) ⇒ (w = v)
+; complex.COMPLEX_EQ_LMUL_IMP: ∀V0z V1w V2v. V0z ≠ 0 ∧ (V0z * V1w = V0z * V2v) ⇒ (V1w = V2v)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__LMUL__IMP" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" "V2v")))))))))
-; complex.COMPLEX_NEG_INV
-; ∀z. z ≠ 0 ⇒ (inv (-z) = -inv z)
+; complex.COMPLEX_NEG_INV: ∀V0z. V0z ≠ 0 ⇒ (inv (-V0z) = -inv V0z)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__INV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__inv" "V0z")))))))
-; complex.COMPLEX_INV_MUL
-; ∀z w. z ≠ 0 ∧ w ≠ 0 ⇒ (inv (z * w) = inv z * inv w)
+; complex.COMPLEX_INV_MUL: ∀V0z V1w. V0z ≠ 0 ∧ V1w ≠ 0 ⇒ (inv (V0z * V1w) = inv V0z * inv V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__MUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__inv" "V0z") ("c_2Ecomplex_2Ecomplex__inv" "V1w")))))))))
-; complex.COMPLEX_INVINV
-; ∀z. z ≠ 0 ⇒ (inv (inv z) = z)
+; complex.COMPLEX_INVINV: ∀V0z. V0z ≠ 0 ⇒ (inv (inv V0z) = V0z)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INVINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__inv" "V0z")) "V0z")))))
-; complex.COMPLEX_LINV_UNIQ
-; ∀z w. (z * w = 1) ⇒ (z = inv w)
+; complex.COMPLEX_LINV_UNIQ: ∀V0z V1w. (V0z * V1w = 1) ⇒ (V0z = inv V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__LINV__UNIQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__inv" "V1w"))))))))
-; complex.COMPLEX_RINV_UNIQ
-; ∀z w. (z * w = 1) ⇒ (w = inv z)
+; complex.COMPLEX_RINV_UNIQ: ∀V0z V1w. (V0z * V1w = 1) ⇒ (V1w = inv V0z)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__RINV__UNIQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__inv" "V0z"))))))))
-; complex.COMPLEX_INV_0
-; inv 0 = 0
+; complex.COMPLEX_INV_0: inv 0 = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__0" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))
-; complex.COMPLEX_INV1
-; inv 1 = 1
+; complex.COMPLEX_INV1: inv 1 = 1
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV1" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; complex.COMPLEX_INV_INV
-; ∀z. inv (inv z) = z
+; complex.COMPLEX_INV_INV: ∀V0z. inv (inv V0z) = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__INV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__inv" "V0z")) "V0z"))))
-; complex.COMPLEX_INV_NEG
-; ∀z. inv (-z) = -inv z
+; complex.COMPLEX_INV_NEG: ∀V0z. inv (-V0z) = -inv V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__NEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__inv" "V0z"))))))
-; complex.COMPLEX_INV_EQ_0
-; ∀z. (inv z = 0) ⇔ (z = 0)
+; complex.COMPLEX_INV_EQ_0: ∀V0z. (inv V0z = 0) ⇔ (V0z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__EQ__0" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))))
-; complex.COMPLEX_INV_NZ
-; ∀z. z ≠ 0 ⇒ inv z ≠ 0
+; complex.COMPLEX_INV_NZ: ∀V0z. V0z ≠ 0 ⇒ inv V0z ≠ 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__NZ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))))
-; complex.COMPLEX_INV_INJ
-; ∀z w. (inv z = inv w) ⇔ (z = w)
+; complex.COMPLEX_INV_INJ: ∀V0z V1w. (inv V0z = inv V1w) ⇔ (V0z = V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__INJ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" "V0z") ("c_2Ecomplex_2Ecomplex__inv" "V1w")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w")))))))
-; complex.COMPLEX_NEG_LDIV
-; ∀z w. -(z / w) = -z / w
+; complex.COMPLEX_NEG_LDIV: ∀V0z V1w. -(V0z / V1w) = -V0z / V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__LDIV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__neg" "V0z") "V1w")))))))
-; complex.COMPLEX_NEG_RDIV
-; ∀z w. -(z / w) = z / -w
+; complex.COMPLEX_NEG_RDIV: ∀V0z V1w. -(V0z / V1w) = V0z / -V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__RDIV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__div" "V0z" ("c_2Ecomplex_2Ecomplex__neg" "V1w"))))))))
-; complex.COMPLEX_NEG_DIV2
-; ∀z w. -z / -w = z / w
+; complex.COMPLEX_NEG_DIV2: ∀V0z V1w. -V0z / -V1w = V0z / V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__DIV2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__neg" "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V1w")) ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w")))))))
-; complex.COMPLEX_INV_1OVER
-; ∀z. inv z = 1 / z
+; complex.COMPLEX_INV_1OVER: ∀V0z. inv V0z = 1 / V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__1OVER" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" "V0z") ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0z")))))
-; complex.COMPLEX_DIV1
-; ∀z. z / 1 = z
+; complex.COMPLEX_DIV1: ∀V0z. V0z / 1 = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV1" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" "V0z" ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V0z"))))
-; complex.COMPLEX_DIV_ADD
-; ∀z w v. z / v + w / v = (z + w) / v
+; complex.COMPLEX_DIV_ADD: ∀V0z V1w V2v. V0z / V2v + V1w / V2v = (V0z + V1w) / V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__ADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V2v") ("c_2Ecomplex_2Ecomplex__div" "V1w" "V2v")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w") "V2v")))))))))
-; complex.COMPLEX_DIV_SUB
-; ∀z w v. z / v − w / v = (z − w) / v
+; complex.COMPLEX_DIV_SUB: ∀V0z V1w V2v. V0z / V2v − V1w / V2v = (V0z − V1w) / V2v
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__SUB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V2v") ("c_2Ecomplex_2Ecomplex__div" "V1w" "V2v")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w") "V2v")))))))))
-; complex.COMPLEX_DIV_RMUL_CANCEL
-; ∀v z w. v ≠ 0 ⇒ (z * v / (w * v) = z / w)
+; complex.COMPLEX_DIV_RMUL_CANCEL: ∀V0v V1z V2w. V0v ≠ 0 ⇒ (V1z * V0v / (V2w * V0v) = V1z / V2w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__RMUL__CANCEL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0v" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__mul" "V1z" "V0v") ("c_2Ecomplex_2Ecomplex__mul" "V2w" "V0v")) ("c_2Ecomplex_2Ecomplex__div" "V1z" "V2w"))))))))))
-; complex.COMPLEX_DIV_LMUL_CANCEL
-; ∀v z w. v ≠ 0 ⇒ (v * z / (v * w) = z / w)
+; complex.COMPLEX_DIV_LMUL_CANCEL: ∀V0v V1z V2w. V0v ≠ 0 ⇒ (V0v * V1z / (V0v * V2w) = V1z / V2w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__LMUL__CANCEL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0v" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__mul" "V0v" "V1z") ("c_2Ecomplex_2Ecomplex__mul" "V0v" "V2w")) ("c_2Ecomplex_2Ecomplex__div" "V1z" "V2w"))))))))))
-; complex.COMPLEX_DIV_DENOM_CANCEL
-; ∀z w v. z ≠ 0 ⇒ (w / z / (v / z) = w / v)
+; complex.COMPLEX_DIV_DENOM_CANCEL: ∀V0z V1w V2v. V0z ≠ 0 ⇒ (V1w / V0z / (V2v / V0z) = V1w / V2v)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__DENOM__CANCEL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__div" "V1w" "V0z") ("c_2Ecomplex_2Ecomplex__div" "V2v" "V0z")) ("c_2Ecomplex_2Ecomplex__div" "V1w" "V2v"))))))))))
-; complex.COMPLEX_DIV_INNER_CANCEL
-; ∀z w v. z ≠ 0 ⇒ (w / z * (z / v) = w / v)
+; complex.COMPLEX_DIV_INNER_CANCEL: ∀V0z V1w V2v. V0z ≠ 0 ⇒ (V1w / V0z * (V0z / V2v) = V1w / V2v)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__INNER__CANCEL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__div" "V1w" "V0z") ("c_2Ecomplex_2Ecomplex__div" "V0z" "V2v")) ("c_2Ecomplex_2Ecomplex__div" "V1w" "V2v"))))))))))
-; complex.COMPLEX_DIV_OUTER_CANCEL
-; ∀z w v. z ≠ 0 ⇒ (z / w * (v / z) = v / w)
+; complex.COMPLEX_DIV_OUTER_CANCEL: ∀V0z V1w V2v. V0z ≠ 0 ⇒ (V0z / V1w * (V2v / V0z) = V2v / V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__OUTER__CANCEL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__div" "V2v" "V0z")) ("c_2Ecomplex_2Ecomplex__div" "V2v" "V1w"))))))))))
-; complex.COMPLEX_DIV_MUL2
-; ∀z w. z ≠ 0 ∧ w ≠ 0 ⇒ ∀v. v / w = z * v / (z * w)
+; complex.COMPLEX_DIV_MUL2: ∀V0z V1w. V0z ≠ 0 ∧ V1w ≠ 0 ⇒ ∀V2v. V2v / V1w = V0z * V2v / (V0z * V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__MUL2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" "V2v" "V1w") ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v") ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")))))))))))
-; complex.COMPLEX_ADD_RAT
-; ∀z w u v. w ≠ 0 ∧ v ≠ 0 ⇒ (z / w + u / v = (z * v + w * u) / (w * v))
+; complex.COMPLEX_ADD_RAT: ∀V0z V1w V2u V3v.     V1w ≠ 0 ∧ V3v ≠ 0 ⇒     (V0z / V1w + V2u / V3v = (V0z * V3v + V1w * V2u) / (V1w * V3v))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__RAT" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2u" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V3v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V3v" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__div" "V2u" "V3v")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V3v") ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V2u")) ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V3v")))))))))))))
-; complex.COMPLEX_SUB_RAT
-; ∀z w u v. w ≠ 0 ∧ v ≠ 0 ⇒ (z / w − u / v = (z * v − w * u) / (w * v))
+; complex.COMPLEX_SUB_RAT: ∀V0z V1w V2u V3v.     V1w ≠ 0 ∧ V3v ≠ 0 ⇒     (V0z / V1w − V2u / V3v = (V0z * V3v − V1w * V2u) / (V1w * V3v))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__RAT" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2u" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V3v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V3v" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w") ("c_2Ecomplex_2Ecomplex__div" "V2u" "V3v")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V3v") ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V2u")) ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V3v")))))))))))))
-; complex.COMPLEX_DIV_LZERO
-; ∀z. 0 / z = 0
+; complex.COMPLEX_DIV_LZERO: ∀V0z. 0 / V0z = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__LZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0") "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_DIV_REFL
-; ∀z. z ≠ 0 ⇒ (z / z = 1)
+; complex.COMPLEX_DIV_REFL: ∀V0z. V0z ≠ 0 ⇒ (V0z / V0z = 1)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__REFL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" "V0z" "V0z") ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; complex.COMPLEX_SUB_INV2
-; ∀z w. z ≠ 0 ∧ w ≠ 0 ⇒ (inv z − inv w = (w − z) / (z * w))
+; complex.COMPLEX_SUB_INV2: ∀V0z V1w. V0z ≠ 0 ∧ V1w ≠ 0 ⇒ (inv V0z − inv V1w = (V1w − V0z) / (V0z * V1w))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__INV2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__inv" "V0z") ("c_2Ecomplex_2Ecomplex__inv" "V1w")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V0z") ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")))))))))
-; complex.COMPLEX_EQ_RDIV_EQ
-; ∀z w v. v ≠ 0 ⇒ ((z = w / v) ⇔ (z * v = w))
+; complex.COMPLEX_EQ_RDIV_EQ: ∀V0z V1w V2v. V2v ≠ 0 ⇒ ((V0z = V1w / V2v) ⇔ (V0z * V2v = V1w))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__RDIV__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V2v" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__div" "V1w" "V2v")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V2v") "V1w"))))))))))
-; complex.COMPLEX_EQ_LDIV_EQ
-; ∀z w v. v ≠ 0 ⇒ ((z / v = w) ⇔ (z = w * v))
+; complex.COMPLEX_EQ_LDIV_EQ: ∀V0z V1w V2v. V2v ≠ 0 ⇒ ((V0z / V2v = V1w) ⇔ (V0z = V1w * V2v))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__LDIV__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2v" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V2v" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" "V0z" "V2v") "V1w") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__mul" "V1w" "V2v")))))))))))
-; complex.COMPLEX_OF_REAL_EQ
-; ∀x y. (complex_of_real x = complex_of_real y) ⇔ (x = y)
+; complex.COMPLEX_OF_REAL_EQ: ∀V0x V1y. (complex_of_real V0x = complex_of_real V1y) ⇔ (V0x = V1y)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__REAL__EQ" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__of__real" "V0x") ("c_2Ecomplex_2Ecomplex__of__real" "V1y")) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0x" "V1y")))))))
-; complex.COMPLEX_OF_REAL_ADD
-; ∀x y. complex_of_real x + complex_of_real y = complex_of_real (x + y)
+; complex.COMPLEX_OF_REAL_ADD: ∀V0x V1y.     complex_of_real V0x + complex_of_real V1y = complex_of_real (V0x + V1y)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__REAL__ADD" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__of__real" "V0x") ("c_2Ecomplex_2Ecomplex__of__real" "V1y")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Erealax_2Ereal__add" "V0x" "V1y"))))))))
-; complex.COMPLEX_OF_REAL_NEG
-; ∀x. -complex_of_real x = complex_of_real (-x)
+; complex.COMPLEX_OF_REAL_NEG: ∀V0x. -complex_of_real V0x = complex_of_real (-V0x)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__REAL__NEG" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__of__real" "V0x")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Erealax_2Ereal__neg" "V0x"))))))
-; complex.COMPLEX_OF_REAL_MUL
-; ∀x y. complex_of_real x * complex_of_real y = complex_of_real (x * y)
+; complex.COMPLEX_OF_REAL_MUL: ∀V0x V1y.     complex_of_real V0x * complex_of_real V1y = complex_of_real (V0x * V1y)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__REAL__MUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__of__real" "V0x") ("c_2Ecomplex_2Ecomplex__of__real" "V1y")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Erealax_2Ereal__mul" "V0x" "V1y"))))))))
-; complex.COMPLEX_OF_REAL_INV
-; ∀x. inv (complex_of_real x) = complex_of_real x⁻¹
+; complex.COMPLEX_OF_REAL_INV: ∀V0x. inv (complex_of_real V0x) = complex_of_real V0x⁻¹
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__REAL__INV" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__of__real" "V0x")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Erealax_2Einv" "V0x"))))))
-; complex.COMPLEX_OF_REAL_SUB
-; ∀x y. complex_of_real x − complex_of_real y = complex_of_real (x − y)
+; complex.COMPLEX_OF_REAL_SUB: ∀V0x V1y.     complex_of_real V0x − complex_of_real V1y = complex_of_real (V0x − V1y)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__REAL__SUB" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__of__real" "V0x") ("c_2Ecomplex_2Ecomplex__of__real" "V1y")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Ereal_2Ereal__sub" "V0x" "V1y"))))))))
-; complex.COMPLEX_OF_REAL_DIV
-; ∀x y. complex_of_real x / complex_of_real y = complex_of_real (x / y)
+; complex.COMPLEX_OF_REAL_DIV: ∀V0x V1y.     complex_of_real V0x / complex_of_real V1y = complex_of_real (V0x / V1y)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__REAL__DIV" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__of__real" "V0x") ("c_2Ecomplex_2Ecomplex__of__real" "V1y")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Ereal_2E_2F" "V0x" "V1y"))))))))
-; complex.COMPLEX_OF_NUM_EQ
-; ∀m n. (&m = &n) ⇔ (m = n)
+; complex.COMPLEX_OF_NUM_EQ: ∀V0m V1n. (&V0m = &V1n) ⇔ (V0m = V1n)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__NUM__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__of__num" "V0m") ("c_2Ecomplex_2Ecomplex__of__num" "V1n")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n")))))))
-; complex.COMPLEX_OF_NUM_ADD
-; ∀m n. &m + &n = &(m + n)
+; complex.COMPLEX_OF_NUM_ADD: ∀V0m V1n. &V0m + &V1n = &(V0m + V1n)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__NUM__ADD" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__of__num" "V0m") ("c_2Ecomplex_2Ecomplex__of__num" "V1n")) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2E_2B" "V0m" "V1n"))))))))
-; complex.COMPLEX_OF_NUM_MUL
-; ∀m n. &m * &n = &(m * n)
+; complex.COMPLEX_OF_NUM_MUL: ∀V0m V1n. &V0m * &V1n = &(V0m * V1n)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__OF__NUM__MUL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__of__num" "V0m") ("c_2Ecomplex_2Ecomplex__of__num" "V1n")) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2E_2A" "V0m" "V1n"))))))))
-; complex.complex_scalar_lmul
-; ∀k z. k * z = (k * RE z,k * IM z)
+; complex.complex_scalar_lmul: ∀V0k V1z. V0k * V1z = (V0k * RE V1z,V0k * IM V1z)
 (axiom "thm_2Ecomplex_2Ecomplex__scalar__lmul" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" "V0k" ("c_2Ecomplex_2ERE" "V1z")) ("c_2Erealax_2Ereal__mul" "V0k" ("c_2Ecomplex_2EIM" "V1z")))))))))
-; complex.complex_scalar_rmul
-; ∀z k. z * k = (RE z * k,IM z * k)
+; complex.complex_scalar_rmul: ∀V0z V1k. V0z * V1k = (RE V0z * V1k,IM V0z * V1k)
 (axiom "thm_2Ecomplex_2Ecomplex__scalar__rmul" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1k" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V0z" "V1k") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2ERE" "V0z") "V1k") ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2EIM" "V0z") "V1k"))))))))
-; complex.COMPLEX_SCALAR_LMUL
-; ∀k l z. k * (l * z) = k * l * z
+; complex.COMPLEX_SCALAR_LMUL: ∀V0k V1l V2z. V0k * (V1l * V2z) = V0k * V1l * V2z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V1l" "V2z")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Erealax_2Ereal__mul" "V0k" "V1l") "V2z")))))))))
-; complex.COMPLEX_SCALAR_LMUL_NEG
-; ∀k z. -(k * z) = -k * z
+; complex.COMPLEX_SCALAR_LMUL_NEG: ∀V0k V1z. -(V0k * V1z) = -V0k * V1z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__NEG" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Erealax_2Ereal__neg" "V0k") "V1z")))))))
-; complex.COMPLEX_NEG_SCALAR_LMUL
-; ∀k z. k * -z = -k * z
+; complex.COMPLEX_NEG_SCALAR_LMUL: ∀V0k V1z. V0k * -V1z = -V0k * V1z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Ecomplex__neg" "V1z")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Erealax_2Ereal__neg" "V0k") "V1z")))))))
-; complex.COMPLEX_SCALAR_LMUL_ADD
-; ∀k l z. (k + l) * z = k * z + l * z
+; complex.COMPLEX_SCALAR_LMUL_ADD: ∀V0k V1l V2z. (V0k + V1l) * V2z = V0k * V2z + V1l * V2z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__ADD" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Erealax_2Ereal__add" "V0k" "V1l") "V2z") ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V1l" "V2z"))))))))))
-; complex.COMPLEX_SCALAR_LMUL_SUB
-; ∀k l z. (k − l) * z = k * z − l * z
+; complex.COMPLEX_SCALAR_LMUL_SUB: ∀V0k V1l V2z. (V0k − V1l) * V2z = V0k * V2z − V1l * V2z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__SUB" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2Ereal__sub" "V0k" "V1l") "V2z") ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V1l" "V2z"))))))))))
-; complex.COMPLEX_ADD_SCALAR_LMUL
-; ∀k z w. k * (z + w) = k * z + k * w
+; complex.COMPLEX_ADD_SCALAR_LMUL: ∀V0k V1z V2w. V0k * (V1z + V2w) = V0k * V1z + V0k * V2w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Ecomplex__add" "V1z" "V2w")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2w"))))))))))
-; complex.COMPLEX_SUB_SCALAR_LMUL
-; ∀k z w. k * (z − w) = k * z − k * w
+; complex.COMPLEX_SUB_SCALAR_LMUL: ∀V0k V1z V2w. V0k * (V1z − V2w) = V0k * V1z − V0k * V2w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Ecomplex__sub" "V1z" "V2w")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2w"))))))))))
-; complex.COMPLEX_MUL_SCALAR_LMUL2
-; ∀k l z w. k * z * (l * w) = k * l * (z * w)
+; complex.COMPLEX_MUL_SCALAR_LMUL2: ∀V0k V1l V2z V3w. V0k * V2z * (V1l * V3w) = V0k * V1l * (V2z * V3w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__SCALAR__LMUL2" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V3w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V1l" "V3w")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Erealax_2Ereal__mul" "V0k" "V1l") ("c_2Ecomplex_2Ecomplex__mul" "V2z" "V3w"))))))))))))
-; complex.COMPLEX_LMUL_SCALAR_LMUL
-; ∀k z w. k * z * w = k * (z * w)
+; complex.COMPLEX_LMUL_SCALAR_LMUL: ∀V0k V1z V2w. V0k * V1z * V2w = V0k * (V1z * V2w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__LMUL__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") "V2w") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Ecomplex__mul" "V1z" "V2w"))))))))))
-; complex.COMPLEX_RMUL_SCALAR_LMUL
-; ∀k z w. z * (k * w) = k * (z * w)
+; complex.COMPLEX_RMUL_SCALAR_LMUL: ∀V0k V1z V2w. V1z * (V0k * V2w) = V0k * (V1z * V2w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__RMUL__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V1z" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2w")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Ecomplex__mul" "V1z" "V2w"))))))))))
-; complex.COMPLEX_SCALAR_LMUL_ZERO
-; ∀z. 0 * z = 0
+; complex.COMPLEX_SCALAR_LMUL_ZERO: ∀V0z. 0 * V0z = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__ZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_ZERO_SCALAR_LMUL
-; ∀k. k * 0 = 0
+; complex.COMPLEX_ZERO_SCALAR_LMUL: ∀V0k. V0k * 0 = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ZERO__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_SCALAR_LMUL_ONE
-; ∀z. 1 * z = z
+; complex.COMPLEX_SCALAR_LMUL_ONE: ∀V0z. 1 * V0z = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__ONE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0z") "V0z"))))
-; complex.COMPLEX_SCALAR_LMUL_NEG1
-; ∀z. -1 * z = -z
+; complex.COMPLEX_SCALAR_LMUL_NEG1: ∀V0z. -1 * V0z = -V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__NEG1" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V0z") ("c_2Ecomplex_2Ecomplex__neg" "V0z")))))
-; complex.COMPLEX_DOUBLE
-; ∀z. z + z = 2 * z
+; complex.COMPLEX_DOUBLE: ∀V0z. V0z + V0z = 2 * V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DOUBLE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__add" "V0z" "V0z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "V0z")))))
-; complex.COMPLEX_SCALAR_LMUL_ENTIRE
-; ∀k z. (k * z = 0) ⇔ (k = 0) ∨ (z = 0)
+; complex.COMPLEX_SCALAR_LMUL_ENTIRE: ∀V0k V1z. (V0k * V1z = 0) ⇔ (V0k = 0) ∨ (V1z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__ENTIRE" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0k" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))))))
-; complex.COMPLEX_EQ_SCALAR_LMUL
-; ∀k z w. (k * z = k * w) ⇔ (k = 0) ∨ (z = w)
+; complex.COMPLEX_EQ_SCALAR_LMUL: ∀V0k V1z V2w. (V0k * V1z = V0k * V2w) ⇔ (V0k = 0) ∨ (V1z = V2w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EQ__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2w")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0k" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1z" "V2w"))))))))))
-; complex.COMPLEX_SCALAR_LMUL_EQ
-; ∀k l z. (k * z = l * z) ⇔ (k = l) ∨ (z = 0)
+; complex.COMPLEX_SCALAR_LMUL_EQ: ∀V0k V1l V2z. (V0k * V2z = V1l * V2z) ⇔ (V0k = V1l) ∨ (V2z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__EQ" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V1l" "V2z")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0k" "V1l") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V2z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))))))))
-; complex.COMPLEX_SCALAR_LMUL_EQ1
-; ∀k z. (k * z = z) ⇔ (k = 1) ∨ (z = 0)
+; complex.COMPLEX_SCALAR_LMUL_EQ1: ∀V0k V1z. (V0k * V1z = V1z) ⇔ (V0k = 1) ∨ (V1z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__EQ1" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") "V1z") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0k" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))))))
-; complex.COMPLEX_INV_SCALAR_LMUL
-; ∀k z. k ≠ 0 ∧ z ≠ 0 ⇒ (inv (k * z) = k⁻¹ * inv z)
+; complex.COMPLEX_INV_SCALAR_LMUL: ∀V0k V1z. V0k ≠ 0 ∧ V1z ≠ 0 ⇒ (inv (V0k * V1z) = V0k⁻¹ * inv V1z)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V0k" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Erealax_2Einv" "V0k") ("c_2Ecomplex_2Ecomplex__inv" "V1z")))))))))
-; complex.COMPLEX_SCALAR_LMUL_DIV2
-; ∀k l z w. l ≠ 0 ∧ w ≠ 0 ⇒ (k * z / (l * w) = k / l * (z / w))
+; complex.COMPLEX_SCALAR_LMUL_DIV2: ∀V0k V1l V2z V3w.     V1l ≠ 0 ∧ V3w ≠ 0 ⇒ (V0k * V2z / (V1l * V3w) = V0k / V1l * (V2z / V3w))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__LMUL__DIV2" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V3w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") "V1l" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V3w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V2z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V1l" "V3w")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2E_2F" "V0k" "V1l") ("c_2Ecomplex_2Ecomplex__div" "V2z" "V3w")))))))))))))
-; complex.COMPLEX_SCALAR_MUL_COMM
-; ∀k z. k * z = z * k
+; complex.COMPLEX_SCALAR_MUL_COMM: ∀V0k V1z. V0k * V1z = V1z * V0k
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__MUL__COMM" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z") ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V1z" "V0k")))))))
-; complex.COMPLEX_SCALAR_RMUL
-; ∀k l z. z * k * l = z * (k * l)
+; complex.COMPLEX_SCALAR_RMUL: ∀V0k V1l V2z. V2z * V0k * V1l = V2z * (V0k * V1l)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__RMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" "V0k") "V1l") ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" ("c_2Erealax_2Ereal__mul" "V0k" "V1l"))))))))))
-; complex.COMPLEX_SCALAR_RMUL_NEG
-; ∀k z. -(z * k) = z * -k
+; complex.COMPLEX_SCALAR_RMUL_NEG: ∀V0k V1z. -(V1z * V0k) = V1z * -V0k
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__RMUL__NEG" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V1z" "V0k")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V1z" ("c_2Erealax_2Ereal__neg" "V0k"))))))))
-; complex.COMPLEX_NEG_SCALAR_RMUL
-; ∀k z. -z * k = z * -k
+; complex.COMPLEX_NEG_SCALAR_RMUL: ∀V0k V1z. -V1z * V0k = V1z * -V0k
 (conjecture "thm_2Ecomplex_2ECOMPLEX__NEG__SCALAR__RMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" ("c_2Ecomplex_2Ecomplex__neg" "V1z") "V0k") ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V1z" ("c_2Erealax_2Ereal__neg" "V0k"))))))))
-; complex.COMPLEX_SCALAR_RMUL_ADD
-; ∀k l z. z * (k + l) = z * k + z * l
+; complex.COMPLEX_SCALAR_RMUL_ADD: ∀V0k V1l V2z. V2z * (V0k + V1l) = V2z * V0k + V2z * V1l
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__RMUL__ADD" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" ("c_2Erealax_2Ereal__add" "V0k" "V1l")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" "V0k") ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" "V1l"))))))))))
-; complex.COMPLEX_RSCALAR_RMUL_SUB
-; ∀k l z. z * (k − l) = z * k − z * l
+; complex.COMPLEX_RSCALAR_RMUL_SUB: ∀V0k V1l V2z. V2z * (V0k − V1l) = V2z * V0k − V2z * V1l
 (conjecture "thm_2Ecomplex_2ECOMPLEX__RSCALAR__RMUL__SUB" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1l" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" ("c_2Ereal_2Ereal__sub" "V0k" "V1l")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" "V0k") ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2z" "V1l"))))))))))
-; complex.COMPLEX_ADD_RSCALAR_RMUL
-; ∀k z w. (z + w) * k = z * k + w * k
+; complex.COMPLEX_ADD_RSCALAR_RMUL: ∀V0k V1z V2w. (V1z + V2w) * V0k = V1z * V0k + V2w * V0k
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ADD__RSCALAR__RMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" ("c_2Ecomplex_2Ecomplex__add" "V1z" "V2w") "V0k") ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V1z" "V0k") ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2w" "V0k"))))))))))
-; complex.COMPLEX_SUB_SCALAR_RMUL
-; ∀k z w. (z − w) * k = z * k − w * k
+; complex.COMPLEX_SUB_SCALAR_RMUL: ∀V0k V1z V2w. (V1z − V2w) * V0k = V1z * V0k − V2w * V0k
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SUB__SCALAR__RMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" ("c_2Ecomplex_2Ecomplex__sub" "V1z" "V2w") "V0k") ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V1z" "V0k") ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V2w" "V0k"))))))))))
-; complex.COMPLEX_SCALAR_RMUL_ZERO
-; ∀z. z * 0 = 0
+; complex.COMPLEX_SCALAR_RMUL_ZERO: ∀V0z. V0z * 0 = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__RMUL__ZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V0z" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_ZERO_SCALAR_RMUL
-; ∀k. 0 * k = 0
+; complex.COMPLEX_ZERO_SCALAR_RMUL: ∀V0k. 0 * V0k = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__ZERO__SCALAR__RMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0") "V0k") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_SCALAR_RMUL_ONE
-; ∀z. z * 1 = z
+; complex.COMPLEX_SCALAR_RMUL_ONE: ∀V0z. V0z * 1 = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__RMUL__ONE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V0z" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V0z"))))
-; complex.COMPLEX_SCALAR_RMUL_NEG1
-; ∀z. z * -1 = -z
+; complex.COMPLEX_SCALAR_RMUL_NEG1: ∀V0z. V0z * -1 = -V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__SCALAR__RMUL__NEG1" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__rmul" "V0z" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Ecomplex_2Ecomplex__neg" "V0z")))))
-; complex.conj
-; ∀z. conj z = (RE z,-IM z)
+; complex.conj: ∀V0z. conj V0z = (RE V0z,-IM V0z)
 (axiom "thm_2Ecomplex_2Econj" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" "V0z") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2ERE" "V0z") ("c_2Erealax_2Ereal__neg" ("c_2Ecomplex_2EIM" "V0z")))))))
-; complex.CONJ_REAL_REFL
-; ∀x. conj (complex_of_real x) = complex_of_real x
+; complex.CONJ_REAL_REFL: ∀V0x. conj (complex_of_real V0x) = complex_of_real V0x
 (conjecture "thm_2Ecomplex_2ECONJ__REAL__REFL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__of__real" "V0x")) ("c_2Ecomplex_2Ecomplex__of__real" "V0x")))))
-; complex.CONJ_NUM_REFL
-; ∀n. conj (&n) = &n
+; complex.CONJ_NUM_REFL: ∀V0n. conj (&V0n) = &V0n
 (conjecture "thm_2Ecomplex_2ECONJ__NUM__REFL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__of__num" "V0n")) ("c_2Ecomplex_2Ecomplex__of__num" "V0n")))))
-; complex.CONJ_ADD
-; ∀z w. conj (z + w) = conj z + conj w
+; complex.CONJ_ADD: ∀V0z V1w. conj (V0z + V1w) = conj V0z + conj V1w
 (conjecture "thm_2Ecomplex_2ECONJ__ADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__add" ("c_2Ecomplex_2Econj" "V0z") ("c_2Ecomplex_2Econj" "V1w"))))))))
-; complex.CONJ_NEG
-; ∀z. conj (-z) = -conj z
+; complex.CONJ_NEG: ∀V0z. conj (-V0z) = -conj V0z
 (conjecture "thm_2Ecomplex_2ECONJ__NEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) ("c_2Ecomplex_2Ecomplex__neg" ("c_2Ecomplex_2Econj" "V0z"))))))
-; complex.CONJ_SUB
-; ∀z w. conj (z − w) = conj z − conj w
+; complex.CONJ_SUB: ∀V0z V1w. conj (V0z − V1w) = conj V0z − conj V1w
 (conjecture "thm_2Ecomplex_2ECONJ__SUB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__sub" ("c_2Ecomplex_2Econj" "V0z") ("c_2Ecomplex_2Econj" "V1w"))))))))
-; complex.CONJ_MUL
-; ∀z w. conj (z * w) = conj z * conj w
+; complex.CONJ_MUL: ∀V0z V1w. conj (V0z * V1w) = conj V0z * conj V1w
 (conjecture "thm_2Ecomplex_2ECONJ__MUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Econj" "V0z") ("c_2Ecomplex_2Econj" "V1w"))))))))
-; complex.CONJ_INV
-; ∀z. conj (inv z) = inv (conj z)
+; complex.CONJ_INV: ∀V0z. conj (inv V0z) = inv (conj V0z)
 (conjecture "thm_2Ecomplex_2ECONJ__INV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__inv" "V0z")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Econj" "V0z"))))))
-; complex.CONJ_DIV
-; ∀z w. conj (z / w) = conj z / conj w
+; complex.CONJ_DIV: ∀V0z V1w. conj (V0z / V1w) = conj V0z / conj V1w
 (conjecture "thm_2Ecomplex_2ECONJ__DIV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Econj" "V0z") ("c_2Ecomplex_2Econj" "V1w"))))))))
-; complex.CONJ_SCALAR_LMUL
-; ∀k z. conj (k * z) = k * conj z
+; complex.CONJ_SCALAR_LMUL: ∀V0k V1z. conj (V0k * V1z) = V0k * conj V1z
 (conjecture "thm_2Ecomplex_2ECONJ__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" ("c_2Ecomplex_2Econj" "V1z"))))))))
-; complex.CONJ_CONJ
-; ∀z. conj (conj z) = z
+; complex.CONJ_CONJ: ∀V0z. conj (conj V0z) = V0z
 (conjecture "thm_2Ecomplex_2ECONJ__CONJ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Econj" "V0z")) "V0z"))))
-; complex.CONJ_EQ
-; ∀z w. (conj z = w) ⇔ (z = conj w)
+; complex.CONJ_EQ: ∀V0z V1w. (conj V0z = V1w) ⇔ (V0z = conj V1w)
 (conjecture "thm_2Ecomplex_2ECONJ__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" "V0z") "V1w") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Econj" "V1w"))))))))
-; complex.CONJ_EQ2
-; ∀z w. (conj z = conj w) ⇔ (z = w)
+; complex.CONJ_EQ2: ∀V0z V1w. (conj V0z = conj V1w) ⇔ (V0z = V1w)
 (conjecture "thm_2Ecomplex_2ECONJ__EQ2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" "V0z") ("c_2Ecomplex_2Econj" "V1w")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w")))))))
-; complex.COMPLEX_MUL_RCONJ
-; ∀z. z * conj z = complex_of_real (RE z pow 2 + IM z pow 2)
+; complex.COMPLEX_MUL_RCONJ: ∀V0z. V0z * conj V0z = complex_of_real (RE V0z pow 2 + IM V0z pow 2)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__RCONJ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Econj" "V0z")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ecomplex_2ERE" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ecomplex_2EIM" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))
-; complex.COMPLEX_MUL_LCONJ
-; ∀z. conj z * z = complex_of_real (RE z pow 2 + IM z pow 2)
+; complex.COMPLEX_MUL_LCONJ: ∀V0z. conj V0z * V0z = complex_of_real (RE V0z pow 2 + IM V0z pow 2)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__LCONJ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Econj" "V0z") "V0z") ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ecomplex_2ERE" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ecomplex_2EIM" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))
-; complex.CONJ_ZERO
-; conj 0 = 0
+; complex.CONJ_ZERO: conj 0 = 0
 (conjecture "thm_2Ecomplex_2ECONJ__ZERO" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Econj" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))
-; complex.modu
-; ∀z. modu z = sqrt (RE z pow 2 + IM z pow 2)
+; complex.modu: ∀V0z. modu V0z = sqrt (RE V0z pow 2 + IM V0z pow 2)
 (axiom "thm_2Ecomplex_2Emodu" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" "V0z") ("c_2Etransc_2Esqrt" ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ecomplex_2ERE" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ecomplex_2EIM" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))
-; complex.arg
-; ∀z.     arg z =     if 0 ≤ IM z then acs (RE z / modu z) else -acs (RE z / modu z) + 2 * pi
+; complex.arg: ∀V0z.     arg V0z =     if 0 ≤ IM V0z then acs (RE V0z / modu V0z)     else -acs (RE V0z / modu V0z) + 2 * pi
 (axiom "thm_2Ecomplex_2Earg" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Earg" "V0z") (("c_2Ebool_2ECOND" "ty_2Erealax_2Ereal") ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") ("c_2Ecomplex_2EIM" "V0z")) ("c_2Etransc_2Eacs" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z"))) ("c_2Erealax_2Ereal__add" ("c_2Erealax_2Ereal__neg" ("c_2Etransc_2Eacs" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))) ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "c_2Etransc_2Epi")))))))
-; complex.MODU_POW2
-; ∀z. modu z pow 2 = RE z pow 2 + IM z pow 2
+; complex.MODU_POW2: ∀V0z. modu V0z pow 2 = RE V0z pow 2 + IM V0z pow 2
 (conjecture "thm_2Ecomplex_2EMODU__POW2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ereal_2Epow" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Epow" ("c_2Ecomplex_2ERE" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ecomplex_2EIM" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))
-; complex.RE_IM_LE_MODU
-; ∀z. abs (RE z) ≤ modu z ∧ abs (IM z) ≤ modu z
+; complex.RE_IM_LE_MODU: ∀V0z. abs (RE V0z) ≤ modu V0z ∧ abs (IM V0z) ≤ modu V0z
 (conjecture "thm_2Ecomplex_2ERE__IM__LE__MODU" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ebool_2E_2F_5C" ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Eabs" ("c_2Ecomplex_2ERE" "V0z")) ("c_2Ecomplex_2Emodu" "V0z")) ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Eabs" ("c_2Ecomplex_2EIM" "V0z")) ("c_2Ecomplex_2Emodu" "V0z"))))))
-; complex.MODU_POS
-; ∀z. 0 ≤ modu z
+; complex.MODU_POS: ∀V0z. 0 ≤ modu V0z
 (conjecture "thm_2Ecomplex_2EMODU__POS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") ("c_2Ecomplex_2Emodu" "V0z")))))
-; complex.COMPLEX_MUL_RCONJ1
-; ∀z. z * conj z = complex_of_real (modu z pow 2)
+; complex.COMPLEX_MUL_RCONJ1: ∀V0z. V0z * conj V0z = complex_of_real (modu V0z pow 2)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__RCONJ1" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" "V0z" ("c_2Ecomplex_2Econj" "V0z")) ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Ereal_2Epow" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))
-; complex.COMPLEX_MUL_LCONJ1
-; ∀z. conj z * z = complex_of_real (modu z pow 2)
+; complex.COMPLEX_MUL_LCONJ1: ∀V0z. conj V0z * V0z = complex_of_real (modu V0z pow 2)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__LCONJ1" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Econj" "V0z") "V0z") ("c_2Ecomplex_2Ecomplex__of__real" ("c_2Ereal_2Epow" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))
-; complex.MODU_NEG
-; ∀z. modu (-z) = modu z
+; complex.MODU_NEG: ∀V0z. modu (-V0z) = modu V0z
 (conjecture "thm_2Ecomplex_2EMODU__NEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) ("c_2Ecomplex_2Emodu" "V0z")))))
-; complex.MODU_SUB
-; ∀z w. modu (z − w) = modu (w − z)
+; complex.MODU_SUB: ∀V0z V1w. modu (V0z − V1w) = modu (V1w − V0z)
 (conjecture "thm_2Ecomplex_2EMODU__SUB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w")) ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__sub" "V1w" "V0z"))))))))
-; complex.MODU_CONJ
-; ∀z. modu (conj z) = modu z
+; complex.MODU_CONJ: ∀V0z. modu (conj V0z) = modu V0z
 (conjecture "thm_2Ecomplex_2EMODU__CONJ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Econj" "V0z")) ("c_2Ecomplex_2Emodu" "V0z")))))
-; complex.MODU_MUL
-; ∀z w. modu (z * w) = modu z * modu w
+; complex.MODU_MUL: ∀V0z V1w. modu (V0z * V1w) = modu V0z * modu V1w
 (conjecture "thm_2Ecomplex_2EMODU__MUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V1w")) ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Ecomplex_2Emodu" "V1w"))))))))
-; complex.MODU_0
-; modu 0 = 0
+; complex.MODU_0: modu 0 = 0
 (conjecture "thm_2Ecomplex_2EMODU__0" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0")))
-; complex.MODU_1
-; modu 1 = 1
+; complex.MODU_1: modu 1 = 1
 (conjecture "thm_2Ecomplex_2EMODU__1" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; complex.MODU_COMPLEX_INV
-; ∀z. z ≠ 0 ⇒ (modu (inv z) = (modu z)⁻¹)
+; complex.MODU_COMPLEX_INV: ∀V0z. V0z ≠ 0 ⇒ (modu (inv V0z) = (modu V0z)⁻¹)
 (conjecture "thm_2Ecomplex_2EMODU__COMPLEX__INV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__inv" "V0z")) ("c_2Erealax_2Einv" ("c_2Ecomplex_2Emodu" "V0z")))))))
-; complex.MODU_DIV
-; ∀z w. w ≠ 0 ⇒ (modu (z / w) = modu z / modu w)
+; complex.MODU_DIV: ∀V0z V1w. V1w ≠ 0 ⇒ (modu (V0z / V1w) = modu V0z / modu V1w)
 (conjecture "thm_2Ecomplex_2EMODU__DIV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1w" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w")) ("c_2Ereal_2E_2F" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Ecomplex_2Emodu" "V1w")))))))))
-; complex.MODU_SCALAR_LMUL
-; ∀k z. modu (k * z) = abs k * modu z
+; complex.MODU_SCALAR_LMUL: ∀V0k V1z. modu (V0k * V1z) = abs V0k * modu V1z
 (conjecture "thm_2Ecomplex_2EMODU__SCALAR__LMUL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V0k" "V1z")) ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Eabs" "V0k") ("c_2Ecomplex_2Emodu" "V1z"))))))))
-; complex.MODU_REAL
-; ∀x. modu (complex_of_real x) = abs x
+; complex.MODU_REAL: ∀V0x. modu (complex_of_real V0x) = abs V0x
 (conjecture "thm_2Ecomplex_2EMODU__REAL" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__of__real" "V0x")) ("c_2Ereal_2Eabs" "V0x")))))
-; complex.MODU_NUM
-; ∀n. modu (&n) = &n
+; complex.MODU_NUM: ∀V0n. modu (&V0n) = &V0n
 (conjecture "thm_2Ecomplex_2EMODU__NUM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__of__num" "V0n")) ("c_2Ereal_2Ereal__of__num" "V0n")))))
-; complex.MODU_ZERO
-; ∀z. (z = 0) ⇔ (modu z = 0)
+; complex.MODU_ZERO: ∀V0z. (V0z = 0) ⇔ (modu V0z = 0)
 (conjecture "thm_2Ecomplex_2EMODU__ZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" "V0z") ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0"))))))
-; complex.MODU_NZ
-; ∀z. z ≠ 0 ⇔ 0 < modu z
+; complex.MODU_NZ: ∀V0z. V0z ≠ 0 ⇔ 0 < modu V0z
 (conjecture "thm_2Ecomplex_2EMODU__NZ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") ("c_2Ecomplex_2Emodu" "V0z"))))))
-; complex.MODU_CASES
-; ∀z. (z = 0) ∨ 0 < modu z
+; complex.MODU_CASES: ∀V0z. (V0z = 0) ∨ 0 < modu V0z
 (conjecture "thm_2Ecomplex_2EMODU__CASES" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") ("c_2Ecomplex_2Emodu" "V0z"))))))
-; complex.RE_DIV_MODU_BOUNDS
-; ∀z. z ≠ 0 ⇒ -1 ≤ RE z / modu z ∧ RE z / modu z ≤ 1
+; complex.RE_DIV_MODU_BOUNDS: ∀V0z. V0z ≠ 0 ⇒ -1 ≤ RE V0z / modu V0z ∧ RE V0z / modu V0z ≤ 1
 (conjecture "thm_2Ecomplex_2ERE__DIV__MODU__BOUNDS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" ("c_2Ereal_2Ereal__lte" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z"))) ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z")) ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
-; complex.IM_DIV_MODU_BOUNDS
-; ∀z. z ≠ 0 ⇒ -1 ≤ IM z / modu z ∧ IM z / modu z ≤ 1
+; complex.IM_DIV_MODU_BOUNDS: ∀V0z. V0z ≠ 0 ⇒ -1 ≤ IM V0z / modu V0z ∧ IM V0z / modu V0z ≤ 1
 (conjecture "thm_2Ecomplex_2EIM__DIV__MODU__BOUNDS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" ("c_2Ereal_2Ereal__lte" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Ereal_2E_2F" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2Emodu" "V0z"))) ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2Emodu" "V0z")) ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
-; complex.RE_DIV_MODU_ACS_BOUNDS
-; ∀z. z ≠ 0 ⇒ 0 ≤ acs (RE z / modu z) ∧ acs (RE z / modu z) ≤ pi
+; complex.RE_DIV_MODU_ACS_BOUNDS: ∀V0z. V0z ≠ 0 ⇒ 0 ≤ acs (RE V0z / modu V0z) ∧ acs (RE V0z / modu V0z) ≤ pi
 (conjecture "thm_2Ecomplex_2ERE__DIV__MODU__ACS__BOUNDS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") ("c_2Etransc_2Eacs" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))) ("c_2Ereal_2Ereal__lte" ("c_2Etransc_2Eacs" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z"))) "c_2Etransc_2Epi"))))))
-; complex.IM_DIV_MODU_ASN_BOUNDS
-; ∀z. z ≠ 0 ⇒ -(pi / 2) ≤ asn (IM z / modu z) ∧ asn (IM z / modu z) ≤ pi / 2
+; complex.IM_DIV_MODU_ASN_BOUNDS: ∀V0z.     V0z ≠ 0 ⇒     -(pi / 2) ≤ asn (IM V0z / modu V0z) ∧ asn (IM V0z / modu V0z) ≤ pi / 2
 (conjecture "thm_2Ecomplex_2EIM__DIV__MODU__ASN__BOUNDS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" ("c_2Ereal_2Ereal__lte" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2E_2F" "c_2Etransc_2Epi" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))) ("c_2Etransc_2Easn" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))) ("c_2Ereal_2Ereal__lte" ("c_2Etransc_2Easn" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2Emodu" "V0z"))) ("c_2Ereal_2E_2F" "c_2Etransc_2Epi" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))))
-; complex.RE_DIV_MODU_ACS_COS
-; ∀z. z ≠ 0 ⇒ (cos (acs (RE z / modu z)) = RE z / modu z)
+; complex.RE_DIV_MODU_ACS_COS: ∀V0z. V0z ≠ 0 ⇒ (cos (acs (RE V0z / modu V0z)) = RE V0z / modu V0z)
 (conjecture "thm_2Ecomplex_2ERE__DIV__MODU__ACS__COS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Etransc_2Eacs" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))) ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))))))
-; complex.IM_DIV_MODU_ASN_SIN
-; ∀z. z ≠ 0 ⇒ (sin (asn (IM z / modu z)) = IM z / modu z)
+; complex.IM_DIV_MODU_ASN_SIN: ∀V0z. V0z ≠ 0 ⇒ (sin (asn (IM V0z / modu V0z)) = IM V0z / modu V0z)
 (conjecture "thm_2Ecomplex_2EIM__DIV__MODU__ASN__SIN" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Etransc_2Esin" ("c_2Etransc_2Easn" ("c_2Ereal_2E_2F" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))) ("c_2Ereal_2E_2F" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))))))
-; complex.ARG_COS
-; ∀z. z ≠ 0 ⇒ (cos (arg z) = RE z / modu z)
+; complex.ARG_COS: ∀V0z. V0z ≠ 0 ⇒ (cos (arg V0z) = RE V0z / modu V0z)
 (conjecture "thm_2Ecomplex_2EARG__COS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Ecomplex_2Earg" "V0z")) ("c_2Ereal_2E_2F" ("c_2Ecomplex_2ERE" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))))))
-; complex.ARG_SIN
-; ∀z. z ≠ 0 ⇒ (sin (arg z) = IM z / modu z)
+; complex.ARG_SIN: ∀V0z. V0z ≠ 0 ⇒ (sin (arg V0z) = IM V0z / modu V0z)
 (conjecture "thm_2Ecomplex_2EARG__SIN" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Etransc_2Esin" ("c_2Ecomplex_2Earg" "V0z")) ("c_2Ereal_2E_2F" ("c_2Ecomplex_2EIM" "V0z") ("c_2Ecomplex_2Emodu" "V0z")))))))
-; complex.RE_MODU_ARG
-; ∀z. RE z = modu z * cos (arg z)
+; complex.RE_MODU_ARG: ∀V0z. RE V0z = modu V0z * cos (arg V0z)
 (conjecture "thm_2Ecomplex_2ERE__MODU__ARG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2ERE" "V0z") ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Etransc_2Ecos" ("c_2Ecomplex_2Earg" "V0z")))))))
-; complex.IM_MODU_ARG
-; ∀z. IM z = modu z * sin (arg z)
+; complex.IM_MODU_ARG: ∀V0z. IM V0z = modu V0z * sin (arg V0z)
 (conjecture "thm_2Ecomplex_2EIM__MODU__ARG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2EIM" "V0z") ("c_2Erealax_2Ereal__mul" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Etransc_2Esin" ("c_2Ecomplex_2Earg" "V0z")))))))
-; complex.COMPLEX_TRIANGLE
-; ∀z. modu z * (cos (arg z),sin (arg z)) = z
+; complex.COMPLEX_TRIANGLE: ∀V0z. modu V0z * (cos (arg V0z),sin (arg V0z)) = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__TRIANGLE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ecomplex_2Emodu" "V0z") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Ecomplex_2Earg" "V0z")) ("c_2Etransc_2Esin" ("c_2Ecomplex_2Earg" "V0z")))) "V0z"))))
-; complex.COMPLEX_MODU_ARG_EQ
-; ∀z w. (z = w) ⇔ (modu z = modu w) ∧ (arg z = arg w)
+; complex.COMPLEX_MODU_ARG_EQ: ∀V0z V1w. (V0z = V1w) ⇔ (modu V0z = modu V1w) ∧ (arg V0z = arg V1w)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MODU__ARG__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" "V1w") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" "V0z") ("c_2Ecomplex_2Emodu" "V1w")) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Earg" "V0z") ("c_2Ecomplex_2Earg" "V1w")))))))))
-; complex.MODU_UNIT
-; ∀x y. modu (cos x,sin x) = 1
+; complex.MODU_UNIT: ∀V0x V1y. modu (cos V0x,sin V0x) = 1
 (conjecture "thm_2Ecomplex_2EMODU__UNIT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "A_27a") (lambda "V1y" "A_27a" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V0x") ("c_2Etransc_2Esin" "V0x"))) ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; complex.COMPLEX_MUL_ARG
-; ∀x y. (cos x,sin x) * (cos y,sin y) = (cos (x + y),sin (x + y))
+; complex.COMPLEX_MUL_ARG: ∀V0x V1y.     (cos V0x,sin V0x) * (cos V1y,sin V1y) = (cos (V0x + V1y),sin (V0x + V1y))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__MUL__ARG" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V0x") ("c_2Etransc_2Esin" "V0x")) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V1y") ("c_2Etransc_2Esin" "V1y"))) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Erealax_2Ereal__add" "V0x" "V1y")) ("c_2Etransc_2Esin" ("c_2Erealax_2Ereal__add" "V0x" "V1y")))))))))
-; complex.COMPLEX_INV_ARG
-; ∀x. inv (cos x,sin x) = (cos (-x),sin (-x))
+; complex.COMPLEX_INV_ARG: ∀V0x. inv (cos V0x,sin V0x) = (cos (-V0x),sin (-V0x))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__INV__ARG" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V0x") ("c_2Etransc_2Esin" "V0x"))) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Erealax_2Ereal__neg" "V0x")) ("c_2Etransc_2Esin" ("c_2Erealax_2Ereal__neg" "V0x")))))))
-; complex.COMPLEX_DIV_ARG
-; ∀x y. (cos x,sin x) / (cos y,sin y) = (cos (x − y),sin (x − y))
+; complex.COMPLEX_DIV_ARG: ∀V0x V1y.     (cos V0x,sin V0x) / (cos V1y,sin V1y) = (cos (V0x − V1y),sin (V0x − V1y))
 (conjecture "thm_2Ecomplex_2ECOMPLEX__DIV__ARG" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__div" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V0x") ("c_2Etransc_2Esin" "V0x")) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V1y") ("c_2Etransc_2Esin" "V1y"))) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Ereal_2Ereal__sub" "V0x" "V1y")) ("c_2Etransc_2Esin" ("c_2Ereal_2Ereal__sub" "V0x" "V1y")))))))))
-; complex.complex_pow_def
-; (∀z. z pow 0 = 1) ∧ ∀z n. z pow SUC n = z * z pow n
+; complex.complex_pow_def: (∀V0z. V0z pow 0 = 1) ∧ ∀V1z V2n. V1z pow SUC V2n = V1z * V1z pow V2n
 (axiom "thm_2Ecomplex_2Ecomplex__pow__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V0z" "c_2Enum_2E0") ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V1z" ("c_2Enum_2ESUC" "V2n")) ("c_2Ecomplex_2Ecomplex__mul" "V1z" ("c_2Ecomplex_2Ecomplex__pow" "V1z" "V2n")))))))))
-; complex.complex_pow_def_compute
-; (∀z. z pow 0 = 1) ∧ (∀z n. z pow NUMERAL (BIT1 n) = z * z pow (NUMERAL (BIT1 n) − 1)) ∧ ∀z n. z pow NUMERAL (BIT2 n) = z * z pow NUMERAL (BIT1 n)
+; complex.complex_pow_def_compute: (∀V0z. V0z pow 0 = 1) ∧ (∀V1z V2n.      V1z pow NUMERAL (BIT1 V2n) = V1z * V1z pow (NUMERAL (BIT1 V2n) − 1)) ∧ ∀V3z V4n. V3z pow NUMERAL (BIT2 V4n) = V3z * V3z pow NUMERAL (BIT1 V4n)
 (conjecture "thm_2Ecomplex_2Ecomplex__pow__def__compute" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V0z" "c_2Enum_2E0") ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V1z" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V2n"))) ("c_2Ecomplex_2Ecomplex__mul" "V1z" ("c_2Ecomplex_2Ecomplex__pow" "V1z" ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V2n")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V3z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V3z" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V4n"))) ("c_2Ecomplex_2Ecomplex__mul" "V3z" ("c_2Ecomplex_2Ecomplex__pow" "V3z" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V4n"))))))))))))
-; complex.COMPLEX_POW_0
-; ∀n. 0 pow SUC n = 0
+; complex.COMPLEX_POW_0: ∀V0n. 0 pow SUC V0n = 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0") ("c_2Enum_2ESUC" "V0n")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))
-; complex.COMPLEX_POW_NZ
-; ∀z n. z ≠ 0 ⇒ z pow n ≠ 0
+; complex.COMPLEX_POW_NZ: ∀V0z V1n. V0z ≠ 0 ⇒ V0z pow V1n ≠ 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__NZ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V1n") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")))))))))
-; complex.COMPLEX_POWINV
-; ∀z. z ≠ 0 ⇒ ∀n. inv (z pow n) = inv z pow n
+; complex.COMPLEX_POWINV: ∀V0z. V0z ≠ 0 ⇒ ∀V1n. inv (V0z pow V1n) = inv V0z pow V1n
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POWINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V0z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V1n")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__inv" "V0z") "V1n"))))))))
-; complex.MODU_COMPLEX_POW
-; ∀z n. modu (z pow n) = modu z pow n
+; complex.MODU_COMPLEX_POW: ∀V0z V1n. modu (V0z pow V1n) = modu V0z pow V1n
 (conjecture "thm_2Ecomplex_2EMODU__COMPLEX__POW" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ecomplex_2Emodu" ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V1n")) ("c_2Ereal_2Epow" ("c_2Ecomplex_2Emodu" "V0z") "V1n")))))))
-; complex.COMPLEX_POW_ADD
-; ∀z m n. z pow (m + n) = z pow m * z pow n
+; complex.COMPLEX_POW_ADD: ∀V0z V1m V2n. V0z pow (V1m + V2n) = V0z pow V1m * V0z pow V2n
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__ADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V0z" ("c_2Earithmetic_2E_2B" "V1m" "V2n")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V1m") ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V2n"))))))))))
-; complex.COMPLEX_POW_1
-; ∀z. z pow 1 = z
+; complex.COMPLEX_POW_1: ∀V0z. V0z pow 1 = V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__1" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V0z" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0z"))))
-; complex.COMPLEX_POW_2
-; ∀z. z pow 2 = z * z
+; complex.COMPLEX_POW_2: ∀V0z. V0z pow 2 = V0z * V0z
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V0z" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ecomplex_2Ecomplex__mul" "V0z" "V0z")))))
-; complex.COMPLEX_POW_ONE
-; ∀n. 1 pow n = 1
+; complex.COMPLEX_POW_ONE: ∀V0n. 1 pow V0n = 1
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__ONE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0n") ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; complex.COMPLEX_POW_MUL
-; ∀n z w. (z * w) pow n = z pow n * w pow n
+; complex.COMPLEX_POW_MUL: ∀V0n V1z V2w. (V1z * V2w) pow V0n = V1z pow V0n * V2w pow V0n
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__MUL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__mul" "V1z" "V2w") "V0n") ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__pow" "V1z" "V0n") ("c_2Ecomplex_2Ecomplex__pow" "V2w" "V0n"))))))))))
-; complex.COMPLEX_POW_INV
-; ∀z n. inv z pow n = inv (z pow n)
+; complex.COMPLEX_POW_INV: ∀V0z V1n. inv V0z pow V1n = inv (V0z pow V1n)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__INV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__inv" "V0z") "V1n") ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V1n"))))))))
-; complex.COMPLEX_POW_DIV
-; ∀z w n. (z / w) pow n = z pow n / w pow n
+; complex.COMPLEX_POW_DIV: ∀V0z V1w V2n. (V0z / V1w) pow V2n = V0z pow V2n / V1w pow V2n
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__DIV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__div" "V0z" "V1w") "V2n") ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V2n") ("c_2Ecomplex_2Ecomplex__pow" "V1w" "V2n"))))))))))
-; complex.COMPLEX_POW_L
-; ∀n k z. (k * z) pow n = k pow n * z pow n
+; complex.COMPLEX_POW_L: ∀V0n V1k V2z. (V1k * V2z) pow V0n = V1k pow V0n * V2z pow V0n
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__L" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1k" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V2z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__scalar__lmul" "V1k" "V2z") "V0n") ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2Epow" "V1k" "V0n") ("c_2Ecomplex_2Ecomplex__pow" "V2z" "V0n"))))))))))
-; complex.COMPLEX_POW_ZERO
-; ∀n z. (z pow n = 0) ⇒ (z = 0)
+; complex.COMPLEX_POW_ZERO: ∀V0n V1z. (V1z pow V0n = 0) ⇒ (V1z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__ZERO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V1z" "V0n") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))))))
-; complex.COMPLEX_POW_ZERO_EQ
-; ∀n z. (z pow SUC n = 0) ⇔ (z = 0)
+; complex.COMPLEX_POW_ZERO_EQ: ∀V0n V1z. (V1z pow SUC V0n = 0) ⇔ (V1z = 0)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__ZERO__EQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" "V1z" ("c_2Enum_2ESUC" "V0n")) ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) "V1z" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))))))
-; complex.COMPLEX_POW_POW
-; ∀z m n. (z pow m) pow n = z pow (m * n)
+; complex.COMPLEX_POW_POW: ∀V0z V1m V2n. (V0z pow V1m) pow V2n = V0z pow (V1m * V2n)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__POW__POW" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__pow" "V0z" "V1m") "V2n") ("c_2Ecomplex_2Ecomplex__pow" "V0z" ("c_2Earithmetic_2E_2A" "V1m" "V2n"))))))))))
-; complex.DE_MOIVRE_LEMMA
-; ∀x n. (cos x,sin x) pow n = (cos (&n * x),sin (&n * x))
+; complex.DE_MOIVRE_LEMMA: ∀V0x V1n. (cos V0x,sin V0x) pow V1n = (cos (&V1n * V0x),sin (&V1n * V0x))
 (conjecture "thm_2Ecomplex_2EDE__MOIVRE__LEMMA" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V0x") ("c_2Etransc_2Esin" "V0x")) "V1n") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Ereal__of__num" "V1n") "V0x")) ("c_2Etransc_2Esin" ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Ereal__of__num" "V1n") "V0x")))))))))
-; complex.DE_MOIVRE_THM
-; ∀z n.     (modu z * (cos (arg z),sin (arg z))) pow n =     modu z pow n * (cos (&n * arg z),sin (&n * arg z))
+; complex.DE_MOIVRE_THM: ∀V0z V1n.     (modu V0z * (cos (arg V0z),sin (arg V0z))) pow V1n =     modu V0z pow V1n * (cos (&V1n * arg V0z),sin (&V1n * arg V0z))
 (conjecture "thm_2Ecomplex_2EDE__MOIVRE__THM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ecomplex_2Emodu" "V0z") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Ecomplex_2Earg" "V0z")) ("c_2Etransc_2Esin" ("c_2Ecomplex_2Earg" "V0z")))) "V1n") ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2Epow" ("c_2Ecomplex_2Emodu" "V0z") "V1n") (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Ereal__of__num" "V1n") ("c_2Ecomplex_2Earg" "V0z"))) ("c_2Etransc_2Esin" ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Ereal__of__num" "V1n") ("c_2Ecomplex_2Earg" "V0z")))))))))))
-; complex.complex_exp
-; ∀z. exp z = exp (RE z) * (cos (IM z),sin (IM z))
+; complex.complex_exp: ∀V0z. exp V0z = exp (RE V0z) * (cos (IM V0z),sin (IM V0z))
 (axiom "thm_2Ecomplex_2Ecomplex__exp" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" "V0z") ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Etransc_2Eexp" ("c_2Ecomplex_2ERE" "V0z")) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" ("c_2Ecomplex_2EIM" "V0z")) ("c_2Etransc_2Esin" ("c_2Ecomplex_2EIM" "V0z"))))))))
-; complex.EXP_IMAGINARY
-; ∀x. exp (i * x) = (cos x,sin x)
+; complex.EXP_IMAGINARY: ∀V0x. exp (i * V0x) = (cos V0x,sin V0x)
 (conjecture "thm_2Ecomplex_2EEXP__IMAGINARY" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "c_2Ecomplex_2Ei" "V0x")) (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Etransc_2Ecos" "V0x") ("c_2Etransc_2Esin" "V0x"))))))
-; complex.EULER_FORMULE
-; ∀z. modu z * exp (i * arg z) = z
+; complex.EULER_FORMULE: ∀V0z. modu V0z * exp (i * arg V0z) = V0z
 (conjecture "thm_2Ecomplex_2EEULER__FORMULE" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ecomplex_2Emodu" "V0z") ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__scalar__rmul" "c_2Ecomplex_2Ei" ("c_2Ecomplex_2Earg" "V0z")))) "V0z"))))
-; complex.COMPLEX_EXP_ADD
-; ∀z w. exp (z + w) = exp z * exp w
+; complex.COMPLEX_EXP_ADD: ∀V0z V1w. exp (V0z + V1w) = exp V0z * exp V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__ADD" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__exp" "V0z") ("c_2Ecomplex_2Ecomplex__exp" "V1w"))))))))
-; complex.COMPLEX_EXP_NEG
-; ∀z. exp (-z) = inv (exp z)
+; complex.COMPLEX_EXP_NEG: ∀V0z. exp (-V0z) = inv (exp V0z)
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__NEG" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) ("c_2Ecomplex_2Ecomplex__inv" ("c_2Ecomplex_2Ecomplex__exp" "V0z"))))))
-; complex.COMPLEX_EXP_SUB
-; ∀z w. exp (z − w) = exp z / exp w
+; complex.COMPLEX_EXP_SUB: ∀V0z V1w. exp (V0z − V1w) = exp V0z / exp V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__SUB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__sub" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__div" ("c_2Ecomplex_2Ecomplex__exp" "V0z") ("c_2Ecomplex_2Ecomplex__exp" "V1w"))))))))
-; complex.COMPLEX_EXP_N
-; ∀z n. exp (&n * z) = exp z pow n
+; complex.COMPLEX_EXP_N: ∀V0z V1n. exp (&V1n * V0z) = exp V0z pow V1n
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__N" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__scalar__lmul" ("c_2Ereal_2Ereal__of__num" "V1n") "V0z")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__exp" "V0z") "V1n")))))))
-; complex.COMPLEX_EXP_N2
-; ∀z n. exp (&n * z) = exp z pow n
+; complex.COMPLEX_EXP_N2: ∀V0z V1n. exp (&V1n * V0z) = exp V0z pow V1n
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__N2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__of__num" "V1n") "V0z")) ("c_2Ecomplex_2Ecomplex__pow" ("c_2Ecomplex_2Ecomplex__exp" "V0z") "V1n")))))))
-; complex.COMPLEX_EXP_0
-; exp 0 = 1
+; complex.COMPLEX_EXP_0: exp 0 = 1
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__0" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0")) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; complex.COMPLEX_EXP_NZ
-; ∀z. exp z ≠ 0
+; complex.COMPLEX_EXP_NZ: ∀V0z. exp V0z ≠ 0
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__NZ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__exp" "V0z") ("c_2Ecomplex_2Ecomplex__of__num" "c_2Enum_2E0"))))))
-; complex.COMPLEX_EXP_ADD_MUL
-; ∀z w. exp (z + w) * exp (-z) = exp w
+; complex.COMPLEX_EXP_ADD_MUL: ∀V0z V1w. exp (V0z + V1w) * exp (-V0z) = exp V1w
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__ADD__MUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V1w" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__add" "V0z" "V1w")) ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__neg" "V0z"))) ("c_2Ecomplex_2Ecomplex__exp" "V1w")))))))
-; complex.COMPLEX_EXP_NEG_MUL
-; ∀z. exp z * exp (-z) = 1
+; complex.COMPLEX_EXP_NEG_MUL: ∀V0z. exp V0z * exp (-V0z) = 1
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__NEG__MUL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__exp" "V0z") ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__neg" "V0z"))) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; complex.COMPLEX_EXP_NEG_MUL2
-; ∀z. exp (-z) * exp z = 1
+; complex.COMPLEX_EXP_NEG_MUL2: ∀V0z. exp (-V0z) * exp V0z = 1
 (conjecture "thm_2Ecomplex_2ECOMPLEX__EXP__NEG__MUL2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) (lambda "V0z" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")) ("c_2Ecomplex_2Ecomplex__mul" ("c_2Ecomplex_2Ecomplex__exp" ("c_2Ecomplex_2Ecomplex__neg" "V0z")) ("c_2Ecomplex_2Ecomplex__exp" "V0z")) ("c_2Ecomplex_2Ecomplex__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))

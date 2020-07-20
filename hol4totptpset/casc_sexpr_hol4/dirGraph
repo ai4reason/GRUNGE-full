@@ -1,36 +1,24 @@
-; c.dirGraph.EXCLUDE
-; :(β -> α list) -> (β -> bool) -> β -> α list
+; c.dirGraph.EXCLUDE: :(β -> α list) -> (β -> bool) -> β -> α list
 (constant_definition "c_2EdirGraph_2EEXCLUDE" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" ("ty_2Elist_2Elist" "A_27a")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "A_27b" ("ty_2Elist_2Elist" "A_27a"))))))
-; c.dirGraph.Parents
-; :(α -> β list) -> α -> bool
+; c.dirGraph.Parents: :(α -> β list) -> α -> bool
 (constant_definition "c_2EdirGraph_2EParents" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27b")) ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))))
-; c.dirGraph.REACH
-; :(α -> α list) -> α -> α -> bool
+; c.dirGraph.REACH: :(α -> α list) -> α -> α -> bool
 (constant_definition "c_2EdirGraph_2EREACH" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a")) ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")))))
-; c.dirGraph.REACH_LIST
-; :(α -> α list) -> α list -> α -> bool
+; c.dirGraph.REACH_LIST: :(α -> α list) -> α list -> α -> bool
 (constant_definition "c_2EdirGraph_2EREACH__LIST" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a")) ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "A_27a") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")))))
-; dirGraph.Parents_def
-; ∀G. Parents G = {x | G x ≠ []}
+; dirGraph.Parents_def: ∀V0G. Parents V0G = {V1x | V0G V1x ≠ []}
 (axiom "thm_2EdirGraph_2EParents__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27b"))) (lambda "V0G" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27b")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2EdirGraph_2EParents" "A_27a" "A_27b") "V0G") (("c_2Epred__set_2EGSPEC" "A_27a" "A_27a") (lambda "V1x" "A_27a" (("c_2Epair_2E_2C" "A_27a" "ty_2Emin_2Ebool") "V1x" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27b")) ("V0G" "V1x") ("c_2Elist_2ENIL" "A_27b")))))))))))
-; dirGraph.REACH_def
-; ∀G. REACH G = (λx y. MEM y (G x))^*
+; dirGraph.REACH_def: ∀V0G. REACH V0G = (λV1x V2y. MEM V2y (V0G V1x))^*
 (axiom "thm_2EdirGraph_2EREACH__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a"))) (lambda "V0G" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (("c_2EdirGraph_2EREACH" "A_27a") "V0G") (("c_2Erelation_2ERTC" "A_27a") (lambda "V1x" "A_27a" (lambda "V2y" "A_27a" (("c_2Ebool_2EIN" "A_27a") "V2y" (("c_2Elist_2ELIST__TO__SET" "A_27a") ("V0G" "V1x")))))))))))
-; dirGraph.REACH_LIST_def
-; ∀G nodes y. REACH_LIST G nodes y ⇔ ∃x. MEM x nodes ∧ y ∈ REACH G x
+; dirGraph.REACH_LIST_def: ∀V0G V1nodes V2y.     REACH_LIST V0G V1nodes V2y ⇔ ∃V3x. MEM V3x V1nodes ∧ V2y ∈ REACH V0G V3x
 (axiom "thm_2EdirGraph_2EREACH__LIST__def" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a"))) (lambda "V0G" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "A_27a")) (lambda "V1nodes" ("ty_2Elist_2Elist" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2EdirGraph_2EREACH__LIST" "A_27a") "V0G" "V1nodes" "V2y") (("c_2Ebool_2E_3F" "A_27a") (lambda "V3x" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27a") "V3x" (("c_2Elist_2ELIST__TO__SET" "A_27a") "V1nodes")) (("c_2Ebool_2EIN" "A_27a") "V2y" (("c_2EdirGraph_2EREACH" "A_27a") "V0G" "V3x"))))))))))))))
-; dirGraph.EXCLUDE_def
-; ∀G ex node. EXCLUDE G ex node = if node ∈ ex then [] else G node
+; dirGraph.EXCLUDE_def: ∀V0G V1ex V2node.     EXCLUDE V0G V1ex V2node = if V2node ∈ V1ex then [] else V0G V2node
 (axiom "thm_2EdirGraph_2EEXCLUDE__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" ("ty_2Elist_2Elist" "A_27a"))) (lambda "V0G" ("ty_2Emin_2Efun" "A_27b" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1ex" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27b") (lambda "V2node" "A_27b" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "A_27a")) (("c_2EdirGraph_2EEXCLUDE" "A_27a" "A_27b") "V0G" "V1ex" "V2node") (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebool_2EIN" "A_27b") "V2node" "V1ex") ("c_2Elist_2ENIL" "A_27a") ("V0G" "V2node")))))))))))
-; dirGraph.EXCLUDE_LEM
-; ∀G x l. EXCLUDE G (x INSERT l) = EXCLUDE (EXCLUDE G l) {x}
+; dirGraph.EXCLUDE_LEM: ∀V0G V1x V2l. EXCLUDE V0G (V1x INSERT V2l) = EXCLUDE (EXCLUDE V0G V2l) {V1x}
 (conjecture "thm_2EdirGraph_2EEXCLUDE__LEM" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27b"))) (lambda "V0G" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27b")) (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2l" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27b"))) (("c_2EdirGraph_2EEXCLUDE" "A_27b" "A_27a") "V0G" (("c_2Epred__set_2EINSERT" "A_27a") "V1x" "V2l")) (("c_2EdirGraph_2EEXCLUDE" "A_27b" "A_27a") (("c_2EdirGraph_2EEXCLUDE" "A_27b" "A_27a") "V0G" "V2l") (("c_2Epred__set_2EINSERT" "A_27a") "V1x" ("c_2Epred__set_2EEMPTY" "A_27a"))))))))))))
-; dirGraph.REACH_EXCLUDE
-; ∀G x. REACH (EXCLUDE G x) = (λx' y. x' ∉ x ∧ MEM y (G x'))^*
+; dirGraph.REACH_EXCLUDE: ∀V0G V1x.     REACH (EXCLUDE V0G V1x) =     (λV2x_27 V3y. V2x_27 ∉ V1x ∧ MEM V3y (V0G V2x_27))^*
 (conjecture "thm_2EdirGraph_2EREACH__EXCLUDE" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a"))) (lambda "V0G" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1x" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))) (("c_2EdirGraph_2EREACH" "A_27a") (("c_2EdirGraph_2EEXCLUDE" "A_27a" "A_27a") "V0G" "V1x")) (("c_2Erelation_2ERTC" "A_27a") (lambda "V2x_27" "A_27a" (lambda "V3y" "A_27a" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Ebool_2EIN" "A_27a") "V2x_27" "V1x")) (("c_2Ebool_2EIN" "A_27a") "V3y" (("c_2Elist_2ELIST__TO__SET" "A_27a") ("V0G" "V2x_27"))))))))))))))
-; dirGraph.REACH_LEM1
-; ∀p G seen.     p ∉ seen ⇒     (REACH (EXCLUDE G seen) p =      p INSERT REACH_LIST (EXCLUDE G (p INSERT seen)) (G p))
+; dirGraph.REACH_LEM1: ∀V0p V1G V2seen.     V0p ∉ V2seen ⇒     (REACH (EXCLUDE V1G V2seen) V0p =      V0p INSERT REACH_LIST (EXCLUDE V1G (V0p INSERT V2seen)) (V1G V0p))
 (conjecture "thm_2EdirGraph_2EREACH__LEM1" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0p" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a"))) (lambda "V1G" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2seen" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Ebool_2EIN" "A_27a") "V0p" "V2seen")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2EdirGraph_2EREACH" "A_27a") (("c_2EdirGraph_2EEXCLUDE" "A_27a" "A_27a") "V1G" "V2seen") "V0p") (("c_2Epred__set_2EINSERT" "A_27a") "V0p" (("c_2EdirGraph_2EREACH__LIST" "A_27a") (("c_2EdirGraph_2EEXCLUDE" "A_27a" "A_27a") "V1G" (("c_2Epred__set_2EINSERT" "A_27a") "V0p" "V2seen")) ("V1G" "V0p")))))))))))))
-; dirGraph.REACH_LEM2
-; ∀G x y. REACH G x y ⇒ ∀z. ¬REACH G z y ⇒ REACH (EXCLUDE G {z}) x y
+; dirGraph.REACH_LEM2: ∀V0G V1x V2y.     REACH V0G V1x V2y ⇒     ∀V3z. ¬REACH V0G V3z V2y ⇒ REACH (EXCLUDE V0G {V3z}) V1x V2y
 (conjecture "thm_2EdirGraph_2EREACH__LEM2" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a"))) (lambda "V0G" ("ty_2Emin_2Efun" "A_27a" ("ty_2Elist_2Elist" "A_27a")) (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2EdirGraph_2EREACH" "A_27a") "V0G" "V1x" "V2y") (("c_2Ebool_2E_21" "A_27a") (lambda "V3z" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2EdirGraph_2EREACH" "A_27a") "V0G" "V3z" "V2y")) (("c_2EdirGraph_2EREACH" "A_27a") (("c_2EdirGraph_2EEXCLUDE" "A_27a" "A_27a") "V0G" (("c_2Epred__set_2EINSERT" "A_27a") "V3z" ("c_2Epred__set_2EEMPTY" "A_27a"))) "V1x" "V2y")))))))))))))

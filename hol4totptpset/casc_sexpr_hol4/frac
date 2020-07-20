@@ -1,247 +1,165 @@
 (type_definition "ty_2Efrac_2Efrac" 0)
-; c.frac.abs_frac
-; :int # int -> frac
+; c.frac.abs_frac: :int # int -> frac
 (constant_definition "c_2Efrac_2Eabs__frac" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "ty_2Efrac_2Efrac"))
-; c.frac.frac_0
-; :frac
+; c.frac.frac_0: :frac
 (constant_definition "c_2Efrac_2Efrac__0" "ty_2Efrac_2Efrac")
-; c.frac.frac_1
-; :frac
+; c.frac.frac_1: :frac
 (constant_definition "c_2Efrac_2Efrac__1" "ty_2Efrac_2Efrac")
-; c.frac.frac_add
-; :frac -> frac -> frac
+; c.frac.frac_add: :frac -> frac -> frac
 (constant_definition "c_2Efrac_2Efrac__add" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac")))
-; c.frac.frac_ainv
-; :frac -> frac
+; c.frac.frac_ainv: :frac -> frac
 (constant_definition "c_2Efrac_2Efrac__ainv" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac"))
-; c.frac.frac_div
-; :frac -> frac -> frac
+; c.frac.frac_div: :frac -> frac -> frac
 (constant_definition "c_2Efrac_2Efrac__div" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac")))
-; c.frac.frac_dnm
-; :frac -> int
+; c.frac.frac_dnm: :frac -> int
 (constant_definition "c_2Efrac_2Efrac__dnm" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Einteger_2Eint"))
-; c.frac.frac_minv
-; :frac -> frac
+; c.frac.frac_minv: :frac -> frac
 (constant_definition "c_2Efrac_2Efrac__minv" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac"))
-; c.frac.frac_mul
-; :frac -> frac -> frac
+; c.frac.frac_mul: :frac -> frac -> frac
 (constant_definition "c_2Efrac_2Efrac__mul" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac")))
-; c.frac.frac_nmr
-; :frac -> int
+; c.frac.frac_nmr: :frac -> int
 (constant_definition "c_2Efrac_2Efrac__nmr" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Einteger_2Eint"))
-; c.frac.frac_save
-; :int -> num -> frac
+; c.frac.frac_save: :int -> num -> frac
 (constant_definition "c_2Efrac_2Efrac__save" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Efrac_2Efrac")))
-; c.frac.frac_sgn
-; :frac -> int
+; c.frac.frac_sgn: :frac -> int
 (constant_definition "c_2Efrac_2Efrac__sgn" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Einteger_2Eint"))
-; c.frac.frac_sub
-; :frac -> frac -> frac
+; c.frac.frac_sub: :frac -> frac -> frac
 (constant_definition "c_2Efrac_2Efrac__sub" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac")))
-; c.frac.les_abs
-; :frac -> frac -> bool
+; c.frac.les_abs: :frac -> frac -> bool
 (constant_definition "c_2Efrac_2Eles__abs" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")))
-; c.frac.rep_frac
-; :frac -> int # int
+; c.frac.rep_frac: :frac -> int # int
 (constant_definition "c_2Efrac_2Erep__frac" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint")))
-; frac.frac_TY_DEF
-; ∃rep. TYPE_DEFINITION (λf. 0 < SND f) rep
+; frac.frac_TY_DEF: ∃V0rep. TYPE_DEFINITION (λV1f. 0 < SND V1f) V0rep
 (axiom "thm_2Efrac_2Efrac__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint"))) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint")) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "ty_2Efrac_2Efrac") (lambda "V1f" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") (("c_2Epair_2ESND" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V1f"))) "V0rep"))))
-; frac.frac_tybij
-; (∀a. abs_frac (rep_frac a) = a) ∧ ∀r. (λf. 0 < SND f) r ⇔ (rep_frac (abs_frac r) = r)
+; frac.frac_tybij: (∀V0a. abs_frac (rep_frac V0a) = V0a) ∧ ∀V1r. (λV2f. 0 < SND V2f) V1r ⇔ (rep_frac (abs_frac V1r) = V1r)
 (axiom "thm_2Efrac_2Efrac__tybij" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Eabs__frac" ("c_2Efrac_2Erep__frac" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint")) (lambda "V1r" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2f" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") (("c_2Epair_2ESND" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2f"))) "V1r") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint")) ("c_2Efrac_2Erep__frac" ("c_2Efrac_2Eabs__frac" "V1r")) "V1r"))))))
-; frac.frac_bij
-; (∀a. abs_frac (rep_frac a) = a) ∧ ∀r. (λf. 0 < SND f) r ⇔ (rep_frac (abs_frac r) = r)
+; frac.frac_bij: (∀V0a. abs_frac (rep_frac V0a) = V0a) ∧ ∀V1r. (λV2f. 0 < SND V2f) V1r ⇔ (rep_frac (abs_frac V1r) = V1r)
 (conjecture "thm_2Efrac_2Efrac__bij" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Eabs__frac" ("c_2Efrac_2Erep__frac" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint")) (lambda "V1r" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2f" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") (("c_2Epair_2ESND" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2f"))) "V1r") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint")) ("c_2Efrac_2Erep__frac" ("c_2Efrac_2Eabs__frac" "V1r")) "V1r"))))))
-; frac.frac_nmr_def
-; ∀f. frac_nmr f = FST (rep_frac f)
+; frac.frac_nmr_def: ∀V0f. frac_nmr V0f = FST (rep_frac V0f)
 (axiom "thm_2Efrac_2Efrac__nmr__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0f") (("c_2Epair_2EFST" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Efrac_2Erep__frac" "V0f"))))))
-; frac.frac_dnm_def
-; ∀f. frac_dnm f = SND (rep_frac f)
+; frac.frac_dnm_def: ∀V0f. frac_dnm V0f = SND (rep_frac V0f)
 (axiom "thm_2Efrac_2Efrac__dnm__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__dnm" "V0f") (("c_2Epair_2ESND" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Efrac_2Erep__frac" "V0f"))))))
-; frac.frac_sgn_def
-; ∀f1. frac_sgn f1 = SGN (frac_nmr f1)
+; frac.frac_sgn_def: ∀V0f1. frac_sgn V0f1 = SGN (frac_nmr V0f1)
 (axiom "thm_2Efrac_2Efrac__sgn__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2EintExtension_2ESGN" ("c_2Efrac_2Efrac__nmr" "V0f1"))))))
-; frac.frac_ainv_def
-; ∀f1. frac_ainv f1 = abs_frac (-frac_nmr f1,frac_dnm f1)
+; frac.frac_ainv_def: ∀V0f1. frac_ainv V0f1 = abs_frac (-frac_nmr V0f1,frac_dnm V0f1)
 (axiom "thm_2Efrac_2Efrac__ainv__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" "V0f1") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__neg" ("c_2Efrac_2Efrac__nmr" "V0f1")) ("c_2Efrac_2Efrac__dnm" "V0f1")))))))
-; frac.frac_minv_def
-; ∀f1. frac_minv f1 = abs_frac (frac_sgn f1 * frac_dnm f1,ABS (frac_nmr f1))
+; frac.frac_minv_def: ∀V0f1.     frac_minv V0f1 =     abs_frac (frac_sgn V0f1 * frac_dnm V0f1,ABS (frac_nmr V0f1))
 (axiom "thm_2Efrac_2Efrac__minv__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__minv" "V0f1") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Efrac_2Efrac__dnm" "V0f1")) ("c_2Einteger_2EABS" ("c_2Efrac_2Efrac__nmr" "V0f1"))))))))
-; frac.frac_0_def
-; frac_0 = abs_frac (0,1)
+; frac.frac_0_def: frac_0 = abs_frac (0,1)
 (axiom "thm_2Efrac_2Efrac__0__def" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") "c_2Efrac_2Efrac__0" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; frac.frac_1_def
-; frac_1 = abs_frac (1,1)
+; frac.frac_1_def: frac_1 = abs_frac (1,1)
 (axiom "thm_2Efrac_2Efrac__1__def" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") "c_2Efrac_2Efrac__1" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; frac.les_abs_def
-; ∀f1 f2. les_abs f1 f2 ⇔ frac_nmr f1 * frac_dnm f2 < frac_nmr f2 * frac_dnm f1
+; frac.les_abs_def: ∀V0f1 V1f2.     les_abs V0f1 V1f2 ⇔     frac_nmr V0f1 * frac_dnm V1f2 < frac_nmr V1f2 * frac_dnm V0f1
 (axiom "thm_2Efrac_2Eles__abs__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Efrac_2Eles__abs" "V0f1" "V1f2") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Efrac_2Efrac__dnm" "V0f1")))))))))
-; frac.frac_add_def
-; ∀f1 f2.     frac_add f1 f2 =     abs_frac       (frac_nmr f1 * frac_dnm f2 + frac_nmr f2 * frac_dnm f1,        frac_dnm f1 * frac_dnm f2)
+; frac.frac_add_def: ∀V0f1 V1f2.     frac_add V0f1 V1f2 =     abs_frac       (frac_nmr V0f1 * frac_dnm V1f2 + frac_nmr V1f2 * frac_dnm V0f1,        frac_dnm V0f1 * frac_dnm V1f2)
 (axiom "thm_2Efrac_2Efrac__add__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__add" "V0f1" "V1f2") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Efrac_2Efrac__dnm" "V0f1"))) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__dnm" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2"))))))))))
-; frac.frac_sub_def
-; ∀f1 f2. frac_sub f1 f2 = frac_add f1 (frac_ainv f2)
+; frac.frac_sub_def: ∀V0f1 V1f2. frac_sub V0f1 V1f2 = frac_add V0f1 (frac_ainv V1f2)
 (axiom "thm_2Efrac_2Efrac__sub__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__sub" "V0f1" "V1f2") ("c_2Efrac_2Efrac__add" "V0f1" ("c_2Efrac_2Efrac__ainv" "V1f2"))))))))
-; frac.frac_mul_def
-; ∀f1 f2.     frac_mul f1 f2 =     abs_frac (frac_nmr f1 * frac_nmr f2,frac_dnm f1 * frac_dnm f2)
+; frac.frac_mul_def: ∀V0f1 V1f2.     frac_mul V0f1 V1f2 =     abs_frac (frac_nmr V0f1 * frac_nmr V1f2,frac_dnm V0f1 * frac_dnm V1f2)
 (axiom "thm_2Efrac_2Efrac__mul__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__mul" "V0f1" "V1f2") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__nmr" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__dnm" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2"))))))))))
-; frac.frac_div_def
-; ∀f1 f2. frac_div f1 f2 = frac_mul f1 (frac_minv f2)
+; frac.frac_div_def: ∀V0f1 V1f2. frac_div V0f1 V1f2 = frac_mul V0f1 (frac_minv V1f2)
 (axiom "thm_2Efrac_2Efrac__div__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__div" "V0f1" "V1f2") ("c_2Efrac_2Efrac__mul" "V0f1" ("c_2Efrac_2Efrac__minv" "V1f2"))))))))
-; frac.frac_save_def
-; ∀nmr dnm. frac_save nmr dnm = abs_frac (nmr,&dnm + 1)
+; frac.frac_save_def: ∀V0nmr V1dnm. frac_save V0nmr V1dnm = abs_frac (V0nmr,&V1dnm + 1)
 (axiom "thm_2Efrac_2Efrac__save__def" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0nmr" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1dnm" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__save" "V0nmr" "V1dnm") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0nmr" ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__of__num" "V1dnm") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))
-; frac.FRAC
-; ∀f. abs_frac (frac_nmr f,frac_dnm f) = f
+; frac.FRAC: ∀V0f. abs_frac (frac_nmr V0f,frac_dnm V0f) = V0f
 (conjecture "thm_2Efrac_2EFRAC" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0f") ("c_2Efrac_2Efrac__dnm" "V0f"))) "V0f"))))
-; frac.FRAC_EQ
-; ∀a1 b1 a2 b2.     0 < b1 ⇒     0 < b2 ⇒     ((abs_frac (a1,b1) = abs_frac (a2,b2)) ⇔ (a1 = a2) ∧ (b1 = b2))
+; frac.FRAC_EQ: ∀V0a1 V1b1 V2a2 V3b2.     0 < V1b1 ⇒     0 < V3b2 ⇒     ((abs_frac (V0a1,V1b1) = abs_frac (V2a2,V3b2)) ⇔      (V0a1 = V2a2) ∧ (V1b1 = V3b2))
 (conjecture "thm_2Efrac_2EFRAC__EQ" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3b2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3b2") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1")) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a1" "V2a2") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V1b1" "V3b2"))))))))))))))
-; frac.FRAC_EQ_ALT
-; ∀f1 f2. (f1 = f2) ⇔ (frac_nmr f1 = frac_nmr f2) ∧ (frac_dnm f1 = frac_dnm f2)
+; frac.FRAC_EQ_ALT: ∀V0f1 V1f2.     (V0f1 = V1f2) ⇔     (frac_nmr V0f1 = frac_nmr V1f2) ∧ (frac_dnm V0f1 = frac_dnm V1f2)
 (conjecture "thm_2Efrac_2EFRAC__EQ__ALT" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") "V0f1" "V1f2") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__nmr" "V1f2")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__dnm" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")))))))))
-; frac.FRAC_NOT_EQ
-; ∀a1 b1 a2 b2.     0 < b1 ⇒     0 < b2 ⇒     (abs_frac (a1,b1) ≠ abs_frac (a2,b2) ⇔ a1 ≠ a2 ∨ b1 ≠ b2)
+; frac.FRAC_NOT_EQ: ∀V0a1 V1b1 V2a2 V3b2.     0 < V1b1 ⇒     0 < V3b2 ⇒     (abs_frac (V0a1,V1b1) ≠ abs_frac (V2a2,V3b2) ⇔ V0a1 ≠ V2a2 ∨ V1b1 ≠ V3b2)
 (conjecture "thm_2Efrac_2EFRAC__NOT__EQ" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3b2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3b2") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1")) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2")))) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a1" "V2a2")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V1b1" "V3b2")))))))))))))))
-; frac.FRAC_NOT_EQ_IMP
-; ∀a1 b1 a2 b2.     0 < b1 ⇒ 0 < b2 ⇒ (a1,b1) ≠ (a2,b2) ⇒ abs_frac (a1,b1) ≠ abs_frac (a2,b2)
+; frac.FRAC_NOT_EQ_IMP: ∀V0a1 V1b1 V2a2 V3b2.     0 < V1b1 ⇒     0 < V3b2 ⇒     (V0a1,V1b1) ≠ (V2a2,V3b2) ⇒     abs_frac (V0a1,V1b1) ≠ abs_frac (V2a2,V3b2)
 (conjecture "thm_2Efrac_2EFRAC__NOT__EQ__IMP" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3b2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3b2") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint")) (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1") (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1")) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2"))))))))))))))))
-; frac.FRAC_DNMPOS
-; ∀f. 0 < frac_dnm f
+; frac.FRAC_DNMPOS: ∀V0f. 0 < frac_dnm V0f
 (conjecture "thm_2Efrac_2EFRAC__DNMPOS" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f" "ty_2Efrac_2Efrac" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Efrac_2Efrac__dnm" "V0f")))))
-; frac.NMR
-; ∀a b. 0 < b ⇒ (frac_nmr (abs_frac (a,b)) = a)
+; frac.NMR: ∀V0a V1b. 0 < V1b ⇒ (frac_nmr (abs_frac (V0a,V1b)) = V0a)
 (conjecture "thm_2Efrac_2ENMR" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a" "V1b"))) "V0a")))))))
-; frac.DNM
-; ∀a b. 0 < b ⇒ (frac_dnm (abs_frac (a,b)) = b)
+; frac.DNM: ∀V0a V1b. 0 < V1b ⇒ (frac_dnm (abs_frac (V0a,V1b)) = V1b)
 (conjecture "thm_2Efrac_2EDNM" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__dnm" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a" "V1b"))) "V1b")))))))
-; frac.FRAC_AINV_CALCULATE
-; ∀a1 b1. 0 < b1 ⇒ (frac_ainv (abs_frac (a1,b1)) = abs_frac (-a1,b1))
+; frac.FRAC_AINV_CALCULATE: ∀V0a1 V1b1.     0 < V1b1 ⇒ (frac_ainv (abs_frac (V0a1,V1b1)) = abs_frac (-V0a1,V1b1))
 (conjecture "thm_2Efrac_2EFRAC__AINV__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1"))) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__neg" "V0a1") "V1b1")))))))))
-; frac.FRAC_MINV_CALCULATE
-; ∀a1 b1.     0 < b1 ⇒     a1 ≠ 0 ⇒     (frac_minv (abs_frac (a1,b1)) = abs_frac (SGN a1 * b1,ABS a1))
+; frac.FRAC_MINV_CALCULATE: ∀V0a1 V1b1.     0 < V1b1 ⇒     V0a1 ≠ 0 ⇒     (frac_minv (abs_frac (V0a1,V1b1)) = abs_frac (SGN V0a1 * V1b1,ABS V0a1))
 (conjecture "thm_2Efrac_2EFRAC__MINV__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a1" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__minv" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1"))) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2EintExtension_2ESGN" "V0a1") "V1b1") ("c_2Einteger_2EABS" "V0a1")))))))))))
-; frac.FRAC_SGN_CALCULATE
-; ∀a1 b1. 0 < b1 ⇒ (frac_sgn (abs_frac (a1,b1)) = SGN a1)
+; frac.FRAC_SGN_CALCULATE: ∀V0a1 V1b1. 0 < V1b1 ⇒ (frac_sgn (abs_frac (V0a1,V1b1)) = SGN V0a1)
 (conjecture "thm_2Efrac_2EFRAC__SGN__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1"))) ("c_2EintExtension_2ESGN" "V0a1"))))))))
-; frac.FRAC_ADD_CALCULATE
-; ∀a1 b1 a2 b2.     0 < b1 ⇒     0 < b2 ⇒     (frac_add (abs_frac (a1,b1)) (abs_frac (a2,b2)) =      abs_frac (a1 * b2 + a2 * b1,b1 * b2))
+; frac.FRAC_ADD_CALCULATE: ∀V0a1 V1b1 V2a2 V3b2.     0 < V1b1 ⇒     0 < V3b2 ⇒     (frac_add (abs_frac (V0a1,V1b1)) (abs_frac (V2a2,V3b2)) =      abs_frac (V0a1 * V3b2 + V2a2 * V1b1,V1b1 * V3b2))
 (conjecture "thm_2Efrac_2EFRAC__ADD__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3b2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3b2") (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__add" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1")) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2"))) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__mul" "V0a1" "V3b2") ("c_2Einteger_2Eint__mul" "V2a2" "V1b1")) ("c_2Einteger_2Eint__mul" "V1b1" "V3b2")))))))))))))))
-; frac.FRAC_SUB_CALCULATE
-; ∀a1 b1 a2 b2.     0 < b1 ⇒     0 < b2 ⇒     (frac_sub (abs_frac (a1,b1)) (abs_frac (a2,b2)) =      abs_frac (a1 * b2 − a2 * b1,b1 * b2))
+; frac.FRAC_SUB_CALCULATE: ∀V0a1 V1b1 V2a2 V3b2.     0 < V1b1 ⇒     0 < V3b2 ⇒     (frac_sub (abs_frac (V0a1,V1b1)) (abs_frac (V2a2,V3b2)) =      abs_frac (V0a1 * V3b2 − V2a2 * V1b1,V1b1 * V3b2))
 (conjecture "thm_2Efrac_2EFRAC__SUB__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3b2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3b2") (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__sub" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1")) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2"))) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__sub" ("c_2Einteger_2Eint__mul" "V0a1" "V3b2") ("c_2Einteger_2Eint__mul" "V2a2" "V1b1")) ("c_2Einteger_2Eint__mul" "V1b1" "V3b2")))))))))))))))
-; frac.FRAC_MULT_CALCULATE
-; ∀a1 b1 a2 b2.     0 < b1 ⇒     0 < b2 ⇒     (frac_mul (abs_frac (a1,b1)) (abs_frac (a2,b2)) =      abs_frac (a1 * a2,b1 * b2))
+; frac.FRAC_MULT_CALCULATE: ∀V0a1 V1b1 V2a2 V3b2.     0 < V1b1 ⇒     0 < V3b2 ⇒     (frac_mul (abs_frac (V0a1,V1b1)) (abs_frac (V2a2,V3b2)) =      abs_frac (V0a1 * V2a2,V1b1 * V3b2))
 (conjecture "thm_2Efrac_2EFRAC__MULT__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3b2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3b2") (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__mul" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1")) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2"))) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" "V0a1" "V2a2") ("c_2Einteger_2Eint__mul" "V1b1" "V3b2")))))))))))))))
-; frac.FRAC_DIV_CALCULATE
-; ∀a1 b1 a2 b2.     0 < b1 ⇒     0 < b2 ⇒     a2 ≠ 0 ⇒     (frac_div (abs_frac (a1,b1)) (abs_frac (a2,b2)) =      abs_frac (a1 * SGN a2 * b2,b1 * ABS a2))
+; frac.FRAC_DIV_CALCULATE: ∀V0a1 V1b1 V2a2 V3b2.     0 < V1b1 ⇒     0 < V3b2 ⇒     V2a2 ≠ 0 ⇒     (frac_div (abs_frac (V0a1,V1b1)) (abs_frac (V2a2,V3b2)) =      abs_frac (V0a1 * SGN V2a2 * V3b2,V1b1 * ABS V2a2))
 (conjecture "thm_2Efrac_2EFRAC__DIV__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1b1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V3b2" "ty_2Einteger_2Eint" ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V1b1") ("c_2Emin_2E_3D_3D_3E" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3b2") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V2a2" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__div" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0a1" "V1b1")) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2a2" "V3b2"))) ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Einteger_2Eint__mul" "V0a1" ("c_2EintExtension_2ESGN" "V2a2")) "V3b2") ("c_2Einteger_2Eint__mul" "V1b1" ("c_2Einteger_2EABS" "V2a2")))))))))))))))))
-; frac.FRAC_ADD_ASSOC
-; ∀a b c. frac_add a (frac_add b c) = frac_add (frac_add a b) c
+; frac.FRAC_ADD_ASSOC: ∀V0a V1b V2c.     frac_add V0a (frac_add V1b V2c) = frac_add (frac_add V0a V1b) V2c
 (conjecture "thm_2Efrac_2EFRAC__ADD__ASSOC" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2c" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__add" "V0a" ("c_2Efrac_2Efrac__add" "V1b" "V2c")) ("c_2Efrac_2Efrac__add" ("c_2Efrac_2Efrac__add" "V0a" "V1b") "V2c")))))))))
-; frac.FRAC_MUL_ASSOC
-; ∀a b c. frac_mul a (frac_mul b c) = frac_mul (frac_mul a b) c
+; frac.FRAC_MUL_ASSOC: ∀V0a V1b V2c.     frac_mul V0a (frac_mul V1b V2c) = frac_mul (frac_mul V0a V1b) V2c
 (conjecture "thm_2Efrac_2EFRAC__MUL__ASSOC" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2c" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__mul" "V0a" ("c_2Efrac_2Efrac__mul" "V1b" "V2c")) ("c_2Efrac_2Efrac__mul" ("c_2Efrac_2Efrac__mul" "V0a" "V1b") "V2c")))))))))
-; frac.FRAC_ADD_COMM
-; ∀a b. frac_add a b = frac_add b a
+; frac.FRAC_ADD_COMM: ∀V0a V1b. frac_add V0a V1b = frac_add V1b V0a
 (conjecture "thm_2Efrac_2EFRAC__ADD__COMM" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__add" "V0a" "V1b") ("c_2Efrac_2Efrac__add" "V1b" "V0a")))))))
-; frac.FRAC_MUL_COMM
-; ∀a b. frac_mul a b = frac_mul b a
+; frac.FRAC_MUL_COMM: ∀V0a V1b. frac_mul V0a V1b = frac_mul V1b V0a
 (conjecture "thm_2Efrac_2EFRAC__MUL__COMM" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__mul" "V0a" "V1b") ("c_2Efrac_2Efrac__mul" "V1b" "V0a")))))))
-; frac.FRAC_ADD_RID
-; ∀a. frac_add a frac_0 = a
+; frac.FRAC_ADD_RID: ∀V0a. frac_add V0a frac_0 = V0a
 (conjecture "thm_2Efrac_2EFRAC__ADD__RID" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__add" "V0a" "c_2Efrac_2Efrac__0") "V0a"))))
-; frac.FRAC_MUL_RID
-; ∀a. frac_mul a frac_1 = a
+; frac.FRAC_MUL_RID: ∀V0a. frac_mul V0a frac_1 = V0a
 (conjecture "thm_2Efrac_2EFRAC__MUL__RID" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__mul" "V0a" "c_2Efrac_2Efrac__1") "V0a"))))
-; frac.FRAC_1_0
-; frac_1 ≠ frac_0
+; frac.FRAC_1_0: frac_1 ≠ frac_0
 (conjecture "thm_2Efrac_2EFRAC__1__0" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") "c_2Efrac_2Efrac__1" "c_2Efrac_2Efrac__0")))
-; frac.FRAC_AINV_0
-; frac_ainv frac_0 = frac_0
+; frac.FRAC_AINV_0: frac_ainv frac_0 = frac_0
 (conjecture "thm_2Efrac_2EFRAC__AINV__0" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" "c_2Efrac_2Efrac__0") "c_2Efrac_2Efrac__0"))
-; frac.FRAC_AINV_AINV
-; ∀f1. frac_ainv (frac_ainv f1) = f1
+; frac.FRAC_AINV_AINV: ∀V0f1. frac_ainv (frac_ainv V0f1) = V0f1
 (conjecture "thm_2Efrac_2EFRAC__AINV__AINV" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" ("c_2Efrac_2Efrac__ainv" "V0f1")) "V0f1"))))
-; frac.FRAC_AINV_ADD
-; ∀f1 f2. frac_ainv (frac_add f1 f2) = frac_add (frac_ainv f1) (frac_ainv f2)
+; frac.FRAC_AINV_ADD: ∀V0f1 V1f2.     frac_ainv (frac_add V0f1 V1f2) =     frac_add (frac_ainv V0f1) (frac_ainv V1f2)
 (conjecture "thm_2Efrac_2EFRAC__AINV__ADD" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" ("c_2Efrac_2Efrac__add" "V0f1" "V1f2")) ("c_2Efrac_2Efrac__add" ("c_2Efrac_2Efrac__ainv" "V0f1") ("c_2Efrac_2Efrac__ainv" "V1f2"))))))))
-; frac.FRAC_AINV_SUB
-; ∀f1 f2. frac_ainv (frac_sub f2 f1) = frac_sub f1 f2
+; frac.FRAC_AINV_SUB: ∀V0f1 V1f2. frac_ainv (frac_sub V1f2 V0f1) = frac_sub V0f1 V1f2
 (conjecture "thm_2Efrac_2EFRAC__AINV__SUB" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" ("c_2Efrac_2Efrac__sub" "V1f2" "V0f1")) ("c_2Efrac_2Efrac__sub" "V0f1" "V1f2")))))))
-; frac.FRAC_AINV_RMUL
-; ∀f1 f2. frac_ainv (frac_mul f1 f2) = frac_mul f1 (frac_ainv f2)
+; frac.FRAC_AINV_RMUL: ∀V0f1 V1f2. frac_ainv (frac_mul V0f1 V1f2) = frac_mul V0f1 (frac_ainv V1f2)
 (conjecture "thm_2Efrac_2EFRAC__AINV__RMUL" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" ("c_2Efrac_2Efrac__mul" "V0f1" "V1f2")) ("c_2Efrac_2Efrac__mul" "V0f1" ("c_2Efrac_2Efrac__ainv" "V1f2"))))))))
-; frac.FRAC_AINV_LMUL
-; ∀f1 f2. frac_ainv (frac_mul f1 f2) = frac_mul (frac_ainv f1) f2
+; frac.FRAC_AINV_LMUL: ∀V0f1 V1f2. frac_ainv (frac_mul V0f1 V1f2) = frac_mul (frac_ainv V0f1) V1f2
 (conjecture "thm_2Efrac_2EFRAC__AINV__LMUL" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" ("c_2Efrac_2Efrac__mul" "V0f1" "V1f2")) ("c_2Efrac_2Efrac__mul" ("c_2Efrac_2Efrac__ainv" "V0f1") "V1f2")))))))
-; frac.FRAC_MINV_1
-; frac_minv frac_1 = frac_1
+; frac.FRAC_MINV_1: frac_minv frac_1 = frac_1
 (conjecture "thm_2Efrac_2EFRAC__MINV__1" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__minv" "c_2Efrac_2Efrac__1") "c_2Efrac_2Efrac__1"))
-; frac.FRAC_SUB_ADD
-; ∀a b c. frac_sub a (frac_add b c) = frac_sub (frac_sub a b) c
+; frac.FRAC_SUB_ADD: ∀V0a V1b V2c.     frac_sub V0a (frac_add V1b V2c) = frac_sub (frac_sub V0a V1b) V2c
 (conjecture "thm_2Efrac_2EFRAC__SUB__ADD" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2c" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__sub" "V0a" ("c_2Efrac_2Efrac__add" "V1b" "V2c")) ("c_2Efrac_2Efrac__sub" ("c_2Efrac_2Efrac__sub" "V0a" "V1b") "V2c")))))))))
-; frac.FRAC_SUB_SUB
-; ∀a b c. frac_sub a (frac_sub b c) = frac_add (frac_sub a b) c
+; frac.FRAC_SUB_SUB: ∀V0a V1b V2c.     frac_sub V0a (frac_sub V1b V2c) = frac_add (frac_sub V0a V1b) V2c
 (conjecture "thm_2Efrac_2EFRAC__SUB__SUB" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2c" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__sub" "V0a" ("c_2Efrac_2Efrac__sub" "V1b" "V2c")) ("c_2Efrac_2Efrac__add" ("c_2Efrac_2Efrac__sub" "V0a" "V1b") "V2c")))))))))
-; frac.FRAC_SGN_TOTAL
-; ∀f1. (frac_sgn f1 = -1) ∨ (frac_sgn f1 = 0) ∨ (frac_sgn f1 = 1)
+; frac.FRAC_SGN_TOTAL: ∀V0f1. (frac_sgn V0f1 = -1) ∨ (frac_sgn V0f1 = 0) ∨ (frac_sgn V0f1 = 1)
 (conjecture "thm_2Efrac_2EFRAC__SGN__TOTAL" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
-; frac.FRAC_SGN_POS
-; ∀f1. (frac_sgn f1 = 1) ⇔ 0 < frac_nmr f1
+; frac.FRAC_SGN_POS: ∀V0f1. (frac_sgn V0f1 = 1) ⇔ 0 < frac_nmr V0f1
 (conjecture "thm_2Efrac_2EFRAC__SGN__POS" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Efrac_2Efrac__nmr" "V0f1"))))))
-; frac.FRAC_SGN_NOT_NEG
-; ∀f1. frac_sgn f1 ≠ -1 ⇔ (0 = frac_nmr f1) ∨ 0 < frac_nmr f1
+; frac.FRAC_SGN_NOT_NEG: ∀V0f1. frac_sgn V0f1 ≠ -1 ⇔ (0 = frac_nmr V0f1) ∨ 0 < frac_nmr V0f1
 (conjecture "thm_2Efrac_2EFRAC__SGN__NOT__NEG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Efrac_2Efrac__nmr" "V0f1")) ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Efrac_2Efrac__nmr" "V0f1")))))))
-; frac.FRAC_SGN_NEG
-; ∀f. -frac_sgn (frac_ainv f) = frac_sgn f
+; frac.FRAC_SGN_NEG: ∀V0f. -frac_sgn (frac_ainv V0f) = frac_sgn V0f
 (conjecture "thm_2Efrac_2EFRAC__SGN__NEG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__neg" ("c_2Efrac_2Efrac__sgn" ("c_2Efrac_2Efrac__ainv" "V0f"))) ("c_2Efrac_2Efrac__sgn" "V0f")))))
-; frac.FRAC_SGN_IMP_EQGT
-; ∀f1. frac_sgn f1 ≠ -1 ⇔ (frac_sgn f1 = 0) ∨ (frac_sgn f1 = 1)
+; frac.FRAC_SGN_IMP_EQGT: ∀V0f1. frac_sgn V0f1 ≠ -1 ⇔ (frac_sgn V0f1 = 0) ∨ (frac_sgn V0f1 = 1)
 (conjecture "thm_2Efrac_2EFRAC__SGN__IMP__EQGT" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
-; frac.FRAC_SGN_MUL
-; ∀f1 f2. frac_sgn (frac_mul f1 f2) = frac_sgn f1 * frac_sgn f2
+; frac.FRAC_SGN_MUL: ∀V0f1 V1f2. frac_sgn (frac_mul V0f1 V1f2) = frac_sgn V0f1 * frac_sgn V1f2
 (conjecture "thm_2Efrac_2EFRAC__SGN__MUL" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" ("c_2Efrac_2Efrac__mul" "V0f1" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Efrac_2Efrac__sgn" "V1f2"))))))))
-; frac.FRAC_ABS_SGN
-; ∀f1. frac_nmr f1 ≠ 0 ⇒ (ABS (frac_sgn f1) = 1)
+; frac.FRAC_ABS_SGN: ∀V0f1. frac_nmr V0f1 ≠ 0 ⇒ (ABS (frac_sgn V0f1) = 1)
 (conjecture "thm_2Efrac_2EFRAC__ABS__SGN" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2EABS" ("c_2Efrac_2Efrac__sgn" "V0f1")) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; frac.FRAC_SGN_MUL2
-; ∀f1 f2. frac_sgn (frac_mul f1 f2) = frac_sgn f1 * frac_sgn f2
+; frac.FRAC_SGN_MUL2: ∀V0f1 V1f2. frac_sgn (frac_mul V0f1 V1f2) = frac_sgn V0f1 * frac_sgn V1f2
 (conjecture "thm_2Efrac_2EFRAC__SGN__MUL2" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" ("c_2Efrac_2Efrac__mul" "V0f1" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Efrac_2Efrac__sgn" "V1f2"))))))))
-; frac.FRAC_SGN_CASES
-; ∀f1 P.     ((frac_sgn f1 = -1) ⇒ P) ∧ ((frac_sgn f1 = 0) ⇒ P) ∧     ((frac_sgn f1 = 1) ⇒ P) ⇒     P
+; frac.FRAC_SGN_CASES: ∀V0f1 V1P.     ((frac_sgn V0f1 = -1) ⇒ V1P) ∧ ((frac_sgn V0f1 = 0) ⇒ V1P) ∧     ((frac_sgn V0f1 = 1) ⇒ V1P) ⇒     V1P
 (conjecture "thm_2Efrac_2EFRAC__SGN__CASES" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1P" "ty_2Emin_2Ebool" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V1P") ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) "V1P") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" "V0f1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V1P"))) "V1P"))))))
-; frac.FRAC_SGN_AINV
-; ∀f1. -frac_sgn (frac_ainv f1) = frac_sgn f1
+; frac.FRAC_SGN_AINV: ∀V0f1. -frac_sgn (frac_ainv V0f1) = frac_sgn V0f1
 (conjecture "thm_2Efrac_2EFRAC__SGN__AINV" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__neg" ("c_2Efrac_2Efrac__sgn" ("c_2Efrac_2Efrac__ainv" "V0f1"))) ("c_2Efrac_2Efrac__sgn" "V0f1")))))
-; frac.FRAC_AINV_ONEONE
-; ONE_ONE frac_ainv
+; frac.FRAC_AINV_ONEONE: ONE_ONE frac_ainv
 (conjecture "thm_2Efrac_2EFRAC__AINV__ONEONE" (("c_2Ebool_2EONE__ONE" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac") "c_2Efrac_2Efrac__ainv"))
-; frac.FRAC_AINV_ONTO
-; ONTO frac_ainv
+; frac.FRAC_AINV_ONTO: ONTO frac_ainv
 (conjecture "thm_2Efrac_2EFRAC__AINV__ONTO" (("c_2Ebool_2EONTO" "ty_2Efrac_2Efrac" "ty_2Efrac_2Efrac") "c_2Efrac_2Efrac__ainv"))
-; frac.FRAC_NMR_SAVE
-; ∀a1 b1. frac_nmr (frac_save a1 b1) = a1
+; frac.FRAC_NMR_SAVE: ∀V0a1 V1b1. frac_nmr (frac_save V0a1 V1b1) = V0a1
 (conjecture "thm_2Efrac_2EFRAC__NMR__SAVE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1")) "V0a1"))))))
-; frac.FRAC_DNM_SAVE
-; ∀a1 b1. frac_dnm (frac_save a1 b1) = &b1 + 1
+; frac.FRAC_DNM_SAVE: ∀V0a1 V1b1. frac_dnm (frac_save V0a1 V1b1) = &V1b1 + 1
 (conjecture "thm_2Efrac_2EFRAC__DNM__SAVE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__dnm" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1")) ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__of__num" "V1b1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; frac.FRAC_0_SAVE
-; frac_0 = frac_save 0 0
+; frac.FRAC_0_SAVE: frac_0 = frac_save 0 0
 (conjecture "thm_2Efrac_2EFRAC__0__SAVE" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") "c_2Efrac_2Efrac__0" ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "c_2Enum_2E0")))
-; frac.FRAC_1_SAVE
-; frac_1 = frac_save 1 0
+; frac.FRAC_1_SAVE: frac_1 = frac_save 1 0
 (conjecture "thm_2Efrac_2EFRAC__1__SAVE" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") "c_2Efrac_2Efrac__1" ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "c_2Enum_2E0")))
-; frac.FRAC_AINV_SAVE
-; ∀a1 b1. frac_ainv (frac_save a1 b1) = frac_save (-a1) b1
+; frac.FRAC_AINV_SAVE: ∀V0a1 V1b1. frac_ainv (frac_save V0a1 V1b1) = frac_save (-V0a1) V1b1
 (conjecture "thm_2Efrac_2EFRAC__AINV__SAVE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__ainv" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1")) ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__neg" "V0a1") "V1b1")))))))
-; frac.FRAC_MINV_SAVE
-; ∀a1 b1.     a1 ≠ 0 ⇒     (frac_minv (frac_save a1 b1) =      frac_save (SGN a1 * (&b1 + 1)) (Num (ABS a1 − 1)))
+; frac.FRAC_MINV_SAVE: ∀V0a1 V1b1.     V0a1 ≠ 0 ⇒     (frac_minv (frac_save V0a1 V1b1) =      frac_save (SGN V0a1 * (&V1b1 + 1)) (Num (ABS V0a1 − 1)))
 (conjecture "thm_2Efrac_2EFRAC__MINV__SAVE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0a1" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__minv" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1")) ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__mul" ("c_2EintExtension_2ESGN" "V0a1") ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__of__num" "V1b1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Einteger_2ENum" ("c_2Einteger_2Eint__sub" ("c_2Einteger_2EABS" "V0a1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))
-; frac.FRAC_ADD_SAVE
-; ∀a1 b1 a2 b2.     frac_add (frac_save a1 b1) (frac_save a2 b2) =     frac_save (a1 * &b2 + a2 * &b1 + a1 + a2) (b1 * b2 + b1 + b2)
+; frac.FRAC_ADD_SAVE: ∀V0a1 V1b1 V2a2 V3b2.     frac_add (frac_save V0a1 V1b1) (frac_save V2a2 V3b2) =     frac_save (V0a1 * &V3b2 + V2a2 * &V1b1 + V0a1 + V2a2)       (V1b1 * V3b2 + V1b1 + V3b2)
 (conjecture "thm_2Efrac_2EFRAC__ADD__SAVE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b2" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__add" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1") ("c_2Efrac_2Efrac__save" "V2a2" "V3b2")) ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__mul" "V0a1" ("c_2Einteger_2Eint__of__num" "V3b2")) ("c_2Einteger_2Eint__mul" "V2a2" ("c_2Einteger_2Eint__of__num" "V1b1"))) "V0a1") "V2a2") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" "V1b1" "V3b2") "V1b1") "V3b2"))))))))))))
-; frac.FRAC_MUL_SAVE
-; ∀a1 b1 a2 b2.     frac_mul (frac_save a1 b1) (frac_save a2 b2) =     frac_save (a1 * a2) (b1 * b2 + b1 + b2)
+; frac.FRAC_MUL_SAVE: ∀V0a1 V1b1 V2a2 V3b2.     frac_mul (frac_save V0a1 V1b1) (frac_save V2a2 V3b2) =     frac_save (V0a1 * V2a2) (V1b1 * V3b2 + V1b1 + V3b2)
 (conjecture "thm_2Efrac_2EFRAC__MUL__SAVE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V2a2" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3b2" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__mul" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1") ("c_2Efrac_2Efrac__save" "V2a2" "V3b2")) ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__mul" "V0a1" "V2a2") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" "V1b1" "V3b2") "V1b1") "V3b2"))))))))))))

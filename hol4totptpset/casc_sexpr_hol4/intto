@@ -1,57 +1,38 @@
-; c.intto.intOrd
-; :int -> int -> ordering
+; c.intto.intOrd: :int -> int -> ordering
 (constant_definition "c_2Eintto_2EintOrd" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" "ty_2EternaryComparisons_2Eordering")))
-; c.intto.intto
-; :int toto
+; c.intto.intto: :int toto
 (constant_definition "c_2Eintto_2Eintto" ("ty_2Etoto_2Etoto" "ty_2Einteger_2Eint"))
-; intto.intOrd
-; intOrd = TO_of_LinearOrder $<
+; intto.intOrd: intOrd = TO_of_LinearOrder $<
 (axiom "thm_2Eintto_2EintOrd" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" "ty_2EternaryComparisons_2Eordering"))) "c_2Eintto_2EintOrd" (("c_2Etoto_2ETO__of__LinearOrder" "ty_2Einteger_2Eint") "c_2Einteger_2Eint__lt")))
-; intto.intto
-; intto = TO intOrd
+; intto.intto: intto = TO intOrd
 (axiom "thm_2Eintto_2Eintto" (("c_2Emin_2E_3D" ("ty_2Etoto_2Etoto" "ty_2Einteger_2Eint")) "c_2Eintto_2Eintto" (("c_2Etoto_2ETO" "ty_2Einteger_2Eint") "c_2Eintto_2EintOrd")))
-; intto.apintto_thm
-; apto intto = intOrd
+; intto.apintto_thm: apto intto = intOrd
 (conjecture "thm_2Eintto_2Eapintto__thm" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" "ty_2EternaryComparisons_2Eordering"))) (("c_2Etoto_2Eapto" "ty_2Einteger_2Eint") "c_2Eintto_2Eintto") "c_2Eintto_2EintOrd"))
-; intto.pos_pos_thm
-; ∀m n. intOrd (&m) (&n) = numOrd m n
+; intto.pos_pos_thm: ∀V0m V1n. intOrd (&V0m) (&V1n) = numOrd V0m V1n
 (conjecture "thm_2Eintto_2Epos__pos__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__of__num" "V0m") ("c_2Einteger_2Eint__of__num" "V1n")) ("c_2Etoto_2EnumOrd" "V0m" "V1n")))))))
-; intto.neg_neg_thm
-; ∀m n. intOrd (-&m) (-&n) = numOrd n m
+; intto.neg_neg_thm: ∀V0m V1n. intOrd (-&V0m) (-&V1n) = numOrd V1n V0m
 (conjecture "thm_2Eintto_2Eneg__neg__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V0m")) ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V1n"))) ("c_2Etoto_2EnumOrd" "V1n" "V0m")))))))
-; intto.BIT1_nz
-; ∀n. BIT1 n ≠ 0
+; intto.BIT1_nz: ∀V0n. BIT1 V0n ≠ 0
 (conjecture "thm_2Eintto_2EBIT1__nz" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EBIT1" "V0n") "c_2Enum_2E0")))))
-; intto.BIT2_nz
-; ∀n. BIT2 n ≠ 0
+; intto.BIT2_nz: ∀V0n. BIT2 V0n ≠ 0
 (conjecture "thm_2Eintto_2EBIT2__nz" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EBIT2" "V0n") "c_2Enum_2E0")))))
-; intto.neg_lt_BIT1_thm
-; ∀m n. intOrd (-&m) (&BIT1 n) = Less
+; intto.neg_lt_BIT1_thm: ∀V0m V1n. intOrd (-&V0m) (&BIT1 V1n) = Less
 (conjecture "thm_2Eintto_2Eneg__lt__BIT1__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V0m")) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT1" "V1n"))) "c_2EternaryComparisons_2ELESS"))))))
-; intto.neg_lt_BIT2_thm
-; ∀m n. intOrd (-&m) (&BIT2 n) = Less
+; intto.neg_lt_BIT2_thm: ∀V0m V1n. intOrd (-&V0m) (&BIT2 V1n) = Less
 (conjecture "thm_2Eintto_2Eneg__lt__BIT2__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V0m")) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT2" "V1n"))) "c_2EternaryComparisons_2ELESS"))))))
-; intto.neg_BIT1_lt_thm
-; ∀m n. intOrd (-&BIT1 m) (&n) = Less
+; intto.neg_BIT1_lt_thm: ∀V0m V1n. intOrd (-&BIT1 V0m) (&V1n) = Less
 (conjecture "thm_2Eintto_2Eneg__BIT1__lt__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT1" "V0m"))) ("c_2Einteger_2Eint__of__num" "V1n")) "c_2EternaryComparisons_2ELESS"))))))
-; intto.neg_BIT2_lt_thm
-; ∀m n. intOrd (-&BIT2 m) (&n) = Less
+; intto.neg_BIT2_lt_thm: ∀V0m V1n. intOrd (-&BIT2 V0m) (&V1n) = Less
 (conjecture "thm_2Eintto_2Eneg__BIT2__lt__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT2" "V0m"))) ("c_2Einteger_2Eint__of__num" "V1n")) "c_2EternaryComparisons_2ELESS"))))))
-; intto.neg_ZERO_eq_ZERO_thm
-; intOrd (-&ZERO) (&ZERO) = Equal
+; intto.neg_ZERO_eq_ZERO_thm: intOrd (-&ZERO) (&ZERO) = Equal
 (conjecture "thm_2Eintto_2Eneg__ZERO__eq__ZERO__thm" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "c_2Earithmetic_2EZERO")) ("c_2Einteger_2Eint__of__num" "c_2Earithmetic_2EZERO")) "c_2EternaryComparisons_2EEQUAL"))
-; intto.BIT1_gt_neg_thm
-; ∀m n. intOrd (&BIT1 m) (-&n) = Greater
+; intto.BIT1_gt_neg_thm: ∀V0m V1n. intOrd (&BIT1 V0m) (-&V1n) = Greater
 (conjecture "thm_2Eintto_2EBIT1__gt__neg__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT1" "V0m")) ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V1n"))) "c_2EternaryComparisons_2EGREATER"))))))
-; intto.BIT2_gt_neg_thm
-; ∀m n. intOrd (&BIT2 m) (-&n) = Greater
+; intto.BIT2_gt_neg_thm: ∀V0m V1n. intOrd (&BIT2 V0m) (-&V1n) = Greater
 (conjecture "thm_2Eintto_2EBIT2__gt__neg__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT2" "V0m")) ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V1n"))) "c_2EternaryComparisons_2EGREATER"))))))
-; intto.gt_neg_BIT1_thm
-; ∀m n. intOrd (&m) (-&BIT1 n) = Greater
+; intto.gt_neg_BIT1_thm: ∀V0m V1n. intOrd (&V0m) (-&BIT1 V1n) = Greater
 (conjecture "thm_2Eintto_2Egt__neg__BIT1__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__of__num" "V0m") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT1" "V1n")))) "c_2EternaryComparisons_2EGREATER"))))))
-; intto.gt_neg_BIT2_thm
-; ∀m n. intOrd (&m) (-&BIT2 n) = Greater
+; intto.gt_neg_BIT2_thm: ∀V0m V1n. intOrd (&V0m) (-&BIT2 V1n) = Greater
 (conjecture "thm_2Eintto_2Egt__neg__BIT2__thm" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__of__num" "V0m") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2EBIT2" "V1n")))) "c_2EternaryComparisons_2EGREATER"))))))
-; intto.ZERO_eq_neg_ZERO_thm
-; intOrd (&ZERO) (-&ZERO) = Equal
+; intto.ZERO_eq_neg_ZERO_thm: intOrd (&ZERO) (-&ZERO) = Equal
 (conjecture "thm_2Eintto_2EZERO__eq__neg__ZERO__thm" (("c_2Emin_2E_3D" "ty_2EternaryComparisons_2Eordering") ("c_2Eintto_2EintOrd" ("c_2Einteger_2Eint__of__num" "c_2Earithmetic_2EZERO") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "c_2Earithmetic_2EZERO"))) "c_2EternaryComparisons_2EEQUAL"))

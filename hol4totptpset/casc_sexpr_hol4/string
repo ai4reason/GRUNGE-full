@@ -1,388 +1,259 @@
 (type_definition "ty_2Estring_2Echar" 0)
-; c.string.CHR
-; :num -> char
+; c.string.CHR: :num -> char
 (constant_definition "c_2Estring_2ECHR" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Estring_2Echar"))
-; c.string.DEST_STRING
-; :string -> (char # string) option
+; c.string.DEST_STRING: :string -> (char # string) option
 (constant_definition "c_2Estring_2EDEST__STRING" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))))
-; c.string.EXPLODE
-; :string -> string
+; c.string.EXPLODE: :string -> string
 (constant_definition "c_2Estring_2EEXPLODE" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))
-; c.string.EXTRACT
-; :string # num # num option -> string
+; c.string.EXTRACT: :string # num # num option -> string
 (constant_definition "c_2Estring_2EEXTRACT" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))
-; c.string.FIELDS
-; :(char -> bool) -> string -> string list
+; c.string.FIELDS: :(char -> bool) -> string -> string list
 (constant_definition "c_2Estring_2EFIELDS" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))))
-; c.string.IMPLODE
-; :string -> string
+; c.string.IMPLODE: :string -> string
 (constant_definition "c_2Estring_2EIMPLODE" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))
-; c.string.ORD
-; :char -> num
+; c.string.ORD: :char -> num
 (constant_definition "c_2Estring_2EORD" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Enum_2Enum"))
-; c.string.STR
-; :char -> string
+; c.string.STR: :char -> string
 (constant_definition "c_2Estring_2ESTR" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))
-; c.string.SUB
-; :string # num -> char
+; c.string.SUB: :string # num -> char
 (constant_definition "c_2Estring_2ESUB" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Enum_2Enum") "ty_2Estring_2Echar"))
-; c.string.SUBSTRING
-; :string # num # num -> string
+; c.string.SUBSTRING: :string # num # num -> string
 (constant_definition "c_2Estring_2ESUBSTRING" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))
-; c.string.TOCHAR
-; :string -> char
+; c.string.TOCHAR: :string -> char
 (constant_definition "c_2Estring_2ETOCHAR" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Estring_2Echar"))
-; c.string.TOKENS
-; :(char -> bool) -> string -> string list
+; c.string.TOKENS: :(char -> bool) -> string -> string list
 (constant_definition "c_2Estring_2ETOKENS" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))))
-; c.string.TRANSLATE
-; :(char -> string) -> string -> string
+; c.string.TRANSLATE: :(char -> string) -> string -> string
 (constant_definition "c_2Estring_2ETRANSLATE" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))))
-; c.string.char_ge
-; :char -> char -> bool
+; c.string.char_ge: :char -> char -> bool
 (constant_definition "c_2Estring_2Echar__ge" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")))
-; c.string.char_gt
-; :char -> char -> bool
+; c.string.char_gt: :char -> char -> bool
 (constant_definition "c_2Estring_2Echar__gt" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")))
-; c.string.char_le
-; :char -> char -> bool
+; c.string.char_le: :char -> char -> bool
 (constant_definition "c_2Estring_2Echar__le" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")))
-; c.string.char_lt
-; :char -> char -> bool
+; c.string.char_lt: :char -> char -> bool
 (constant_definition "c_2Estring_2Echar__lt" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")))
-; c.string.char_size
-; :char -> num
+; c.string.char_size: :char -> num
 (constant_definition "c_2Estring_2Echar__size" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Enum_2Enum"))
-; c.string.isAlpha
-; :char -> bool
+; c.string.isAlpha: :char -> bool
 (constant_definition "c_2Estring_2EisAlpha" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isAlphaNum
-; :char -> bool
+; c.string.isAlphaNum: :char -> bool
 (constant_definition "c_2Estring_2EisAlphaNum" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isAscii
-; :char -> bool
+; c.string.isAscii: :char -> bool
 (constant_definition "c_2Estring_2EisAscii" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isCntrl
-; :char -> bool
+; c.string.isCntrl: :char -> bool
 (constant_definition "c_2Estring_2EisCntrl" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isDigit
-; :char -> bool
+; c.string.isDigit: :char -> bool
 (constant_definition "c_2Estring_2EisDigit" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isGraph
-; :char -> bool
+; c.string.isGraph: :char -> bool
 (constant_definition "c_2Estring_2EisGraph" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isHexDigit
-; :char -> bool
+; c.string.isHexDigit: :char -> bool
 (constant_definition "c_2Estring_2EisHexDigit" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isLower
-; :char -> bool
+; c.string.isLower: :char -> bool
 (constant_definition "c_2Estring_2EisLower" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isPrint
-; :char -> bool
+; c.string.isPrint: :char -> bool
 (constant_definition "c_2Estring_2EisPrint" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isPunct
-; :char -> bool
+; c.string.isPunct: :char -> bool
 (constant_definition "c_2Estring_2EisPunct" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isSpace
-; :char -> bool
+; c.string.isSpace: :char -> bool
 (constant_definition "c_2Estring_2EisSpace" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.isUpper
-; :char -> bool
+; c.string.isUpper: :char -> bool
 (constant_definition "c_2Estring_2EisUpper" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool"))
-; c.string.string_ge
-; :string -> string -> bool
+; c.string.string_ge: :string -> string -> bool
 (constant_definition "c_2Estring_2Estring__ge" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")))
-; c.string.string_gt
-; :string -> string -> bool
+; c.string.string_gt: :string -> string -> bool
 (constant_definition "c_2Estring_2Estring__gt" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")))
-; c.string.string_le
-; :string -> string -> bool
+; c.string.string_le: :string -> string -> bool
 (constant_definition "c_2Estring_2Estring__le" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")))
-; c.string.string_lt
-; :string -> string -> bool
+; c.string.string_lt: :string -> string -> bool
 (constant_definition "c_2Estring_2Estring__lt" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")))
-; c.string.toLower
-; :char -> char
+; c.string.toLower: :char -> char
 (constant_definition "c_2Estring_2EtoLower" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Estring_2Echar"))
-; c.string.toUpper
-; :char -> char
+; c.string.toUpper: :char -> char
 (constant_definition "c_2Estring_2EtoUpper" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Estring_2Echar"))
-; string.char_TY_DEF
-; ∃rep. TYPE_DEFINITION (λn. n < 256) rep
+; string.char_TY_DEF: ∃V0rep. TYPE_DEFINITION (λV1n. V1n < 256) V0rep
 (axiom "thm_2Estring_2Echar__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Enum_2Enum")) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Enum_2Enum") (("c_2Ebool_2ETYPE__DEFINITION" "ty_2Enum_2Enum" "ty_2Estring_2Echar") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))) "V0rep"))))
-; string.char_BIJ
-; (∀a. CHR (ORD a) = a) ∧ ∀r. (λn. n < 256) r ⇔ (ORD (CHR r) = r)
+; string.char_BIJ: (∀V0a. CHR (ORD V0a) = V0a) ∧ ∀V1r. (λV2n. V2n < 256) V1r ⇔ (ORD (CHR V1r) = V1r)
 (axiom "thm_2Estring_2Echar__BIJ" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") ("c_2Estring_2ECHR" ("c_2Estring_2EORD" "V0a")) "V0a"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))) "V1r") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2EORD" ("c_2Estring_2ECHR" "V1r")) "V1r"))))))
-; string.ORD_11
-; ∀a a'. (ORD a = ORD a') ⇔ (a = a')
+; string.ORD_11: ∀V0a V1a_27. (ORD V0a = ORD V1a_27) ⇔ (V0a = V1a_27)
 (conjecture "thm_2Estring_2EORD__11" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1a_27" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2EORD" "V0a") ("c_2Estring_2EORD" "V1a_27")) (("c_2Emin_2E_3D" "ty_2Estring_2Echar") "V0a" "V1a_27")))))))
-; string.CHR_11
-; ∀r r'. r < 256 ⇒ r' < 256 ⇒ ((CHR r = CHR r') ⇔ (r = r'))
+; string.CHR_11: ∀V0r V1r_27.     V0r < 256 ⇒ V1r_27 < 256 ⇒ ((CHR V0r = CHR V1r_27) ⇔ (V0r = V1r_27))
 (conjecture "thm_2Estring_2ECHR__11" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1r_27" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V1r_27" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Estring_2Echar") ("c_2Estring_2ECHR" "V0r") ("c_2Estring_2ECHR" "V1r_27")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0r" "V1r_27")))))))))
-; string.ORD_ONTO
-; ∀r. r < 256 ⇔ ∃a. r = ORD a
+; string.ORD_ONTO: ∀V0r. V0r < 256 ⇔ ∃V1a. V0r = ORD V1a
 (conjecture "thm_2Estring_2EORD__ONTO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) (("c_2Ebool_2E_3F" "ty_2Estring_2Echar") (lambda "V1a" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0r" ("c_2Estring_2EORD" "V1a"))))))))
-; string.CHR_ONTO
-; ∀a. ∃r. (a = CHR r) ∧ r < 256
+; string.CHR_ONTO: ∀V0a. ∃V1r. (V0a = CHR V1r) ∧ V1r < 256
 (conjecture "thm_2Estring_2ECHR__ONTO" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1r" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") "V0a" ("c_2Estring_2ECHR" "V1r")) ("c_2Eprim__rec_2E_3C" "V1r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))))))
-; string.CHR_ORD
-; ∀a. CHR (ORD a) = a
+; string.CHR_ORD: ∀V0a. CHR (ORD V0a) = V0a
 (conjecture "thm_2Estring_2ECHR__ORD" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") ("c_2Estring_2ECHR" ("c_2Estring_2EORD" "V0a")) "V0a"))))
-; string.ORD_CHR
-; ∀r. r < 256 ⇔ (ORD (CHR r) = r)
+; string.ORD_CHR: ∀V0r. V0r < 256 ⇔ (ORD (CHR V0r) = V0r)
 (conjecture "thm_2Estring_2EORD__CHR" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2EORD" ("c_2Estring_2ECHR" "V0r")) "V0r")))))
-; string.ORD_CHR_RWT
-; ∀r. r < 256 ⇒ (ORD (CHR r) = r)
+; string.ORD_CHR_RWT: ∀V0r. V0r < 256 ⇒ (ORD (CHR V0r) = V0r)
 (conjecture "thm_2Estring_2EORD__CHR__RWT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2EORD" ("c_2Estring_2ECHR" "V0r")) "V0r")))))
-; string.ORD_CHR_COMPUTE
-; ∀n. ORD (CHR n) = if n < 256 then n else FAIL ORD $var$(> 255) (CHR n)
+; string.ORD_CHR_COMPUTE: ∀V0_3E_20255 V1n.     ORD (CHR V1n) = if V1n < 256 then V1n else FAIL ORD V0_3E_20255 (CHR V1n)
 (conjecture "thm_2Estring_2EORD__CHR__COMPUTE" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0_3E_20255" "ty_2Emin_2Ebool" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2EORD" ("c_2Estring_2ECHR" "V1n")) (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) "V1n" (("c_2Ecombin_2EFAIL" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") "c_2Estring_2EORD" "V0_3E_20255" ("c_2Estring_2ECHR" "V1n")))))))))
-; string.ORD_BOUND
-; ∀c. ORD c < 256
+; string.ORD_BOUND: ∀V0c. ORD V0c < 256
 (conjecture "thm_2Estring_2EORD__BOUND" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" ("c_2Eprim__rec_2E_3C" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))
-; string.char_nchotomy
-; ∀c. ∃n. c = CHR n
+; string.char_nchotomy: ∀V0c. ∃V1n. V0c = CHR V1n
 (conjecture "thm_2Estring_2Echar__nchotomy" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2ECHR" "V1n")))))))
-; string.ranged_char_nchotomy
-; ∀c. ∃n. (c = CHR n) ∧ n < 256
+; string.ranged_char_nchotomy: ∀V0c. ∃V1n. (V0c = CHR V1n) ∧ V1n < 256
 (conjecture "thm_2Estring_2Eranged__char__nchotomy" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2ECHR" "V1n")) ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))))))
-; string.isLower_def
-; ∀c. isLower c ⇔ 97 ≤ ORD c ∧ ORD c ≤ 122
+; string.isLower_def: ∀V0c. isLower V0c ⇔ 97 ≤ ORD V0c ∧ ORD V0c ≤ 122
 (axiom "thm_2Estring_2EisLower__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisLower" "V0c") ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))) ("c_2Estring_2EORD" "V0c")) ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))))))
-; string.isUpper_def
-; ∀c. isUpper c ⇔ 65 ≤ ORD c ∧ ORD c ≤ 90
+; string.isUpper_def: ∀V0c. isUpper V0c ⇔ 65 ≤ ORD V0c ∧ ORD V0c ≤ 90
 (axiom "thm_2Estring_2EisUpper__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisUpper" "V0c") ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))) ("c_2Estring_2EORD" "V0c")) ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))
-; string.isDigit_def
-; ∀c. isDigit c ⇔ 48 ≤ ORD c ∧ ORD c ≤ 57
+; string.isDigit_def: ∀V0c. isDigit V0c ⇔ 48 ≤ ORD V0c ∧ ORD V0c ≤ 57
 (axiom "thm_2Estring_2EisDigit__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisDigit" "V0c") ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))) ("c_2Estring_2EORD" "V0c")) ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))))))
-; string.isAlpha_def
-; ∀c. isAlpha c ⇔ isLower c ∨ isUpper c
+; string.isAlpha_def: ∀V0c. isAlpha V0c ⇔ isLower V0c ∨ isUpper V0c
 (axiom "thm_2Estring_2EisAlpha__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisAlpha" "V0c") ("c_2Ebool_2E_5C_2F" ("c_2Estring_2EisLower" "V0c") ("c_2Estring_2EisUpper" "V0c"))))))
-; string.isHexDigit_def
-; ∀c.     isHexDigit c ⇔     48 ≤ ORD c ∧ ORD c ≤ 57 ∨ 97 ≤ ORD c ∧ ORD c ≤ 102 ∨     65 ≤ ORD c ∧ ORD c ≤ 70
+; string.isHexDigit_def: ∀V0c.     isHexDigit V0c ⇔     48 ≤ ORD V0c ∧ ORD V0c ≤ 57 ∨ 97 ≤ ORD V0c ∧ ORD V0c ≤ 102 ∨     65 ≤ ORD V0c ∧ ORD V0c ≤ 70
 (axiom "thm_2Estring_2EisHexDigit__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisHexDigit" "V0c") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))) ("c_2Estring_2EORD" "V0c")) ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))) ("c_2Estring_2EORD" "V0c")) ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))) ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))) ("c_2Estring_2EORD" "V0c")) ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))))
-; string.isAlphaNum_def
-; ∀c. isAlphaNum c ⇔ isAlpha c ∨ isDigit c
+; string.isAlphaNum_def: ∀V0c. isAlphaNum V0c ⇔ isAlpha V0c ∨ isDigit V0c
 (axiom "thm_2Estring_2EisAlphaNum__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisAlphaNum" "V0c") ("c_2Ebool_2E_5C_2F" ("c_2Estring_2EisAlpha" "V0c") ("c_2Estring_2EisDigit" "V0c"))))))
-; string.isPrint_def
-; ∀c. isPrint c ⇔ 32 ≤ ORD c ∧ ORD c < 127
+; string.isPrint_def: ∀V0c. isPrint V0c ⇔ 32 ≤ ORD V0c ∧ ORD V0c < 127
 (axiom "thm_2Estring_2EisPrint__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisPrint" "V0c") ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Estring_2EORD" "V0c")) ("c_2Eprim__rec_2E_3C" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))))
-; string.isSpace_def
-; ∀c. isSpace c ⇔ (ORD c = 32) ∨ 9 ≤ ORD c ∧ ORD c ≤ 13
+; string.isSpace_def: ∀V0c. isSpace V0c ⇔ (ORD V0c = 32) ∨ 9 ≤ ORD V0c ∧ ORD V0c ≤ 13
 (axiom "thm_2Estring_2EisSpace__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisSpace" "V0c") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))) ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Estring_2EORD" "V0c")) ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")))))))))))
-; string.isGraph_def
-; ∀c. isGraph c ⇔ isPrint c ∧ ¬isSpace c
+; string.isGraph_def: ∀V0c. isGraph V0c ⇔ isPrint V0c ∧ ¬isSpace V0c
 (axiom "thm_2Estring_2EisGraph__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisGraph" "V0c") ("c_2Ebool_2E_2F_5C" ("c_2Estring_2EisPrint" "V0c") ("c_2Ebool_2E_7E" ("c_2Estring_2EisSpace" "V0c")))))))
-; string.isPunct_def
-; ∀c. isPunct c ⇔ isGraph c ∧ ¬isAlphaNum c
+; string.isPunct_def: ∀V0c. isPunct V0c ⇔ isGraph V0c ∧ ¬isAlphaNum V0c
 (axiom "thm_2Estring_2EisPunct__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisPunct" "V0c") ("c_2Ebool_2E_2F_5C" ("c_2Estring_2EisGraph" "V0c") ("c_2Ebool_2E_7E" ("c_2Estring_2EisAlphaNum" "V0c")))))))
-; string.isAscii_def
-; ∀c. isAscii c ⇔ ORD c ≤ 127
+; string.isAscii_def: ∀V0c. isAscii V0c ⇔ ORD V0c ≤ 127
 (axiom "thm_2Estring_2EisAscii__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisAscii" "V0c") ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))
-; string.isCntrl_def
-; ∀c. isCntrl c ⇔ ORD c < 32 ∨ 127 ≤ ORD c
+; string.isCntrl_def: ∀V0c. isCntrl V0c ⇔ ORD V0c < 32 ∨ 127 ≤ ORD V0c
 (axiom "thm_2Estring_2EisCntrl__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2EisCntrl" "V0c") ("c_2Ebool_2E_5C_2F" ("c_2Eprim__rec_2E_3C" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))) ("c_2Earithmetic_2E_3C_3D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))) ("c_2Estring_2EORD" "V0c")))))))
-; string.toLower_def
-; ∀c. toLower c = if isUpper c then CHR (ORD c + 32) else c
+; string.toLower_def: ∀V0c. toLower V0c = if isUpper V0c then CHR (ORD V0c + 32) else V0c
 (axiom "thm_2Estring_2EtoLower__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") ("c_2Estring_2EtoLower" "V0c") (("c_2Ebool_2ECOND" "ty_2Estring_2Echar") ("c_2Estring_2EisUpper" "V0c") ("c_2Estring_2ECHR" ("c_2Earithmetic_2E_2B" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))) "V0c")))))
-; string.toUpper_def
-; ∀c. toUpper c = if isLower c then CHR (ORD c − 32) else c
+; string.toUpper_def: ∀V0c. toUpper V0c = if isLower V0c then CHR (ORD V0c − 32) else V0c
 (axiom "thm_2Estring_2EtoUpper__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") ("c_2Estring_2EtoUpper" "V0c") (("c_2Ebool_2ECOND" "ty_2Estring_2Echar") ("c_2Estring_2EisLower" "V0c") ("c_2Estring_2ECHR" ("c_2Earithmetic_2E_2D" ("c_2Estring_2EORD" "V0c") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))) "V0c")))))
-; string.char_lt_def
-; ∀a b. a < b ⇔ ORD a < ORD b
+; string.char_lt_def: ∀V0a V1b. V0a < V1b ⇔ ORD V0a < ORD V1b
 (axiom "thm_2Estring_2Echar__lt__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1b" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Echar__lt" "V0a" "V1b") ("c_2Eprim__rec_2E_3C" ("c_2Estring_2EORD" "V0a") ("c_2Estring_2EORD" "V1b"))))))))
-; string.char_le_def
-; ∀a b. a ≤ b ⇔ ORD a ≤ ORD b
+; string.char_le_def: ∀V0a V1b. V0a ≤ V1b ⇔ ORD V0a ≤ ORD V1b
 (axiom "thm_2Estring_2Echar__le__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1b" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Echar__le" "V0a" "V1b") ("c_2Earithmetic_2E_3C_3D" ("c_2Estring_2EORD" "V0a") ("c_2Estring_2EORD" "V1b"))))))))
-; string.char_gt_def
-; ∀a b. a > b ⇔ ORD a > ORD b
+; string.char_gt_def: ∀V0a V1b. V0a > V1b ⇔ ORD V0a > ORD V1b
 (axiom "thm_2Estring_2Echar__gt__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1b" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Echar__gt" "V0a" "V1b") ("c_2Earithmetic_2E_3E" ("c_2Estring_2EORD" "V0a") ("c_2Estring_2EORD" "V1b"))))))))
-; string.char_ge_def
-; ∀a b. a ≥ b ⇔ ORD a ≥ ORD b
+; string.char_ge_def: ∀V0a V1b. V0a ≥ V1b ⇔ ORD V0a ≥ ORD V1b
 (axiom "thm_2Estring_2Echar__ge__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0a" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1b" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Echar__ge" "V0a" "V1b") ("c_2Earithmetic_2E_3E_3D" ("c_2Estring_2EORD" "V0a") ("c_2Estring_2EORD" "V1b"))))))))
-; string.CHAR_EQ_THM
-; ∀c1 c2. (c1 = c2) ⇔ (ORD c1 = ORD c2)
+; string.CHAR_EQ_THM: ∀V0c1 V1c2. (V0c1 = V1c2) ⇔ (ORD V0c1 = ORD V1c2)
 (conjecture "thm_2Estring_2ECHAR__EQ__THM" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c1" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1c2" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Estring_2Echar") "V0c1" "V1c2") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2EORD" "V0c1") ("c_2Estring_2EORD" "V1c2"))))))))
-; string.CHAR_INDUCT_THM
-; ∀P. (∀n. n < 256 ⇒ P (CHR n)) ⇒ ∀c. P c
+; string.CHAR_INDUCT_THM: ∀V0P. (∀V1n. V1n < 256 ⇒ V0P (CHR V1n)) ⇒ ∀V2c. V0P V2c
 (conjecture "thm_2Estring_2ECHAR__INDUCT__THM" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))) ("V0P" ("c_2Estring_2ECHR" "V1n"))))) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V2c" "ty_2Estring_2Echar" ("V0P" "V2c")))))))
-; string.char_size_def
-; ∀c. char_size c = 0
+; string.char_size_def: ∀V0c. char_size V0c = 0
 (axiom "thm_2Estring_2Echar__size__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Estring_2Echar__size" "V0c") "c_2Enum_2E0"))))
-; string.SUB_def
-; ∀s n. SUB (s,n) = EL n s
+; string.SUB_def: ∀V0s V1n. SUB (V0s,V1n) = EL V1n V0s
 (axiom "thm_2Estring_2ESUB__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") ("c_2Estring_2ESUB" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Enum_2Enum") "V0s" "V1n")) (("c_2Elist_2EEL" "ty_2Estring_2Echar") "V1n" "V0s")))))))
-; string.STR_def
-; ∀c. STR c = STRING c ""
+; string.STR_def: ∀V0c. STR V0c = STRING V0c ""
 (axiom "thm_2Estring_2ESTR__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2ESTR" "V0c") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))))))
-; string.TOCHAR_primitive_def
-; TOCHAR = WFREC (@R. WF R)   (λTOCHAR a.        case a of          "" => ARB        | STRING c "" => I c        | STRING c (STRING v2 v3) => ARB)
+; string.TOCHAR_primitive_def: TOCHAR = WFREC (@V0R. WF V0R)   (λV1TOCHAR V2a.        case V2a of          "" => ARB        | STRING V3c "" => I V3c        | STRING V3c (STRING V5v2 V6v3) => ARB)
 (axiom "thm_2Estring_2ETOCHAR__primitive__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Estring_2Echar")) "c_2Estring_2ETOCHAR" (("c_2Erelation_2EWFREC" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Estring_2Echar") (("c_2Emin_2E_40" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) (("c_2Erelation_2EWF" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0R"))) (lambda "V1TOCHAR" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Estring_2Echar") (lambda "V2a" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Elist_2Elist__CASE" "ty_2Estring_2Echar" "ty_2Estring_2Echar") "V2a" ("c_2Ebool_2EARB" "ty_2Estring_2Echar") (lambda "V3c" "ty_2Estring_2Echar" (lambda "V4v1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Elist_2Elist__CASE" "ty_2Estring_2Echar" "ty_2Estring_2Echar") "V4v1" (("c_2Ecombin_2EI" "ty_2Estring_2Echar") "V3c") (lambda "V5v2" "ty_2Estring_2Echar" (lambda "V6v3" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2EARB" "ty_2Estring_2Echar"))))))))))))
-; string.TOCHAR_ind
-; ∀P.     (∀c. P (STRING c "")) ∧ P "" ∧ (∀v6 v4 v5. P (STRING v6 (STRING v4 v5))) ⇒     ∀v. P v
+; string.TOCHAR_ind: ∀V0P.     (∀V1c. V0P (STRING V1c "")) ∧ V0P "" ∧     (∀V2v6 V3v4 V4v5. V0P (STRING V2v6 (STRING V3v4 V4v5))) ⇒     ∀V5v. V0P V5v
 (conjecture "thm_2Estring_2ETOCHAR__ind" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1c" "ty_2Estring_2Echar" ("V0P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1c" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))))) ("c_2Ebool_2E_2F_5C" ("V0P" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V2v6" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V3v4" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V4v5" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2v6" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3v4" "V4v5"))))))))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V5v" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P" "V5v")))))))
-; string.TOCHAR_def
-; TOCHAR (STRING c "") = c
+; string.TOCHAR_def: ∀V0c. TOCHAR (STRING V0c "") = V0c
 (conjecture "thm_2Estring_2ETOCHAR__def" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") ("c_2Estring_2ETOCHAR" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))) "V0c"))))
-; string.SUBSTRING_def
-; ∀s i n. SUBSTRING (s,i,n) = SEG n i s
+; string.SUBSTRING_def: ∀V0s V1i V2n. SUBSTRING (V0s,V1i,V2n) = SEG V2n V1i V0s
 (axiom "thm_2Estring_2ESUBSTRING__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2ESUBSTRING" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V1i" "V2n"))) (("c_2Erich__list_2ESEG" "ty_2Estring_2Echar") "V2n" "V1i" "V0s")))))))))
-; string.TRANSLATE_def
-; ∀f s. TRANSLATE f s = CONCAT (MAP f s)
+; string.TRANSLATE_def: ∀V0f V1s. TRANSLATE V0f V1s = CONCAT (MAP V0f V1s)
 (axiom "thm_2Estring_2ETRANSLATE__def" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (lambda "V0f" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2ETRANSLATE" "V0f" "V1s") (("c_2Elist_2EFLAT" "ty_2Estring_2Echar") (("c_2Elist_2EMAP" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0f" "V1s"))))))))
-; string.TOKENS_ind
-; ∀P'.     (∀P. P' P "") ∧     (∀P h t.          (∀l r. ((l,r) = SPLITP P (STRING h t)) ∧ NULL l ⇒ P' P (TL r)) ∧          (∀l r. ((l,r) = SPLITP P (STRING h t)) ∧ ¬NULL l ⇒ P' P r) ⇒          P' P (STRING h t)) ⇒     ∀v v1. P' v v1
+; string.TOKENS_ind: ∀V0P_27.     (∀V1P. V0P_27 V1P "") ∧     (∀V2P V3h V4t.          (∀V5l V6r.               ((V5l,V6r) = SPLITP V2P (STRING V3h V4t)) ∧ NULL V5l ⇒               V0P_27 V2P (TL V6r)) ∧          (∀V7l V8r.               ((V7l,V8r) = SPLITP V2P (STRING V3h V4t)) ∧ ¬NULL V7l ⇒               V0P_27 V2P V8r) ⇒          V0P_27 V2P (STRING V3h V4t)) ⇒     ∀V9v V10v1. V0P_27 V9v V10v1
 (conjecture "thm_2Estring_2ETOKENS__ind" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool"))) (lambda "V0P_27" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V1P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("V0P_27" "V1P" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V2P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V3h" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V4t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V5l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V6r" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V5l" "V6r") (("c_2Erich__list_2ESPLITP" "ty_2Estring_2Echar") "V2P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" "V4t"))) (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V5l")) ("V0P_27" "V2P" (("c_2Elist_2ETL" "ty_2Estring_2Echar") "V6r"))))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V7l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V8r" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V7l" "V8r") (("c_2Erich__list_2ESPLITP" "ty_2Estring_2Echar") "V2P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" "V4t"))) ("c_2Ebool_2E_7E" (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V7l"))) ("V0P_27" "V2P" "V8r"))))))) ("V0P_27" "V2P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" "V4t")))))))))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V9v" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V10v1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P_27" "V9v" "V10v1")))))))))
-; string.TOKENS_def
-; (∀P. TOKENS P "" = []) ∧ ∀t h P.     TOKENS P (STRING h t) =     (let        (l,r) = SPLITP P (STRING h t)      in        if NULL l then TOKENS P (TL r) else l::TOKENS P r)
+; string.TOKENS_def: (∀V0P. TOKENS V0P "" = []) ∧ ∀V1t V2h V3P.     TOKENS V3P (STRING V2h V1t) =     (let        (V4l,V5r) = SPLITP V3P (STRING V2h V1t)      in        if NULL V4l then TOKENS V3P (TL V5r) else V4l::TOKENS V3P V5r)
 (conjecture "thm_2Estring_2ETOKENS__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) ("c_2Estring_2ETOKENS" "V0P" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V2h" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V3P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) ("c_2Estring_2ETOKENS" "V3P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2h" "V1t")) (("c_2Ebool_2ELET" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2EUNCURRY" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (lambda "V4l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (lambda "V5r" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V4l") ("c_2Estring_2ETOKENS" "V3P" (("c_2Elist_2ETL" "ty_2Estring_2Echar") "V5r")) (("c_2Elist_2ECONS" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V4l" ("c_2Estring_2ETOKENS" "V3P" "V5r")))))) (("c_2Erich__list_2ESPLITP" "ty_2Estring_2Echar") "V3P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2h" "V1t"))))))))))))
-; string.FIELDS_ind
-; ∀P'.     (∀P. P' P "") ∧     (∀P h t.          (∀l r. ((l,r) = SPLITP P (STRING h t)) ∧ NULL l ⇒ P' P (TL r)) ∧          (∀l r.               ((l,r) = SPLITP P (STRING h t)) ∧ ¬NULL l ∧ ¬NULL r ⇒               P' P (TL r)) ⇒          P' P (STRING h t)) ⇒     ∀v v1. P' v v1
+; string.FIELDS_ind: ∀V0P_27.     (∀V1P. V0P_27 V1P "") ∧     (∀V2P V3h V4t.          (∀V5l V6r.               ((V5l,V6r) = SPLITP V2P (STRING V3h V4t)) ∧ NULL V5l ⇒               V0P_27 V2P (TL V6r)) ∧          (∀V7l V8r.               ((V7l,V8r) = SPLITP V2P (STRING V3h V4t)) ∧ ¬NULL V7l ∧               ¬NULL V8r ⇒               V0P_27 V2P (TL V8r)) ⇒          V0P_27 V2P (STRING V3h V4t)) ⇒     ∀V9v V10v1. V0P_27 V9v V10v1
 (conjecture "thm_2Estring_2EFIELDS__ind" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool"))) (lambda "V0P_27" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V1P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") ("V0P_27" "V1P" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V2P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V3h" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V4t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V5l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V6r" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V5l" "V6r") (("c_2Erich__list_2ESPLITP" "ty_2Estring_2Echar") "V2P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" "V4t"))) (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V5l")) ("V0P_27" "V2P" (("c_2Elist_2ETL" "ty_2Estring_2Echar") "V6r"))))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V7l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V8r" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V7l" "V8r") (("c_2Erich__list_2ESPLITP" "ty_2Estring_2Echar") "V2P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" "V4t"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V7l")) ("c_2Ebool_2E_7E" (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V8r")))) ("V0P_27" "V2P" (("c_2Elist_2ETL" "ty_2Estring_2Echar") "V8r")))))))) ("V0P_27" "V2P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" "V4t")))))))))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V9v" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V10v1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P_27" "V9v" "V10v1")))))))))
-; string.FIELDS_def
-; (∀P. FIELDS P "" = [""]) ∧ ∀t h P.     FIELDS P (STRING h t) =     (let        (l,r) = SPLITP P (STRING h t)      in        if NULL l then ""::FIELDS P (TL r)        else if NULL r then [l]        else l::FIELDS P (TL r))
+; string.FIELDS_def: (∀V0P. FIELDS V0P "" = [""]) ∧ ∀V1t V2h V3P.     FIELDS V3P (STRING V2h V1t) =     (let        (V4l,V5r) = SPLITP V3P (STRING V2h V1t)      in        if NULL V4l then ""::FIELDS V3P (TL V5r)        else if NULL V5r then [V4l]        else V4l::FIELDS V3P (TL V5r))
 (conjecture "thm_2Estring_2EFIELDS__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) ("c_2Estring_2EFIELDS" "V0P" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Elist_2ECONS" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar") ("c_2Elist_2ENIL" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V2h" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool")) (lambda "V3P" ("ty_2Emin_2Efun" "ty_2Estring_2Echar" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) ("c_2Estring_2EFIELDS" "V3P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2h" "V1t")) (("c_2Ebool_2ELET" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2EUNCURRY" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (lambda "V4l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (lambda "V5r" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V4l") (("c_2Elist_2ECONS" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar") ("c_2Estring_2EFIELDS" "V3P" (("c_2Elist_2ETL" "ty_2Estring_2Echar") "V5r"))) (("c_2Ebool_2ECOND" ("ty_2Elist_2Elist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Elist_2ENULL" "ty_2Estring_2Echar") "V5r") (("c_2Elist_2ECONS" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V4l" ("c_2Elist_2ENIL" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Elist_2ECONS" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V4l" ("c_2Estring_2EFIELDS" "V3P" (("c_2Elist_2ETL" "ty_2Estring_2Echar") "V5r")))))))) (("c_2Erich__list_2ESPLITP" "ty_2Estring_2Echar") "V3P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2h" "V1t"))))))))))))
-; string.IMPLODE_def
-; (IMPLODE "" = "") ∧ ∀c cs. IMPLODE (STRING c cs) = STRING c (IMPLODE cs)
+; string.IMPLODE_def: (IMPLODE "" = "") ∧ ∀V0c V1cs. IMPLODE (STRING V0c V1cs) = STRING V0c (IMPLODE V1cs)
 (axiom "thm_2Estring_2EIMPLODE__def" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1cs" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1cs")) (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2EIMPLODE" "V1cs")))))))))
-; string.EXPLODE_def
-; (EXPLODE "" = "") ∧ ∀c s. EXPLODE (STRING c s) = STRING c (EXPLODE s)
+; string.EXPLODE_def: (EXPLODE "" = "") ∧ ∀V0c V1s. EXPLODE (STRING V0c V1s) = STRING V0c (EXPLODE V1s)
 (axiom "thm_2Estring_2EEXPLODE__def" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1s")) (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2EEXPLODE" "V1s")))))))))
-; string.IMPLODE_EXPLODE_I
-; (EXPLODE s = s) ∧ (IMPLODE s = s)
+; string.IMPLODE_EXPLODE_I: ∀V0s. (EXPLODE V0s = V0s) ∧ (IMPLODE V0s = V0s)
 (conjecture "thm_2Estring_2EIMPLODE__EXPLODE__I" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" "V0s") "V0s") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" "V0s") "V0s")))))
-; string.IMPLODE_EXPLODE
-; IMPLODE (EXPLODE s) = s
+; string.IMPLODE_EXPLODE: ∀V0s. IMPLODE (EXPLODE V0s) = V0s
 (conjecture "thm_2Estring_2EIMPLODE__EXPLODE" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" ("c_2Estring_2EEXPLODE" "V0s")) "V0s"))))
-; string.EXPLODE_IMPLODE
-; EXPLODE (IMPLODE cs) = cs
+; string.EXPLODE_IMPLODE: ∀V0cs. EXPLODE (IMPLODE V0cs) = V0cs
 (conjecture "thm_2Estring_2EEXPLODE__IMPLODE" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0cs" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" ("c_2Estring_2EIMPLODE" "V0cs")) "V0cs"))))
-; string.EXPLODE_ONTO
-; ∀cs. ∃s. cs = EXPLODE s
+; string.EXPLODE_ONTO: ∀V0cs. ∃V1s. V0cs = EXPLODE V1s
 (conjecture "thm_2Estring_2EEXPLODE__ONTO" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0cs" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_3F" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0cs" ("c_2Estring_2EEXPLODE" "V1s")))))))
-; string.IMPLODE_ONTO
-; ∀s. ∃cs. s = IMPLODE cs
+; string.IMPLODE_ONTO: ∀V0s. ∃V1cs. V0s = IMPLODE V1cs
 (conjecture "thm_2Estring_2EIMPLODE__ONTO" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_3F" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1cs" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" ("c_2Estring_2EIMPLODE" "V1cs")))))))
-; string.EXPLODE_11
-; (EXPLODE s1 = EXPLODE s2) ⇔ (s1 = s2)
+; string.EXPLODE_11: ∀V0s1 V1s2. (EXPLODE V0s1 = EXPLODE V1s2) ⇔ (V0s1 = V1s2)
 (conjecture "thm_2Estring_2EEXPLODE__11" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" "V0s1") ("c_2Estring_2EEXPLODE" "V1s2")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s1" "V1s2")))))))
-; string.IMPLODE_11
-; (IMPLODE cs1 = IMPLODE cs2) ⇔ (cs1 = cs2)
+; string.IMPLODE_11: ∀V0cs1 V1cs2. (IMPLODE V0cs1 = IMPLODE V1cs2) ⇔ (V0cs1 = V1cs2)
 (conjecture "thm_2Estring_2EIMPLODE__11" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0cs1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1cs2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" "V0cs1") ("c_2Estring_2EIMPLODE" "V1cs2")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0cs1" "V1cs2")))))))
-; string.STRING_ACYCLIC
-; ∀s c. STRING c s ≠ s ∧ s ≠ STRING c s
+; string.STRING_ACYCLIC: ∀V0s V1c. STRING V1c V0s ≠ V0s ∧ V0s ≠ STRING V1c V0s
 (conjecture "thm_2Estring_2ESTRING__ACYCLIC" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1c" "ty_2Estring_2Echar" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1c" "V0s") "V0s")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1c" "V0s")))))))))
-; string.EXTRACT_primitive_def
-; EXTRACT = WFREC (@R. WF R)   (λEXTRACT a.        case a of          (s,i,NONE) => I (SUBSTRING (s,i,STRLEN s − i))        | (s,i,SOME n) => I (SUBSTRING (s,i,n)))
+; string.EXTRACT_primitive_def: EXTRACT = WFREC (@V0R. WF V0R)   (λV1EXTRACT V2a.        case V2a of          (V3s,V5i,NONE) => I (SUBSTRING (V3s,V5i,STRLEN V3s − V5i))        | (V3s,V5i,SOME V7n) => I (SUBSTRING (V3s,V5i,V7n)))
 (axiom "thm_2Estring_2EEXTRACT__primitive__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) "c_2Estring_2EEXTRACT" (("c_2Erelation_2EWFREC" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Emin_2E_40" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "ty_2Emin_2Ebool")) (("c_2Erelation_2EWF" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")))) "V0R"))) (lambda "V1EXTRACT" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2a" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) (("c_2Epair_2Epair__CASE" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "V2a" (lambda "V3s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (lambda "V4v1" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) (("c_2Epair_2Epair__CASE" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) "V4v1" (lambda "V5i" "ty_2Enum_2Enum" (lambda "V6v3" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum") (("c_2Eoption_2Eoption__CASE" "ty_2Enum_2Enum" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V6v3" (("c_2Ecombin_2EI" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2ESUBSTRING" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V3s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V5i" ("c_2Earithmetic_2E_2D" (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V3s") "V5i"))))) (lambda "V7n" "ty_2Enum_2Enum" (("c_2Ecombin_2EI" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2ESUBSTRING" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V3s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V5i" "V7n")))))))))))))))))
-; string.EXTRACT_ind
-; ∀P. (∀s i. P (s,i,NONE)) ∧ (∀s i n. P (s,i,SOME n)) ⇒ ∀v v1 v2. P (v,v1,v2)
+; string.EXTRACT_ind: ∀V0P.     (∀V1s V2i. V0P (V1s,V2i,NONE)) ∧ (∀V3s V4i V5n. V0P (V3s,V4i,SOME V5n)) ⇒     ∀V6v V7v1 V8v2. V0P (V6v,V7v1,V8v2)
 (conjecture "thm_2Estring_2EEXTRACT__ind" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2i" "ty_2Enum_2Enum" ("V0P" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "V1s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) "V2i" ("c_2Eoption_2ENONE" "ty_2Enum_2Enum")))))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V3s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V5n" "ty_2Enum_2Enum" ("V0P" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "V3s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) "V4i" (("c_2Eoption_2ESOME" "ty_2Enum_2Enum") "V5n"))))))))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V6v" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V7v1" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) (lambda "V8v2" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum") ("V0P" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "V6v" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) "V7v1" "V8v2")))))))))))))
-; string.EXTRACT_def
-; (EXTRACT (s,i,NONE) = SUBSTRING (s,i,STRLEN s − i)) ∧ (EXTRACT (s,i,SOME n) = SUBSTRING (s,i,n))
+; string.EXTRACT_def: ∀V0s V1i V2n.     (EXTRACT (V0s,V1i,NONE) = SUBSTRING (V0s,V1i,STRLEN V0s − V1i)) ∧     (EXTRACT (V0s,V1i,SOME V2n) = SUBSTRING (V0s,V1i,V2n))
 (conjecture "thm_2Estring_2EEXTRACT__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXTRACT" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) "V1i" ("c_2Eoption_2ENONE" "ty_2Enum_2Enum")))) ("c_2Estring_2ESUBSTRING" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V1i" ("c_2Earithmetic_2E_2D" (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V0s") "V1i"))))) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXTRACT" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum"))) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Eoption_2Eoption" "ty_2Enum_2Enum")) "V1i" (("c_2Eoption_2ESOME" "ty_2Enum_2Enum") "V2n")))) ("c_2Estring_2ESUBSTRING" (("c_2Epair_2E_2C" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V1i" "V2n"))))))))))))
-; string.STRLEN_EXPLODE_THM
-; STRLEN s = STRLEN (EXPLODE s)
+; string.STRLEN_EXPLODE_THM: ∀V0s. STRLEN V0s = STRLEN (EXPLODE V0s)
 (conjecture "thm_2Estring_2ESTRLEN__EXPLODE__THM" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V0s") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") ("c_2Estring_2EEXPLODE" "V0s"))))))
-; string.DEST_STRING_def
-; (DEST_STRING "" = NONE) ∧ ∀c rst. DEST_STRING (STRING c rst) = SOME (c,rst)
+; string.DEST_STRING_def: (DEST_STRING "" = NONE) ∧ ∀V0c V1rst. DEST_STRING (STRING V0c V1rst) = SOME (V0c,V1rst)
 (axiom "thm_2Estring_2EDEST__STRING__def" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) ("c_2Estring_2EDEST__STRING" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) ("c_2Eoption_2ENONE" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1rst" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) ("c_2Estring_2EDEST__STRING" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1rst")) (("c_2Eoption_2ESOME" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0c" "V1rst")))))))))
-; string.DEST_STRING_LEMS
-; ∀s.     ((DEST_STRING s = NONE) ⇔ (s = "")) ∧     ((DEST_STRING s = SOME (c,t)) ⇔ (s = STRING c t))
+; string.DEST_STRING_LEMS: ∀V0c V1t V2s.     ((DEST_STRING V2s = NONE) ⇔ (V2s = "")) ∧     ((DEST_STRING V2s = SOME (V0c,V1t)) ⇔ (V2s = STRING V0c V1t))
 (conjecture "thm_2Estring_2EDEST__STRING__LEMS" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) ("c_2Estring_2EDEST__STRING" "V2s") ("c_2Eoption_2ENONE" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V2s" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) ("c_2Estring_2EDEST__STRING" "V2s") (("c_2Eoption_2ESOME" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0c" "V1t"))) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V2s" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1t")))))))))))
-; string.EXPLODE_EQNS
-; (EXPLODE "" = "") ∧ ∀c s. EXPLODE (STRING c s) = STRING c (EXPLODE s)
+; string.EXPLODE_EQNS: (EXPLODE "" = "") ∧ ∀V0c V1s. EXPLODE (STRING V0c V1s) = STRING V0c (EXPLODE V1s)
 (conjecture "thm_2Estring_2EEXPLODE__EQNS" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1s")) (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2EEXPLODE" "V1s")))))))))
-; string.IMPLODE_EQNS
-; (IMPLODE "" = "") ∧ ∀c cs. IMPLODE (STRING c cs) = STRING c (IMPLODE cs)
+; string.IMPLODE_EQNS: (IMPLODE "" = "") ∧ ∀V0c V1cs. IMPLODE (STRING V0c V1cs) = STRING V0c (IMPLODE V1cs)
 (conjecture "thm_2Estring_2EIMPLODE__EQNS" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1cs" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1cs")) (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2EIMPLODE" "V1cs")))))))))
-; string.IMPLODE_EQ_EMPTYSTRING
-; ((IMPLODE l = "") ⇔ (l = "")) ∧ (("" = IMPLODE l) ⇔ (l = ""))
+; string.IMPLODE_EQ_EMPTYSTRING: ∀V0l. ((IMPLODE V0l = "") ⇔ (V0l = "")) ∧ (("" = IMPLODE V0l) ⇔ (V0l = ""))
 (conjecture "thm_2Estring_2EIMPLODE__EQ__EMPTYSTRING" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" "V0l") ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0l" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar") ("c_2Estring_2EIMPLODE" "V0l")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0l" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")))))))
-; string.EXPLODE_EQ_NIL
-; ((EXPLODE s = "") ⇔ (s = "")) ∧ (("" = EXPLODE s) ⇔ (s = ""))
+; string.EXPLODE_EQ_NIL: ∀V0s. ((EXPLODE V0s = "") ⇔ (V0s = "")) ∧ (("" = EXPLODE V0s) ⇔ (V0s = ""))
 (conjecture "thm_2Estring_2EEXPLODE__EQ__NIL" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" "V0s") ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Elist_2ENIL" "ty_2Estring_2Echar") ("c_2Estring_2EEXPLODE" "V0s")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")))))))
-; string.EXPLODE_EQ_THM
-; ∀s h t.     ((STRING h t = EXPLODE s) ⇔ (s = STRING h (IMPLODE t))) ∧     ((EXPLODE s = STRING h t) ⇔ (s = STRING h (IMPLODE t)))
+; string.EXPLODE_EQ_THM: ∀V0s V1h V2t.     ((STRING V1h V2t = EXPLODE V0s) ⇔ (V0s = STRING V1h (IMPLODE V2t))) ∧     ((EXPLODE V0s = STRING V1h V2t) ⇔ (V0s = STRING V1h (IMPLODE V2t)))
 (conjecture "thm_2Estring_2EEXPLODE__EQ__THM" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1h" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1h" "V2t") ("c_2Estring_2EEXPLODE" "V0s")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1h" ("c_2Estring_2EIMPLODE" "V2t")))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" "V0s") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1h" "V2t")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1h" ("c_2Estring_2EIMPLODE" "V2t"))))))))))))
-; string.IMPLODE_EQ_THM
-; ∀c s l.     ((STRING c s = IMPLODE l) ⇔ (l = STRING c (EXPLODE s))) ∧     ((IMPLODE l = STRING c s) ⇔ (l = STRING c (EXPLODE s)))
+; string.IMPLODE_EQ_THM: ∀V0c V1s V2l.     ((STRING V0c V1s = IMPLODE V2l) ⇔ (V2l = STRING V0c (EXPLODE V1s))) ∧     ((IMPLODE V2l = STRING V0c V1s) ⇔ (V2l = STRING V0c (EXPLODE V1s)))
 (conjecture "thm_2Estring_2EIMPLODE__EQ__THM" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1s") ("c_2Estring_2EIMPLODE" "V2l")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V2l" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2EEXPLODE" "V1s")))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" "V2l") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" "V1s")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V2l" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0c" ("c_2Estring_2EEXPLODE" "V1s"))))))))))))
-; string.EXPLODE_DEST_STRING
-; ∀s.     EXPLODE s =     case DEST_STRING s of NONE => "" | SOME (c,t) => STRING c (EXPLODE t)
+; string.EXPLODE_DEST_STRING: ∀V0s.     EXPLODE V0s =     case DEST_STRING V0s of       NONE => ""     | SOME (V2c,V3t) => STRING V2c (EXPLODE V3t)
 (conjecture "thm_2Estring_2EEXPLODE__DEST__STRING" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EEXPLODE" "V0s") (("c_2Eoption_2Eoption__CASE" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EDEST__STRING" "V0s") ("c_2Elist_2ENIL" "ty_2Estring_2Echar") (lambda "V1v" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Epair_2Epair__CASE" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V1v" (lambda "V2c" "ty_2Estring_2Echar" (lambda "V3t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2c" ("c_2Estring_2EEXPLODE" "V3t")))))))))))
-; string.IMPLODE_STRING
-; ∀clist. IMPLODE clist = FOLDR STRING "" clist
+; string.IMPLODE_STRING: ∀V0clist. IMPLODE V0clist = FOLDR STRING "" V0clist
 (conjecture "thm_2Estring_2EIMPLODE__STRING" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0clist" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Estring_2EIMPLODE" "V0clist") (("c_2Elist_2EFOLDR" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Elist_2ECONS" "ty_2Estring_2Echar") ("c_2Elist_2ENIL" "ty_2Estring_2Echar") "V0clist")))))
-; string.STRLEN_EQ_0
-; ∀l. (STRLEN l = 0) ⇔ (l = "")
+; string.STRLEN_EQ_0: ∀V0l. (STRLEN V0l = 0) ⇔ (V0l = "")
 (conjecture "thm_2Estring_2ESTRLEN__EQ__0" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V0l") "c_2Enum_2E0") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0l" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))))))
-; string.STRLEN_THM
-; (STRLEN "" = 0) ∧ ∀h t. STRLEN (STRING h t) = SUC (STRLEN t)
+; string.STRLEN_THM: (STRLEN "" = 0) ∧ ∀V0h V1t. STRLEN (STRING V0h V1t) = SUC (STRLEN V1t)
 (conjecture "thm_2Estring_2ESTRLEN__THM" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) "c_2Enum_2E0") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0h" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0h" "V1t")) ("c_2Enum_2ESUC" (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V1t")))))))))
-; string.STRLEN_DEF
-; (STRLEN "" = 0) ∧ ∀h t. STRLEN (STRING h t) = SUC (STRLEN t)
+; string.STRLEN_DEF: (STRLEN "" = 0) ∧ ∀V0h V1t. STRLEN (STRING V0h V1t) = SUC (STRLEN V1t)
 (conjecture "thm_2Estring_2ESTRLEN__DEF" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) "c_2Enum_2E0") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V0h" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V0h" "V1t")) ("c_2Enum_2ESUC" (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V1t")))))))))
-; string.STRCAT_def
-; (∀l. STRCAT "" l = l) ∧ ∀l1 l2 h. STRCAT (STRING h l1) l2 = STRING h (STRCAT l1 l2)
+; string.STRCAT_def: (∀V0l. STRCAT "" V0l = V0l) ∧ ∀V1l1 V2l2 V3h. STRCAT (STRING V3h V1l1) V2l2 = STRING V3h (STRCAT V1l1 V2l2)
 (conjecture "thm_2Estring_2ESTRCAT__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") ("c_2Elist_2ENIL" "ty_2Estring_2Echar") "V0l") "V0l"))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1l1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2l2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V3h" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" "V1l1") "V2l2") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V3h" (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V1l1" "V2l2")))))))))))
-; string.STRCAT
-; STRCAT s1 s2 = STRCAT s1 s2
+; string.STRCAT: ∀V0s1 V1s2. STRCAT V0s1 V1s2 = STRCAT V0s1 V1s2
 (conjecture "thm_2Estring_2ESTRCAT" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0s1" "V1s2") (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0s1" "V1s2")))))))
-; string.STRCAT_EQNS
-; (STRCAT "" s = s) ∧ (STRCAT s "" = s) ∧ (STRCAT (STRING c s1) s2 = STRING c (STRCAT s1 s2))
+; string.STRCAT_EQNS: ∀V0s V1c V2s1 V3s2.     (STRCAT "" V0s = V0s) ∧ (STRCAT V0s "" = V0s) ∧     (STRCAT (STRING V1c V2s1) V3s2 = STRING V1c (STRCAT V2s1 V3s2))
 (conjecture "thm_2Estring_2ESTRCAT__EQNS" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V1c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V3s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") ("c_2Elist_2ENIL" "ty_2Estring_2Echar") "V0s") "V0s") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0s" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) "V0s") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1c" "V2s1") "V3s2") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1c" (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V2s1" "V3s2"))))))))))))))
-; string.STRCAT_ASSOC
-; ∀l1 l2 l3. STRCAT l1 (STRCAT l2 l3) = STRCAT (STRCAT l1 l2) l3
+; string.STRCAT_ASSOC: ∀V0l1 V1l2 V2l3.     STRCAT V0l1 (STRCAT V1l2 V2l3) = STRCAT (STRCAT V0l1 V1l2) V2l3
 (conjecture "thm_2Estring_2ESTRCAT__ASSOC" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1l2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2l3" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0l1" (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V1l2" "V2l3")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0l1" "V1l2") "V2l3")))))))))
-; string.STRCAT_11
-; (∀l1 l2 l3. (STRCAT l1 l2 = STRCAT l1 l3) ⇔ (l2 = l3)) ∧ ∀l1 l2 l3. (STRCAT l2 l1 = STRCAT l3 l1) ⇔ (l2 = l3)
+; string.STRCAT_11: (∀V0l1 V1l2 V2l3. (STRCAT V0l1 V1l2 = STRCAT V0l1 V2l3) ⇔ (V1l2 = V2l3)) ∧ ∀V3l1 V4l2 V5l3. (STRCAT V4l2 V3l1 = STRCAT V5l3 V3l1) ⇔ (V4l2 = V5l3)
 (conjecture "thm_2Estring_2ESTRCAT__11" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1l2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2l3" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0l1" "V1l2") (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0l1" "V2l3")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V1l2" "V2l3")))))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V3l1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V4l2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V5l3" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V4l2" "V3l1") (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V5l3" "V3l1")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V4l2" "V5l3"))))))))))
-; string.STRCAT_ACYCLIC
-; ∀s s1. ((s = STRCAT s s1) ⇔ (s1 = "")) ∧ ((s = STRCAT s1 s) ⇔ (s1 = ""))
+; string.STRCAT_ACYCLIC: ∀V0s V1s1.     ((V0s = STRCAT V0s V1s1) ⇔ (V1s1 = "")) ∧     ((V0s = STRCAT V1s1 V0s) ⇔ (V1s1 = ""))
 (conjecture "thm_2Estring_2ESTRCAT__ACYCLIC" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0s" "V1s1")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V1s1" ("c_2Elist_2ENIL" "ty_2Estring_2Echar"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V1s1" "V0s")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V1s1" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")))))))))
-; string.STRCAT_EXPLODE
-; ∀s1 s2. STRCAT s1 s2 = FOLDR STRING s2 (EXPLODE s1)
+; string.STRCAT_EXPLODE: ∀V0s1 V1s2. STRCAT V0s1 V1s2 = FOLDR STRING V1s2 (EXPLODE V0s1)
 (conjecture "thm_2Estring_2ESTRCAT__EXPLODE" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0s1" "V1s2") (("c_2Elist_2EFOLDR" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) ("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V1s2" ("c_2Estring_2EEXPLODE" "V0s1"))))))))
-; string.STRCAT_EQ_EMPTY
-; ∀l1 l2. (STRCAT l1 l2 = "") ⇔ (l1 = "") ∧ (l2 = "")
+; string.STRCAT_EQ_EMPTY: ∀V0l1 V1l2. (STRCAT V0l1 V1l2 = "") ⇔ (V0l1 = "") ∧ (V1l2 = "")
 (conjecture "thm_2Estring_2ESTRCAT__EQ__EMPTY" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1l2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0l1" "V1l2") ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0l1" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V1l2" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")))))))))
-; string.STRLEN_CAT
-; ∀l1 l2. STRLEN (STRCAT l1 l2) = STRLEN l1 + STRLEN l2
+; string.STRLEN_CAT: ∀V0l1 V1l2. STRLEN (STRCAT V0l1 V1l2) = STRLEN V0l1 + STRLEN V1l2
 (conjecture "thm_2Estring_2ESTRLEN__CAT" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0l1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1l2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0l1" "V1l2")) ("c_2Earithmetic_2E_2B" (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V0l1") (("c_2Elist_2ELENGTH" "ty_2Estring_2Echar") "V1l2"))))))))
-; string.isPREFIX_DEF
-; ∀s1 s2.     s1 ≼ s2 ⇔     case (DEST_STRING s1,DEST_STRING s2) of       (NONE,v1) => T     | (SOME v2,NONE) => F     | (SOME (c1,t1),SOME (c2,t2)) => (c1 = c2) ∧ t1 ≼ t2
+; string.isPREFIX_DEF: ∀V0s1 V1s2.     V0s1 ≼ V1s2 ⇔     case (DEST_STRING V0s1,DEST_STRING V1s2) of       (NONE,V3v1) => T     | (SOME V4v2,NONE) => F     | (SOME (V8c1,V9t1),SOME (V6c2,V7t2)) => (V8c1 = V6c2) ∧ V9t1 ≼ V7t2
 (conjecture "thm_2Estring_2EisPREFIX__DEF" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Elist_2EisPREFIX" "ty_2Estring_2Echar") "V0s1" "V1s2") (("c_2Epair_2Epair__CASE" "ty_2Emin_2Ebool" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) (("c_2Epair_2E_2C" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) ("c_2Estring_2EDEST__STRING" "V0s1") ("c_2Estring_2EDEST__STRING" "V1s2")) (lambda "V2v" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (lambda "V3v1" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Eoption_2Eoption__CASE" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "ty_2Emin_2Ebool") "V2v" "c_2Ebool_2ET" (lambda "V4v2" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Eoption_2Eoption__CASE" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "ty_2Emin_2Ebool") "V3v1" "c_2Ebool_2EF" (lambda "V5v3" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (("c_2Epair_2Epair__CASE" "ty_2Emin_2Ebool" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V5v3" (lambda "V6c2" "ty_2Estring_2Echar" (lambda "V7t2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Epair_2Epair__CASE" "ty_2Emin_2Ebool" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V4v2" (lambda "V8c1" "ty_2Estring_2Echar" (lambda "V9t1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") "V8c1" "V6c2") (("c_2Elist_2EisPREFIX" "ty_2Estring_2Echar") "V9t1" "V7t2")))))))))))))))))))))
-; string.isPREFIX_IND
-; ∀P.     (∀s1 s2.          (∀c t1 t2.               (DEST_STRING s1 = SOME (c,t1)) ∧ (DEST_STRING s2 = SOME (c,t2)) ⇒               P t1 t2) ⇒          P s1 s2) ⇒     ∀v v1. P v v1
+; string.isPREFIX_IND: ∀V0P.     (∀V1s1 V2s2.          (∀V3c V4t1 V5t2.               (DEST_STRING V1s1 = SOME (V3c,V4t1)) ∧               (DEST_STRING V2s2 = SOME (V3c,V5t2)) ⇒               V0P V4t1 V5t2) ⇒          V0P V1s1 V2s2) ⇒     ∀V6v V7v1. V0P V6v V7v1
 (conjecture "thm_2Estring_2EisPREFIX__IND" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool"))) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V3c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V4t1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V5t2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) ("c_2Estring_2EDEST__STRING" "V1s1") (("c_2Eoption_2ESOME" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V3c" "V4t1"))) (("c_2Emin_2E_3D" ("ty_2Eoption_2Eoption" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")))) ("c_2Estring_2EDEST__STRING" "V2s2") (("c_2Eoption_2ESOME" ("ty_2Epair_2Eprod" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar"))) (("c_2Epair_2E_2C" "ty_2Estring_2Echar" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V3c" "V5t2")))) ("V0P" "V4t1" "V5t2")))))))) ("V0P" "V1s1" "V2s2")))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V6v" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V7v1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P" "V6v" "V7v1")))))))))
-; string.isPREFIX_STRCAT
-; ∀s1 s2. s1 ≼ s2 ⇔ ∃s3. s2 = STRCAT s1 s3
+; string.isPREFIX_STRCAT: ∀V0s1 V1s2. V0s1 ≼ V1s2 ⇔ ∃V2s3. V1s2 = STRCAT V0s1 V2s3
 (conjecture "thm_2Estring_2EisPREFIX__STRCAT" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Elist_2EisPREFIX" "ty_2Estring_2Echar") "V0s1" "V1s2") (("c_2Ebool_2E_3F" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2s3" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V1s2" (("c_2Elist_2EAPPEND" "ty_2Estring_2Echar") "V0s1" "V2s3"))))))))))
-; string.string_lt_ind
-; ∀P.     (∀s. P s "") ∧ (∀c s. P "" (STRING c s)) ∧     (∀c1 s1 c2 s2. P s1 s2 ⇒ P (STRING c1 s1) (STRING c2 s2)) ⇒     ∀v v1. P v v1
+; string.string_lt_ind: ∀V0P.     (∀V1s. V0P V1s "") ∧ (∀V2c V3s. V0P "" (STRING V2c V3s)) ∧     (∀V4c1 V5s1 V6c2 V7s2.          V0P V5s1 V7s2 ⇒ V0P (STRING V4c1 V5s1) (STRING V6c2 V7s2)) ⇒     ∀V8v V9v1. V0P V8v V9v1
 (conjecture "thm_2Estring_2Estring__lt__ind" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool"))) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("ty_2Emin_2Efun" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") "ty_2Emin_2Ebool")) ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P" "V1s" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V2c" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V3s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P" ("c_2Elist_2ENIL" "ty_2Estring_2Echar") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2c" "V3s")))))) (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V4c1" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V5s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V6c2" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V7s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("V0P" "V5s1" "V7s2") ("V0P" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V4c1" "V5s1") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V6c2" "V7s2"))))))))))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V8v" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V9v1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("V0P" "V8v" "V9v1")))))))))
-; string.string_lt_def
-; (∀s. s < "" ⇔ F) ∧ (∀s c. "" < STRING c s ⇔ T) ∧ ∀s2 s1 c2 c1. STRING c1 s1 < STRING c2 s2 ⇔ c1 < c2 ∨ (c1 = c2) ∧ s1 < s2
+; string.string_lt_def: (∀V0s. V0s < "" ⇔ F) ∧ (∀V1s V2c. "" < STRING V2c V1s ⇔ T) ∧ ∀V3s2 V4s1 V5c2 V6c1.     STRING V6c1 V4s1 < STRING V5c2 V3s2 ⇔     V6c1 < V5c2 ∨ (V6c1 = V5c2) ∧ V4s1 < V3s2
 (conjecture "thm_2Estring_2Estring__lt__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Estring__lt" "V0s" ("c_2Elist_2ENIL" "ty_2Estring_2Echar")) "c_2Ebool_2EF"))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V2c" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Estring__lt" ("c_2Elist_2ENIL" "ty_2Estring_2Echar") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V2c" "V1s")) "c_2Ebool_2ET"))))) (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V3s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V4s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V5c2" "ty_2Estring_2Echar" (("c_2Ebool_2E_21" "ty_2Estring_2Echar") (lambda "V6c1" "ty_2Estring_2Echar" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Estring__lt" (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V6c1" "V4s1") (("c_2Elist_2ECONS" "ty_2Estring_2Echar") "V5c2" "V3s2")) ("c_2Ebool_2E_5C_2F" ("c_2Estring_2Echar__lt" "V6c1" "V5c2") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Estring_2Echar") "V6c1" "V5c2") ("c_2Estring_2Estring__lt" "V4s1" "V3s2")))))))))))))))
-; string.string_le_def
-; ∀s1 s2. s1 ≤ s2 ⇔ (s1 = s2) ∨ s1 < s2
+; string.string_le_def: ∀V0s1 V1s2. V0s1 ≤ V1s2 ⇔ (V0s1 = V1s2) ∨ V0s1 < V1s2
 (axiom "thm_2Estring_2Estring__le__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Estring__le" "V0s1" "V1s2") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s1" "V1s2") ("c_2Estring_2Estring__lt" "V0s1" "V1s2"))))))))
-; string.string_gt_def
-; ∀s1 s2. s1 > s2 ⇔ s2 < s1
+; string.string_gt_def: ∀V0s1 V1s2. V0s1 > V1s2 ⇔ V1s2 < V0s1
 (axiom "thm_2Estring_2Estring__gt__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Estring__gt" "V0s1" "V1s2") ("c_2Estring_2Estring__lt" "V1s2" "V0s1")))))))
-; string.string_ge_def
-; ∀s1 s2. s1 ≥ s2 ⇔ s2 ≤ s1
+; string.string_ge_def: ∀V0s1 V1s2. V0s1 ≥ V1s2 ⇔ V1s2 ≤ V0s1
 (axiom "thm_2Estring_2Estring__ge__def" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Estring_2Estring__ge" "V0s1" "V1s2") ("c_2Estring_2Estring__le" "V1s2" "V0s1")))))))
-; string.string_lt_nonrefl
-; ∀s. ¬(s < s)
+; string.string_lt_nonrefl: ∀V0s. ¬(V0s < V0s)
 (conjecture "thm_2Estring_2Estring__lt__nonrefl" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_7E" ("c_2Estring_2Estring__lt" "V0s" "V0s")))))
-; string.string_lt_antisym
-; ∀s t. ¬(s < t ∧ t < s)
+; string.string_lt_antisym: ∀V0s V1t. ¬(V0s < V1t ∧ V1t < V0s)
 (conjecture "thm_2Estring_2Estring__lt__antisym" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_7E" ("c_2Ebool_2E_2F_5C" ("c_2Estring_2Estring__lt" "V0s" "V1t") ("c_2Estring_2Estring__lt" "V1t" "V0s"))))))))
-; string.string_lt_cases
-; ∀s t. (s = t) ∨ s < t ∨ t < s
+; string.string_lt_cases: ∀V0s V1t. (V0s = V1t) ∨ V0s < V1t ∨ V1t < V0s
 (conjecture "thm_2Estring_2Estring__lt__cases" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1t" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) "V0s" "V1t") ("c_2Ebool_2E_5C_2F" ("c_2Estring_2Estring__lt" "V0s" "V1t") ("c_2Estring_2Estring__lt" "V1t" "V0s"))))))))
-; string.string_lt_trans
-; ∀s1 s2 s3. s1 < s2 ∧ s2 < s3 ⇒ s1 < s3
+; string.string_lt_trans: ∀V0s1 V1s2 V2s3. V0s1 < V1s2 ∧ V1s2 < V2s3 ⇒ V0s1 < V2s3
 (conjecture "thm_2Estring_2Estring__lt__trans" (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V0s1" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V1s2" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") (("c_2Ebool_2E_21" ("ty_2Elist_2Elist" "ty_2Estring_2Echar")) (lambda "V2s3" ("ty_2Elist_2Elist" "ty_2Estring_2Echar") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Estring_2Estring__lt" "V0s1" "V1s2") ("c_2Estring_2Estring__lt" "V1s2" "V2s3")) ("c_2Estring_2Estring__lt" "V0s1" "V2s3")))))))))

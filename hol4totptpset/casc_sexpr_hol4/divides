@@ -1,135 +1,90 @@
-; c.divides.PRIMES
-; :num -> num
+; c.divides.PRIMES: :num -> num
 (constant_definition "c_2Edivides_2EPRIMES" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))
-; c.divides.divides
-; :num -> num -> bool
+; c.divides.divides: :num -> num -> bool
 (constant_definition "c_2Edivides_2Edivides" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")))
-; c.divides.prime
-; :num -> bool
+; c.divides.prime: :num -> bool
 (constant_definition "c_2Edivides_2Eprime" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))
-; divides.divides_def
-; ∀a b. divides a b ⇔ ∃q. b = q * a
+; divides.divides_def: ∀V0a V1b. divides V0a V1b ⇔ ∃V2q. V1b = V2q * V0a
 (axiom "thm_2Edivides_2Edivides__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Edivides_2Edivides" "V0a" "V1b") (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V2q" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1b" ("c_2Earithmetic_2E_2A" "V2q" "V0a"))))))))))
-; divides.ALL_DIVIDES_0
-; ∀a. divides a 0
+; divides.ALL_DIVIDES_0: ∀V0a. divides V0a 0
 (conjecture "thm_2Edivides_2EALL__DIVIDES__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" ("c_2Edivides_2Edivides" "V0a" "c_2Enum_2E0"))))
-; divides.ZERO_DIVIDES
-; divides 0 m ⇔ (m = 0)
+; divides.ZERO_DIVIDES: ∀V0m. divides 0 V0m ⇔ (V0m = 0)
 (conjecture "thm_2Edivides_2EZERO__DIVIDES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Edivides_2Edivides" "c_2Enum_2E0" "V0m") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "c_2Enum_2E0")))))
-; divides.DIVIDES_REFL
-; ∀a. divides a a
+; divides.DIVIDES_REFL: ∀V0a. divides V0a V0a
 (conjecture "thm_2Edivides_2EDIVIDES__REFL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" ("c_2Edivides_2Edivides" "V0a" "V0a"))))
-; divides.DIVIDES_TRANS
-; ∀a b c. divides a b ∧ divides b c ⇒ divides a c
+; divides.DIVIDES_TRANS: ∀V0a V1b V2c. divides V0a V1b ∧ divides V1b V2c ⇒ divides V0a V2c
 (conjecture "thm_2Edivides_2EDIVIDES__TRANS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2c" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Edivides" "V0a" "V1b") ("c_2Edivides_2Edivides" "V1b" "V2c")) ("c_2Edivides_2Edivides" "V0a" "V2c")))))))))
-; divides.ONE_DIVIDES_ALL
-; ∀a. divides 1 a
+; divides.ONE_DIVIDES_ALL: ∀V0a. divides 1 V0a
 (conjecture "thm_2Edivides_2EONE__DIVIDES__ALL" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" ("c_2Edivides_2Edivides" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0a"))))
-; divides.DIVIDES_ONE
-; ∀x. divides x 1 ⇔ (x = 1)
+; divides.DIVIDES_ONE: ∀V0x. divides V0x 1 ⇔ (V0x = 1)
 (conjecture "thm_2Edivides_2EDIVIDES__ONE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Edivides_2Edivides" "V0x" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0x" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; divides.DIVIDES_ADD_1
-; ∀a b c. divides a b ∧ divides a c ⇒ divides a (b + c)
+; divides.DIVIDES_ADD_1: ∀V0a V1b V2c. divides V0a V1b ∧ divides V0a V2c ⇒ divides V0a (V1b + V2c)
 (conjecture "thm_2Edivides_2EDIVIDES__ADD__1" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2c" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Edivides" "V0a" "V1b") ("c_2Edivides_2Edivides" "V0a" "V2c")) ("c_2Edivides_2Edivides" "V0a" ("c_2Earithmetic_2E_2B" "V1b" "V2c"))))))))))
-; divides.DIVIDES_ADD_2
-; ∀a b c. divides a b ∧ divides a (b + c) ⇒ divides a c
+; divides.DIVIDES_ADD_2: ∀V0a V1b V2c. divides V0a V1b ∧ divides V0a (V1b + V2c) ⇒ divides V0a V2c
 (conjecture "thm_2Edivides_2EDIVIDES__ADD__2" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2c" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Edivides" "V0a" "V1b") ("c_2Edivides_2Edivides" "V0a" ("c_2Earithmetic_2E_2B" "V1b" "V2c"))) ("c_2Edivides_2Edivides" "V0a" "V2c")))))))))
-; divides.DIVIDES_SUB
-; ∀a b c. divides a b ∧ divides a c ⇒ divides a (b − c)
+; divides.DIVIDES_SUB: ∀V0a V1b V2c. divides V0a V1b ∧ divides V0a V2c ⇒ divides V0a (V1b − V2c)
 (conjecture "thm_2Edivides_2EDIVIDES__SUB" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2c" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Edivides" "V0a" "V1b") ("c_2Edivides_2Edivides" "V0a" "V2c")) ("c_2Edivides_2Edivides" "V0a" ("c_2Earithmetic_2E_2D" "V1b" "V2c"))))))))))
-; divides.DIVIDES_LE
-; ∀a b. 0 < b ∧ divides a b ⇒ a ≤ b
+; divides.DIVIDES_LE: ∀V0a V1b. 0 < V1b ∧ divides V0a V1b ⇒ V0a ≤ V1b
 (conjecture "thm_2Edivides_2EDIVIDES__LE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V1b") ("c_2Edivides_2Edivides" "V0a" "V1b")) ("c_2Earithmetic_2E_3C_3D" "V0a" "V1b")))))))
-; divides.DIVIDES_LEQ_OR_ZERO
-; ∀m n. divides m n ⇒ m ≤ n ∨ (n = 0)
+; divides.DIVIDES_LEQ_OR_ZERO: ∀V0m V1n. divides V0m V1n ⇒ V0m ≤ V1n ∨ (V1n = 0)
 (conjecture "thm_2Edivides_2EDIVIDES__LEQ__OR__ZERO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Edivides_2Edivides" "V0m" "V1n") ("c_2Ebool_2E_5C_2F" ("c_2Earithmetic_2E_3C_3D" "V0m" "V1n") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1n" "c_2Enum_2E0"))))))))
-; divides.NOT_LT_DIVIDES
-; ∀a b. 0 < b ∧ b < a ⇒ ¬divides a b
+; divides.NOT_LT_DIVIDES: ∀V0a V1b. 0 < V1b ∧ V1b < V0a ⇒ ¬divides V0a V1b
 (conjecture "thm_2Edivides_2ENOT__LT__DIVIDES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V1b") ("c_2Eprim__rec_2E_3C" "V1b" "V0a")) ("c_2Ebool_2E_7E" ("c_2Edivides_2Edivides" "V0a" "V1b"))))))))
-; divides.DIVIDES_ANTISYM
-; ∀a b. divides a b ∧ divides b a ⇒ (a = b)
+; divides.DIVIDES_ANTISYM: ∀V0a V1b. divides V0a V1b ∧ divides V1b V0a ⇒ (V0a = V1b)
 (conjecture "thm_2Edivides_2EDIVIDES__ANTISYM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Edivides" "V0a" "V1b") ("c_2Edivides_2Edivides" "V1b" "V0a")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0a" "V1b")))))))
-; divides.DIVIDES_MULT
-; ∀a b c. divides a b ⇒ divides a (b * c)
+; divides.DIVIDES_MULT: ∀V0a V1b V2c. divides V0a V1b ⇒ divides V0a (V1b * V2c)
 (conjecture "thm_2Edivides_2EDIVIDES__MULT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2c" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Edivides_2Edivides" "V0a" "V1b") ("c_2Edivides_2Edivides" "V0a" ("c_2Earithmetic_2E_2A" "V1b" "V2c"))))))))))
-; divides.DIVIDES_MULT_LEFT
-; ∀n m. divides (n * m) m ⇔ (m = 0) ∨ (n = 1)
+; divides.DIVIDES_MULT_LEFT: ∀V0n V1m. divides (V0n * V1m) V1m ⇔ (V1m = 0) ∨ (V0n = 1)
 (conjecture "thm_2Edivides_2EDIVIDES__MULT__LEFT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Edivides_2Edivides" ("c_2Earithmetic_2E_2A" "V0n" "V1m") "V1m") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1m" "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; divides.DIVIDES_FACT
-; ∀b. 0 < b ⇒ divides b (FACT b)
+; divides.DIVIDES_FACT: ∀V0b. 0 < V0b ⇒ divides V0b (FACT V0b)
 (conjecture "thm_2Edivides_2EDIVIDES__FACT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0b") ("c_2Edivides_2Edivides" "V0b" ("c_2Earithmetic_2EFACT" "V0b"))))))
-; divides.LEQ_DIVIDES_FACT
-; ∀m n. 0 < m ∧ m ≤ n ⇒ divides m (FACT n)
+; divides.LEQ_DIVIDES_FACT: ∀V0m V1n. 0 < V0m ∧ V0m ≤ V1n ⇒ divides V0m (FACT V1n)
 (conjecture "thm_2Edivides_2ELEQ__DIVIDES__FACT" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0m") ("c_2Earithmetic_2E_3C_3D" "V0m" "V1n")) ("c_2Edivides_2Edivides" "V0m" ("c_2Earithmetic_2EFACT" "V1n"))))))))
-; divides.prime_def
-; ∀a. prime a ⇔ a ≠ 1 ∧ ∀b. divides b a ⇒ (b = a) ∨ (b = 1)
+; divides.prime_def: ∀V0a. prime V0a ⇔ V0a ≠ 1 ∧ ∀V1b. divides V1b V0a ⇒ (V1b = V0a) ∨ (V1b = 1)
 (axiom "thm_2Edivides_2Eprime__def" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Edivides_2Eprime" "V0a") ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0a" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Edivides_2Edivides" "V1b" "V0a") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1b" "V0a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1b" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))
-; divides.NOT_PRIME_0
-; ¬prime 0
+; divides.NOT_PRIME_0: ¬prime 0
 (conjecture "thm_2Edivides_2ENOT__PRIME__0" ("c_2Ebool_2E_7E" ("c_2Edivides_2Eprime" "c_2Enum_2E0")))
-; divides.NOT_PRIME_1
-; ¬prime 1
+; divides.NOT_PRIME_1: ¬prime 1
 (conjecture "thm_2Edivides_2ENOT__PRIME__1" ("c_2Ebool_2E_7E" ("c_2Edivides_2Eprime" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; divides.PRIME_2
-; prime 2
+; divides.PRIME_2: prime 2
 (conjecture "thm_2Edivides_2EPRIME__2" ("c_2Edivides_2Eprime" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))
-; divides.PRIME_3
-; prime 3
+; divides.PRIME_3: prime 3
 (conjecture "thm_2Edivides_2EPRIME__3" ("c_2Edivides_2Eprime" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; divides.PRIME_POS
-; ∀p. prime p ⇒ 0 < p
+; divides.PRIME_POS: ∀V0p. prime V0p ⇒ 0 < V0p
 (conjecture "thm_2Edivides_2EPRIME__POS" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0p" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Edivides_2Eprime" "V0p") ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V0p")))))
-; divides.ONE_LT_PRIME
-; ∀p. prime p ⇒ 1 < p
+; divides.ONE_LT_PRIME: ∀V0p. prime V0p ⇒ 1 < V0p
 (conjecture "thm_2Edivides_2EONE__LT__PRIME" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0p" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Edivides_2Eprime" "V0p") ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "V0p")))))
-; divides.prime_divides_only_self
-; ∀m n. prime m ∧ prime n ∧ divides m n ⇒ (m = n)
+; divides.prime_divides_only_self: ∀V0m V1n. prime V0m ∧ prime V1n ∧ divides V0m V1n ⇒ (V0m = V1n)
 (conjecture "thm_2Edivides_2Eprime__divides__only__self" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Eprime" "V0m") ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Eprime" "V1n") ("c_2Edivides_2Edivides" "V0m" "V1n"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n")))))))
-; divides.PRIME_FACTOR
-; ∀n. n ≠ 1 ⇒ ∃p. prime p ∧ divides p n
+; divides.PRIME_FACTOR: ∀V0n. V0n ≠ 1 ⇒ ∃V1p. prime V1p ∧ divides V1p V0n
 (conjecture "thm_2Edivides_2EPRIME__FACTOR" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1p" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Eprime" "V1p") ("c_2Edivides_2Edivides" "V1p" "V0n"))))))))
-; divides.EUCLID
-; ∀n. ∃p. n < p ∧ prime p
+; divides.EUCLID: ∀V0n. ∃V1p. V0n < V1p ∧ prime V1p
 (conjecture "thm_2Edivides_2EEUCLID" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1p" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V0n" "V1p") ("c_2Edivides_2Eprime" "V1p")))))))
-; divides.PRIMES_def
-; (PRIMES 0 = 2) ∧ ∀n. PRIMES (SUC n) = LEAST p. prime p ∧ PRIMES n < p
+; divides.PRIMES_def: (PRIMES 0 = 2) ∧ ∀V0n. PRIMES (SUC V0n) = LEAST V1p. prime V1p ∧ PRIMES V0n < V1p
 (axiom "thm_2Edivides_2EPRIMES__def" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Edivides_2EPRIMES" "c_2Enum_2E0") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Edivides_2EPRIMES" ("c_2Enum_2ESUC" "V0n")) ("c_2Ewhile_2ELEAST" (lambda "V1p" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Edivides_2Eprime" "V1p") ("c_2Eprim__rec_2E_3C" ("c_2Edivides_2EPRIMES" "V0n") "V1p")))))))))
-; divides.primePRIMES
-; ∀n. prime (PRIMES n)
+; divides.primePRIMES: ∀V0n. prime (PRIMES V0n)
 (conjecture "thm_2Edivides_2EprimePRIMES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Edivides_2Eprime" ("c_2Edivides_2EPRIMES" "V0n")))))
-; divides.INFINITE_PRIMES
-; ∀n. PRIMES n < PRIMES (SUC n)
+; divides.INFINITE_PRIMES: ∀V0n. PRIMES V0n < PRIMES (SUC V0n)
 (conjecture "thm_2Edivides_2EINFINITE__PRIMES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" ("c_2Edivides_2EPRIMES" "V0n") ("c_2Edivides_2EPRIMES" ("c_2Enum_2ESUC" "V0n"))))))
-; divides.LT_PRIMES
-; ∀m n. m < n ⇒ PRIMES m < PRIMES n
+; divides.LT_PRIMES: ∀V0m V1n. V0m < V1n ⇒ PRIMES V0m < PRIMES V1n
 (conjecture "thm_2Edivides_2ELT__PRIMES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0m" "V1n") ("c_2Eprim__rec_2E_3C" ("c_2Edivides_2EPRIMES" "V0m") ("c_2Edivides_2EPRIMES" "V1n"))))))))
-; divides.PRIMES_11
-; ∀m n. (PRIMES m = PRIMES n) ⇒ (m = n)
+; divides.PRIMES_11: ∀V0m V1n. (PRIMES V0m = PRIMES V1n) ⇒ (V0m = V1n)
 (conjecture "thm_2Edivides_2EPRIMES__11" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Edivides_2EPRIMES" "V0m") ("c_2Edivides_2EPRIMES" "V1n")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0m" "V1n")))))))
-; divides.INDEX_LESS_PRIMES
-; ∀n. n < PRIMES n
+; divides.INDEX_LESS_PRIMES: ∀V0n. V0n < PRIMES V0n
 (conjecture "thm_2Edivides_2EINDEX__LESS__PRIMES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V0n" ("c_2Edivides_2EPRIMES" "V0n")))))
-; divides.EUCLID_PRIMES
-; ∀n. ∃i. n < PRIMES i
+; divides.EUCLID_PRIMES: ∀V0n. ∃V1i. V0n < PRIMES V1i
 (conjecture "thm_2Edivides_2EEUCLID__PRIMES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V0n" ("c_2Edivides_2EPRIMES" "V1i")))))))
-; divides.NEXT_LARGER_PRIME
-; ∀n. ∃i. n < PRIMES i ∧ ∀j. j < i ⇒ PRIMES j ≤ n
+; divides.NEXT_LARGER_PRIME: ∀V0n. ∃V1i. V0n < PRIMES V1i ∧ ∀V2j. V2j < V1i ⇒ PRIMES V2j ≤ V0n
 (conjecture "thm_2Edivides_2ENEXT__LARGER__PRIME" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V0n" ("c_2Edivides_2EPRIMES" "V1i")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2j" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V2j" "V1i") ("c_2Earithmetic_2E_3C_3D" ("c_2Edivides_2EPRIMES" "V2j") "V0n"))))))))))
-; divides.PRIMES_NO_GAP
-; ∀n p. PRIMES n < p ∧ p < PRIMES (SUC n) ∧ prime p ⇒ F
+; divides.PRIMES_NO_GAP: ∀V0n V1p. PRIMES V0n < V1p ∧ V1p < PRIMES (SUC V0n) ∧ prime V1p ⇒ F
 (conjecture "thm_2Edivides_2EPRIMES__NO__GAP" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1p" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" ("c_2Edivides_2EPRIMES" "V0n") "V1p") ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V1p" ("c_2Edivides_2EPRIMES" ("c_2Enum_2ESUC" "V0n"))) ("c_2Edivides_2Eprime" "V1p"))) "c_2Ebool_2EF"))))))
-; divides.PRIMES_ONTO
-; ∀p. prime p ⇒ ∃i. PRIMES i = p
+; divides.PRIMES_ONTO: ∀V0p. prime V0p ⇒ ∃V1i. PRIMES V1i = V0p
 (conjecture "thm_2Edivides_2EPRIMES__ONTO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0p" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Edivides_2Eprime" "V0p") (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Edivides_2EPRIMES" "V1i") "V0p")))))))
-; divides.PRIME_INDEX
-; ∀p. prime p ⇔ ∃i. p = PRIMES i
+; divides.PRIME_INDEX: ∀V0p. prime V0p ⇔ ∃V1i. V0p = PRIMES V1i
 (conjecture "thm_2Edivides_2EPRIME__INDEX" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0p" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Edivides_2Eprime" "V0p") (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1i" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0p" ("c_2Edivides_2EPRIMES" "V1i"))))))))
-; divides.ONE_LT_PRIMES
-; ∀n. 1 < PRIMES n
+; divides.ONE_LT_PRIMES: ∀V0n. 1 < PRIMES V0n
 (conjecture "thm_2Edivides_2EONE__LT__PRIMES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) ("c_2Edivides_2EPRIMES" "V0n")))))
-; divides.ZERO_LT_PRIMES
-; ∀n. 0 < PRIMES n
+; divides.ZERO_LT_PRIMES: ∀V0n. 0 < PRIMES V0n
 (conjecture "thm_2Edivides_2EZERO__LT__PRIMES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Edivides_2EPRIMES" "V0n")))))
-; divides.compute_divides
-; ∀a b.     divides a b ⇔     if a = 0 then b = 0     else if a = 1 then T     else if b = 0 then T     else b MOD a = 0
+; divides.compute_divides: ∀V0a V1b.     divides V0a V1b ⇔     if V0a = 0 then V1b = 0     else if V0a = 1 then T     else if V1b = 0 then T     else V1b MOD V0a = 0
 (conjecture "thm_2Edivides_2Ecompute__divides" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Edivides_2Edivides" "V0a" "V1b") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0a" "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1b" "c_2Enum_2E0") (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0a" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "c_2Ebool_2ET" (("c_2Ebool_2ECOND" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1b" "c_2Enum_2E0") "c_2Ebool_2ET" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2EMOD" "V1b" "V0a") "c_2Enum_2E0"))))))))))

@@ -1,171 +1,114 @@
-; res_quan.RES_FORALL
-; ∀P f. RES_FORALL P f ⇔ ∀x. x ∈ P ⇒ f x
+; res_quan.RES_FORALL: ∀V0P V1f. RES_FORALL V0P V1f ⇔ ∀V2x. V2x ∈ V0P ⇒ V1f V2x
 (conjecture "thm_2Eres__quan_2ERES__FORALL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" "V1f") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "A_27a") "V2x" "V0P") ("V1f" "V2x")))))))))))
-; res_quan.RES_EXISTS
-; ∀P f. RES_EXISTS P f ⇔ ∃x. x ∈ P ∧ f x
+; res_quan.RES_EXISTS: ∀V0P V1f. RES_EXISTS V0P V1f ⇔ ∃V2x. V2x ∈ V0P ∧ V1f V2x
 (conjecture "thm_2Eres__quan_2ERES__EXISTS" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" "V1f") (("c_2Ebool_2E_3F" "A_27a") (lambda "V2x" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27a") "V2x" "V0P") ("V1f" "V2x")))))))))))
-; res_quan.RES_EXISTS_UNIQUE
-; ∀P f. RES_EXISTS_UNIQUE P f ⇔ (∃x::P. f x) ∧ ∀x y::P. f x ∧ f y ⇒ (x = y)
+; res_quan.RES_EXISTS_UNIQUE: ∀V0P V1f.     RES_EXISTS_UNIQUE V0P V1f ⇔     (∃V2x::V0P. V1f V2x) ∧ ∀V3x V4y::V0P. V1f V3x ∧ V1f V4y ⇒ (V3x = V4y)
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") "V0P" "V1f") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" (lambda "V2x" "A_27a" ("V1f" "V2x"))) (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V3x" "A_27a" (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V4y" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V1f" "V3x") ("V1f" "V4y")) (("c_2Emin_2E_3D" "A_27a") "V3x" "V4y"))))))))))))))
-; res_quan.RES_SELECT
-; ∀P f. RES_SELECT P f = @x. x ∈ P ∧ f x
+; res_quan.RES_SELECT: ∀V0P V1f. RES_SELECT V0P V1f = @V2x. V2x ∈ V0P ∧ V1f V2x
 (conjecture "thm_2Eres__quan_2ERES__SELECT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27a") (("c_2Ebool_2ERES__SELECT" "A_27a") "V0P" "V1f") (("c_2Emin_2E_40" "A_27a") (lambda "V2x" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27a") "V2x" "V0P") ("V1f" "V2x")))))))))))
-; res_quan.RES_FORALL_CONJ_DIST
-; ∀P Q R. (∀i::P. Q i ∧ R i) ⇔ (∀i::P. Q i) ∧ ∀i::P. R i
+; res_quan.RES_FORALL_CONJ_DIST: ∀V0P V1Q V2R.     (∀V3i::V0P. V1Q V3i ∧ V2R V3i) ⇔     (∀V4i::V0P. V1Q V4i) ∧ ∀V5i::V0P. V2R V5i
 (conjecture "thm_2Eres__quan_2ERES__FORALL__CONJ__DIST" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2R" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V3i" "A_27a" ("c_2Ebool_2E_2F_5C" ("V1Q" "V3i") ("V2R" "V3i")))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V4i" "A_27a" ("V1Q" "V4i"))) (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V5i" "A_27a" ("V2R" "V5i")))))))))))))
-; res_quan.RES_FORALL_DISJ_DIST
-; ∀P Q R. (∀i::(λj. P j ∨ Q j). R i) ⇔ (∀i::P. R i) ∧ ∀i::Q. R i
+; res_quan.RES_FORALL_DISJ_DIST: ∀V0P V1Q V2R.     (∀V4i::(λV3j. V0P V3j ∨ V1Q V3j). V2R V4i) ⇔     (∀V5i::V0P. V2R V5i) ∧ ∀V6i::V1Q. V2R V6i
 (conjecture "thm_2Eres__quan_2ERES__FORALL__DISJ__DIST" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2R" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") (lambda "V3j" "A_27a" ("c_2Ebool_2E_5C_2F" ("V0P" "V3j") ("V1Q" "V3j"))) (lambda "V4i" "A_27a" ("V2R" "V4i"))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V5i" "A_27a" ("V2R" "V5i"))) (("c_2Ebool_2ERES__FORALL" "A_27a") "V1Q" (lambda "V6i" "A_27a" ("V2R" "V6i")))))))))))))
-; res_quan.RES_FORALL_UNIQUE
-; ∀P j. (∀i:: $= j. P i) ⇔ P j
+; res_quan.RES_FORALL_UNIQUE: ∀V0P V1j. (∀V2i:: $= V1j. V0P V2i) ⇔ V0P V1j
 (conjecture "thm_2Eres__quan_2ERES__FORALL__UNIQUE" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27a") (lambda "V1j" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") (("c_2Emin_2E_3D" "A_27a") "V1j") (lambda "V2i" "A_27a" ("V0P" "V2i"))) ("V0P" "V1j"))))))))
-; res_quan.RES_FORALL_FORALL
-; ∀P R x. (∀x (i::P). R i x) ⇔ ∀(i::P) x. R i x
+; res_quan.RES_FORALL_FORALL: ∀V0P V1R V2x. (∀V3x (V4i::V0P). V1R V4i V3x) ⇔ ∀(V5i::V0P) V6x. V1R V5i V6x
 (conjecture "thm_2Eres__quan_2ERES__FORALL__FORALL" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V1R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Ebool_2E_21" "A_27b") (lambda "V2x" "A_27b" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27b") (lambda "V3x" "A_27b" (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V4i" "A_27a" ("V1R" "V4i" "V3x"))))) (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V5i" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V6x" "A_27b" ("V1R" "V5i" "V6x"))))))))))))))
-; res_quan.RES_FORALL_REORDER
-; ∀P Q R. (∀(i::P) (j::Q). R i j) ⇔ ∀(j::Q) (i::P). R i j
+; res_quan.RES_FORALL_REORDER: ∀V0P V1Q V2R.     (∀(V3i::V0P) (V4j::V1Q). V2R V3i V4j) ⇔     ∀(V5j::V1Q) (V6i::V0P). V2R V6i V5j
 (conjecture "thm_2Eres__quan_2ERES__FORALL__REORDER" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V2R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V3i" "A_27a" (("c_2Ebool_2ERES__FORALL" "A_27b") "V1Q" (lambda "V4j" "A_27b" ("V2R" "V3i" "V4j"))))) (("c_2Ebool_2ERES__FORALL" "A_27b") "V1Q" (lambda "V5j" "A_27b" (("c_2Ebool_2ERES__FORALL" "A_27a") "V0P" (lambda "V6i" "A_27a" ("V2R" "V6i" "V5j"))))))))))))))
-; res_quan.RES_FORALL_T
-; ∀P s x (x::s). T
+; res_quan.RES_FORALL_T: ∀V0P V1s V2x (V3x::V1s). T
 (conjecture "thm_2Eres__quan_2ERES__FORALL__T" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0P" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27c") (lambda "V2x" "A_27c" (("c_2Ebool_2ERES__FORALL" "A_27b") "V1s" (lambda "V3x" "A_27b" "c_2Ebool_2ET"))))))))))
-; res_quan.RES_FORALL_F
-; ∀P s x. (∀x::s. F) ⇔ (s = ∅)
+; res_quan.RES_FORALL_F: ∀V0P V1s V2x. (∀V3x::V1s. F) ⇔ (V1s = ∅)
 (conjecture "thm_2Eres__quan_2ERES__FORALL__F" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0P" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27c") (lambda "V2x" "A_27c" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27b") "V1s" (lambda "V3x" "A_27b" "c_2Ebool_2EF")) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "V1s" ("c_2Epred__set_2EEMPTY" "A_27b")))))))))))
-; res_quan.RES_FORALL_EMPTY
-; ∀p. RES_FORALL ∅ p
+; res_quan.RES_FORALL_EMPTY: ∀V0p. RES_FORALL ∅ V0p
 (conjecture "thm_2Eres__quan_2ERES__FORALL__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") ("c_2Epred__set_2EEMPTY" "A_27a") "V0p")))))
-; res_quan.RES_FORALL_UNIV
-; ∀p. RES_FORALL 𝕌(:α) p ⇔ $! p
+; res_quan.RES_FORALL_UNIV: ∀V0p. RES_FORALL 𝕌(:α) V0p ⇔ $! V0p
 (conjecture "thm_2Eres__quan_2ERES__FORALL__UNIV" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") ("c_2Epred__set_2EUNIV" "A_27a") "V0p") (("c_2Ebool_2E_21" "A_27a") "V0p"))))))
-; res_quan.RES_FORALL_NULL
-; ∀p m. (∀x::p. m) ⇔ (p = ∅) ∨ m
+; res_quan.RES_FORALL_NULL: ∀V0p V1m. (∀V2x::V0p. V1m) ⇔ (V0p = ∅) ∨ V1m
 (conjecture "thm_2Eres__quan_2ERES__FORALL__NULL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1m" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") "V0p" (lambda "V2x" "A_27a" "V1m")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V0p" ("c_2Epred__set_2EEMPTY" "A_27a")) "V1m"))))))))
-; res_quan.NOT_RES_FORALL
-; ∀P s. ¬(∀x::s. P x) ⇔ ∃x::s. ¬P x
+; res_quan.NOT_RES_FORALL: ∀V0P V1s. ¬(∀V2x::V1s. V0P V2x) ⇔ ∃V3x::V1s. ¬V0P V3x
 (conjecture "thm_2Eres__quan_2ENOT__RES__FORALL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Ebool_2ERES__FORALL" "A_27a") "V1s" (lambda "V2x" "A_27a" ("V0P" "V2x")))) (("c_2Ebool_2ERES__EXISTS" "A_27a") "V1s" (lambda "V3x" "A_27a" ("c_2Ebool_2E_7E" ("V0P" "V3x")))))))))))
-; res_quan.RES_FORALL_NOT_EMPTY
-; ∀P s. ¬RES_FORALL s P ⇒ s ≠ ∅
+; res_quan.RES_FORALL_NOT_EMPTY: ∀V0P V1s. ¬RES_FORALL V1s V0P ⇒ V1s ≠ ∅
 (conjecture "thm_2Eres__quan_2ERES__FORALL__NOT__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Ebool_2ERES__FORALL" "A_27a") "V1s" "V0P")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1s" ("c_2Epred__set_2EEMPTY" "A_27a"))))))))))
-; res_quan.RES_FORALL_SUBSET
-; ∀P s t. s ⊆ t ⇒ RES_FORALL t P ⇒ RES_FORALL s P
+; res_quan.RES_FORALL_SUBSET: ∀V0P V1s V2t. V1s ⊆ V2t ⇒ RES_FORALL V2t V0P ⇒ RES_FORALL V1s V0P
 (conjecture "thm_2Eres__quan_2ERES__FORALL__SUBSET" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2t" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2ESUBSET" "A_27a") "V1s" "V2t") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ERES__FORALL" "A_27a") "V2t" "V0P") (("c_2Ebool_2ERES__FORALL" "A_27a") "V1s" "V0P")))))))))))
-; res_quan.RES_FORALL_UNION
-; ∀P s t. RES_FORALL (s ∪ t) P ⇔ RES_FORALL s P ∧ RES_FORALL t P
+; res_quan.RES_FORALL_UNION: ∀V0P V1s V2t.     RES_FORALL (V1s ∪ V2t) V0P ⇔ RES_FORALL V1s V0P ∧ RES_FORALL V2t V0P
 (conjecture "thm_2Eres__quan_2ERES__FORALL__UNION" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2t" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") (("c_2Epred__set_2EUNION" "A_27a") "V1s" "V2t") "V0P") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2ERES__FORALL" "A_27a") "V1s" "V0P") (("c_2Ebool_2ERES__FORALL" "A_27a") "V2t" "V0P")))))))))))
-; res_quan.RES_FORALL_DIFF
-; ∀P s t x. (∀x::s DIFF t. P x) ⇔ ∀x::s. x ∉ t ⇒ P x
+; res_quan.RES_FORALL_DIFF: ∀V0P V1s V2t V3x.     (∀V4x::V1s DIFF V2t. V0P V4x) ⇔ ∀V5x::V1s. V5x ∉ V2t ⇒ V0P V5x
 (conjecture "thm_2Eres__quan_2ERES__FORALL__DIFF" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2t" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27b") (lambda "V3x" "A_27b" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") (("c_2Epred__set_2EDIFF" "A_27a") "V1s" "V2t") (lambda "V4x" "A_27a" ("V0P" "V4x"))) (("c_2Ebool_2ERES__FORALL" "A_27a") "V1s" (lambda "V5x" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Ebool_2EIN" "A_27a") "V5x" "V2t")) ("V0P" "V5x")))))))))))))))
-; res_quan.IN_BIGINTER_RES_FORALL
-; ∀x sos. x ∈ BIGINTER sos ⇔ ∀s::sos. x ∈ s
+; res_quan.IN_BIGINTER_RES_FORALL: ∀V0x V1sos. V0x ∈ BIGINTER V1sos ⇔ ∀V2s::V1sos. V0x ∈ V2s
 (conjecture "thm_2Eres__quan_2EIN__BIGINTER__RES__FORALL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V1sos" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V0x" (("c_2Epred__set_2EBIGINTER" "A_27a") "V1sos")) (("c_2Ebool_2ERES__FORALL" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1sos" (lambda "V2s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V0x" "V2s"))))))))))
-; res_quan.RES_FORALL_BIGUNION
-; ∀P sos. (∀x::BIGUNION sos. P x) ⇔ ∀(s::sos) (x::s). P x
+; res_quan.RES_FORALL_BIGUNION: ∀V0P V1sos.     (∀V2x::BIGUNION V1sos. V0P V2x) ⇔ ∀(V3s::V1sos) (V4x::V3s). V0P V4x
 (conjecture "thm_2Eres__quan_2ERES__FORALL__BIGUNION" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V1sos" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") (("c_2Epred__set_2EBIGUNION" "A_27a") "V1sos") (lambda "V2x" "A_27a" ("V0P" "V2x"))) (("c_2Ebool_2ERES__FORALL" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1sos" (lambda "V3s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") "V3s" (lambda "V4x" "A_27a" ("V0P" "V4x"))))))))))))
-; res_quan.RES_FORALL_BIGINTER
-; ∀P sos. (∀x::BIGINTER sos. P x) ⇔ ∀x. (∀s::sos. x ∈ s) ⇒ P x
+; res_quan.RES_FORALL_BIGINTER: ∀V0P V1sos.     (∀V2x::BIGINTER V1sos. V0P V2x) ⇔     ∀V3x. (∀V4s::V1sos. V3x ∈ V4s) ⇒ V0P V3x
 (conjecture "thm_2Eres__quan_2ERES__FORALL__BIGINTER" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V1sos" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__FORALL" "A_27a") (("c_2Epred__set_2EBIGINTER" "A_27a") "V1sos") (lambda "V2x" "A_27a" ("V0P" "V2x"))) (("c_2Ebool_2E_21" "A_27a") (lambda "V3x" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ERES__FORALL" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1sos" (lambda "V4s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V3x" "V4s"))) ("V0P" "V3x")))))))))))
-; res_quan.RES_EXISTS_DISJ_DIST
-; ∀P Q R. (∃i::P. Q i ∨ R i) ⇔ (∃i::P. Q i) ∨ ∃i::P. R i
+; res_quan.RES_EXISTS_DISJ_DIST: ∀V0P V1Q V2R.     (∃V3i::V0P. V1Q V3i ∨ V2R V3i) ⇔     (∃V4i::V0P. V1Q V4i) ∨ ∃V5i::V0P. V2R V5i
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__DISJ__DIST" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2R" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" (lambda "V3i" "A_27a" ("c_2Ebool_2E_5C_2F" ("V1Q" "V3i") ("V2R" "V3i")))) ("c_2Ebool_2E_5C_2F" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" (lambda "V4i" "A_27a" ("V1Q" "V4i"))) (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" (lambda "V5i" "A_27a" ("V2R" "V5i")))))))))))))
-; res_quan.RES_DISJ_EXISTS_DIST
-; ∀P Q R. (∃i::(λi. P i ∨ Q i). R i) ⇔ (∃i::P. R i) ∨ ∃i::Q. R i
+; res_quan.RES_DISJ_EXISTS_DIST: ∀V0P V1Q V2R.     (∃V4i::(λV3i. V0P V3i ∨ V1Q V3i). V2R V4i) ⇔     (∃V5i::V0P. V2R V5i) ∨ ∃V6i::V1Q. V2R V6i
 (conjecture "thm_2Eres__quan_2ERES__DISJ__EXISTS__DIST" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2R" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") (lambda "V3i" "A_27a" ("c_2Ebool_2E_5C_2F" ("V0P" "V3i") ("V1Q" "V3i"))) (lambda "V4i" "A_27a" ("V2R" "V4i"))) ("c_2Ebool_2E_5C_2F" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" (lambda "V5i" "A_27a" ("V2R" "V5i"))) (("c_2Ebool_2ERES__EXISTS" "A_27a") "V1Q" (lambda "V6i" "A_27a" ("V2R" "V6i")))))))))))))
-; res_quan.RES_EXISTS_EQUAL
-; ∀P j. (∃i:: $= j. P i) ⇔ P j
+; res_quan.RES_EXISTS_EQUAL: ∀V0P V1j. (∃V2i:: $= V1j. V0P V2i) ⇔ V0P V1j
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__EQUAL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27a") (lambda "V1j" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") (("c_2Emin_2E_3D" "A_27a") "V1j") (lambda "V2i" "A_27a" ("V0P" "V2i"))) ("V0P" "V1j"))))))))
-; res_quan.RES_EXISTS_REORDER
-; ∀P Q R. (∃(i::P) (j::Q). R i j) ⇔ ∃(j::Q) (i::P). R i j
+; res_quan.RES_EXISTS_REORDER: ∀V0P V1Q V2R.     (∃(V3i::V0P) (V4j::V1Q). V2R V3i V4j) ⇔     ∃(V5j::V1Q) (V6i::V0P). V2R V6i V5j
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__REORDER" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (lambda "V2R" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" (lambda "V3i" "A_27a" (("c_2Ebool_2ERES__EXISTS" "A_27b") "V1Q" (lambda "V4j" "A_27b" ("V2R" "V3i" "V4j"))))) (("c_2Ebool_2ERES__EXISTS" "A_27b") "V1Q" (lambda "V5j" "A_27b" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" (lambda "V6i" "A_27a" ("V2R" "V6i" "V5j"))))))))))))))
-; res_quan.RES_EXISTS_F
-; ∀P s x. ¬∃s::x. F
+; res_quan.RES_EXISTS_F: ∀V0P V1s V2x. ¬∃V3s::V2x. F
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__F" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0P" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V1s" "A_27b" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27c" "ty_2Emin_2Ebool")) (lambda "V2x" ("ty_2Emin_2Efun" "A_27c" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Ebool_2ERES__EXISTS" "A_27c") "V2x" (lambda "V3s" "A_27c" "c_2Ebool_2EF")))))))))))
-; res_quan.RES_EXISTS_T
-; ∀P s x. (∃x::s. T) ⇔ s ≠ ∅
+; res_quan.RES_EXISTS_T: ∀V0P V1s V2x. (∃V3x::V1s. T) ⇔ V1s ≠ ∅
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__T" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0P" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27c") (lambda "V2x" "A_27c" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27b") "V1s" (lambda "V3x" "A_27b" "c_2Ebool_2ET")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "V1s" ("c_2Epred__set_2EEMPTY" "A_27b"))))))))))))
-; res_quan.RES_EXISTS_EMPTY
-; ∀p. ¬RES_EXISTS ∅ p
+; res_quan.RES_EXISTS_EMPTY: ∀V0p. ¬RES_EXISTS ∅ V0p
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Ebool_2ERES__EXISTS" "A_27a") ("c_2Epred__set_2EEMPTY" "A_27a") "V0p"))))))
-; res_quan.RES_EXISTS_UNIV
-; ∀p. RES_EXISTS 𝕌(:α) p ⇔ $? p
+; res_quan.RES_EXISTS_UNIV: ∀V0p. RES_EXISTS 𝕌(:α) V0p ⇔ $? V0p
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIV" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") ("c_2Epred__set_2EUNIV" "A_27a") "V0p") (("c_2Ebool_2E_3F" "A_27a") "V0p"))))))
-; res_quan.RES_EXISTS_NULL
-; ∀p m. (∃x::p. m) ⇔ p ≠ ∅ ∧ m
+; res_quan.RES_EXISTS_NULL: ∀V0p V1m. (∃V2x::V0p. V1m) ⇔ V0p ≠ ∅ ∧ V1m
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__NULL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1m" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0p" (lambda "V2x" "A_27a" "V1m")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V0p" ("c_2Epred__set_2EEMPTY" "A_27a"))) "V1m"))))))))
-; res_quan.RES_EXISTS_ALT
-; ∀p m. RES_EXISTS p m ⇔ RES_SELECT p m ∈ p ∧ m (RES_SELECT p m)
+; res_quan.RES_EXISTS_ALT: ∀V0p V1m.     RES_EXISTS V0p V1m ⇔ RES_SELECT V0p V1m ∈ V0p ∧ V1m (RES_SELECT V0p V1m)
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__ALT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1m" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0p" "V1m") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27a") (("c_2Ebool_2ERES__SELECT" "A_27a") "V0p" "V1m") "V0p") ("V1m" (("c_2Ebool_2ERES__SELECT" "A_27a") "V0p" "V1m"))))))))))
-; res_quan.NOT_RES_EXISTS
-; ∀P s. ¬(∃x::s. P x) ⇔ ∀x::s. ¬P x
+; res_quan.NOT_RES_EXISTS: ∀V0P V1s. ¬(∃V2x::V1s. V0P V2x) ⇔ ∀V3x::V1s. ¬V0P V3x
 (conjecture "thm_2Eres__quan_2ENOT__RES__EXISTS" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V1s" (lambda "V2x" "A_27a" ("V0P" "V2x")))) (("c_2Ebool_2ERES__FORALL" "A_27a") "V1s" (lambda "V3x" "A_27a" ("c_2Ebool_2E_7E" ("V0P" "V3x")))))))))))
-; res_quan.RES_EXISTS_NOT_EMPTY
-; ∀P s. RES_EXISTS s P ⇒ s ≠ ∅
+; res_quan.RES_EXISTS_NOT_EMPTY: ∀V0P V1s. RES_EXISTS V1s V0P ⇒ V1s ≠ ∅
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__NOT__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V1s" "V0P") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1s" ("c_2Epred__set_2EEMPTY" "A_27a"))))))))))
-; res_quan.RES_EXISTS_SUBSET
-; ∀P s t. s ⊆ t ⇒ RES_EXISTS s P ⇒ RES_EXISTS t P
+; res_quan.RES_EXISTS_SUBSET: ∀V0P V1s V2t. V1s ⊆ V2t ⇒ RES_EXISTS V1s V0P ⇒ RES_EXISTS V2t V0P
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__SUBSET" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2t" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Epred__set_2ESUBSET" "A_27a") "V1s" "V2t") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V1s" "V0P") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V2t" "V0P")))))))))))
-; res_quan.RES_EXISTS_UNION
-; ∀P s t. RES_EXISTS (s ∪ t) P ⇔ RES_EXISTS s P ∨ RES_EXISTS t P
+; res_quan.RES_EXISTS_UNION: ∀V0P V1s V2t.     RES_EXISTS (V1s ∪ V2t) V0P ⇔ RES_EXISTS V1s V0P ∨ RES_EXISTS V2t V0P
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNION" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2t" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") (("c_2Epred__set_2EUNION" "A_27a") "V1s" "V2t") "V0P") ("c_2Ebool_2E_5C_2F" (("c_2Ebool_2ERES__EXISTS" "A_27a") "V1s" "V0P") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V2t" "V0P")))))))))))
-; res_quan.RES_EXISTS_DIFF
-; ∀P s t x. (∃x::s DIFF t. P x) ⇔ ∃x::s. x ∉ t ∧ P x
+; res_quan.RES_EXISTS_DIFF: ∀V0P V1s V2t V3x.     (∃V4x::V1s DIFF V2t. V0P V4x) ⇔ ∃V5x::V1s. V5x ∉ V2t ∧ V0P V5x
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__DIFF" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2t" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27b") (lambda "V3x" "A_27b" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") (("c_2Epred__set_2EDIFF" "A_27a") "V1s" "V2t") (lambda "V4x" "A_27a" ("V0P" "V4x"))) (("c_2Ebool_2ERES__EXISTS" "A_27a") "V1s" (lambda "V5x" "A_27a" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Ebool_2EIN" "A_27a") "V5x" "V2t")) ("V0P" "V5x")))))))))))))))
-; res_quan.IN_BIGUNION_RES_EXISTS
-; ∀x sos. x ∈ BIGUNION sos ⇔ ∃s::sos. x ∈ s
+; res_quan.IN_BIGUNION_RES_EXISTS: ∀V0x V1sos. V0x ∈ BIGUNION V1sos ⇔ ∃V2s::V1sos. V0x ∈ V2s
 (conjecture "thm_2Eres__quan_2EIN__BIGUNION__RES__EXISTS" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V1sos" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V0x" (("c_2Epred__set_2EBIGUNION" "A_27a") "V1sos")) (("c_2Ebool_2ERES__EXISTS" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1sos" (lambda "V2s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V0x" "V2s"))))))))))
-; res_quan.RES_EXISTS_BIGUNION
-; ∀P sos. (∃x::BIGUNION sos. P x) ⇔ ∃(s::sos) (x::s). P x
+; res_quan.RES_EXISTS_BIGUNION: ∀V0P V1sos.     (∃V2x::BIGUNION V1sos. V0P V2x) ⇔ ∃(V3s::V1sos) (V4x::V3s). V0P V4x
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__BIGUNION" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V1sos" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") (("c_2Epred__set_2EBIGUNION" "A_27a") "V1sos") (lambda "V2x" "A_27a" ("V0P" "V2x"))) (("c_2Ebool_2ERES__EXISTS" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1sos" (lambda "V3s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V3s" (lambda "V4x" "A_27a" ("V0P" "V4x"))))))))))))
-; res_quan.RES_EXISTS_BIGINTER
-; ∀P sos. (∃x::BIGINTER sos. P x) ⇔ ∃x. (∀s::sos. x ∈ s) ∧ P x
+; res_quan.RES_EXISTS_BIGINTER: ∀V0P V1sos.     (∃V2x::BIGINTER V1sos. V0P V2x) ⇔     ∃V3x. (∀V4s::V1sos. V3x ∈ V4s) ∧ V0P V3x
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__BIGINTER" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool")) (lambda "V1sos" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS" "A_27a") (("c_2Epred__set_2EBIGINTER" "A_27a") "V1sos") (lambda "V2x" "A_27a" ("V0P" "V2x"))) (("c_2Ebool_2E_3F" "A_27a") (lambda "V3x" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2ERES__FORALL" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1sos" (lambda "V4s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2EIN" "A_27a") "V3x" "V4s"))) ("V0P" "V3x")))))))))))
-; res_quan.RES_EXISTS_UNIQUE_ELIM
-; ∀P s. (∃!x::s. P x) ⇔ ∃!x. x ∈ s ∧ P x
+; res_quan.RES_EXISTS_UNIQUE_ELIM: ∀V0P V1s. (∃!V2x::V1s. V0P V2x) ⇔ ∃!V3x. V3x ∈ V1s ∧ V0P V3x
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__ELIM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") "V1s" (lambda "V2x" "A_27a" ("V0P" "V2x"))) (("c_2Ebool_2E_3F_21" "A_27a") (lambda "V3x" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27a") "V3x" "V1s") ("V0P" "V3x")))))))))))
-; res_quan.RES_EXISTS_UNIQUE_EXISTS
-; ∀P s. RES_EXISTS_UNIQUE P s ⇒ RES_EXISTS P s
+; res_quan.RES_EXISTS_UNIQUE_EXISTS: ∀V0P V1s. RES_EXISTS_UNIQUE V0P V1s ⇒ RES_EXISTS V0P V1s
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__EXISTS" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") "V0P" "V1s") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0P" "V1s"))))))))
-; res_quan.RES_EXISTS_UNIQUE_F
-; ∀P s x. ¬∃!x::s. F
+; res_quan.RES_EXISTS_UNIQUE_F: ∀V0P V1s V2x. ¬∃!V3x::V1s. F
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__F" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0P" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27c") (lambda "V2x" "A_27c" ("c_2Ebool_2E_7E" (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27b") "V1s" (lambda "V3x" "A_27b" "c_2Ebool_2EF")))))))))))
-; res_quan.RES_EXISTS_UNIQUE_T
-; ∀P s x. (∃!x::s. T) ⇔ ∃!x. x ∈ s
+; res_quan.RES_EXISTS_UNIQUE_T: ∀V0P V1s V2x. (∃!V3x::V1s. T) ⇔ ∃!V4x. V4x ∈ V1s
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__T" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0P" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27c") (lambda "V2x" "A_27c" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27b") "V1s" (lambda "V3x" "A_27b" "c_2Ebool_2ET")) (("c_2Ebool_2E_3F_21" "A_27b") (lambda "V4x" "A_27b" (("c_2Ebool_2EIN" "A_27b") "V4x" "V1s"))))))))))))
-; res_quan.RES_EXISTS_UNIQUE_EMPTY
-; ∀p. ¬RES_EXISTS_UNIQUE ∅ p
+; res_quan.RES_EXISTS_UNIQUE_EMPTY: ∀V0p. ¬RES_EXISTS_UNIQUE ∅ V0p
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") ("c_2Epred__set_2EEMPTY" "A_27a") "V0p"))))))
-; res_quan.RES_EXISTS_UNIQUE_NOT_EMPTY
-; ∀P s. RES_EXISTS_UNIQUE s P ⇒ s ≠ ∅
+; res_quan.RES_EXISTS_UNIQUE_NOT_EMPTY: ∀V0P V1s. RES_EXISTS_UNIQUE V1s V0P ⇒ V1s ≠ ∅
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__NOT__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") "V1s" "V0P") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V1s" ("c_2Epred__set_2EEMPTY" "A_27a"))))))))))
-; res_quan.RES_EXISTS_UNIQUE_UNIV
-; ∀p. RES_EXISTS_UNIQUE 𝕌(:α) p ⇔ $?! p
+; res_quan.RES_EXISTS_UNIQUE_UNIV: ∀V0p. RES_EXISTS_UNIQUE 𝕌(:α) V0p ⇔ $?! V0p
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__UNIV" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") ("c_2Epred__set_2EUNIV" "A_27a") "V0p") (("c_2Ebool_2E_3F_21" "A_27a") "V0p"))))))
-; res_quan.RES_EXISTS_UNIQUE_NULL
-; ∀p m. (∃!x::p. m) ⇔ (∃x. p = {x}) ∧ m
+; res_quan.RES_EXISTS_UNIQUE_NULL: ∀V0p V1m. (∃!V2x::V0p. V1m) ⇔ (∃V3x. V0p = {V3x}) ∧ V1m
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__NULL" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V1m" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") "V0p" (lambda "V2x" "A_27a" "V1m")) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_3F" "A_27a") (lambda "V3x" "A_27a" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) "V0p" (("c_2Epred__set_2EINSERT" "A_27a") "V3x" ("c_2Epred__set_2EEMPTY" "A_27a"))))) "V1m"))))))))
-; res_quan.RES_EXISTS_UNIQUE_SING
-; ∀P s x. (∃!x::s. T) ⇔ ∃y. s = {y}
+; res_quan.RES_EXISTS_UNIQUE_SING: ∀V0P V1s V2x. (∃!V3x::V1s. T) ⇔ ∃V4y. V1s = {V4y}
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__SING" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" "A_27a") (lambda "V0P" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27c") (lambda "V2x" "A_27c" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27b") "V1s" (lambda "V3x" "A_27b" "c_2Ebool_2ET")) (("c_2Ebool_2E_3F" "A_27b") (lambda "V4y" "A_27b" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) "V1s" (("c_2Epred__set_2EINSERT" "A_27b") "V4y" ("c_2Epred__set_2EEMPTY" "A_27b"))))))))))))))
-; res_quan.RES_EXISTS_UNIQUE_ALT
-; ∀p m. RES_EXISTS_UNIQUE p m ⇔ ∃x::p. m x ∧ ∀y::p. m y ⇒ (y = x)
+; res_quan.RES_EXISTS_UNIQUE_ALT: ∀V0p V1m.     RES_EXISTS_UNIQUE V0p V1m ⇔     ∃V2x::V0p. V1m V2x ∧ ∀V3y::V0p. V1m V3y ⇒ (V3y = V2x)
 (conjecture "thm_2Eres__quan_2ERES__EXISTS__UNIQUE__ALT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1m" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2ERES__EXISTS__UNIQUE" "A_27a") "V0p" "V1m") (("c_2Ebool_2ERES__EXISTS" "A_27a") "V0p" (lambda "V2x" "A_27a" ("c_2Ebool_2E_2F_5C" ("V1m" "V2x") (("c_2Ebool_2ERES__FORALL" "A_27a") "V0p" (lambda "V3y" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("V1m" "V3y") (("c_2Emin_2E_3D" "A_27a") "V3y" "V2x"))))))))))))))
-; res_quan.RES_SELECT_EMPTY
-; ∀p. RES_SELECT ∅ p = @x. F
+; res_quan.RES_SELECT_EMPTY: ∀V0p. RES_SELECT ∅ V0p = @V1x. F
 (conjecture "thm_2Eres__quan_2ERES__SELECT__EMPTY" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27a") (("c_2Ebool_2ERES__SELECT" "A_27a") ("c_2Epred__set_2EEMPTY" "A_27a") "V0p") (("c_2Emin_2E_40" "A_27a") (lambda "V1x" "A_27a" "c_2Ebool_2EF")))))))
-; res_quan.RES_SELECT_UNIV
-; ∀p. RES_SELECT 𝕌(:α) p = $@ p
+; res_quan.RES_SELECT_UNIV: ∀V0p. RES_SELECT 𝕌(:α) V0p = $@ V0p
 (conjecture "thm_2Eres__quan_2ERES__SELECT__UNIV" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27a") (("c_2Ebool_2ERES__SELECT" "A_27a") ("c_2Epred__set_2EUNIV" "A_27a") "V0p") (("c_2Emin_2E_40" "A_27a") "V0p"))))))
-; res_quan.RES_ABSTRACT
-; ∀p m x. x ∈ p ⇒ (RES_ABSTRACT p m x = m x)
+; res_quan.RES_ABSTRACT: ∀V0p V1m V2x. V2x ∈ V0p ⇒ (RES_ABSTRACT V0p V1m V2x = V1m V2x)
 (conjecture "thm_2Eres__quan_2ERES__ABSTRACT" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V1m" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "A_27a") "V2x" "V0p") (("c_2Emin_2E_3D" "A_27b") (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" "V1m" "V2x") ("V1m" "V2x")))))))))))
-; res_quan.RES_ABSTRACT_EQUAL
-; ∀p m1 m2.     (∀x. x ∈ p ⇒ (m1 x = m2 x)) ⇒ (RES_ABSTRACT p m1 = RES_ABSTRACT p m2)
+; res_quan.RES_ABSTRACT_EQUAL: ∀V0p V1m1 V2m2.     (∀V3x. V3x ∈ V0p ⇒ (V1m1 V3x = V2m2 V3x)) ⇒     (RES_ABSTRACT V0p V1m1 = RES_ABSTRACT V0p V2m2)
 (conjecture "thm_2Eres__quan_2ERES__ABSTRACT__EQUAL" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V1m1" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V2m2" ("ty_2Emin_2Efun" "A_27a" "A_27b") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_21" "A_27a") (lambda "V3x" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "A_27a") "V3x" "V0p") (("c_2Emin_2E_3D" "A_27b") ("V1m1" "V3x") ("V2m2" "V3x"))))) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" "V1m1") (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" "V2m2")))))))))))
-; res_quan.RES_ABSTRACT_IDEMPOT
-; ∀p m. RES_ABSTRACT p (RES_ABSTRACT p m) = RES_ABSTRACT p m
+; res_quan.RES_ABSTRACT_IDEMPOT: ∀V0p V1m. RES_ABSTRACT V0p (RES_ABSTRACT V0p V1m) = RES_ABSTRACT V0p V1m
 (conjecture "thm_2Eres__quan_2ERES__ABSTRACT__IDEMPOT" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V1m" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" "V1m")) (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" "V1m"))))))))
-; res_quan.RES_ABSTRACT_EQUAL_EQ
-; ∀p m1 m2. (RES_ABSTRACT p m1 = RES_ABSTRACT p m2) ⇔ ∀x. x ∈ p ⇒ (m1 x = m2 x)
+; res_quan.RES_ABSTRACT_EQUAL_EQ: ∀V0p V1m1 V2m2.     (RES_ABSTRACT V0p V1m1 = RES_ABSTRACT V0p V2m2) ⇔     ∀V3x. V3x ∈ V0p ⇒ (V1m1 V3x = V2m2 V3x)
 (conjecture "thm_2Eres__quan_2ERES__ABSTRACT__EQUAL__EQ" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V1m1" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V2m2" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" "V1m1") (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") "V0p" "V2m2")) (("c_2Ebool_2E_21" "A_27a") (lambda "V3x" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "A_27a") "V3x" "V0p") (("c_2Emin_2E_3D" "A_27b") ("V1m1" "V3x") ("V2m2" "V3x"))))))))))))))
-; res_quan.RES_ABSTRACT_UNIV
-; ∀m. RES_ABSTRACT 𝕌(:α) m = m
+; res_quan.RES_ABSTRACT_UNIV: ∀V0m. RES_ABSTRACT 𝕌(:α) V0m = V0m
 (conjecture "thm_2Eres__quan_2ERES__ABSTRACT__UNIV" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (lambda "V0m" ("ty_2Emin_2Efun" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27b")) (("c_2Ebool_2ERES__ABSTRACT" "A_27a" "A_27b") ("c_2Epred__set_2EUNIV" "A_27a") "V0m") "V0m")))))

@@ -1,103 +1,69 @@
 (type_definition "ty_2Emetric_2Emetric" 1)
-; c.metric.B
-; :α metric -> α # real -> α -> bool
+; c.metric.B: :α metric -> α # real -> α -> bool
 (constant_definition "c_2Emetric_2EB" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emetric_2Emetric" "A_27a") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")))))
-; c.metric.dist
-; :α metric -> α # α -> real
+; c.metric.dist: :α metric -> α # α -> real
 (constant_definition "c_2Emetric_2Edist" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emetric_2Emetric" "A_27a") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal"))))
-; c.metric.ismet
-; :(α # α -> real) -> bool
+; c.metric.ismet: :(α # α -> real) -> bool
 (constant_definition "c_2Emetric_2Eismet" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal") "ty_2Emin_2Ebool")))
-; c.metric.metric
-; :(α # α -> real) -> α metric
+; c.metric.metric: :(α # α -> real) -> α metric
 (constant_definition "c_2Emetric_2Emetric" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal") ("ty_2Emetric_2Emetric" "A_27a"))))
-; c.metric.mr1
-; :real metric
+; c.metric.mr1: :real metric
 (constant_definition "c_2Emetric_2Emr1" ("ty_2Emetric_2Emetric" "ty_2Erealax_2Ereal"))
-; c.metric.mtop
-; :α metric -> α topology
+; c.metric.mtop: :α metric -> α topology
 (constant_definition "c_2Emetric_2Emtop" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emetric_2Emetric" "A_27a") ("ty_2Etopology_2Etopology" "A_27a"))))
-; metric.ismet
-; ∀m.     ismet m ⇔     (∀x y. (m (x,y) = 0) ⇔ (x = y)) ∧ ∀x y z. m (y,z) ≤ m (x,y) + m (x,z)
+; metric.ismet: ∀V0m.     ismet V0m ⇔     (∀V1x V2y. (V0m (V1x,V2y) = 0) ⇔ (V1x = V2y)) ∧     ∀V3x V4y V5z. V0m (V4y,V5z) ≤ V0m (V3x,V4y) + V0m (V3x,V5z)
 (axiom "thm_2Emetric_2Eismet" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal")) (lambda "V0m" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emetric_2Eismet" "A_27a") "V0m") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V2y")) ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "A_27a") "V1x" "V2y")))))) (("c_2Ebool_2E_21" "A_27a") (lambda "V3x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V4y" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V5z" "A_27a" ("c_2Ereal_2Ereal__lte" ("V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V4y" "V5z")) ("c_2Erealax_2Ereal__add" ("V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V3x" "V4y")) ("V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V3x" "V5z"))))))))))))))))
-; metric.metric_TY_DEF
-; ∃rep. TYPE_DEFINITION ismet rep
+; metric.metric_TY_DEF: ∃V0rep. TYPE_DEFINITION ismet V0rep
 (axiom "thm_2Emetric_2Emetric__TY__DEF" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" ("ty_2Emetric_2Emetric" "A_27a") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal"))) (lambda "V0rep" ("ty_2Emin_2Efun" ("ty_2Emetric_2Emetric" "A_27a") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal")) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal") ("ty_2Emetric_2Emetric" "A_27a")) ("c_2Emetric_2Eismet" "A_27a") "V0rep")))))
-; metric.metric_tybij
-; (∀a. metric (dist a) = a) ∧ ∀r. ismet r ⇔ (dist (metric r) = r)
+; metric.metric_tybij: (∀V0a. metric (dist V0a) = V0a) ∧ ∀V1r. ismet V1r ⇔ (dist (metric V1r) = V1r)
 (axiom "thm_2Emetric_2Emetric__tybij" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0a" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Emin_2E_3D" ("ty_2Emetric_2Emetric" "A_27a")) (("c_2Emetric_2Emetric" "A_27a") (("c_2Emetric_2Edist" "A_27a") "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal")) (lambda "V1r" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emetric_2Eismet" "A_27a") "V1r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27a") "ty_2Erealax_2Ereal")) (("c_2Emetric_2Edist" "A_27a") (("c_2Emetric_2Emetric" "A_27a") "V1r")) "V1r")))))))
-; metric.METRIC_ISMET
-; ∀m. ismet (dist m)
+; metric.METRIC_ISMET: ∀V0m. ismet (dist V0m)
 (conjecture "thm_2Emetric_2EMETRIC__ISMET" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Emetric_2Eismet" "A_27a") (("c_2Emetric_2Edist" "A_27a") "V0m"))))))
-; metric.METRIC_ZERO
-; ∀m x y. (dist m (x,y) = 0) ⇔ (x = y)
+; metric.METRIC_ZERO: ∀V0m V1x V2y. (dist V0m (V1x,V2y) = 0) ⇔ (V1x = V2y)
 (conjecture "thm_2Emetric_2EMETRIC__ZERO" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V2y")) ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "A_27a") "V1x" "V2y"))))))))))
-; metric.METRIC_SAME
-; ∀m x. dist m (x,x) = 0
+; metric.METRIC_SAME: ∀V0m V1x. dist V0m (V1x,V1x) = 0
 (conjecture "thm_2Emetric_2EMETRIC__SAME" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V1x")) ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0"))))))))
-; metric.METRIC_POS
-; ∀m x y. 0 ≤ dist m (x,y)
+; metric.METRIC_POS: ∀V0m V1x V2y. 0 ≤ dist V0m (V1x,V2y)
 (conjecture "thm_2Emetric_2EMETRIC__POS" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V2y")))))))))))
-; metric.METRIC_SYM
-; ∀m x y. dist m (x,y) = dist m (y,x)
+; metric.METRIC_SYM: ∀V0m V1x V2y. dist V0m (V1x,V2y) = dist V0m (V2y,V1x)
 (conjecture "thm_2Emetric_2EMETRIC__SYM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V2y")) (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V2y" "V1x")))))))))))
-; metric.METRIC_TRIANGLE
-; ∀m x y z. dist m (x,z) ≤ dist m (x,y) + dist m (y,z)
+; metric.METRIC_TRIANGLE: ∀V0m V1x V2y V3z.     dist V0m (V1x,V3z) ≤ dist V0m (V1x,V2y) + dist V0m (V2y,V3z)
 (conjecture "thm_2Emetric_2EMETRIC__TRIANGLE" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3z" "A_27a" ("c_2Ereal_2Ereal__lte" (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V3z")) ("c_2Erealax_2Ereal__add" (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V2y")) (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V2y" "V3z"))))))))))))))
-; metric.METRIC_NZ
-; ∀m x y. x ≠ y ⇒ 0 < dist m (x,y)
+; metric.METRIC_NZ: ∀V0m V1x V2y. V1x ≠ V2y ⇒ 0 < dist V0m (V1x,V2y)
 (conjecture "thm_2Emetric_2EMETRIC__NZ" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2y" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "A_27a") "V1x" "V2y")) ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V2y"))))))))))))
-; metric.mtop
-; ∀m.     mtop m =     topology (λS'. ∀x. S' x ⇒ ∃e. 0 < e ∧ ∀y. dist m (x,y) < e ⇒ S' y)
+; metric.mtop: ∀V0m.     mtop V0m =     topology       (λV1S_27.            ∀V2x.                V1S_27 V2x ⇒                ∃V3e. 0 < V3e ∧ ∀V4y. dist V0m (V2x,V4y) < V3e ⇒ V1S_27 V4y)
 (axiom "thm_2Emetric_2Emtop" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Emin_2E_3D" ("ty_2Etopology_2Etopology" "A_27a")) (("c_2Emetric_2Emtop" "A_27a") "V0m") (("c_2Etopology_2Etopology" "A_27a") (lambda "V1S_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("V1S_27" "V2x") (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V3e" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V3e") (("c_2Ebool_2E_21" "A_27a") (lambda "V4y" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V2x" "V4y")) "V3e") ("V1S_27" "V4y")))))))))))))))))
-; metric.mtop_istopology
-; ∀m. istopology (λS'. ∀x. S' x ⇒ ∃e. 0 < e ∧ ∀y. dist m (x,y) < e ⇒ S' y)
+; metric.mtop_istopology: ∀V0m.     istopology       (λV1S_27.            ∀V2x.                V1S_27 V2x ⇒                ∃V3e. 0 < V3e ∧ ∀V4y. dist V0m (V2x,V4y) < V3e ⇒ V1S_27 V4y)
 (conjecture "thm_2Emetric_2Emtop__istopology" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Etopology_2Eistopology" "A_27a") (lambda "V1S_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("V1S_27" "V2x") (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V3e" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V3e") (("c_2Ebool_2E_21" "A_27a") (lambda "V4y" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V2x" "V4y")) "V3e") ("V1S_27" "V4y"))))))))))))))))
-; metric.MTOP_OPEN
-; ∀S' m.     open_in (mtop m) S' ⇔ ∀x. S' x ⇒ ∃e. 0 < e ∧ ∀y. dist m (x,y) < e ⇒ S' y
+; metric.MTOP_OPEN: ∀V0S_27 V1m.     open_in (mtop V1m) V0S_27 ⇔     ∀V2x.         V0S_27 V2x ⇒         ∃V3e. 0 < V3e ∧ ∀V4y. dist V1m (V2x,V4y) < V3e ⇒ V0S_27 V4y
 (conjecture "thm_2Emetric_2EMTOP__OPEN" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0S_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V1m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etopology_2Eopen__in" "A_27a") (("c_2Emetric_2Emtop" "A_27a") "V1m") "V0S_27") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("V0S_27" "V2x") (("c_2Ebool_2E_3F" "ty_2Erealax_2Ereal") (lambda "V3e" "ty_2Erealax_2Ereal" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V3e") (("c_2Ebool_2E_21" "A_27a") (lambda "V4y" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" (("c_2Emetric_2Edist" "A_27a") "V1m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V2x" "V4y")) "V3e") ("V0S_27" "V4y")))))))))))))))))
-; metric.ball
-; ∀m x e. metric$B m (x,e) = (λy. dist m (x,y) < e)
+; metric.ball: ∀V0m V1x V2e. metric$B V0m (V1x,V2e) = (λV3y. dist V0m (V1x,V3y) < V2e)
 (axiom "thm_2Emetric_2Eball" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2e" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (("c_2Emetric_2EB" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "ty_2Erealax_2Ereal") "V1x" "V2e")) (lambda "V3y" "A_27a" ("c_2Erealax_2Ereal__lt" (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V3y")) "V2e")))))))))))
-; metric.BALL_OPEN
-; ∀m x e. 0 < e ⇒ open_in (mtop m) (metric$B m (x,e))
+; metric.BALL_OPEN: ∀V0m V1x V2e. 0 < V2e ⇒ open_in (mtop V0m) (metric$B V0m (V1x,V2e))
 (conjecture "thm_2Emetric_2EBALL__OPEN" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2e" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V2e") (("c_2Etopology_2Eopen__in" "A_27a") (("c_2Emetric_2Emtop" "A_27a") "V0m") (("c_2Emetric_2EB" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "ty_2Erealax_2Ereal") "V1x" "V2e"))))))))))))
-; metric.BALL_NEIGH
-; ∀m x e. 0 < e ⇒ neigh (mtop m) (metric$B m (x,e),x)
+; metric.BALL_NEIGH: ∀V0m V1x V2e. 0 < V2e ⇒ neigh (mtop V0m) (metric$B V0m (V1x,V2e),V1x)
 (conjecture "thm_2Emetric_2EBALL__NEIGH" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2e" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V2e") (("c_2Etopology_2Eneigh" "A_27a") (("c_2Emetric_2Emtop" "A_27a") "V0m") (("c_2Epair_2E_2C" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "A_27a") (("c_2Emetric_2EB" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "ty_2Erealax_2Ereal") "V1x" "V2e")) "V1x")))))))))))
-; metric.MTOP_LIMPT
-; ∀m x S'.     limpt (mtop m) x S' ⇔ ∀e. 0 < e ⇒ ∃y. x ≠ y ∧ S' y ∧ dist m (x,y) < e
+; metric.MTOP_LIMPT: ∀V0m V1x V2S_27.     limpt (mtop V0m) V1x V2S_27 ⇔     ∀V3e. 0 < V3e ⇒ ∃V4y. V1x ≠ V4y ∧ V2S_27 V4y ∧ dist V0m (V1x,V4y) < V3e
 (conjecture "thm_2Emetric_2EMTOP__LIMPT" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emetric_2Emetric" "A_27a")) (lambda "V0m" ("ty_2Emetric_2Emetric" "A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2S_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Etopology_2Elimpt" "A_27a") (("c_2Emetric_2Emtop" "A_27a") "V0m") "V1x" "V2S_27") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V3e" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V3e") (("c_2Ebool_2E_3F" "A_27a") (lambda "V4y" "A_27a" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "A_27a") "V1x" "V4y")) ("c_2Ebool_2E_2F_5C" ("V2S_27" "V4y") ("c_2Erealax_2Ereal__lt" (("c_2Emetric_2Edist" "A_27a") "V0m" (("c_2Epair_2E_2C" "A_27a" "A_27a") "V1x" "V4y")) "V3e")))))))))))))))))
-; metric.ISMET_R1
-; ismet (λ(x,y). abs (y − x))
+; metric.ISMET_R1: ismet (λ(V0x,V1y). abs (V1y − V0x))
 (conjecture "thm_2Emetric_2EISMET__R1" (("c_2Emetric_2Eismet" "ty_2Erealax_2Ereal") (("c_2Epair_2EUNCURRY" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (lambda "V1y" "ty_2Erealax_2Ereal" ("c_2Ereal_2Eabs" ("c_2Ereal_2Ereal__sub" "V1y" "V0x")))))))
-; metric.mr1
-; mr1 = metric (λ(x,y). abs (y − x))
+; metric.mr1: mr1 = metric (λ(V0x,V1y). abs (V1y − V0x))
 (axiom "thm_2Emetric_2Emr1" (("c_2Emin_2E_3D" ("ty_2Emetric_2Emetric" "ty_2Erealax_2Ereal")) "c_2Emetric_2Emr1" (("c_2Emetric_2Emetric" "ty_2Erealax_2Ereal") (("c_2Epair_2EUNCURRY" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (lambda "V1y" "ty_2Erealax_2Ereal" ("c_2Ereal_2Eabs" ("c_2Ereal_2Ereal__sub" "V1y" "V0x"))))))))
-; metric.MR1_DEF
-; ∀x y. dist mr1 (x,y) = abs (y − x)
+; metric.MR1_DEF: ∀V0x V1y. dist mr1 (V0x,V1y) = abs (V1y − V0x)
 (conjecture "thm_2Emetric_2EMR1__DEF" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" "V1y")) ("c_2Ereal_2Eabs" ("c_2Ereal_2Ereal__sub" "V1y" "V0x"))))))))
-; metric.MR1_ADD
-; ∀x d. dist mr1 (x,x + d) = abs d
+; metric.MR1_ADD: ∀V0x V1d. dist mr1 (V0x,V0x + V1d) = abs V1d
 (conjecture "thm_2Emetric_2EMR1__ADD" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1d" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" ("c_2Erealax_2Ereal__add" "V0x" "V1d"))) ("c_2Ereal_2Eabs" "V1d")))))))
-; metric.MR1_SUB
-; ∀x d. dist mr1 (x,x − d) = abs d
+; metric.MR1_SUB: ∀V0x V1d. dist mr1 (V0x,V0x − V1d) = abs V1d
 (conjecture "thm_2Emetric_2EMR1__SUB" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1d" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" ("c_2Ereal_2Ereal__sub" "V0x" "V1d"))) ("c_2Ereal_2Eabs" "V1d")))))))
-; metric.MR1_ADD_POS
-; ∀x d. 0 ≤ d ⇒ (dist mr1 (x,x + d) = d)
+; metric.MR1_ADD_POS: ∀V0x V1d. 0 ≤ V1d ⇒ (dist mr1 (V0x,V0x + V1d) = V1d)
 (conjecture "thm_2Emetric_2EMR1__ADD__POS" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1d" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V1d") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" ("c_2Erealax_2Ereal__add" "V0x" "V1d"))) "V1d")))))))
-; metric.MR1_SUB_LE
-; ∀x d. 0 ≤ d ⇒ (dist mr1 (x,x − d) = d)
+; metric.MR1_SUB_LE: ∀V0x V1d. 0 ≤ V1d ⇒ (dist mr1 (V0x,V0x − V1d) = V1d)
 (conjecture "thm_2Emetric_2EMR1__SUB__LE" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1d" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V1d") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" ("c_2Ereal_2Ereal__sub" "V0x" "V1d"))) "V1d")))))))
-; metric.MR1_ADD_LT
-; ∀x d. 0 < d ⇒ (dist mr1 (x,x + d) = d)
+; metric.MR1_ADD_LT: ∀V0x V1d. 0 < V1d ⇒ (dist mr1 (V0x,V0x + V1d) = V1d)
 (conjecture "thm_2Emetric_2EMR1__ADD__LT" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1d" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V1d") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" ("c_2Erealax_2Ereal__add" "V0x" "V1d"))) "V1d")))))))
-; metric.MR1_SUB_LT
-; ∀x d. 0 < d ⇒ (dist mr1 (x,x − d) = d)
+; metric.MR1_SUB_LT: ∀V0x V1d. 0 < V1d ⇒ (dist mr1 (V0x,V0x − V1d) = V1d)
 (conjecture "thm_2Emetric_2EMR1__SUB__LT" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1d" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Erealax_2Ereal__lt" ("c_2Ereal_2Ereal__of__num" "c_2Enum_2E0") "V1d") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" ("c_2Ereal_2Ereal__sub" "V0x" "V1d"))) "V1d")))))))
-; metric.MR1_BETWEEN1
-; ∀x y z. x < z ∧ dist mr1 (x,y) < z − x ⇒ y < z
+; metric.MR1_BETWEEN1: ∀V0x V1y V2z. V0x < V2z ∧ dist mr1 (V0x,V1y) < V2z − V0x ⇒ V1y < V2z
 (conjecture "thm_2Emetric_2EMR1__BETWEEN1" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2z" "ty_2Erealax_2Ereal" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erealax_2Ereal__lt" "V0x" "V2z") ("c_2Erealax_2Ereal__lt" (("c_2Emetric_2Edist" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") "V0x" "V1y")) ("c_2Ereal_2Ereal__sub" "V2z" "V0x"))) ("c_2Erealax_2Ereal__lt" "V1y" "V2z")))))))))
-; metric.MR1_LIMPT
-; ∀x. limpt (mtop mr1) x 𝕌(:real)
+; metric.MR1_LIMPT: ∀V0x. limpt (mtop mr1) V0x 𝕌(:real)
 (conjecture "thm_2Emetric_2EMR1__LIMPT" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Etopology_2Elimpt" "ty_2Erealax_2Ereal") (("c_2Emetric_2Emtop" "ty_2Erealax_2Ereal") "c_2Emetric_2Emr1") "V0x" ("c_2Epred__set_2EUNIV" "ty_2Erealax_2Ereal")))))

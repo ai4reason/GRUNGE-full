@@ -1,148 +1,99 @@
 (type_definition "ty_2Esum_2Esum" 2)
-; c.sum.++
-; :(α -> γ) -> (β -> δ) -> α + β -> γ + δ
+; c.sum.++: :(α -> γ) -> (β -> δ) -> α + β -> γ + δ
 (constant_definition "c_2Esum_2E_2B_2B" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c" "A_27d") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27c") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "A_27d") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("ty_2Esum_2Esum" "A_27c" "A_27d"))))))
-; c.sum.ABS_sum
-; :(bool -> α -> β -> bool) -> α + β
+; c.sum.ABS_sum: :(bool -> α -> β -> bool) -> α + β
 (constant_definition "c_2Esum_2EABS__sum" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) ("ty_2Esum_2Esum" "A_27a" "A_27b"))))
-; c.sum.INL
-; :α -> α + β
+; c.sum.INL: :α -> α + β
 (constant_definition "c_2Esum_2EINL" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" "A_27a" ("ty_2Esum_2Esum" "A_27a" "A_27b"))))
-; c.sum.INR
-; :β -> α + β
+; c.sum.INR: :β -> α + β
 (constant_definition "c_2Esum_2EINR" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" "A_27b" ("ty_2Esum_2Esum" "A_27a" "A_27b"))))
-; c.sum.ISL
-; :α + β -> bool
+; c.sum.ISL: :α + β -> bool
 (constant_definition "c_2Esum_2EISL" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool")))
-; c.sum.ISR
-; :α + β -> bool
+; c.sum.ISR: :α + β -> bool
 (constant_definition "c_2Esum_2EISR" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool")))
-; c.sum.IS_SUM_REP
-; :(bool -> α -> β -> bool) -> bool
+; c.sum.IS_SUM_REP: :(bool -> α -> β -> bool) -> bool
 (constant_definition "c_2Esum_2EIS__SUM__REP" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) "ty_2Emin_2Ebool")))
-; c.sum.OUTL
-; :α + β -> α
+; c.sum.OUTL: :α + β -> α
 (constant_definition "c_2Esum_2EOUTL" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "A_27a")))
-; c.sum.OUTR
-; :α + β -> β
+; c.sum.OUTR: :α + β -> β
 (constant_definition "c_2Esum_2EOUTR" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "A_27b")))
-; c.sum.REP_sum
-; :α + β -> bool -> α -> β -> bool
+; c.sum.REP_sum: :α + β -> bool -> α -> β -> bool
 (constant_definition "c_2Esum_2EREP__sum" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))))))
-; c.sum.SUM_ALL
-; :(α -> bool) -> (β -> bool) -> α + β -> bool
+; c.sum.SUM_ALL: :(α -> bool) -> (β -> bool) -> α + β -> bool
 (constant_definition "c_2Esum_2ESUM__ALL" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool")))))
-; c.sum.sum_CASE
-; :α + β -> (α -> γ) -> (β -> γ) -> γ
+; c.sum.sum_CASE: :α + β -> (α -> γ) -> (β -> γ) -> γ
 (constant_definition "c_2Esum_2Esum__CASE" (forall_tyvarl_type ("A_27a" "A_27b" "A_27c") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "A_27c") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "A_27c") "A_27c")))))
-; sum.IS_SUM_REP
-; ∀f.     IS_SUM_REP f ⇔     ∃v1 v2. (f = (λb x y. (x = v1) ∧ b)) ∨ (f = (λb x y. (y = v2) ∧ ¬b))
+; sum.IS_SUM_REP: ∀V0f.     IS_SUM_REP V0f ⇔     ∃V1v1 V2v2.         (V0f = (λV3b V4x V5y. (V4x = V1v1) ∧ V3b)) ∨         (V0f = (λV6b V7x V8y. (V8y = V2v2) ∧ ¬V6b))
 (axiom "thm_2Esum_2EIS__SUM__REP" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")))) (lambda "V0f" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Esum_2EIS__SUM__REP" "A_27a" "A_27b") "V0f") (("c_2Ebool_2E_3F" "A_27a") (lambda "V1v1" "A_27a" (("c_2Ebool_2E_3F" "A_27b") (lambda "V2v2" "A_27b" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")))) "V0f" (lambda "V3b" "ty_2Emin_2Ebool" (lambda "V4x" "A_27a" (lambda "V5y" "A_27b" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") "V4x" "V1v1") "V3b"))))) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")))) "V0f" (lambda "V6b" "ty_2Emin_2Ebool" (lambda "V7x" "A_27a" (lambda "V8y" "A_27b" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27b") "V8y" "V2v2") ("c_2Ebool_2E_7E" "V6b"))))))))))))))))
-; sum.sum_TY_DEF
-; ∃rep. TYPE_DEFINITION IS_SUM_REP rep
+; sum.sum_TY_DEF: ∃V0rep. TYPE_DEFINITION IS_SUM_REP V0rep
 (axiom "thm_2Esum_2Esum__TY__DEF" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))))) (lambda "V0rep" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")))) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) ("ty_2Esum_2Esum" "A_27a" "A_27b")) ("c_2Esum_2EIS__SUM__REP" "A_27a" "A_27b") "V0rep")))))
-; sum.sum_ISO_DEF
-; (∀a. ABS_sum (REP_sum a) = a) ∧ ∀r. IS_SUM_REP r ⇔ (REP_sum (ABS_sum r) = r)
+; sum.sum_ISO_DEF: (∀V0a. ABS_sum (REP_sum V0a) = V0a) ∧ ∀V1r. IS_SUM_REP V1r ⇔ (REP_sum (ABS_sum V1r) = V1r)
 (axiom "thm_2Esum_2Esum__ISO__DEF" (forall_tyvarl_term ("A_27a" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0a" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EABS__sum" "A_27a" "A_27b") (("c_2Esum_2EREP__sum" "A_27a" "A_27b") "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")))) (lambda "V1r" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Esum_2EIS__SUM__REP" "A_27a" "A_27b") "V1r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")))) (("c_2Esum_2EREP__sum" "A_27a" "A_27b") (("c_2Esum_2EABS__sum" "A_27a" "A_27b") "V1r")) "V1r")))))))
-; sum.INL_DEF
-; ∀e. INL e = ABS_sum (λb x y. (x = e) ∧ b)
+; sum.INL_DEF: ∀V0e. INL V0e = ABS_sum (λV1b V2x V3y. (V2x = V0e) ∧ V1b)
 (axiom "thm_2Esum_2EINL__DEF" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V0e" "A_27a" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINL" "A_27a" "A_27b") "V0e") (("c_2Esum_2EABS__sum" "A_27a" "A_27b") (lambda "V1b" "ty_2Emin_2Ebool" (lambda "V2x" "A_27a" (lambda "V3y" "A_27b" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") "V2x" "V0e") "V1b"))))))))))
-; sum.INR_DEF
-; ∀e. INR e = ABS_sum (λb x y. (y = e) ∧ ¬b)
+; sum.INR_DEF: ∀V0e. INR V0e = ABS_sum (λV1b V2x V3y. (V3y = V0e) ∧ ¬V1b)
 (axiom "thm_2Esum_2EINR__DEF" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27b") (lambda "V0e" "A_27b" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINR" "A_27a" "A_27b") "V0e") (("c_2Esum_2EABS__sum" "A_27a" "A_27b") (lambda "V1b" "ty_2Emin_2Ebool" (lambda "V2x" "A_27a" (lambda "V3y" "A_27b" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27b") "V3y" "V0e") ("c_2Ebool_2E_7E" "V1b")))))))))))
-; sum.INL_11
-; (INL x = INL y) ⇔ (x = y)
+; sum.INL_11: ∀V0x V1y. (INL V0x = INL V1y) ⇔ (V0x = V1y)
 (conjecture "thm_2Esum_2EINL__11" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1y" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINL" "A_27a" "A_27b") "V0x") (("c_2Esum_2EINL" "A_27a" "A_27b") "V1y")) (("c_2Emin_2E_3D" "A_27a") "V0x" "V1y"))))))))
-; sum.INR_11
-; (INR x = INR y) ⇔ (x = y)
+; sum.INR_11: ∀V0x V1y. (INR V0x = INR V1y) ⇔ (V0x = V1y)
 (conjecture "thm_2Esum_2EINR__11" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27b") (lambda "V0x" "A_27b" (("c_2Ebool_2E_21" "A_27b") (lambda "V1y" "A_27b" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINR" "A_27a" "A_27b") "V0x") (("c_2Esum_2EINR" "A_27a" "A_27b") "V1y")) (("c_2Emin_2E_3D" "A_27b") "V0x" "V1y"))))))))
-; sum.INR_INL_11
-; (∀y x. (INL x = INL y) ⇔ (x = y)) ∧ ∀y x. (INR x = INR y) ⇔ (x = y)
+; sum.INR_INL_11: (∀V0y V1x. (INL V1x = INL V0y) ⇔ (V1x = V0y)) ∧ ∀V2y V3x. (INR V3x = INR V2y) ⇔ (V3x = V2y)
 (conjecture "thm_2Esum_2EINR__INL__11" (forall_tyvarl_term ("A_27a" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V0y" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINL" "A_27a" "A_27b") "V1x") (("c_2Esum_2EINL" "A_27a" "A_27b") "V0y")) (("c_2Emin_2E_3D" "A_27a") "V1x" "V0y")))))) (("c_2Ebool_2E_21" "A_27b") (lambda "V2y" "A_27b" (("c_2Ebool_2E_21" "A_27b") (lambda "V3x" "A_27b" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINR" "A_27a" "A_27b") "V3x") (("c_2Esum_2EINR" "A_27a" "A_27b") "V2y")) (("c_2Emin_2E_3D" "A_27b") "V3x" "V2y")))))))))
-; sum.INR_neq_INL
-; ∀v1 v2. INR v2 ≠ INL v1
+; sum.INR_neq_INL: ∀V0v1 V1v2. INR V1v2 ≠ INL V0v1
 (conjecture "thm_2Esum_2EINR__neq__INL" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V0v1" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V1v2" "A_27b" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINR" "A_27a" "A_27b") "V1v2") (("c_2Esum_2EINL" "A_27a" "A_27b") "V0v1")))))))))
-; sum.sum_axiom
-; ∀f g. ∃!h. (h ∘ INL = f) ∧ (h ∘ INR = g)
+; sum.sum_axiom: ∀V0f V1g. ∃!V2h. (V2h ∘ INL = V0f) ∧ (V2h ∘ INR = V1g)
 (conjecture "thm_2Esum_2Esum__axiom" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "A_27c") (("c_2Ebool_2E_3F_21" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "A_27c")) (lambda "V2h" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "A_27c") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (("c_2Ecombin_2Eo" "A_27a" "A_27c" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V2h" ("c_2Esum_2EINL" "A_27a" "A_27b")) "V0f") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (("c_2Ecombin_2Eo" "A_27b" "A_27c" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V2h" ("c_2Esum_2EINR" "A_27a" "A_27b")) "V1g"))))))))))
-; sum.sum_INDUCT
-; ∀P. (∀x. P (INL x)) ∧ (∀y. P (INR y)) ⇒ ∀s. P s
+; sum.sum_INDUCT: ∀V0P. (∀V1x. V0P (INL V1x)) ∧ (∀V2y. V0P (INR V2y)) ⇒ ∀V3s. V0P V3s
 (conjecture "thm_2Esum_2Esum__INDUCT" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" ("V0P" (("c_2Esum_2EINL" "A_27a" "A_27b") "V1x")))) (("c_2Ebool_2E_21" "A_27b") (lambda "V2y" "A_27b" ("V0P" (("c_2Esum_2EINR" "A_27a" "A_27b") "V2y"))))) (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V3s" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("V0P" "V3s"))))))))
-; sum.FORALL_SUM
-; (∀s. P s) ⇔ (∀x. P (INL x)) ∧ ∀y. P (INR y)
+; sum.FORALL_SUM: ∀V0P. (∀V1s. V0P V1s) ⇔ (∀V2x. V0P (INL V2x)) ∧ ∀V3y. V0P (INR V3y)
 (conjecture "thm_2Esum_2EFORALL__SUM" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V1s" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("V0P" "V1s"))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" ("V0P" (("c_2Esum_2EINL" "A_27a" "A_27b") "V2x")))) (("c_2Ebool_2E_21" "A_27b") (lambda "V3y" "A_27b" ("V0P" (("c_2Esum_2EINR" "A_27a" "A_27b") "V3y"))))))))))
-; sum.EXISTS_SUM
-; ∀P. (∃s. P s) ⇔ (∃x. P (INL x)) ∨ ∃y. P (INR y)
+; sum.EXISTS_SUM: ∀V0P. (∃V1s. V0P V1s) ⇔ (∃V2x. V0P (INL V2x)) ∨ ∃V3y. V0P (INR V3y)
 (conjecture "thm_2Esum_2EEXISTS__SUM" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V1s" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("V0P" "V1s"))) ("c_2Ebool_2E_5C_2F" (("c_2Ebool_2E_3F" "A_27a") (lambda "V2x" "A_27a" ("V0P" (("c_2Esum_2EINL" "A_27a" "A_27b") "V2x")))) (("c_2Ebool_2E_3F" "A_27b") (lambda "V3y" "A_27b" ("V0P" (("c_2Esum_2EINR" "A_27a" "A_27b") "V3y"))))))))))
-; sum.sum_Axiom
-; ∀f g. ∃h. (∀x. h (INL x) = f x) ∧ ∀y. h (INR y) = g y
+; sum.sum_Axiom: ∀V0f V1g.     ∃V2h. (∀V3x. V2h (INL V3x) = V0f V3x) ∧ ∀V4y. V2h (INR V4y) = V1g V4y
 (conjecture "thm_2Esum_2Esum__Axiom" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "A_27c") (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "A_27c")) (lambda "V2h" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "A_27c") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V3x" "A_27a" (("c_2Emin_2E_3D" "A_27c") ("V2h" (("c_2Esum_2EINL" "A_27a" "A_27b") "V3x")) ("V0f" "V3x")))) (("c_2Ebool_2E_21" "A_27b") (lambda "V4y" "A_27b" (("c_2Emin_2E_3D" "A_27c") ("V2h" (("c_2Esum_2EINR" "A_27a" "A_27b") "V4y")) ("V1g" "V4y")))))))))))))
-; sum.sum_CASES
-; ∀ss. (∃x. ss = INL x) ∨ ∃y. ss = INR y
+; sum.sum_CASES: ∀V0ss. (∃V1x. V0ss = INL V1x) ∨ ∃V2y. V0ss = INR V2y
 (conjecture "thm_2Esum_2Esum__CASES" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0ss" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("c_2Ebool_2E_5C_2F" (("c_2Ebool_2E_3F" "A_27a") (lambda "V1x" "A_27a" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V0ss" (("c_2Esum_2EINL" "A_27a" "A_27b") "V1x")))) (("c_2Ebool_2E_3F" "A_27b") (lambda "V2y" "A_27b" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V0ss" (("c_2Esum_2EINR" "A_27a" "A_27b") "V2y")))))))))
-; sum.sum_distinct
-; ∀x y. INL x ≠ INR y
+; sum.sum_distinct: ∀V0x V1y. INL V0x ≠ INR V1y
 (conjecture "thm_2Esum_2Esum__distinct" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V1y" "A_27b" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINL" "A_27a" "A_27b") "V0x") (("c_2Esum_2EINR" "A_27a" "A_27b") "V1y")))))))))
-; sum.sum_distinct1
-; ∀x y. INR y ≠ INL x
+; sum.sum_distinct1: ∀V0x V1y. INR V1y ≠ INL V0x
 (conjecture "thm_2Esum_2Esum__distinct1" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V1y" "A_27b" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINR" "A_27a" "A_27b") "V1y") (("c_2Esum_2EINL" "A_27a" "A_27b") "V0x")))))))))
-; sum.ISL
-; (∀x. ISL (INL x)) ∧ ∀y. ¬ISL (INR y)
+; sum.ISL: (∀V0x. ISL (INL V0x)) ∧ ∀V1y. ¬ISL (INR V1y)
 (axiom "thm_2Esum_2EISL" (forall_tyvarl_term ("A_27a" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Esum_2EISL" "A_27a" "A_27b") (("c_2Esum_2EINL" "A_27a" "A_27b") "V0x")))) (("c_2Ebool_2E_21" "A_27b") (lambda "V1y" "A_27b" ("c_2Ebool_2E_7E" (("c_2Esum_2EISL" "A_27a" "A_27b") (("c_2Esum_2EINR" "A_27a" "A_27b") "V1y"))))))))
-; sum.ISR
-; (∀x. ISR (INR x)) ∧ ∀y. ¬ISR (INL y)
+; sum.ISR: (∀V0x. ISR (INR V0x)) ∧ ∀V1y. ¬ISR (INL V1y)
 (axiom "thm_2Esum_2EISR" (forall_tyvarl_term ("A_27a" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27b") (lambda "V0x" "A_27b" (("c_2Esum_2EISR" "A_27a" "A_27b") (("c_2Esum_2EINR" "A_27a" "A_27b") "V0x")))) (("c_2Ebool_2E_21" "A_27a") (lambda "V1y" "A_27a" ("c_2Ebool_2E_7E" (("c_2Esum_2EISR" "A_27a" "A_27b") (("c_2Esum_2EINL" "A_27a" "A_27b") "V1y"))))))))
-; sum.OUTL
-; ∀x. OUTL (INL x) = x
+; sum.OUTL: ∀V0x. OUTL (INL V0x) = V0x
 (axiom "thm_2Esum_2EOUTL" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Esum_2EOUTL" "A_27a" "A_27b") (("c_2Esum_2EINL" "A_27a" "A_27b") "V0x")) "V0x")))))
-; sum.OUTR
-; ∀x. OUTR (INR x) = x
+; sum.OUTR: ∀V0x. OUTR (INR V0x) = V0x
 (axiom "thm_2Esum_2EOUTR" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" "A_27b") (lambda "V0x" "A_27b" (("c_2Emin_2E_3D" "A_27b") (("c_2Esum_2EOUTR" "A_27a" "A_27b") (("c_2Esum_2EINR" "A_27a" "A_27b") "V0x")) "V0x")))))
-; sum.ISL_OR_ISR
-; ∀x. ISL x ∨ ISR x
+; sum.ISL_OR_ISR: ∀V0x. ISL V0x ∨ ISR V0x
 (conjecture "thm_2Esum_2EISL__OR__ISR" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0x" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("c_2Ebool_2E_5C_2F" (("c_2Esum_2EISL" "A_27a" "A_27b") "V0x") (("c_2Esum_2EISR" "A_27a" "A_27b") "V0x"))))))
-; sum.INL
-; ∀x. ISL x ⇒ (INL (OUTL x) = x)
+; sum.INL: ∀V0x. ISL V0x ⇒ (INL (OUTL V0x) = V0x)
 (conjecture "thm_2Esum_2EINL" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0x" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("c_2Emin_2E_3D_3D_3E" (("c_2Esum_2EISL" "A_27a" "A_27b") "V0x") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINL" "A_27a" "A_27b") (("c_2Esum_2EOUTL" "A_27a" "A_27b") "V0x")) "V0x"))))))
-; sum.INR
-; ∀x. ISR x ⇒ (INR (OUTR x) = x)
+; sum.INR: ∀V0x. ISR V0x ⇒ (INR (OUTR V0x) = V0x)
 (conjecture "thm_2Esum_2EINR" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0x" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("c_2Emin_2E_3D_3D_3E" (("c_2Esum_2EISR" "A_27a" "A_27b") "V0x") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (("c_2Esum_2EINR" "A_27a" "A_27b") (("c_2Esum_2EOUTR" "A_27a" "A_27b") "V0x")) "V0x"))))))
-; sum.sum_case_def
-; (∀x f f1. sum_CASE (INL x) f f1 = f x) ∧ ∀y f f1. sum_CASE (INR y) f f1 = f1 y
+; sum.sum_case_def: (∀V0x V1f V2f1. sum_CASE (INL V0x) V1f V2f1 = V1f V0x) ∧ ∀V3y V4f V5f1. sum_CASE (INR V3y) V4f V5f1 = V5f1 V3y
 (axiom "thm_2Esum_2Esum__case__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V0x" "A_27a" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (lambda "V2f1" ("ty_2Emin_2Efun" "A_27b" "A_27c") (("c_2Emin_2E_3D" "A_27c") (("c_2Esum_2Esum__CASE" "A_27a" "A_27b" "A_27c") (("c_2Esum_2EINL" "A_27a" "A_27b") "V0x") "V1f" "V2f1") ("V1f" "V0x")))))))) (("c_2Ebool_2E_21" "A_27b") (lambda "V3y" "A_27b" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V4f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (lambda "V5f1" ("ty_2Emin_2Efun" "A_27b" "A_27c") (("c_2Emin_2E_3D" "A_27c") (("c_2Esum_2Esum__CASE" "A_27a" "A_27b" "A_27c") (("c_2Esum_2EINR" "A_27a" "A_27b") "V3y") "V4f" "V5f1") ("V5f1" "V3y")))))))))))
-; sum.sum_case_cong
-; ∀M M' f f1.     (M = M') ∧ (∀x. (M' = INL x) ⇒ (f x = f' x)) ∧     (∀y. (M' = INR y) ⇒ (f1 y = f1' y)) ⇒     (sum_CASE M f f1 = sum_CASE M' f' f1')
+; sum.sum_case_cong: ∀V0f_27 V1f1_27 V2M V3M_27 V4f V5f1.     (V2M = V3M_27) ∧ (∀V6x. (V3M_27 = INL V6x) ⇒ (V4f V6x = V0f_27 V6x)) ∧     (∀V7y. (V3M_27 = INR V7y) ⇒ (V5f1 V7y = V1f1_27 V7y)) ⇒     (sum_CASE V2M V4f V5f1 = sum_CASE V3M_27 V0f_27 V1f1_27)
 (conjecture "thm_2Esum_2Esum__case__cong" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V0f_27" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (lambda "V1f1_27" ("ty_2Emin_2Efun" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V2M" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V3M_27" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V4f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27c")) (lambda "V5f1" ("ty_2Emin_2Efun" "A_27b" "A_27c") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V2M" "V3M_27") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V6x" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V3M_27" (("c_2Esum_2EINL" "A_27a" "A_27b") "V6x")) (("c_2Emin_2E_3D" "A_27c") ("V4f" "V6x") ("V0f_27" "V6x"))))) (("c_2Ebool_2E_21" "A_27b") (lambda "V7y" "A_27b" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V3M_27" (("c_2Esum_2EINR" "A_27a" "A_27b") "V7y")) (("c_2Emin_2E_3D" "A_27c") ("V5f1" "V7y") ("V1f1_27" "V7y"))))))) (("c_2Emin_2E_3D" "A_27c") (("c_2Esum_2Esum__CASE" "A_27a" "A_27b" "A_27c") "V2M" "V4f" "V5f1") (("c_2Esum_2Esum__CASE" "A_27a" "A_27b" "A_27c") "V3M_27" "V0f_27" "V1f1_27")))))))))))))))))
-; sum.SUM_MAP_def
-; (∀f g a. (f ++ g) (INL a) = INL (f a)) ∧ ∀f g b. (f ++ g) (INR b) = INR (g b)
+; sum.SUM_MAP_def: (∀V0f V1g V2a. (V0f ++ V1g) (INL V2a) = INL (V0f V2a)) ∧ ∀V3f V4g V5b. (V3f ++ V4g) (INR V5b) = INR (V4g V5b)
 (axiom "thm_2Esum_2ESUM__MAP__def" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "A_27d") (("c_2Ebool_2E_21" "A_27a") (lambda "V2a" "A_27a" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27c" "A_27d")) (("c_2Esum_2E_2B_2B" "A_27a" "A_27b" "A_27c" "A_27d") "V0f" "V1g" (("c_2Esum_2EINL" "A_27a" "A_27b") "V2a")) (("c_2Esum_2EINL" "A_27c" "A_27d") ("V0f" "V2a"))))))))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V3f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V4g" ("ty_2Emin_2Efun" "A_27b" "A_27d") (("c_2Ebool_2E_21" "A_27b") (lambda "V5b" "A_27b" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27c" "A_27d")) (("c_2Esum_2E_2B_2B" "A_27a" "A_27b" "A_27c" "A_27d") "V3f" "V4g" (("c_2Esum_2EINR" "A_27a" "A_27b") "V5b")) (("c_2Esum_2EINR" "A_27c" "A_27d") ("V4g" "V5b"))))))))))))
-; sum.SUM_MAP
-; ∀f g z. (f ++ g) z = if ISL z then INL (f (OUTL z)) else INR (g (OUTR z))
+; sum.SUM_MAP: ∀V0f V1g V2z.     (V0f ++ V1g) V2z =     if ISL V2z then INL (V0f (OUTL V2z)) else INR (V1g (OUTR V2z))
 (conjecture "thm_2Esum_2ESUM__MAP" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "A_27d") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V2z" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27c" "A_27d")) (("c_2Esum_2E_2B_2B" "A_27a" "A_27b" "A_27c" "A_27d") "V0f" "V1g" "V2z") (("c_2Ebool_2ECOND" ("ty_2Esum_2Esum" "A_27c" "A_27d")) (("c_2Esum_2EISL" "A_27a" "A_27b") "V2z") (("c_2Esum_2EINL" "A_27c" "A_27d") ("V0f" (("c_2Esum_2EOUTL" "A_27a" "A_27b") "V2z"))) (("c_2Esum_2EINR" "A_27c" "A_27d") ("V1g" (("c_2Esum_2EOUTR" "A_27a" "A_27b") "V2z")))))))))))))
-; sum.SUM_MAP_CASE
-; ∀f g z. (f ++ g) z = sum_CASE z (INL ∘ f) (INR ∘ g)
+; sum.SUM_MAP_CASE: ∀V0f V1g V2z. (V0f ++ V1g) V2z = sum_CASE V2z (INL ∘ V0f) (INR ∘ V1g)
 (conjecture "thm_2Esum_2ESUM__MAP__CASE" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "A_27c")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "A_27d")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "A_27d") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V2z" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27c" "A_27d")) (("c_2Esum_2E_2B_2B" "A_27a" "A_27b" "A_27c" "A_27d") "V0f" "V1g" "V2z") (("c_2Esum_2Esum__CASE" "A_27a" "A_27b" ("ty_2Esum_2Esum" "A_27c" "A_27d")) "V2z" (("c_2Ecombin_2Eo" "A_27a" ("ty_2Esum_2Esum" "A_27c" "A_27d") "A_27c") ("c_2Esum_2EINL" "A_27c" "A_27d") "V0f") (("c_2Ecombin_2Eo" "A_27b" ("ty_2Esum_2Esum" "A_27c" "A_27d") "A_27d") ("c_2Esum_2EINR" "A_27c" "A_27d") "V1g")))))))))))
-; sum.SUM_MAP_I
-; I ++ I = I
+; sum.SUM_MAP_I: I ++ I = I
 (conjecture "thm_2Esum_2ESUM__MAP__I" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("ty_2Esum_2Esum" "A_27a" "A_27b"))) (("c_2Esum_2E_2B_2B" "A_27a" "A_27b" "A_27a" "A_27b") ("c_2Ecombin_2EI" "A_27a") ("c_2Ecombin_2EI" "A_27b")) ("c_2Ecombin_2EI" ("ty_2Esum_2Esum" "A_27a" "A_27b")))))
-; sum.cond_sum_expand
-; (∀x y z. ((if P then INR x else INL y) = INR z) ⇔ P ∧ (z = x)) ∧ (∀x y z. ((if P then INR x else INL y) = INL z) ⇔ ¬P ∧ (z = y)) ∧ (∀x y z. ((if P then INL x else INR y) = INL z) ⇔ P ∧ (z = x)) ∧ ∀x y z. ((if P then INL x else INR y) = INR z) ⇔ ¬P ∧ (z = y)
+; sum.cond_sum_expand: ∀V0P.     (∀V1x V2y V3z.          ((if V0P then INR V1x else INL V2y) = INR V3z) ⇔ V0P ∧ (V3z = V1x)) ∧     (∀V4x V5y V6z.          ((if V0P then INR V4x else INL V5y) = INL V6z) ⇔ ¬V0P ∧ (V6z = V5y)) ∧     (∀V7x V8y V9z.          ((if V0P then INL V7x else INR V8y) = INL V9z) ⇔ V0P ∧ (V9z = V7x)) ∧     ∀V10x V11y V12z.         ((if V0P then INL V10x else INR V11y) = INR V12z) ⇔         ¬V0P ∧ (V12z = V11y)
 (conjecture "thm_2Esum_2Econd__sum__expand" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c" "A_27d" "A_27e" "A_27f" "A_27g" "A_27h") (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0P" "ty_2Emin_2Ebool" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V1x" "A_27a" (("c_2Ebool_2E_21" "A_27b") (lambda "V2y" "A_27b" (("c_2Ebool_2E_21" "A_27a") (lambda "V3z" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27b" "A_27a")) (("c_2Ebool_2ECOND" ("ty_2Esum_2Esum" "A_27b" "A_27a")) "V0P" (("c_2Esum_2EINR" "A_27b" "A_27a") "V1x") (("c_2Esum_2EINL" "A_27b" "A_27a") "V2y")) (("c_2Esum_2EINR" "A_27b" "A_27a") "V3z")) ("c_2Ebool_2E_2F_5C" "V0P" (("c_2Emin_2E_3D" "A_27a") "V3z" "V1x"))))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27c") (lambda "V4x" "A_27c" (("c_2Ebool_2E_21" "A_27d") (lambda "V5y" "A_27d" (("c_2Ebool_2E_21" "A_27d") (lambda "V6z" "A_27d" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27d" "A_27c")) (("c_2Ebool_2ECOND" ("ty_2Esum_2Esum" "A_27d" "A_27c")) "V0P" (("c_2Esum_2EINR" "A_27d" "A_27c") "V4x") (("c_2Esum_2EINL" "A_27d" "A_27c") "V5y")) (("c_2Esum_2EINL" "A_27d" "A_27c") "V6z")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" "V0P") (("c_2Emin_2E_3D" "A_27d") "V6z" "V5y"))))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27e") (lambda "V7x" "A_27e" (("c_2Ebool_2E_21" "A_27f") (lambda "V8y" "A_27f" (("c_2Ebool_2E_21" "A_27e") (lambda "V9z" "A_27e" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27e" "A_27f")) (("c_2Ebool_2ECOND" ("ty_2Esum_2Esum" "A_27e" "A_27f")) "V0P" (("c_2Esum_2EINL" "A_27e" "A_27f") "V7x") (("c_2Esum_2EINR" "A_27e" "A_27f") "V8y")) (("c_2Esum_2EINL" "A_27e" "A_27f") "V9z")) ("c_2Ebool_2E_2F_5C" "V0P" (("c_2Emin_2E_3D" "A_27e") "V9z" "V7x"))))))))) (("c_2Ebool_2E_21" "A_27g") (lambda "V10x" "A_27g" (("c_2Ebool_2E_21" "A_27h") (lambda "V11y" "A_27h" (("c_2Ebool_2E_21" "A_27h") (lambda "V12z" "A_27h" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27g" "A_27h")) (("c_2Ebool_2ECOND" ("ty_2Esum_2Esum" "A_27g" "A_27h")) "V0P" (("c_2Esum_2EINL" "A_27g" "A_27h") "V10x") (("c_2Esum_2EINR" "A_27g" "A_27h") "V11y")) (("c_2Esum_2EINR" "A_27g" "A_27h") "V12z")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" "V0P") (("c_2Emin_2E_3D" "A_27h") "V12z" "V11y"))))))))))))))))
-; sum.NOT_ISL_ISR
-; ∀x. ¬ISL x ⇔ ISR x
+; sum.NOT_ISL_ISR: ∀V0x. ¬ISL V0x ⇔ ISR V0x
 (conjecture "thm_2Esum_2ENOT__ISL__ISR" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0x" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Esum_2EISL" "A_27a" "A_27b") "V0x")) (("c_2Esum_2EISR" "A_27a" "A_27b") "V0x"))))))
-; sum.NOT_ISR_ISL
-; ∀x. ¬ISR x ⇔ ISL x
+; sum.NOT_ISR_ISL: ∀V0x. ¬ISR V0x ⇔ ISL V0x
 (conjecture "thm_2Esum_2ENOT__ISR__ISL" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0x" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Esum_2EISR" "A_27a" "A_27b") "V0x")) (("c_2Esum_2EISL" "A_27a" "A_27b") "V0x"))))))
-; sum.SUM_ALL_def
-; (∀P Q x. SUM_ALL P Q (INL x) ⇔ P x) ∧ ∀P Q y. SUM_ALL P Q (INR y) ⇔ Q y
+; sum.SUM_ALL_def: (∀V0P V1Q V2x. SUM_ALL V0P V1Q (INL V2x) ⇔ V0P V2x) ∧ ∀V3P V4Q V5y. SUM_ALL V3P V4Q (INR V5y) ⇔ V4Q V5y
 (axiom "thm_2Esum_2ESUM__ALL__def" (forall_tyvarl_term ("A_27a" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V1Q" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Esum_2ESUM__ALL" "A_27a" "A_27b") "V0P" "V1Q" (("c_2Esum_2EINL" "A_27a" "A_27b") "V2x")) ("V0P" "V2x")))))))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V3P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V4Q" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "A_27b") (lambda "V5y" "A_27b" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Esum_2ESUM__ALL" "A_27a" "A_27b") "V3P" "V4Q" (("c_2Esum_2EINR" "A_27a" "A_27b") "V5y")) ("V4Q" "V5y")))))))))))
-; sum.SUM_ALL_MONO
-; (∀x. P x ⇒ P' x) ∧ (∀y. Q y ⇒ Q' y) ⇒ SUM_ALL P Q s ⇒ SUM_ALL P' Q' s
+; sum.SUM_ALL_MONO: ∀V0P V1P_27 V2Q V3Q_27 V4s.     (∀V5x. V0P V5x ⇒ V1P_27 V5x) ∧ (∀V6y. V2Q V6y ⇒ V3Q_27 V6y) ⇒     SUM_ALL V0P V2Q V4s ⇒     SUM_ALL V1P_27 V3Q_27 V4s
 (conjecture "thm_2Esum_2ESUM__ALL__MONO" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1P_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V2Q" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V3Q_27" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V4s" ("ty_2Esum_2Esum" "A_27a" "A_27b") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V5x" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("V0P" "V5x") ("V1P_27" "V5x")))) (("c_2Ebool_2E_21" "A_27b") (lambda "V6y" "A_27b" ("c_2Emin_2E_3D_3D_3E" ("V2Q" "V6y") ("V3Q_27" "V6y"))))) ("c_2Emin_2E_3D_3D_3E" (("c_2Esum_2ESUM__ALL" "A_27a" "A_27b") "V0P" "V2Q" "V4s") (("c_2Esum_2ESUM__ALL" "A_27a" "A_27b") "V1P_27" "V3Q_27" "V4s")))))))))))))))
-; sum.SUM_ALL_CONG
-; ∀s s' P P' Q Q'.     (s = s') ∧ (∀a. (s' = INL a) ⇒ (P a ⇔ P' a)) ∧     (∀b. (s' = INR b) ⇒ (Q b ⇔ Q' b)) ⇒     (SUM_ALL P Q s ⇔ SUM_ALL P' Q' s')
+; sum.SUM_ALL_CONG: ∀V0s V1s_27 V2P V3P_27 V4Q V5Q_27.     (V0s = V1s_27) ∧ (∀V6a. (V1s_27 = INL V6a) ⇒ (V2P V6a ⇔ V3P_27 V6a)) ∧     (∀V7b. (V1s_27 = INR V7b) ⇒ (V4Q V7b ⇔ V5Q_27 V7b)) ⇒     (SUM_ALL V2P V4Q V0s ⇔ SUM_ALL V3P_27 V5Q_27 V1s_27)
 (conjecture "thm_2Esum_2ESUM__ALL__CONG" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V0s" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Esum_2Esum" "A_27a" "A_27b")) (lambda "V1s_27" ("ty_2Esum_2Esum" "A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2P" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V3P_27" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V4Q" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool")) (lambda "V5Q_27" ("ty_2Emin_2Efun" "A_27b" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V0s" "V1s_27") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V6a" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V1s_27" (("c_2Esum_2EINL" "A_27a" "A_27b") "V6a")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("V2P" "V6a") ("V3P_27" "V6a"))))) (("c_2Ebool_2E_21" "A_27b") (lambda "V7b" "A_27b" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "V1s_27" (("c_2Esum_2EINR" "A_27a" "A_27b") "V7b")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("V4Q" "V7b") ("V5Q_27" "V7b"))))))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Esum_2ESUM__ALL" "A_27a" "A_27b") "V2P" "V4Q" "V0s") (("c_2Esum_2ESUM__ALL" "A_27a" "A_27b") "V3P_27" "V5Q_27" "V1s_27")))))))))))))))))
-; sum.datatype_sum
-; DATATYPE (sum INL INR)
+; sum.datatype_sum: ∀V0sum. DATATYPE (V0sum INL INR)
 (conjecture "thm_2Esum_2Edatatype__sum" (forall_tyvarl_term ("A_27a" "A_27b" "A_27c") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Esum_2Esum" "A_27a" "A_27b")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "A_27c"))) (lambda "V0sum" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" ("ty_2Esum_2Esum" "A_27a" "A_27b")) ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" ("ty_2Esum_2Esum" "A_27a" "A_27b")) "A_27c")) (("c_2Ebool_2EDATATYPE" "A_27c") ("V0sum" ("c_2Esum_2EINL" "A_27a" "A_27b") ("c_2Esum_2EINR" "A_27a" "A_27b")))))))

@@ -1,838 +1,559 @@
 (type_definition "ty_2Erat_2Erat" 0)
-; c.rat.RATD
-; :rat -> num
+; c.rat.RATD: :rat -> num
 (constant_definition "c_2Erat_2ERATD" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Enum_2Enum"))
-; c.rat.RATN
-; :rat -> int
+; c.rat.RATN: :rat -> int
 (constant_definition "c_2Erat_2ERATN" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Einteger_2Eint"))
-; c.rat.abs_rat
-; :frac -> rat
+; c.rat.abs_rat: :frac -> rat
 (constant_definition "c_2Erat_2Eabs__rat" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Erat_2Erat"))
-; c.rat.abs_rat_CLASS
-; :(frac -> bool) -> rat
+; c.rat.abs_rat_CLASS: :(frac -> bool) -> rat
 (constant_definition "c_2Erat_2Eabs__rat__CLASS" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool") "ty_2Erat_2Erat"))
-; c.rat.rat_0
-; :rat
+; c.rat.rat_0: :rat
 (constant_definition "c_2Erat_2Erat__0" "ty_2Erat_2Erat")
-; c.rat.rat_1
-; :rat
+; c.rat.rat_1: :rat
 (constant_definition "c_2Erat_2Erat__1" "ty_2Erat_2Erat")
-; c.rat.rat_add
-; :rat -> rat -> rat
+; c.rat.rat_add: :rat -> rat -> rat
 (constant_definition "c_2Erat_2Erat__add" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat")))
-; c.rat.rat_ainv
-; :rat -> rat
+; c.rat.rat_ainv: :rat -> rat
 (constant_definition "c_2Erat_2Erat__ainv" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat"))
-; c.rat.rat_cons
-; :int -> int -> rat
+; c.rat.rat_cons: :int -> int -> rat
 (constant_definition "c_2Erat_2Erat__cons" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" "ty_2Erat_2Erat")))
-; c.rat.rat_div
-; :rat -> rat -> rat
+; c.rat.rat_div: :rat -> rat -> rat
 (constant_definition "c_2Erat_2Erat__div" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat")))
-; c.rat.rat_dnm
-; :rat -> int
+; c.rat.rat_dnm: :rat -> int
 (constant_definition "c_2Erat_2Erat__dnm" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Einteger_2Eint"))
-; c.rat.rat_equiv
-; :frac -> frac -> bool
+; c.rat.rat_equiv: :frac -> frac -> bool
 (constant_definition "c_2Erat_2Erat__equiv" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")))
-; c.rat.rat_geq
-; :rat -> rat -> bool
+; c.rat.rat_geq: :rat -> rat -> bool
 (constant_definition "c_2Erat_2Erat__geq" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Emin_2Ebool")))
-; c.rat.rat_gre
-; :rat -> rat -> bool
+; c.rat.rat_gre: :rat -> rat -> bool
 (constant_definition "c_2Erat_2Erat__gre" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Emin_2Ebool")))
-; c.rat.rat_leq
-; :rat -> rat -> bool
+; c.rat.rat_leq: :rat -> rat -> bool
 (constant_definition "c_2Erat_2Erat__leq" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Emin_2Ebool")))
-; c.rat.rat_les
-; :rat -> rat -> bool
+; c.rat.rat_les: :rat -> rat -> bool
 (constant_definition "c_2Erat_2Erat__les" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Emin_2Ebool")))
-; c.rat.rat_max
-; :rat -> rat -> rat
+; c.rat.rat_max: :rat -> rat -> rat
 (constant_definition "c_2Erat_2Erat__max" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat")))
-; c.rat.rat_min
-; :rat -> rat -> rat
+; c.rat.rat_min: :rat -> rat -> rat
 (constant_definition "c_2Erat_2Erat__min" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat")))
-; c.rat.rat_minv
-; :rat -> rat
+; c.rat.rat_minv: :rat -> rat
 (constant_definition "c_2Erat_2Erat__minv" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat"))
-; c.rat.rat_mul
-; :rat -> rat -> rat
+; c.rat.rat_mul: :rat -> rat -> rat
 (constant_definition "c_2Erat_2Erat__mul" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat")))
-; c.rat.rat_nmr
-; :rat -> int
+; c.rat.rat_nmr: :rat -> int
 (constant_definition "c_2Erat_2Erat__nmr" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Einteger_2Eint"))
-; c.rat.rat_of_int
-; :int -> rat
+; c.rat.rat_of_int: :int -> rat
 (constant_definition "c_2Erat_2Erat__of__int" ("ty_2Emin_2Efun" "ty_2Einteger_2Eint" "ty_2Erat_2Erat"))
-; c.rat.rat_of_num
-; :num -> rat
+; c.rat.rat_of_num: :num -> rat
 (constant_definition "c_2Erat_2Erat__of__num" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Erat_2Erat"))
-; c.rat.rat_sgn
-; :rat -> int
+; c.rat.rat_sgn: :rat -> int
 (constant_definition "c_2Erat_2Erat__sgn" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Einteger_2Eint"))
-; c.rat.rat_sub
-; :rat -> rat -> rat
+; c.rat.rat_sub: :rat -> rat -> rat
 (constant_definition "c_2Erat_2Erat__sub" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Erat_2Erat")))
-; c.rat.rep_rat
-; :rat -> frac
+; c.rat.rep_rat: :rat -> frac
 (constant_definition "c_2Erat_2Erep__rat" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" "ty_2Efrac_2Efrac"))
-; c.rat.rep_rat_CLASS
-; :rat -> frac -> bool
+; c.rat.rep_rat_CLASS: :rat -> frac -> bool
 (constant_definition "c_2Erat_2Erep__rat__CLASS" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")))
-; rat.rat_equiv_def
-; ∀f1 f2.     rat_equiv f1 f2 ⇔ (frac_nmr f1 * frac_dnm f2 = frac_nmr f2 * frac_dnm f1)
+; rat.rat_equiv_def: ∀V0f1 V1f2.     rat_equiv V0f1 V1f2 ⇔     (frac_nmr V0f1 * frac_dnm V1f2 = frac_nmr V1f2 * frac_dnm V0f1)
 (axiom "thm_2Erat_2Erat__equiv__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__equiv" "V0f1" "V1f2") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Efrac_2Efrac__dnm" "V0f1")))))))))
-; rat.RAT_EQUIV_REF
-; ∀a. rat_equiv a a
+; rat.RAT_EQUIV_REF: ∀V0a. rat_equiv V0a V0a
 (conjecture "thm_2Erat_2ERAT__EQUIV__REF" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" ("c_2Erat_2Erat__equiv" "V0a" "V0a"))))
-; rat.RAT_EQUIV_SYM
-; ∀a b. rat_equiv a b ⇔ rat_equiv b a
+; rat.RAT_EQUIV_SYM: ∀V0a V1b. rat_equiv V0a V1b ⇔ rat_equiv V1b V0a
 (conjecture "thm_2Erat_2ERAT__EQUIV__SYM" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__equiv" "V0a" "V1b") ("c_2Erat_2Erat__equiv" "V1b" "V0a")))))))
-; rat.RAT_EQUIV_NMR_Z_IFF
-; ∀a b. rat_equiv a b ⇒ ((frac_nmr a = 0) ⇔ (frac_nmr b = 0))
+; rat.RAT_EQUIV_NMR_Z_IFF: ∀V0a V1b. rat_equiv V0a V1b ⇒ ((frac_nmr V0a = 0) ⇔ (frac_nmr V1b = 0))
 (conjecture "thm_2Erat_2ERAT__EQUIV__NMR__Z__IFF" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__equiv" "V0a" "V1b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0a") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V1b") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_EQUIV_NMR_GTZ_IFF
-; ∀a b. rat_equiv a b ⇒ (frac_nmr a > 0 ⇔ frac_nmr b > 0)
+; rat.RAT_EQUIV_NMR_GTZ_IFF: ∀V0a V1b. rat_equiv V0a V1b ⇒ (frac_nmr V0a > 0 ⇔ frac_nmr V1b > 0)
 (conjecture "thm_2Erat_2ERAT__EQUIV__NMR__GTZ__IFF" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__equiv" "V0a" "V1b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__gt" ("c_2Efrac_2Efrac__nmr" "V0a") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__gt" ("c_2Efrac_2Efrac__nmr" "V1b") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_EQUIV_NMR_LTZ_IFF
-; ∀a b. rat_equiv a b ⇒ (frac_nmr a < 0 ⇔ frac_nmr b < 0)
+; rat.RAT_EQUIV_NMR_LTZ_IFF: ∀V0a V1b. rat_equiv V0a V1b ⇒ (frac_nmr V0a < 0 ⇔ frac_nmr V1b < 0)
 (conjecture "thm_2Erat_2ERAT__EQUIV__NMR__LTZ__IFF" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__equiv" "V0a" "V1b") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__lt" ("c_2Efrac_2Efrac__nmr" "V0a") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__lt" ("c_2Efrac_2Efrac__nmr" "V1b") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_NMR_Z_IFF_EQUIV
-; ∀a b. (frac_nmr a = 0) ⇒ (rat_equiv a b ⇔ (frac_nmr b = 0))
+; rat.RAT_NMR_Z_IFF_EQUIV: ∀V0a V1b. (frac_nmr V0a = 0) ⇒ (rat_equiv V0a V1b ⇔ (frac_nmr V1b = 0))
 (conjecture "thm_2Erat_2ERAT__NMR__Z__IFF__EQUIV" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0a") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__equiv" "V0a" "V1b") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V1b") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_EQUIV_TRANS
-; ∀a b c. rat_equiv a b ∧ rat_equiv b c ⇒ rat_equiv a c
+; rat.RAT_EQUIV_TRANS: ∀V0a V1b V2c. rat_equiv V0a V1b ∧ rat_equiv V1b V2c ⇒ rat_equiv V0a V2c
 (conjecture "thm_2Erat_2ERAT__EQUIV__TRANS" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1b" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2c" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__equiv" "V0a" "V1b") ("c_2Erat_2Erat__equiv" "V1b" "V2c")) ("c_2Erat_2Erat__equiv" "V0a" "V2c")))))))))
-; rat.RAT_EQUIV
-; ∀f1 f2. rat_equiv f1 f2 ⇔ (rat_equiv f1 = rat_equiv f2)
+; rat.RAT_EQUIV: ∀V0f1 V1f2. rat_equiv V0f1 V1f2 ⇔ (rat_equiv V0f1 = rat_equiv V1f2)
 (conjecture "thm_2Erat_2ERAT__EQUIV" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__equiv" "V0f1" "V1f2") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) ("c_2Erat_2Erat__equiv" "V0f1") ("c_2Erat_2Erat__equiv" "V1f2"))))))))
-; rat.RAT_EQUIV_ALT
-; ∀a.     rat_equiv a =     (λx.          ∃b c.              0 < b ∧ 0 < c ∧              (frac_mul a (abs_frac (b,b)) = frac_mul x (abs_frac (c,c))))
+; rat.RAT_EQUIV_ALT: ∀V0a.     rat_equiv V0a =     (λV1x.          ∃V2b V3c.              0 < V2b ∧ 0 < V3c ∧              (frac_mul V0a (abs_frac (V2b,V2b)) =               frac_mul V1x (abs_frac (V3c,V3c))))
 (conjecture "thm_2Erat_2ERAT__EQUIV__ALT" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0a" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) ("c_2Erat_2Erat__equiv" "V0a") (lambda "V1x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_3F" "ty_2Einteger_2Eint") (lambda "V2b" "ty_2Einteger_2Eint" (("c_2Ebool_2E_3F" "ty_2Einteger_2Eint") (lambda "V3c" "ty_2Einteger_2Eint" ("c_2Ebool_2E_2F_5C" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V2b") ("c_2Ebool_2E_2F_5C" ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") "V3c") (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Efrac_2Efrac__mul" "V0a" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V2b" "V2b"))) ("c_2Efrac_2Efrac__mul" "V1x" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V3c" "V3c")))))))))))))))
-; rat.rat_TY_DEF
-; ∃rep. TYPE_DEFINITION (λc. ∃r. rat_equiv r r ∧ (c = rat_equiv r)) rep
+; rat.rat_TY_DEF: ∃V0rep.     TYPE_DEFINITION (λV1c. ∃V2r. rat_equiv V2r V2r ∧ (V1c = rat_equiv V2r))       V0rep
 (axiom "thm_2Erat_2Erat__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool"))) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Erat_2Erat" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool") "ty_2Erat_2Erat") (lambda "V1c" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" "ty_2Efrac_2Efrac") (lambda "V2r" "ty_2Efrac_2Efrac" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__equiv" "V2r" "V2r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) "V1c" ("c_2Erat_2Erat__equiv" "V2r")))))) "V0rep"))))
-; rat.rat_bijections
-; (∀a. abs_rat_CLASS (rep_rat_CLASS a) = a) ∧ ∀r.     (λc. ∃r. rat_equiv r r ∧ (c = rat_equiv r)) r ⇔     (rep_rat_CLASS (abs_rat_CLASS r) = r)
+; rat.rat_bijections: (∀V0a. abs_rat_CLASS (rep_rat_CLASS V0a) = V0a) ∧ ∀V1r.     (λV2c. ∃V3r. rat_equiv V3r V3r ∧ (V2c = rat_equiv V3r)) V1r ⇔     (rep_rat_CLASS (abs_rat_CLASS V1r) = V1r)
 (axiom "thm_2Erat_2Erat__bijections" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat__CLASS" ("c_2Erat_2Erep__rat__CLASS" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) (lambda "V1r" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2c" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" "ty_2Efrac_2Efrac") (lambda "V3r" "ty_2Efrac_2Efrac" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__equiv" "V3r" "V3r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) "V2c" ("c_2Erat_2Erat__equiv" "V3r")))))) "V1r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) ("c_2Erat_2Erep__rat__CLASS" ("c_2Erat_2Eabs__rat__CLASS" "V1r")) "V1r"))))))
-; rat.rat_ABS_REP_CLASS
-; (∀a. abs_rat_CLASS (rep_rat_CLASS a) = a) ∧ ∀c.     (∃r. rat_equiv r r ∧ (c = rat_equiv r)) ⇔     (rep_rat_CLASS (abs_rat_CLASS c) = c)
+; rat.rat_ABS_REP_CLASS: (∀V0a. abs_rat_CLASS (rep_rat_CLASS V0a) = V0a) ∧ ∀V1c.     (∃V2r. rat_equiv V2r V2r ∧ (V1c = rat_equiv V2r)) ⇔     (rep_rat_CLASS (abs_rat_CLASS V1c) = V1c)
 (conjecture "thm_2Erat_2Erat__ABS__REP__CLASS" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat__CLASS" ("c_2Erat_2Erep__rat__CLASS" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) (lambda "V1c" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" "ty_2Efrac_2Efrac") (lambda "V2r" "ty_2Efrac_2Efrac" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__equiv" "V2r" "V2r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) "V1c" ("c_2Erat_2Erat__equiv" "V2r"))))) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Efrac_2Efrac" "ty_2Emin_2Ebool")) ("c_2Erat_2Erep__rat__CLASS" ("c_2Erat_2Eabs__rat__CLASS" "V1c")) "V1c"))))))
-; rat.rep_rat_def
-; ∀a. rep_rat a = $@ (rep_rat_CLASS a)
+; rat.rep_rat_def: ∀V0a. rep_rat V0a = $@ (rep_rat_CLASS V0a)
 (axiom "thm_2Erat_2Erep__rat__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Efrac_2Efrac") ("c_2Erat_2Erep__rat" "V0a") (("c_2Emin_2E_40" "ty_2Efrac_2Efrac") ("c_2Erat_2Erep__rat__CLASS" "V0a"))))))
-; rat.abs_rat_def
-; ∀r. abs_rat r = abs_rat_CLASS (rat_equiv r)
+; rat.abs_rat_def: ∀V0r. abs_rat V0r = abs_rat_CLASS (rat_equiv V0r)
 (axiom "thm_2Erat_2Eabs__rat__def" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0r" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" "V0r") ("c_2Erat_2Eabs__rat__CLASS" ("c_2Erat_2Erat__equiv" "V0r"))))))
-; rat.rat_QUOTIENT
-; QUOTIENT rat_equiv abs_rat rep_rat
+; rat.rat_QUOTIENT: QUOTIENT rat_equiv abs_rat rep_rat
 (conjecture "thm_2Erat_2Erat__QUOTIENT" (("c_2Equotient_2EQUOTIENT" "ty_2Efrac_2Efrac" "ty_2Erat_2Erat") "c_2Erat_2Erat__equiv" "c_2Erat_2Eabs__rat" "c_2Erat_2Erep__rat"))
-; rat.rat_def
-; QUOTIENT rat_equiv abs_rat rep_rat
+; rat.rat_def: QUOTIENT rat_equiv abs_rat rep_rat
 (conjecture "thm_2Erat_2Erat__def" (("c_2Equotient_2EQUOTIENT" "ty_2Efrac_2Efrac" "ty_2Erat_2Erat") "c_2Erat_2Erat__equiv" "c_2Erat_2Eabs__rat" "c_2Erat_2Erep__rat"))
-; rat.rat_type_thm
-; (∀a. abs_rat (rep_rat a) = a) ∧ ∀r s. rat_equiv r s ⇔ (abs_rat r = abs_rat s)
+; rat.rat_type_thm: (∀V0a. abs_rat (rep_rat V0a) = V0a) ∧ ∀V1r V2s. rat_equiv V1r V2s ⇔ (abs_rat V1r = abs_rat V2s)
 (conjecture "thm_2Erat_2Erat__type__thm" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Erat_2Erep__rat" "V0a")) "V0a"))) (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1r" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2s" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__equiv" "V1r" "V2s") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" "V1r") ("c_2Erat_2Eabs__rat" "V2s")))))))))
-; rat.rat_equiv_reps
-; rat_equiv (rep_rat r1) (rep_rat r2) ⇔ (r1 = r2)
+; rat.rat_equiv_reps: ∀V0r1 V1r2. rat_equiv (rep_rat V0r1) (rep_rat V1r2) ⇔ (V0r1 = V1r2)
 (conjecture "thm_2Erat_2Erat__equiv__reps" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__equiv" ("c_2Erat_2Erep__rat" "V0r1") ("c_2Erat_2Erep__rat" "V1r2")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2")))))))
-; rat.rat_equiv_rep_abs
-; rat_equiv (rep_rat (abs_rat f)) f
+; rat.rat_equiv_rep_abs: ∀V0f. rat_equiv (rep_rat (abs_rat V0f)) V0f
 (conjecture "thm_2Erat_2Erat__equiv__rep__abs" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f" "ty_2Efrac_2Efrac" ("c_2Erat_2Erat__equiv" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0f")) "V0f"))))
-; rat.rat_nmr_def
-; ∀r. rat_nmr r = frac_nmr (rep_rat r)
+; rat.rat_nmr_def: ∀V0r. rat_nmr V0r = frac_nmr (rep_rat V0r)
 (axiom "thm_2Erat_2Erat__nmr__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__nmr" "V0r") ("c_2Efrac_2Efrac__nmr" ("c_2Erat_2Erep__rat" "V0r"))))))
-; rat.rat_dnm_def
-; ∀r. rat_dnm r = frac_dnm (rep_rat r)
+; rat.rat_dnm_def: ∀V0r. rat_dnm V0r = frac_dnm (rep_rat V0r)
 (axiom "thm_2Erat_2Erat__dnm__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__dnm" "V0r") ("c_2Efrac_2Efrac__dnm" ("c_2Erat_2Erep__rat" "V0r"))))))
-; rat.rat_sgn_def
-; ∀r. rat_sgn r = frac_sgn (rep_rat r)
+; rat.rat_sgn_def: ∀V0r. rat_sgn V0r = frac_sgn (rep_rat V0r)
 (axiom "thm_2Erat_2Erat__sgn__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r") ("c_2Efrac_2Efrac__sgn" ("c_2Erat_2Erep__rat" "V0r"))))))
-; rat.rat_0_def
-; rat_0 = abs_rat frac_0
+; rat.rat_0_def: rat_0 = abs_rat frac_0
 (axiom "thm_2Erat_2Erat__0__def" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "c_2Erat_2Erat__0" ("c_2Erat_2Eabs__rat" "c_2Efrac_2Efrac__0")))
-; rat.rat_1_def
-; rat_1 = abs_rat frac_1
+; rat.rat_1_def: rat_1 = abs_rat frac_1
 (axiom "thm_2Erat_2Erat__1__def" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "c_2Erat_2Erat__1" ("c_2Erat_2Eabs__rat" "c_2Efrac_2Efrac__1")))
-; rat.rat_ainv_def
-; ∀r1. -r1 = abs_rat (frac_ainv (rep_rat r1))
+; rat.rat_ainv_def: ∀V0r1. -V0r1 = abs_rat (frac_ainv (rep_rat V0r1))
 (axiom "thm_2Erat_2Erat__ainv__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" "V0r1") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__ainv" ("c_2Erat_2Erep__rat" "V0r1")))))))
-; rat.rat_minv_def
-; ∀r1. rat_minv r1 = abs_rat (frac_minv (rep_rat r1))
+; rat.rat_minv_def: ∀V0r1. rat_minv V0r1 = abs_rat (frac_minv (rep_rat V0r1))
 (axiom "thm_2Erat_2Erat__minv__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" "V0r1") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__minv" ("c_2Erat_2Erep__rat" "V0r1")))))))
-; rat.rat_add_def
-; ∀r1 r2. r1 + r2 = abs_rat (frac_add (rep_rat r1) (rep_rat r2))
+; rat.rat_add_def: ∀V0r1 V1r2. V0r1 + V1r2 = abs_rat (frac_add (rep_rat V0r1) (rep_rat V1r2))
 (axiom "thm_2Erat_2Erat__add__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0r1" "V1r2") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" ("c_2Erat_2Erep__rat" "V0r1") ("c_2Erat_2Erep__rat" "V1r2")))))))))
-; rat.rat_sub_def
-; ∀r1 r2. r1 − r2 = abs_rat (frac_sub (rep_rat r1) (rep_rat r2))
+; rat.rat_sub_def: ∀V0r1 V1r2. V0r1 − V1r2 = abs_rat (frac_sub (rep_rat V0r1) (rep_rat V1r2))
 (axiom "thm_2Erat_2Erat__sub__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" "V0r1" "V1r2") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" ("c_2Erat_2Erep__rat" "V0r1") ("c_2Erat_2Erep__rat" "V1r2")))))))))
-; rat.rat_mul_def
-; ∀r1 r2. r1 * r2 = abs_rat (frac_mul (rep_rat r1) (rep_rat r2))
+; rat.rat_mul_def: ∀V0r1 V1r2. V0r1 * V1r2 = abs_rat (frac_mul (rep_rat V0r1) (rep_rat V1r2))
 (axiom "thm_2Erat_2Erat__mul__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" "V1r2") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" ("c_2Erat_2Erep__rat" "V0r1") ("c_2Erat_2Erep__rat" "V1r2")))))))))
-; rat.rat_div_def
-; ∀r1 r2. r1 / r2 = abs_rat (frac_div (rep_rat r1) (rep_rat r2))
+; rat.rat_div_def: ∀V0r1 V1r2. V0r1 / V1r2 = abs_rat (frac_div (rep_rat V0r1) (rep_rat V1r2))
 (axiom "thm_2Erat_2Erat__div__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" "V0r1" "V1r2") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" ("c_2Erat_2Erep__rat" "V0r1") ("c_2Erat_2Erep__rat" "V1r2")))))))))
-; rat.rat_les_def
-; ∀r1 r2. r1 < r2 ⇔ (rat_sgn (r2 − r1) = 1)
+; rat.rat_les_def: ∀V0r1 V1r2. V0r1 < V1r2 ⇔ (rat_sgn (V1r2 − V0r1) = 1)
 (axiom "thm_2Erat_2Erat__les__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" "V0r1" "V1r2") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__sub" "V1r2" "V0r1")) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; rat.rat_gre_def
-; ∀r1 r2. r1 > r2 ⇔ r2 < r1
+; rat.rat_gre_def: ∀V0r1 V1r2. V0r1 > V1r2 ⇔ V1r2 < V0r1
 (axiom "thm_2Erat_2Erat__gre__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__gre" "V0r1" "V1r2") ("c_2Erat_2Erat__les" "V1r2" "V0r1")))))))
-; rat.rat_leq_def
-; ∀r1 r2. r1 ≤ r2 ⇔ r1 < r2 ∨ (r1 = r2)
+; rat.rat_leq_def: ∀V0r1 V1r2. V0r1 ≤ V1r2 ⇔ V0r1 < V1r2 ∨ (V0r1 = V1r2)
 (axiom "thm_2Erat_2Erat__leq__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" "V0r1" "V1r2") ("c_2Ebool_2E_5C_2F" ("c_2Erat_2Erat__les" "V0r1" "V1r2") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2"))))))))
-; rat.rat_geq_def
-; ∀r1 r2. r1 ≥ r2 ⇔ r2 ≤ r1
+; rat.rat_geq_def: ∀V0r1 V1r2. V0r1 ≥ V1r2 ⇔ V1r2 ≤ V0r1
 (axiom "thm_2Erat_2Erat__geq__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__geq" "V0r1" "V1r2") ("c_2Erat_2Erat__leq" "V1r2" "V0r1")))))))
-; rat.rat_cons_def
-; ∀nmr dnm.     nmr // dnm = abs_rat (abs_frac (SGN nmr * SGN dnm * ABS nmr,ABS dnm))
+; rat.rat_cons_def: ∀V0nmr V1dnm.     V0nmr // V1dnm =     abs_rat (abs_frac (SGN V0nmr * SGN V1dnm * ABS V0nmr,ABS V1dnm))
 (axiom "thm_2Erat_2Erat__cons__def" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0nmr" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1dnm" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__cons" "V0nmr" "V1dnm") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Einteger_2Eint__mul" ("c_2EintExtension_2ESGN" "V0nmr") ("c_2EintExtension_2ESGN" "V1dnm")) ("c_2Einteger_2EABS" "V0nmr")) ("c_2Einteger_2EABS" "V1dnm"))))))))))
-; rat.rat_of_num_primitive_def
-; $& = WFREC (@R. WF R ∧ ∀n. R (SUC n) (SUC (SUC n)))   (λrat_of_num a.        case a of          0 => I rat_0        | SUC 0 => I rat_1        | SUC (SUC n) => I (rat_of_num (SUC n) + rat_1))
+; rat.rat_of_num_primitive_def: $& = WFREC (@V0R. WF V0R ∧ ∀V1n. V0R (SUC V1n) (SUC (SUC V1n)))   (λV2rat__of__num V3a.        case V3a of          0 => I rat_0        | SUC 0 => I rat_1        | SUC (SUC V5n) => I (V2rat__of__num (SUC V5n) + rat_1))
 (axiom "thm_2Erat_2Erat__of__num__primitive__def" (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Erat_2Erat")) "c_2Erat_2Erat__of__num" (("c_2Erelation_2EWFREC" "ty_2Enum_2Enum" "ty_2Erat_2Erat") (("c_2Emin_2E_40" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool"))) (lambda "V0R" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) ("c_2Ebool_2E_2F_5C" (("c_2Erelation_2EWF" "ty_2Enum_2Enum") "V0R") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("V0R" ("c_2Enum_2ESUC" "V1n") ("c_2Enum_2ESUC" ("c_2Enum_2ESUC" "V1n")))))))) (lambda "V2rat__of__num" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Erat_2Erat") (lambda "V3a" "ty_2Enum_2Enum" (("c_2Earithmetic_2Enum__CASE" "ty_2Erat_2Erat") "V3a" (("c_2Ecombin_2EI" "ty_2Erat_2Erat") "c_2Erat_2Erat__0") (lambda "V4v" "ty_2Enum_2Enum" (("c_2Earithmetic_2Enum__CASE" "ty_2Erat_2Erat") "V4v" (("c_2Ecombin_2EI" "ty_2Erat_2Erat") "c_2Erat_2Erat__1") (lambda "V5n" "ty_2Enum_2Enum" (("c_2Ecombin_2EI" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("V2rat__of__num" ("c_2Enum_2ESUC" "V5n")) "c_2Erat_2Erat__1")))))))))))
-; rat.rat_of_num_ind
-; ∀P. P 0 ∧ P (SUC 0) ∧ (∀n. P (SUC n) ⇒ P (SUC (SUC n))) ⇒ ∀v. P v
+; rat.rat_of_num_ind: ∀V0P.     V0P 0 ∧ V0P (SUC 0) ∧ (∀V1n. V0P (SUC V1n) ⇒ V0P (SUC (SUC V1n))) ⇒     ∀V2v. V0P V2v
 (conjecture "thm_2Erat_2Erat__of__num__ind" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Enum_2E0") ("c_2Ebool_2E_2F_5C" ("V0P" ("c_2Enum_2ESUC" "c_2Enum_2E0")) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("V0P" ("c_2Enum_2ESUC" "V1n")) ("V0P" ("c_2Enum_2ESUC" ("c_2Enum_2ESUC" "V1n")))))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2v" "ty_2Enum_2Enum" ("V0P" "V2v")))))))
-; rat.rat_of_num_def
-; (0 = rat_0) ∧ (&SUC 0 = rat_1) ∧ ∀n. &SUC (SUC n) = &SUC n + rat_1
+; rat.rat_of_num_def: (0 = rat_0) ∧ (&SUC 0 = rat_1) ∧ ∀V0n. &SUC (SUC V0n) = &SUC V0n + rat_1
 (conjecture "thm_2Erat_2Erat__of__num__def" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "c_2Erat_2Erat__0") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Enum_2ESUC" "c_2Enum_2E0")) "c_2Erat_2Erat__1") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Enum_2ESUC" ("c_2Enum_2ESUC" "V0n"))) ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__num" ("c_2Enum_2ESUC" "V0n")) "c_2Erat_2Erat__1")))))))
-; rat.rat_of_num_def_compute
-; (0 = rat_0) ∧ (&SUC 0 = rat_1) ∧ (∀n. &SUC (NUMERAL (BIT1 n)) = &NUMERAL (BIT1 n) + rat_1) ∧ ∀n. &SUC (NUMERAL (BIT2 n)) = &NUMERAL (BIT2 n) + rat_1
+; rat.rat_of_num_def_compute: (0 = rat_0) ∧ (&SUC 0 = rat_1) ∧ (∀V0n. &SUC (NUMERAL (BIT1 V0n)) = &NUMERAL (BIT1 V0n) + rat_1) ∧ ∀V1n. &SUC (NUMERAL (BIT2 V1n)) = &NUMERAL (BIT2 V1n) + rat_1
 (conjecture "thm_2Erat_2Erat__of__num__def__compute" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "c_2Erat_2Erat__0") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Enum_2ESUC" "c_2Enum_2E0")) "c_2Erat_2Erat__1") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Enum_2ESUC" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V0n")))) ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V0n"))) "c_2Erat_2Erat__1")))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Enum_2ESUC" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V1n")))) ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V1n"))) "c_2Erat_2Erat__1"))))))))
-; rat.rat_0
-; 0 = abs_rat frac_0
+; rat.rat_0: 0 = abs_rat frac_0
 (conjecture "thm_2Erat_2Erat__0" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Eabs__rat" "c_2Efrac_2Efrac__0")))
-; rat.rat_1
-; 1 = abs_rat frac_1
+; rat.rat_1: 1 = abs_rat frac_1
 (conjecture "thm_2Erat_2Erat__1" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Erat_2Eabs__rat" "c_2Efrac_2Efrac__1")))
-; rat.RAT
-; ∀r. abs_rat (rep_rat r) = r
+; rat.RAT: ∀V0r. abs_rat (rep_rat V0r) = V0r
 (conjecture "thm_2Erat_2ERAT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Erat_2Erep__rat" "V0r")) "V0r"))))
-; rat.RAT_ABS_EQUIV
-; ∀f1 f2. (abs_rat f1 = abs_rat f2) ⇔ rat_equiv f1 f2
+; rat.RAT_ABS_EQUIV: ∀V0f1 V1f2. (abs_rat V0f1 = abs_rat V1f2) ⇔ rat_equiv V0f1 V1f2
 (conjecture "thm_2Erat_2ERAT__ABS__EQUIV" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) ("c_2Erat_2Erat__equiv" "V0f1" "V1f2")))))))
-; rat.RAT_EQ
-; ∀f1 f2.     (abs_rat f1 = abs_rat f2) ⇔     (frac_nmr f1 * frac_dnm f2 = frac_nmr f2 * frac_dnm f1)
+; rat.RAT_EQ: ∀V0f1 V1f2.     (abs_rat V0f1 = abs_rat V1f2) ⇔     (frac_nmr V0f1 * frac_dnm V1f2 = frac_nmr V1f2 * frac_dnm V0f1)
 (conjecture "thm_2Erat_2ERAT__EQ" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Efrac_2Efrac__dnm" "V0f1")))))))))
-; rat.RAT_EQ_ALT
-; ∀r1 r2. (r1 = r2) ⇔ (rat_nmr r1 * rat_dnm r2 = rat_nmr r2 * rat_dnm r1)
+; rat.RAT_EQ_ALT: ∀V0r1 V1r2.     (V0r1 = V1r2) ⇔     (rat_nmr V0r1 * rat_dnm V1r2 = rat_nmr V1r2 * rat_dnm V0r1)
 (conjecture "thm_2Erat_2ERAT__EQ__ALT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Erat_2Erat__nmr" "V0r1") ("c_2Erat_2Erat__dnm" "V1r2")) ("c_2Einteger_2Eint__mul" ("c_2Erat_2Erat__nmr" "V1r2") ("c_2Erat_2Erat__dnm" "V0r1")))))))))
-; rat.RAT_NMREQ0_CONG
-; ∀f1. (frac_nmr (rep_rat (abs_rat f1)) = 0) ⇔ (frac_nmr f1 = 0)
+; rat.RAT_NMREQ0_CONG: ∀V0f1. (frac_nmr (rep_rat (abs_rat V0f1)) = 0) ⇔ (frac_nmr V0f1 = 0)
 (conjecture "thm_2Erat_2ERAT__NMREQ0__CONG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0f1"))) ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))
-; rat.RAT_NMRLT0_CONG
-; ∀f1. frac_nmr (rep_rat (abs_rat f1)) < 0 ⇔ frac_nmr f1 < 0
+; rat.RAT_NMRLT0_CONG: ∀V0f1. frac_nmr (rep_rat (abs_rat V0f1)) < 0 ⇔ frac_nmr V0f1 < 0
 (conjecture "thm_2Erat_2ERAT__NMRLT0__CONG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__lt" ("c_2Efrac_2Efrac__nmr" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0f1"))) ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__lt" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))
-; rat.RAT_NMRGT0_CONG
-; ∀f1. frac_nmr (rep_rat (abs_rat f1)) > 0 ⇔ frac_nmr f1 > 0
+; rat.RAT_NMRGT0_CONG: ∀V0f1. frac_nmr (rep_rat (abs_rat V0f1)) > 0 ⇔ frac_nmr V0f1 > 0
 (conjecture "thm_2Erat_2ERAT__NMRGT0__CONG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__gt" ("c_2Efrac_2Efrac__nmr" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0f1"))) ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__gt" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))
-; rat.RAT_SGN_CONG
-; ∀f1. frac_sgn (rep_rat (abs_rat f1)) = frac_sgn f1
+; rat.RAT_SGN_CONG: ∀V0f1. frac_sgn (rep_rat (abs_rat V0f1)) = frac_sgn V0f1
 (conjecture "thm_2Erat_2ERAT__SGN__CONG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__sgn" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0f1"))) ("c_2Efrac_2Efrac__sgn" "V0f1")))))
-; rat.RAT_AINV_CONG
-; ∀x. abs_rat (frac_ainv (rep_rat (abs_rat x))) = abs_rat (frac_ainv x)
+; rat.RAT_AINV_CONG: ∀V0x. abs_rat (frac_ainv (rep_rat (abs_rat V0x))) = abs_rat (frac_ainv V0x)
 (conjecture "thm_2Erat_2ERAT__AINV__CONG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__ainv" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__ainv" "V0x"))))))
-; rat.FRAC_MINV_EQUIV
-; frac_nmr y ≠ 0 ⇒ rat_equiv x y ⇒ rat_equiv (frac_minv x) (frac_minv y)
+; rat.FRAC_MINV_EQUIV: ∀V0y V1x.     frac_nmr V0y ≠ 0 ⇒     rat_equiv V1x V0y ⇒     rat_equiv (frac_minv V1x) (frac_minv V0y)
 (conjecture "thm_2Erat_2EFRAC__MINV__EQUIV" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0y" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1x" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0y") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__equiv" "V1x" "V0y") ("c_2Erat_2Erat__equiv" ("c_2Efrac_2Efrac__minv" "V1x") ("c_2Efrac_2Efrac__minv" "V0y")))))))))
-; rat.RAT_MINV_CONG
-; ∀x.     frac_nmr x ≠ 0 ⇒     (abs_rat (frac_minv (rep_rat (abs_rat x))) = abs_rat (frac_minv x))
+; rat.RAT_MINV_CONG: ∀V0x.     frac_nmr V0x ≠ 0 ⇒     (abs_rat (frac_minv (rep_rat (abs_rat V0x))) = abs_rat (frac_minv V0x))
 (conjecture "thm_2Erat_2ERAT__MINV__CONG" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0x") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__minv" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__minv" "V0x")))))))
-; rat.FRAC_ADD_EQUIV1
-; rat_equiv x x' ⇒ rat_equiv (frac_add x y) (frac_add x' y)
+; rat.FRAC_ADD_EQUIV1: ∀V0x V1x_27 V2y.     rat_equiv V0x V1x_27 ⇒ rat_equiv (frac_add V0x V2y) (frac_add V1x_27 V2y)
 (conjecture "thm_2Erat_2EFRAC__ADD__EQUIV1" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1x_27" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2y" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__equiv" "V0x" "V1x_27") ("c_2Erat_2Erat__equiv" ("c_2Efrac_2Efrac__add" "V0x" "V2y") ("c_2Efrac_2Efrac__add" "V1x_27" "V2y"))))))))))
-; rat.RAT_ADD_CONG1
-; ∀x y. abs_rat (frac_add (rep_rat (abs_rat x)) y) = abs_rat (frac_add x y)
+; rat.RAT_ADD_CONG1: ∀V0x V1y.     abs_rat (frac_add (rep_rat (abs_rat V0x)) V1y) =     abs_rat (frac_add V0x V1y)
 (conjecture "thm_2Erat_2ERAT__ADD__CONG1" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" "V0x" "V1y"))))))))
-; rat.RAT_ADD_CONG2
-; ∀x y. abs_rat (frac_add x (rep_rat (abs_rat y))) = abs_rat (frac_add x y)
+; rat.RAT_ADD_CONG2: ∀V0x V1y.     abs_rat (frac_add V0x (rep_rat (abs_rat V1y))) =     abs_rat (frac_add V0x V1y)
 (conjecture "thm_2Erat_2ERAT__ADD__CONG2" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" "V0x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V1y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" "V0x" "V1y"))))))))
-; rat.RAT_ADD_CONG
-; (∀x y. abs_rat (frac_add (rep_rat (abs_rat x)) y) = abs_rat (frac_add x y)) ∧ ∀x y. abs_rat (frac_add x (rep_rat (abs_rat y))) = abs_rat (frac_add x y)
+; rat.RAT_ADD_CONG: (∀V0x V1y.      abs_rat (frac_add (rep_rat (abs_rat V0x)) V1y) =      abs_rat (frac_add V0x V1y)) ∧ ∀V2x V3y.     abs_rat (frac_add V2x (rep_rat (abs_rat V3y))) =     abs_rat (frac_add V2x V3y)
 (conjecture "thm_2Erat_2ERAT__ADD__CONG" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" "V0x" "V1y"))))))) (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V3y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" "V2x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V3y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" "V2x" "V3y")))))))))
-; rat.FRAC_MUL_EQUIV1
-; rat_equiv x x' ⇒ rat_equiv (frac_mul x y) (frac_mul x' y)
+; rat.FRAC_MUL_EQUIV1: ∀V0x V1x_27 V2y.     rat_equiv V0x V1x_27 ⇒ rat_equiv (frac_mul V0x V2y) (frac_mul V1x_27 V2y)
 (conjecture "thm_2Erat_2EFRAC__MUL__EQUIV1" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1x_27" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2y" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__equiv" "V0x" "V1x_27") ("c_2Erat_2Erat__equiv" ("c_2Efrac_2Efrac__mul" "V0x" "V2y") ("c_2Efrac_2Efrac__mul" "V1x_27" "V2y"))))))))))
-; rat.FRAC_MUL_EQUIV2
-; rat_equiv x x' ⇒ rat_equiv (frac_mul y x) (frac_mul y x')
+; rat.FRAC_MUL_EQUIV2: ∀V0x V1x_27 V2y.     rat_equiv V0x V1x_27 ⇒ rat_equiv (frac_mul V2y V0x) (frac_mul V2y V1x_27)
 (conjecture "thm_2Erat_2EFRAC__MUL__EQUIV2" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1x_27" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2y" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__equiv" "V0x" "V1x_27") ("c_2Erat_2Erat__equiv" ("c_2Efrac_2Efrac__mul" "V2y" "V0x") ("c_2Efrac_2Efrac__mul" "V2y" "V1x_27"))))))))))
-; rat.RAT_MUL_CONG1
-; ∀x y. abs_rat (frac_mul (rep_rat (abs_rat x)) y) = abs_rat (frac_mul x y)
+; rat.RAT_MUL_CONG1: ∀V0x V1y.     abs_rat (frac_mul (rep_rat (abs_rat V0x)) V1y) =     abs_rat (frac_mul V0x V1y)
 (conjecture "thm_2Erat_2ERAT__MUL__CONG1" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" "V0x" "V1y"))))))))
-; rat.RAT_MUL_CONG2
-; ∀x y. abs_rat (frac_mul x (rep_rat (abs_rat y))) = abs_rat (frac_mul x y)
+; rat.RAT_MUL_CONG2: ∀V0x V1y.     abs_rat (frac_mul V0x (rep_rat (abs_rat V1y))) =     abs_rat (frac_mul V0x V1y)
 (conjecture "thm_2Erat_2ERAT__MUL__CONG2" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" "V0x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V1y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" "V0x" "V1y"))))))))
-; rat.RAT_MUL_CONG
-; (∀x y. abs_rat (frac_mul (rep_rat (abs_rat x)) y) = abs_rat (frac_mul x y)) ∧ ∀x y. abs_rat (frac_mul x (rep_rat (abs_rat y))) = abs_rat (frac_mul x y)
+; rat.RAT_MUL_CONG: (∀V0x V1y.      abs_rat (frac_mul (rep_rat (abs_rat V0x)) V1y) =      abs_rat (frac_mul V0x V1y)) ∧ ∀V2x V3y.     abs_rat (frac_mul V2x (rep_rat (abs_rat V3y))) =     abs_rat (frac_mul V2x V3y)
 (conjecture "thm_2Erat_2ERAT__MUL__CONG" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" "V0x" "V1y"))))))) (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V3y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" "V2x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V3y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" "V2x" "V3y")))))))))
-; rat.RAT_SUB_CONG1
-; ∀x y. abs_rat (frac_sub (rep_rat (abs_rat x)) y) = abs_rat (frac_sub x y)
+; rat.RAT_SUB_CONG1: ∀V0x V1y.     abs_rat (frac_sub (rep_rat (abs_rat V0x)) V1y) =     abs_rat (frac_sub V0x V1y)
 (conjecture "thm_2Erat_2ERAT__SUB__CONG1" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" "V0x" "V1y"))))))))
-; rat.RAT_SUB_CONG2
-; ∀x y. abs_rat (frac_sub x (rep_rat (abs_rat y))) = abs_rat (frac_sub x y)
+; rat.RAT_SUB_CONG2: ∀V0x V1y.     abs_rat (frac_sub V0x (rep_rat (abs_rat V1y))) =     abs_rat (frac_sub V0x V1y)
 (conjecture "thm_2Erat_2ERAT__SUB__CONG2" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" "V0x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V1y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" "V0x" "V1y"))))))))
-; rat.RAT_SUB_CONG
-; (∀x y. abs_rat (frac_sub (rep_rat (abs_rat x)) y) = abs_rat (frac_sub x y)) ∧ ∀x y. abs_rat (frac_sub x (rep_rat (abs_rat y))) = abs_rat (frac_sub x y)
+; rat.RAT_SUB_CONG: (∀V0x V1y.      abs_rat (frac_sub (rep_rat (abs_rat V0x)) V1y) =      abs_rat (frac_sub V0x V1y)) ∧ ∀V2x V3y.     abs_rat (frac_sub V2x (rep_rat (abs_rat V3y))) =     abs_rat (frac_sub V2x V3y)
 (conjecture "thm_2Erat_2ERAT__SUB__CONG" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" "V0x" "V1y"))))))) (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V3y" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" "V2x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V3y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" "V2x" "V3y")))))))))
-; rat.RAT_DIV_CONG1
-; ∀x y.     frac_nmr y ≠ 0 ⇒     (abs_rat (frac_div (rep_rat (abs_rat x)) y) = abs_rat (frac_div x y))
+; rat.RAT_DIV_CONG1: ∀V0x V1y.     frac_nmr V1y ≠ 0 ⇒     (abs_rat (frac_div (rep_rat (abs_rat V0x)) V1y) =      abs_rat (frac_div V0x V1y))
 (conjecture "thm_2Erat_2ERAT__DIV__CONG1" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V1y") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" "V0x" "V1y")))))))))
-; rat.RAT_DIV_CONG2
-; ∀x y.     frac_nmr y ≠ 0 ⇒     (abs_rat (frac_div x (rep_rat (abs_rat y))) = abs_rat (frac_div x y))
+; rat.RAT_DIV_CONG2: ∀V0x V1y.     frac_nmr V1y ≠ 0 ⇒     (abs_rat (frac_div V0x (rep_rat (abs_rat V1y))) =      abs_rat (frac_div V0x V1y))
 (conjecture "thm_2Erat_2ERAT__DIV__CONG2" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V1y") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" "V0x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V1y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" "V0x" "V1y")))))))))
-; rat.RAT_DIV_CONG
-; (∀x y.      frac_nmr y ≠ 0 ⇒      (abs_rat (frac_div (rep_rat (abs_rat x)) y) = abs_rat (frac_div x y))) ∧ ∀x y.     frac_nmr y ≠ 0 ⇒     (abs_rat (frac_div x (rep_rat (abs_rat y))) = abs_rat (frac_div x y))
+; rat.RAT_DIV_CONG: (∀V0x V1y.      frac_nmr V1y ≠ 0 ⇒      (abs_rat (frac_div (rep_rat (abs_rat V0x)) V1y) =       abs_rat (frac_div V0x V1y))) ∧ ∀V2x V3y.     frac_nmr V3y ≠ 0 ⇒     (abs_rat (frac_div V2x (rep_rat (abs_rat V3y))) =      abs_rat (frac_div V2x V3y))
 (conjecture "thm_2Erat_2ERAT__DIV__CONG" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1y" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V1y") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V0x")) "V1y")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" "V0x" "V1y")))))))) (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V2x" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V3y" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V3y") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" "V2x" ("c_2Erat_2Erep__rat" ("c_2Erat_2Eabs__rat" "V3y")))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" "V2x" "V3y"))))))))))
-; rat.RAT_NMRDNM_EQ
-; (abs_rat (abs_frac (frac_nmr f1,frac_dnm f1)) = 1) ⇔ (frac_nmr f1 = frac_dnm f1)
+; rat.RAT_NMRDNM_EQ: ∀V0f1.     (abs_rat (abs_frac (frac_nmr V0f1,frac_dnm V0f1)) = 1) ⇔     (frac_nmr V0f1 = frac_dnm V0f1)
 (conjecture "thm_2Erat_2ERAT__NMRDNM__EQ" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V0f1")))) ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V0f1"))))))
-; rat.RAT_AINV_CALCULATE
-; ∀f1. -abs_rat f1 = abs_rat (frac_ainv f1)
+; rat.RAT_AINV_CALCULATE: ∀V0f1. -abs_rat V0f1 = abs_rat (frac_ainv V0f1)
 (conjecture "thm_2Erat_2ERAT__AINV__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Eabs__rat" "V0f1")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__ainv" "V0f1"))))))
-; rat.RAT_MINV_CALCULATE
-; ∀f1. 0 ≠ frac_nmr f1 ⇒ (rat_minv (abs_rat f1) = abs_rat (frac_minv f1))
+; rat.RAT_MINV_CALCULATE: ∀V0f1.     0 ≠ frac_nmr V0f1 ⇒ (rat_minv (abs_rat V0f1) = abs_rat (frac_minv V0f1))
 (conjecture "thm_2Erat_2ERAT__MINV__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Efrac_2Efrac__nmr" "V0f1"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" ("c_2Erat_2Eabs__rat" "V0f1")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__minv" "V0f1")))))))
-; rat.RAT_ADD_CALCULATE
-; ∀f1 f2. abs_rat f1 + abs_rat f2 = abs_rat (frac_add f1 f2)
+; rat.RAT_ADD_CALCULATE: ∀V0f1 V1f2. abs_rat V0f1 + abs_rat V1f2 = abs_rat (frac_add V0f1 V1f2)
 (conjecture "thm_2Erat_2ERAT__ADD__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__add" "V0f1" "V1f2"))))))))
-; rat.RAT_SUB_CALCULATE
-; ∀f1 f2. abs_rat f1 − abs_rat f2 = abs_rat (frac_sub f1 f2)
+; rat.RAT_SUB_CALCULATE: ∀V0f1 V1f2. abs_rat V0f1 − abs_rat V1f2 = abs_rat (frac_sub V0f1 V1f2)
 (conjecture "thm_2Erat_2ERAT__SUB__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__sub" "V0f1" "V1f2"))))))))
-; rat.RAT_MUL_CALCULATE
-; ∀f1 f2. abs_rat f1 * abs_rat f2 = abs_rat (frac_mul f1 f2)
+; rat.RAT_MUL_CALCULATE: ∀V0f1 V1f2. abs_rat V0f1 * abs_rat V1f2 = abs_rat (frac_mul V0f1 V1f2)
 (conjecture "thm_2Erat_2ERAT__MUL__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__mul" "V0f1" "V1f2"))))))))
-; rat.RAT_DIV_CALCULATE
-; ∀f1 f2.     frac_nmr f2 ≠ 0 ⇒ (abs_rat f1 / abs_rat f2 = abs_rat (frac_div f1 f2))
+; rat.RAT_DIV_CALCULATE: ∀V0f1 V1f2.     frac_nmr V1f2 ≠ 0 ⇒     (abs_rat V0f1 / abs_rat V1f2 = abs_rat (frac_div V0f1 V1f2))
 (conjecture "thm_2Erat_2ERAT__DIV__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__div" "V0f1" "V1f2")))))))))
-; rat.RAT_EQ_CALCULATE
-; ∀f1 f2.     (abs_rat f1 = abs_rat f2) ⇔     (frac_nmr f1 * frac_dnm f2 = frac_nmr f2 * frac_dnm f1)
+; rat.RAT_EQ_CALCULATE: ∀V0f1 V1f2.     (abs_rat V0f1 = abs_rat V1f2) ⇔     (frac_nmr V0f1 * frac_dnm V1f2 = frac_nmr V1f2 * frac_dnm V0f1)
 (conjecture "thm_2Erat_2ERAT__EQ__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Efrac_2Efrac__dnm" "V0f1")))))))))
-; rat.RAT_LES_CALCULATE
-; ∀f1 f2.     abs_rat f1 < abs_rat f2 ⇔     frac_nmr f1 * frac_dnm f2 < frac_nmr f2 * frac_dnm f1
+; rat.RAT_LES_CALCULATE: ∀V0f1 V1f2.     abs_rat V0f1 < abs_rat V1f2 ⇔     frac_nmr V0f1 * frac_dnm V1f2 < frac_nmr V1f2 * frac_dnm V0f1
 (conjecture "thm_2Erat_2ERAT__LES__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Efrac_2Efrac__dnm" "V0f1")))))))))
-; rat.RAT_LEQ_CALCULATE
-; ∀f1 f2.     abs_rat f1 ≤ abs_rat f2 ⇔     frac_nmr f1 * frac_dnm f2 ≤ frac_nmr f2 * frac_dnm f1
+; rat.RAT_LEQ_CALCULATE: ∀V0f1 V1f2.     abs_rat V0f1 ≤ abs_rat V1f2 ⇔     frac_nmr V0f1 * frac_dnm V1f2 ≤ frac_nmr V1f2 * frac_dnm V0f1
 (conjecture "thm_2Erat_2ERAT__LEQ__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V1f2" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Eabs__rat" "V0f1") ("c_2Erat_2Eabs__rat" "V1f2")) ("c_2Einteger_2Eint__le" ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V0f1") ("c_2Efrac_2Efrac__dnm" "V1f2")) ("c_2Einteger_2Eint__mul" ("c_2Efrac_2Efrac__nmr" "V1f2") ("c_2Efrac_2Efrac__dnm" "V0f1")))))))))
-; rat.RAT_OF_NUM_CALCULATE
-; ∀n1. &n1 = abs_rat (abs_frac (&n1,1))
+; rat.RAT_OF_NUM_CALCULATE: ∀V0n1. &V0n1 = abs_rat (abs_frac (&V0n1,1))
 (conjecture "thm_2Erat_2ERAT__OF__NUM__CALCULATE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n1" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "V0n1") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" "V0n1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; rat.RAT_OF_NUM_LEQ
-; &a ≤ &b ⇔ a ≤ b
+; rat.RAT_OF_NUM_LEQ: ∀V0a V1b. &V0a ≤ &V1b ⇔ V0a ≤ V1b
 (conjecture "thm_2Erat_2ERAT__OF__NUM__LEQ" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__of__num" "V0a") ("c_2Erat_2Erat__of__num" "V1b")) ("c_2Earithmetic_2E_3C_3D" "V0a" "V1b")))))))
-; rat.RAT_OF_NUM_LES
-; &a < &b ⇔ a < b
+; rat.RAT_OF_NUM_LES: ∀V0a V1b. &V0a < &V1b ⇔ V0a < V1b
 (conjecture "thm_2Erat_2ERAT__OF__NUM__LES" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "V0a") ("c_2Erat_2Erat__of__num" "V1b")) ("c_2Eprim__rec_2E_3C" "V0a" "V1b")))))))
-; rat.RAT_EQ0_NMR
-; ∀r1. (r1 = 0) ⇔ (rat_nmr r1 = 0)
+; rat.RAT_EQ0_NMR: ∀V0r1. (V0r1 = 0) ⇔ (rat_nmr V0r1 = 0)
 (conjecture "thm_2Erat_2ERAT__EQ0__NMR" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__nmr" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))
-; rat.RAT_0LES_NMR
-; ∀r1. 0 < r1 ⇔ 0 < rat_nmr r1
+; rat.RAT_0LES_NMR: ∀V0r1. 0 < V0r1 ⇔ 0 < rat_nmr V0r1
 (conjecture "thm_2Erat_2ERAT__0LES__NMR" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__nmr" "V0r1"))))))
-; rat.RAT_LES0_NMR
-; ∀r1. r1 < 0 ⇔ rat_nmr r1 < 0
+; rat.RAT_LES0_NMR: ∀V0r1. V0r1 < 0 ⇔ rat_nmr V0r1 < 0
 (conjecture "thm_2Erat_2ERAT__LES0__NMR" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__lt" ("c_2Erat_2Erat__nmr" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))
-; rat.RAT_0LEQ_NMR
-; ∀r1. 0 ≤ r1 ⇔ 0 ≤ rat_nmr r1
+; rat.RAT_0LEQ_NMR: ∀V0r1. 0 ≤ V0r1 ⇔ 0 ≤ rat_nmr V0r1
 (conjecture "thm_2Erat_2ERAT__0LEQ__NMR" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1") ("c_2Einteger_2Eint__le" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__nmr" "V0r1"))))))
-; rat.RAT_LEQ0_NMR
-; ∀r1. r1 ≤ 0 ⇔ rat_nmr r1 ≤ 0
+; rat.RAT_LEQ0_NMR: ∀V0r1. V0r1 ≤ 0 ⇔ rat_nmr V0r1 ≤ 0
 (conjecture "thm_2Erat_2ERAT__LEQ0__NMR" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__le" ("c_2Erat_2Erat__nmr" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))))))
-; rat.RAT_ADD_ASSOC
-; ∀a b c. a + (b + c) = a + b + c
+; rat.RAT_ADD_ASSOC: ∀V0a V1b V2c. V0a + (V1b + V2c) = V0a + V1b + V2c
 (conjecture "thm_2Erat_2ERAT__ADD__ASSOC" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0a" ("c_2Erat_2Erat__add" "V1b" "V2c")) ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__add" "V0a" "V1b") "V2c")))))))))
-; rat.RAT_MUL_ASSOC
-; ∀a b c. a * (b * c) = a * b * c
+; rat.RAT_MUL_ASSOC: ∀V0a V1b V2c. V0a * (V1b * V2c) = V0a * V1b * V2c
 (conjecture "thm_2Erat_2ERAT__MUL__ASSOC" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0a" ("c_2Erat_2Erat__mul" "V1b" "V2c")) ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__mul" "V0a" "V1b") "V2c")))))))))
-; rat.RAT_ADD_COMM
-; ∀a b. a + b = b + a
+; rat.RAT_ADD_COMM: ∀V0a V1b. V0a + V1b = V1b + V0a
 (conjecture "thm_2Erat_2ERAT__ADD__COMM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0a" "V1b") ("c_2Erat_2Erat__add" "V1b" "V0a")))))))
-; rat.RAT_MUL_COMM
-; ∀a b. a * b = b * a
+; rat.RAT_MUL_COMM: ∀V0a V1b. V0a * V1b = V1b * V0a
 (conjecture "thm_2Erat_2ERAT__MUL__COMM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0a" "V1b") ("c_2Erat_2Erat__mul" "V1b" "V0a")))))))
-; rat.RAT_ADD_RID
-; ∀a. a + 0 = a
+; rat.RAT_ADD_RID: ∀V0a. V0a + 0 = V0a
 (conjecture "thm_2Erat_2ERAT__ADD__RID" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0a" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) "V0a"))))
-; rat.RAT_ADD_LID
-; ∀a. 0 + a = a
+; rat.RAT_ADD_LID: ∀V0a. 0 + V0a = V0a
 (conjecture "thm_2Erat_2ERAT__ADD__LID" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0a") "V0a"))))
-; rat.RAT_MUL_RID
-; ∀a. a * 1 = a
+; rat.RAT_MUL_RID: ∀V0a. V0a * 1 = V0a
 (conjecture "thm_2Erat_2ERAT__MUL__RID" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0a" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V0a"))))
-; rat.RAT_MUL_LID
-; ∀a. 1 * a = a
+; rat.RAT_MUL_LID: ∀V0a. 1 * V0a = V0a
 (conjecture "thm_2Erat_2ERAT__MUL__LID" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V0a") "V0a"))))
-; rat.RAT_ADD_RINV
-; ∀a. a + -a = 0
+; rat.RAT_ADD_RINV: ∀V0a. V0a + -V0a = 0
 (conjecture "thm_2Erat_2ERAT__ADD__RINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0a" ("c_2Erat_2Erat__ainv" "V0a")) ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))
-; rat.RAT_ADD_LINV
-; ∀a. -a + a = 0
+; rat.RAT_ADD_LINV: ∀V0a. -V0a + V0a = 0
 (conjecture "thm_2Erat_2ERAT__ADD__LINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__ainv" "V0a") "V0a") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))
-; rat.RAT_MUL_RINV
-; ∀a. a ≠ 0 ⇒ (a * rat_minv a = 1)
+; rat.RAT_MUL_RINV: ∀V0a. V0a ≠ 0 ⇒ (V0a * rat_minv V0a = 1)
 (conjecture "thm_2Erat_2ERAT__MUL__RINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0a" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0a" ("c_2Erat_2Erat__minv" "V0a")) ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; rat.RAT_MUL_LINV
-; ∀a. a ≠ 0 ⇒ (rat_minv a * a = 1)
+; rat.RAT_MUL_LINV: ∀V0a. V0a ≠ 0 ⇒ (rat_minv V0a * V0a = 1)
 (conjecture "thm_2Erat_2ERAT__MUL__LINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0a" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__minv" "V0a") "V0a") ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; rat.RAT_RDISTRIB
-; ∀a b c. (a + b) * c = a * c + b * c
+; rat.RAT_RDISTRIB: ∀V0a V1b V2c. (V0a + V1b) * V2c = V0a * V2c + V1b * V2c
 (conjecture "thm_2Erat_2ERAT__RDISTRIB" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__add" "V0a" "V1b") "V2c") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__mul" "V0a" "V2c") ("c_2Erat_2Erat__mul" "V1b" "V2c"))))))))))
-; rat.RAT_LDISTRIB
-; ∀a b c. c * (a + b) = c * a + c * b
+; rat.RAT_LDISTRIB: ∀V0a V1b V2c. V2c * (V0a + V1b) = V2c * V0a + V2c * V1b
 (conjecture "thm_2Erat_2ERAT__LDISTRIB" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V2c" ("c_2Erat_2Erat__add" "V0a" "V1b")) ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__mul" "V2c" "V0a") ("c_2Erat_2Erat__mul" "V2c" "V1b"))))))))))
-; rat.RAT_1_NOT_0
-; 1 ≠ 0
+; rat.RAT_1_NOT_0: 1 ≠ 0
 (conjecture "thm_2Erat_2ERAT__1__NOT__0" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))))
-; rat.RAT_MUL_LZERO
-; ∀r1. 0 * r1 = 0
+; rat.RAT_MUL_LZERO: ∀V0r1. 0 * V0r1 = 0
 (conjecture "thm_2Erat_2ERAT__MUL__LZERO" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))
-; rat.RAT_MUL_RZERO
-; ∀r1. r1 * 0 = 0
+; rat.RAT_MUL_RZERO: ∀V0r1. V0r1 * 0 = 0
 (conjecture "thm_2Erat_2ERAT__MUL__RZERO" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))
-; rat.RAT_SUB_ADDAINV
-; ∀r1 r2. r1 − r2 = r1 + -r2
+; rat.RAT_SUB_ADDAINV: ∀V0r1 V1r2. V0r1 − V1r2 = V0r1 + -V1r2
 (conjecture "thm_2Erat_2ERAT__SUB__ADDAINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" "V0r1" "V1r2") ("c_2Erat_2Erat__add" "V0r1" ("c_2Erat_2Erat__ainv" "V1r2"))))))))
-; rat.RAT_DIV_MULMINV
-; ∀r1 r2. r1 / r2 = r1 * rat_minv r2
+; rat.RAT_DIV_MULMINV: ∀V0r1 V1r2. V0r1 / V1r2 = V0r1 * rat_minv V1r2
 (conjecture "thm_2Erat_2ERAT__DIV__MULMINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" "V0r1" "V1r2") ("c_2Erat_2Erat__mul" "V0r1" ("c_2Erat_2Erat__minv" "V1r2"))))))))
-; rat.RAT_DIV_0
-; 0 / x = 0
+; rat.RAT_DIV_0: ∀V0x. 0 / V0x = 0
 (conjecture "thm_2Erat_2ERAT__DIV__0" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0x" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0x") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))
-; rat.RAT_AINV_0
-; -0 = 0
+; rat.RAT_AINV_0: -0 = 0
 (conjecture "thm_2Erat_2ERAT__AINV__0" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))
-; rat.RAT_AINV_AINV
-; ∀r1. - -r1 = r1
+; rat.RAT_AINV_AINV: ∀V0r1. - -V0r1 = V0r1
 (conjecture "thm_2Erat_2ERAT__AINV__AINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__ainv" "V0r1")) "V0r1"))))
-; rat.RAT_AINV_ADD
-; ∀r1 r2. -(r1 + r2) = -r1 + -r2
+; rat.RAT_AINV_ADD: ∀V0r1 V1r2. -(V0r1 + V1r2) = -V0r1 + -V1r2
 (conjecture "thm_2Erat_2ERAT__AINV__ADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__add" "V0r1" "V1r2")) ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__ainv" "V0r1") ("c_2Erat_2Erat__ainv" "V1r2"))))))))
-; rat.RAT_AINV_SUB
-; ∀r1 r2. -(r1 − r2) = r2 − r1
+; rat.RAT_AINV_SUB: ∀V0r1 V1r2. -(V0r1 − V1r2) = V1r2 − V0r1
 (conjecture "thm_2Erat_2ERAT__AINV__SUB" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__sub" "V0r1" "V1r2")) ("c_2Erat_2Erat__sub" "V1r2" "V0r1")))))))
-; rat.RAT_AINV_RMUL
-; ∀r1 r2. -(r1 * r2) = r1 * -r2
+; rat.RAT_AINV_RMUL: ∀V0r1 V1r2. -(V0r1 * V1r2) = V0r1 * -V1r2
 (conjecture "thm_2Erat_2ERAT__AINV__RMUL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__mul" "V0r1" "V1r2")) ("c_2Erat_2Erat__mul" "V0r1" ("c_2Erat_2Erat__ainv" "V1r2"))))))))
-; rat.RAT_AINV_LMUL
-; ∀r1 r2. -(r1 * r2) = -r1 * r2
+; rat.RAT_AINV_LMUL: ∀V0r1 V1r2. -(V0r1 * V1r2) = -V0r1 * V1r2
 (conjecture "thm_2Erat_2ERAT__AINV__LMUL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__mul" "V0r1" "V1r2")) ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__ainv" "V0r1") "V1r2")))))))
-; rat.RAT_AINV_EQ
-; ∀r1 r2. (-r1 = r2) ⇔ (r1 = -r2)
+; rat.RAT_AINV_EQ: ∀V0r1 V1r2. (-V0r1 = V1r2) ⇔ (V0r1 = -V1r2)
 (conjecture "thm_2Erat_2ERAT__AINV__EQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" "V0r1") "V1r2") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__ainv" "V1r2"))))))))
-; rat.RAT_EQ_AINV
-; ∀r1 r2. (-r1 = -r2) ⇔ (r1 = r2)
+; rat.RAT_EQ_AINV: ∀V0r1 V1r2. (-V0r1 = -V1r2) ⇔ (V0r1 = V1r2)
 (conjecture "thm_2Erat_2ERAT__EQ__AINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" "V0r1") ("c_2Erat_2Erat__ainv" "V1r2")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2")))))))
-; rat.RAT_AINV_MINV
-; ∀r1. r1 ≠ 0 ⇒ (-rat_minv r1 = rat_minv (-r1))
+; rat.RAT_AINV_MINV: ∀V0r1. V0r1 ≠ 0 ⇒ (-rat_minv V0r1 = rat_minv (-V0r1))
 (conjecture "thm_2Erat_2ERAT__AINV__MINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__minv" "V0r1")) ("c_2Erat_2Erat__minv" ("c_2Erat_2Erat__ainv" "V0r1")))))))
-; rat.RAT_SUB_RDISTRIB
-; ∀a b c. (a − b) * c = a * c − b * c
+; rat.RAT_SUB_RDISTRIB: ∀V0a V1b V2c. (V0a − V1b) * V2c = V0a * V2c − V1b * V2c
 (conjecture "thm_2Erat_2ERAT__SUB__RDISTRIB" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__sub" "V0a" "V1b") "V2c") ("c_2Erat_2Erat__sub" ("c_2Erat_2Erat__mul" "V0a" "V2c") ("c_2Erat_2Erat__mul" "V1b" "V2c"))))))))))
-; rat.RAT_SUB_LDISTRIB
-; ∀a b c. c * (a − b) = c * a − c * b
+; rat.RAT_SUB_LDISTRIB: ∀V0a V1b V2c. V2c * (V0a − V1b) = V2c * V0a − V2c * V1b
 (conjecture "thm_2Erat_2ERAT__SUB__LDISTRIB" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V2c" ("c_2Erat_2Erat__sub" "V0a" "V1b")) ("c_2Erat_2Erat__sub" ("c_2Erat_2Erat__mul" "V2c" "V0a") ("c_2Erat_2Erat__mul" "V2c" "V1b"))))))))))
-; rat.RAT_SUB_LID
-; ∀r1. 0 − r1 = -r1
+; rat.RAT_SUB_LID: ∀V0r1. 0 − V0r1 = -V0r1
 (conjecture "thm_2Erat_2ERAT__SUB__LID" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1") ("c_2Erat_2Erat__ainv" "V0r1")))))
-; rat.RAT_SUB_RID
-; ∀r1. r1 − 0 = r1
+; rat.RAT_SUB_RID: ∀V0r1. V0r1 − 0 = V0r1
 (conjecture "thm_2Erat_2ERAT__SUB__RID" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) "V0r1"))))
-; rat.RAT_SUB_ID
-; ∀r. r − r = 0
+; rat.RAT_SUB_ID: ∀V0r. V0r − V0r = 0
 (conjecture "thm_2Erat_2ERAT__SUB__ID" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" "V0r" "V0r") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))
-; rat.RAT_EQ_SUB0
-; ∀r1 r2. (r1 − r2 = 0) ⇔ (r1 = r2)
+; rat.RAT_EQ_SUB0: ∀V0r1 V1r2. (V0r1 − V1r2 = 0) ⇔ (V0r1 = V1r2)
 (conjecture "thm_2Erat_2ERAT__EQ__SUB0" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" "V0r1" "V1r2") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2")))))))
-; rat.RAT_EQ_0SUB
-; ∀r1 r2. (0 = r1 − r2) ⇔ (r1 = r2)
+; rat.RAT_EQ_0SUB: ∀V0r1 V1r2. (0 = V0r1 − V1r2) ⇔ (V0r1 = V1r2)
 (conjecture "thm_2Erat_2ERAT__EQ__0SUB" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__sub" "V0r1" "V1r2")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2")))))))
-; rat.RAT_SGN_CALCULATE
-; rat_sgn (abs_rat f1) = frac_sgn f1
+; rat.RAT_SGN_CALCULATE: ∀V0f1. rat_sgn (abs_rat V0f1) = frac_sgn V0f1
 (conjecture "thm_2Erat_2ERAT__SGN__CALCULATE" (("c_2Ebool_2E_21" "ty_2Efrac_2Efrac") (lambda "V0f1" "ty_2Efrac_2Efrac" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Eabs__rat" "V0f1")) ("c_2Efrac_2Efrac__sgn" "V0f1")))))
-; rat.RAT_SGN_CLAUSES
-; ∀r1.     ((rat_sgn r1 = -1) ⇔ r1 < 0) ∧ ((rat_sgn r1 = 0) ⇔ (r1 = 0)) ∧     ((rat_sgn r1 = 1) ⇔ r1 > 0)
+; rat.RAT_SGN_CLAUSES: ∀V0r1.     ((rat_sgn V0r1 = -1) ⇔ V0r1 < 0) ∧ ((rat_sgn V0r1 = 0) ⇔ (V0r1 = 0)) ∧     ((rat_sgn V0r1 = 1) ⇔ V0r1 > 0)
 (conjecture "thm_2Erat_2ERAT__SGN__CLAUSES" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Erat_2Erat__gre" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))))))))
-; rat.RAT_SGN_0
-; rat_sgn 0 = 0
+; rat.RAT_SGN_0: rat_sgn 0 = 0
 (conjecture "thm_2Erat_2ERAT__SGN__0" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))
-; rat.RAT_SGN_AINV
-; ∀r1. -rat_sgn (-r1) = rat_sgn r1
+; rat.RAT_SGN_AINV: ∀V0r1. -rat_sgn (-V0r1) = rat_sgn V0r1
 (conjecture "thm_2Erat_2ERAT__SGN__AINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__neg" ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__ainv" "V0r1"))) ("c_2Erat_2Erat__sgn" "V0r1")))))
-; rat.RAT_SGN_MUL
-; ∀r1 r2. rat_sgn (r1 * r2) = rat_sgn r1 * rat_sgn r2
+; rat.RAT_SGN_MUL: ∀V0r1 V1r2. rat_sgn (V0r1 * V1r2) = rat_sgn V0r1 * rat_sgn V1r2
 (conjecture "thm_2Erat_2ERAT__SGN__MUL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__mul" "V0r1" "V1r2")) ("c_2Einteger_2Eint__mul" ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Erat_2Erat__sgn" "V1r2"))))))))
-; rat.RAT_SGN_MINV
-; ∀r1. r1 ≠ 0 ⇒ (rat_sgn (rat_minv r1) = rat_sgn r1)
+; rat.RAT_SGN_MINV: ∀V0r1. V0r1 ≠ 0 ⇒ (rat_sgn (rat_minv V0r1) = rat_sgn V0r1)
 (conjecture "thm_2Erat_2ERAT__SGN__MINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__minv" "V0r1")) ("c_2Erat_2Erat__sgn" "V0r1"))))))
-; rat.RAT_SGN_TOTAL
-; ∀r1. (rat_sgn r1 = -1) ∨ (rat_sgn r1 = 0) ∨ (rat_sgn r1 = 1)
+; rat.RAT_SGN_TOTAL: ∀V0r1. (rat_sgn V0r1 = -1) ∨ (rat_sgn V0r1 = 0) ∨ (rat_sgn V0r1 = 1)
 (conjecture "thm_2Erat_2ERAT__SGN__TOTAL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
-; rat.RAT_SGN_COMPLEMENT
-; ∀r1.     (rat_sgn r1 ≠ -1 ⇔ (rat_sgn r1 = 0) ∨ (rat_sgn r1 = 1)) ∧     (rat_sgn r1 ≠ 0 ⇔ (rat_sgn r1 = -1) ∨ (rat_sgn r1 = 1)) ∧     (rat_sgn r1 ≠ 1 ⇔ (rat_sgn r1 = -1) ∨ (rat_sgn r1 = 0))
+; rat.RAT_SGN_COMPLEMENT: ∀V0r1.     (rat_sgn V0r1 ≠ -1 ⇔ (rat_sgn V0r1 = 0) ∨ (rat_sgn V0r1 = 1)) ∧     (rat_sgn V0r1 ≠ 0 ⇔ (rat_sgn V0r1 = -1) ∨ (rat_sgn V0r1 = 1)) ∧     (rat_sgn V0r1 ≠ 1 ⇔ (rat_sgn V0r1 = -1) ∨ (rat_sgn V0r1 = 0))
 (conjecture "thm_2Erat_2ERAT__SGN__COMPLEMENT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r1") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_LES_REF
-; ∀r1. ¬(r1 < r1)
+; rat.RAT_LES_REF: ∀V0r1. ¬(V0r1 < V0r1)
 (conjecture "thm_2Erat_2ERAT__LES__REF" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Ebool_2E_7E" ("c_2Erat_2Erat__les" "V0r1" "V0r1")))))
-; rat.RAT_LES_ANTISYM
-; ∀r1 r2. r1 < r2 ⇒ ¬(r2 < r1)
+; rat.RAT_LES_ANTISYM: ∀V0r1 V1r2. V0r1 < V1r2 ⇒ ¬(V1r2 < V0r1)
 (conjecture "thm_2Erat_2ERAT__LES__ANTISYM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V0r1" "V1r2") ("c_2Ebool_2E_7E" ("c_2Erat_2Erat__les" "V1r2" "V0r1"))))))))
-; rat.RAT_LES_TRANS
-; ∀r1 r2 r3. r1 < r2 ∧ r2 < r3 ⇒ r1 < r3
+; rat.RAT_LES_TRANS: ∀V0r1 V1r2 V2r3. V0r1 < V1r2 ∧ V1r2 < V2r3 ⇒ V0r1 < V2r3
 (conjecture "thm_2Erat_2ERAT__LES__TRANS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__les" "V0r1" "V1r2") ("c_2Erat_2Erat__les" "V1r2" "V2r3")) ("c_2Erat_2Erat__les" "V0r1" "V2r3")))))))))
-; rat.RAT_LES_TOTAL
-; ∀r1 r2. r1 < r2 ∨ (r1 = r2) ∨ r2 < r1
+; rat.RAT_LES_TOTAL: ∀V0r1 V1r2. V0r1 < V1r2 ∨ (V0r1 = V1r2) ∨ V1r2 < V0r1
 (conjecture "thm_2Erat_2ERAT__LES__TOTAL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Ebool_2E_5C_2F" ("c_2Erat_2Erat__les" "V0r1" "V1r2") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2") ("c_2Erat_2Erat__les" "V1r2" "V0r1"))))))))
-; rat.RAT_LEQ_REF
-; ∀r1. r1 ≤ r1
+; rat.RAT_LEQ_REF: ∀V0r1. V0r1 ≤ V0r1
 (conjecture "thm_2Erat_2ERAT__LEQ__REF" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Erat_2Erat__leq" "V0r1" "V0r1"))))
-; rat.RAT_LEQ_ANTISYM
-; ∀r1 r2. r1 ≤ r2 ∧ r2 ≤ r1 ⇒ (r1 = r2)
+; rat.RAT_LEQ_ANTISYM: ∀V0r1 V1r2. V0r1 ≤ V1r2 ∧ V1r2 ≤ V0r1 ⇒ (V0r1 = V1r2)
 (conjecture "thm_2Erat_2ERAT__LEQ__ANTISYM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__leq" "V0r1" "V1r2") ("c_2Erat_2Erat__leq" "V1r2" "V0r1")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2")))))))
-; rat.RAT_LEQ_TRANS
-; ∀r1 r2 r3. r1 ≤ r2 ∧ r2 ≤ r3 ⇒ r1 ≤ r3
+; rat.RAT_LEQ_TRANS: ∀V0r1 V1r2 V2r3. V0r1 ≤ V1r2 ∧ V1r2 ≤ V2r3 ⇒ V0r1 ≤ V2r3
 (conjecture "thm_2Erat_2ERAT__LEQ__TRANS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__leq" "V0r1" "V1r2") ("c_2Erat_2Erat__leq" "V1r2" "V2r3")) ("c_2Erat_2Erat__leq" "V0r1" "V2r3")))))))))
-; rat.RAT_LES_01
-; 0 < 1
+; rat.RAT_LES_01: 0 < 1
 (conjecture "thm_2Erat_2ERAT__LES__01" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; rat.RAT_LES_IMP_LEQ
-; ∀r1 r2. r1 < r2 ⇒ r1 ≤ r2
+; rat.RAT_LES_IMP_LEQ: ∀V0r1 V1r2. V0r1 < V1r2 ⇒ V0r1 ≤ V1r2
 (conjecture "thm_2Erat_2ERAT__LES__IMP__LEQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V0r1" "V1r2") ("c_2Erat_2Erat__leq" "V0r1" "V1r2")))))))
-; rat.RAT_LES_IMP_NEQ
-; ∀r1 r2. r1 < r2 ⇒ r1 ≠ r2
+; rat.RAT_LES_IMP_NEQ: ∀V0r1 V1r2. V0r1 < V1r2 ⇒ V0r1 ≠ V1r2
 (conjecture "thm_2Erat_2ERAT__LES__IMP__NEQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V0r1" "V1r2") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2"))))))))
-; rat.RAT_LEQ_LES
-; ∀r1 r2. ¬(r2 < r1) ⇔ r1 ≤ r2
+; rat.RAT_LEQ_LES: ∀V0r1 V1r2. ¬(V1r2 < V0r1) ⇔ V0r1 ≤ V1r2
 (conjecture "thm_2Erat_2ERAT__LEQ__LES" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" ("c_2Erat_2Erat__les" "V1r2" "V0r1")) ("c_2Erat_2Erat__leq" "V0r1" "V1r2")))))))
-; rat.RAT_LES_LEQ
-; ∀r1 r2. ¬(r2 ≤ r1) ⇔ r1 < r2
+; rat.RAT_LES_LEQ: ∀V0r1 V1r2. ¬(V1r2 ≤ V0r1) ⇔ V0r1 < V1r2
 (conjecture "thm_2Erat_2ERAT__LES__LEQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" ("c_2Erat_2Erat__leq" "V1r2" "V0r1")) ("c_2Erat_2Erat__les" "V0r1" "V1r2")))))))
-; rat.RAT_LES_LEQ2
-; ∀r1 r2. r1 < r2 ⇔ r1 ≤ r2 ∧ ¬(r2 ≤ r1)
+; rat.RAT_LES_LEQ2: ∀V0r1 V1r2. V0r1 < V1r2 ⇔ V0r1 ≤ V1r2 ∧ ¬(V1r2 ≤ V0r1)
 (conjecture "thm_2Erat_2ERAT__LES__LEQ2" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" "V0r1" "V1r2") ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__leq" "V0r1" "V1r2") ("c_2Ebool_2E_7E" ("c_2Erat_2Erat__leq" "V1r2" "V0r1")))))))))
-; rat.RAT_LES_LEQ_TRANS
-; ∀a b c. a < b ∧ b ≤ c ⇒ a < c
+; rat.RAT_LES_LEQ_TRANS: ∀V0a V1b V2c. V0a < V1b ∧ V1b ≤ V2c ⇒ V0a < V2c
 (conjecture "thm_2Erat_2ERAT__LES__LEQ__TRANS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__les" "V0a" "V1b") ("c_2Erat_2Erat__leq" "V1b" "V2c")) ("c_2Erat_2Erat__les" "V0a" "V2c")))))))))
-; rat.RAT_LEQ_LES_TRANS
-; ∀a b c. a ≤ b ∧ b < c ⇒ a < c
+; rat.RAT_LEQ_LES_TRANS: ∀V0a V1b V2c. V0a ≤ V1b ∧ V1b < V2c ⇒ V0a < V2c
 (conjecture "thm_2Erat_2ERAT__LEQ__LES__TRANS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__leq" "V0a" "V1b") ("c_2Erat_2Erat__les" "V1b" "V2c")) ("c_2Erat_2Erat__les" "V0a" "V2c")))))))))
-; rat.RAT_0LES_0LES_ADD
-; ∀r1 r2. 0 < r1 ⇒ 0 < r2 ⇒ 0 < r1 + r2
+; rat.RAT_0LES_0LES_ADD: ∀V0r1 V1r2. 0 < V0r1 ⇒ 0 < V1r2 ⇒ 0 < V0r1 + V1r2
 (conjecture "thm_2Erat_2ERAT__0LES__0LES__ADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1") ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V1r2") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__add" "V0r1" "V1r2")))))))))
-; rat.RAT_LES0_LES0_ADD
-; ∀r1 r2. r1 < 0 ⇒ r2 < 0 ⇒ r1 + r2 < 0
+; rat.RAT_LES0_LES0_ADD: ∀V0r1 V1r2. V0r1 < 0 ⇒ V1r2 < 0 ⇒ V0r1 + V1r2 < 0
 (conjecture "thm_2Erat_2ERAT__LES0__LES0__ADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__add" "V0r1" "V1r2") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_0LES_0LEQ_ADD
-; ∀r1 r2. 0 < r1 ⇒ 0 ≤ r2 ⇒ 0 < r1 + r2
+; rat.RAT_0LES_0LEQ_ADD: ∀V0r1 V1r2. 0 < V0r1 ⇒ 0 ≤ V1r2 ⇒ 0 < V0r1 + V1r2
 (conjecture "thm_2Erat_2ERAT__0LES__0LEQ__ADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1") ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V1r2") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__add" "V0r1" "V1r2")))))))))
-; rat.RAT_LES0_LEQ0_ADD
-; ∀r1 r2. r1 < 0 ⇒ r2 ≤ 0 ⇒ r1 + r2 < 0
+; rat.RAT_LES0_LEQ0_ADD: ∀V0r1 V1r2. V0r1 < 0 ⇒ V1r2 ≤ 0 ⇒ V0r1 + V1r2 < 0
 (conjecture "thm_2Erat_2ERAT__LES0__LEQ0__ADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__leq" "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__add" "V0r1" "V1r2") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_LSUB_EQ
-; ∀r1 r2 r3. (r1 − r2 = r3) ⇔ (r1 = r2 + r3)
+; rat.RAT_LSUB_EQ: ∀V0r1 V1r2 V2r3. (V0r1 − V1r2 = V2r3) ⇔ (V0r1 = V1r2 + V2r3)
 (conjecture "thm_2Erat_2ERAT__LSUB__EQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__sub" "V0r1" "V1r2") "V2r3") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__add" "V1r2" "V2r3"))))))))))
-; rat.RAT_RSUB_EQ
-; ∀r1 r2 r3. (r1 = r2 − r3) ⇔ (r1 + r3 = r2)
+; rat.RAT_RSUB_EQ: ∀V0r1 V1r2 V2r3. (V0r1 = V1r2 − V2r3) ⇔ (V0r1 + V2r3 = V1r2)
 (conjecture "thm_2Erat_2ERAT__RSUB__EQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__sub" "V1r2" "V2r3")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0r1" "V2r3") "V1r2")))))))))
-; rat.RAT_LDIV_EQ
-; ∀r1 r2 r3. r2 ≠ 0 ⇒ ((r1 / r2 = r3) ⇔ (r1 = r2 * r3))
+; rat.RAT_LDIV_EQ: ∀V0r1 V1r2 V2r3. V1r2 ≠ 0 ⇒ ((V0r1 / V1r2 = V2r3) ⇔ (V0r1 = V1r2 * V2r3))
 (conjecture "thm_2Erat_2ERAT__LDIV__EQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" "V0r1" "V1r2") "V2r3") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__mul" "V1r2" "V2r3")))))))))))
-; rat.RAT_RDIV_EQ
-; ∀r1 r2 r3. r3 ≠ 0 ⇒ ((r1 = r2 / r3) ⇔ (r1 * r3 = r2))
+; rat.RAT_RDIV_EQ: ∀V0r1 V1r2 V2r3. V2r3 ≠ 0 ⇒ ((V0r1 = V1r2 / V2r3) ⇔ (V0r1 * V2r3 = V1r2))
 (conjecture "thm_2Erat_2ERAT__RDIV__EQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V2r3" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__div" "V1r2" "V2r3")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" "V2r3") "V1r2"))))))))))
-; rat.RAT_AINV_ONE_ONE
-; ONE_ONE numeric_negate
+; rat.RAT_AINV_ONE_ONE: ONE_ONE numeric_negate
 (conjecture "thm_2Erat_2ERAT__AINV__ONE__ONE" (("c_2Ebool_2EONE__ONE" "ty_2Erat_2Erat" "ty_2Erat_2Erat") "c_2Erat_2Erat__ainv"))
-; rat.RAT_ADD_ONE_ONE
-; ∀r1. ONE_ONE ($+ r1)
+; rat.RAT_ADD_ONE_ONE: ∀V0r1. ONE_ONE ($+ V0r1)
 (conjecture "thm_2Erat_2ERAT__ADD__ONE__ONE" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2EONE__ONE" "ty_2Erat_2Erat" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0r1")))))
-; rat.RAT_MUL_ONE_ONE
-; ∀r1. r1 ≠ 0 ⇔ ONE_ONE ($* r1)
+; rat.RAT_MUL_ONE_ONE: ∀V0r1. V0r1 ≠ 0 ⇔ ONE_ONE ($* V0r1)
 (conjecture "thm_2Erat_2ERAT__MUL__ONE__ONE" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Ebool_2EONE__ONE" "ty_2Erat_2Erat" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1"))))))
-; rat.RAT_EQ_LADD
-; ∀r1 r2 r3. (r3 + r1 = r3 + r2) ⇔ (r1 = r2)
+; rat.RAT_EQ_LADD: ∀V0r1 V1r2 V2r3. (V2r3 + V0r1 = V2r3 + V1r2) ⇔ (V0r1 = V1r2)
 (conjecture "thm_2Erat_2ERAT__EQ__LADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V2r3" "V0r1") ("c_2Erat_2Erat__add" "V2r3" "V1r2")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2")))))))))
-; rat.RAT_EQ_RADD
-; ∀r1 r2 r3. (r1 + r3 = r2 + r3) ⇔ (r1 = r2)
+; rat.RAT_EQ_RADD: ∀V0r1 V1r2 V2r3. (V0r1 + V2r3 = V1r2 + V2r3) ⇔ (V0r1 = V1r2)
 (conjecture "thm_2Erat_2ERAT__EQ__RADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" "V0r1" "V2r3") ("c_2Erat_2Erat__add" "V1r2" "V2r3")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2")))))))))
-; rat.RAT_EQ_RMUL
-; ∀r1 r2 r3. r3 ≠ 0 ⇒ ((r1 * r3 = r2 * r3) ⇔ (r1 = r2))
+; rat.RAT_EQ_RMUL: ∀V0r1 V1r2 V2r3. V2r3 ≠ 0 ⇒ ((V0r1 * V2r3 = V1r2 * V2r3) ⇔ (V0r1 = V1r2))
 (conjecture "thm_2Erat_2ERAT__EQ__RMUL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V2r3" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" "V2r3") ("c_2Erat_2Erat__mul" "V1r2" "V2r3")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2"))))))))))
-; rat.RAT_EQ_LMUL
-; ∀r1 r2 r3. r3 ≠ 0 ⇒ ((r3 * r1 = r3 * r2) ⇔ (r1 = r2))
+; rat.RAT_EQ_LMUL: ∀V0r1 V1r2 V2r3. V2r3 ≠ 0 ⇒ ((V2r3 * V0r1 = V2r3 * V1r2) ⇔ (V0r1 = V1r2))
 (conjecture "thm_2Erat_2ERAT__EQ__LMUL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V2r3" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V2r3" "V0r1") ("c_2Erat_2Erat__mul" "V2r3" "V1r2")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" "V1r2"))))))))))
-; rat.RAT_LES_RADD
-; ∀r1 r2 r3. r1 + r3 < r2 + r3 ⇔ r1 < r2
+; rat.RAT_LES_RADD: ∀V0r1 V1r2 V2r3. V0r1 + V2r3 < V1r2 + V2r3 ⇔ V0r1 < V1r2
 (conjecture "thm_2Erat_2ERAT__LES__RADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__add" "V0r1" "V2r3") ("c_2Erat_2Erat__add" "V1r2" "V2r3")) ("c_2Erat_2Erat__les" "V0r1" "V1r2")))))))))
-; rat.RAT_LES_LADD
-; ∀r1 r2 r3. r3 + r1 < r3 + r2 ⇔ r1 < r2
+; rat.RAT_LES_LADD: ∀V0r1 V1r2 V2r3. V2r3 + V0r1 < V2r3 + V1r2 ⇔ V0r1 < V1r2
 (conjecture "thm_2Erat_2ERAT__LES__LADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__add" "V2r3" "V0r1") ("c_2Erat_2Erat__add" "V2r3" "V1r2")) ("c_2Erat_2Erat__les" "V0r1" "V1r2")))))))))
-; rat.RAT_LEQ_RADD
-; ∀r1 r2 r3. r1 + r3 ≤ r2 + r3 ⇔ r1 ≤ r2
+; rat.RAT_LEQ_RADD: ∀V0r1 V1r2 V2r3. V0r1 + V2r3 ≤ V1r2 + V2r3 ⇔ V0r1 ≤ V1r2
 (conjecture "thm_2Erat_2ERAT__LEQ__RADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__add" "V0r1" "V2r3") ("c_2Erat_2Erat__add" "V1r2" "V2r3")) ("c_2Erat_2Erat__leq" "V0r1" "V1r2")))))))))
-; rat.RAT_LEQ_LADD
-; ∀r1 r2 r3. r3 + r1 ≤ r3 + r2 ⇔ r1 ≤ r2
+; rat.RAT_LEQ_LADD: ∀V0r1 V1r2 V2r3. V2r3 + V0r1 ≤ V2r3 + V1r2 ⇔ V0r1 ≤ V1r2
 (conjecture "thm_2Erat_2ERAT__LEQ__LADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__add" "V2r3" "V0r1") ("c_2Erat_2Erat__add" "V2r3" "V1r2")) ("c_2Erat_2Erat__leq" "V0r1" "V1r2")))))))))
-; rat.RAT_ADD_MONO
-; ∀a b c d. a ≤ b ∧ c ≤ d ⇒ a + c ≤ b + d
+; rat.RAT_ADD_MONO: ∀V0a V1b V2c V3d. V0a ≤ V1b ∧ V2c ≤ V3d ⇒ V0a + V2c ≤ V1b + V3d
 (conjecture "thm_2Erat_2ERAT__ADD__MONO" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2c" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V3d" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__leq" "V0a" "V1b") ("c_2Erat_2Erat__leq" "V2c" "V3d")) ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__add" "V0a" "V2c") ("c_2Erat_2Erat__add" "V1b" "V3d"))))))))))))
-; rat.RAT_LES_AINV
-; ∀r1 r2. -r1 < -r2 ⇔ r2 < r1
+; rat.RAT_LES_AINV: ∀V0r1 V1r2. -V0r1 < -V1r2 ⇔ V1r2 < V0r1
 (conjecture "thm_2Erat_2ERAT__LES__AINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__ainv" "V0r1") ("c_2Erat_2Erat__ainv" "V1r2")) ("c_2Erat_2Erat__les" "V1r2" "V0r1")))))))
-; rat.RAT_LSUB_LES
-; ∀r1 r2 r3. r1 − r2 < r3 ⇔ r1 < r2 + r3
+; rat.RAT_LSUB_LES: ∀V0r1 V1r2 V2r3. V0r1 − V1r2 < V2r3 ⇔ V0r1 < V1r2 + V2r3
 (conjecture "thm_2Erat_2ERAT__LSUB__LES" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__sub" "V0r1" "V1r2") "V2r3") ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__add" "V1r2" "V2r3"))))))))))
-; rat.RAT_RSUB_LES
-; ∀r1 r2 r3. r1 < r2 − r3 ⇔ r1 + r3 < r2
+; rat.RAT_RSUB_LES: ∀V0r1 V1r2 V2r3. V0r1 < V1r2 − V2r3 ⇔ V0r1 + V2r3 < V1r2
 (conjecture "thm_2Erat_2ERAT__RSUB__LES" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__sub" "V1r2" "V2r3")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__add" "V0r1" "V2r3") "V1r2")))))))))
-; rat.RAT_LSUB_LEQ
-; ∀r1 r2 r3. r1 − r2 ≤ r3 ⇔ r1 ≤ r2 + r3
+; rat.RAT_LSUB_LEQ: ∀V0r1 V1r2 V2r3. V0r1 − V1r2 ≤ V2r3 ⇔ V0r1 ≤ V1r2 + V2r3
 (conjecture "thm_2Erat_2ERAT__LSUB__LEQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__sub" "V0r1" "V1r2") "V2r3") ("c_2Erat_2Erat__leq" "V0r1" ("c_2Erat_2Erat__add" "V1r2" "V2r3"))))))))))
-; rat.RAT_RSUB_LEQ
-; ∀r1 r2 r3. r1 ≤ r2 − r3 ⇔ r1 + r3 ≤ r2
+; rat.RAT_RSUB_LEQ: ∀V0r1 V1r2 V2r3. V0r1 ≤ V1r2 − V2r3 ⇔ V0r1 + V2r3 ≤ V1r2
 (conjecture "thm_2Erat_2ERAT__RSUB__LEQ" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" "V0r1" ("c_2Erat_2Erat__sub" "V1r2" "V2r3")) ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__add" "V0r1" "V2r3") "V1r2")))))))))
-; rat.RAT_LES_RMUL_POS
-; ∀r1 r2 r3. 0 < r3 ⇒ (r1 * r3 < r2 * r3 ⇔ r1 < r2)
+; rat.RAT_LES_RMUL_POS: ∀V0r1 V1r2 V2r3. 0 < V2r3 ⇒ (V0r1 * V2r3 < V1r2 * V2r3 ⇔ V0r1 < V1r2)
 (conjecture "thm_2Erat_2ERAT__LES__RMUL__POS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V2r3") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__mul" "V0r1" "V2r3") ("c_2Erat_2Erat__mul" "V1r2" "V2r3")) ("c_2Erat_2Erat__les" "V0r1" "V1r2"))))))))))
-; rat.RAT_LES_LMUL_POS
-; ∀r1 r2 r3. 0 < r3 ⇒ (r3 * r1 < r3 * r2 ⇔ r1 < r2)
+; rat.RAT_LES_LMUL_POS: ∀V0r1 V1r2 V2r3. 0 < V2r3 ⇒ (V2r3 * V0r1 < V2r3 * V1r2 ⇔ V0r1 < V1r2)
 (conjecture "thm_2Erat_2ERAT__LES__LMUL__POS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V2r3") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__mul" "V2r3" "V0r1") ("c_2Erat_2Erat__mul" "V2r3" "V1r2")) ("c_2Erat_2Erat__les" "V0r1" "V1r2"))))))))))
-; rat.RAT_LES_RMUL_NEG
-; ∀r1 r2 r3. r3 < 0 ⇒ (r2 * r3 < r1 * r3 ⇔ r1 < r2)
+; rat.RAT_LES_RMUL_NEG: ∀V0r1 V1r2 V2r3. V2r3 < 0 ⇒ (V1r2 * V2r3 < V0r1 * V2r3 ⇔ V0r1 < V1r2)
 (conjecture "thm_2Erat_2ERAT__LES__RMUL__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V2r3" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__mul" "V1r2" "V2r3") ("c_2Erat_2Erat__mul" "V0r1" "V2r3")) ("c_2Erat_2Erat__les" "V0r1" "V1r2"))))))))))
-; rat.RAT_LES_LMUL_NEG
-; ∀r1 r2 r3. r3 < 0 ⇒ (r3 * r2 < r3 * r1 ⇔ r1 < r2)
+; rat.RAT_LES_LMUL_NEG: ∀V0r1 V1r2 V2r3. V2r3 < 0 ⇒ (V2r3 * V1r2 < V2r3 * V0r1 ⇔ V0r1 < V1r2)
 (conjecture "thm_2Erat_2ERAT__LES__LMUL__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V2r3" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__mul" "V2r3" "V1r2") ("c_2Erat_2Erat__mul" "V2r3" "V0r1")) ("c_2Erat_2Erat__les" "V0r1" "V1r2"))))))))))
-; rat.RAT_AINV_LES
-; ∀r1 r2. -r1 < r2 ⇔ -r2 < r1
+; rat.RAT_AINV_LES: ∀V0r1 V1r2. -V0r1 < V1r2 ⇔ -V1r2 < V0r1
 (conjecture "thm_2Erat_2ERAT__AINV__LES" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__ainv" "V0r1") "V1r2") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__ainv" "V1r2") "V0r1")))))))
-; rat.RAT_LDIV_LES_POS
-; ∀r1 r2 r3. 0 < r2 ⇒ (r1 / r2 < r3 ⇔ r1 < r2 * r3)
+; rat.RAT_LDIV_LES_POS: ∀V0r1 V1r2 V2r3. 0 < V1r2 ⇒ (V0r1 / V1r2 < V2r3 ⇔ V0r1 < V1r2 * V2r3)
 (conjecture "thm_2Erat_2ERAT__LDIV__LES__POS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V1r2") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__div" "V0r1" "V1r2") "V2r3") ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__mul" "V1r2" "V2r3")))))))))))
-; rat.RAT_LDIV_LES_NEG
-; ∀r1 r2 r3. r2 < 0 ⇒ (r1 / r2 < r3 ⇔ r2 * r3 < r1)
+; rat.RAT_LDIV_LES_NEG: ∀V0r1 V1r2 V2r3. V1r2 < 0 ⇒ (V0r1 / V1r2 < V2r3 ⇔ V1r2 * V2r3 < V0r1)
 (conjecture "thm_2Erat_2ERAT__LDIV__LES__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__div" "V0r1" "V1r2") "V2r3") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__mul" "V1r2" "V2r3") "V0r1"))))))))))
-; rat.RAT_RDIV_LES_POS
-; ∀r1 r2 r3. 0 < r3 ⇒ (r1 < r2 / r3 ⇔ r1 * r3 < r2)
+; rat.RAT_RDIV_LES_POS: ∀V0r1 V1r2 V2r3. 0 < V2r3 ⇒ (V0r1 < V1r2 / V2r3 ⇔ V0r1 * V2r3 < V1r2)
 (conjecture "thm_2Erat_2ERAT__RDIV__LES__POS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V2r3") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__div" "V1r2" "V2r3")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__mul" "V0r1" "V2r3") "V1r2"))))))))))
-; rat.RAT_RDIV_LES_NEG
-; ∀r1 r2 r3. r3 < 0 ⇒ (r1 < r2 / r3 ⇔ r2 < r1 * r3)
+; rat.RAT_RDIV_LES_NEG: ∀V0r1 V1r2 V2r3. V2r3 < 0 ⇒ (V0r1 < V1r2 / V2r3 ⇔ V1r2 < V0r1 * V2r3)
 (conjecture "thm_2Erat_2ERAT__RDIV__LES__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V2r3" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__div" "V1r2" "V2r3")) ("c_2Erat_2Erat__les" "V1r2" ("c_2Erat_2Erat__mul" "V0r1" "V2r3")))))))))))
-; rat.RAT_LDIV_LEQ_POS
-; ∀r1 r2 r3. 0 < r2 ⇒ (r1 / r2 ≤ r3 ⇔ r1 ≤ r2 * r3)
+; rat.RAT_LDIV_LEQ_POS: ∀V0r1 V1r2 V2r3. 0 < V1r2 ⇒ (V0r1 / V1r2 ≤ V2r3 ⇔ V0r1 ≤ V1r2 * V2r3)
 (conjecture "thm_2Erat_2ERAT__LDIV__LEQ__POS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V1r2") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__div" "V0r1" "V1r2") "V2r3") ("c_2Erat_2Erat__leq" "V0r1" ("c_2Erat_2Erat__mul" "V1r2" "V2r3")))))))))))
-; rat.RAT_LDIV_LEQ_NEG
-; ∀r1 r2 r3. r2 < 0 ⇒ (r1 / r2 ≤ r3 ⇔ r2 * r3 ≤ r1)
+; rat.RAT_LDIV_LEQ_NEG: ∀V0r1 V1r2 V2r3. V1r2 < 0 ⇒ (V0r1 / V1r2 ≤ V2r3 ⇔ V1r2 * V2r3 ≤ V0r1)
 (conjecture "thm_2Erat_2ERAT__LDIV__LEQ__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__div" "V0r1" "V1r2") "V2r3") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__mul" "V1r2" "V2r3") "V0r1"))))))))))
-; rat.RAT_RDIV_LEQ_POS
-; ∀r1 r2 r3. 0 < r3 ⇒ (r1 ≤ r2 / r3 ⇔ r1 * r3 ≤ r2)
+; rat.RAT_RDIV_LEQ_POS: ∀V0r1 V1r2 V2r3. 0 < V2r3 ⇒ (V0r1 ≤ V1r2 / V2r3 ⇔ V0r1 * V2r3 ≤ V1r2)
 (conjecture "thm_2Erat_2ERAT__RDIV__LEQ__POS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V2r3") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" "V0r1" ("c_2Erat_2Erat__div" "V1r2" "V2r3")) ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__mul" "V0r1" "V2r3") "V1r2"))))))))))
-; rat.RAT_RDIV_LEQ_NEG
-; ∀r1 r2 r3. r3 < 0 ⇒ (r1 ≤ r2 / r3 ⇔ r2 ≤ r1 * r3)
+; rat.RAT_RDIV_LEQ_NEG: ∀V0r1 V1r2 V2r3. V2r3 < 0 ⇒ (V0r1 ≤ V1r2 / V2r3 ⇔ V1r2 ≤ V0r1 * V2r3)
 (conjecture "thm_2Erat_2ERAT__RDIV__LEQ__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V2r3" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" "V0r1" ("c_2Erat_2Erat__div" "V1r2" "V2r3")) ("c_2Erat_2Erat__leq" "V1r2" ("c_2Erat_2Erat__mul" "V0r1" "V2r3")))))))))))
-; rat.RAT_LES_SUB0
-; ∀r1 r2. r1 − r2 < 0 ⇔ r1 < r2
+; rat.RAT_LES_SUB0: ∀V0r1 V1r2. V0r1 − V1r2 < 0 ⇔ V0r1 < V1r2
 (conjecture "thm_2Erat_2ERAT__LES__SUB0" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__sub" "V0r1" "V1r2") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" "V0r1" "V1r2")))))))
-; rat.RAT_LES_0SUB
-; ∀r1 r2. 0 < r1 − r2 ⇔ r2 < r1
+; rat.RAT_LES_0SUB: ∀V0r1 V1r2. 0 < V0r1 − V1r2 ⇔ V1r2 < V0r1
 (conjecture "thm_2Erat_2ERAT__LES__0SUB" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__sub" "V0r1" "V1r2")) ("c_2Erat_2Erat__les" "V1r2" "V0r1")))))))
-; rat.RAT_MINV_LES
-; ∀r1. 0 < r1 ⇒ (rat_minv r1 < 0 ⇔ r1 < 0) ∧ (0 < rat_minv r1 ⇔ 0 < r1)
+; rat.RAT_MINV_LES: ∀V0r1.     0 < V0r1 ⇒     (rat_minv V0r1 < 0 ⇔ V0r1 < 0) ∧ (0 < rat_minv V0r1 ⇔ 0 < V0r1)
 (conjecture "thm_2Erat_2ERAT__MINV__LES" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__minv" "V0r1") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__minv" "V0r1")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r1")))))))
-; rat.RAT_MUL_SIGN_CASES
-; ∀p q.     (0 < p * q ⇔ 0 < p ∧ 0 < q ∨ p < 0 ∧ q < 0) ∧     (p * q < 0 ⇔ 0 < p ∧ q < 0 ∨ p < 0 ∧ 0 < q)
+; rat.RAT_MUL_SIGN_CASES: ∀V0p V1q.     (0 < V0p * V1q ⇔ 0 < V0p ∧ 0 < V1q ∨ V0p < 0 ∧ V1q < 0) ∧     (V0p * V1q < 0 ⇔ 0 < V0p ∧ V1q < 0 ∨ V0p < 0 ∧ 0 < V1q)
 (conjecture "thm_2Erat_2ERAT__MUL__SIGN__CASES" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0p" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1q" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__mul" "V0p" "V1q")) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0p") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V1q")) ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__les" "V0p" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" "V1q" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__mul" "V0p" "V1q") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0p") ("c_2Erat_2Erat__les" "V1q" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__les" "V0p" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V1q"))))))))))
-; rat.RAT_NO_ZERODIV
-; ∀r1 r2. (r1 = 0) ∨ (r2 = 0) ⇔ (r1 * r2 = 0)
+; rat.RAT_NO_ZERODIV: ∀V0r1 V1r2. (V0r1 = 0) ∨ (V1r2 = 0) ⇔ (V0r1 * V1r2 = 0)
 (conjecture "thm_2Erat_2ERAT__NO__ZERODIV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" "V1r2") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))))))))
-; rat.RAT_NO_ZERODIV_THM
-; ∀r1 r2. (r1 * r2 = 0) ⇔ (r1 = 0) ∨ (r2 = 0)
+; rat.RAT_NO_ZERODIV_THM: ∀V0r1 V1r2. (V0r1 * V1r2 = 0) ⇔ (V0r1 = 0) ∨ (V1r2 = 0)
 (conjecture "thm_2Erat_2ERAT__NO__ZERODIV__THM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" "V1r2") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_NO_ZERODIV_NEG
-; ∀r1 r2. r1 * r2 ≠ 0 ⇔ r1 ≠ 0 ∧ r2 ≠ 0
+; rat.RAT_NO_ZERODIV_NEG: ∀V0r1 V1r2. V0r1 * V1r2 ≠ 0 ⇔ V0r1 ≠ 0 ∧ V1r2 ≠ 0
 (conjecture "thm_2Erat_2ERAT__NO__ZERODIV__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" "V1r2") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))))))))))
-; rat.RAT_NO_IDDIV
-; ∀r1 r2. (r1 * r2 = r2) ⇔ (r1 = 1) ∨ (r2 = 0)
+; rat.RAT_NO_IDDIV: ∀V0r1 V1r2. (V0r1 * V1r2 = V1r2) ⇔ (V0r1 = 1) ∨ (V1r2 = 0)
 (conjecture "thm_2Erat_2ERAT__NO__IDDIV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" "V1r2") "V1r2") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1r2" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))))
-; rat.RDIV_MUL_OUT
-; r1 * (r2 / r3) = r1 * r2 / r3
+; rat.RDIV_MUL_OUT: ∀V0r1 V1r2 V2r3. V0r1 * (V1r2 / V2r3) = V0r1 * V1r2 / V2r3
 (conjecture "thm_2Erat_2ERDIV__MUL__OUT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r1" ("c_2Erat_2Erat__div" "V1r2" "V2r3")) ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__mul" "V0r1" "V1r2") "V2r3")))))))))
-; rat.LDIV_MUL_OUT
-; r1 / r2 * r3 = r1 * r3 / r2
+; rat.LDIV_MUL_OUT: ∀V0r1 V1r2 V2r3. V0r1 / V1r2 * V2r3 = V0r1 * V2r3 / V1r2
 (conjecture "thm_2Erat_2ELDIV__MUL__OUT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2r3" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__div" "V0r1" "V1r2") "V2r3") ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__mul" "V0r1" "V2r3") "V1r2")))))))))
-; rat.RAT_DENSE_THM
-; ∀r1 r3. r1 < r3 ⇒ ∃r2. r1 < r2 ∧ r2 < r3
+; rat.RAT_DENSE_THM: ∀V0r1 V1r3. V0r1 < V1r3 ⇒ ∃V2r2. V0r1 < V2r2 ∧ V2r2 < V1r3
 (conjecture "thm_2Erat_2ERAT__DENSE__THM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r3" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Erat_2Erat__les" "V0r1" "V1r3") (("c_2Ebool_2E_3F" "ty_2Erat_2Erat") (lambda "V2r2" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" ("c_2Erat_2Erat__les" "V0r1" "V2r2") ("c_2Erat_2Erat__les" "V2r2" "V1r3"))))))))))
-; rat.RAT_SAVE
-; ∀r1. ∃a1 b1. r1 = abs_rat (frac_save a1 b1)
+; rat.RAT_SAVE: ∀V0r1. ∃V1a1 V2b1. V0r1 = abs_rat (frac_save V1a1 V2b1)
 (conjecture "thm_2Erat_2ERAT__SAVE" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_3F" "ty_2Einteger_2Eint") (lambda "V1a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V2b1" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r1" ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__save" "V1a1" "V2b1"))))))))))
-; rat.RAT_SAVE_MINV
-; ∀a1 b1.     abs_rat (frac_save a1 b1) ≠ 0 ⇒     (rat_minv (abs_rat (frac_save a1 b1)) =      abs_rat (frac_save (SGN a1 * (&b1 + 1)) (Num (ABS a1 − 1))))
+; rat.RAT_SAVE_MINV: ∀V0a1 V1b1.     abs_rat (frac_save V0a1 V1b1) ≠ 0 ⇒     (rat_minv (abs_rat (frac_save V0a1 V1b1)) =      abs_rat (frac_save (SGN V0a1 * (&V1b1 + 1)) (Num (ABS V0a1 − 1))))
 (conjecture "thm_2Erat_2ERAT__SAVE__MINV" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1")) ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1"))) ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__mul" ("c_2EintExtension_2ESGN" "V0a1") ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__of__num" "V1b1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Einteger_2ENum" ("c_2Einteger_2Eint__sub" ("c_2Einteger_2EABS" "V0a1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))))
-; rat.RAT_SAVE_TO_CONS
-; ∀a1 b1. abs_rat (frac_save a1 b1) = a1 // (&b1 + 1)
+; rat.RAT_SAVE_TO_CONS: ∀V0a1 V1b1. abs_rat (frac_save V0a1 V1b1) = V0a1 // (&V1b1 + 1)
 (conjecture "thm_2Erat_2ERAT__SAVE__TO__CONS" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0a1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b1" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__save" "V0a1" "V1b1")) ("c_2Erat_2Erat__cons" "V0a1" ("c_2Einteger_2Eint__add" ("c_2Einteger_2Eint__of__num" "V1b1") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))
-; rat.RAT_OF_NUM
-; ∀n. (0 = rat_0) ∧ ∀n. &SUC n = &n + rat_1
+; rat.RAT_OF_NUM: ∀V0n. (0 = rat_0) ∧ ∀V1n. &SUC V1n = &V1n + rat_1
 (conjecture "thm_2Erat_2ERAT__OF__NUM" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0n" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "c_2Erat_2Erat__0") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" ("c_2Enum_2ESUC" "V1n")) ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__num" "V1n") "c_2Erat_2Erat__1")))))))))
-; rat.RAT_SAVE_NUM
-; ∀n. &n = abs_rat (frac_save (&n) 0)
+; rat.RAT_SAVE_NUM: ∀V0n. &V0n = abs_rat (frac_save (&V0n) 0)
 (conjecture "thm_2Erat_2ERAT__SAVE__NUM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "V0n") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Efrac__save" ("c_2Einteger_2Eint__of__num" "V0n") "c_2Enum_2E0"))))))
-; rat.RAT_CONS_TO_NUM
-; ∀n. (&n // 1 = &n) ∧ (-&n // 1 = -&n)
+; rat.RAT_CONS_TO_NUM: ∀V0n. (&V0n // 1 = &V0n) ∧ (-&V0n // 1 = -&V0n)
 (conjecture "thm_2Erat_2ERAT__CONS__TO__NUM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__cons" ("c_2Einteger_2Eint__of__num" "V0n") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Erat_2Erat__of__num" "V0n")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__cons" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V0n")) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V0n")))))))
-; rat.RAT_0
-; rat_0 = 0
+; rat.RAT_0: rat_0 = 0
 (conjecture "thm_2Erat_2ERAT__0" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "c_2Erat_2Erat__0" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))
-; rat.RAT_1
-; rat_1 = 1
+; rat.RAT_1: rat_1 = 1
 (conjecture "thm_2Erat_2ERAT__1" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "c_2Erat_2Erat__1" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; rat.RAT_MINV_1
-; rat_minv 1 = 1
+; rat.RAT_MINV_1: rat_minv 1 = 1
 (conjecture "thm_2Erat_2ERAT__MINV__1" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))
-; rat.RAT_DIV_1
-; r / 1 = r
+; rat.RAT_DIV_1: ∀V0r. V0r / 1 = V0r
 (conjecture "thm_2Erat_2ERAT__DIV__1" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" "V0r" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V0r"))))
-; rat.RAT_DIV_NEG1
-; r / -1 = -r
+; rat.RAT_DIV_NEG1: ∀V0r. V0r / -1 = -V0r
 (conjecture "thm_2Erat_2ERAT__DIV__NEG1" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" "V0r" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Erat_2Erat__ainv" "V0r")))))
-; rat.RAT_DIV_INV
-; r ≠ 0 ⇒ (r / r = 1)
+; rat.RAT_DIV_INV: ∀V0r. V0r ≠ 0 ⇒ (V0r / V0r = 1)
 (conjecture "thm_2Erat_2ERAT__DIV__INV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" "V0r" "V0r") ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; rat.RAT_MINV_MUL
-; a ≠ 0 ∧ b ≠ 0 ⇒ (rat_minv (a * b) = rat_minv a * rat_minv b)
+; rat.RAT_MINV_MUL: ∀V0a V1b.     V0a ≠ 0 ∧ V1b ≠ 0 ⇒ (rat_minv (V0a * V1b) = rat_minv V0a * rat_minv V1b)
 (conjecture "thm_2Erat_2ERAT__MINV__MUL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0a" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1b" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" ("c_2Erat_2Erat__mul" "V0a" "V1b")) ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__minv" "V0a") ("c_2Erat_2Erat__minv" "V1b")))))))))
-; rat.RAT_DIVDIV_MUL
-; b ≠ 0 ∧ d ≠ 0 ⇒ (a / b * (c / d) = a * c / (b * d))
+; rat.RAT_DIVDIV_MUL: ∀V0b V1d V2a V3c.     V0b ≠ 0 ∧ V1d ≠ 0 ⇒ (V2a / V0b * (V3c / V1d) = V2a * V3c / (V0b * V1d))
 (conjecture "thm_2Erat_2ERAT__DIVDIV__MUL" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1d" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2a" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V3c" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0b" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1d" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__div" "V2a" "V0b") ("c_2Erat_2Erat__div" "V3c" "V1d")) ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__mul" "V2a" "V3c") ("c_2Erat_2Erat__mul" "V0b" "V1d")))))))))))))
-; rat.RAT_DIVDIV_ADD
-; y ≠ 0 ∧ b ≠ 0 ⇒ (x / y + a / b = (x * b + a * y) / (y * b))
+; rat.RAT_DIVDIV_ADD: ∀V0y V1b V2x V3a.     V0y ≠ 0 ∧ V1b ≠ 0 ⇒     (V2x / V0y + V3a / V1b = (V2x * V1b + V3a * V0y) / (V0y * V1b))
 (conjecture "thm_2Erat_2ERAT__DIVDIV__ADD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0y" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1b" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V2x" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V3a" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0y" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1b" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__div" "V2x" "V0y") ("c_2Erat_2Erat__div" "V3a" "V1b")) ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__mul" "V2x" "V1b") ("c_2Erat_2Erat__mul" "V3a" "V0y")) ("c_2Erat_2Erat__mul" "V0y" "V1b")))))))))))))
-; rat.RAT_DIV_AINV
-; -(x / y) = -x / y
+; rat.RAT_DIV_AINV: ∀V0x V1y. -(V0x / V1y) = -V0x / V1y
 (conjecture "thm_2Erat_2ERAT__DIV__AINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0x" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1y" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__div" "V0x" "V1y")) ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__ainv" "V0x") "V1y")))))))
-; rat.RAT_MINV_EQ_0
-; r ≠ 0 ⇒ rat_minv r ≠ 0
+; rat.RAT_MINV_EQ_0: ∀V0r. V0r ≠ 0 ⇒ rat_minv V0r ≠ 0
 (conjecture "thm_2Erat_2ERAT__MINV__EQ__0" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" "V0r") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))
-; rat.RAT_DIV_MINV
-; x ≠ 0 ∧ y ≠ 0 ⇒ (rat_minv (x / y) = y / x)
+; rat.RAT_DIV_MINV: ∀V0x V1y. V0x ≠ 0 ∧ V1y ≠ 0 ⇒ (rat_minv (V0x / V1y) = V1y / V0x)
 (conjecture "thm_2Erat_2ERAT__DIV__MINV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0x" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1y" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0x" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1y" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" ("c_2Erat_2Erat__div" "V0x" "V1y")) ("c_2Erat_2Erat__div" "V1y" "V0x"))))))))
-; rat.RAT_DIV_EQ0
-; d ≠ 0 ⇒ ((n / d = 0) ⇔ (n = 0)) ∧ ((0 = n / d) ⇔ (n = 0))
+; rat.RAT_DIV_EQ0: ∀V0d V1n.     V0d ≠ 0 ⇒ ((V1n / V0d = 0) ⇔ (V1n = 0)) ∧ ((0 = V1n / V0d) ⇔ (V1n = 0))
 (conjecture "thm_2Erat_2ERAT__DIV__EQ0" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0d" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1n" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0d" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" "V1n" "V0d") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1n" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__div" "V1n" "V0d")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V1n" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))))))))))
-; rat.RAT_ADD_NUM_CALCULATE
-; (∀n m. &n + &m = &(n + m)) ∧ (∀n m. -&n + &m = if n ≤ m then &(m − n) else -&(n − m)) ∧ (∀n m. &n + -&m = if m ≤ n then &(n − m) else -&(m − n)) ∧ ∀n m. -&n + -&m = -&(n + m)
+; rat.RAT_ADD_NUM_CALCULATE: (∀V0n V1m. &V0n + &V1m = &(V0n + V1m)) ∧ (∀V2n V3m. -&V2n + &V3m = if V2n ≤ V3m then &(V3m − V2n) else -&(V2n − V3m)) ∧ (∀V4n V5m. &V4n + -&V5m = if V5m ≤ V4n then &(V4n − V5m) else -&(V5m − V4n)) ∧ ∀V6n V7m. -&V6n + -&V7m = -&(V6n + V7m)
 (conjecture "thm_2Erat_2ERAT__ADD__NUM__CALCULATE" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__num" "V0n") ("c_2Erat_2Erat__of__num" "V1m")) ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2B" "V0n" "V1m"))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V2n")) ("c_2Erat_2Erat__of__num" "V3m")) (("c_2Ebool_2ECOND" "ty_2Erat_2Erat") ("c_2Earithmetic_2E_3C_3D" "V2n" "V3m") ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2D" "V3m" "V2n")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2D" "V2n" "V3m"))))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V5m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__num" "V4n") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V5m"))) (("c_2Ebool_2ECOND" "ty_2Erat_2Erat") ("c_2Earithmetic_2E_3C_3D" "V5m" "V4n") ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2D" "V4n" "V5m")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2D" "V5m" "V4n"))))))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V6n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V7m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V6n")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V7m"))) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2B" "V6n" "V7m"))))))))))))
-; rat.RAT_MUL_NUM_CALCULATE
-; (∀n m. &n * &m = &(n * m)) ∧ (∀n m. -&n * &m = -&(n * m)) ∧ (∀n m. &n * -&m = -&(n * m)) ∧ ∀n m. -&n * -&m = &(n * m)
+; rat.RAT_MUL_NUM_CALCULATE: (∀V0n V1m. &V0n * &V1m = &(V0n * V1m)) ∧ (∀V2n V3m. -&V2n * &V3m = -&(V2n * V3m)) ∧ (∀V4n V5m. &V4n * -&V5m = -&(V4n * V5m)) ∧ ∀V6n V7m. -&V6n * -&V7m = &(V6n * V7m)
 (conjecture "thm_2Erat_2ERAT__MUL__NUM__CALCULATE" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__of__num" "V0n") ("c_2Erat_2Erat__of__num" "V1m")) ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2A" "V0n" "V1m"))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V2n")) ("c_2Erat_2Erat__of__num" "V3m")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2A" "V2n" "V3m")))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V5m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__of__num" "V4n") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V5m"))) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2A" "V4n" "V5m")))))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V6n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V7m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V6n")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V7m"))) ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2E_2A" "V6n" "V7m")))))))))))
-; rat.RAT_EQ_NUM_CALCULATE
-; (∀n m. (&n = &m) ⇔ (n = m)) ∧ (∀n m. (&n = -&m) ⇔ (n = 0) ∧ (m = 0)) ∧ (∀n m. (-&n = &m) ⇔ (n = 0) ∧ (m = 0)) ∧ ∀n m. (-&n = -&m) ⇔ (n = m)
+; rat.RAT_EQ_NUM_CALCULATE: (∀V0n V1m. (&V0n = &V1m) ⇔ (V0n = V1m)) ∧ (∀V2n V3m. (&V2n = -&V3m) ⇔ (V2n = 0) ∧ (V3m = 0)) ∧ (∀V4n V5m. (-&V4n = &V5m) ⇔ (V4n = 0) ∧ (V5m = 0)) ∧ ∀V6n V7m. (-&V6n = -&V7m) ⇔ (V6n = V7m)
 (conjecture "thm_2Erat_2ERAT__EQ__NUM__CALCULATE" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "V0n") ("c_2Erat_2Erat__of__num" "V1m")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0n" "V1m")))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__num" "V2n") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V3m"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V2n" "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V3m" "c_2Enum_2E0"))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V5m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V4n")) ("c_2Erat_2Erat__of__num" "V5m")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V4n" "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V5m" "c_2Enum_2E0"))))))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V6n" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V7m" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V6n")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V7m"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V6n" "V7m"))))))))))
-; rat.RAT_LT_NUM_CALCULATE
-; (&a < &b ⇔ a < b) ∧ (-&m < &n ⇔ 0 < m ∨ 0 < n) ∧ (&m < -&n ⇔ F) ∧ (-&m < -&n ⇔ n < m)
+; rat.RAT_LT_NUM_CALCULATE: ∀V0a V1b V2m V3n.     (&V0a < &V1b ⇔ V0a < V1b) ∧ (-&V2m < &V3n ⇔ 0 < V2m ∨ 0 < V3n) ∧     (&V2m < -&V3n ⇔ F) ∧ (-&V2m < -&V3n ⇔ V3n < V2m)
 (conjecture "thm_2Erat_2ERAT__LT__NUM__CALCULATE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "V0a") ("c_2Erat_2Erat__of__num" "V1b")) ("c_2Eprim__rec_2E_3C" "V0a" "V1b")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V2m")) ("c_2Erat_2Erat__of__num" "V3n")) ("c_2Ebool_2E_5C_2F" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V2m") ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V3n"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "V2m") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V3n"))) "c_2Ebool_2EF") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V2m")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V3n"))) ("c_2Eprim__rec_2E_3C" "V3n" "V2m"))))))))))))))
-; rat.RAT_LE_NUM_CALCULATE
-; (&a ≤ &b ⇔ a ≤ b) ∧ (-&m ≤ &n ⇔ T) ∧ (&m ≤ -&n ⇔ (m = 0) ∧ (n = 0)) ∧ (-&m ≤ -&n ⇔ n ≤ m)
+; rat.RAT_LE_NUM_CALCULATE: ∀V0a V1b V2m V3n.     (&V0a ≤ &V1b ⇔ V0a ≤ V1b) ∧ (-&V2m ≤ &V3n ⇔ T) ∧     (&V2m ≤ -&V3n ⇔ (V2m = 0) ∧ (V3n = 0)) ∧ (-&V2m ≤ -&V3n ⇔ V3n ≤ V2m)
 (conjecture "thm_2Erat_2ERAT__LE__NUM__CALCULATE" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0a" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1b" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2m" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__of__num" "V0a") ("c_2Erat_2Erat__of__num" "V1b")) ("c_2Earithmetic_2E_3C_3D" "V0a" "V1b")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V2m")) ("c_2Erat_2Erat__of__num" "V3n")) "c_2Ebool_2ET") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__of__num" "V2m") ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V3n"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V2m" "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V3n" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V2m")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" "V3n"))) ("c_2Earithmetic_2E_3C_3D" "V3n" "V2m"))))))))))))))
-; rat.rat_of_int_def
-; ∀i. rat_of_int i = if i < 0 then -&Num (-i) else &Num i
+; rat.rat_of_int_def: ∀V0i. rat_of_int V0i = if V0i < 0 then -&Num (-V0i) else &Num V0i
 (axiom "thm_2Erat_2Erat__of__int__def" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__int" "V0i") (("c_2Ebool_2ECOND" "ty_2Erat_2Erat") ("c_2Einteger_2Eint__lt" "V0i" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__num" ("c_2Einteger_2ENum" ("c_2Einteger_2Eint__neg" "V0i")))) ("c_2Erat_2Erat__of__num" ("c_2Einteger_2ENum" "V0i")))))))
-; rat.rat_of_int_11
-; (rat_of_int i1 = rat_of_int i2) ⇔ (i1 = i2)
+; rat.rat_of_int_11: ∀V0i1 V1i2. (rat_of_int V0i1 = rat_of_int V1i2) ⇔ (V0i1 = V1i2)
 (conjecture "thm_2Erat_2Erat__of__int__11" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i1" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1i2" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__int" "V0i1") ("c_2Erat_2Erat__of__int" "V1i2")) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") "V0i1" "V1i2")))))))
-; rat.rat_of_int_of_num
-; rat_of_int (&x) = &x
+; rat.rat_of_int_of_num: ∀V0x. rat_of_int (&V0x) = &V0x
 (conjecture "thm_2Erat_2Erat__of__int__of__num" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__int" ("c_2Einteger_2Eint__of__num" "V0x")) ("c_2Erat_2Erat__of__num" "V0x")))))
-; rat.rat_of_int_MUL
-; rat_of_int x * rat_of_int y = rat_of_int (x * y)
+; rat.rat_of_int_MUL: ∀V0x V1y. rat_of_int V0x * rat_of_int V1y = rat_of_int (V0x * V1y)
 (conjecture "thm_2Erat_2Erat__of__int__MUL" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1y" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__of__int" "V0x") ("c_2Erat_2Erat__of__int" "V1y")) ("c_2Erat_2Erat__of__int" ("c_2Einteger_2Eint__mul" "V0x" "V1y"))))))))
-; rat.rat_of_int_ADD
-; rat_of_int x + rat_of_int y = rat_of_int (x + y)
+; rat.rat_of_int_ADD: ∀V0x V1y. rat_of_int V0x + rat_of_int V1y = rat_of_int (V0x + V1y)
 (conjecture "thm_2Erat_2Erat__of__int__ADD" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0x" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1y" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__add" ("c_2Erat_2Erat__of__int" "V0x") ("c_2Erat_2Erat__of__int" "V1y")) ("c_2Erat_2Erat__of__int" ("c_2Einteger_2Eint__add" "V0x" "V1y"))))))))
-; rat.rat_of_int_LE
-; rat_of_int i ≤ rat_of_int j ⇔ i ≤ j
+; rat.rat_of_int_LE: ∀V0i V1j. rat_of_int V0i ≤ rat_of_int V1j ⇔ V0i ≤ V1j
 (conjecture "thm_2Erat_2Erat__of__int__LE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1j" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__of__int" "V0i") ("c_2Erat_2Erat__of__int" "V1j")) ("c_2Einteger_2Eint__le" "V0i" "V1j")))))))
-; rat.rat_of_int_LT
-; rat_of_int i < rat_of_int j ⇔ i < j
+; rat.rat_of_int_LT: ∀V0i V1j. rat_of_int V0i < rat_of_int V1j ⇔ V0i < V1j
 (conjecture "thm_2Erat_2Erat__of__int__LT" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1j" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__int" "V0i") ("c_2Erat_2Erat__of__int" "V1j")) ("c_2Einteger_2Eint__lt" "V0i" "V1j")))))))
-; rat.rat_of_int_ainv
-; rat_of_int (-i) = -rat_of_int i
+; rat.rat_of_int_ainv: ∀V0i. rat_of_int (-V0i) = -rat_of_int V0i
 (conjecture "thm_2Erat_2Erat__of__int__ainv" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__int" ("c_2Einteger_2Eint__neg" "V0i")) ("c_2Erat_2Erat__ainv" ("c_2Erat_2Erat__of__int" "V0i"))))))
-; rat.RAT_OF_INT_CALCULATE
-; ∀i. rat_of_int i = abs_rat (abs_frac (i,1))
+; rat.RAT_OF_INT_CALCULATE: ∀V0i. rat_of_int V0i = abs_rat (abs_frac (V0i,1))
 (conjecture "thm_2Erat_2ERAT__OF__INT__CALCULATE" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__of__int" "V0i") ("c_2Erat_2Eabs__rat" ("c_2Efrac_2Eabs__frac" (("c_2Epair_2E_2C" "ty_2Einteger_2Eint" "ty_2Einteger_2Eint") "V0i" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; rat.RATND_THM
-; ∀r.     (r = rat_of_int (RATN r) / &RATD r) ∧ 0 < RATD r ∧     ((RATN r = 0) ⇒ (RATD r = 1)) ∧     ∀n' d'. (r = rat_of_int n' / &d') ∧ 0 < d' ⇒ ABS (RATN r) ≤ ABS n'
+; rat.RATND_THM: ∀V0r.     (V0r = rat_of_int (RATN V0r) / &RATD V0r) ∧ 0 < RATD V0r ∧     ((RATN V0r = 0) ⇒ (RATD V0r = 1)) ∧     ∀V1n_27 V2d_27.         (V0r = rat_of_int V1n_27 / &V2d_27) ∧ 0 < V2d_27 ⇒         ABS (RATN V0r) ≤ ABS V1n_27
 (axiom "thm_2Erat_2ERATND__THM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__of__int" ("c_2Erat_2ERATN" "V0r")) ("c_2Erat_2Erat__of__num" ("c_2Erat_2ERATD" "V0r")))) ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Erat_2ERATD" "V0r")) ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2ERATN" "V0r") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Erat_2ERATD" "V0r") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n_27" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2d_27" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__of__int" "V1n_27") ("c_2Erat_2Erat__of__num" "V2d_27"))) ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V2d_27")) ("c_2Einteger_2Eint__le" ("c_2Einteger_2EABS" ("c_2Erat_2ERATN" "V0r")) ("c_2Einteger_2EABS" "V1n_27")))))))))))))
-; rat.RATD_NZERO
-; 0 < RATD r ∧ RATD r ≠ 0
+; rat.RATD_NZERO: ∀V0r. 0 < RATD V0r ∧ RATD V0r ≠ 0
 (conjecture "thm_2Erat_2ERATD__NZERO" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Erat_2ERATD" "V0r")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Erat_2ERATD" "V0r") "c_2Enum_2E0"))))))
-; rat.RATN_LEAST
-; ∀n' d'. (r = rat_of_int n' / &d') ∧ 0 < d' ⇒ ABS (RATN r) ≤ ABS n'
+; rat.RATN_LEAST: ∀V0r V1n_27 V2d_27.     (V0r = rat_of_int V1n_27 / &V2d_27) ∧ 0 < V2d_27 ⇒     ABS (RATN V0r) ≤ ABS V1n_27
 (conjecture "thm_2Erat_2ERATN__LEAST" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V1n_27" "ty_2Einteger_2Eint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2d_27" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__of__int" "V1n_27") ("c_2Erat_2Erat__of__num" "V2d_27"))) ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" "V2d_27")) ("c_2Einteger_2Eint__le" ("c_2Einteger_2EABS" ("c_2Erat_2ERATN" "V0r")) ("c_2Einteger_2EABS" "V1n_27"))))))))))
-; rat.RATN_RATD_EQ_THM
-; r = rat_of_int (RATN r) / &RATD r
+; rat.RATN_RATD_EQ_THM: ∀V0r. V0r = rat_of_int (RATN V0r) / &RATD V0r
 (conjecture "thm_2Erat_2ERATN__RATD__EQ__THM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__of__int" ("c_2Erat_2ERATN" "V0r")) ("c_2Erat_2Erat__of__num" ("c_2Erat_2ERATD" "V0r")))))))
-; rat.RATN_RATD_MULT
-; r * &RATD r = rat_of_int (RATN r)
+; rat.RATN_RATD_MULT: ∀V0r. V0r * &RATD V0r = rat_of_int (RATN V0r)
 (conjecture "thm_2Erat_2ERATN__RATD__MULT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__mul" "V0r" ("c_2Erat_2Erat__of__num" ("c_2Erat_2ERATD" "V0r"))) ("c_2Erat_2Erat__of__int" ("c_2Erat_2ERATN" "V0r"))))))
-; rat.RATND_RAT_OF_NUM
-; (RATN (&n) = &n) ∧ (RATD (&n) = 1)
+; rat.RATND_RAT_OF_NUM: ∀V0n. (RATN (&V0n) = &V0n) ∧ (RATD (&V0n) = 1)
 (conjecture "thm_2Erat_2ERATND__RAT__OF__NUM" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2ERATN" ("c_2Erat_2Erat__of__num" "V0n")) ("c_2Einteger_2Eint__of__num" "V0n")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Erat_2ERATD" ("c_2Erat_2Erat__of__num" "V0n")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; rat.RATN_EQ0
-; ((RATN r = 0) ⇔ (r = 0)) ∧ ((0 = RATN r) ⇔ (r = 0))
+; rat.RATN_EQ0: ∀V0r. ((RATN V0r = 0) ⇔ (V0r = 0)) ∧ ((0 = RATN V0r) ⇔ (V0r = 0))
 (conjecture "thm_2Erat_2ERATN__EQ0" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2ERATN" "V0r") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Erat_2ERATN" "V0r")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))
-; rat.RATN_SIGN
-; (0 < RATN x ⇔ 0 < x) ∧ (0 ≤ RATN x ⇔ 0 ≤ x) ∧ (RATN x < 0 ⇔ x < 0) ∧ (RATN x ≤ 0 ⇔ x ≤ 0)
+; rat.RATN_SIGN: ∀V0x.     (0 < RATN V0x ⇔ 0 < V0x) ∧ (0 ≤ RATN V0x ⇔ 0 ≤ V0x) ∧     (RATN V0x < 0 ⇔ V0x < 0) ∧ (RATN V0x ≤ 0 ⇔ V0x ≤ 0)
 (conjecture "thm_2Erat_2ERATN__SIGN" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0x" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__lt" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Erat_2ERATN" "V0x")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0x")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__le" ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Erat_2ERATN" "V0x")) ("c_2Erat_2Erat__leq" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0x")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__lt" ("c_2Erat_2ERATN" "V0x") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" "V0x" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Einteger_2Eint__le" ("c_2Erat_2ERATN" "V0x") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__leq" "V0x" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))))
-; rat.RAT_AINV_SGN
-; (0 < -r ⇔ r < 0) ∧ (-r < 0 ⇔ 0 < r)
+; rat.RAT_AINV_SGN: ∀V0r. (0 < -V0r ⇔ V0r < 0) ∧ (-V0r < 0 ⇔ 0 < V0r)
 (conjecture "thm_2Erat_2ERAT__AINV__SGN" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__ainv" "V0r")) ("c_2Erat_2Erat__les" "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__ainv" "V0r") ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r"))))))
-; rat.RATN_NEG
-; RATN (-r) = -RATN r
+; rat.RATN_NEG: ∀V0r. RATN (-V0r) = -RATN V0r
 (conjecture "thm_2Erat_2ERATN__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2ERATN" ("c_2Erat_2Erat__ainv" "V0r")) ("c_2Einteger_2Eint__neg" ("c_2Erat_2ERATN" "V0r"))))))
-; rat.RATD_NEG
-; RATD (-r) = RATD r
+; rat.RATD_NEG: ∀V0r. RATD (-V0r) = RATD V0r
 (conjecture "thm_2Erat_2ERATD__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Erat_2ERATD" ("c_2Erat_2Erat__ainv" "V0r")) ("c_2Erat_2ERATD" "V0r")))))
-; rat.RATN_RATD_RAT_OF_INT
-; (RATN (rat_of_int i) = i) ∧ (RATD (rat_of_int i) = 1)
+; rat.RATN_RATD_RAT_OF_INT: ∀V0i. (RATN (rat_of_int V0i) = V0i) ∧ (RATD (rat_of_int V0i) = 1)
 (conjecture "thm_2Erat_2ERATN__RATD__RAT__OF__INT" (("c_2Ebool_2E_21" "ty_2Einteger_2Eint") (lambda "V0i" "ty_2Einteger_2Eint" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2ERATN" ("c_2Erat_2Erat__of__int" "V0i")) "V0i") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Erat_2ERATD" ("c_2Erat_2Erat__of__int" "V0i")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; rat.RATN_DIV_RATD
-; rat_of_int (RATN r) / &RATD r = r
+; rat.RATN_DIV_RATD: ∀V0r. rat_of_int (RATN V0r) / &RATD V0r = V0r
 (conjecture "thm_2Erat_2ERATN__DIV__RATD" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__of__int" ("c_2Erat_2ERATN" "V0r")) ("c_2Erat_2Erat__of__num" ("c_2Erat_2ERATD" "V0r"))) "V0r"))))
-; rat.RAT_AINV_EQ_NUM
-; (-x = &n) ⇔ (x = rat_of_int (-&n))
+; rat.RAT_AINV_EQ_NUM: ∀V0x V1n. (-V0x = &V1n) ⇔ (V0x = rat_of_int (-&V1n))
 (conjecture "thm_2Erat_2ERAT__AINV__EQ__NUM" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0x" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__ainv" "V0x") ("c_2Erat_2Erat__of__num" "V1n")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0x" ("c_2Erat_2Erat__of__int" ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" "V1n"))))))))))
-; rat.RAT_SGN_NUM_COND
-; rat_sgn (&n) = if n = 0 then 0 else 1
+; rat.RAT_SGN_NUM_COND: ∀V0n. rat_sgn (&V0n) = if V0n = 0 then 0 else 1
 (conjecture "thm_2Erat_2ERAT__SGN__NUM__COND" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__of__num" "V0n")) (("c_2Ebool_2ECOND" "ty_2Einteger_2Eint") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0n" "c_2Enum_2E0") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; rat.RAT_SGN_AINV_RWT
-; rat_sgn (-r) = -rat_sgn r
+; rat.RAT_SGN_AINV_RWT: ∀V0r. rat_sgn (-V0r) = -rat_sgn V0r
 (conjecture "thm_2Erat_2ERAT__SGN__AINV__RWT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__ainv" "V0r")) ("c_2Einteger_2Eint__neg" ("c_2Erat_2Erat__sgn" "V0r"))))))
-; rat.RAT_SGN_ALT
-; rat_sgn r = SGN (RATN r)
+; rat.RAT_SGN_ALT: ∀V0r. rat_sgn V0r = SGN (RATN V0r)
 (conjecture "thm_2Erat_2ERAT__SGN__ALT" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r") ("c_2EintExtension_2ESGN" ("c_2Erat_2ERATN" "V0r"))))))
-; rat.RAT_SGN_NUM_BITs
-; (rat_sgn (&NUMERAL (BIT1 n)) = 1) ∧ (rat_sgn (&NUMERAL (BIT2 n)) = 1)
+; rat.RAT_SGN_NUM_BITs: ∀V0n.     (rat_sgn (&NUMERAL (BIT1 V0n)) = 1) ∧ (rat_sgn (&NUMERAL (BIT2 V0n)) = 1)
 (conjecture "thm_2Erat_2ERAT__SGN__NUM__BITs" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "V0n")))) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "V0n")))) ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; rat.RAT_SGN_EQ0
-; ((rat_sgn r = 0) ⇔ (r = 0)) ∧ ((0 = rat_sgn r) ⇔ (r = 0))
+; rat.RAT_SGN_EQ0: ∀V0r. ((rat_sgn V0r = 0) ⇔ (V0r = 0)) ∧ ((0 = rat_sgn V0r) ⇔ (V0r = 0))
 (conjecture "thm_2Erat_2ERAT__SGN__EQ0" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Einteger_2Eint__of__num" "c_2Enum_2E0") ("c_2Erat_2Erat__sgn" "V0r")) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0")))))))
-; rat.RAT_SGN_POS
-; (rat_sgn r = 1) ⇔ 0 < r
+; rat.RAT_SGN_POS: ∀V0r. (rat_sgn V0r = 1) ⇔ 0 < V0r
 (conjecture "thm_2Erat_2ERAT__SGN__POS" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r") ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Erat_2Erat__les" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0") "V0r")))))
-; rat.RAT_SGN_NEG
-; (rat_sgn r = -1) ⇔ r < 0
+; rat.RAT_SGN_NEG: ∀V0r. (rat_sgn V0r = -1) ⇔ V0r < 0
 (conjecture "thm_2Erat_2ERAT__SGN__NEG" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" "V0r") ("c_2Einteger_2Eint__neg" ("c_2Einteger_2Eint__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Erat_2Erat__les" "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))))))
-; rat.RAT_SGN_DIV
-; d ≠ 0 ⇒ (rat_sgn (n / d) = rat_sgn n * rat_sgn d)
+; rat.RAT_SGN_DIV: ∀V0d V1n. V0d ≠ 0 ⇒ (rat_sgn (V1n / V0d) = rat_sgn V1n * rat_sgn V0d)
 (conjecture "thm_2Erat_2ERAT__SGN__DIV" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0d" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1n" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0d" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Einteger_2Eint") ("c_2Erat_2Erat__sgn" ("c_2Erat_2Erat__div" "V1n" "V0d")) ("c_2Einteger_2Eint__mul" ("c_2Erat_2Erat__sgn" "V1n") ("c_2Erat_2Erat__sgn" "V0d")))))))))
-; rat.RAT_MINV_RATND
-; r ≠ 0 ⇒ (rat_minv r = rat_of_int (rat_sgn r) * &RATD r / rat_of_int (ABS (RATN r)))
+; rat.RAT_MINV_RATND: ∀V0r.     V0r ≠ 0 ⇒     (rat_minv V0r =      rat_of_int (rat_sgn V0r) * &RATD V0r / rat_of_int (ABS (RATN V0r)))
 (conjecture "thm_2Erat_2ERAT__MINV__RATND" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r" "ty_2Erat_2Erat" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") "V0r" ("c_2Erat_2Erat__of__num" "c_2Enum_2E0"))) (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__minv" "V0r") ("c_2Erat_2Erat__div" ("c_2Erat_2Erat__mul" ("c_2Erat_2Erat__of__int" ("c_2Erat_2Erat__sgn" "V0r")) ("c_2Erat_2Erat__of__num" ("c_2Erat_2ERATD" "V0r"))) ("c_2Erat_2Erat__of__int" ("c_2Einteger_2EABS" ("c_2Erat_2ERATN" "V0r")))))))))
-; rat.rat_min_def
-; ∀r1 r2. rat_min r1 r2 = if r1 < r2 then r1 else r2
+; rat.rat_min_def: ∀V0r1 V1r2. rat_min V0r1 V1r2 = if V0r1 < V1r2 then V0r1 else V1r2
 (axiom "thm_2Erat_2Erat__min__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__min" "V0r1" "V1r2") (("c_2Ebool_2ECOND" "ty_2Erat_2Erat") ("c_2Erat_2Erat__les" "V0r1" "V1r2") "V0r1" "V1r2")))))))
-; rat.rat_max_def
-; ∀r1 r2. rat_max r1 r2 = if r1 > r2 then r1 else r2
+; rat.rat_max_def: ∀V0r1 V1r2. rat_max V0r1 V1r2 = if V0r1 > V1r2 then V0r1 else V1r2
 (axiom "thm_2Erat_2Erat__max__def" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V0r1" "ty_2Erat_2Erat" (("c_2Ebool_2E_21" "ty_2Erat_2Erat") (lambda "V1r2" "ty_2Erat_2Erat" (("c_2Emin_2E_3D" "ty_2Erat_2Erat") ("c_2Erat_2Erat__max" "V0r1" "V1r2") (("c_2Ebool_2ECOND" "ty_2Erat_2Erat") ("c_2Erat_2Erat__gre" "V0r1" "V1r2") "V0r1" "V1r2")))))))

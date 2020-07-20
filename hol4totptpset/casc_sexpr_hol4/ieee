@@ -1,699 +1,467 @@
 (type_definition "ty_2Eieee_2Eccode" 0)
 (type_definition "ty_2Eieee_2Efloat" 0)
 (type_definition "ty_2Eieee_2Eroundmode" 0)
-; c.ieee.Eq
-; :ccode
+; c.ieee.Eq: :ccode
 (constant_definition "c_2Eieee_2EEq" "ty_2Eieee_2Eccode")
-; c.ieee.Exponent
-; :float -> num
+; c.ieee.Exponent: :float -> num
 (constant_definition "c_2Eieee_2EExponent" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Enum_2Enum"))
-; c.ieee.Finite
-; :float -> bool
+; c.ieee.Finite: :float -> bool
 (constant_definition "c_2Eieee_2EFinite" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool"))
-; c.ieee.Float
-; :real -> float
+; c.ieee.Float: :real -> float
 (constant_definition "c_2Eieee_2EFloat" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Eieee_2Efloat"))
-; c.ieee.Fraction
-; :float -> num
+; c.ieee.Fraction: :float -> num
 (constant_definition "c_2Eieee_2EFraction" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Enum_2Enum"))
-; c.ieee.Gt
-; :ccode
+; c.ieee.Gt: :ccode
 (constant_definition "c_2Eieee_2EGt" "ty_2Eieee_2Eccode")
-; c.ieee.Infinity
-; :float -> bool
+; c.ieee.Infinity: :float -> bool
 (constant_definition "c_2Eieee_2EInfinity" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool"))
-; c.ieee.Isdenormal
-; :float -> bool
+; c.ieee.Isdenormal: :float -> bool
 (constant_definition "c_2Eieee_2EIsdenormal" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool"))
-; c.ieee.Isintegral
-; :float -> bool
+; c.ieee.Isintegral: :float -> bool
 (constant_definition "c_2Eieee_2EIsintegral" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool"))
-; c.ieee.Isnan
-; :float -> bool
+; c.ieee.Isnan: :float -> bool
 (constant_definition "c_2Eieee_2EIsnan" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool"))
-; c.ieee.Isnormal
-; :float -> bool
+; c.ieee.Isnormal: :float -> bool
 (constant_definition "c_2Eieee_2EIsnormal" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool"))
-; c.ieee.Iszero
-; :float -> bool
+; c.ieee.Iszero: :float -> bool
 (constant_definition "c_2Eieee_2EIszero" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool"))
-; c.ieee.Lt
-; :ccode
+; c.ieee.Lt: :ccode
 (constant_definition "c_2Eieee_2ELt" "ty_2Eieee_2Eccode")
-; c.ieee.Minus_infinity
-; :float
+; c.ieee.Minus_infinity: :float
 (constant_definition "c_2Eieee_2EMinus__infinity" "ty_2Eieee_2Efloat")
-; c.ieee.Minus_zero
-; :float
+; c.ieee.Minus_zero: :float
 (constant_definition "c_2Eieee_2EMinus__zero" "ty_2Eieee_2Efloat")
-; c.ieee.Plus_infinity
-; :float
+; c.ieee.Plus_infinity: :float
 (constant_definition "c_2Eieee_2EPlus__infinity" "ty_2Eieee_2Efloat")
-; c.ieee.Plus_zero
-; :float
+; c.ieee.Plus_zero: :float
 (constant_definition "c_2Eieee_2EPlus__zero" "ty_2Eieee_2Efloat")
-; c.ieee.ROUNDFLOAT
-; :float -> float
+; c.ieee.ROUNDFLOAT: :float -> float
 (constant_definition "c_2Eieee_2EROUNDFLOAT" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat"))
-; c.ieee.Sign
-; :float -> num
+; c.ieee.Sign: :float -> num
 (constant_definition "c_2Eieee_2ESign" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Enum_2Enum"))
-; c.ieee.To_nearest
-; :roundmode
+; c.ieee.To_nearest: :roundmode
 (constant_definition "c_2Eieee_2ETo__nearest" "ty_2Eieee_2Eroundmode")
-; c.ieee.To_ninfinity
-; :roundmode
+; c.ieee.To_ninfinity: :roundmode
 (constant_definition "c_2Eieee_2ETo__ninfinity" "ty_2Eieee_2Eroundmode")
-; c.ieee.To_pinfinity
-; :roundmode
+; c.ieee.To_pinfinity: :roundmode
 (constant_definition "c_2Eieee_2ETo__pinfinity" "ty_2Eieee_2Eroundmode")
-; c.ieee.Ulp
-; :float -> real
+; c.ieee.Ulp: :float -> real
 (constant_definition "c_2Eieee_2EUlp" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Erealax_2Ereal"))
-; c.ieee.Un
-; :ccode
+; c.ieee.Un: :ccode
 (constant_definition "c_2Eieee_2EUn" "ty_2Eieee_2Eccode")
-; c.ieee.Val
-; :float -> real
+; c.ieee.Val: :float -> real
 (constant_definition "c_2Eieee_2EVal" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Erealax_2Ereal"))
-; c.ieee.bias
-; :num # num -> num
+; c.ieee.bias: :num # num -> num
 (constant_definition "c_2Eieee_2Ebias" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
-; c.ieee.bottomfloat
-; :num # num -> num # num # num
+; c.ieee.bottomfloat: :num # num -> num # num # num
 (constant_definition "c_2Eieee_2Ebottomfloat" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.ccode2num
-; :ccode -> num
+; c.ieee.ccode2num: :ccode -> num
 (constant_definition "c_2Eieee_2Eccode2num" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Enum_2Enum"))
-; c.ieee.ccode_CASE
-; :ccode -> α -> α -> α -> α -> α
+; c.ieee.ccode_CASE: :ccode -> α -> α -> α -> α -> α
 (constant_definition "c_2Eieee_2Eccode__CASE" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "A_27a")))))))
-; c.ieee.ccode_size
-; :ccode -> num
+; c.ieee.ccode_size: :ccode -> num
 (constant_definition "c_2Eieee_2Eccode__size" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Enum_2Enum"))
-; c.ieee.closest
-; :(α -> real) -> (α -> bool) -> (α -> bool) -> real -> α
+; c.ieee.closest: :(α -> real) -> (α -> bool) -> (α -> bool) -> real -> α
 (constant_definition "c_2Eieee_2Eclosest" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "A_27a"))))))
-; c.ieee.defloat
-; :float -> num # num # num
+; c.ieee.defloat: :float -> num # num # num
 (constant_definition "c_2Eieee_2Edefloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.emax
-; :num # num -> num
+; c.ieee.emax: :num # num -> num
 (constant_definition "c_2Eieee_2Eemax" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
-; c.ieee.encoding
-; :num # num -> num # num # num -> num
+; c.ieee.encoding: :num # num -> num # num # num -> num
 (constant_definition "c_2Eieee_2Eencoding" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Enum_2Enum")))
-; c.ieee.exponent
-; :num # num # num -> num
+; c.ieee.exponent: :num # num # num -> num
 (constant_definition "c_2Eieee_2Eexponent" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Enum_2Enum"))
-; c.ieee.expwidth
-; :num # num -> num
+; c.ieee.expwidth: :num # num -> num
 (constant_definition "c_2Eieee_2Eexpwidth" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
-; c.ieee.fadd
-; :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
+; c.ieee.fadd: :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efadd" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))))))
-; c.ieee.fcompare
-; :num # num -> num # num # num -> num # num # num -> ccode
+; c.ieee.fcompare: :num # num -> num # num # num -> num # num # num -> ccode
 (constant_definition "c_2Eieee_2Efcompare" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Eieee_2Eccode"))))
-; c.ieee.fdiv
-; :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
+; c.ieee.fdiv: :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efdiv" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))))))
-; c.ieee.feq
-; :num # num -> num # num # num -> num # num # num -> bool
+; c.ieee.feq: :num # num -> num # num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Efeq" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool"))))
-; c.ieee.fge
-; :num # num -> num # num # num -> num # num # num -> bool
+; c.ieee.fge: :num # num -> num # num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Efge" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool"))))
-; c.ieee.fgt
-; :num # num -> num # num # num -> num # num # num -> bool
+; c.ieee.fgt: :num # num -> num # num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Efgt" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool"))))
-; c.ieee.fintrnd
-; :num # num -> roundmode -> num # num # num -> num # num # num
+; c.ieee.fintrnd: :num # num -> roundmode -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efintrnd" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))))
-; c.ieee.fle
-; :num # num -> num # num # num -> num # num # num -> bool
+; c.ieee.fle: :num # num -> num # num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Efle" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool"))))
-; c.ieee.float
-; :num # num # num -> float
+; c.ieee.float: :num # num # num -> float
 (constant_definition "c_2Eieee_2Efloat" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Eieee_2Efloat"))
-; c.ieee.float_To_zero
-; :roundmode
+; c.ieee.float_To_zero: :roundmode
 (constant_definition "c_2Eieee_2Efloat__To__zero" "ty_2Eieee_2Eroundmode")
-; c.ieee.float_abs
-; :float -> float
+; c.ieee.float_abs: :float -> float
 (constant_definition "c_2Eieee_2Efloat__abs" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat"))
-; c.ieee.float_add
-; :float -> float -> float
+; c.ieee.float_add: :float -> float -> float
 (constant_definition "c_2Eieee_2Efloat__add" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat")))
-; c.ieee.float_div
-; :float -> float -> float
+; c.ieee.float_div: :float -> float -> float
 (constant_definition "c_2Eieee_2Efloat__div" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat")))
-; c.ieee.float_eq
-; :float -> float -> bool
+; c.ieee.float_eq: :float -> float -> bool
 (constant_definition "c_2Eieee_2Efloat__eq" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool")))
-; c.ieee.float_format
-; :num # num
+; c.ieee.float_format: :num # num
 (constant_definition "c_2Eieee_2Efloat__format" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))
-; c.ieee.float_ge
-; :float -> float -> bool
+; c.ieee.float_ge: :float -> float -> bool
 (constant_definition "c_2Eieee_2Efloat__ge" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool")))
-; c.ieee.float_gt
-; :float -> float -> bool
+; c.ieee.float_gt: :float -> float -> bool
 (constant_definition "c_2Eieee_2Efloat__gt" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool")))
-; c.ieee.float_le
-; :float -> float -> bool
+; c.ieee.float_le: :float -> float -> bool
 (constant_definition "c_2Eieee_2Efloat__le" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool")))
-; c.ieee.float_lt
-; :float -> float -> bool
+; c.ieee.float_lt: :float -> float -> bool
 (constant_definition "c_2Eieee_2Efloat__lt" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Emin_2Ebool")))
-; c.ieee.float_mul
-; :float -> float -> float
+; c.ieee.float_mul: :float -> float -> float
 (constant_definition "c_2Eieee_2Efloat__mul" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat")))
-; c.ieee.float_neg
-; :float -> float
+; c.ieee.float_neg: :float -> float
 (constant_definition "c_2Eieee_2Efloat__neg" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat"))
-; c.ieee.float_rem
-; :float -> float -> float
+; c.ieee.float_rem: :float -> float -> float
 (constant_definition "c_2Eieee_2Efloat__rem" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat")))
-; c.ieee.float_sqrt
-; :float -> float
+; c.ieee.float_sqrt: :float -> float
 (constant_definition "c_2Eieee_2Efloat__sqrt" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat"))
-; c.ieee.float_sub
-; :float -> float -> float
+; c.ieee.float_sub: :float -> float -> float
 (constant_definition "c_2Eieee_2Efloat__sub" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" "ty_2Eieee_2Efloat")))
-; c.ieee.flt
-; :num # num -> num # num # num -> num # num # num -> bool
+; c.ieee.flt: :num # num -> num # num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eflt" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool"))))
-; c.ieee.fmul
-; :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
+; c.ieee.fmul: :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efmul" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))))))
-; c.ieee.fneg
-; :num # num -> roundmode -> num # num # num -> num # num # num
+; c.ieee.fneg: :num # num -> roundmode -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efneg" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))))
-; c.ieee.fraction
-; :num # num # num -> num
+; c.ieee.fraction: :num # num # num -> num
 (constant_definition "c_2Eieee_2Efraction" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Enum_2Enum"))
-; c.ieee.fracwidth
-; :num # num -> num
+; c.ieee.fracwidth: :num # num -> num
 (constant_definition "c_2Eieee_2Efracwidth" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
-; c.ieee.frem
-; :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
+; c.ieee.frem: :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efrem" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))))))
-; c.ieee.fsqrt
-; :num # num -> roundmode -> num # num # num -> num # num # num
+; c.ieee.fsqrt: :num # num -> roundmode -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efsqrt" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))))
-; c.ieee.fsub
-; :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
+; c.ieee.fsub: :num # num -> roundmode -> num # num # num -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Efsub" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))))))
-; c.ieee.intround
-; :num # num -> roundmode -> real -> num # num # num
+; c.ieee.intround: :num # num -> roundmode -> real -> num # num # num
 (constant_definition "c_2Eieee_2Eintround" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))))
-; c.ieee.is_closest
-; :(α -> real) -> (α -> bool) -> real -> α -> bool
+; c.ieee.is_closest: :(α -> real) -> (α -> bool) -> real -> α -> bool
 (constant_definition "c_2Eieee_2Eis__closest" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Erealax_2Ereal") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))))))
-; c.ieee.is_denormal
-; :num # num -> num # num # num -> bool
+; c.ieee.is_denormal: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__denormal" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.is_double
-; :num # num -> bool
+; c.ieee.is_double: :num # num -> bool
 (constant_definition "c_2Eieee_2Eis__double" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool"))
-; c.ieee.is_double_extended
-; :num # num -> bool
+; c.ieee.is_double_extended: :num # num -> bool
 (constant_definition "c_2Eieee_2Eis__double__extended" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool"))
-; c.ieee.is_finite
-; :num # num -> num # num # num -> bool
+; c.ieee.is_finite: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__finite" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.is_infinity
-; :num # num -> num # num # num -> bool
+; c.ieee.is_infinity: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__infinity" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.is_integral
-; :num # num -> num # num # num -> bool
+; c.ieee.is_integral: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__integral" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.is_nan
-; :num # num -> num # num # num -> bool
+; c.ieee.is_nan: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__nan" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.is_normal
-; :num # num -> num # num # num -> bool
+; c.ieee.is_normal: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__normal" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.is_single
-; :num # num -> bool
+; c.ieee.is_single: :num # num -> bool
 (constant_definition "c_2Eieee_2Eis__single" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool"))
-; c.ieee.is_single_extended
-; :num # num -> bool
+; c.ieee.is_single_extended: :num # num -> bool
 (constant_definition "c_2Eieee_2Eis__single__extended" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool"))
-; c.ieee.is_valid
-; :num # num -> num # num # num -> bool
+; c.ieee.is_valid: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__valid" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.is_zero
-; :num # num -> num # num # num -> bool
+; c.ieee.is_zero: :num # num -> num # num # num -> bool
 (constant_definition "c_2Eieee_2Eis__zero" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool")))
-; c.ieee.largest
-; :num # num -> real
+; c.ieee.largest: :num # num -> real
 (constant_definition "c_2Eieee_2Elargest" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Erealax_2Ereal"))
-; c.ieee.minus
-; :num # num -> num # num # num -> num # num # num
+; c.ieee.minus: :num # num -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Eminus" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))))
-; c.ieee.minus_infinity
-; :num # num -> num # num # num
+; c.ieee.minus_infinity: :num # num -> num # num # num
 (constant_definition "c_2Eieee_2Eminus__infinity" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.minus_zero
-; :num # num -> num # num # num
+; c.ieee.minus_zero: :num # num -> num # num # num
 (constant_definition "c_2Eieee_2Eminus__zero" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.num2ccode
-; :num -> ccode
+; c.ieee.num2ccode: :num -> ccode
 (constant_definition "c_2Eieee_2Enum2ccode" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Eieee_2Eccode"))
-; c.ieee.num2roundmode
-; :num -> roundmode
+; c.ieee.num2roundmode: :num -> roundmode
 (constant_definition "c_2Eieee_2Enum2roundmode" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Eieee_2Eroundmode"))
-; c.ieee.plus_infinity
-; :num # num -> num # num # num
+; c.ieee.plus_infinity: :num # num -> num # num # num
 (constant_definition "c_2Eieee_2Eplus__infinity" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.plus_zero
-; :num # num -> num # num # num
+; c.ieee.plus_zero: :num # num -> num # num # num
 (constant_definition "c_2Eieee_2Eplus__zero" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.rem
-; :real -> real -> real
+; c.ieee.rem: :real -> real -> real
 (constant_definition "c_2Eieee_2Erem" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal")))
-; c.ieee.round
-; :num # num -> roundmode -> real -> num # num # num
+; c.ieee.round: :num # num -> roundmode -> real -> num # num # num
 (constant_definition "c_2Eieee_2Eround" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Erealax_2Ereal" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))))
-; c.ieee.roundmode2num
-; :roundmode -> num
+; c.ieee.roundmode2num: :roundmode -> num
 (constant_definition "c_2Eieee_2Eroundmode2num" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Enum_2Enum"))
-; c.ieee.roundmode_CASE
-; :roundmode -> α -> α -> α -> α -> α
+; c.ieee.roundmode_CASE: :roundmode -> α -> α -> α -> α -> α
 (constant_definition "c_2Eieee_2Eroundmode__CASE" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "A_27a")))))))
-; c.ieee.roundmode_size
-; :roundmode -> num
+; c.ieee.roundmode_size: :roundmode -> num
 (constant_definition "c_2Eieee_2Eroundmode__size" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Enum_2Enum"))
-; c.ieee.sign
-; :num # num # num -> num
+; c.ieee.sign: :num # num # num -> num
 (constant_definition "c_2Eieee_2Esign" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Enum_2Enum"))
-; c.ieee.some_nan
-; :num # num -> num # num # num
+; c.ieee.some_nan: :num # num -> num # num # num
 (constant_definition "c_2Eieee_2Esome__nan" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.threshold
-; :num # num -> real
+; c.ieee.threshold: :num # num -> real
 (constant_definition "c_2Eieee_2Ethreshold" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Erealax_2Ereal"))
-; c.ieee.topfloat
-; :num # num -> num # num # num
+; c.ieee.topfloat: :num # num -> num # num # num
 (constant_definition "c_2Eieee_2Etopfloat" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.ieee.ulp
-; :num # num -> num # num # num -> real
+; c.ieee.ulp: :num # num -> num # num # num -> real
 (constant_definition "c_2Eieee_2Eulp" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Erealax_2Ereal")))
-; c.ieee.valof
-; :num # num -> num # num # num -> real
+; c.ieee.valof: :num # num -> num # num # num -> real
 (constant_definition "c_2Eieee_2Evalof" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Erealax_2Ereal")))
-; c.ieee.wordlength
-; :num # num -> num
+; c.ieee.wordlength: :num # num -> num
 (constant_definition "c_2Eieee_2Ewordlength" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Enum_2Enum"))
-; c.ieee.zerosign
-; :num # num -> num -> num # num # num -> num # num # num
+; c.ieee.zerosign: :num # num -> num -> num # num # num -> num # num # num
 (constant_definition "c_2Eieee_2Ezerosign" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))))
-; ieee.expwidth
-; ∀ew fw. expwidth (ew,fw) = ew
+; ieee.expwidth: ∀V0ew V1fw. expwidth (V0ew,V1fw) = V0ew
 (axiom "thm_2Eieee_2Eexpwidth" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0ew" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1fw" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexpwidth" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V0ew" "V1fw")) "V0ew"))))))
-; ieee.fracwidth
-; ∀ew fw. fracwidth (ew,fw) = fw
+; ieee.fracwidth: ∀V0ew V1fw. fracwidth (V0ew,V1fw) = V1fw
 (axiom "thm_2Eieee_2Efracwidth" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0ew" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1fw" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Efracwidth" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V0ew" "V1fw")) "V1fw"))))))
-; ieee.wordlength
-; ∀X. wordlength X = expwidth X + fracwidth X + 1
+; ieee.wordlength: ∀V0X. wordlength V0X = expwidth V0X + fracwidth V0X + 1
 (axiom "thm_2Eieee_2Ewordlength" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Ewordlength" "V0X") ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2B" ("c_2Eieee_2Eexpwidth" "V0X") ("c_2Eieee_2Efracwidth" "V0X")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; ieee.emax
-; ∀X. emax X = 2 ** expwidth X − 1
+; ieee.emax: ∀V0X. emax V0X = 2 ** expwidth V0X − 1
 (axiom "thm_2Eieee_2Eemax" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eemax" "V0X") ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Eexpwidth" "V0X")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; ieee.bias
-; ∀X. bias X = 2 ** (expwidth X − 1) − 1
+; ieee.bias: ∀V0X. bias V0X = 2 ** (expwidth V0X − 1) − 1
 (axiom "thm_2Eieee_2Ebias" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Ebias" "V0X") ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2E_2D" ("c_2Eieee_2Eexpwidth" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))
-; ieee.is_single
-; ∀X. is_single X ⇔ (expwidth X = 8) ∧ (wordlength X = 32)
+; ieee.is_single: ∀V0X. is_single V0X ⇔ (expwidth V0X = 8) ∧ (wordlength V0X = 32)
 (axiom "thm_2Eieee_2Eis__single" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__single" "V0X") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexpwidth" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Ewordlength" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))
-; ieee.is_double
-; ∀X. is_double X ⇔ (expwidth X = 11) ∧ (wordlength X = 64)
+; ieee.is_double: ∀V0X. is_double V0X ⇔ (expwidth V0X = 11) ∧ (wordlength V0X = 64)
 (axiom "thm_2Eieee_2Eis__double" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__double" "V0X") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexpwidth" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Ewordlength" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))
-; ieee.is_single_extended
-; ∀X. is_single_extended X ⇔ expwidth X ≥ 11 ∧ wordlength X ≥ 43
+; ieee.is_single_extended: ∀V0X. is_single_extended V0X ⇔ expwidth V0X ≥ 11 ∧ wordlength V0X ≥ 43
 (axiom "thm_2Eieee_2Eis__single__extended" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__single__extended" "V0X") ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3E_3D" ("c_2Eieee_2Eexpwidth" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))) ("c_2Earithmetic_2E_3E_3D" ("c_2Eieee_2Ewordlength" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))))
-; ieee.is_double_extended
-; ∀X. is_double_extended X ⇔ expwidth X ≥ 15 ∧ wordlength X ≥ 79
+; ieee.is_double_extended: ∀V0X. is_double_extended V0X ⇔ expwidth V0X ≥ 15 ∧ wordlength V0X ≥ 79
 (axiom "thm_2Eieee_2Eis__double__extended" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__double__extended" "V0X") ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2E_3E_3D" ("c_2Eieee_2Eexpwidth" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))) ("c_2Earithmetic_2E_3E_3D" ("c_2Eieee_2Ewordlength" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))))))
-; ieee.sign
-; ∀s e f. sign (s,e,f) = s
+; ieee.sign: ∀V0s V1e V2f. sign (V0s,V1e,V2f) = V0s
 (axiom "thm_2Eieee_2Esign" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0s" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1e" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2f" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V1e" "V2f"))) "V0s"))))))))
-; ieee.exponent
-; ∀s e f. exponent (s,e,f) = e
+; ieee.exponent: ∀V0s V1e V2f. exponent (V0s,V1e,V2f) = V1e
 (axiom "thm_2Eieee_2Eexponent" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0s" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1e" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2f" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V1e" "V2f"))) "V1e"))))))))
-; ieee.fraction
-; ∀s e f. fraction (s,e,f) = f
+; ieee.fraction: ∀V0s V1e V2f. fraction (V0s,V1e,V2f) = V2f
 (axiom "thm_2Eieee_2Efraction" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0s" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1e" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2f" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Efraction" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V0s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V1e" "V2f"))) "V2f"))))))))
-; ieee.is_nan
-; ∀X a. is_nan X a ⇔ (exponent a = emax X) ∧ fraction a ≠ 0
+; ieee.is_nan: ∀V0X V1a. is_nan V0X V1a ⇔ (exponent V1a = emax V0X) ∧ fraction V1a ≠ 0
 (axiom "thm_2Eieee_2Eis__nan" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__nan" "V0X" "V1a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V1a") ("c_2Eieee_2Eemax" "V0X")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Efraction" "V1a") "c_2Enum_2E0")))))))))
-; ieee.is_infinity
-; ∀X a. is_infinity X a ⇔ (exponent a = emax X) ∧ (fraction a = 0)
+; ieee.is_infinity: ∀V0X V1a.     is_infinity V0X V1a ⇔ (exponent V1a = emax V0X) ∧ (fraction V1a = 0)
 (axiom "thm_2Eieee_2Eis__infinity" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__infinity" "V0X" "V1a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V1a") ("c_2Eieee_2Eemax" "V0X")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Efraction" "V1a") "c_2Enum_2E0"))))))))
-; ieee.is_normal
-; ∀X a. is_normal X a ⇔ 0 < exponent a ∧ exponent a < emax X
+; ieee.is_normal: ∀V0X V1a. is_normal V0X V1a ⇔ 0 < exponent V1a ∧ exponent V1a < emax V0X
 (axiom "thm_2Eieee_2Eis__normal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__normal" "V0X" "V1a") ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "c_2Enum_2E0" ("c_2Eieee_2Eexponent" "V1a")) ("c_2Eprim__rec_2E_3C" ("c_2Eieee_2Eexponent" "V1a") ("c_2Eieee_2Eemax" "V0X")))))))))
-; ieee.is_denormal
-; ∀X a. is_denormal X a ⇔ (exponent a = 0) ∧ fraction a ≠ 0
+; ieee.is_denormal: ∀V0X V1a. is_denormal V0X V1a ⇔ (exponent V1a = 0) ∧ fraction V1a ≠ 0
 (axiom "thm_2Eieee_2Eis__denormal" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__denormal" "V0X" "V1a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V1a") "c_2Enum_2E0") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Efraction" "V1a") "c_2Enum_2E0")))))))))
-; ieee.is_zero
-; ∀X a. is_zero X a ⇔ (exponent a = 0) ∧ (fraction a = 0)
+; ieee.is_zero: ∀V0X V1a. is_zero V0X V1a ⇔ (exponent V1a = 0) ∧ (fraction V1a = 0)
 (axiom "thm_2Eieee_2Eis__zero" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__zero" "V0X" "V1a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V1a") "c_2Enum_2E0") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Efraction" "V1a") "c_2Enum_2E0"))))))))
-; ieee.is_valid
-; ∀X s e f.     is_valid X (s,e,f) ⇔     s < SUC (SUC 0) ∧ e < 2 ** expwidth X ∧ f < 2 ** fracwidth X
+; ieee.is_valid: ∀V0X V1s V2e V3f.     is_valid V0X (V1s,V2e,V3f) ⇔     V1s < SUC (SUC 0) ∧ V2e < 2 ** expwidth V0X ∧ V3f < 2 ** fracwidth V0X
 (axiom "thm_2Eieee_2Eis__valid" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1s" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2e" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3f" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__valid" "V0X" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V1s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V2e" "V3f"))) ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V1s" ("c_2Enum_2ESUC" ("c_2Enum_2ESUC" "c_2Enum_2E0"))) ("c_2Ebool_2E_2F_5C" ("c_2Eprim__rec_2E_3C" "V2e" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Eexpwidth" "V0X"))) ("c_2Eprim__rec_2E_3C" "V3f" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Efracwidth" "V0X")))))))))))))))
-; ieee.is_finite
-; ∀X a.     is_finite X a ⇔     is_valid X a ∧ (is_normal X a ∨ is_denormal X a ∨ is_zero X a)
+; ieee.is_finite: ∀V0X V1a.     is_finite V0X V1a ⇔     is_valid V0X V1a ∧     (is_normal V0X V1a ∨ is_denormal V0X V1a ∨ is_zero V0X V1a)
 (axiom "thm_2Eieee_2Eis__finite" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__finite" "V0X" "V1a") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__valid" "V0X" "V1a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__normal" "V0X" "V1a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__denormal" "V0X" "V1a") ("c_2Eieee_2Eis__zero" "V0X" "V1a"))))))))))
-; ieee.plus_infinity
-; ∀X. plus_infinity X = (0,emax X,0)
+; ieee.plus_infinity: ∀V0X. plus_infinity V0X = (0,emax V0X,0)
 (axiom "thm_2Eieee_2Eplus__infinity" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eplus__infinity" "V0X") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Enum_2E0" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eieee_2Eemax" "V0X") "c_2Enum_2E0"))))))
-; ieee.minus_infinity
-; ∀X. minus_infinity X = (1,emax X,0)
+; ieee.minus_infinity: ∀V0X. minus_infinity V0X = (1,emax V0X,0)
 (axiom "thm_2Eieee_2Eminus__infinity" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eminus__infinity" "V0X") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eieee_2Eemax" "V0X") "c_2Enum_2E0"))))))
-; ieee.plus_zero
-; ∀X. plus_zero X = (0,0,0)
+; ieee.plus_zero: ∀V0X. plus_zero V0X = (0,0,0)
 (axiom "thm_2Eieee_2Eplus__zero" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eplus__zero" "V0X") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Enum_2E0" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "c_2Enum_2E0" "c_2Enum_2E0"))))))
-; ieee.minus_zero
-; ∀X. minus_zero X = (1,0,0)
+; ieee.minus_zero: ∀V0X. minus_zero V0X = (1,0,0)
 (axiom "thm_2Eieee_2Eminus__zero" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eminus__zero" "V0X") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "c_2Enum_2E0" "c_2Enum_2E0"))))))
-; ieee.topfloat
-; ∀X. topfloat X = (0,emax X − 1,2 ** fracwidth X − 1)
+; ieee.topfloat: ∀V0X. topfloat V0X = (0,emax V0X − 1,2 ** fracwidth V0X − 1)
 (axiom "thm_2Eieee_2Etopfloat" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Etopfloat" "V0X") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Enum_2E0" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2D" ("c_2Eieee_2Eemax" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Efracwidth" "V0X")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
-; ieee.bottomfloat
-; ∀X. bottomfloat X = (1,emax X − 1,2 ** fracwidth X − 1)
+; ieee.bottomfloat: ∀V0X. bottomfloat V0X = (1,emax V0X − 1,2 ** fracwidth V0X − 1)
 (axiom "thm_2Eieee_2Ebottomfloat" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Ebottomfloat" "V0X") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2D" ("c_2Eieee_2Eemax" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Efracwidth" "V0X")) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))))))))
-; ieee.minus
-; ∀X a. minus X a = (1 − sign a,exponent a,fraction a)
+; ieee.minus: ∀V0X V1a. minus V0X V1a = (1 − sign V1a,exponent V1a,fraction V1a)
 (axiom "thm_2Eieee_2Eminus" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eminus" "V0X" "V1a") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Esign" "V1a")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V1a") ("c_2Eieee_2Efraction" "V1a")))))))))
-; ieee.encoding
-; ∀X s e f.     encoding X (s,e,f) =     s * 2 ** (wordlength X − 1) + e * 2 ** fracwidth X + f
+; ieee.encoding: ∀V0X V1s V2e V3f.     encoding V0X (V1s,V2e,V3f) =     V1s * 2 ** (wordlength V0X − 1) + V2e * 2 ** fracwidth V0X + V3f
 (axiom "thm_2Eieee_2Eencoding" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1s" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2e" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3f" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eencoding" "V0X" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V1s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V2e" "V3f"))) ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" "V1s" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Earithmetic_2E_2D" ("c_2Eieee_2Ewordlength" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Earithmetic_2E_2A" "V2e" ("c_2Earithmetic_2EEXP" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Efracwidth" "V0X")))) "V3f")))))))))))
-; ieee.valof
-; ∀X s e f.     valof X (s,e,f) =     if e = 0 then -1 pow s * (2 / 2 pow bias X) * (&f / 2 pow fracwidth X)     else -1 pow s * (2 pow e / 2 pow bias X) * (1 + &f / 2 pow fracwidth X)
+; ieee.valof: ∀V0X V1s V2e V3f.     valof V0X (V1s,V2e,V3f) =     if V2e = 0 then       -1 pow V1s * (2 / 2 pow bias V0X) * (&V3f / 2 pow fracwidth V0X)     else       -1 pow V1s * (2 pow V2e / 2 pow bias V0X) *       (1 + &V3f / 2 pow fracwidth V0X)
 (axiom "thm_2Eieee_2Evalof" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1s" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2e" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3f" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2Evalof" "V0X" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V1s" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V2e" "V3f"))) (("c_2Ebool_2ECOND" "ty_2Erealax_2Ereal") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V2e" "c_2Enum_2E0") ("c_2Erealax_2Ereal__mul" ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Epow" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V1s") ("c_2Ereal_2E_2F" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Ebias" "V0X")))) ("c_2Ereal_2E_2F" ("c_2Ereal_2Ereal__of__num" "V3f") ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Efracwidth" "V0X")))) ("c_2Erealax_2Ereal__mul" ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2Epow" ("c_2Erealax_2Ereal__neg" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "V1s") ("c_2Ereal_2E_2F" ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "V2e") ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Ebias" "V0X")))) ("c_2Erealax_2Ereal__add" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Ereal_2E_2F" ("c_2Ereal_2Ereal__of__num" "V3f") ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Efracwidth" "V0X"))))))))))))))))
-; ieee.largest
-; ∀X.     largest X =     2 pow (emax X − 1) / 2 pow bias X * (2 − (2 pow fracwidth X)⁻¹)
+; ieee.largest: ∀V0X.     largest V0X =     2 pow (emax V0X − 1) / 2 pow bias V0X * (2 − (2 pow fracwidth V0X)⁻¹)
 (axiom "thm_2Eieee_2Elargest" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2Elargest" "V0X") ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2E_2F" ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2E_2D" ("c_2Eieee_2Eemax" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Ebias" "V0X"))) ("c_2Ereal_2Ereal__sub" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Erealax_2Einv" ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Efracwidth" "V0X")))))))))
-; ieee.threshold
-; ∀X.     threshold X =     2 pow (emax X − 1) / 2 pow bias X * (2 − (2 pow SUC (fracwidth X))⁻¹)
+; ieee.threshold: ∀V0X.     threshold V0X =     2 pow (emax V0X − 1) / 2 pow bias V0X *     (2 − (2 pow SUC (fracwidth V0X))⁻¹)
 (axiom "thm_2Eieee_2Ethreshold" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2Ethreshold" "V0X") ("c_2Erealax_2Ereal__mul" ("c_2Ereal_2E_2F" ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Earithmetic_2E_2D" ("c_2Eieee_2Eemax" "V0X") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Ebias" "V0X"))) ("c_2Ereal_2Ereal__sub" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Erealax_2Einv" ("c_2Ereal_2Epow" ("c_2Ereal_2Ereal__of__num" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) ("c_2Enum_2ESUC" ("c_2Eieee_2Efracwidth" "V0X"))))))))))
-; ieee.ulp
-; ∀X a. ulp X a = valof X (0,exponent a,1) − valof X (0,exponent a,0)
+; ieee.ulp: ∀V0X V1a.     ulp V0X V1a = valof V0X (0,exponent V1a,1) − valof V0X (0,exponent V1a,0)
 (axiom "thm_2Eieee_2Eulp" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2Eulp" "V0X" "V1a") ("c_2Ereal_2Ereal__sub" ("c_2Eieee_2Evalof" "V0X" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Enum_2E0" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V1a") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) ("c_2Eieee_2Evalof" "V0X" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Enum_2E0" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V1a") "c_2Enum_2E0"))))))))))
-; ieee.roundmode_TY_DEF
-; ∃rep. TYPE_DEFINITION (λn. n < 4) rep
+; ieee.roundmode_TY_DEF: ∃V0rep. TYPE_DEFINITION (λV1n. V1n < 4) V0rep
 (axiom "thm_2Eieee_2Eroundmode__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Enum_2Enum")) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Enum_2Enum") (("c_2Ebool_2ETYPE__DEFINITION" "ty_2Enum_2Enum" "ty_2Eieee_2Eroundmode") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V0rep"))))
-; ieee.roundmode_BIJ
-; (∀a. num2roundmode (roundmode2num a) = a) ∧ ∀r. (λn. n < 4) r ⇔ (roundmode2num (num2roundmode r) = r)
+; ieee.roundmode_BIJ: (∀V0a. num2roundmode (roundmode2num V0a) = V0a) ∧ ∀V1r. (λV2n. V2n < 4) V1r ⇔ (roundmode2num (num2roundmode V1r) = V1r)
 (axiom "thm_2Eieee_2Eroundmode__BIJ" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0a" "ty_2Eieee_2Eroundmode" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") ("c_2Eieee_2Enum2roundmode" ("c_2Eieee_2Eroundmode2num" "V0a")) "V0a"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V1r") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" ("c_2Eieee_2Enum2roundmode" "V1r")) "V1r"))))))
-; ieee.num2roundmode_roundmode2num
-; ∀a. num2roundmode (roundmode2num a) = a
+; ieee.num2roundmode_roundmode2num: ∀V0a. num2roundmode (roundmode2num V0a) = V0a
 (conjecture "thm_2Eieee_2Enum2roundmode__roundmode2num" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0a" "ty_2Eieee_2Eroundmode" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") ("c_2Eieee_2Enum2roundmode" ("c_2Eieee_2Eroundmode2num" "V0a")) "V0a"))))
-; ieee.roundmode2num_num2roundmode
-; ∀r. r < 4 ⇔ (roundmode2num (num2roundmode r) = r)
+; ieee.roundmode2num_num2roundmode: ∀V0r. V0r < 4 ⇔ (roundmode2num (num2roundmode V0r) = V0r)
 (conjecture "thm_2Eieee_2Eroundmode2num__num2roundmode" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" ("c_2Eieee_2Enum2roundmode" "V0r")) "V0r")))))
-; ieee.num2roundmode_11
-; ∀r r'. r < 4 ⇒ r' < 4 ⇒ ((num2roundmode r = num2roundmode r') ⇔ (r = r'))
+; ieee.num2roundmode_11: ∀V0r V1r_27.     V0r < 4 ⇒     V1r_27 < 4 ⇒     ((num2roundmode V0r = num2roundmode V1r_27) ⇔ (V0r = V1r_27))
 (conjecture "thm_2Eieee_2Enum2roundmode__11" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1r_27" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V1r_27" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") ("c_2Eieee_2Enum2roundmode" "V0r") ("c_2Eieee_2Enum2roundmode" "V1r_27")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0r" "V1r_27")))))))))
-; ieee.roundmode2num_11
-; ∀a a'. (roundmode2num a = roundmode2num a') ⇔ (a = a')
+; ieee.roundmode2num_11: ∀V0a V1a_27. (roundmode2num V0a = roundmode2num V1a_27) ⇔ (V0a = V1a_27)
 (conjecture "thm_2Eieee_2Eroundmode2num__11" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0a" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1a_27" "ty_2Eieee_2Eroundmode" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" "V0a") ("c_2Eieee_2Eroundmode2num" "V1a_27")) (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0a" "V1a_27")))))))
-; ieee.num2roundmode_ONTO
-; ∀a. ∃r. (a = num2roundmode r) ∧ r < 4
+; ieee.num2roundmode_ONTO: ∀V0a. ∃V1r. (V0a = num2roundmode V1r) ∧ V1r < 4
 (conjecture "thm_2Eieee_2Enum2roundmode__ONTO" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0a" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1r" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0a" ("c_2Eieee_2Enum2roundmode" "V1r")) ("c_2Eprim__rec_2E_3C" "V1r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; ieee.roundmode2num_ONTO
-; ∀r. r < 4 ⇔ ∃a. r = roundmode2num a
+; ieee.roundmode2num_ONTO: ∀V0r. V0r < 4 ⇔ ∃V1a. V0r = roundmode2num V1a
 (conjecture "thm_2Eieee_2Eroundmode2num__ONTO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Ebool_2E_3F" "ty_2Eieee_2Eroundmode") (lambda "V1a" "ty_2Eieee_2Eroundmode" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0r" ("c_2Eieee_2Eroundmode2num" "V1a"))))))))
-; ieee.num2roundmode_thm
-; (num2roundmode 0 = To_nearest) ∧ (num2roundmode 1 = float_To_zero) ∧ (num2roundmode 2 = To_pinfinity) ∧ (num2roundmode 3 = To_ninfinity)
+; ieee.num2roundmode_thm: (num2roundmode 0 = To_nearest) ∧ (num2roundmode 1 = float_To_zero) ∧ (num2roundmode 2 = To_pinfinity) ∧ (num2roundmode 3 = To_ninfinity)
 (conjecture "thm_2Eieee_2Enum2roundmode__thm" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") ("c_2Eieee_2Enum2roundmode" "c_2Enum_2E0") "c_2Eieee_2ETo__nearest") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") ("c_2Eieee_2Enum2roundmode" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "c_2Eieee_2Efloat__To__zero") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") ("c_2Eieee_2Enum2roundmode" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "c_2Eieee_2ETo__pinfinity") (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") ("c_2Eieee_2Enum2roundmode" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "c_2Eieee_2ETo__ninfinity")))))
-; ieee.roundmode2num_thm
-; (roundmode2num To_nearest = 0) ∧ (roundmode2num float_To_zero = 1) ∧ (roundmode2num To_pinfinity = 2) ∧ (roundmode2num To_ninfinity = 3)
+; ieee.roundmode2num_thm: (roundmode2num To_nearest = 0) ∧ (roundmode2num float_To_zero = 1) ∧ (roundmode2num To_pinfinity = 2) ∧ (roundmode2num To_ninfinity = 3)
 (conjecture "thm_2Eieee_2Eroundmode2num__thm" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" "c_2Eieee_2ETo__nearest") "c_2Enum_2E0") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" "c_2Eieee_2Efloat__To__zero") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" "c_2Eieee_2ETo__pinfinity") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" "c_2Eieee_2ETo__ninfinity") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; ieee.roundmode_EQ_roundmode
-; ∀a a'. (a = a') ⇔ (roundmode2num a = roundmode2num a')
+; ieee.roundmode_EQ_roundmode: ∀V0a V1a_27. (V0a = V1a_27) ⇔ (roundmode2num V0a = roundmode2num V1a_27)
 (conjecture "thm_2Eieee_2Eroundmode__EQ__roundmode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0a" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1a_27" "ty_2Eieee_2Eroundmode" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0a" "V1a_27") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode2num" "V0a") ("c_2Eieee_2Eroundmode2num" "V1a_27"))))))))
-; ieee.roundmode_size_def
-; ∀x. roundmode_size x = 0
+; ieee.roundmode_size_def: ∀V0x. roundmode_size V0x = 0
 (axiom "thm_2Eieee_2Eroundmode__size__def" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0x" "ty_2Eieee_2Eroundmode" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eroundmode__size" "V0x") "c_2Enum_2E0"))))
-; ieee.roundmode_CASE
-; ∀x v0 v1 v2 v3.     (case x of        To_nearest => v0      | float_To_zero => v1      | To_pinfinity => v2      | To_ninfinity => v3) =     (λm. if m < 1 then v0 else if m < 2 then v1 else if m = 2 then v2 else v3)       (roundmode2num x)
+; ieee.roundmode_CASE: ∀V0x V1v0 V2v1 V3v2 V4v3.     (case V0x of        To_nearest => V1v0      | float_To_zero => V2v1      | To_pinfinity => V3v2      | To_ninfinity => V4v3) =     (λV5m.          if V5m < 1 then V1v0          else if V5m < 2 then V2v1          else if V5m = 2 then V3v2          else V4v3) (roundmode2num V0x)
 (axiom "thm_2Eieee_2Eroundmode__CASE" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0x" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V4v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "V0x" "V1v0" "V2v1" "V3v2" "V4v3") ((lambda "V5m" "ty_2Enum_2Enum" (("c_2Ebool_2ECOND" "A_27a") ("c_2Eprim__rec_2E_3C" "V5m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V1v0" (("c_2Ebool_2ECOND" "A_27a") ("c_2Eprim__rec_2E_3C" "V5m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "V2v1" (("c_2Ebool_2ECOND" "A_27a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V5m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "V3v2" "V4v3")))) ("c_2Eieee_2Eroundmode2num" "V0x")))))))))))))))
-; ieee.roundmode_case_def
-; (∀v0 v1 v2 v3.      (case To_nearest of         To_nearest => v0       | float_To_zero => v1       | To_pinfinity => v2       | To_ninfinity => v3) = v0) ∧ (∀v0 v1 v2 v3.      (case float_To_zero of         To_nearest => v0       | float_To_zero => v1       | To_pinfinity => v2       | To_ninfinity => v3) = v1) ∧ (∀v0 v1 v2 v3.      (case To_pinfinity of         To_nearest => v0       | float_To_zero => v1       | To_pinfinity => v2       | To_ninfinity => v3) = v2) ∧ ∀v0 v1 v2 v3.     (case To_ninfinity of        To_nearest => v0      | float_To_zero => v1      | To_pinfinity => v2      | To_ninfinity => v3) = v3
+; ieee.roundmode_case_def: (∀V0v0 V1v1 V2v2 V3v3.      (case To_nearest of         To_nearest => V0v0       | float_To_zero => V1v1       | To_pinfinity => V2v2       | To_ninfinity => V3v3) = V0v0) ∧ (∀V4v0 V5v1 V6v2 V7v3.      (case float_To_zero of         To_nearest => V4v0       | float_To_zero => V5v1       | To_pinfinity => V6v2       | To_ninfinity => V7v3) = V5v1) ∧ (∀V8v0 V9v1 V10v2 V11v3.      (case To_pinfinity of         To_nearest => V8v0       | float_To_zero => V9v1       | To_pinfinity => V10v2       | To_ninfinity => V11v3) = V10v2) ∧ ∀V12v0 V13v1 V14v2 V15v3.     (case To_ninfinity of        To_nearest => V12v0      | float_To_zero => V13v1      | To_pinfinity => V14v2      | To_ninfinity => V15v3) = V15v3
 (conjecture "thm_2Eieee_2Eroundmode__case__def" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V0v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "c_2Eieee_2ETo__nearest" "V0v0" "V1v1" "V2v2" "V3v3") "V0v0"))))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V4v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V5v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V6v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V7v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "c_2Eieee_2Efloat__To__zero" "V4v0" "V5v1" "V6v2" "V7v3") "V5v1"))))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V8v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V9v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V10v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V11v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "c_2Eieee_2ETo__pinfinity" "V8v0" "V9v1" "V10v2" "V11v3") "V10v2"))))))))) (("c_2Ebool_2E_21" "A_27a") (lambda "V12v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V13v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V14v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V15v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "c_2Eieee_2ETo__ninfinity" "V12v0" "V13v1" "V14v2" "V15v3") "V15v3"))))))))))))))
-; ieee.datatype_roundmode
-; DATATYPE (roundmode To_nearest float_To_zero To_pinfinity To_ninfinity)
+; ieee.datatype_roundmode: ∀V0roundmode.     DATATYPE (V0roundmode To_nearest float_To_zero To_pinfinity To_ninfinity)
 (conjecture "thm_2Eieee_2Edatatype__roundmode" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Emin_2Ebool"))))) (lambda "V0roundmode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Emin_2Ebool")))) (("c_2Ebool_2EDATATYPE" "ty_2Emin_2Ebool") ("V0roundmode" "c_2Eieee_2ETo__nearest" "c_2Eieee_2Efloat__To__zero" "c_2Eieee_2ETo__pinfinity" "c_2Eieee_2ETo__ninfinity")))))
-; ieee.roundmode_distinct
-; To_nearest ≠ float_To_zero ∧ To_nearest ≠ To_pinfinity ∧ To_nearest ≠ To_ninfinity ∧ float_To_zero ≠ To_pinfinity ∧ float_To_zero ≠ To_ninfinity ∧ To_pinfinity ≠ To_ninfinity
+; ieee.roundmode_distinct: To_nearest ≠ float_To_zero ∧ To_nearest ≠ To_pinfinity ∧ To_nearest ≠ To_ninfinity ∧ float_To_zero ≠ To_pinfinity ∧ float_To_zero ≠ To_ninfinity ∧ To_pinfinity ≠ To_ninfinity
 (conjecture "thm_2Eieee_2Eroundmode__distinct" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "c_2Eieee_2ETo__nearest" "c_2Eieee_2Efloat__To__zero")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "c_2Eieee_2ETo__nearest" "c_2Eieee_2ETo__pinfinity")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "c_2Eieee_2ETo__nearest" "c_2Eieee_2ETo__ninfinity")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "c_2Eieee_2Efloat__To__zero" "c_2Eieee_2ETo__pinfinity")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "c_2Eieee_2Efloat__To__zero" "c_2Eieee_2ETo__ninfinity")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "c_2Eieee_2ETo__pinfinity" "c_2Eieee_2ETo__ninfinity"))))))))
-; ieee.roundmode_nchotomy
-; ∀a.     (a = To_nearest) ∨ (a = float_To_zero) ∨ (a = To_pinfinity) ∨     (a = To_ninfinity)
+; ieee.roundmode_nchotomy: ∀V0a.     (V0a = To_nearest) ∨ (V0a = float_To_zero) ∨ (V0a = To_pinfinity) ∨     (V0a = To_ninfinity)
 (conjecture "thm_2Eieee_2Eroundmode__nchotomy" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0a" "ty_2Eieee_2Eroundmode" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0a" "c_2Eieee_2ETo__nearest") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0a" "c_2Eieee_2Efloat__To__zero") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0a" "c_2Eieee_2ETo__pinfinity") (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0a" "c_2Eieee_2ETo__ninfinity")))))))
-; ieee.roundmode_Axiom
-; ∀x0 x1 x2 x3.     ∃f.         (f To_nearest = x0) ∧ (f float_To_zero = x1) ∧         (f To_pinfinity = x2) ∧ (f To_ninfinity = x3)
+; ieee.roundmode_Axiom: ∀V0x0 V1x1 V2x2 V3x3.     ∃V4f.         (V4f To_nearest = V0x0) ∧ (V4f float_To_zero = V1x1) ∧         (V4f To_pinfinity = V2x2) ∧ (V4f To_ninfinity = V3x3)
 (conjecture "thm_2Eieee_2Eroundmode__Axiom" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1x1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2x2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3x3" "A_27a" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "A_27a")) (lambda "V4f" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2ETo__nearest") "V0x0") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2Efloat__To__zero") "V1x1") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2ETo__pinfinity") "V2x2") (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2ETo__ninfinity") "V3x3"))))))))))))))))
-; ieee.roundmode_induction
-; ∀P.     P To_nearest ∧ P To_ninfinity ∧ P To_pinfinity ∧ P float_To_zero ⇒     ∀a. P a
+; ieee.roundmode_induction: ∀V0P.     V0P To_nearest ∧ V0P To_ninfinity ∧ V0P To_pinfinity ∧ V0P float_To_zero ⇒     ∀V1a. V0P V1a
 (conjecture "thm_2Eieee_2Eroundmode__induction" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Eieee_2Eroundmode" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Eieee_2ETo__nearest") ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Eieee_2ETo__ninfinity") ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Eieee_2ETo__pinfinity") ("V0P" "c_2Eieee_2Efloat__To__zero")))) (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1a" "ty_2Eieee_2Eroundmode" ("V0P" "V1a")))))))
-; ieee.roundmode_case_cong
-; ∀M M' v0 v1 v2 v3.     (M = M') ∧ ((M' = To_nearest) ⇒ (v0 = v0')) ∧     ((M' = float_To_zero) ⇒ (v1 = v1')) ∧     ((M' = To_pinfinity) ⇒ (v2 = v2')) ∧ ((M' = To_ninfinity) ⇒ (v3 = v3')) ⇒     ((case M of         To_nearest => v0       | float_To_zero => v1       | To_pinfinity => v2       | To_ninfinity => v3) =      case M' of        To_nearest => v0'      | float_To_zero => v1'      | To_pinfinity => v2'      | To_ninfinity => v3')
+; ieee.roundmode_case_cong: ∀V0v0_27 V1v1_27 V2v2_27 V3v3_27 V4M V5M_27 V6v0 V7v1 V8v2 V9v3.     (V4M = V5M_27) ∧ ((V5M_27 = To_nearest) ⇒ (V6v0 = V0v0_27)) ∧     ((V5M_27 = float_To_zero) ⇒ (V7v1 = V1v1_27)) ∧     ((V5M_27 = To_pinfinity) ⇒ (V8v2 = V2v2_27)) ∧     ((V5M_27 = To_ninfinity) ⇒ (V9v3 = V3v3_27)) ⇒     ((case V4M of         To_nearest => V6v0       | float_To_zero => V7v1       | To_pinfinity => V8v2       | To_ninfinity => V9v3) =      case V5M_27 of        To_nearest => V0v0_27      | float_To_zero => V1v1_27      | To_pinfinity => V2v2_27      | To_ninfinity => V3v3_27)
 (conjecture "thm_2Eieee_2Eroundmode__case__cong" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0v0_27" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v1_27" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v2_27" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v3_27" "A_27a" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V4M" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V5M_27" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" "A_27a") (lambda "V6v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V7v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V8v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V9v3" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V4M" "V5M_27") ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V5M_27" "c_2Eieee_2ETo__nearest") (("c_2Emin_2E_3D" "A_27a") "V6v0" "V0v0_27")) ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V5M_27" "c_2Eieee_2Efloat__To__zero") (("c_2Emin_2E_3D" "A_27a") "V7v1" "V1v1_27")) ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V5M_27" "c_2Eieee_2ETo__pinfinity") (("c_2Emin_2E_3D" "A_27a") "V8v2" "V2v2_27")) ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V5M_27" "c_2Eieee_2ETo__ninfinity") (("c_2Emin_2E_3D" "A_27a") "V9v3" "V3v3_27")))))) (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "V4M" "V6v0" "V7v1" "V8v2" "V9v3") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "V5M_27" "V0v0_27" "V1v1_27" "V2v2_27" "V3v3_27")))))))))))))))))))))))))
-; ieee.roundmode_case_eq
-; ((case x of     To_nearest => v0   | float_To_zero => v1   | To_pinfinity => v2   | To_ninfinity => v3) = v) ⇔ (x = To_nearest) ∧ (v0 = v) ∨ (x = float_To_zero) ∧ (v1 = v) ∨ (x = To_pinfinity) ∧ (v2 = v) ∨ (x = To_ninfinity) ∧ (v3 = v)
+; ieee.roundmode_case_eq: ∀V0x V1v0 V2v1 V3v2 V4v3 V5v.     ((case V0x of         To_nearest => V1v0       | float_To_zero => V2v1       | To_pinfinity => V3v2       | To_ninfinity => V4v3) = V5v) ⇔     (V0x = To_nearest) ∧ (V1v0 = V5v) ∨     (V0x = float_To_zero) ∧ (V2v1 = V5v) ∨     (V0x = To_pinfinity) ∧ (V3v2 = V5v) ∨ (V0x = To_ninfinity) ∧ (V4v3 = V5v)
 (conjecture "thm_2Eieee_2Eroundmode__case__eq" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V0x" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V4v3" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V5v" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eroundmode__CASE" "A_27a") "V0x" "V1v0" "V2v1" "V3v2" "V4v3") "V5v") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0x" "c_2Eieee_2ETo__nearest") (("c_2Emin_2E_3D" "A_27a") "V1v0" "V5v")) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0x" "c_2Eieee_2Efloat__To__zero") (("c_2Emin_2E_3D" "A_27a") "V2v1" "V5v")) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0x" "c_2Eieee_2ETo__pinfinity") (("c_2Emin_2E_3D" "A_27a") "V3v2" "V5v")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V0x" "c_2Eieee_2ETo__ninfinity") (("c_2Emin_2E_3D" "A_27a") "V4v3" "V5v"))))))))))))))))))))
-; ieee.is_closest
-; ∀v s x a.     is_closest v s x a ⇔ a ∈ s ∧ ∀b. b ∈ s ⇒ abs (v a − x) ≤ abs (v b − x)
+; ieee.is_closest: ∀V0v V1s V2x V3a.     is_closest V0v V1s V2x V3a ⇔     V3a ∈ V1s ∧ ∀V4b. V4b ∈ V1s ⇒ abs (V0v V3a − V2x) ≤ abs (V0v V4b − V2x)
 (axiom "thm_2Eieee_2Eis__closest" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Erealax_2Ereal")) (lambda "V0v" ("ty_2Emin_2Efun" "A_27a" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V2x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "A_27a") (lambda "V3a" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Eieee_2Eis__closest" "A_27a") "V0v" "V1s" "V2x" "V3a") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2EIN" "A_27a") "V3a" "V1s") (("c_2Ebool_2E_21" "A_27a") (lambda "V4b" "A_27a" ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2EIN" "A_27a") "V4b" "V1s") ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Eabs" ("c_2Ereal_2Ereal__sub" ("V0v" "V3a") "V2x")) ("c_2Ereal_2Eabs" ("c_2Ereal_2Ereal__sub" ("V0v" "V4b") "V2x"))))))))))))))))))
-; ieee.closest
-; ∀v p s x.     closest v p s x =     @a. is_closest v s x a ∧ ((∃b. is_closest v s x b ∧ p b) ⇒ p a)
+; ieee.closest: ∀V0v V1p V2s V3x.     closest V0v V1p V2s V3x =     @V4a.         is_closest V0v V2s V3x V4a ∧         ((∃V5b. is_closest V0v V2s V3x V5b ∧ V1p V5b) ⇒ V1p V4a)
 (axiom "thm_2Eieee_2Eclosest" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Erealax_2Ereal")) (lambda "V0v" ("ty_2Emin_2Efun" "A_27a" "ty_2Erealax_2Ereal") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V1p" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool")) (lambda "V2s" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V3x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eclosest" "A_27a") "V0v" "V1p" "V2s" "V3x") (("c_2Emin_2E_40" "A_27a") (lambda "V4a" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Eieee_2Eis__closest" "A_27a") "V0v" "V2s" "V3x" "V4a") ("c_2Emin_2E_3D_3D_3E" (("c_2Ebool_2E_3F" "A_27a") (lambda "V5b" "A_27a" ("c_2Ebool_2E_2F_5C" (("c_2Eieee_2Eis__closest" "A_27a") "V0v" "V2s" "V3x" "V5b") ("V1p" "V5b")))) ("V1p" "V4a"))))))))))))))))
-; ieee.round_def
-; (∀X x.      round X To_nearest x =      if x ≤ -threshold X then minus_infinity X      else if x ≥ threshold X then plus_infinity X      else closest (valof X) (λa. EVEN (fraction a)) {a | is_finite X a} x) ∧ (∀X x.      round X float_To_zero x =      if x < -largest X then bottomfloat X      else if x > largest X then topfloat X      else        closest (valof X) (λx. T)          {a | is_finite X a ∧ abs (valof X a) ≤ abs x} x) ∧ (∀X x.      round X To_pinfinity x =      if x < -largest X then bottomfloat X      else if x > largest X then plus_infinity X      else closest (valof X) (λx. T) {a | is_finite X a ∧ valof X a ≥ x} x) ∧ ∀X x.     round X To_ninfinity x =     if x < -largest X then minus_infinity X     else if x > largest X then topfloat X     else closest (valof X) (λx. T) {a | is_finite X a ∧ valof X a ≤ x} x
+; ieee.round_def: (∀V0X V1x.      round V0X To_nearest V1x =      if V1x ≤ -threshold V0X then minus_infinity V0X      else if V1x ≥ threshold V0X then plus_infinity V0X      else        closest (valof V0X) (λV2a. EVEN (fraction V2a))          {V3a | is_finite V0X V3a} V1x) ∧ (∀V4X V5x.      round V4X float_To_zero V5x =      if V5x < -largest V4X then bottomfloat V4X      else if V5x > largest V4X then topfloat V4X      else        closest (valof V4X) (λV6x. T)          {V7a | is_finite V4X V7a ∧ abs (valof V4X V7a) ≤ abs V5x} V5x) ∧ (∀V8X V9x.      round V8X To_pinfinity V9x =      if V9x < -largest V8X then bottomfloat V8X      else if V9x > largest V8X then plus_infinity V8X      else        closest (valof V8X) (λV10x. T)          {V11a | is_finite V8X V11a ∧ valof V8X V11a ≥ V9x} V9x) ∧ ∀V12X V13x.     round V12X To_ninfinity V13x =     if V13x < -largest V12X then minus_infinity V12X     else if V13x > largest V12X then topfloat V12X     else       closest (valof V12X) (λV14x. T)         {V15a | is_finite V12X V15a ∧ valof V12X V15a ≤ V13x} V13x
 (axiom "thm_2Eieee_2Eround__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eround" "V0X" "c_2Eieee_2ETo__nearest" "V1x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__lte" "V1x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Ethreshold" "V0X"))) ("c_2Eieee_2Eminus__infinity" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__ge" "V1x" ("c_2Eieee_2Ethreshold" "V0X")) ("c_2Eieee_2Eplus__infinity" "V0X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V0X") (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Earithmetic_2EEVEN" ("c_2Eieee_2Efraction" "V2a"))) (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V3a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V3a" ("c_2Eieee_2Eis__finite" "V0X" "V3a")))) "V1x")))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V4X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V5x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eround" "V4X" "c_2Eieee_2Efloat__To__zero" "V5x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Erealax_2Ereal__lt" "V5x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Elargest" "V4X"))) ("c_2Eieee_2Ebottomfloat" "V4X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__gt" "V5x" ("c_2Eieee_2Elargest" "V4X")) ("c_2Eieee_2Etopfloat" "V4X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V4X") (lambda "V6x" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ebool_2ET") (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V7a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V7a" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__finite" "V4X" "V7a") ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Eabs" ("c_2Eieee_2Evalof" "V4X" "V7a")) ("c_2Ereal_2Eabs" "V5x")))))) "V5x")))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V8X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V9x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eround" "V8X" "c_2Eieee_2ETo__pinfinity" "V9x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Erealax_2Ereal__lt" "V9x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Elargest" "V8X"))) ("c_2Eieee_2Ebottomfloat" "V8X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__gt" "V9x" ("c_2Eieee_2Elargest" "V8X")) ("c_2Eieee_2Eplus__infinity" "V8X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V8X") (lambda "V10x" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ebool_2ET") (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V11a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V11a" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__finite" "V8X" "V11a") ("c_2Ereal_2Ereal__ge" ("c_2Eieee_2Evalof" "V8X" "V11a") "V9x"))))) "V9x")))))))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V12X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V13x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eround" "V12X" "c_2Eieee_2ETo__ninfinity" "V13x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Erealax_2Ereal__lt" "V13x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Elargest" "V12X"))) ("c_2Eieee_2Eminus__infinity" "V12X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__gt" "V13x" ("c_2Eieee_2Elargest" "V12X")) ("c_2Eieee_2Etopfloat" "V12X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V12X") (lambda "V14x" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ebool_2ET") (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V15a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V15a" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__finite" "V12X" "V15a") ("c_2Ereal_2Ereal__lte" ("c_2Eieee_2Evalof" "V12X" "V15a") "V13x"))))) "V13x"))))))))))))
-; ieee.is_integral
-; ∀X a. is_integral X a ⇔ is_finite X a ∧ ∃n. abs (valof X a) = &n
+; ieee.is_integral: ∀V0X V1a.     is_integral V0X V1a ⇔     is_finite V0X V1a ∧ ∃V2n. abs (valof V0X V1a) = &V2n
 (axiom "thm_2Eieee_2Eis__integral" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__integral" "V0X" "V1a") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__finite" "V0X" "V1a") (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V2n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ereal_2Eabs" ("c_2Eieee_2Evalof" "V0X" "V1a")) ("c_2Ereal_2Ereal__of__num" "V2n")))))))))))
-; ieee.intround_def
-; (∀X x.      intround X To_nearest x =      if x ≤ -threshold X then minus_infinity X      else if x ≥ threshold X then plus_infinity X      else        closest (valof X) (λa. ∃n. EVEN n ∧ (abs (valof X a) = &n))          {a | is_integral X a} x) ∧ (∀X x.      intround X float_To_zero x =      if x < -largest X then bottomfloat X      else if x > largest X then topfloat X      else        closest (valof X) (λx. T)          {a | is_integral X a ∧ abs (valof X a) ≤ abs x} x) ∧ (∀X x.      intround X To_pinfinity x =      if x < -largest X then bottomfloat X      else if x > largest X then plus_infinity X      else closest (valof X) (λx. T) {a | is_integral X a ∧ valof X a ≥ x} x) ∧ ∀X x.     intround X To_ninfinity x =     if x < -largest X then minus_infinity X     else if x > largest X then topfloat X     else closest (valof X) (λx. T) {a | is_integral X a ∧ valof X a ≤ x} x
+; ieee.intround_def: (∀V0X V1x.      intround V0X To_nearest V1x =      if V1x ≤ -threshold V0X then minus_infinity V0X      else if V1x ≥ threshold V0X then plus_infinity V0X      else        closest (valof V0X)          (λV2a. ∃V3n. EVEN V3n ∧ (abs (valof V0X V2a) = &V3n))          {V4a | is_integral V0X V4a} V1x) ∧ (∀V5X V6x.      intround V5X float_To_zero V6x =      if V6x < -largest V5X then bottomfloat V5X      else if V6x > largest V5X then topfloat V5X      else        closest (valof V5X) (λV7x. T)          {V8a | is_integral V5X V8a ∧ abs (valof V5X V8a) ≤ abs V6x} V6x) ∧ (∀V9X V10x.      intround V9X To_pinfinity V10x =      if V10x < -largest V9X then bottomfloat V9X      else if V10x > largest V9X then plus_infinity V9X      else        closest (valof V9X) (λV11x. T)          {V12a | is_integral V9X V12a ∧ valof V9X V12a ≥ V10x} V10x) ∧ ∀V13X V14x.     intround V13X To_ninfinity V14x =     if V14x < -largest V13X then minus_infinity V13X     else if V14x > largest V13X then topfloat V13X     else       closest (valof V13X) (λV15x. T)         {V16a | is_integral V13X V16a ∧ valof V13X V16a ≤ V14x} V14x
 (axiom "thm_2Eieee_2Eintround__def" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eintround" "V0X" "c_2Eieee_2ETo__nearest" "V1x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__lte" "V1x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Ethreshold" "V0X"))) ("c_2Eieee_2Eminus__infinity" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__ge" "V1x" ("c_2Eieee_2Ethreshold" "V0X")) ("c_2Eieee_2Eplus__infinity" "V0X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V0X") (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V3n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2EEVEN" "V3n") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ereal_2Eabs" ("c_2Eieee_2Evalof" "V0X" "V2a")) ("c_2Ereal_2Ereal__of__num" "V3n")))))) (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V4a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V4a" ("c_2Eieee_2Eis__integral" "V0X" "V4a")))) "V1x")))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V5X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V6x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eintround" "V5X" "c_2Eieee_2Efloat__To__zero" "V6x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Erealax_2Ereal__lt" "V6x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Elargest" "V5X"))) ("c_2Eieee_2Ebottomfloat" "V5X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__gt" "V6x" ("c_2Eieee_2Elargest" "V5X")) ("c_2Eieee_2Etopfloat" "V5X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V5X") (lambda "V7x" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ebool_2ET") (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V8a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V8a" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__integral" "V5X" "V8a") ("c_2Ereal_2Ereal__lte" ("c_2Ereal_2Eabs" ("c_2Eieee_2Evalof" "V5X" "V8a")) ("c_2Ereal_2Eabs" "V6x")))))) "V6x")))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V9X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V10x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eintround" "V9X" "c_2Eieee_2ETo__pinfinity" "V10x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Erealax_2Ereal__lt" "V10x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Elargest" "V9X"))) ("c_2Eieee_2Ebottomfloat" "V9X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__gt" "V10x" ("c_2Eieee_2Elargest" "V9X")) ("c_2Eieee_2Eplus__infinity" "V9X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V9X") (lambda "V11x" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ebool_2ET") (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V12a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V12a" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__integral" "V9X" "V12a") ("c_2Ereal_2Ereal__ge" ("c_2Eieee_2Evalof" "V9X" "V12a") "V10x"))))) "V10x")))))))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V13X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V14x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eintround" "V13X" "c_2Eieee_2ETo__ninfinity" "V14x") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Erealax_2Ereal__lt" "V14x" ("c_2Erealax_2Ereal__neg" ("c_2Eieee_2Elargest" "V13X"))) ("c_2Eieee_2Eminus__infinity" "V13X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ereal_2Ereal__gt" "V14x" ("c_2Eieee_2Elargest" "V13X")) ("c_2Eieee_2Etopfloat" "V13X") (("c_2Eieee_2Eclosest" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Evalof" "V13X") (lambda "V15x" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ebool_2ET") (("c_2Epred__set_2EGSPEC" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V16a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Epair_2E_2C" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Emin_2Ebool") "V16a" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__integral" "V13X" "V16a") ("c_2Ereal_2Ereal__lte" ("c_2Eieee_2Evalof" "V13X" "V16a") "V14x"))))) "V14x"))))))))))))
-; ieee.some_nan
-; ∀X. some_nan X = @a. is_nan X a
+; ieee.some_nan: ∀V0X. some_nan V0X = @V1a. is_nan V0X V1a
 (axiom "thm_2Eieee_2Esome__nan" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Esome__nan" "V0X") (("c_2Emin_2E_40" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Eieee_2Eis__nan" "V0X" "V1a")))))))
-; ieee.zerosign
-; ∀X s a.     zerosign X s a =     if is_zero X a then if s = 0 then plus_zero X else minus_zero X else a
+; ieee.zerosign: ∀V0X V1s V2a.     zerosign V0X V1s V2a =     if is_zero V0X V2a then if V1s = 0 then plus_zero V0X else minus_zero V0X     else V2a
 (axiom "thm_2Eieee_2Ezerosign" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1s" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Ezerosign" "V0X" "V1s" "V2a") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__zero" "V0X" "V2a") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V1s" "c_2Enum_2E0") ("c_2Eieee_2Eplus__zero" "V0X") ("c_2Eieee_2Eminus__zero" "V0X")) "V2a")))))))))
-; ieee.rem
-; ∀x y.     x rem y =     (let        n =          closest I (λx. ∃n. EVEN n ∧ (abs x = &n)) {x | (∃n. abs x = &n)}            (x / y)      in        x − n * y)
+; ieee.rem: ∀V0x V1y.     V0x rem V1y =     (let        V2n =          closest I (λV3x. ∃V4n. EVEN V4n ∧ (abs V3x = &V4n))            {V5x | (∃V6n. abs V5x = &V6n)} (V0x / V1y)      in        V0x − V2n * V1y)
 (axiom "thm_2Eieee_2Erem" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V1y" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2Erem" "V0x" "V1y") (("c_2Ebool_2ELET" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (lambda "V2n" "ty_2Erealax_2Ereal" ("c_2Ereal_2Ereal__sub" "V0x" ("c_2Erealax_2Ereal__mul" "V2n" "V1y"))) (("c_2Eieee_2Eclosest" "ty_2Erealax_2Ereal") ("c_2Ecombin_2EI" "ty_2Erealax_2Ereal") (lambda "V3x" "ty_2Erealax_2Ereal" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V4n" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" ("c_2Earithmetic_2EEVEN" "V4n") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ereal_2Eabs" "V3x") ("c_2Ereal_2Ereal__of__num" "V4n")))))) (("c_2Epred__set_2EGSPEC" "ty_2Erealax_2Ereal" "ty_2Erealax_2Ereal") (lambda "V5x" "ty_2Erealax_2Ereal" (("c_2Epair_2E_2C" "ty_2Erealax_2Ereal" "ty_2Emin_2Ebool") "V5x" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V6n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Ereal_2Eabs" "V5x") ("c_2Ereal_2Ereal__of__num" "V6n"))))))) ("c_2Ereal_2E_2F" "V0x" "V1y")))))))))
-; ieee.fintrnd
-; ∀X m a.     fintrnd X m a =     if is_nan X a then some_nan X     else if is_infinity X a then a     else zerosign X (sign a) (intround X m (valof X a))
+; ieee.fintrnd: ∀V0X V1m V2a.     fintrnd V0X V1m V2a =     if is_nan V0X V2a then some_nan V0X     else if is_infinity V0X V2a then V2a     else zerosign V0X (sign V2a) (intround V0X V1m (valof V0X V2a))
 (axiom "thm_2Eieee_2Efintrnd" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efintrnd" "V0X" "V1m" "V2a") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__nan" "V0X" "V2a") ("c_2Eieee_2Esome__nan" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__infinity" "V0X" "V2a") "V2a" ("c_2Eieee_2Ezerosign" "V0X" ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Eintround" "V0X" "V1m" ("c_2Eieee_2Evalof" "V0X" "V2a")))))))))))))
-; ieee.fadd
-; ∀X m a b.     fadd X m a b =     if       is_nan X a ∨ is_nan X b ∨       is_infinity X a ∧ is_infinity X b ∧ sign a ≠ sign b     then       some_nan X     else if is_infinity X a then a     else if is_infinity X b then b     else       zerosign X         (if is_zero X a ∧ is_zero X b ∧ (sign a = sign b) then sign a          else if m = To_ninfinity then 1          else 0) (round X m (valof X a + valof X b))
+; ieee.fadd: ∀V0X V1m V2a V3b.     fadd V0X V1m V2a V3b =     if       is_nan V0X V2a ∨ is_nan V0X V3b ∨       is_infinity V0X V2a ∧ is_infinity V0X V3b ∧ sign V2a ≠ sign V3b     then       some_nan V0X     else if is_infinity V0X V2a then V2a     else if is_infinity V0X V3b then V3b     else       zerosign V0X         (if is_zero V0X V2a ∧ is_zero V0X V3b ∧ (sign V2a = sign V3b) then            sign V2a          else if V1m = To_ninfinity then 1          else 0) (round V0X V1m (valof V0X V2a + valof V0X V3b))
 (axiom "thm_2Eieee_2Efadd" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V3b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efadd" "V0X" "V1m" "V2a" "V3b") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V2a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V3b") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V3b") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b"))))))) ("c_2Eieee_2Esome__nan" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__infinity" "V0X" "V2a") "V2a" (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__infinity" "V0X" "V3b") "V3b" ("c_2Eieee_2Ezerosign" "V0X" (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__zero" "V0X" "V2a") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__zero" "V0X" "V3b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b")))) ("c_2Eieee_2Esign" "V2a") (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V1m" "c_2Eieee_2ETo__ninfinity") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "c_2Enum_2E0")) ("c_2Eieee_2Eround" "V0X" "V1m" ("c_2Erealax_2Ereal__add" ("c_2Eieee_2Evalof" "V0X" "V2a") ("c_2Eieee_2Evalof" "V0X" "V3b")))))))))))))))))
-; ieee.fsub
-; ∀X m a b.     fsub X m a b =     if       is_nan X a ∨ is_nan X b ∨       is_infinity X a ∧ is_infinity X b ∧ (sign a = sign b)     then       some_nan X     else if is_infinity X a then a     else if is_infinity X b then minus X b     else       zerosign X         (if is_zero X a ∧ is_zero X b ∧ sign a ≠ sign b then sign a          else if m = To_ninfinity then 1          else 0) (round X m (valof X a − valof X b))
+; ieee.fsub: ∀V0X V1m V2a V3b.     fsub V0X V1m V2a V3b =     if       is_nan V0X V2a ∨ is_nan V0X V3b ∨       is_infinity V0X V2a ∧ is_infinity V0X V3b ∧ (sign V2a = sign V3b)     then       some_nan V0X     else if is_infinity V0X V2a then V2a     else if is_infinity V0X V3b then minus V0X V3b     else       zerosign V0X         (if is_zero V0X V2a ∧ is_zero V0X V3b ∧ sign V2a ≠ sign V3b then            sign V2a          else if V1m = To_ninfinity then 1          else 0) (round V0X V1m (valof V0X V2a − valof V0X V3b))
 (axiom "thm_2Eieee_2Efsub" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V3b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efsub" "V0X" "V1m" "V2a" "V3b") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V2a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V3b") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V3b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b")))))) ("c_2Eieee_2Esome__nan" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__infinity" "V0X" "V2a") "V2a" (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__infinity" "V0X" "V3b") ("c_2Eieee_2Eminus" "V0X" "V3b") ("c_2Eieee_2Ezerosign" "V0X" (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__zero" "V0X" "V2a") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__zero" "V0X" "V3b") ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b"))))) ("c_2Eieee_2Esign" "V2a") (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Eieee_2Eroundmode") "V1m" "c_2Eieee_2ETo__ninfinity") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) "c_2Enum_2E0")) ("c_2Eieee_2Eround" "V0X" "V1m" ("c_2Ereal_2Ereal__sub" ("c_2Eieee_2Evalof" "V0X" "V2a") ("c_2Eieee_2Evalof" "V0X" "V3b")))))))))))))))))
-; ieee.fmul
-; ∀X m a b.     fmul X m a b =     if       is_nan X a ∨ is_nan X b ∨ is_zero X a ∧ is_infinity X b ∨       is_infinity X a ∧ is_zero X b     then       some_nan X     else if is_infinity X a ∨ is_infinity X b then       if sign a = sign b then plus_infinity X else minus_infinity X     else       zerosign X (if sign a = sign b then 0 else 1)         (round X m (valof X a * valof X b))
+; ieee.fmul: ∀V0X V1m V2a V3b.     fmul V0X V1m V2a V3b =     if       is_nan V0X V2a ∨ is_nan V0X V3b ∨       is_zero V0X V2a ∧ is_infinity V0X V3b ∨       is_infinity V0X V2a ∧ is_zero V0X V3b     then       some_nan V0X     else if is_infinity V0X V2a ∨ is_infinity V0X V3b then       if sign V2a = sign V3b then plus_infinity V0X else minus_infinity V0X     else       zerosign V0X (if sign V2a = sign V3b then 0 else 1)         (round V0X V1m (valof V0X V2a * valof V0X V3b))
 (axiom "thm_2Eieee_2Efmul" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V3b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efmul" "V0X" "V1m" "V2a" "V3b") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V2a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V3b") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__zero" "V0X" "V2a") ("c_2Eieee_2Eis__infinity" "V0X" "V3b")) ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") ("c_2Eieee_2Eis__zero" "V0X" "V3b"))))) ("c_2Eieee_2Esome__nan" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") ("c_2Eieee_2Eis__infinity" "V0X" "V3b")) (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b")) ("c_2Eieee_2Eplus__infinity" "V0X") ("c_2Eieee_2Eminus__infinity" "V0X")) ("c_2Eieee_2Ezerosign" "V0X" (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b")) "c_2Enum_2E0" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Eround" "V0X" "V1m" ("c_2Erealax_2Ereal__mul" ("c_2Eieee_2Evalof" "V0X" "V2a") ("c_2Eieee_2Evalof" "V0X" "V3b"))))))))))))))))
-; ieee.fdiv
-; ∀X m a b.     fdiv X m a b =     if       is_nan X a ∨ is_nan X b ∨ is_zero X a ∧ is_zero X b ∨       is_infinity X a ∧ is_infinity X b     then       some_nan X     else if is_infinity X a ∨ is_zero X b then       if sign a = sign b then plus_infinity X else minus_infinity X     else if is_infinity X b then       if sign a = sign b then plus_zero X else minus_zero X     else       zerosign X (if sign a = sign b then 0 else 1)         (round X m (valof X a / valof X b))
+; ieee.fdiv: ∀V0X V1m V2a V3b.     fdiv V0X V1m V2a V3b =     if       is_nan V0X V2a ∨ is_nan V0X V3b ∨ is_zero V0X V2a ∧ is_zero V0X V3b ∨       is_infinity V0X V2a ∧ is_infinity V0X V3b     then       some_nan V0X     else if is_infinity V0X V2a ∨ is_zero V0X V3b then       if sign V2a = sign V3b then plus_infinity V0X else minus_infinity V0X     else if is_infinity V0X V3b then       if sign V2a = sign V3b then plus_zero V0X else minus_zero V0X     else       zerosign V0X (if sign V2a = sign V3b then 0 else 1)         (round V0X V1m (valof V0X V2a / valof V0X V3b))
 (axiom "thm_2Eieee_2Efdiv" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V3b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efdiv" "V0X" "V1m" "V2a" "V3b") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V2a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V3b") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__zero" "V0X" "V2a") ("c_2Eieee_2Eis__zero" "V0X" "V3b")) ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") ("c_2Eieee_2Eis__infinity" "V0X" "V3b"))))) ("c_2Eieee_2Esome__nan" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") ("c_2Eieee_2Eis__zero" "V0X" "V3b")) (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b")) ("c_2Eieee_2Eplus__infinity" "V0X") ("c_2Eieee_2Eminus__infinity" "V0X")) (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__infinity" "V0X" "V3b") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b")) ("c_2Eieee_2Eplus__zero" "V0X") ("c_2Eieee_2Eminus__zero" "V0X")) ("c_2Eieee_2Ezerosign" "V0X" (("c_2Ebool_2ECOND" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Esign" "V3b")) "c_2Enum_2E0" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Eround" "V0X" "V1m" ("c_2Ereal_2E_2F" ("c_2Eieee_2Evalof" "V0X" "V2a") ("c_2Eieee_2Evalof" "V0X" "V3b")))))))))))))))))
-; ieee.fsqrt
-; ∀X m a.     fsqrt X m a =     if is_nan X a then some_nan X     else if is_zero X a ∨ is_infinity X a ∧ (sign a = 0) then a     else if sign a = 1 then some_nan X     else zerosign X (sign a) (round X m (sqrt (valof X a)))
+; ieee.fsqrt: ∀V0X V1m V2a.     fsqrt V0X V1m V2a =     if is_nan V0X V2a then some_nan V0X     else if is_zero V0X V2a ∨ is_infinity V0X V2a ∧ (sign V2a = 0) then V2a     else if sign V2a = 1 then some_nan V0X     else zerosign V0X (sign V2a) (round V0X V1m (sqrt (valof V0X V2a)))
 (axiom "thm_2Eieee_2Efsqrt" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efsqrt" "V0X" "V1m" "V2a") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__nan" "V0X" "V2a") ("c_2Eieee_2Esome__nan" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__zero" "V0X" "V2a") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") "c_2Enum_2E0"))) "V2a" (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2a") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Eieee_2Esome__nan" "V0X") ("c_2Eieee_2Ezerosign" "V0X" ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Eround" "V0X" "V1m" ("c_2Etransc_2Esqrt" ("c_2Eieee_2Evalof" "V0X" "V2a")))))))))))))))
-; ieee.frem
-; ∀X m a b.     frem X m a b =     if is_nan X a ∨ is_nan X b ∨ is_infinity X a ∨ is_zero X b then       some_nan X     else if is_infinity X b then a     else zerosign X (sign a) (round X m (valof X a rem valof X b))
+; ieee.frem: ∀V0X V1m V2a V3b.     frem V0X V1m V2a V3b =     if       is_nan V0X V2a ∨ is_nan V0X V3b ∨ is_infinity V0X V2a ∨ is_zero V0X V3b     then       some_nan V0X     else if is_infinity V0X V3b then V2a     else       zerosign V0X (sign V2a)         (round V0X V1m (valof V0X V2a rem valof V0X V3b))
 (axiom "thm_2Eieee_2Efrem" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V3b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efrem" "V0X" "V1m" "V2a" "V3b") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V2a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V3b") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__infinity" "V0X" "V2a") ("c_2Eieee_2Eis__zero" "V0X" "V3b")))) ("c_2Eieee_2Esome__nan" "V0X") (("c_2Ebool_2ECOND" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Eis__infinity" "V0X" "V3b") "V2a" ("c_2Eieee_2Ezerosign" "V0X" ("c_2Eieee_2Esign" "V2a") ("c_2Eieee_2Eround" "V0X" "V1m" ("c_2Eieee_2Erem" ("c_2Eieee_2Evalof" "V0X" "V2a") ("c_2Eieee_2Evalof" "V0X" "V3b"))))))))))))))))
-; ieee.fneg
-; ∀X m a. fneg X m a = (1 − sign a,exponent a,fraction a)
+; ieee.fneg: ∀V0X V1m V2a. fneg V0X V1m V2a = (1 − sign V2a,exponent V2a,fraction V2a)
 (axiom "thm_2Eieee_2Efneg" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "ty_2Eieee_2Eroundmode") (lambda "V1m" "ty_2Eieee_2Eroundmode" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Efneg" "V0X" "V1m" "V2a") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Earithmetic_2E_2D" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")) ("c_2Eieee_2Esign" "V2a")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eieee_2Eexponent" "V2a") ("c_2Eieee_2Efraction" "V2a")))))))))))
-; ieee.ccode_TY_DEF
-; ∃rep. TYPE_DEFINITION (λn. n < 4) rep
+; ieee.ccode_TY_DEF: ∃V0rep. TYPE_DEFINITION (λV1n. V1n < 4) V0rep
 (axiom "thm_2Eieee_2Eccode__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Enum_2Enum")) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Enum_2Enum") (("c_2Ebool_2ETYPE__DEFINITION" "ty_2Enum_2Enum" "ty_2Eieee_2Eccode") (lambda "V1n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V1n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V0rep"))))
-; ieee.ccode_BIJ
-; (∀a. num2ccode (ccode2num a) = a) ∧ ∀r. (λn. n < 4) r ⇔ (ccode2num (num2ccode r) = r)
+; ieee.ccode_BIJ: (∀V0a. num2ccode (ccode2num V0a) = V0a) ∧ ∀V1r. (λV2n. V2n < 4) V1r ⇔ (ccode2num (num2ccode V1r) = V1r)
 (axiom "thm_2Eieee_2Eccode__BIJ" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0a" "ty_2Eieee_2Eccode" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Enum2ccode" ("c_2Eieee_2Eccode2num" "V0a")) "V0a"))) (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2n" "ty_2Enum_2Enum" ("c_2Eprim__rec_2E_3C" "V2n" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))) "V1r") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" ("c_2Eieee_2Enum2ccode" "V1r")) "V1r"))))))
-; ieee.num2ccode_ccode2num
-; ∀a. num2ccode (ccode2num a) = a
+; ieee.num2ccode_ccode2num: ∀V0a. num2ccode (ccode2num V0a) = V0a
 (conjecture "thm_2Eieee_2Enum2ccode__ccode2num" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0a" "ty_2Eieee_2Eccode" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Enum2ccode" ("c_2Eieee_2Eccode2num" "V0a")) "V0a"))))
-; ieee.ccode2num_num2ccode
-; ∀r. r < 4 ⇔ (ccode2num (num2ccode r) = r)
+; ieee.ccode2num_num2ccode: ∀V0r. V0r < 4 ⇔ (ccode2num (num2ccode V0r) = V0r)
 (conjecture "thm_2Eieee_2Eccode2num__num2ccode" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" ("c_2Eieee_2Enum2ccode" "V0r")) "V0r")))))
-; ieee.num2ccode_11
-; ∀r r'. r < 4 ⇒ r' < 4 ⇒ ((num2ccode r = num2ccode r') ⇔ (r = r'))
+; ieee.num2ccode_11: ∀V0r V1r_27.     V0r < 4 ⇒     V1r_27 < 4 ⇒     ((num2ccode V0r = num2ccode V1r_27) ⇔ (V0r = V1r_27))
 (conjecture "thm_2Eieee_2Enum2ccode__11" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1r_27" "ty_2Enum_2Enum" ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Emin_2E_3D_3D_3E" ("c_2Eprim__rec_2E_3C" "V1r_27" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Enum2ccode" "V0r") ("c_2Eieee_2Enum2ccode" "V1r_27")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0r" "V1r_27")))))))))
-; ieee.ccode2num_11
-; ∀a a'. (ccode2num a = ccode2num a') ⇔ (a = a')
+; ieee.ccode2num_11: ∀V0a V1a_27. (ccode2num V0a = ccode2num V1a_27) ⇔ (V0a = V1a_27)
 (conjecture "thm_2Eieee_2Eccode2num__11" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0a" "ty_2Eieee_2Eccode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V1a_27" "ty_2Eieee_2Eccode" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" "V0a") ("c_2Eieee_2Eccode2num" "V1a_27")) (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0a" "V1a_27")))))))
-; ieee.num2ccode_ONTO
-; ∀a. ∃r. (a = num2ccode r) ∧ r < 4
+; ieee.num2ccode_ONTO: ∀V0a. ∃V1r. (V0a = num2ccode V1r) ∧ V1r < 4
 (conjecture "thm_2Eieee_2Enum2ccode__ONTO" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0a" "ty_2Eieee_2Eccode" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1r" "ty_2Enum_2Enum" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0a" ("c_2Eieee_2Enum2ccode" "V1r")) ("c_2Eprim__rec_2E_3C" "V1r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))))
-; ieee.ccode2num_ONTO
-; ∀r. r < 4 ⇔ ∃a. r = ccode2num a
+; ieee.ccode2num_ONTO: ∀V0r. V0r < 4 ⇔ ∃V1a. V0r = ccode2num V1a
 (conjecture "thm_2Eieee_2Eccode2num__ONTO" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0r" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eprim__rec_2E_3C" "V0r" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Ebool_2E_3F" "ty_2Eieee_2Eccode") (lambda "V1a" "ty_2Eieee_2Eccode" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V0r" ("c_2Eieee_2Eccode2num" "V1a"))))))))
-; ieee.num2ccode_thm
-; (num2ccode 0 = Gt) ∧ (num2ccode 1 = Lt) ∧ (num2ccode 2 = Eq) ∧ (num2ccode 3 = Un)
+; ieee.num2ccode_thm: (num2ccode 0 = Gt) ∧ (num2ccode 1 = Lt) ∧ (num2ccode 2 = Eq) ∧ (num2ccode 3 = Un)
 (conjecture "thm_2Eieee_2Enum2ccode__thm" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Enum2ccode" "c_2Enum_2E0") "c_2Eieee_2EGt") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Enum2ccode" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "c_2Eieee_2ELt") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Enum2ccode" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "c_2Eieee_2EEq") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Enum2ccode" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "c_2Eieee_2EUn")))))
-; ieee.ccode2num_thm
-; (ccode2num Gt = 0) ∧ (ccode2num Lt = 1) ∧ (ccode2num Eq = 2) ∧ (ccode2num Un = 3)
+; ieee.ccode2num_thm: (ccode2num Gt = 0) ∧ (ccode2num Lt = 1) ∧ (ccode2num Eq = 2) ∧ (ccode2num Un = 3)
 (conjecture "thm_2Eieee_2Eccode2num__thm" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" "c_2Eieee_2EGt") "c_2Enum_2E0") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" "c_2Eieee_2ELt") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" "c_2Eieee_2EEq") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" "c_2Eieee_2EUn") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))))))))
-; ieee.ccode_EQ_ccode
-; ∀a a'. (a = a') ⇔ (ccode2num a = ccode2num a')
+; ieee.ccode_EQ_ccode: ∀V0a V1a_27. (V0a = V1a_27) ⇔ (ccode2num V0a = ccode2num V1a_27)
 (conjecture "thm_2Eieee_2Eccode__EQ__ccode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0a" "ty_2Eieee_2Eccode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V1a_27" "ty_2Eieee_2Eccode" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0a" "V1a_27") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode2num" "V0a") ("c_2Eieee_2Eccode2num" "V1a_27"))))))))
-; ieee.ccode_size_def
-; ∀x. ccode_size x = 0
+; ieee.ccode_size_def: ∀V0x. ccode_size V0x = 0
 (axiom "thm_2Eieee_2Eccode__size__def" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0x" "ty_2Eieee_2Eccode" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Eccode__size" "V0x") "c_2Enum_2E0"))))
-; ieee.ccode_CASE
-; ∀x v0 v1 v2 v3.     (case x of Gt => v0 | Lt => v1 | Eq => v2 | Un => v3) =     (λm. if m < 1 then v0 else if m < 2 then v1 else if m = 2 then v2 else v3)       (ccode2num x)
+; ieee.ccode_CASE: ∀V0x V1v0 V2v1 V3v2 V4v3.     (case V0x of Gt => V1v0 | Lt => V2v1 | Eq => V3v2 | Un => V4v3) =     (λV5m.          if V5m < 1 then V1v0          else if V5m < 2 then V2v1          else if V5m = 2 then V3v2          else V4v3) (ccode2num V0x)
 (axiom "thm_2Eieee_2Eccode__CASE" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0x" "ty_2Eieee_2Eccode" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V4v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eccode__CASE" "A_27a") "V0x" "V1v0" "V2v1" "V3v2" "V4v3") ((lambda "V5m" "ty_2Enum_2Enum" (("c_2Ebool_2ECOND" "A_27a") ("c_2Eprim__rec_2E_3C" "V5m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO"))) "V1v0" (("c_2Ebool_2ECOND" "A_27a") ("c_2Eprim__rec_2E_3C" "V5m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "V2v1" (("c_2Ebool_2ECOND" "A_27a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") "V5m" ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))) "V3v2" "V4v3")))) ("c_2Eieee_2Eccode2num" "V0x")))))))))))))))
-; ieee.ccode_case_def
-; (∀v0 v1 v2 v3. (case Gt of Gt => v0 | Lt => v1 | Eq => v2 | Un => v3) = v0) ∧ (∀v0 v1 v2 v3. (case Lt of Gt => v0 | Lt => v1 | Eq => v2 | Un => v3) = v1) ∧ (∀v0 v1 v2 v3. (case Eq of Gt => v0 | Lt => v1 | Eq => v2 | Un => v3) = v2) ∧ ∀v0 v1 v2 v3. (case Un of Gt => v0 | Lt => v1 | Eq => v2 | Un => v3) = v3
+; ieee.ccode_case_def: (∀V0v0 V1v1 V2v2 V3v3.      (case Gt of Gt => V0v0 | Lt => V1v1 | Eq => V2v2 | Un => V3v3) = V0v0) ∧ (∀V4v0 V5v1 V6v2 V7v3.      (case Lt of Gt => V4v0 | Lt => V5v1 | Eq => V6v2 | Un => V7v3) = V5v1) ∧ (∀V8v0 V9v1 V10v2 V11v3.      (case Eq of Gt => V8v0 | Lt => V9v1 | Eq => V10v2 | Un => V11v3) = V10v2) ∧ ∀V12v0 V13v1 V14v2 V15v3.     (case Un of Gt => V12v0 | Lt => V13v1 | Eq => V14v2 | Un => V15v3) =     V15v3
 (conjecture "thm_2Eieee_2Eccode__case__def" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V0v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eccode__CASE" "A_27a") "c_2Eieee_2EGt" "V0v0" "V1v1" "V2v2" "V3v3") "V0v0"))))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V4v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V5v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V6v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V7v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eccode__CASE" "A_27a") "c_2Eieee_2ELt" "V4v0" "V5v1" "V6v2" "V7v3") "V5v1"))))))))) ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "A_27a") (lambda "V8v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V9v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V10v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V11v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eccode__CASE" "A_27a") "c_2Eieee_2EEq" "V8v0" "V9v1" "V10v2" "V11v3") "V10v2"))))))))) (("c_2Ebool_2E_21" "A_27a") (lambda "V12v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V13v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V14v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V15v3" "A_27a" (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eccode__CASE" "A_27a") "c_2Eieee_2EUn" "V12v0" "V13v1" "V14v2" "V15v3") "V15v3"))))))))))))))
-; ieee.datatype_ccode
-; DATATYPE (ccode Gt Lt Eq Un)
+; ieee.datatype_ccode: ∀V0ccode. DATATYPE (V0ccode Gt Lt Eq Un)
 (conjecture "thm_2Eieee_2Edatatype__ccode" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Emin_2Ebool"))))) (lambda "V0ccode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Emin_2Ebool")))) (("c_2Ebool_2EDATATYPE" "ty_2Emin_2Ebool") ("V0ccode" "c_2Eieee_2EGt" "c_2Eieee_2ELt" "c_2Eieee_2EEq" "c_2Eieee_2EUn")))))
-; ieee.ccode_distinct
-; Gt ≠ Lt ∧ Gt ≠ Eq ∧ Gt ≠ Un ∧ Lt ≠ Eq ∧ Lt ≠ Un ∧ Eq ≠ Un
+; ieee.ccode_distinct: Gt ≠ Lt ∧ Gt ≠ Eq ∧ Gt ≠ Un ∧ Lt ≠ Eq ∧ Lt ≠ Un ∧ Eq ≠ Un
 (conjecture "thm_2Eieee_2Eccode__distinct" ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "c_2Eieee_2EGt" "c_2Eieee_2ELt")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "c_2Eieee_2EGt" "c_2Eieee_2EEq")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "c_2Eieee_2EGt" "c_2Eieee_2EUn")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "c_2Eieee_2ELt" "c_2Eieee_2EEq")) ("c_2Ebool_2E_2F_5C" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "c_2Eieee_2ELt" "c_2Eieee_2EUn")) ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "c_2Eieee_2EEq" "c_2Eieee_2EUn"))))))))
-; ieee.ccode_nchotomy
-; ∀a. (a = Gt) ∨ (a = Lt) ∨ (a = Eq) ∨ (a = Un)
+; ieee.ccode_nchotomy: ∀V0a. (V0a = Gt) ∨ (V0a = Lt) ∨ (V0a = Eq) ∨ (V0a = Un)
 (conjecture "thm_2Eieee_2Eccode__nchotomy" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0a" "ty_2Eieee_2Eccode" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0a" "c_2Eieee_2EGt") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0a" "c_2Eieee_2ELt") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0a" "c_2Eieee_2EEq") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0a" "c_2Eieee_2EUn")))))))
-; ieee.ccode_Axiom
-; ∀x0 x1 x2 x3. ∃f. (f Gt = x0) ∧ (f Lt = x1) ∧ (f Eq = x2) ∧ (f Un = x3)
+; ieee.ccode_Axiom: ∀V0x0 V1x1 V2x2 V3x3.     ∃V4f.         (V4f Gt = V0x0) ∧ (V4f Lt = V1x1) ∧ (V4f Eq = V2x2) ∧ (V4f Un = V3x3)
 (conjecture "thm_2Eieee_2Eccode__Axiom" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0x0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1x1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2x2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3x3" "A_27a" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "A_27a")) (lambda "V4f" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2EGt") "V0x0") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2ELt") "V1x1") ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2EEq") "V2x2") (("c_2Emin_2E_3D" "A_27a") ("V4f" "c_2Eieee_2EUn") "V3x3"))))))))))))))))
-; ieee.ccode_induction
-; ∀P. P Eq ∧ P Gt ∧ P Lt ∧ P Un ⇒ ∀a. P a
+; ieee.ccode_induction: ∀V0P. V0P Eq ∧ V0P Gt ∧ V0P Lt ∧ V0P Un ⇒ ∀V1a. V0P V1a
 (conjecture "thm_2Eieee_2Eccode__induction" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Emin_2Ebool")) (lambda "V0P" ("ty_2Emin_2Efun" "ty_2Eieee_2Eccode" "ty_2Emin_2Ebool") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Eieee_2EEq") ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Eieee_2EGt") ("c_2Ebool_2E_2F_5C" ("V0P" "c_2Eieee_2ELt") ("V0P" "c_2Eieee_2EUn")))) (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V1a" "ty_2Eieee_2Eccode" ("V0P" "V1a")))))))
-; ieee.ccode_case_cong
-; ∀M M' v0 v1 v2 v3.     (M = M') ∧ ((M' = Gt) ⇒ (v0 = v0')) ∧ ((M' = Lt) ⇒ (v1 = v1')) ∧     ((M' = Eq) ⇒ (v2 = v2')) ∧ ((M' = Un) ⇒ (v3 = v3')) ⇒     ((case M of Gt => v0 | Lt => v1 | Eq => v2 | Un => v3) =      case M' of Gt => v0' | Lt => v1' | Eq => v2' | Un => v3')
+; ieee.ccode_case_cong: ∀V0v0_27 V1v1_27 V2v2_27 V3v3_27 V4M V5M_27 V6v0 V7v1 V8v2 V9v3.     (V4M = V5M_27) ∧ ((V5M_27 = Gt) ⇒ (V6v0 = V0v0_27)) ∧     ((V5M_27 = Lt) ⇒ (V7v1 = V1v1_27)) ∧ ((V5M_27 = Eq) ⇒ (V8v2 = V2v2_27)) ∧     ((V5M_27 = Un) ⇒ (V9v3 = V3v3_27)) ⇒     ((case V4M of Gt => V6v0 | Lt => V7v1 | Eq => V8v2 | Un => V9v3) =      case V5M_27 of        Gt => V0v0_27      | Lt => V1v1_27      | Eq => V2v2_27      | Un => V3v3_27)
 (conjecture "thm_2Eieee_2Eccode__case__cong" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "A_27a") (lambda "V0v0_27" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v1_27" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v2_27" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v3_27" "A_27a" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V4M" "ty_2Eieee_2Eccode" (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V5M_27" "ty_2Eieee_2Eccode" (("c_2Ebool_2E_21" "A_27a") (lambda "V6v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V7v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V8v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V9v3" "A_27a" ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V4M" "V5M_27") ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V5M_27" "c_2Eieee_2EGt") (("c_2Emin_2E_3D" "A_27a") "V6v0" "V0v0_27")) ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V5M_27" "c_2Eieee_2ELt") (("c_2Emin_2E_3D" "A_27a") "V7v1" "V1v1_27")) ("c_2Ebool_2E_2F_5C" ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V5M_27" "c_2Eieee_2EEq") (("c_2Emin_2E_3D" "A_27a") "V8v2" "V2v2_27")) ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V5M_27" "c_2Eieee_2EUn") (("c_2Emin_2E_3D" "A_27a") "V9v3" "V3v3_27")))))) (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eccode__CASE" "A_27a") "V4M" "V6v0" "V7v1" "V8v2" "V9v3") (("c_2Eieee_2Eccode__CASE" "A_27a") "V5M_27" "V0v0_27" "V1v1_27" "V2v2_27" "V3v3_27")))))))))))))))))))))))))
-; ieee.ccode_case_eq
-; ((case x of Gt => v0 | Lt => v1 | Eq => v2 | Un => v3) = v) ⇔ (x = Gt) ∧ (v0 = v) ∨ (x = Lt) ∧ (v1 = v) ∨ (x = Eq) ∧ (v2 = v) ∨ (x = Un) ∧ (v3 = v)
+; ieee.ccode_case_eq: ∀V0x V1v0 V2v1 V3v2 V4v3 V5v.     ((case V0x of Gt => V1v0 | Lt => V2v1 | Eq => V3v2 | Un => V4v3) = V5v) ⇔     (V0x = Gt) ∧ (V1v0 = V5v) ∨ (V0x = Lt) ∧ (V2v1 = V5v) ∨     (V0x = Eq) ∧ (V3v2 = V5v) ∨ (V0x = Un) ∧ (V4v3 = V5v)
 (conjecture "thm_2Eieee_2Eccode__case__eq" (forall_tyvarl_term ("A_27a") (("c_2Ebool_2E_21" "ty_2Eieee_2Eccode") (lambda "V0x" "ty_2Eieee_2Eccode" (("c_2Ebool_2E_21" "A_27a") (lambda "V1v0" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V2v1" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V3v2" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V4v3" "A_27a" (("c_2Ebool_2E_21" "A_27a") (lambda "V5v" "A_27a" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "A_27a") (("c_2Eieee_2Eccode__CASE" "A_27a") "V0x" "V1v0" "V2v1" "V3v2" "V4v3") "V5v") ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0x" "c_2Eieee_2EGt") (("c_2Emin_2E_3D" "A_27a") "V1v0" "V5v")) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0x" "c_2Eieee_2ELt") (("c_2Emin_2E_3D" "A_27a") "V2v1" "V5v")) ("c_2Ebool_2E_5C_2F" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0x" "c_2Eieee_2EEq") (("c_2Emin_2E_3D" "A_27a") "V3v2" "V5v")) ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") "V0x" "c_2Eieee_2EUn") (("c_2Emin_2E_3D" "A_27a") "V4v3" "V5v"))))))))))))))))))))
-; ieee.fcompare
-; ∀X a b.     fcompare X a b =     if is_nan X a ∨ is_nan X b then Un     else if is_infinity X a ∧ (sign a = 1) then       if is_infinity X b ∧ (sign b = 1) then Eq else Lt     else if is_infinity X a ∧ (sign a = 0) then       if is_infinity X b ∧ (sign b = 0) then Eq else Gt     else if is_infinity X b ∧ (sign b = 1) then Gt     else if is_infinity X b ∧ (sign b = 0) then Lt     else if valof X a < valof X b then Lt     else if valof X a = valof X b then Eq     else Gt
+; ieee.fcompare: ∀V0X V1a V2b.     fcompare V0X V1a V2b =     if is_nan V0X V1a ∨ is_nan V0X V2b then Un     else if is_infinity V0X V1a ∧ (sign V1a = 1) then       if is_infinity V0X V2b ∧ (sign V2b = 1) then Eq else Lt     else if is_infinity V0X V1a ∧ (sign V1a = 0) then       if is_infinity V0X V2b ∧ (sign V2b = 0) then Eq else Gt     else if is_infinity V0X V2b ∧ (sign V2b = 1) then Gt     else if is_infinity V0X V2b ∧ (sign V2b = 0) then Lt     else if valof V0X V1a < valof V0X V2b then Lt     else if valof V0X V1a = valof V0X V2b then Eq     else Gt
 (axiom "thm_2Eieee_2Efcompare" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2Eis__nan" "V0X" "V1a") ("c_2Eieee_2Eis__nan" "V0X" "V2b")) "c_2Eieee_2EUn" (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V1a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V1a") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2b") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "c_2Eieee_2EEq" "c_2Eieee_2ELt") (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V1a") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V1a") "c_2Enum_2E0")) (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2b") "c_2Enum_2E0")) "c_2Eieee_2EEq" "c_2Eieee_2EGt") (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2b") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) "c_2Eieee_2EGt" (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Ebool_2E_2F_5C" ("c_2Eieee_2Eis__infinity" "V0X" "V2b") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2Esign" "V2b") "c_2Enum_2E0")) "c_2Eieee_2ELt" (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") ("c_2Erealax_2Ereal__lt" ("c_2Eieee_2Evalof" "V0X" "V1a") ("c_2Eieee_2Evalof" "V0X" "V2b")) "c_2Eieee_2ELt" (("c_2Ebool_2ECOND" "ty_2Eieee_2Eccode") (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2Evalof" "V0X" "V1a") ("c_2Eieee_2Evalof" "V0X" "V2b")) "c_2Eieee_2EEq" "c_2Eieee_2EGt")))))))))))))))
-; ieee.flt
-; ∀X a b. flt X a b ⇔ (fcompare X a b = Lt)
+; ieee.flt: ∀V0X V1a V2b. flt V0X V1a V2b ⇔ (fcompare V0X V1a V2b = Lt)
 (axiom "thm_2Eieee_2Eflt" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eflt" "V0X" "V1a" "V2b") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") "c_2Eieee_2ELt")))))))))
-; ieee.fle
-; ∀X a b. fle X a b ⇔ (fcompare X a b = Lt) ∨ (fcompare X a b = Eq)
+; ieee.fle: ∀V0X V1a V2b.     fle V0X V1a V2b ⇔     (fcompare V0X V1a V2b = Lt) ∨ (fcompare V0X V1a V2b = Eq)
 (axiom "thm_2Eieee_2Efle" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efle" "V0X" "V1a" "V2b") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") "c_2Eieee_2ELt") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") "c_2Eieee_2EEq"))))))))))
-; ieee.fgt
-; ∀X a b. fgt X a b ⇔ (fcompare X a b = Gt)
+; ieee.fgt: ∀V0X V1a V2b. fgt V0X V1a V2b ⇔ (fcompare V0X V1a V2b = Gt)
 (axiom "thm_2Eieee_2Efgt" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efgt" "V0X" "V1a" "V2b") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") "c_2Eieee_2EGt")))))))))
-; ieee.fge
-; ∀X a b. fge X a b ⇔ (fcompare X a b = Gt) ∨ (fcompare X a b = Eq)
+; ieee.fge: ∀V0X V1a V2b.     fge V0X V1a V2b ⇔     (fcompare V0X V1a V2b = Gt) ∨ (fcompare V0X V1a V2b = Eq)
 (axiom "thm_2Eieee_2Efge" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efge" "V0X" "V1a" "V2b") ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") "c_2Eieee_2EGt") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") "c_2Eieee_2EEq"))))))))))
-; ieee.feq
-; ∀X a b. feq X a b ⇔ (fcompare X a b = Eq)
+; ieee.feq: ∀V0X V1a V2b. feq V0X V1a V2b ⇔ (fcompare V0X V1a V2b = Eq)
 (axiom "thm_2Eieee_2Efeq" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0X" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1a" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V2b" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efeq" "V0X" "V1a" "V2b") (("c_2Emin_2E_3D" "ty_2Eieee_2Eccode") ("c_2Eieee_2Efcompare" "V0X" "V1a" "V2b") "c_2Eieee_2EEq")))))))))
-; ieee.float_format
-; float_format = (8,23)
+; ieee.float_format: float_format = (8,23)
 (axiom "thm_2Eieee_2Efloat__format" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Eieee_2Efloat__format" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT2" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" "c_2Earithmetic_2EZERO")))) ("c_2Earithmetic_2ENUMERAL" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT1" ("c_2Earithmetic_2EBIT2" "c_2Earithmetic_2EZERO"))))))))
-; ieee.float_TY_DEF
-; ∃rep. TYPE_DEFINITION (is_valid float_format) rep
+; ieee.float_TY_DEF: ∃V0rep. TYPE_DEFINITION (is_valid float_format) V0rep
 (axiom "thm_2Eieee_2Efloat__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Eieee_2Efloat" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "ty_2Eieee_2Efloat") ("c_2Eieee_2Eis__valid" "c_2Eieee_2Efloat__format") "V0rep"))))
-; ieee.float_tybij
-; (∀a. float (defloat a) = a) ∧ ∀r. is_valid float_format r ⇔ (defloat (float r) = r)
+; ieee.float_tybij: (∀V0a. float (defloat V0a) = V0a) ∧ ∀V1r. is_valid float_format V1r ⇔ (defloat (float V1r) = V1r)
 (axiom "thm_2Eieee_2Efloat__tybij" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat" ("c_2Eieee_2Edefloat" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) (lambda "V1r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Eis__valid" "c_2Eieee_2Efloat__format" "V1r") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))) ("c_2Eieee_2Edefloat" ("c_2Eieee_2Efloat" "V1r")) "V1r"))))))
-; ieee.Val
-; ∀a. Val a = valof float_format (defloat a)
+; ieee.Val: ∀V0a. Val V0a = valof float_format (defloat V0a)
 (axiom "thm_2Eieee_2EVal" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2EVal" "V0a") ("c_2Eieee_2Evalof" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Float
-; ∀x. Float x = float (round float_format To_nearest x)
+; ieee.Float: ∀V0x. Float V0x = float (round float_format To_nearest V0x)
 (axiom "thm_2Eieee_2EFloat" (("c_2Ebool_2E_21" "ty_2Erealax_2Ereal") (lambda "V0x" "ty_2Erealax_2Ereal" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2EFloat" "V0x") ("c_2Eieee_2Efloat" ("c_2Eieee_2Eround" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" "V0x"))))))
-; ieee.Sign
-; ∀a. Sign a = sign (defloat a)
+; ieee.Sign: ∀V0a. Sign V0a = sign (defloat V0a)
 (axiom "thm_2Eieee_2ESign" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2ESign" "V0a") ("c_2Eieee_2Esign" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Exponent
-; ∀a. Exponent a = exponent (defloat a)
+; ieee.Exponent: ∀V0a. Exponent V0a = exponent (defloat V0a)
 (axiom "thm_2Eieee_2EExponent" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2EExponent" "V0a") ("c_2Eieee_2Eexponent" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Fraction
-; ∀a. Fraction a = fraction (defloat a)
+; ieee.Fraction: ∀V0a. Fraction V0a = fraction (defloat V0a)
 (axiom "thm_2Eieee_2EFraction" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Eieee_2EFraction" "V0a") ("c_2Eieee_2Efraction" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Ulp
-; ∀a. Ulp a = ulp float_format (defloat a)
+; ieee.Ulp: ∀V0a. Ulp V0a = ulp float_format (defloat V0a)
 (axiom "thm_2Eieee_2EUlp" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Erealax_2Ereal") ("c_2Eieee_2EUlp" "V0a") ("c_2Eieee_2Eulp" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Isnan
-; ∀a. Isnan a ⇔ is_nan float_format (defloat a)
+; ieee.Isnan: ∀V0a. Isnan V0a ⇔ is_nan float_format (defloat V0a)
 (axiom "thm_2Eieee_2EIsnan" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2EIsnan" "V0a") ("c_2Eieee_2Eis__nan" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Infinity
-; ∀a. Infinity a ⇔ is_infinity float_format (defloat a)
+; ieee.Infinity: ∀V0a. Infinity V0a ⇔ is_infinity float_format (defloat V0a)
 (axiom "thm_2Eieee_2EInfinity" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2EInfinity" "V0a") ("c_2Eieee_2Eis__infinity" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Isnormal
-; ∀a. Isnormal a ⇔ is_normal float_format (defloat a)
+; ieee.Isnormal: ∀V0a. Isnormal V0a ⇔ is_normal float_format (defloat V0a)
 (axiom "thm_2Eieee_2EIsnormal" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2EIsnormal" "V0a") ("c_2Eieee_2Eis__normal" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Isdenormal
-; ∀a. Isdenormal a ⇔ is_denormal float_format (defloat a)
+; ieee.Isdenormal: ∀V0a. Isdenormal V0a ⇔ is_denormal float_format (defloat V0a)
 (axiom "thm_2Eieee_2EIsdenormal" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2EIsdenormal" "V0a") ("c_2Eieee_2Eis__denormal" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Iszero
-; ∀a. Iszero a ⇔ is_zero float_format (defloat a)
+; ieee.Iszero: ∀V0a. Iszero V0a ⇔ is_zero float_format (defloat V0a)
 (axiom "thm_2Eieee_2EIszero" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2EIszero" "V0a") ("c_2Eieee_2Eis__zero" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Finite
-; ∀a. Finite a ⇔ Isnormal a ∨ Isdenormal a ∨ Iszero a
+; ieee.Finite: ∀V0a. Finite V0a ⇔ Isnormal V0a ∨ Isdenormal V0a ∨ Iszero V0a
 (axiom "thm_2Eieee_2EFinite" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2EFinite" "V0a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2EIsnormal" "V0a") ("c_2Ebool_2E_5C_2F" ("c_2Eieee_2EIsdenormal" "V0a") ("c_2Eieee_2EIszero" "V0a")))))))
-; ieee.Isintegral
-; ∀a. Isintegral a ⇔ is_integral float_format (defloat a)
+; ieee.Isintegral: ∀V0a. Isintegral V0a ⇔ is_integral float_format (defloat V0a)
 (axiom "thm_2Eieee_2EIsintegral" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2EIsintegral" "V0a") ("c_2Eieee_2Eis__integral" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a"))))))
-; ieee.Plus_zero
-; Plus_zero = float (plus_zero float_format)
+; ieee.Plus_zero: Plus_zero = float (plus_zero float_format)
 (axiom "thm_2Eieee_2EPlus__zero" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") "c_2Eieee_2EPlus__zero" ("c_2Eieee_2Efloat" ("c_2Eieee_2Eplus__zero" "c_2Eieee_2Efloat__format"))))
-; ieee.Minus_zero
-; Minus_zero = float (minus_zero float_format)
+; ieee.Minus_zero: Minus_zero = float (minus_zero float_format)
 (axiom "thm_2Eieee_2EMinus__zero" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") "c_2Eieee_2EMinus__zero" ("c_2Eieee_2Efloat" ("c_2Eieee_2Eminus__zero" "c_2Eieee_2Efloat__format"))))
-; ieee.Minus_infinity
-; Minus_infinity = float (minus_infinity float_format)
+; ieee.Minus_infinity: Minus_infinity = float (minus_infinity float_format)
 (axiom "thm_2Eieee_2EMinus__infinity" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") "c_2Eieee_2EMinus__infinity" ("c_2Eieee_2Efloat" ("c_2Eieee_2Eminus__infinity" "c_2Eieee_2Efloat__format"))))
-; ieee.Plus_infinity
-; Plus_infinity = float (plus_infinity float_format)
+; ieee.Plus_infinity: Plus_infinity = float (plus_infinity float_format)
 (axiom "thm_2Eieee_2EPlus__infinity" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") "c_2Eieee_2EPlus__infinity" ("c_2Eieee_2Efloat" ("c_2Eieee_2Eplus__infinity" "c_2Eieee_2Efloat__format"))))
-; ieee.float_add
-; ∀a b. a + b = float (fadd float_format To_nearest (defloat a) (defloat b))
+; ieee.float_add: ∀V0a V1b.     V0a + V1b =     float (fadd float_format To_nearest (defloat V0a) (defloat V1b))
 (axiom "thm_2Eieee_2Efloat__add" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__add" "V0a" "V1b") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efadd" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b")))))))))
-; ieee.float_sub
-; ∀a b. a − b = float (fsub float_format To_nearest (defloat a) (defloat b))
+; ieee.float_sub: ∀V0a V1b.     V0a − V1b =     float (fsub float_format To_nearest (defloat V0a) (defloat V1b))
 (axiom "thm_2Eieee_2Efloat__sub" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__sub" "V0a" "V1b") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efsub" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b")))))))))
-; ieee.float_mul
-; ∀a b. a * b = float (fmul float_format To_nearest (defloat a) (defloat b))
+; ieee.float_mul: ∀V0a V1b.     V0a * V1b =     float (fmul float_format To_nearest (defloat V0a) (defloat V1b))
 (axiom "thm_2Eieee_2Efloat__mul" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__mul" "V0a" "V1b") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efmul" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b")))))))))
-; ieee.float_div
-; ∀a b. a / b = float (fdiv float_format To_nearest (defloat a) (defloat b))
+; ieee.float_div: ∀V0a V1b.     V0a / V1b =     float (fdiv float_format To_nearest (defloat V0a) (defloat V1b))
 (axiom "thm_2Eieee_2Efloat__div" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__div" "V0a" "V1b") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efdiv" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b")))))))))
-; ieee.float_rem
-; ∀a b.     a float_rem b =     float (frem float_format To_nearest (defloat a) (defloat b))
+; ieee.float_rem: ∀V0a V1b.     V0a float_rem V1b =     float (frem float_format To_nearest (defloat V0a) (defloat V1b))
 (axiom "thm_2Eieee_2Efloat__rem" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__rem" "V0a" "V1b") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efrem" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b")))))))))
-; ieee.float_sqrt
-; ∀a. float_sqrt a = float (fsqrt float_format To_nearest (defloat a))
+; ieee.float_sqrt: ∀V0a. float_sqrt V0a = float (fsqrt float_format To_nearest (defloat V0a))
 (axiom "thm_2Eieee_2Efloat__sqrt" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__sqrt" "V0a") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efsqrt" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a")))))))
-; ieee.ROUNDFLOAT
-; ∀a. ROUNDFLOAT a = float (fintrnd float_format To_nearest (defloat a))
+; ieee.ROUNDFLOAT: ∀V0a. ROUNDFLOAT V0a = float (fintrnd float_format To_nearest (defloat V0a))
 (axiom "thm_2Eieee_2EROUNDFLOAT" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2EROUNDFLOAT" "V0a") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efintrnd" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a")))))))
-; ieee.float_lt
-; ∀a b. a < b ⇔ flt float_format (defloat a) (defloat b)
+; ieee.float_lt: ∀V0a V1b. V0a < V1b ⇔ flt float_format (defloat V0a) (defloat V1b)
 (axiom "thm_2Eieee_2Efloat__lt" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efloat__lt" "V0a" "V1b") ("c_2Eieee_2Eflt" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b"))))))))
-; ieee.float_le
-; ∀a b. a ≤ b ⇔ fle float_format (defloat a) (defloat b)
+; ieee.float_le: ∀V0a V1b. V0a ≤ V1b ⇔ fle float_format (defloat V0a) (defloat V1b)
 (axiom "thm_2Eieee_2Efloat__le" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efloat__le" "V0a" "V1b") ("c_2Eieee_2Efle" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b"))))))))
-; ieee.float_gt
-; ∀a b. a > b ⇔ fgt float_format (defloat a) (defloat b)
+; ieee.float_gt: ∀V0a V1b. V0a > V1b ⇔ fgt float_format (defloat V0a) (defloat V1b)
 (axiom "thm_2Eieee_2Efloat__gt" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efloat__gt" "V0a" "V1b") ("c_2Eieee_2Efgt" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b"))))))))
-; ieee.float_ge
-; ∀a b. a ≥ b ⇔ fge float_format (defloat a) (defloat b)
+; ieee.float_ge: ∀V0a V1b. V0a ≥ V1b ⇔ fge float_format (defloat V0a) (defloat V1b)
 (axiom "thm_2Eieee_2Efloat__ge" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efloat__ge" "V0a" "V1b") ("c_2Eieee_2Efge" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b"))))))))
-; ieee.float_eq
-; ∀a b. a == b ⇔ feq float_format (defloat a) (defloat b)
+; ieee.float_eq: ∀V0a V1b. V0a == V1b ⇔ feq float_format (defloat V0a) (defloat V1b)
 (axiom "thm_2Eieee_2Efloat__eq" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V1b" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Eieee_2Efloat__eq" "V0a" "V1b") ("c_2Eieee_2Efeq" "c_2Eieee_2Efloat__format" ("c_2Eieee_2Edefloat" "V0a") ("c_2Eieee_2Edefloat" "V1b"))))))))
-; ieee.float_neg
-; ∀a. ¬a = float (fneg float_format To_nearest (defloat a))
+; ieee.float_neg: ∀V0a. ¬V0a = float (fneg float_format To_nearest (defloat V0a))
 (axiom "thm_2Eieee_2Efloat__neg" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__neg" "V0a") ("c_2Eieee_2Efloat" ("c_2Eieee_2Efneg" "c_2Eieee_2Efloat__format" "c_2Eieee_2ETo__nearest" ("c_2Eieee_2Edefloat" "V0a")))))))
-; ieee.float_abs
-; ∀a. float_abs a = if a ≥ Plus_zero then a else ¬a
+; ieee.float_abs: ∀V0a. float_abs V0a = if V0a ≥ Plus_zero then V0a else ¬V0a
 (axiom "thm_2Eieee_2Efloat__abs" (("c_2Ebool_2E_21" "ty_2Eieee_2Efloat") (lambda "V0a" "ty_2Eieee_2Efloat" (("c_2Emin_2E_3D" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__abs" "V0a") (("c_2Ebool_2ECOND" "ty_2Eieee_2Efloat") ("c_2Eieee_2Efloat__ge" "V0a" "c_2Eieee_2EPlus__zero") "V0a" ("c_2Eieee_2Efloat__neg" "V0a"))))))

@@ -1,0 +1,5 @@
+mv export_sexpr casc_sexpr_hol4
+cd casc_sexpr_hol4
+rename 's/\.pb$//' *.pb
+mv theory_order.info  theory_order
+sed 's/ /\n/g' theory_order > theories

@@ -1,12 +1,9 @@
 (type_definition "ty_2Emin_2Ebool" 0)
 (type_definition "ty_2Emin_2Efun" 2)
 (type_definition "ty_2Emin_2Eind" 0)
-; c.min.=
-; :α -> α -> bool
+; c.min.=: :α -> α -> bool
 (constant_definition "c_2Emin_2E_3D" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" "A_27a" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool"))))
-; c.min.==>
-; :bool -> bool -> bool
+; c.min.==>: :bool -> bool -> bool
 (constant_definition "c_2Emin_2E_3D_3D_3E" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Emin_2Ebool")))
-; c.min.@
-; :(α -> bool) -> α
+; c.min.@: :(α -> bool) -> α
 (constant_definition "c_2Emin_2E_40" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Emin_2Ebool") "A_27a")))

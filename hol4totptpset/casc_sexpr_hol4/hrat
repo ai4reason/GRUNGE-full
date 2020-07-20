@@ -1,202 +1,135 @@
 (type_definition "ty_2Ehrat_2Ehrat" 0)
-; c.hrat.hrat_1
-; :hrat
+; c.hrat.hrat_1: :hrat
 (constant_definition "c_2Ehrat_2Ehrat__1" "ty_2Ehrat_2Ehrat")
-; c.hrat.hrat_ABS
-; :num # num -> hrat
+; c.hrat.hrat_ABS: :num # num -> hrat
 (constant_definition "c_2Ehrat_2Ehrat__ABS" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Ehrat_2Ehrat"))
-; c.hrat.hrat_ABS_CLASS
-; :(num # num -> bool) -> hrat
+; c.hrat.hrat_ABS_CLASS: :(num # num -> bool) -> hrat
 (constant_definition "c_2Ehrat_2Ehrat__ABS__CLASS" ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") "ty_2Ehrat_2Ehrat"))
-; c.hrat.hrat_REP
-; :hrat -> num # num
+; c.hrat.hrat_REP: :hrat -> num # num
 (constant_definition "c_2Ehrat_2Ehrat__REP" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
-; c.hrat.hrat_REP_CLASS
-; :hrat -> num # num -> bool
+; c.hrat.hrat_REP_CLASS: :hrat -> num # num -> bool
 (constant_definition "c_2Ehrat_2Ehrat__REP__CLASS" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")))
-; c.hrat.hrat_add
-; :hrat -> hrat -> hrat
+; c.hrat.hrat_add: :hrat -> hrat -> hrat
 (constant_definition "c_2Ehrat_2Ehrat__add" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" "ty_2Ehrat_2Ehrat")))
-; c.hrat.hrat_inv
-; :hrat -> hrat
+; c.hrat.hrat_inv: :hrat -> hrat
 (constant_definition "c_2Ehrat_2Ehrat__inv" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" "ty_2Ehrat_2Ehrat"))
-; c.hrat.hrat_mul
-; :hrat -> hrat -> hrat
+; c.hrat.hrat_mul: :hrat -> hrat -> hrat
 (constant_definition "c_2Ehrat_2Ehrat__mul" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" "ty_2Ehrat_2Ehrat")))
-; c.hrat.hrat_sucint
-; :num -> hrat
+; c.hrat.hrat_sucint: :num -> hrat
 (constant_definition "c_2Ehrat_2Ehrat__sucint" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" "ty_2Ehrat_2Ehrat"))
-; c.hrat.trat_1
-; :num # num
+; c.hrat.trat_1: :num # num
 (constant_definition "c_2Ehrat_2Etrat__1" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))
-; c.hrat.trat_add
-; :num # num -> num # num -> num # num
+; c.hrat.trat_add: :num # num -> num # num -> num # num
 (constant_definition "c_2Ehrat_2Etrat__add" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.hrat.trat_eq
-; :num # num -> num # num -> bool
+; c.hrat.trat_eq: :num # num -> num # num -> bool
 (constant_definition "c_2Ehrat_2Etrat__eq" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")))
-; c.hrat.trat_inv
-; :num # num -> num # num
+; c.hrat.trat_inv: :num # num -> num # num
 (constant_definition "c_2Ehrat_2Etrat__inv" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
-; c.hrat.trat_mul
-; :num # num -> num # num -> num # num
+; c.hrat.trat_mul: :num # num -> num # num -> num # num
 (constant_definition "c_2Ehrat_2Etrat__mul" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum"))))
-; c.hrat.trat_sucint
-; :num -> num # num
+; c.hrat.trat_sucint: :num -> num # num
 (constant_definition "c_2Ehrat_2Etrat__sucint" ("ty_2Emin_2Efun" "ty_2Enum_2Enum" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")))
-; hrat.trat_1
-; trat_1 = (0,0)
+; hrat.trat_1: trat_1 = (0,0)
 (axiom "thm_2Ehrat_2Etrat__1" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "c_2Ehrat_2Etrat__1" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "c_2Enum_2E0" "c_2Enum_2E0")))
-; hrat.trat_inv
-; ∀x y. trat_inv (x,y) = (y,x)
+; hrat.trat_inv: ∀V0x V1y. trat_inv (V0x,V1y) = (V1y,V0x)
 (axiom "thm_2Ehrat_2Etrat__inv" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1y" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Etrat__inv" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V0x" "V1y")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V1y" "V0x")))))))
-; hrat.trat_add
-; ∀x y x' y'.     (x,y) trat_add (x',y') =     (PRE (SUC x * SUC y' + SUC x' * SUC y),PRE (SUC y * SUC y'))
+; hrat.trat_add: ∀V0x V1y V2x_27 V3y_27.     (V0x,V1y) trat_add (V2x_27,V3y_27) =     (PRE (SUC V0x * SUC V3y_27 + SUC V2x_27 * SUC V1y),      PRE (SUC V1y * SUC V3y_27))
 (axiom "thm_2Ehrat_2Etrat__add" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1y" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x_27" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3y_27" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Etrat__add" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V0x" "V1y") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V2x_27" "V3y_27")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eprim__rec_2EPRE" ("c_2Earithmetic_2E_2B" ("c_2Earithmetic_2E_2A" ("c_2Enum_2ESUC" "V0x") ("c_2Enum_2ESUC" "V3y_27")) ("c_2Earithmetic_2E_2A" ("c_2Enum_2ESUC" "V2x_27") ("c_2Enum_2ESUC" "V1y")))) ("c_2Eprim__rec_2EPRE" ("c_2Earithmetic_2E_2A" ("c_2Enum_2ESUC" "V1y") ("c_2Enum_2ESUC" "V3y_27"))))))))))))))
-; hrat.trat_mul
-; ∀x y x' y'.     (x,y) trat_mul (x',y') = (PRE (SUC x * SUC x'),PRE (SUC y * SUC y'))
+; hrat.trat_mul: ∀V0x V1y V2x_27 V3y_27.     (V0x,V1y) trat_mul (V2x_27,V3y_27) =     (PRE (SUC V0x * SUC V2x_27),PRE (SUC V1y * SUC V3y_27))
 (axiom "thm_2Ehrat_2Etrat__mul" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1y" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x_27" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3y_27" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Etrat__mul" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V0x" "V1y") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V2x_27" "V3y_27")) (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Eprim__rec_2EPRE" ("c_2Earithmetic_2E_2A" ("c_2Enum_2ESUC" "V0x") ("c_2Enum_2ESUC" "V2x_27"))) ("c_2Eprim__rec_2EPRE" ("c_2Earithmetic_2E_2A" ("c_2Enum_2ESUC" "V1y") ("c_2Enum_2ESUC" "V3y_27"))))))))))))))
-; hrat.trat_sucint
-; (trat_sucint 0 = trat_1) ∧ ∀n. trat_sucint (SUC n) = trat_sucint n trat_add trat_1
+; hrat.trat_sucint: (trat_sucint 0 = trat_1) ∧ ∀V0n. trat_sucint (SUC V0n) = trat_sucint V0n trat_add trat_1
 (axiom "thm_2Ehrat_2Etrat__sucint" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Etrat__sucint" "c_2Enum_2E0") "c_2Ehrat_2Etrat__1") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Etrat__sucint" ("c_2Enum_2ESUC" "V0n")) ("c_2Ehrat_2Etrat__add" ("c_2Ehrat_2Etrat__sucint" "V0n") "c_2Ehrat_2Etrat__1"))))))
-; hrat.trat_eq
-; ∀x y x' y'. trat_eq (x,y) (x',y') ⇔ (SUC x * SUC y' = SUC x' * SUC y)
+; hrat.trat_eq: ∀V0x V1y V2x_27 V3y_27.     trat_eq (V0x,V1y) (V2x_27,V3y_27) ⇔     (SUC V0x * SUC V3y_27 = SUC V2x_27 * SUC V1y)
 (axiom "thm_2Ehrat_2Etrat__eq" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0x" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V1y" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V2x_27" "ty_2Enum_2Enum" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V3y_27" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ehrat_2Etrat__eq" (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V0x" "V1y") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V2x_27" "V3y_27")) (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2Earithmetic_2E_2A" ("c_2Enum_2ESUC" "V0x") ("c_2Enum_2ESUC" "V3y_27")) ("c_2Earithmetic_2E_2A" ("c_2Enum_2ESUC" "V2x_27") ("c_2Enum_2ESUC" "V1y")))))))))))))
-; hrat.TRAT_EQ_REFL
-; ∀p. trat_eq p p
+; hrat.TRAT_EQ_REFL: ∀V0p. trat_eq V0p V0p
 (conjecture "thm_2Ehrat_2ETRAT__EQ__REFL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" "V0p" "V0p"))))
-; hrat.TRAT_EQ_SYM
-; ∀p q. trat_eq p q ⇔ trat_eq q p
+; hrat.TRAT_EQ_SYM: ∀V0p V1q. trat_eq V0p V1q ⇔ trat_eq V1q V0p
 (conjecture "thm_2Ehrat_2ETRAT__EQ__SYM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ehrat_2Etrat__eq" "V0p" "V1q") ("c_2Ehrat_2Etrat__eq" "V1q" "V0p")))))))
-; hrat.TRAT_EQ_TRANS
-; ∀p q r. trat_eq p q ∧ trat_eq q r ⇒ trat_eq p r
+; hrat.TRAT_EQ_TRANS: ∀V0p V1q V2r. trat_eq V0p V1q ∧ trat_eq V1q V2r ⇒ trat_eq V0p V2r
 (conjecture "thm_2Ehrat_2ETRAT__EQ__TRANS" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ehrat_2Etrat__eq" "V0p" "V1q") ("c_2Ehrat_2Etrat__eq" "V1q" "V2r")) ("c_2Ehrat_2Etrat__eq" "V0p" "V2r")))))))))
-; hrat.TRAT_EQ_AP
-; ∀p q. (p = q) ⇒ trat_eq p q
+; hrat.TRAT_EQ_AP: ∀V0p V1q. (V0p = V1q) ⇒ trat_eq V0p V1q
 (conjecture "thm_2Ehrat_2ETRAT__EQ__AP" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) "V0p" "V1q") ("c_2Ehrat_2Etrat__eq" "V0p" "V1q")))))))
-; hrat.TRAT_ADD_SYM_EQ
-; ∀h i. h trat_add i = i trat_add h
+; hrat.TRAT_ADD_SYM_EQ: ∀V0h V1i. V0h trat_add V1i = V1i trat_add V0h
 (conjecture "thm_2Ehrat_2ETRAT__ADD__SYM__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Etrat__add" "V0h" "V1i") ("c_2Ehrat_2Etrat__add" "V1i" "V0h")))))))
-; hrat.TRAT_MUL_SYM_EQ
-; ∀h i. h trat_mul i = i trat_mul h
+; hrat.TRAT_MUL_SYM_EQ: ∀V0h V1i. V0h trat_mul V1i = V1i trat_mul V0h
 (conjecture "thm_2Ehrat_2ETRAT__MUL__SYM__EQ" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Etrat__mul" "V0h" "V1i") ("c_2Ehrat_2Etrat__mul" "V1i" "V0h")))))))
-; hrat.TRAT_INV_WELLDEFINED
-; ∀p q. trat_eq p q ⇒ trat_eq (trat_inv p) (trat_inv q)
+; hrat.TRAT_INV_WELLDEFINED: ∀V0p V1q. trat_eq V0p V1q ⇒ trat_eq (trat_inv V0p) (trat_inv V1q)
 (conjecture "thm_2Ehrat_2ETRAT__INV__WELLDEFINED" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ehrat_2Etrat__eq" "V0p" "V1q") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__inv" "V0p") ("c_2Ehrat_2Etrat__inv" "V1q"))))))))
-; hrat.TRAT_ADD_WELLDEFINED
-; ∀p q r. trat_eq p q ⇒ trat_eq (p trat_add r) (q trat_add r)
+; hrat.TRAT_ADD_WELLDEFINED: ∀V0p V1q V2r. trat_eq V0p V1q ⇒ trat_eq (V0p trat_add V2r) (V1q trat_add V2r)
 (conjecture "thm_2Ehrat_2ETRAT__ADD__WELLDEFINED" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ehrat_2Etrat__eq" "V0p" "V1q") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__add" "V0p" "V2r") ("c_2Ehrat_2Etrat__add" "V1q" "V2r"))))))))))
-; hrat.TRAT_ADD_WELLDEFINED2
-; ∀p1 p2 q1 q2.     trat_eq p1 p2 ∧ trat_eq q1 q2 ⇒ trat_eq (p1 trat_add q1) (p2 trat_add q2)
+; hrat.TRAT_ADD_WELLDEFINED2: ∀V0p1 V1p2 V2q1 V3q2.     trat_eq V0p1 V1p2 ∧ trat_eq V2q1 V3q2 ⇒     trat_eq (V0p1 trat_add V2q1) (V1p2 trat_add V3q2)
 (conjecture "thm_2Ehrat_2ETRAT__ADD__WELLDEFINED2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p1" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1p2" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2q1" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V3q2" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ehrat_2Etrat__eq" "V0p1" "V1p2") ("c_2Ehrat_2Etrat__eq" "V2q1" "V3q2")) ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__add" "V0p1" "V2q1") ("c_2Ehrat_2Etrat__add" "V1p2" "V3q2"))))))))))))
-; hrat.TRAT_MUL_WELLDEFINED
-; ∀p q r. trat_eq p q ⇒ trat_eq (p trat_mul r) (q trat_mul r)
+; hrat.TRAT_MUL_WELLDEFINED: ∀V0p V1q V2r. trat_eq V0p V1q ⇒ trat_eq (V0p trat_mul V2r) (V1q trat_mul V2r)
 (conjecture "thm_2Ehrat_2ETRAT__MUL__WELLDEFINED" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ehrat_2Etrat__eq" "V0p" "V1q") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__mul" "V0p" "V2r") ("c_2Ehrat_2Etrat__mul" "V1q" "V2r"))))))))))
-; hrat.TRAT_MUL_WELLDEFINED2
-; ∀p1 p2 q1 q2.     trat_eq p1 p2 ∧ trat_eq q1 q2 ⇒ trat_eq (p1 trat_mul q1) (p2 trat_mul q2)
+; hrat.TRAT_MUL_WELLDEFINED2: ∀V0p1 V1p2 V2q1 V3q2.     trat_eq V0p1 V1p2 ∧ trat_eq V2q1 V3q2 ⇒     trat_eq (V0p1 trat_mul V2q1) (V1p2 trat_mul V3q2)
 (conjecture "thm_2Ehrat_2ETRAT__MUL__WELLDEFINED2" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p1" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1p2" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2q1" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V3q2" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Emin_2E_3D_3D_3E" ("c_2Ebool_2E_2F_5C" ("c_2Ehrat_2Etrat__eq" "V0p1" "V1p2") ("c_2Ehrat_2Etrat__eq" "V2q1" "V3q2")) ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__mul" "V0p1" "V2q1") ("c_2Ehrat_2Etrat__mul" "V1p2" "V3q2"))))))))))))
-; hrat.TRAT_ADD_SYM
-; ∀h i. trat_eq (h trat_add i) (i trat_add h)
+; hrat.TRAT_ADD_SYM: ∀V0h V1i. trat_eq (V0h trat_add V1i) (V1i trat_add V0h)
 (conjecture "thm_2Ehrat_2ETRAT__ADD__SYM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__add" "V0h" "V1i") ("c_2Ehrat_2Etrat__add" "V1i" "V0h")))))))
-; hrat.TRAT_ADD_ASSOC
-; ∀h i j. trat_eq (h trat_add (i trat_add j)) (h trat_add i trat_add j)
+; hrat.TRAT_ADD_ASSOC: ∀V0h V1i V2j.     trat_eq (V0h trat_add (V1i trat_add V2j)) (V0h trat_add V1i trat_add V2j)
 (conjecture "thm_2Ehrat_2ETRAT__ADD__ASSOC" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2j" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__add" "V0h" ("c_2Ehrat_2Etrat__add" "V1i" "V2j")) ("c_2Ehrat_2Etrat__add" ("c_2Ehrat_2Etrat__add" "V0h" "V1i") "V2j")))))))))
-; hrat.TRAT_MUL_SYM
-; ∀h i. trat_eq (h trat_mul i) (i trat_mul h)
+; hrat.TRAT_MUL_SYM: ∀V0h V1i. trat_eq (V0h trat_mul V1i) (V1i trat_mul V0h)
 (conjecture "thm_2Ehrat_2ETRAT__MUL__SYM" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__mul" "V0h" "V1i") ("c_2Ehrat_2Etrat__mul" "V1i" "V0h")))))))
-; hrat.TRAT_MUL_ASSOC
-; ∀h i j. trat_eq (h trat_mul (i trat_mul j)) (h trat_mul i trat_mul j)
+; hrat.TRAT_MUL_ASSOC: ∀V0h V1i V2j.     trat_eq (V0h trat_mul (V1i trat_mul V2j)) (V0h trat_mul V1i trat_mul V2j)
 (conjecture "thm_2Ehrat_2ETRAT__MUL__ASSOC" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2j" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__mul" "V0h" ("c_2Ehrat_2Etrat__mul" "V1i" "V2j")) ("c_2Ehrat_2Etrat__mul" ("c_2Ehrat_2Etrat__mul" "V0h" "V1i") "V2j")))))))))
-; hrat.TRAT_LDISTRIB
-; ∀h i j.     trat_eq (h trat_mul (i trat_add j)) (h trat_mul i trat_add h trat_mul j)
+; hrat.TRAT_LDISTRIB: ∀V0h V1i V2j.     trat_eq (V0h trat_mul (V1i trat_add V2j))       (V0h trat_mul V1i trat_add V0h trat_mul V2j)
 (conjecture "thm_2Ehrat_2ETRAT__LDISTRIB" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2j" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__mul" "V0h" ("c_2Ehrat_2Etrat__add" "V1i" "V2j")) ("c_2Ehrat_2Etrat__add" ("c_2Ehrat_2Etrat__mul" "V0h" "V1i") ("c_2Ehrat_2Etrat__mul" "V0h" "V2j"))))))))))
-; hrat.TRAT_MUL_LID
-; ∀h. trat_eq (trat_1 trat_mul h) h
+; hrat.TRAT_MUL_LID: ∀V0h. trat_eq (trat_1 trat_mul V0h) V0h
 (conjecture "thm_2Ehrat_2ETRAT__MUL__LID" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__mul" "c_2Ehrat_2Etrat__1" "V0h") "V0h"))))
-; hrat.TRAT_MUL_LINV
-; ∀h. trat_eq (trat_inv h trat_mul h) trat_1
+; hrat.TRAT_MUL_LINV: ∀V0h. trat_eq (trat_inv V0h trat_mul V0h) trat_1
 (conjecture "thm_2Ehrat_2ETRAT__MUL__LINV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__mul" ("c_2Ehrat_2Etrat__inv" "V0h") "V0h") "c_2Ehrat_2Etrat__1"))))
-; hrat.TRAT_NOZERO
-; ∀h i. ¬trat_eq (h trat_add i) h
+; hrat.TRAT_NOZERO: ∀V0h V1i. ¬trat_eq (V0h trat_add V1i) V0h
 (conjecture "thm_2Ehrat_2ETRAT__NOZERO" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ebool_2E_7E" ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__add" "V0h" "V1i") "V0h")))))))
-; hrat.TRAT_ADD_TOTAL
-; ∀h i.     trat_eq h i ∨ (∃d. trat_eq h (i trat_add d)) ∨     ∃d. trat_eq i (h trat_add d)
+; hrat.TRAT_ADD_TOTAL: ∀V0h V1i.     trat_eq V0h V1i ∨ (∃V2d. trat_eq V0h (V1i trat_add V2d)) ∨     ∃V3d. trat_eq V1i (V0h trat_add V3d)
 (conjecture "thm_2Ehrat_2ETRAT__ADD__TOTAL" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1i" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ebool_2E_5C_2F" ("c_2Ehrat_2Etrat__eq" "V0h" "V1i") ("c_2Ebool_2E_5C_2F" (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2d" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" "V0h" ("c_2Ehrat_2Etrat__add" "V1i" "V2d")))) (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V3d" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" "V1i" ("c_2Ehrat_2Etrat__add" "V0h" "V3d")))))))))))
-; hrat.TRAT_SUCINT_0
-; ∀n. trat_eq (trat_sucint n) (n,0)
+; hrat.TRAT_SUCINT_0: ∀V0n. trat_eq (trat_sucint V0n) (V0n,0)
 (conjecture "thm_2Ehrat_2ETRAT__SUCINT__0" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__sucint" "V0n") (("c_2Epair_2E_2C" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "V0n" "c_2Enum_2E0")))))
-; hrat.TRAT_ARCH
-; ∀h. ∃n d. trat_eq (trat_sucint n) (h trat_add d)
+; hrat.TRAT_ARCH: ∀V0h. ∃V1n V2d. trat_eq (trat_sucint V1n) (V0h trat_add V2d)
 (conjecture "thm_2Ehrat_2ETRAT__ARCH" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0h" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2d" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__sucint" "V1n") ("c_2Ehrat_2Etrat__add" "V0h" "V2d")))))))))
-; hrat.TRAT_SUCINT
-; trat_eq (trat_sucint 0) trat_1 ∧ ∀n. trat_eq (trat_sucint (SUC n)) (trat_sucint n trat_add trat_1)
+; hrat.TRAT_SUCINT: trat_eq (trat_sucint 0) trat_1 ∧ ∀V0n. trat_eq (trat_sucint (SUC V0n)) (trat_sucint V0n trat_add trat_1)
 (conjecture "thm_2Ehrat_2ETRAT__SUCINT" ("c_2Ebool_2E_2F_5C" ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__sucint" "c_2Enum_2E0") "c_2Ehrat_2Etrat__1") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" ("c_2Ehrat_2Etrat__eq" ("c_2Ehrat_2Etrat__sucint" ("c_2Enum_2ESUC" "V0n")) ("c_2Ehrat_2Etrat__add" ("c_2Ehrat_2Etrat__sucint" "V0n") "c_2Ehrat_2Etrat__1"))))))
-; hrat.TRAT_EQ_EQUIV
-; ∀p q. trat_eq p q ⇔ (trat_eq p = trat_eq q)
+; hrat.TRAT_EQ_EQUIV: ∀V0p V1q. trat_eq V0p V1q ⇔ (trat_eq V0p = trat_eq V1q)
 (conjecture "thm_2Ehrat_2ETRAT__EQ__EQUIV" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0p" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V1q" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ("c_2Ehrat_2Etrat__eq" "V0p" "V1q") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) ("c_2Ehrat_2Etrat__eq" "V0p") ("c_2Ehrat_2Etrat__eq" "V1q"))))))))
-; hrat.hrat_TY_DEF
-; ∃rep. TYPE_DEFINITION (λc. ∃r. trat_eq r r ∧ (c = trat_eq r)) rep
+; hrat.hrat_TY_DEF: ∃V0rep.     TYPE_DEFINITION (λV1c. ∃V2r. trat_eq V2r V2r ∧ (V1c = trat_eq V2r)) V0rep
 (axiom "thm_2Ehrat_2Ehrat__TY__DEF" (("c_2Ebool_2E_3F" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool"))) (lambda "V0rep" ("ty_2Emin_2Efun" "ty_2Ehrat_2Ehrat" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) (("c_2Ebool_2ETYPE__DEFINITION" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") "ty_2Ehrat_2Ehrat") (lambda "V1c" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ebool_2E_2F_5C" ("c_2Ehrat_2Etrat__eq" "V2r" "V2r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) "V1c" ("c_2Ehrat_2Etrat__eq" "V2r")))))) "V0rep"))))
-; hrat.hrat_bijections
-; (∀a. hrat_ABS_CLASS (hrat_REP_CLASS a) = a) ∧ ∀r.     (λc. ∃r. trat_eq r r ∧ (c = trat_eq r)) r ⇔     (hrat_REP_CLASS (hrat_ABS_CLASS r) = r)
+; hrat.hrat_bijections: (∀V0a. hrat_ABS_CLASS (hrat_REP_CLASS V0a) = V0a) ∧ ∀V1r.     (λV2c. ∃V3r. trat_eq V3r V3r ∧ (V2c = trat_eq V3r)) V1r ⇔     (hrat_REP_CLASS (hrat_ABS_CLASS V1r) = V1r)
 (axiom "thm_2Ehrat_2Ehrat__bijections" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0a" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__ABS__CLASS" ("c_2Ehrat_2Ehrat__REP__CLASS" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) (lambda "V1r" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") ((lambda "V2c" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V3r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ebool_2E_2F_5C" ("c_2Ehrat_2Etrat__eq" "V3r" "V3r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) "V2c" ("c_2Ehrat_2Etrat__eq" "V3r")))))) "V1r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) ("c_2Ehrat_2Ehrat__REP__CLASS" ("c_2Ehrat_2Ehrat__ABS__CLASS" "V1r")) "V1r"))))))
-; hrat.hrat_ABS_REP_CLASS
-; (∀a. hrat_ABS_CLASS (hrat_REP_CLASS a) = a) ∧ ∀c.     (∃r. trat_eq r r ∧ (c = trat_eq r)) ⇔     (hrat_REP_CLASS (hrat_ABS_CLASS c) = c)
+; hrat.hrat_ABS_REP_CLASS: (∀V0a. hrat_ABS_CLASS (hrat_REP_CLASS V0a) = V0a) ∧ ∀V1c.     (∃V2r. trat_eq V2r V2r ∧ (V1c = trat_eq V2r)) ⇔     (hrat_REP_CLASS (hrat_ABS_CLASS V1c) = V1c)
 (conjecture "thm_2Ehrat_2Ehrat__ABS__REP__CLASS" ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0a" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__ABS__CLASS" ("c_2Ehrat_2Ehrat__REP__CLASS" "V0a")) "V0a"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) (lambda "V1c" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool") (("c_2Emin_2E_3D" "ty_2Emin_2Ebool") (("c_2Ebool_2E_3F" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V2r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") ("c_2Ebool_2E_2F_5C" ("c_2Ehrat_2Etrat__eq" "V2r" "V2r") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) "V1c" ("c_2Ehrat_2Etrat__eq" "V2r"))))) (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Emin_2Ebool")) ("c_2Ehrat_2Ehrat__REP__CLASS" ("c_2Ehrat_2Ehrat__ABS__CLASS" "V1c")) "V1c"))))))
-; hrat.hrat_REP_def
-; ∀a. hrat_REP a = $@ (hrat_REP_CLASS a)
+; hrat.hrat_REP_def: ∀V0a. hrat_REP V0a = $@ (hrat_REP_CLASS V0a)
 (axiom "thm_2Ehrat_2Ehrat__REP__def" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0a" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Ehrat__REP" "V0a") (("c_2Emin_2E_40" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) ("c_2Ehrat_2Ehrat__REP__CLASS" "V0a"))))))
-; hrat.hrat_ABS_def
-; ∀r. hrat_ABS r = hrat_ABS_CLASS (trat_eq r)
+; hrat.hrat_ABS_def: ∀V0r. hrat_ABS V0r = hrat_ABS_CLASS (trat_eq V0r)
 (axiom "thm_2Ehrat_2Ehrat__ABS__def" (("c_2Ebool_2E_21" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum")) (lambda "V0r" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__ABS" "V0r") ("c_2Ehrat_2Ehrat__ABS__CLASS" ("c_2Ehrat_2Etrat__eq" "V0r"))))))
-; hrat.hrat_QUOTIENT
-; QUOTIENT trat_eq hrat_ABS hrat_REP
+; hrat.hrat_QUOTIENT: QUOTIENT trat_eq hrat_ABS hrat_REP
 (conjecture "thm_2Ehrat_2Ehrat__QUOTIENT" (("c_2Equotient_2EQUOTIENT" ("ty_2Epair_2Eprod" "ty_2Enum_2Enum" "ty_2Enum_2Enum") "ty_2Ehrat_2Ehrat") "c_2Ehrat_2Etrat__eq" "c_2Ehrat_2Ehrat__ABS" "c_2Ehrat_2Ehrat__REP"))
-; hrat.hrat_1
-; hrat_1 = hrat_ABS trat_1
+; hrat.hrat_1: hrat_1 = hrat_ABS trat_1
 (axiom "thm_2Ehrat_2Ehrat__1" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") "c_2Ehrat_2Ehrat__1" ("c_2Ehrat_2Ehrat__ABS" "c_2Ehrat_2Etrat__1")))
-; hrat.hrat_inv
-; ∀T1. hrat_inv T1 = hrat_ABS (trat_inv (hrat_REP T1))
+; hrat.hrat_inv: ∀V0T1. hrat_inv V0T1 = hrat_ABS (trat_inv (hrat_REP V0T1))
 (axiom "thm_2Ehrat_2Ehrat__inv" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0T1" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__inv" "V0T1") ("c_2Ehrat_2Ehrat__ABS" ("c_2Ehrat_2Etrat__inv" ("c_2Ehrat_2Ehrat__REP" "V0T1")))))))
-; hrat.hrat_add
-; ∀T1 T2. T1 hrat_add T2 = hrat_ABS (hrat_REP T1 trat_add hrat_REP T2)
+; hrat.hrat_add: ∀V0T1 V1T2.     V0T1 hrat_add V1T2 = hrat_ABS (hrat_REP V0T1 trat_add hrat_REP V1T2)
 (axiom "thm_2Ehrat_2Ehrat__add" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0T1" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1T2" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__add" "V0T1" "V1T2") ("c_2Ehrat_2Ehrat__ABS" ("c_2Ehrat_2Etrat__add" ("c_2Ehrat_2Ehrat__REP" "V0T1") ("c_2Ehrat_2Ehrat__REP" "V1T2")))))))))
-; hrat.hrat_mul
-; ∀T1 T2. T1 hrat_mul T2 = hrat_ABS (hrat_REP T1 trat_mul hrat_REP T2)
+; hrat.hrat_mul: ∀V0T1 V1T2.     V0T1 hrat_mul V1T2 = hrat_ABS (hrat_REP V0T1 trat_mul hrat_REP V1T2)
 (axiom "thm_2Ehrat_2Ehrat__mul" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0T1" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1T2" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__mul" "V0T1" "V1T2") ("c_2Ehrat_2Ehrat__ABS" ("c_2Ehrat_2Etrat__mul" ("c_2Ehrat_2Ehrat__REP" "V0T1") ("c_2Ehrat_2Ehrat__REP" "V1T2")))))))))
-; hrat.hrat_sucint
-; ∀T1. hrat_sucint T1 = hrat_ABS (trat_sucint T1)
+; hrat.hrat_sucint: ∀V0T1. hrat_sucint V0T1 = hrat_ABS (trat_sucint V0T1)
 (axiom "thm_2Ehrat_2Ehrat__sucint" (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0T1" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__sucint" "V0T1") ("c_2Ehrat_2Ehrat__ABS" ("c_2Ehrat_2Etrat__sucint" "V0T1"))))))
-; hrat.HRAT_ADD_SYM
-; ∀h i. h hrat_add i = i hrat_add h
+; hrat.HRAT_ADD_SYM: ∀V0h V1i. V0h hrat_add V1i = V1i hrat_add V0h
 (conjecture "thm_2Ehrat_2EHRAT__ADD__SYM" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1i" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__add" "V0h" "V1i") ("c_2Ehrat_2Ehrat__add" "V1i" "V0h")))))))
-; hrat.HRAT_ADD_ASSOC
-; ∀h i j. h hrat_add (i hrat_add j) = h hrat_add i hrat_add j
+; hrat.HRAT_ADD_ASSOC: ∀V0h V1i V2j. V0h hrat_add (V1i hrat_add V2j) = V0h hrat_add V1i hrat_add V2j
 (conjecture "thm_2Ehrat_2EHRAT__ADD__ASSOC" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1i" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V2j" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__add" "V0h" ("c_2Ehrat_2Ehrat__add" "V1i" "V2j")) ("c_2Ehrat_2Ehrat__add" ("c_2Ehrat_2Ehrat__add" "V0h" "V1i") "V2j")))))))))
-; hrat.HRAT_MUL_SYM
-; ∀h i. h hrat_mul i = i hrat_mul h
+; hrat.HRAT_MUL_SYM: ∀V0h V1i. V0h hrat_mul V1i = V1i hrat_mul V0h
 (conjecture "thm_2Ehrat_2EHRAT__MUL__SYM" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1i" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__mul" "V0h" "V1i") ("c_2Ehrat_2Ehrat__mul" "V1i" "V0h")))))))
-; hrat.HRAT_MUL_ASSOC
-; ∀h i j. h hrat_mul (i hrat_mul j) = h hrat_mul i hrat_mul j
+; hrat.HRAT_MUL_ASSOC: ∀V0h V1i V2j. V0h hrat_mul (V1i hrat_mul V2j) = V0h hrat_mul V1i hrat_mul V2j
 (conjecture "thm_2Ehrat_2EHRAT__MUL__ASSOC" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1i" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V2j" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__mul" "V0h" ("c_2Ehrat_2Ehrat__mul" "V1i" "V2j")) ("c_2Ehrat_2Ehrat__mul" ("c_2Ehrat_2Ehrat__mul" "V0h" "V1i") "V2j")))))))))
-; hrat.HRAT_LDISTRIB
-; ∀h i j. h hrat_mul (i hrat_add j) = h hrat_mul i hrat_add h hrat_mul j
+; hrat.HRAT_LDISTRIB: ∀V0h V1i V2j.     V0h hrat_mul (V1i hrat_add V2j) =     V0h hrat_mul V1i hrat_add V0h hrat_mul V2j
 (conjecture "thm_2Ehrat_2EHRAT__LDISTRIB" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1i" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V2j" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__mul" "V0h" ("c_2Ehrat_2Ehrat__add" "V1i" "V2j")) ("c_2Ehrat_2Ehrat__add" ("c_2Ehrat_2Ehrat__mul" "V0h" "V1i") ("c_2Ehrat_2Ehrat__mul" "V0h" "V2j"))))))))))
-; hrat.HRAT_MUL_LID
-; ∀h. hrat_1 hrat_mul h = h
+; hrat.HRAT_MUL_LID: ∀V0h. hrat_1 hrat_mul V0h = V0h
 (conjecture "thm_2Ehrat_2EHRAT__MUL__LID" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__mul" "c_2Ehrat_2Ehrat__1" "V0h") "V0h"))))
-; hrat.HRAT_MUL_LINV
-; ∀h. hrat_inv h hrat_mul h = hrat_1
+; hrat.HRAT_MUL_LINV: ∀V0h. hrat_inv V0h hrat_mul V0h = hrat_1
 (conjecture "thm_2Ehrat_2EHRAT__MUL__LINV" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__mul" ("c_2Ehrat_2Ehrat__inv" "V0h") "V0h") "c_2Ehrat_2Ehrat__1"))))
-; hrat.HRAT_NOZERO
-; ∀h i. h hrat_add i ≠ h
+; hrat.HRAT_NOZERO: ∀V0h V1i. V0h hrat_add V1i ≠ V0h
 (conjecture "thm_2Ehrat_2EHRAT__NOZERO" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1i" "ty_2Ehrat_2Ehrat" ("c_2Ebool_2E_7E" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__add" "V0h" "V1i") "V0h")))))))
-; hrat.HRAT_ADD_TOTAL
-; ∀h i. (h = i) ∨ (∃d. h = i hrat_add d) ∨ ∃d. i = h hrat_add d
+; hrat.HRAT_ADD_TOTAL: ∀V0h V1i.     (V0h = V1i) ∨ (∃V2d. V0h = V1i hrat_add V2d) ∨     ∃V3d. V1i = V0h hrat_add V3d
 (conjecture "thm_2Ehrat_2EHRAT__ADD__TOTAL" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V1i" "ty_2Ehrat_2Ehrat" ("c_2Ebool_2E_5C_2F" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") "V0h" "V1i") ("c_2Ebool_2E_5C_2F" (("c_2Ebool_2E_3F" "ty_2Ehrat_2Ehrat") (lambda "V2d" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") "V0h" ("c_2Ehrat_2Ehrat__add" "V1i" "V2d")))) (("c_2Ebool_2E_3F" "ty_2Ehrat_2Ehrat") (lambda "V3d" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") "V1i" ("c_2Ehrat_2Ehrat__add" "V0h" "V3d")))))))))))
-; hrat.HRAT_ARCH
-; ∀h. ∃n d. hrat_sucint n = h hrat_add d
+; hrat.HRAT_ARCH: ∀V0h. ∃V1n V2d. hrat_sucint V1n = V0h hrat_add V2d
 (conjecture "thm_2Ehrat_2EHRAT__ARCH" (("c_2Ebool_2E_21" "ty_2Ehrat_2Ehrat") (lambda "V0h" "ty_2Ehrat_2Ehrat" (("c_2Ebool_2E_3F" "ty_2Enum_2Enum") (lambda "V1n" "ty_2Enum_2Enum" (("c_2Ebool_2E_3F" "ty_2Ehrat_2Ehrat") (lambda "V2d" "ty_2Ehrat_2Ehrat" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__sucint" "V1n") ("c_2Ehrat_2Ehrat__add" "V0h" "V2d")))))))))
-; hrat.HRAT_SUCINT
-; (hrat_sucint 0 = hrat_1) ∧ ∀n. hrat_sucint (SUC n) = hrat_sucint n hrat_add hrat_1
+; hrat.HRAT_SUCINT: (hrat_sucint 0 = hrat_1) ∧ ∀V0n. hrat_sucint (SUC V0n) = hrat_sucint V0n hrat_add hrat_1
 (conjecture "thm_2Ehrat_2EHRAT__SUCINT" ("c_2Ebool_2E_2F_5C" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__sucint" "c_2Enum_2E0") "c_2Ehrat_2Ehrat__1") (("c_2Ebool_2E_21" "ty_2Enum_2Enum") (lambda "V0n" "ty_2Enum_2Enum" (("c_2Emin_2E_3D" "ty_2Ehrat_2Ehrat") ("c_2Ehrat_2Ehrat__sucint" ("c_2Enum_2ESUC" "V0n")) ("c_2Ehrat_2Ehrat__add" ("c_2Ehrat_2Ehrat__sucint" "V0n") "c_2Ehrat_2Ehrat__1"))))))

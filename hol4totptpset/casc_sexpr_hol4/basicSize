@@ -1,30 +1,20 @@
-; c.basicSize.bool_size
-; :bool -> num
+; c.basicSize.bool_size: :bool -> num
 (constant_definition "c_2EbasicSize_2Ebool__size" ("ty_2Emin_2Efun" "ty_2Emin_2Ebool" "ty_2Enum_2Enum"))
-; c.basicSize.one_size
-; :unit -> num
+; c.basicSize.one_size: :unit -> num
 (constant_definition "c_2EbasicSize_2Eone__size" ("ty_2Emin_2Efun" "ty_2Eone_2Eone" "ty_2Enum_2Enum"))
-; c.basicSize.option_size
-; :(α -> num) -> α option -> num
+; c.basicSize.option_size: :(α -> num) -> α option -> num
 (constant_definition "c_2EbasicSize_2Eoption__size" (forall_tyvarl_type ("A_27a") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Eoption_2Eoption" "A_27a") "ty_2Enum_2Enum"))))
-; c.basicSize.pair_size
-; :(α -> num) -> (β -> num) -> α # β -> num
+; c.basicSize.pair_size: :(α -> num) -> (β -> num) -> α # β -> num
 (constant_definition "c_2EbasicSize_2Epair__size" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27b") "ty_2Enum_2Enum")))))
-; c.basicSize.sum_size
-; :(α -> num) -> (β -> num) -> α + β -> num
+; c.basicSize.sum_size: :(α -> num) -> (β -> num) -> α + β -> num
 (constant_definition "c_2EbasicSize_2Esum__size" (forall_tyvarl_type ("A_27a" "A_27b") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum") ("ty_2Emin_2Efun" ("ty_2Esum_2Esum" "A_27a" "A_27b") "ty_2Enum_2Enum")))))
-; basicSize.bool_size_def
-; ∀b. bool_size b = 0
+; basicSize.bool_size_def: ∀V0b. bool_size V0b = 0
 (axiom "thm_2EbasicSize_2Ebool__size__def" (("c_2Ebool_2E_21" "ty_2Emin_2Ebool") (lambda "V0b" "ty_2Emin_2Ebool" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2EbasicSize_2Ebool__size" "V0b") "c_2Enum_2E0"))))
-; basicSize.pair_size_def
-; ∀f g. pair_size f g = (λ(x,y). f x + g y)
+; basicSize.pair_size_def: ∀V0f V1g. pair_size V0f V1g = (λ(V2x,V3y). V0f V2x + V1g V3y)
 (axiom "thm_2EbasicSize_2Epair__size__def" (forall_tyvarl_term ("A_27a" "A_27b") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" ("ty_2Emin_2Efun" ("ty_2Epair_2Eprod" "A_27a" "A_27b") "ty_2Enum_2Enum")) (("c_2EbasicSize_2Epair__size" "A_27a" "A_27b") "V0f" "V1g") (("c_2Epair_2EUNCURRY" "A_27a" "A_27b" "ty_2Enum_2Enum") (lambda "V2x" "A_27a" (lambda "V3y" "A_27b" ("c_2Earithmetic_2E_2B" ("V0f" "V2x") ("V1g" "V3y"))))))))))))
-; basicSize.one_size_def
-; ∀x. one_size x = 0
+; basicSize.one_size_def: ∀V0x. one_size V0x = 0
 (axiom "thm_2EbasicSize_2Eone__size__def" (("c_2Ebool_2E_21" "ty_2Eone_2Eone") (lambda "V0x" "ty_2Eone_2Eone" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") ("c_2EbasicSize_2Eone__size" "V0x") "c_2Enum_2E0"))))
-; basicSize.sum_size_def
-; (∀f g x. sum_size f g (INL x) = f x) ∧ ∀f g y. sum_size f g (INR y) = g y
+; basicSize.sum_size_def: (∀V0f V1g V2x. sum_size V0f V1g (INL V2x) = V0f V2x) ∧ ∀V3f V4g V5y. sum_size V3f V4g (INR V5y) = V4g V5y
 (axiom "thm_2EbasicSize_2Esum__size__def" (forall_tyvarl_term ("A_27a" "A_27b") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum")) (lambda "V1g" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2EbasicSize_2Esum__size" "A_27a" "A_27b") "V0f" "V1g" (("c_2Esum_2EINL" "A_27a" "A_27b") "V2x")) ("V0f" "V2x")))))))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V3f" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum")) (lambda "V4g" ("ty_2Emin_2Efun" "A_27b" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "A_27b") (lambda "V5y" "A_27b" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2EbasicSize_2Esum__size" "A_27a" "A_27b") "V3f" "V4g" (("c_2Esum_2EINR" "A_27a" "A_27b") "V5y")) ("V4g" "V5y")))))))))))
-; basicSize.option_size_def
-; (∀f. option_size f NONE = 0) ∧ ∀f x. option_size f (SOME x) = SUC (f x)
+; basicSize.option_size_def: (∀V0f. option_size V0f NONE = 0) ∧ ∀V1f V2x. option_size V1f (SOME V2x) = SUC (V1f V2x)
 (axiom "thm_2EbasicSize_2Eoption__size__def" (forall_tyvarl_term ("A_27a") ("c_2Ebool_2E_2F_5C" (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V0f" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2EbasicSize_2Eoption__size" "A_27a") "V0f" ("c_2Eoption_2ENONE" "A_27a")) "c_2Enum_2E0"))) (("c_2Ebool_2E_21" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum")) (lambda "V1f" ("ty_2Emin_2Efun" "A_27a" "ty_2Enum_2Enum") (("c_2Ebool_2E_21" "A_27a") (lambda "V2x" "A_27a" (("c_2Emin_2E_3D" "ty_2Enum_2Enum") (("c_2EbasicSize_2Eoption__size" "A_27a") "V1f" (("c_2Eoption_2ESOME" "A_27a") "V2x")) ("c_2Enum_2ESUC" ("V1f" "V2x"))))))))))
