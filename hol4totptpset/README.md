@@ -75,21 +75,43 @@ To generate the problems, start sbcl. You may need to use
 --dynamic-space-size with a high number (like 100000000) since the
 translation requires a lot of memory.
 
-Then load the main code:
+For each problem set you want to generate, load the lisp file
+and call the corresponding function (see below). It is not
+recommended to generate more than one problem set within
+the same lisp session since this can result in some type
+declarations being missing in some problem files.
+
+To generate the bushy th0:
 
     (load "hol4totptp2.lisp")
-
-Then call the following functions (or only the ones corresponding to
-the problems you want to generate):
-
     (gen-bushy-th0)
+	
+Likewise for the other problem sets, (re)start lisp and then do one of the following:
+
+    (load "hol4totptp2.lisp")
     (gen-bushy-tf0)
+
+or
+
+    (load "hol4totptp2.lisp")
     (gen-bushy-fof)
+
+or
+
+    (load "hol4totptp2.lisp")
     (gen-chainy-th0)
+
+or
+
+    (load "hol4totptp2.lisp")
     (gen-chainy-tf0)
+
+or
+
+    (load "hol4totptp2.lisp")
     (gen-chainy-fof)
 
-Each of these functions first create one large file in the tmp
+Each of these functions first creates one large file in the tmp
 subdirectory named hol4fof, hol4tf0 or hol4th0 giving the entire
 library in the appropriate format. It then uses this file
 to create the bushy or chainy problem/axiom files.
