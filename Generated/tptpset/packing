@@ -1,5 +1,6 @@
 ## Unpacking tar
 
+rm *.tar
 for arc in *.tar.7z; do 7zr x "$arc"; done;
 for arc in *.tar; do tar xf "$arc"; done;
 
